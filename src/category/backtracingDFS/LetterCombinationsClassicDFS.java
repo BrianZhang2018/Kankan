@@ -1,0 +1,49 @@
+package category.backtracingDFS;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by brianzhang on 10/9/18.
+ * <p>
+ * classic DFS
+ */
+public class LetterCombinationsClassicDFS {
+
+    public List<String> letterCombinations(String digits) {
+
+        List<String> result = new ArrayList();
+
+        if (digits == null || digits.length() == 0)
+            return result;
+
+        String[] phoneLetters = new String[]{"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+
+        char[] digitArr = digits.toCharArray();
+
+        dfs(phoneLetters, digitArr, new StringBuilder(), result, 0);
+
+        return result;
+    }
+
+    //recursive dfs with backtracking
+    private void dfs(String[] letters, char[] digitArr, StringBuilder curr, List<String> result, int index) {
+
+        if (curr.length() == digitArr.length) {
+            result.add(curr.toString());
+            return;
+        }
+
+        for (Character c : letters[digitArr[index] - '0'].toCharArray()) {
+            curr.append(c);
+            dfs(letters, digitArr, curr, result, index + 1);    //index +1: point to the next phoneLetters
+            curr.deleteCharAt(curr.length() - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+
+        LetterCombinationsClassicDFS letterCombinationsClassicDFS = new LetterCombinationsClassicDFS();
+        System.out.println(letterCombinationsClassicDFS.letterCombinations("23"));
+    }
+}

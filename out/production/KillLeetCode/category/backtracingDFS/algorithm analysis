@@ -1,0 +1,28 @@
+https://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741376.html
+
+
+   1: int a[n];
+   2: try(int i)
+   3: {
+   4:     if(i>n)
+   5:        输出结果;
+   6:      else
+   7:     {
+   8:        for(j = 下界; j <= 上界; j=j+1)  // 枚举i所有可能的路径 for current fixed number
+   9:        {
+  10:            if(fun(j))                 // 满足限界函数和约束条件
+  11:              {
+  12:                 a[i] = j;
+  13:               ...                         // 其他操作
+  14:                 try(i+1);                 //move to next number
+  15:               回溯前的清理工作（如a[i]置空值等）;        // remove (size -1) for backtracing
+  16:               }
+  17:          }
+  18:      }
+  19: }
+
+
+
+  Subset       vs      Permutation
+
+  no sequence         has sequence

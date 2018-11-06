@@ -1,0 +1,14 @@
+001
+Employee A
+Level 1
+380
+
+002
+Employee B
+Level 2
+450
+
+003
+Employee C
+Level 3
+550

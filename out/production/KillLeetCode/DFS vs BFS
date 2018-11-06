@@ -1,0 +1,14 @@
+depth-first search (DFS) is far more space efficient than breadth-first search (BFS)
+
+DFS algorithm the maximum stack depth is equal to the maximum distance from the origin vertex
+in the DFS traversal. In BFS algorithm (as in the aforementioned pseudo-DFS) the maximum queue size
+is equal to the width of the largest vertex discovery front.
+
+The most prominent and extreme example that illustrates the difference in peak memory consumption
+between DFS and BFS (as well as pseudo-DFS) is a star-graph: a single central vertex surrounded
+by a large number (say, 1000) of peripheral vertices, with each peripheral vertex connected to
+the central vertex by an edge. If you run BFS on this graph using the central vertex as origin,
+the queue size will immediately jump to 1000. The same thing will obviously happen if you use
+pseudo-DFS (i.e. if you simply replace the queue with a stack). But classic DFS algorithm will
+need stack depth of only 1 (!) to traverse this entire graph. See the difference? 1000 versus 1.
+This is what is meant by better space efficiency of DFS.

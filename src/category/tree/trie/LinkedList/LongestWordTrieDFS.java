@@ -1,13 +1,13 @@
-package category.tree.LinkedList;
+package category.tree.trie.LinkedList;
 
 /**
  * Created by brianzhang on 11/5/18.
  */
-public class LongestWordTrieDFS2 {
+public class LongestWordTrieDFS {
 
     public static void main(String[] args) {
         String[] input = {"a", "banana", "app", "appl", "ap", "apply", "apple"};
-        LongestWordTrieDFS2 longestWord = new LongestWordTrieDFS2();
+        LongestWordTrieDFS longestWord = new LongestWordTrieDFS();
         System.out.println(longestWord.longestWord(input));
     }
 

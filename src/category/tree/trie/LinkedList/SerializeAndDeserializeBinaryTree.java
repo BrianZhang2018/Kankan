@@ -1,4 +1,4 @@
-package category.tree.LinkedList;
+package category.tree.trie.LinkedList;
 
 import category.model.TreeNode;
 

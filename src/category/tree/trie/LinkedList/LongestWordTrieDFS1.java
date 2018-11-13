@@ -1,4 +1,4 @@
-package category.tree.LinkedList;
+package category.tree.trie.LinkedList;
 
 import java.util.HashMap;
 
@@ -29,6 +29,7 @@ public class LongestWordTrieDFS1 {
         return res.get("longest");
     }
 
+    //simple dfs that don't need return in exit if condition
     public void dfs(TrieNode node, String longest) {
 
         if (node.isLastWord) {

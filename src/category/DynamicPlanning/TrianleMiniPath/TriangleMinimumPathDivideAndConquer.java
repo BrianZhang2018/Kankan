@@ -1,4 +1,4 @@
-package category.DynamicPlanning;
+package category.DynamicPlanning.TrianleMiniPath;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import java.util.List;
  * <p>
  * Created by brianzhang on 9/9/18.
  */
-public class TriangleMinimumPath {
+public class TriangleMinimumPathDivideAndConquer {
     private int[][] memo;
     private int level;
     private List<List<Integer>> triangle;
@@ -24,6 +24,7 @@ public class TriangleMinimumPath {
         if (x == level)
             return 0;
 
+        //dp - memorization
         if (memo[x][y] != 0)
             return memo[x][y];
 

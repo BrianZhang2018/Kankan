@@ -64,7 +64,7 @@ public class WordLadder2 {
         return res;
     }
 
-    //dfs + backtracking
+    //dfs + backtracking: the exit condition will have the return for backtracking, but the simply dfs don't need return.
     private void dfs(String beginWord, String endWord) {
         list.add(beginWord);
         if (beginWord.equals(endWord)) {

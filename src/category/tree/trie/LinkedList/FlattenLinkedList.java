@@ -1,4 +1,4 @@
-package category.tree.LinkedList;
+package category.tree.trie.LinkedList;
 
 import amazon.model.TreeNode;
 import apple.laf.JRSUIUtils;

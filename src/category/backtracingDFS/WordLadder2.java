@@ -70,7 +70,6 @@ public class WordLadder2 {
         if (beginWord.equals(endWord)) {
             //deep copy -> new ArrayList<String>(list), otherwise the value will be changed
             res.add(new ArrayList<String>(list));
-            return;
         }
 
         for (String next : neighborsMap.get(beginWord)) {

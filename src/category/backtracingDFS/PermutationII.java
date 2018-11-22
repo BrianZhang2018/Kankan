@@ -44,8 +44,4 @@ public class PermutationII {
     //We sorted the array
     //The problem for Permutation II is that different orders of duplicates should only be considered as one permutation.
     // In other words, you should make sure that when these duplicates are selected, there has to be one fixed order.
-
-
-
-
 }

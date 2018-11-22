@@ -27,6 +27,7 @@ public class PermutationDFSForceBrute {
         } else {
             //遍历每一个数字(i), 每一个数字当成一层，遍历所有数字在这一层, 找出组合，然后回溯到上一层(上一个数字)
             for (int i = 0; i < nums.length; i++) {
+                //看看SubsetII, you will understand
                 if (tempList.contains(nums[i])) {
                     continue; // element already exists, skip
                 }

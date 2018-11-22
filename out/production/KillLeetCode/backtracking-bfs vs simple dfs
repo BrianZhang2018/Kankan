@@ -1,0 +1,27 @@
+
+backtracking dfs: (refer the WordLadder2.java)
+
+    if(exit condition){
+        ....
+        return;
+    }
+
+    for(..)
+        dfs(..)
+        results.remove(result.size()-1);
+
+Simple dfs: (refer the Trie.java)
+    1.
+    if(exit condition)
+            ....
+
+     for(..)
+         dfs(..)
+
+     2.
+     result = value;
+
+     for()
+        newValue = dfs()
+        if()
+            result=newValue;

@@ -5,6 +5,13 @@ package category.backtracingDFS;
  */
 public class PermutationDFSOnly {
 
+    public static void main(String[] args) {
+        String str = "ABC";
+        int n = str.length();
+        PermutationDFSOnly permutation = new PermutationDFSOnly();
+        permutation.permute(str, 0, n - 1);
+    }
+
     /**
      * permutation function
      *
@@ -41,10 +48,4 @@ public class PermutationDFSOnly {
         return String.valueOf(charArray);
     }
 
-    public static void main(String[] args) {
-        String str = "ABC";
-        int n = str.length();
-        PermutationDFSOnly permutation = new PermutationDFSOnly();
-        permutation.permute(str, 0, n - 1);
-    }
 }

@@ -26,3 +26,7 @@ https://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741376.html
   Subset       vs      Permutation
 
   no sequence         has sequence
+
+=======================================
+important:
+backtracking don't need exit condition which will loop to the end, then backtrack, please refer the SubSetII

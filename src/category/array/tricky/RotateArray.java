@@ -5,6 +5,9 @@ package category.array.tricky;
  */
 public class RotateArray {
 
+    public static void main(String[] args) {
+        System.out.println("quick".substring(0, "quick".length()));
+    }
     public void rotate(int[] nums, int k) {
 
         if (nums == null || nums.length < 2 || k == 0)

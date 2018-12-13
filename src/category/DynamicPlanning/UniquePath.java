@@ -1,12 +1,12 @@
 package category.DynamicPlanning;
 
 /**
- * Created by brianzhang on 10/14/18.
- * <p>
  * https://leetcode.com/problems/unique-paths/description/
+ *
+ * Created by brianzhang on 10/14/18.
  */
 public class UniquePath {
-    public int uniquePaths(int m, int n) {
+    public static int uniquePaths(int m, int n) {
         int[][] grid = new int[n][m];
 
         for (int i = 0; i < n; i++) {
@@ -28,7 +28,7 @@ public class UniquePath {
         nir[1] = new int[3];
         System.out.println(nir[0].length); // 5
         System.out.println(nir[1].length); // 3
-        System.out.println(nir.length);
-        System.out.println(3 / 2);
+
+        System.out.println(uniquePaths(3, 4));
     }
 }

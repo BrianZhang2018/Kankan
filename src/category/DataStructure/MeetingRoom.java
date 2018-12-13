@@ -1,14 +1,15 @@
-package category.datastructure;
+package category.DataStructure;
 
 import java.util.*;
 
 /**
+ *
  * Created by brianzhang on 10/24/18.
  */
 public class MeetingRoom {
     public static void main(String[] args) {
-        Interval source1 = new Interval(9, 10);
         Interval source = new Interval(9, 77);
+        Interval source1 = new Interval(9, 10);
         Interval source2 = new Interval(10, 12);
 
         List<Interval> tests = new ArrayList<>();
@@ -16,17 +17,7 @@ public class MeetingRoom {
         tests.add(source1);
         tests.add(source2);
 
-        tests.sort(new Comparator<Interval>() {
-            @Override
-            public int compare(Interval o1, Interval o2) {
-                return o1.start - o2.start;
-            }
-        });
-
-        //System.out.println(minMeetingRooms(tests));
-     /*   for (Interval test : tests) {
-            System.out.println(test.start);
-        }*/
+        System.out.println(minMeetingRooms(tests));
     }
 
     public static int minMeetingRooms(List<Interval> intervals) {

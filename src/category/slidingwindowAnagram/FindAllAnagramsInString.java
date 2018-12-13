@@ -1,14 +1,12 @@
 package category.slidingwindowAnagram;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by brianzhang on 8/22/18.
- * <p>
- *
  * Leetcode 438. Find All Anagrams in a String
+ * <p>
+ * Created by brianzhang on 8/22/18.
  */
 public class FindAllAnagramsInString {
     public static List<Integer> findAnagrams(String s, String p) {
@@ -49,8 +47,6 @@ public class FindAllAnagramsInString {
                 hash[s.charAt(left)]++;
                 left++;
             }
-
-
         }
         return list;
     }

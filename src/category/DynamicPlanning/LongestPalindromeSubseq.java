@@ -1,17 +1,22 @@
 package category.DynamicPlanning;
 
 /**
- * Created by brianzhang on 8/12/18.
- *
  * Dynamic programming
- *
+ * <p>
+ * Created by brianzhang on 8/12/18.
  */
 public class LongestPalindromeSubseq {
 
-//Solution - 1:
-    //https://zxi.mytechroad.com/blog/dynamic-programming/leetcode-516-longest-palindromic-subsequence/
-    //https://www.youtube.com/watch?v=OZX1nqaQ_9M
-    //bottom-top
+    public static void main(String[] args) {
+        System.out.println(getLongestPalindromeSubseq("bbbab"));
+    }
+
+    /**
+     * Solution - 1:
+     * https://zxi.mytechroad.com/blog/dynamic-programming/leetcode-516-longest-palindromic-subsequence/
+     * <p>
+     * bottom-top
+     */
     public static int getLongestPalindromeSubseq(String s) {
         if (s == null || s.length() == 0)
             return 0;
@@ -22,17 +27,16 @@ public class LongestPalindromeSubseq {
         //从小规模，子字符串长度为1，开始
         for (int winSize = 1; winSize <= sl; winSize++) {
             for (int startIndex = 0; startIndex <= sl - winSize; startIndex++) {
-
                 int endIndex = startIndex + winSize - 1;
-
+                //base case
                 if (startIndex == endIndex) {
                     dp[startIndex][endIndex] = 1;
                     continue;
                 }
 
-                if (s.charAt(startIndex) == s.charAt(endIndex)) {
+                if (s.charAt(startIndex) == s.charAt(endIndex)) { //case 1:
                     dp[startIndex][endIndex] = dp[startIndex + 1][endIndex - 1] + 2;
-                } else {
+                } else {// case 2:
                     dp[startIndex][endIndex] = Math.max(dp[startIndex + 1][endIndex], dp[startIndex][endIndex - 1]);
                 }
             }
@@ -41,7 +45,7 @@ public class LongestPalindromeSubseq {
         return dp[0][sl - 1];
     }
 
-//Solution-2
+    //Solution-2
     //top-bottom
     public static int get2(String s) {
 
@@ -64,7 +68,7 @@ public class LongestPalindromeSubseq {
     }
 
 
-//solution-3
+    //solution-3
     //步骤最多，最细的一个
     //https://leetcode.com/problems/longest-palindromic-subsequence/discuss/99101/Straight-forward-Java-DP-solution
     //bottom-up approach
@@ -90,12 +94,5 @@ public class LongestPalindromeSubseq {
         }
 
         return table[0][str.length - 1];
-    }
-
-
-    public static void main(String[] args) {
-        //getLongestPalindromeSubseq("bbbab");
-
-        System.out.println(getLongestPalindromeSubseq("bbbab"));
     }
 }

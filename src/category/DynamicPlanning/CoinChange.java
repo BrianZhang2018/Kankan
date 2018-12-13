@@ -15,19 +15,15 @@ public class CoinChange {
 
     public static void main(String[] args) {
         CoinChange coinChange = new CoinChange();
-        int[] coins = {2};
-        System.out.println(coinChange.coinChangeDp(coins, 5));
-
-        System.out.println(coinChange.coinChangeDFS(coins, 5));
+        int[] coins = {1, 2, 5};
+        System.out.println(coinChange.coinChangeDp(coins, 11));
+        System.out.println(coinChange.coinChangeDFS(coins, 11));
     }
 
-// Solution 1: DP
+    // Solution 1: DP
+
     /**
-     * 二维数组, 但其实是滚动数组，所以可以降维成 一维数组
-     *
-     * @param coins
-     * @param amount
-     * @return
+     *  降维: 二维数组, 但其实是滚动数组，所以可以降维成 一维数组
      */
     public int coinChangeDp(int[] coins, int amount) {
 
@@ -41,15 +37,16 @@ public class CoinChange {
 
         for (int coin : coins) {
             for (int i = coin; i <= amount; i++) {
-                if(dp[i - coin] != Integer.MAX_VALUE)
+                if (dp[i - coin] != Integer.MAX_VALUE) {
                     dp[i] = Integer.min(dp[i], dp[i - coin] + 1);
+                }
             }
         }
 
         return dp[amount] == Integer.MAX_VALUE ? -1 : dp[amount];
     }
 
-// Solution 2 : DFS
+    // Solution 2 : DFS
     int fewest = Integer.MAX_VALUE;
 
     public int coinChangeDFS(int[] coins, int amount) {
@@ -58,8 +55,7 @@ public class CoinChange {
 
         Integer[] boxedArr = IntStream.of(coins).boxed().toArray(Integer[]::new);
         Arrays.sort(boxedArr, Collections.reverseOrder());
-
-        dfsHelper(boxedArr, 0, amount, 0);
+        dfsHelper2(boxedArr, 0, amount, 0);
 
         return fewest == Integer.MAX_VALUE ? -1 : fewest;
     }
@@ -76,4 +72,26 @@ public class CoinChange {
             }
         }
     }
+
+    //the simple dfs compared with above one
+
+    /**
+     * huahua 称其为剪枝法，the idea is 先用最大的面值的硬币去算， 因为得出的结果可能是 需要最少的硬币 的数目，因为用的面值最大
+     * 然后，在比较小的面值，跟最大面值需要的硬币数目比较 多的 都去掉（剪枝）
+     */
+    public void dfsHelper2(Integer[] coins, int start, int amount, int count) {
+
+        if (amount == 0) {
+            fewest = Integer.min(fewest, count);
+        }
+
+        if (start == coins.length)
+            return;
+
+        int coin = coins[start];
+        for (int k = amount / coin; k >= 0 && count + k < fewest; k--) {
+            dfsHelper2(coins, start + 1, amount - k * coin, count + k);
+        }
+    }
+
 }

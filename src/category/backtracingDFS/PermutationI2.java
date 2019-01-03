@@ -1,14 +1,16 @@
 package category.backtracingDFS;
 
 /**
+ * Same with the Permutation.java
+ * <p>
  * Created by brianzhang on 10/8/18.
  */
-public class PermutationDFSOnly {
+public class PermutationI2 {
 
     public static void main(String[] args) {
         String str = "ABC";
         int n = str.length();
-        PermutationDFSOnly permutation = new PermutationDFSOnly();
+        PermutationI2 permutation = new PermutationI2();
         permutation.permute(str, 0, n - 1);
     }
 

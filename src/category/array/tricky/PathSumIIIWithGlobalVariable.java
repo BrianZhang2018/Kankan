@@ -8,13 +8,13 @@ import java.util.Map;
 /**
  * Created by brianzhang on 12/9/18.
  */
-public class PathIIIWithGlobalVariable {
+public class PathSumIIIWithGlobalVariable {
     //global variable
     private int res = 0;
 
     public int pathSum(TreeNode root, int sum) {
         Map<Integer, Integer> prefixSumMap = new HashMap<>();
-        //prefixSumMap.put(0, 1);  //same function like the line 28 - 29
+        prefixSumMap.put(0, 1);  //same function in the line 28 - 29, here is to initialize the base case - (current -target = 0, 1)
         backtrack(root, prefixSumMap, 0, sum);
         return res;
     }
@@ -25,8 +25,6 @@ public class PathIIIWithGlobalVariable {
         cur += node.val;
         res += prefixSumMap.getOrDefault(cur - target, 0);
         prefixSumMap.put(cur, prefixSumMap.getOrDefault(cur, 0) + 1);
-        if (target == cur)
-            res++;
 
         backtrack(node.left, prefixSumMap, cur, target);
         backtrack(node.right, prefixSumMap, cur, target);

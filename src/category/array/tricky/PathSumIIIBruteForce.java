@@ -5,7 +5,7 @@ import category.model.TreeNode;
 /**
  * Created by brianzhang on 12/9/18.
  */
-public class PathIIIBruteForce {
+public class PathSumIIIBruteForce {
 
     public int pathSum(TreeNode root, int sum) {
         if (root == null)

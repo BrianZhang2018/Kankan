@@ -12,7 +12,7 @@ import java.util.List;
  * 深度搜素到底，然后在回溯，遍历每一层，重复这个动作
  * <p>
  */
-public class PermutationDFSForceBrute {
+public class PermutationBruteForce {
 
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();

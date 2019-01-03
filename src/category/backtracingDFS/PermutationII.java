@@ -34,11 +34,8 @@ public class PermutationII {
                 backTrace(nums, temp, res, used);
                 used[i] = false; //
                 temp.remove(temp.size() - 1);
-
             }
-
         }
-
     }
 
     //We sorted the array

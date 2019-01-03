@@ -8,11 +8,11 @@ import java.util.Map;
 /**
  * Created by brianzhang on 12/9/18.
  */
-public class PathIII {
+public class PathSumIII {
 
     public int pathSum(TreeNode root, int sum) {
         Map<Integer, Integer> prefixSumMap = new HashMap<>();
-        //prefixSumMap.put(0, 1);
+        prefixSumMap.put(0, 1);
         return backtrack(root, prefixSumMap, 0, sum);
     }
 
@@ -23,8 +23,6 @@ public class PathIII {
 
         int res = prefixSumMap.getOrDefault(cur - target, 0);
         prefixSumMap.put(cur, prefixSumMap.getOrDefault(cur, 0) + 1);
-        if (target == cur)
-            res++;
 
         res += backtrack(node.left, prefixSumMap, cur, target);
         res += backtrack(node.right, prefixSumMap, cur, target);

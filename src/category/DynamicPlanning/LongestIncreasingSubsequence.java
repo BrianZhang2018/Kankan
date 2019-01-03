@@ -39,8 +39,10 @@ public class LongestIncreasingSubsequence {
                 }
             }
         }
-        if (dp[right] < val) return len + 1;
-        else if (dp[left] >= val) return left;
+        if (dp[right] < val)
+            return len + 1;
+        else if (dp[left] >= val)
+            return left;
         else
             return right;
     }

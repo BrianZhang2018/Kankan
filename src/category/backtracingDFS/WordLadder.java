@@ -17,7 +17,7 @@ class WordNode {
     }
 }
 
-public class Solution {
+public class WordLadder {
     public List<List<String>> findLadders(String start, String end, Set<String> dict) {
         List<List<String>> result = new ArrayList<List<String>>();
         LinkedList<WordNode> queue = new LinkedList<WordNode>();

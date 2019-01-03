@@ -8,13 +8,12 @@ import java.util.List;
  * <p>
  * Created by brianzhang on 7/25/18.
  * <p>
- * <p>
  * https://www.youtube.com/watch?v=KBHFyg2AcZ4
  * <p>
  * DFS + BackTracing
  */
 
-public class Permutation {
+public class Permutation{
 
     public List<List<Integer>> permute(int[] nums) {
 
@@ -26,6 +25,9 @@ public class Permutation {
         return result;
     }
 
+    /**
+     * Don't need involve another tempList to store the result, like other solution
+     */
     private void backTracing(int[] nums, int start, List<List<Integer>> result) {
         if (start == nums.length - 1)
             result.add(convertToIntegerArr(nums));

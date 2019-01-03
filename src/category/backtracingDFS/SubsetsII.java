@@ -5,14 +5,16 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * //** means important points
+ * <p>
  * Created by brianzhang on 7/29/18.
  */
-public class SubsetII {
+public class SubsetsII {
 
     public static void main(String[] args) {
-        SubsetII subsetII = new SubsetII();
+        SubsetsII subsetsII = new SubsetsII();
         int[] test = {1, 2, 3};
-        System.out.println(subsetII.subsetsWithDup(test));
+        System.out.println(subsetsII.subsetsWithDup(test));
     }
 
     public List<List<Integer>> subsetsWithDup(int[] nums) {
@@ -27,11 +29,13 @@ public class SubsetII {
     private void backTrack(int[] nums, int start, List<List<Integer>> res, List<Integer> tmpList) {
         res.add(new ArrayList<Integer>(tmpList));
 
+        //** i = start
         for (int i = start; i < nums.length; i++) {
             if (i > start && nums[i] == nums[i - 1])
                 continue;
 
             tmpList.add(nums[i]);
+            //** i+1, not start +1
             backTrack(nums, i + 1, res, tmpList);
             tmpList.remove(tmpList.size() - 1);
         }

@@ -1,9 +1,6 @@
 package category.sort;
 
 /**
- * Created by brianzhang on 10/8/18.
- * <p>
- * <p>
  * Qucik select algorithm
  * <p>
  * https://leetcode.com/problems/kth-largest-element-in-an-array/description/

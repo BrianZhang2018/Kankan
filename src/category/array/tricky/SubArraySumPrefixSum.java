@@ -3,6 +3,8 @@ package category.array.tricky;
 import java.util.HashMap;
 
 /**
+ * PrefixSum
+ * <p>
  * Created by brianzhang on 12/8/18.
  */
 public class SubArraySumPrefixSum {

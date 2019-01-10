@@ -1,6 +1,8 @@
 package category.tree.trie.LinkedList;
 
 /**
+ * Interesting algorithm, not something from leetcode.
+ * <p>
  * Created by brianzhang on 11/11/18.
  */
 public class Viterbi {

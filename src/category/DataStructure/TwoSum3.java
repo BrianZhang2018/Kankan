@@ -21,7 +21,7 @@ public class TwoSum3 {
 
     /**
      * @param value: An integer
-     * @return: Find if there exists any pair of numbers which sum is equal to the value.
+     * @return: find if there exists any pair of numbers which sum is equal to the value.
      */
     public boolean find(int value) {
         // write your code here

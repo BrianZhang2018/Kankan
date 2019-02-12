@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Leetcode 438. Find All Anagrams in a String
+ * Leetcode 438. find All Anagrams in a String
  * <p>
  * Created by brianzhang on 8/22/18.
  */

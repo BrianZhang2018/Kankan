@@ -30,6 +30,7 @@ public class ClosestBinarySearchTreeValueIIWithoutGlobalVar {
     private void rec(TreeNode root, double target, int k, PriorityQueue<Double> maxHeap, Set<Integer> set) {
         if (root == null)
             return;
+
         double diff = Math.abs(root.val - target);
         if (maxHeap.size() < k) {
             maxHeap.offer(diff);

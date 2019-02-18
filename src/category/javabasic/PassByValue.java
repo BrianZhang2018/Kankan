@@ -20,7 +20,7 @@ public class PassByValue {
         System.out.println(ls);
     }
 
-    //pass primitive type as value, so the value of original variable didn't change
+    //pass primitive type value as value, the value of original variable didn't change
     public static void test(String test) {
         test = "abc";
         test.concat("aa");
@@ -30,5 +30,4 @@ public class PassByValue {
     public static void testReference(List<String> list) {
         list.add("cc");
     }
-
 }

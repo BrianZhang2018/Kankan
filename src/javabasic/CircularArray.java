@@ -1,6 +1,6 @@
 package javabasic;
 
-import category.model.ListNode;
+import java.util.Date;
 
 /**
  * Created by brianzhang on 2/4/19.
@@ -14,6 +14,9 @@ public class CircularArray {
         // (n+i)th index.
         for (int i = ind; i < n + ind; i++)
             System.out.print(a[(i % n)] + " ");
+
+
+        System.out.println();
     }
 
     // driver code to check the above function

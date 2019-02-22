@@ -63,10 +63,10 @@ public class CutOffTreesforGolfEventBFSGetMinSteps {
         visited[start[0]][start[1]] = true;
 
         int step = 0;
-        //BFS 是一层一层的扫，所以有 int size = queue.size() 去拿到当前层的元素个数
+        //BFS 一层一层的搜索，一层代表一步, 无论你在这一层的哪个位置，上一层都可以通过一步到达, 所以到第几层，就是需要 层数-1 步
         while (!queue.isEmpty()) {
             int size = queue.size();
-            //loop current level of BFS
+            // //搜索当前层的所有点
             for (int i = 0; i < size; i++) {
                 int[] curr = queue.poll();
 

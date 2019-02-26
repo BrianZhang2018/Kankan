@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
  * Created by brianzhang on 11/17/18.
  * 看图
  * https://zxi.mytechroad.com/blog/dynamic-programming/leetcode-322-coin-change/
+ * Transition: dp[i][j] = min(dp[i][j], dp[i][j - coin_i] + 1)
  * <p>
  * 本题要点：1. DP 2. 降维
  */
@@ -18,12 +19,14 @@ public class CoinChange {
         int[] coins = {1, 2, 5};
         System.out.println(coinChange.coinChangeDp(coins, 11));
         System.out.println(coinChange.coinChangeDFS(coins, 11));
+
+        System.out.println(2121 % 1000);
     }
 
     // Solution 1: DP
 
     /**
-     *  降维: 二维数组, 但其实是滚动数组，所以可以降维成 一维数组
+     * 降维: 二维数组, 但其实是滚动数组，所以可以降维成 一维数组
      */
     public int coinChangeDp(int[] coins, int amount) {
 
@@ -35,9 +38,12 @@ public class CoinChange {
 
         dp[0] = 0;
 
+        //loop for the min coins for amount 'i', finally got the dp[amount].
         for (int coin : coins) {
             for (int i = coin; i <= amount; i++) {
                 if (dp[i - coin] != Integer.MAX_VALUE) {
+                    //e.g. i=2, min(dp[2], dp[2-2] + 1),
+                    //'dp[2-2] + 1' means CurrentAmount = Prev amount(j - coin_i) + 1 ( '1' represent the current coin)
                     dp[i] = Integer.min(dp[i], dp[i - coin] + 1);
                 }
             }

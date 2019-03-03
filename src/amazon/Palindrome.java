@@ -21,6 +21,6 @@ public class Palindrome {
 
     public static void main(String[] args) {
 
-        System.out.println(canPermutePalindrome("as"));
+        System.out.println(canPermutePalindrome("aab"));
     }
 }

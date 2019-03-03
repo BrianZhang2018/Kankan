@@ -9,7 +9,7 @@ public class TopKFrequentWords {
 
     public static void main(String[] args) {
         String[] words = {"i", "love", "leetcode", "i", "love", "coding"};
-        topKFrequent(words, 2);
+        System.out.println(topKFrequent(words, 2));
     }
 
     public static List<String> topKFrequent(String[] words, int k) {

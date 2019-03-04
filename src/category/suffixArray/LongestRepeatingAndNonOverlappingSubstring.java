@@ -1,11 +1,16 @@
 package category.suffixArray;
 
 /**
- *
+ * solution source:
  * https://www.geeksforgeeks.org/longest-repeating-and-non-overlapping-substring/
+ *
+ * algorithm video course:
+ * https://www.coursera.org/lecture/cs-algorithms-theory-machines/longest-repeated-substring-hkJBt
  *
  * DP + Suffix String
  * Created by brianzhang on 3/3/19.
+ * reference:
+ * https://hackerranksolutionc.blogspot.com/2018/02/longest-repeating-and-non-overlapping.html
  */
 public class LongestRepeatingAndNonOverlappingSubstring {
 

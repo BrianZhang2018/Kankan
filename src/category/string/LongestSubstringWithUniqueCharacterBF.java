@@ -1,9 +1,6 @@
 package category.string;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Brute force solution
@@ -12,7 +9,14 @@ import java.util.Map;
 public class LongestSubstringWithUniqueCharacterBF {
 
     public static void main(String[] args) {
-        lengthOfLongestSubstringKDistinct("aabbcc", 3);
+        lengthOfLongestSubstringKDistinct("nutdrgzdrkrvfdfcvzuunxwlzegjukhkjpvqruitobiahxhgdrpqttsebjsg", 11);
+
+        HashSet<Character> set = new HashSet<>();
+        String s = "zegjukhkjpvqruitobiahxhgdrpqttsebjsg";
+        for(Character c : s.toCharArray())
+            set.add(c);
+
+        System.out.println(set.size());
     }
 
     public static void lengthOfLongestSubstringKDistinct(String s, int k) {

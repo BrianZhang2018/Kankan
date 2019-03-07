@@ -1,8 +1,7 @@
 package expedia;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.PriorityQueue;
 
 /**
  * Created by brianzhang on 3/3/19.
@@ -10,32 +9,31 @@ import java.util.PriorityQueue;
 public class TurnArrayNumToNumArray {
 
     public static void main(String[] args) {
-       int[] res = solutionWithHashMap(new int[]{40, 29, 29, 29, 8,8,8});
-       for(int i : res){
-           System.out.println(i);
-       }
+        String input = "40 40 40 40 29 29 29 29 29 29 29 29 57 57 92 92 92 92 92 86 86 86 86 86 86 86 86 86 86";
+        String[] inputs = input.split(" ");
+        String res = solutionWithHashMap(inputs);
+        System.out.println(res);
     }
 
-    public static int[] solutionWithHashMap(int[] input){
+    public static String solutionWithHashMap(String[] inputs) {
 
-        HashMap<Integer, Integer> hmap = new HashMap<Integer, Integer>();
-        for(int i : input){
+        int[] nums = new int[inputs.length];
+        for (int i = 0; i < inputs.length; i++) {
+            nums[i] = Integer.valueOf(inputs[i]);
+        }
+
+        LinkedHashMap<Integer, Integer> hmap = new LinkedHashMap<Integer, Integer>();
+        for (int i : nums) {
             hmap.put(i, hmap.getOrDefault(i, 0) + 1);
         }
 
-        int[] res = new int[hmap.size()*2];
-
-        PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>((a, b) -> b.getKey() - a.getKey());
-        for(Map.Entry<Integer, Integer> x : hmap.entrySet()){
-            pq.add(x);
+        StringBuilder sb = new StringBuilder();
+        for (Map.Entry<Integer, Integer> entry : hmap.entrySet()) {
+            sb.append(entry.getValue());
+            sb.append(" ");
+            sb.append(entry.getKey());
+            sb.append(" ");
         }
-
-        int index = 0;
-        while(pq.size()>0){
-            Map.Entry<Integer, Integer> temp =  pq.poll();
-            res[index++] = temp.getValue();
-            res[index++] = temp.getKey();
-        }
-        return res;
+        return sb.toString().trim();
     }
 }

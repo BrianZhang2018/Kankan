@@ -51,7 +51,6 @@ public class WordBreakDP {
             mem.put(s, true);
             return true;
         }
-
         // ++i vs i++
         for (int i = 1; i < s.length(); i++) {
             if (dict.contains(s.substring(i)) && wordBreakDPMem(s.substring(0, i), dict, mem)) {
@@ -59,7 +58,6 @@ public class WordBreakDP {
                 return true;
             }
         }
-
         mem.put(s, false);
         return false;
     }

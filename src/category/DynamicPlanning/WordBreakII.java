@@ -1,46 +1,47 @@
 package category.DynamicPlanning;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by brianzhang on 2/20/19.
  */
 public class WordBreakII {
 
+    public static void main(String[] args) {
+        WordBreakII wordBreakII = new WordBreakII();
+        List<String> dicts = new ArrayList<>();
+        dicts.add("cat");
+        dicts.add("cats");
+        dicts.add("and");
+        dicts.add("sand");
+        dicts.add("dog");
+       for(String str : wordBreakII.wordBreak1("catsanddog", dicts))
+           System.out.println(str);
 
-    public List<String> wordBreak(String s, List<String> wordDict) {
-
-        if (s == null || s.length() == 0)
-            return null;
-
-        return dfs(s, 0, new HashMap<Integer, List<String>>(), wordDict);
     }
 
-    private List<String> dfs(String s, int index, Map<Integer, List<String>> mem, List<String> dict) {
+    public List<String> wordBreak1(String s, List<String> wordDict) {
+        return DFS(s, wordDict, new HashMap<String, List<String>>());
+    }
 
-        if (mem.get(index) != null)
-            return mem.get(index);
+    // DFS function returns an array including all substrings derived from s.
+    List<String> DFS(String s, List<String> wordDict, HashMap<String, List<String>>map) {
+        if (map.containsKey(s))
+            return map.get(s);
 
-        List<String> currRes = new ArrayList();
-        String curr = s.substring(index);
-        if (index == s.length()) {
-            currRes.add("");
-            return currRes;
+        List<String> res = new ArrayList<>();
+        if (s.length() == 0) {
+            res.add("");
+            return res;
         }
-
-        for (String word : dict) {
-            if (curr.startsWith(word)) {
-                List<String> subRes = dfs(s, index + word.length(), mem, dict);
-                for (String wordsStr : subRes) {
-                    currRes.add(word + (wordsStr.isEmpty() ? "" : " ") + wordsStr);
-                }
+        for (String word : wordDict) {
+            if (s.startsWith(word)) {
+                List<String>sublist = DFS(s.substring(word.length()), wordDict, map);
+                for (String sub : sublist)
+                    res.add(word + (sub.isEmpty() ? "" : " ") + sub);
             }
         }
-
-        mem.put(index, currRes);
-        return currRes;
+        map.put(s, res);
+        return res;
     }
 }

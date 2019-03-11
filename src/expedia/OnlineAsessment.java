@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 
 public class OnlineAsessment {
     /**
@@ -44,5 +46,16 @@ public class OnlineAsessment {
 
         String res = maxLength > 0 ? line.substring(index - maxLength, index) : "";
         System.out.println(res);
+
+        int[] a = new int[]{2, 3};
+
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>(
+                new Comparator<Integer>(){
+                    public int compare(Integer a, Integer b){
+                        return a - b;
+                    }
+                }
+        );
+
     }
 }

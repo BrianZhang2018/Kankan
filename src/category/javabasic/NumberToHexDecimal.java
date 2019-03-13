@@ -1,5 +1,8 @@
 package category.javabasic;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by brianzhang on 3/9/19.
  */
@@ -7,6 +10,10 @@ public class NumberToHexDecimal {
 
     public static void main(String[] args) {
         System.out.println(toHex(26));
+
+        Set<String> set = new HashSet<String>();
+        //set.contains()
+
     }
 
     static char[] map = {'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};

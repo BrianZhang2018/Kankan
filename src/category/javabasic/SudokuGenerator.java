@@ -165,7 +165,7 @@ public class SudokuGenerator
             }
             for(int j=0;j<9;j++){
                 System.out.print(j%3 == 0? "|| ": "| ");
-                System.out.print(board[i][j] + " ");
+                System.out.print(board[i][j] == 0? "  ":board[i][j]  + " ");
                 System.out.print(j ==8? "||" : "");
             }
             System.out.println();
@@ -180,7 +180,7 @@ public class SudokuGenerator
     public static void main(String[] args)
     {
         SudokuGenerator sg = new SudokuGenerator();
-        sg.nextBoard(15);
+        sg.nextBoard(60);
         sg.print();
     }
 

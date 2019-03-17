@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/tree/trie/LinkedList/TrieTree.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/binarySearchAndTree/FindPeakElement.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/bst/ClosestBinarySearchTreeValueII.java" afterPath="$PROJECT_DIR$/src/category/binarySearchAndTree/ClosestBinarySearchTreeValueII.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/bst/ClosestBinarySearchTreeValueIIWithoutGlobalVar.java" afterPath="$PROJECT_DIR$/src/category/binarySearchAndTree/ClosestBinarySearchTreeValueIIWithoutGlobalVar.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/bst/FirstBadVersionIterative.java" afterPath="$PROJECT_DIR$/src/category/binarySearchAndTree/FirstBadVersionIterative.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/bst/FirstBadVersionRecursive.java" afterPath="$PROJECT_DIR$/src/category/binarySearchAndTree/FirstBadVersionRecursive.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/bst/RangePickWithWeight.java" afterPath="$PROJECT_DIR$/src/category/binarySearchAndTree/RangePickWithWeight.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/bst/SearchInRotatedSortedArray.java" afterPath="$PROJECT_DIR$/src/category/binarySearchAndTree/SearchInRotatedSortedArray.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/backtracingDFS/LetterCombinationsClassicDFS.java" afterPath="$PROJECT_DIR$/src/category/backtracingDFS/LetterCombinationsClassicDFS.java" />
     </list>
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
@@ -63,16 +56,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RegularExpressionMatching.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/RegularExpressionMatching.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SudokuGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/category/javabasic/SudokuGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClosestBinarySearchTreeValueII.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClosestBinarySearchTreeValueII.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/category/binarySearchAndTree/ClosestBinarySearchTreeValueII.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
@@ -94,6 +77,16 @@
               <folding>
                 <element signature="method#main#0;class#ClosestBinarySearchTreeValueII#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LetterCombinationsClassicDFS.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/category/backtracingDFS/LetterCombinationsClassicDFS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -219,7 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/category/array/tricky/ProjectExceptSelfSolution.java" />
         <option value="$PROJECT_DIR$/src/javabasic/CircularArray.java" />
         <option value="$PROJECT_DIR$/src/category/bst/FirstBadVersionRecursive.java" />
         <option value="$PROJECT_DIR$/src/category/bst/FirstBadVersionIterative.java" />
@@ -270,6 +262,7 @@
         <option value="$PROJECT_DIR$/src/category/tree/trie/LinkedList/Test.java" />
         <option value="$PROJECT_DIR$/src/category/binarySearchAndTree/ClosestBinarySearchTreeValueII.java" />
         <option value="$PROJECT_DIR$/src/category/binarySearchAndTree/FindPeakElement.java" />
+        <option value="$PROJECT_DIR$/src/category/backtracingDFS/LetterCombinationsClassicDFS.java" />
       </list>
     </option>
   </component>
@@ -1389,7 +1382,7 @@
       <workItem from="1551322137510" duration="222000" />
       <workItem from="1551322384483" duration="36631000" />
       <workItem from="1551972664919" duration="11826000" />
-      <workItem from="1552193380906" duration="29175000" />
+      <workItem from="1552193380906" duration="29234000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -1442,7 +1435,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="615964000" />
+    <option name="totallyTimeSpent" value="616023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1476,7 +1469,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6818653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.74752474" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7222798" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48290154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21991481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22871287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1890,13 +1883,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/MinimumCostForTickets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/BestTimeToBuyAndSellStock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -2328,6 +2314,14 @@
           <folding>
             <element signature="method#main#0;class#ClosestBinarySearchTreeValueII#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/backtracingDFS/LetterCombinationsClassicDFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>

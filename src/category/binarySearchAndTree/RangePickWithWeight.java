@@ -1,4 +1,4 @@
-package category.bst;
+package category.binarySearchAndTree;
 
 import java.util.Random;
 import java.util.Stack;

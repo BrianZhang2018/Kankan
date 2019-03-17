@@ -1,4 +1,4 @@
-package category.bst;
+package category.binarySearchAndTree;
 
 /**
  * Created by brianzhang on 2/27/19.

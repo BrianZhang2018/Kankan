@@ -1,4 +1,4 @@
-package category.bst;
+package category.binarySearchAndTree;
 
 import amazon.model.TreeNode;
 

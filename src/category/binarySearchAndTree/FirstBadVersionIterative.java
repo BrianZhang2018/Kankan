@@ -1,4 +1,4 @@
-package category.bst;
+package category.binarySearchAndTree;
 
 /**
  * https://leetcode.com/problems/first-bad-version/

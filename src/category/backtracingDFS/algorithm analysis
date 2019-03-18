@@ -15,7 +15,7 @@ https://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741376.html
   12:                 a[i] = j;
   13:               ...                         // 其他操作
   14:                 try(i+1);                 //move to next number
-  15:               回溯前的清理工作（如a[i]置空值等）;        // remove (size -1) for backtracing
+  15:               回溯前的清理工作（如a[i]置空值等）;        // remove (size -1) for backtracking
   16:               }
   17:          }
   18:      }

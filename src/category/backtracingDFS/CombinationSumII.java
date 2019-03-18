@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by brianzhang on 7/29/18.
+ * Created by brianzhang on 3/17/19.
  */
-public class CombinationSum {
+public class CombinationSumII {
 
     public List<List<Integer>> combinationSum(int[] nums, int target) {
         List<List<Integer>> res = new ArrayList();
@@ -25,9 +25,11 @@ public class CombinationSum {
             res.add(new ArrayList<Integer>(temp));
         } else {
             for (int i = start; i < nums.length; i++) {
+                if(i>start && nums[i] == nums[i-1])
+                    continue;
                 temp.add(nums[i]);
                 printout(temp);
-                dfs(nums, target - nums[i], i, temp, res); //组合就传 start，不要求sequence就传 i 给 start parameter
+                dfs(nums, target - nums[i], start+1, temp, res);
                 temp.remove(temp.size() - 1);
             }
         }
@@ -38,8 +40,8 @@ public class CombinationSum {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[]{2, 3, 6, 7};
+        int[] arr = new int[]{2, 2, 3, 6, 7};
         int target = 7;
-        System.out.println(new CombinationSum().combinationSum(arr, target));
+        System.out.println(new CombinationSumII().combinationSum(arr, target));
     }
 }

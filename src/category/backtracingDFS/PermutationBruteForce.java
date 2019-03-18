@@ -25,7 +25,8 @@ public class PermutationBruteForce {
         if (tempList.size() == nums.length) {
             list.add(new ArrayList<>(tempList));
         } else {
-            //遍历每一个数字(i), 每一个数字当成一层，遍历所有数字在这一层, 找出组合，然后回溯到上一层(上一个数字)
+            //遍历每一个数字(i), 每一个数字当成一层，回溯遍历所有数字当前这一层, 找出排列
+            //然后程序回溯到根，开始遍历下一个数字
             for (int i = 0; i < nums.length; i++) {
                 //看看SubsetII, you will understand
                 if (tempList.contains(nums[i])) {
@@ -33,10 +34,10 @@ public class PermutationBruteForce {
                 }
                 tempList.add(nums[i]);
                 backtrack(list, tempList, nums);
-                        System.out.println("i = : " + i);
+                       // System.out.println("i = " + i);
                         System.out.println("remove before: " + tempList);
                 tempList.remove(tempList.size() - 1);
-                         System.out.println("              remove after: " + tempList);
+                         System.out.println("               remove after: " + tempList);
             }
         }
     }

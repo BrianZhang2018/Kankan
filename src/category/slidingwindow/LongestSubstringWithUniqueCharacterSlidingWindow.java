@@ -37,7 +37,6 @@ public class LongestSubstringWithUniqueCharacterSlidingWindow {
                 begin = low;
             }
         }
-
         return s.substring(begin, end+1);
     }
 

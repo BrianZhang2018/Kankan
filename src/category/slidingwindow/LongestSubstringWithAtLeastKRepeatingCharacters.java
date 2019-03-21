@@ -5,12 +5,21 @@ package category.slidingwindow;
  */
 public class LongestSubstringWithAtLeastKRepeatingCharacters {
 
+    public static void main(String[] args) {
+        LongestSubstringWithAtLeastKRepeatingCharacters test = new LongestSubstringWithAtLeastKRepeatingCharacters();
+        System.out.println(test.longestSubstring("babaa", 2));
+    }
+
     public int longestSubstring(String s, int k) {
         int d = 0;
 
-        for (int numUniqueTarget = 1; numUniqueTarget <= 26; numUniqueTarget++)
-            d = Math.max(d, longestSubstringWithNUniqueChars(s, k, numUniqueTarget));
-
+        //brute force to loop all the situation, 1 unique character, 2 unique character, 3 character...
+        //return the max one
+        for (int numUniqueTarget = 1; numUniqueTarget <= 26; numUniqueTarget++){
+            int res = longestSubstringWithNUniqueChars(s, k, numUniqueTarget);
+            System.out.println(numUniqueTarget + ": " + res);
+            d = Math.max(d, res);
+        }
         return d;
     }
 

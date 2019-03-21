@@ -1,9 +1,9 @@
-package category.slidingwindowAnagram;
+package category.slidingwindow;
 
 /**
  * Created by brianzhang on 3/20/19.
  */
-public class LongestSubstringWiithAtLeastKRepeatingCharacters {
+public class LongestSubstringWithAtLeastKRepeatingCharacters {
 
     public int longestSubstring(String s, int k) {
         int d = 0;

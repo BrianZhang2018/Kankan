@@ -1,4 +1,4 @@
-package category.slidingwindowAnagram;
+package category.slidingwindow;
 
 import java.util.HashSet;
 
@@ -13,8 +13,6 @@ public class LongestSubstringWithUniqueCharacterSlidingWindow {
 
     public static void main(String[] args) {
         System.out.println(solution("nutdrgzdrkrvfdfcvzuunxwlzegjukhkjpvqruitobiahxhgdrpqttsebjsg", 11));
-
-        System.out.println(26&15);
     }
 
     public static final int CHAR_RANGE = 128;

@@ -1,4 +1,4 @@
-package category.slidingwindowAnagram;
+package category.slidingwindow;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -27,7 +27,7 @@ public class CombinationSum {
             for (int i = start; i < nums.length; i++) {
                 temp.add(nums[i]);
                 printout(temp);
-                dfs(nums, target - nums[i], i, temp, res); //组合就传 start，不要求sequence就传 i 给 start parameter
+                dfs(nums, target - nums[i], i, temp, res);
                 temp.remove(temp.size() - 1);
             }
         }

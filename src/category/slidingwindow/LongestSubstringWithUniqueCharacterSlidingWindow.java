@@ -12,7 +12,7 @@ import java.util.HashSet;
 public class LongestSubstringWithUniqueCharacterSlidingWindow {
 
     public static void main(String[] args) {
-        System.out.println(solution("nutdrgzdrkrvfdfcvzuunxwlzegjukhkjpvqruitobiahxhgdrpqttsebjsg", 11));
+        System.out.println(lengthOfLongestSubstringKDistinct("nutdrgzdrkrvfdfcvzuunxwlzegjukhkjpvqruitobiahxhgdrpqttsebjsg", 11));
     }
 
     public static final int CHAR_RANGE = 128;
@@ -21,29 +21,30 @@ public class LongestSubstringWithUniqueCharacterSlidingWindow {
         int begin=0, end =0;
         HashSet<Character> window = new HashSet<Character>();
         int[] freq = new int[CHAR_RANGE];
-        for(int low=0, high=0; high<s.length(); high++){
+        int  low=0, high=0;
+        while(high<s.length()){
             window.add(s.charAt(high));
             freq[s.charAt(high)]++;
-
             while(window.size() > k){
                 if(--freq[s.charAt(low)] == 0){
                     window.remove(s.charAt(low));
                 }
                 low++;
             }
-
             if(end - begin <high - low){
                 end = high;
                 begin = low;
             }
+            high++;
         }
+        System.out.println(begin + "  " + end);
         return s.substring(begin, end+1);
     }
 
     //Simple version
-    public int lengthOfLongestSubstringKDistinct(String s, int k) {
+    public static String lengthOfLongestSubstringKDistinct(String s, int k) {
         int[] charset = new int[128]; // assume ASCII
-        int maxLen = 0;
+        String res = null;
         for (int lo = 0, hi = 0, distinct = 0; hi < s.length(); hi++) {
             char letter = s.charAt(hi);
             charset[letter]++;
@@ -54,9 +55,9 @@ public class LongestSubstringWithUniqueCharacterSlidingWindow {
                 charset[letter]--;
                 if (charset[letter] == 0) distinct--;
             }
-
-            maxLen = hi - lo + 1;
+            System.out.println(lo + "  " + hi);
+            res = s.substring(lo, hi + 1);
         }
-        return maxLen;
+        return res;
     }
 }

@@ -7,7 +7,7 @@ public class LongestSubstringWithAtLeastKRepeatingCharacters {
 
     public static void main(String[] args) {
         LongestSubstringWithAtLeastKRepeatingCharacters test = new LongestSubstringWithAtLeastKRepeatingCharacters();
-        System.out.println(test.longestSubstring("babaa", 2));
+        System.out.println(test.longestSubstring("ababacb", 3));
     }
 
     public int longestSubstring(String s, int k) {
@@ -15,11 +15,18 @@ public class LongestSubstringWithAtLeastKRepeatingCharacters {
 
         //brute force to loop all the situation, 1 unique character, 2 unique character, 3 character...
         //return the max one
-        for (int numUniqueTarget = 1; numUniqueTarget <= 26; numUniqueTarget++){
+     /*   for (int numUniqueTarget = 1; numUniqueTarget <= 26; numUniqueTarget++){
             int res = longestSubstringWithNUniqueChars(s, k, numUniqueTarget);
             System.out.println(numUniqueTarget + ": " + res);
             d = Math.max(d, res);
+        }*/
+
+        for (int numUniqueTarget = 1; numUniqueTarget <= 26; numUniqueTarget++){
+            int res = longestKUniqueRepeatingCharacter(s, k, numUniqueTarget);
+            System.out.println(numUniqueTarget + ": " + res);
+            d = Math.max(d, res);
         }
+
         return d;
     }
 
@@ -48,5 +55,37 @@ public class LongestSubstringWithAtLeastKRepeatingCharacters {
         }
 
         return d;
+    }
+
+    public int longestKUniqueRepeatingCharacter(String s, int k, int cNum){
+        int low = 0, high = 0;
+        int[] repeatNum = new int[26];
+        int uniqueCNum = 0;
+        int uniqueKNum = 0;
+        int res = 0;
+
+        while(high < s.length()){
+            Character c = s.charAt(high);
+            if(repeatNum[c-'a']++ == 0)
+                uniqueCNum++;
+            if(repeatNum[c-'a'] == k)
+                uniqueKNum++;
+
+            while(uniqueCNum>cNum){
+                Character cl = s.charAt(low);
+                if(repeatNum[cl-'a']-- == k){
+                    uniqueKNum--;
+                }
+                if(repeatNum[cl-'a'] == 0){
+                    uniqueCNum--;
+                }
+                low++;
+            }
+            high++;
+            if(uniqueCNum == cNum && uniqueCNum == uniqueKNum){
+                res = Math.max(high-low, res);
+            }
+        }
+        return res;
     }
 }

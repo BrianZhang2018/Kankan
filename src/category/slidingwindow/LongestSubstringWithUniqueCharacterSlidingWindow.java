@@ -12,7 +12,7 @@ import java.util.HashSet;
 public class LongestSubstringWithUniqueCharacterSlidingWindow {
 
     public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstringKDistinct("nutdrgzdrkrvfdfcvzuunxwlzegjukhkjpvqruitobiahxhgdrpqttsebjsg", 11));
+        System.out.println(solution("nutdrgzdrkrvfdfcvzuunxwlzegjukhkjpvqruitobiahxhgdrpqttsebjsg", 11));
     }
 
     public static final int CHAR_RANGE = 128;
@@ -35,29 +35,31 @@ public class LongestSubstringWithUniqueCharacterSlidingWindow {
                 end = high;
                 begin = low;
             }
+
             high++;
         }
-        System.out.println(begin + "  " + end);
+        //System.out.println(begin + "  " + end);
         return s.substring(begin, end+1);
     }
 
     //Simple version
-    public static String lengthOfLongestSubstringKDistinct(String s, int k) {
+   /* public static String lengthOfLongestSubstringKDistinct(String s, int k) {
         int[] charset = new int[128]; // assume ASCII
         String res = null;
         for (int lo = 0, hi = 0, distinct = 0; hi < s.length(); hi++) {
             char letter = s.charAt(hi);
             charset[letter]++;
-            if (charset[letter] == 1) distinct++;
+            if (charset[letter] == 1)
+                distinct++;
 
             if (distinct > k) {
                 letter = s.charAt(lo++);
                 charset[letter]--;
-                if (charset[letter] == 0) distinct--;
+                if (charset[letter] == 0)
+                    distinct--;
             }
-            System.out.println(lo + "  " + hi);
             res = s.substring(lo, hi + 1);
         }
         return res;
-    }
+    }*/
 }

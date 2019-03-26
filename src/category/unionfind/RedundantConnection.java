@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * Union find is used to find the cycle
+ *
  * Created by brianzhang on 1/13/19.
  */
 public class RedundantConnection {
@@ -21,7 +23,7 @@ public class RedundantConnection {
 
     class UnionFindSet {
         private int[] parents;
-        private int[] ranks;
+        private int[] ranks; //tree heights
 
         public UnionFindSet(int n) {
             parents = new int[n + 1];
@@ -49,10 +51,15 @@ public class RedundantConnection {
             return true;
         }
 
+        //1. find the root node
+        //2. path compression
         public int find(int u) {
-
+            //(parents[u] == u) is the root node as the root node pointing to itself
+            // (and all the node was initiated as parents[u] = u in the beginning of this function)
             while (parents[u] != u) {
+                //parent point to the grandfater node
                 parents[u] = parents[parents[u]];
+                //assign the value grandfather node to u, then check again whether parents[u] == u in while condition
                 u = parents[u];
             }
             return u;

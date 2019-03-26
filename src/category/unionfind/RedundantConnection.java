@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Union find is used to detemine the cycle when add a new edge
+ * Union find is used to determine the cycle when add a new edge
  *
  * Created by brianzhang on 1/13/19.
  */

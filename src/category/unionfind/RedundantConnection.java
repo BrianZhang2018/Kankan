@@ -5,7 +5,9 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ *
  * Union find is used to determine the cycle when add a new edge
+ * Weighted union and path compression
  *
  * Created by brianzhang on 1/13/19.
  */
@@ -23,7 +25,7 @@ public class RedundantConnection {
 
     class UnionFindSet {
         private int[] parents;
-        private int[] ranks; //tree heights
+        private int[] ranks; //weighted: size of parent
 
         public UnionFindSet(int n) {
             parents = new int[n + 1];
@@ -39,7 +41,8 @@ public class RedundantConnection {
             int pv = find(v);
             if (pu == pv) return false;
 
-            if (ranks[pv] > ranks[pu])
+            //merge the small disjoint tree to big one by comparing the size - ranking
+            if (ranks[pv] > ranks[pu]) //
                 parents[pu] = pv;
             else if (ranks[pu] > ranks[pv])
                 parents[pv] = pu;

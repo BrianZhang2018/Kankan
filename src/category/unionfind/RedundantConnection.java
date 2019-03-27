@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- *
  * Union find is used to determine the cycle when add a new edge
  * Weighted union and path compression
  *
@@ -41,7 +40,8 @@ public class RedundantConnection {
             int pv = find(v);
             if (pu == pv) return false;
 
-            //merge the small disjoint tree to big one by comparing the size - ranking
+            //merge the small disjoint tree to big one by comparing the size (ranking)
+            //to flat the tree
             if (ranks[pv] > ranks[pu]) //
                 parents[pu] = pv;
             else if (ranks[pu] > ranks[pv])
@@ -54,13 +54,15 @@ public class RedundantConnection {
             return true;
         }
 
-        //1. find the root node
-        //2. path compression
+        /**
+         *   1. find the root node
+         *   2. path compression to flat the tree
+         */
         public int find(int u) {
             //(parents[u] == u) is the root node as the root node pointing to itself
             // (and all the node was initiated as parents[u] = u in the beginning of this function)
             while (parents[u] != u) {
-                //parent point to the grandfater node
+                //parent point to the grandfather node
                 parents[u] = parents[parents[u]];
                 //assign the value grandfather node to u, then check again whether parents[u] == u in while condition
                 u = parents[u];

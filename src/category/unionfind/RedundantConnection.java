@@ -5,8 +5,12 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ *
  * Union find is used to determine the cycle when add a new edge
  * Weighted union and path compression
+ *
+ * Kruskal’s Algorithm is also leveraged this algorithm
+ * https://algorithms.tutorialhorizon.com/kruskals-algorithm-minimum-spanning-tree-mst-complete-java-implementation/
  *
  * Created by brianzhang on 1/13/19.
  */

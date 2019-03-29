@@ -5,13 +5,12 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- *
  * Union find is used to determine the cycle when add a new edge
  * Weighted union and path compression
- *
+ * <p>
  * Kruskal’s Algorithm is also leveraged this algorithm
  * https://algorithms.tutorialhorizon.com/kruskals-algorithm-minimum-spanning-tree-mst-complete-java-implementation/
- *
+ * <p>
  * Created by brianzhang on 1/13/19.
  */
 public class RedundantConnection {
@@ -59,8 +58,8 @@ public class RedundantConnection {
         }
 
         /**
-         *   1. find the root node
-         *   2. path compression to flat the tree
+         * 1. find the root node
+         * 2. path compression to flat the tree
          */
         public int find(int u) {
             //(parents[u] == u) is the root node as the root node pointing to itself

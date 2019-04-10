@@ -7,7 +7,13 @@ import java.util.PriorityQueue;
 /**
  * I referenced the RedundantConnection.java and
  * https://algorithms.tutorialhorizon.com/kruskals-algorithm-minimum-spanning-tree-mst-complete-java-implementation/
- * <p>
+ * https://www.youtube.com/watch?v=5xosHRdxqHA
+ * weighted Union Find
+ *
+ * Time Complexity: O(ElogE) or O(ElogV). Sorting of edges takes O(ELogE) time. After sorting, we iterate through all edges and apply
+ * find-union algorithm. The find and union operations can take atmost O(LogV) time. So overall complexity is O(ELogE + ELogV) time.
+ * The value of E can be atmost O(V2), so O(LogV) are O(LogE) same. Therefore, overall time complexity is O(ElogE) or O(ElogV)
+ *
  * Created by brianzhang on 3/26/19.
  */
 public class KrushkalMinimumSpanningTree {
@@ -44,6 +50,8 @@ public class KrushkalMinimumSpanningTree {
         }
 
         public List<Edge> mst() {
+            //sort the edges by PriorityQeuue so that we start from the small weighted egdge to gurantee we get
+            //minimum spanning tree
             PriorityQueue<Edge> pq = new PriorityQueue<>((a, b) -> a.weight - b.weight);
             for (Edge edge : inputEdges)
                 pq.add(edge);

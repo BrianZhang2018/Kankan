@@ -1,4 +1,4 @@
-package category.BFS;
+package category.BFS.minimumsteps;
 
 import java.util.*;
 
@@ -66,30 +66,25 @@ public class CutOffTreesforGolfEventBFSGetMinSteps {
         //BFS 一层一层的搜索，一层代表一步, 无论你在这一层的哪个位置，上一层都可以通过一步到达, 所以到第几层，就是需要 层数-1 步
         while (!queue.isEmpty()) {
             int size = queue.size();
-            // //搜索当前层的所有点
-            for (int i = 0; i < size; i++) {
+            //搜索当前层的所有点
+            for (int i = 0; i < size; i++) { // only do this when you need know the result in which level, otherwise just do 'while(!queue.isEmpty())'
                 int[] curr = queue.poll();
-
                 if (curr[0] == tree[0] && curr[1] == tree[1]) {
                     return step;
                 }
-
                 for (int[] d : dicts) {
                     int nr = curr[0] + d[0];
                     int nc = curr[1] + d[1];
                     if (nr < 0 || nr >= m || nc < 0 || nc >= n
                             || forest.get(nr).get(nc) == 0 || visited[nr][nc]) continue;
-
                     //mark this element has been visited in current level, and not the target element, don't need visit again.
                     visited[nr][nc] = true;
                     //add the element of next level
                     queue.add(new int[]{nr, nc});
                 }
             }
-
             step++;
         }
-
         return -1;
     }
 }

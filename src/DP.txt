@@ -6,12 +6,10 @@
 
     Divide & Conquer - recursive
 
-
 2. DP = Recursive(e.g. Divide & Conquer) + Memorization   O(n^2)= 1 +2 +3+4+......n
 
 1) Divide & Conquer + Memorization 自顶向下
 2) 自底向上循环递推  bottom -> top,  two 'for' loop, time complexity is O(n^2). 也可以自顶向下（没怎么看）九章
-
 
 3.
 Backtracking is a more general purpose algorithm.

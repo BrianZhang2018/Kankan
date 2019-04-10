@@ -3,12 +3,12 @@ package category.DFS;
 import java.util.Stack;
 
 /**
+ * DFS + preOrder search
  * Created by brianzhang on 10/16/18.
  */
 public class DepthFirstSearch {
     /**
      * This method performs a depth first search on a binary tree
-     *
      * @param root
      */
     public void depthFirstSearch(Node root) {

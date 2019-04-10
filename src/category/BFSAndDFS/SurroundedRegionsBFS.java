@@ -11,8 +11,9 @@ public class SurroundedRegionsBFS {
         if (board == null || board.length == 0)
             return;
         int rows = board.length, columns = board[0].length;
-        int[][] direction = { { -1, 0 }, { 1, 0 }, { 0, 1 }, { 0, -1 } };
-        for (int i = 0; i < rows; i++)
+        int[][] direction = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
+        //flip 'O' on the border and other 'O' connected with it to 'B'
+        for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
                 if ((i == 0 || i == rows - 1 || j == 0 || j == columns - 1) && board[i][j] == 'O') {
                     Queue<Point> queue = new LinkedList<>();
@@ -31,14 +32,16 @@ public class SurroundedRegionsBFS {
                     }
                 }
             }
-        for (int i = 0; i < rows; i++)
+        }
+
+        for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
                 if (board[i][j] == 'B')
                     board[i][j] = 'O';
                 else if (board[i][j] == 'O')
                     board[i][j] = 'X';
             }
-
+        }
     }
 }
 

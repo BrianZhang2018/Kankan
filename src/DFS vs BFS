@@ -1,4 +1,4 @@
-depth-first search (DFS) is far more space efficient than breadth-first search (BFS)
+depth-first search (DFS) is "far more space efficient" than breadth-first search (BFS)
 
 DFS algorithm the maximum stack depth is equal to the maximum distance from the origin vertex
 in the DFS traversal. In BFS algorithm (as in the aforementioned pseudo-DFS) the maximum queue size
@@ -14,49 +14,49 @@ need stack depth of only 1 (!) to traverse this entire graph. See the difference
 This is what is meant by better space efficiency of DFS.
 
 套路：
-BFS:
+    BFS:
 
-boolean[].. visited
-Queue queue
-//direction matrix
-int[][] dicts = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
-queue.add(start)
-visited[start] = true
+    boolean[].. visited
+    Queue queue
+    //direction matrix
+    int[][] dicts = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
+    queue.add(start)
+    visited[start] = true
 
-while(!queue.isEmpty){
-   int size = queue.size;
-   //loop the current level
-   for(i=0; i<size; i++)
-      curr = queue.poll();
+    while(!queue.isEmpty){
+       int size = queue.size;
+       //loop the current level
+       for(i=0; i<size; i++)
+          curr = queue.poll();
 
-      for(int[] dict : dicts)
-           int nr = curr[0] + d[0];
-           int nc = curr[1] + d[1];
+          for(int[] dict : dicts)
+               int nr = curr[0] + d[0];
+               int nc = curr[1] + d[1];
 
-            if(some check condition)
-                continue;
-            visited[nr][nc] = true;
-            queue.add(new int[]{nr, nc});
-}
-example: 
+                if(some check condition)
+                    continue;
+                visited[nr][nc] = true;
+                queue.add(new int[]{nr, nc});
+    }
+example: /Users/brianzhang/workspace/WaWahaha/src/category/BFS/TheMaze.java
 =============================================
-DFS:
-boolean[].. visited
+    DFS:
+    boolean[].. visited
 
-for(row=0; row<rowLength; row++)
- for(column=0; column<columnLength; cloumn++)
-        if(meet the condition)
-              dfs(...)
+    for(row=0; row<rowLength; row++)
+     for(column=0; column<columnLength; cloumn++)
+            if(meet the condition)
+                  dfs(...)
 
-dfs(...){
-    if(exit condition)
-        return;
-    visited[].. = true;
-    dfs(grid, visited, i - 1, j);
-    dfs(grid, visited, i + 1, j);
-    dfs(grid, visited, i, j - 1);
-    dfs(grid, visited, i, j + 1);
-}
+    dfs(...){
+        if(exit condition)
+            return;
+        visited[].. = true;
+        dfs(grid, visited, i - 1, j);
+        dfs(grid, visited, i + 1, j);
+        dfs(grid, visited, i, j - 1);
+        dfs(grid, visited, i, j + 1);
+    }
 
 example:
 /Users/brianzhang/workspace/WaWahaha/src/category/DFS/NumsOfIsland.java

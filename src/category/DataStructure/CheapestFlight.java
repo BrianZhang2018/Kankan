@@ -11,15 +11,11 @@ import java.util.Queue;
 public class CheapestFlight {
 
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
-
         Map<Integer, Map<Integer, Integer>> prices = new HashMap();
-
         for (int[] f : flights) {
-
             if (!prices.containsKey(f[0])) {
                 prices.put(f[0], new HashMap<Integer, Integer>());
             }
-
             prices.get(f[0]).put(f[1], f[2]);
         }
 
@@ -27,7 +23,6 @@ public class CheapestFlight {
         queue.add(new int[]{0, src, k + 1});
 
         while (!queue.isEmpty()) {
-
             int[] temp = queue.remove();
             int price = temp[0];
             int city = temp[1];
@@ -37,9 +32,7 @@ public class CheapestFlight {
                 return price;
 
             if (stops > 0) {
-
                 Map<Integer, Integer> flight = prices.getOrDefault(city, new HashMap());
-
                 for (int key : flight.keySet()) {
                     queue.add(new int[]{price + flight.get(key), key, stops - 1});
                 }

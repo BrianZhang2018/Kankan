@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AddTwoNumberII",
+            "request": "launch",
+            "mainClass": "category.string.AddTwoNumberII",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxAreaOfIsland",
+            "request": "launch",
+            "mainClass": "category.highFrequent.MaxAreaOfIsland",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - KMPAlgorithm",
             "request": "launch",
             "mainClass": "category.string.KMPAlgorithm",

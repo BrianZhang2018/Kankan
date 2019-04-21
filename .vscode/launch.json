@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - KMPAlgorithm",
+            "request": "launch",
+            "mainClass": "category.string.KMPAlgorithm",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DiagonalTraverse",
+            "request": "launch",
+            "mainClass": "google.DiagonalTraverse",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RangeSumQueryPrefixSum",
+            "request": "launch",
+            "mainClass": "category.array.tricky.RangeSumQueryPrefixSum",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MergeInterval",
+            "request": "launch",
+            "mainClass": "category.array.tricky.MergeInterval",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TwoSum",
+            "request": "launch",
+            "mainClass": "category.easy.TwoSum",
+            "projectName": "WaWahaha_9c8aedd3"
+        }
+    ]
+}

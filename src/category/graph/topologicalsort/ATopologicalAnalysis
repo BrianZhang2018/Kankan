@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=x3mm5a_CwRM&list=PL7UgfcaT7w6siyCWafk5GfnYwkg-4_pcy&index=2&t=0s
+
+如果有环是不行的，因为vertex成为自己前驱vertex，就是自己要在自己之前完成，这个是不可能的。参照上面的video link 有详解。
+
+用来检查DAG (Directed acyclic graph)（有向无环图）
+
+
+Some statement for tree in graph theory:
+
+(1) A tree is an undirected graph in which any two vertices are
+connected by exactly one path.
+
+(2) Any connected graph who has n nodes with n-1 edges is a tree.
+
+(3) The degree of a vertex of a graph is the number of
+edges incident(incoming) to the vertex.
+
+(4) A leaf is a vertex of degree 1. An internal vertex is a vertex of
+degree at least 2.
+
+(5) A path graph is a tree with two or more vertices that is not
+branched at all.
+
+(6) A tree is called a rooted tree if one vertex has been designated
+the root.
+
+(7) The height of a rooted tree is the number of edges on the longest
+downward path between root and a leaf.

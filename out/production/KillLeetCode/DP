@@ -1,0 +1,49 @@
+1. DP = Recursion (e.g. Divide & Conquer) + Memorization   O(n^2)= 1 + 2 + 3 + 4+......n
+DP的两种解法：
+1) Recursion + Memorization - top-down (自顶向下)
+example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
+2) 自底向上循环递推  bottom -> top,  two 'for' loop, time complexity is O(n^2)
+example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
+
+2.
+Backtracking is a more general purpose algorithm.
+
+Depth-First search is a specific form of backtracking related to searching tree structures.
+
+3.
+Binary search tree:
+DFS, BFS
+
+DFS - Traverse
+    - Divide & Conquer - O(2^n)
+
+Divide & Conquer - Recursion
+
+4.
+表达式match题目的套路分析：
+problem: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/WildcardMatching.java
+Solution:
+DP: Top-down
+https://leetcode.com/problems/wildcard-matching/
+    '*' Matches any sequence of characters (including the empty sequences)
+              ==
+    '*' match '0' or more sequence
+
+    这个题的套路是：
+    1. initiate a two dimensional boolean array, text is row, pattern is column
+    2. initiate the first row
+    3. for(row:i ...)  这个题就有下面的三种case
+          for(column:j ...)
+      if(s[i] == p[j] || p[j] == '?'){
+             dp[i][j] = dp[i-1][j-1];
+        }else if (p[j]== '*' ){
+             dp[i][j] = dp[i-1][j] || dp[i][j-1];
+        }else{ // case 3: two characters are not equeal
+             dp[i][j] = false;
+         }
+
+Similar problem: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/RegularExpressionMatching.java
+解法分析：https://www.youtube.com/watch?v=3ZDZ-N0EPV0&t=76s
+
+5. Great Article for Maximal square problem
+ https://leetcode.com/articles/maximal-square/

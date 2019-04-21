@@ -1,7 +1,5 @@
 package category.array.tricky;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -12,7 +10,6 @@ import java.util.PriorityQueue;
  * Created by brianzhang on 12/29/18.
  */
 public class RangeSumQueryPrefixSum {
-
     public static void main(String[] args) {
         PriorityQueue<String> heap = new PriorityQueue<>();
     }

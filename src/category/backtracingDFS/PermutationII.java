@@ -10,7 +10,6 @@ import java.util.List;
 public class PermutationII {
 
     public List<List<Integer>> permuteUnique(int[] nums) {
-
         List<List<Integer>> res = new ArrayList();
         List<Integer> temp = new ArrayList();
         Arrays.sort(nums);
@@ -19,7 +18,6 @@ public class PermutationII {
     }
 
     public void backTrace(int nums[], List<Integer> temp, List<List<Integer>> res, boolean[] used) {
-
         if (nums.length == temp.size()) {
             //deep copy
             res.add(new ArrayList<Integer>(temp));

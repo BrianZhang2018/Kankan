@@ -24,19 +24,16 @@ This is what is meant by better space efficiency of DFS.
     visited[start] = true
 
     while(!queue.isEmpty){
-       int size = queue.size;
-       //loop the current level
-       for(i=0; i<size; i++)
-          curr = queue.poll();
+      curr = queue.poll();
 
-          for(int[] dict : dicts)
-               int nr = curr[0] + d[0];
-               int nc = curr[1] + d[1];
+      for(int[] dict : dicts)
+           int nr = curr[0] + d[0];
+           int nc = curr[1] + d[1];
 
-                if(some check condition)
-                    continue;
-                visited[nr][nc] = true;
-                queue.add(new int[]{nr, nc});
+            if(some check condition)
+                continue;
+            visited[nr][nc] = true;
+            queue.add(new int[]{nr, nc});
     }
 example: /Users/brianzhang/workspace/WaWahaha/src/category/BFS/TheMaze.java
 =============================================
@@ -60,3 +57,26 @@ example: /Users/brianzhang/workspace/WaWahaha/src/category/BFS/TheMaze.java
 
 example:
 /Users/brianzhang/workspace/WaWahaha/src/category/DFS/NumsOfIsland.java
+
+=================================================
+BFS： find shortest path
+
+BFS to find shortest path if graph or matrix is unweighted.
+Psudo code:
+...
+int level = 0;  //level also means need hwo much steps to find the element
+while(!queue.isEmpty){
+       int size = queue.size;
+       //loop the current level, the above normal BFS don't need this loop.
+       for(i=0; i<size; i++)
+          curr = queue.poll();
+       ...
+       if(found)
+           return level;
+       ...
+       level++;
+}
+...
+
+e.g /Users/brianzhang/workspace/WaWahaha/src/category/BFSAndDFS/ShortestBridge934.java
+/Users/brianzhang/workspace/WaWahaha/src/category/BFS/minimumsteps/CutOffTreesForGolfEventBFSGetMinSteps.java

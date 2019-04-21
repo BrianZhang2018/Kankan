@@ -15,7 +15,6 @@ public class NetworkDelayTime {
 
     public static void main(String[] args) {
         NetworkDelayTime test = new NetworkDelayTime();
-
         int[][] times = new int[][]{{2,1,5}, {2,3,1}, {3,1,1}, {3,4,1}};
         System.out.println(test.networkDelayTime(times, 4, 2));
     }

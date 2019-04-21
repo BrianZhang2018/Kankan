@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * 把BFS套路看懂了，做着题so easy。参阅：/Users/brianzhang/workspace/WaWahaha/src/DFS vs BFS
+ * 把BFS套路看懂了，做这题so easy。参阅：/Users/brianzhang/workspace/WaWahaha/src/DFS vs BFS
  *
  * Created by brianzhang on 4/9/19.
  */

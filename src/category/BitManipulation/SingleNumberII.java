@@ -1,7 +1,7 @@
 package category.BitManipulation;
 
 /**
- * https://leetcode.com/problems/single-number-ii/discuss/43297/Java-O(n)-easy-to-understand-solution-easily-extended-to-any-times-of-occurance
+ * https://leetcode.com/problems/single-number-ii/discuss/43297/Java-O(n)-easy-to-understand-Asolution-easily-extended-to-any-times-of-occurance
  * <p>
  * Created by brianzhang on 2/24/19.
  */

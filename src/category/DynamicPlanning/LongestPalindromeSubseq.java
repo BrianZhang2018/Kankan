@@ -68,7 +68,7 @@ public class LongestPalindromeSubseq {
     }
 
 
-    //solution-3
+    //Asolution-3
     //步骤最多，最细的一个
     //https://leetcode.com/problems/longest-palindromic-subsequence/discuss/99101/Straight-forward-Java-DP-solution
     //bottom-up approach

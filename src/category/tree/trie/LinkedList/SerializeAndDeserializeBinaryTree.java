@@ -9,7 +9,7 @@ import java.util.Queue;
  * Created by brianzhang on 7/21/18.
  */
 
-//level traverse solution
+//level traverse Asolution
 public class SerializeAndDeserializeBinaryTree {
 
     public static void main(String[] args) {

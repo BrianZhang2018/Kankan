@@ -1,12 +1,15 @@
 package category.DynamicPlanning;
 
 /**
+ * Compare with: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/WildcardMatching.java
  * Created by brianzhang on 3/10/19.
  */
 public class RegularExpressionMatching {
 
-    //https://www.youtube.com/watch?v=DqhPJ8MzDKM
-    //top-down from two dimensional matrix
+    /**
+     *  top-down from two dimensional matrix
+     *  https://www.youtube.com/watch?v=DqhPJ8MzDKM
+     */
     public boolean isMatch(String s, String p) {
 
         if(p == null && p.isEmpty()){
@@ -24,18 +27,19 @@ public class RegularExpressionMatching {
         //logic for dp transition
         for(int si=1; si<=s.length(); si++){
             for(int pj=1; pj<=p.length(); pj++){
-                if( p.charAt(pj-1) == '.' || p.charAt(pj-1) == s.charAt(si-1) ){
-                    dp[si][pj] = dp[si-1][pj-1]; //a[2][2] = a[1][1]
-                }else if(p.charAt(pj-1) == '*'){
-                    //case 1: '*' represent multiple preceding element
+                if( p.charAt(pj-1) == '.' || p.charAt(pj-1) == s.charAt(si-1) ){   //case 1
+                    dp[si][pj] = dp[si-1][pj-1];
+                }else if(p.charAt(pj-1) == '*'){                                   //case 2
+                    //case 1: '*' represent more preceding element
                     if(p.charAt(pj-2) == s.charAt(si-1) || p.charAt(pj-2) == '.'){
-                        //向前match //e.g. abcd      //e.g. abcdd -> (si-1) = abcd  向后match
-                                    //     abcde*    //     abcd* -> (pj) = abcd*
+                        //match preceding  e.g. abcd : abcde* =>  dp[si][pj-2]
+                        //match zero: e.g. abcdd -> (si-1) = abcd, abcd* -> (pj) = abcd*
                         dp[si][pj] = dp[si][pj-2] || dp[si-1][pj];
                     }else{//case 2: '*' means zero
-
                         dp[si][pj] = dp[si][pj-2];
                     }
+                }else{                                                              //case 3
+                    dp[si][pj]=false;
                 }
             }
         }

@@ -28,7 +28,6 @@ public class CombinationSumII {
                 if(i>start && nums[i] == nums[i-1])
                     continue;
                 temp.add(nums[i]);
-                printout(temp);
                 dfs(nums, target - nums[i], start+1, temp, res);
                 temp.remove(temp.size() - 1);
             }

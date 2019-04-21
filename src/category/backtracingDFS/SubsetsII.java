@@ -18,7 +18,6 @@ public class SubsetsII {
     }
 
     public List<List<Integer>> subsetsWithDup(int[] nums) {
-
         List<List<Integer>> res = new ArrayList();
         //sort the nums so that the nums[i] == nums[i - 1] can be used to check the duplicate number
         Arrays.sort(nums);
@@ -28,7 +27,9 @@ public class SubsetsII {
 
     private void backTrack(int[] nums, int start, List<List<Integer>> res, List<Integer> tmpList) {
         res.add(new ArrayList<Integer>(tmpList));
-
+        for(int p : tmpList)
+            System.out.print(p + " ,");
+        System.out.println("/r");
         //** i = start
         for (int i = start; i < nums.length; i++) {
             if (i > start && nums[i] == nums[i - 1])

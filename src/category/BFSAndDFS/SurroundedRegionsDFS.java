@@ -3,8 +3,7 @@ package category.BFSAndDFS;
 /**
  * Solved this by myself referring the NumsOfIsland question
  * /Users/brianzhang/workspace/WaWahaha/src/category/DFS/NumsOfIsland.java
- *
- *
+ * https://leetcode.com/problems/surrounded-regions/discuss/41708/JAVA-Easy-Version-To-UnderStand!!!!!!!!!!!!
  * Created by brianzhang on 4/5/19.
  */
 public class SurroundedRegionsDFS {
@@ -14,7 +13,7 @@ public class SurroundedRegionsDFS {
         int rows = board.length;
         int columns = board[0].length;
         //Firstly, turn all board node from the 'O' to 'B' and also turn their
-        // adjacent node by leveraging the dfs to traversal
+        //adjacent node by leveraging the dfs to traversal
         for(int i=0;i < rows; i++){
             for(int j=0; j< columns; j++){
                 if(i== 0 || i == rows-1 || j==0 || j == columns-1 && (board[i][j] == 'O') ){

@@ -38,7 +38,7 @@ public class FlattenLinkedList {
         flatten(right);
     }
 
-    //solution 2
+    //Asolution 2
     /*
         此题还有不用递归方法解决的方法，那就是使用栈。
         对整棵树一直向右子树方向遍历。当遍历的节点有右孩子时，就将其入栈。有左孩子时，将其更新为当前节点的右孩子，左孩子置空。当左孩子为空时而栈不空时，

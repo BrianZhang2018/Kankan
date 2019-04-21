@@ -11,13 +11,13 @@ import java.util.Set;
 public class WordBreakDP {
 
     public static void main(String[] args) {
-        //solution-1
+        //Asolution-1
         HashSet<String> hashSet = new HashSet<>();
         hashSet.add("leet");
         hashSet.add("co");
         System.out.println(wordBreak("leetco", hashSet));
 
-        //solution-2
+        //Asolution-2
         System.out.println(wordBreakDPMem("leetco", hashSet, new HashMap<String, Boolean>()));
     }
 

@@ -19,7 +19,6 @@ public class MaxAreaOfIsland {
     private int maxArea = 0;
 
     public int maxAreaOfIsland(int[][] grid) {
-
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == 1) {
@@ -36,17 +35,14 @@ public class MaxAreaOfIsland {
         if (i >= grid.length || j >= grid[0].length || j < 0 || i < 0) {
             return 0;
         }
-
         if (grid[i][j] == 1) {
             grid[i][j] = 2;
             return 1 + dfs(grid, i + 1, j) + dfs(grid, i, j + 1) + dfs(grid, i - 1, j) + dfs(grid, i, j - 1);
         }
-
         return 0;
     }
 
     //another solution which base on the 'Numbers of Island I'
-
     public int maxAreaOfIsland1(int[][] grid) {
 
         for (int i = 0; i < grid.length; i++) {

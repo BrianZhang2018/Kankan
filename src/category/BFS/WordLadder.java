@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by brianzhang on 8/20/18.
  * <p>
- * right solution, but Time Limit Exceeded in Leetcode, (30/39 test cases passed)
+ * right Asolution, but Time Limit Exceeded in Leetcode, (30/39 test cases passed)
  */
 class WordNode {
     String word;

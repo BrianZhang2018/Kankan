@@ -34,7 +34,7 @@ public class FlattenLinkedList {
         }
     }
 
-    //solution-2
+    //Asolution-2
     TreeNode prev = null;
 
     public void flatten1(TreeNode root) {

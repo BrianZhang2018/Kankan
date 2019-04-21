@@ -22,11 +22,10 @@ public class CombinationSum {
         if (target < 0)
             return;
         else if (target == 0) {
-            res.add(new ArrayList<Integer>(temp));
+            res.add(new ArrayList<Integer>(temp));  //need deep copy as here the 'temp' list is reference will be changed in recursive
         } else {
             for (int i = start; i < nums.length; i++) {
                 temp.add(nums[i]);
-                printout(temp);
                 dfs(nums, target - nums[i], i, temp, res);
                 temp.remove(temp.size() - 1);
             }

@@ -1,7 +1,7 @@
 package category.suffixArray;
 
 /**
- * solution source:
+ * Asolution source:
  * https://www.geeksforgeeks.org/longest-repeating-and-non-overlapping-substring/
  * <p>
  * algorithm video course:

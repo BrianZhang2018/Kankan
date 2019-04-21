@@ -24,7 +24,7 @@ public class MergeListSolution {
     }
 
     /*
-        Common solution for merge tow lists, like merge two sorted list
+        Common Asolution for merge tow lists, like merge two sorted list
      */
     public ListNode mergeTwoList(ListNode l1, ListNode l2) {
 

@@ -3,7 +3,7 @@ package category.slidingwindow;
 import java.util.HashSet;
 
 /**
- * Sliding window solution
+ * Sliding window Asolution
  * related problem: https://www.techiedelight.com/sliding-window-problems/
  *
  * Leetcode 340

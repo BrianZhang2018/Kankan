@@ -3,7 +3,7 @@ package category.DynamicPlanning.TrianleMiniPath;
 import java.util.List;
 
 /**
- * DP -> Divide & Conquer + Memorization for this solution
+ * DP -> Divide & Conquer + Memorization for this Asolution
  * <p>
  * Created by brianzhang on 9/9/18.
  */

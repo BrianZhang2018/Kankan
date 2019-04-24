@@ -2,6 +2,26 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ThreeSumClosest",
+            "request": "launch",
+            "mainClass": "category.array.ThreeSumClosest"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ThreeSumClosest",
+            "request": "launch",
+            "mainClass": "category.array.ThreeSumClosest",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AddTwoNumbersII",
+            "request": "launch",
+            "mainClass": "category.linkedList.AddTwoNumbersII",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - AddTwoNumberII",
             "request": "launch",
             "mainClass": "category.string.AddTwoNumberII",

@@ -1,10 +1,21 @@
 package category.linkedList;
 
+import java.util.BitSet;
+
 /**
+ * https://leetcode.com/problems/add-two-numbers-ii/
  * Solution: reverse the linkedlist + carry the number
  * stack can be another solution
  */
 public class AddTwoNumbersII {
+
+    public static void main(String[] args) {
+        BitSet bitSet = new BitSet(2147483647);
+        bitSet.set(100);
+        
+
+        System.out.println(bitSet.length());
+    }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null)

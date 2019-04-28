@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LongestIncreasingPathInMatrix",
+            "request": "launch",
+            "mainClass": "category.DFS.LongestIncreasingPathInMatrix"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ThreeSumClosest",
             "request": "launch",
             "mainClass": "category.array.ThreeSumClosest"

@@ -21,7 +21,7 @@ public class ThreeSumClosest{
         //give arbitary result
         int result = num[0] + num[1] + num[num.length-1];
         Arrays.sort(num);
-        //'i' is left
+        //'i' is the left
         for (int i = 0; i < num.length - 2; i++) {
             int right = i + 1, end = num.length - 1;
             while (right < end) {

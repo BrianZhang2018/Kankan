@@ -1,7 +1,9 @@
 package category.DFS;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by brianzhang on 2/10/19.
@@ -44,39 +46,32 @@ public class MaxAreaOfIsland {
 
     //another solution which base on the 'Numbers of Island I'
     public int maxAreaOfIsland1(int[][] grid) {
-
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == 1) {
                     //if you do int currArea = 0, which won't work as you pass value as value to method
                     //rather than pass a reference as value to the method. So, all dfs method in the dfs
-                    //only get the copy of primitive value, but if you do pass object reference here (e.g. List)
+                    //only get the copy of primitive value, but if you do pass object reference here (e.g. List, Map)
                     //, all dfs methods will get a reference copy for the object so that they all pointing to the same object in heap
                     // the change on that object will be reflected other methods as they are pointing the same object, booooom!
-                    List<Integer> currArea = new ArrayList<Integer>();
+                    Map<String, Integer> currArea = new HashMap<String, Integer>();
+                    currArea.put("currArea", 0);
                     dfs1(grid, i, j, currArea);
-                    if (currArea.get(currArea.size() - 1) > maxArea)
-                        maxArea = currArea.get(currArea.size() - 1);
+                    if (currArea.get("currArea") > maxArea)
+                        maxArea = currArea.get("currArea");
                 }
             }
         }
         return maxArea;
     }
 
-    public void dfs1(int[][] grid, int i, int j, List<Integer> currArea) {
-        if (i >= grid.length || j >= grid[0].length || j < 0 || i < 0) {
+    public void dfs1(int[][] grid, int i, int j, Map<String, Integer> currArea) {
+        if (i >= grid.length || j >= grid[0].length || j < 0 || i < 0 || grid[i][j] == 2) {
             return;
         }
 
         if (grid[i][j] == 1) {
-            if (currArea.size() == 0)
-                currArea.add(1);
-            else{
-                int temp = currArea.get(currArea.size() - 1);
-                temp++;
-                currArea.add(temp);
-            }
-
+            currArea.put("currArea", currArea.get("currArea") + 1);
             grid[i][j] = 2;
             dfs1(grid, i + 1, j, currArea);
             dfs1(grid, i, j + 1, currArea);

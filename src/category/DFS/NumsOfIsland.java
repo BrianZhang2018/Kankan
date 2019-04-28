@@ -1,11 +1,14 @@
 package category.DFS;
 
-/**Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water
-and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid 
-are all surrounded by water.
+/**
+ * https://leetcode.com/problems/number-of-islands/
+ *
+    Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water
+    and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid
+    are all surrounded by water.
 
-http://blog.welkinlan.com/2015/04/09/number-of-islands-leetcode-java-dfs/
-Solution: Use the DFS algorithm to find all reachable nodes even in the different level in the graph.
+    http://blog.welkinlan.com/2015/04/09/number-of-islands-leetcode-java-dfs/
+    Solution: Use the DFS algorithm to find all reachable nodes even in the different level in the graph.
 */
 public class NumsOfIsland {
 	public int numIslands(char[][] grid) {

@@ -1,16 +1,19 @@
 package category.DFS;
 
 /**
+ * https://leetcode.com/problems/max-area-of-island/
  *
  * time complexity O(mn)
  * Created by brianzhang on 2/11/19.
  */
 public class MaxAreaOfIslandWithoutGlobalVariable {
+
     public int maxAreaOfIsland(int[][] grid) {
         int max_area = 0;
         for (int i = 0; i < grid.length; i++)
             for (int j = 0; j < grid[0].length; j++)
-                if (grid[i][j] == 1) max_area = Math.max(max_area, AreaOfIsland(grid, i, j));
+                if (grid[i][j] == 1)
+                    max_area = Math.max(max_area, AreaOfIsland(grid, i, j));
         return max_area;
     }
 

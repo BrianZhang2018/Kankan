@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ThreeWayQuickSort",
+            "request": "launch",
+            "mainClass": "category.divideAndConquer.ThreeWayQuickSort",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - QuickSort",
+            "request": "launch",
+            "mainClass": "category.divideAndConquer.QuickSort",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LongestIncreasingPathInMatrix",
             "request": "launch",
             "mainClass": "category.DFS.LongestIncreasingPathInMatrix"

@@ -7,6 +7,7 @@ import java.util.Arrays;
  * If the sum is less than target, it means we have to add a larger element so next element move to the next. 
  * If the sum is greater, it means we have to add a smaller element so last element move to the second last element.
  * doing this until the end. Each time compare the difference between sum and target, if it is less than minimum difference so far, then replace result with it, otherwise keep iterating.
+ * 
  * https://leetcode.com/problems/3sum-closest/discuss/7872/Java-solution-with-O(n2)-for-reference
  */
 

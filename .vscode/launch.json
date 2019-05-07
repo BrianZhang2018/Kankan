@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ProductOfArrayExceptSelf",
+            "request": "launch",
+            "mainClass": "category.array.ProductOfArrayExceptSelf",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MergeSortBottomUp",
+            "request": "launch",
+            "mainClass": "category.divideAndConquer.MergeSortBottomUp",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MergeSort",
+            "request": "launch",
+            "mainClass": "category.divideAndConquer.MergeSort",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ThreeWayQuickSort",
             "request": "launch",
             "mainClass": "category.divideAndConquer.ThreeWayQuickSort",

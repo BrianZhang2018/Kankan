@@ -1,8 +1,5 @@
 package category.divideAndConquer;
 
-import java.util.PriorityQueue;
-import java.util.Queue;
-
 /**
  * MergeSort is Divide and Conquer algorithm
  * <p>
@@ -19,7 +16,6 @@ public class MergeSort {
             System.out.print(i);
             System.out.print(" ");
         }
-
     }
 
     private int[] array;

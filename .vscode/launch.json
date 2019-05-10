@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - WordLadderTwoEndBFS",
+            "request": "launch",
+            "mainClass": "category.BFS.WordLadderTwoEndBFS",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HouseRobber",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.easyDP.HouseRobber",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ProductOfArrayExceptSelf",
             "request": "launch",
             "mainClass": "category.array.ProductOfArrayExceptSelf",

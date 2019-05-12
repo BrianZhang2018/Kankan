@@ -1,4 +1,4 @@
-package category.binarySearchAndTree;
+package category.binaryTreeAndBinarySerach;
 
 /**
  * https://leetcode.com/problems/first-bad-version/

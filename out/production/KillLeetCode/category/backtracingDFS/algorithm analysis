@@ -16,7 +16,7 @@ https://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741376.html
   12:                 a[i] = j;
   13:               ...                         // 其他操作
   14:                 try(i+1);                 // move to next number（很重要， 核心）
-  15:               回溯前，还原状态;    //如remove (size-1)th character from a[i], or recover a[i] or 置空a[i]值等。这些其实都是还原到之前的状态，然后看有没有更多的解
+  15:               回溯前的清理工作(e.g. 还原状态);    //如remove (size-1)th character from a[i], or recover a[i] or 置空a[i]值等。这些其实都是还原到之前的状态，然后看有没有更多的解
   16:               }
   17:          }
   18:      }

@@ -1,4 +1,4 @@
-package category.binarySearchAndTree;
+package category.binaryTreeAndBinarySerach;
 
 /**
  * Created by brianzhang on 2/18/19.

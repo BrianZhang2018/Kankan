@@ -3,7 +3,6 @@ package category.array;
 import category.model.ListNode;
 
 public class MergeTwoSortedArray {
-
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if(l1 == null || l2 == null)
             return l1 != null? l1 : l2 !=null ? l2 : null;
@@ -26,5 +25,4 @@ public class MergeTwoSortedArray {
         }
         return head.next;
     }
-
 }

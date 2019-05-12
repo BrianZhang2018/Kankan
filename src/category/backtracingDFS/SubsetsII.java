@@ -36,7 +36,6 @@ public class SubsetsII {
                 continue;
 
             tmpList.add(nums[i]);
-            //** i+1, not start +1
             backTrack(nums, i + 1, res, tmpList);
             tmpList.remove(tmpList.size() - 1);
         }

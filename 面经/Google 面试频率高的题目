@@ -32,7 +32,7 @@ http://www.1point3acres.com/bbs/thread-446944-1-1.html
 多个不重复的长方形内重复取点
 follow up：多个可能重复的长方形内随机取点
 频率：6
-莉蔻八五三（高速路车分cluster）-google 1point3acres
+莉蔻八五三（高速路车分cluster）-companies.google 1point3acres
 频率：5
 莉蔻八五期（雇工人）. visit 1point3acres for more.
 
@@ -46,7 +46,7 @@ follow up：多个可能重复的长方形内随机取点
 给一个国王家的family tree （n-ary tree），王位继承是先传国王最年长的儿子，假如最年长儿子死了，就传给死儿子最年长的儿子。。。如果这些人都不存在，再考虑国王次年长的儿子，以此类推。要求设计这样一棵树，死掉的人不要求删除，实现birth（）和输出王位继承顺序的method（死掉的人不在继承顺序结果里）。（及其变种）. 1point3acres
 频率：5
 Tree Isomorphism Problem (search in geeksforgeek)
-频率：5-google 1point3acres
+频率：5-companies.google 1point3acres
 给定一个multiple tree，以及需要删除的多个nodes，要求返回一个node的list，以便在nodes被删除之后可以找到这些nodes的child。
 例子：. Waral 博客有更多文章,
                 a

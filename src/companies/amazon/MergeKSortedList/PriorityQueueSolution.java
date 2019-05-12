@@ -1,4 +1,4 @@
-package amazon.MergeKSortedList;
+package companies.amazon.MergeKSortedList;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

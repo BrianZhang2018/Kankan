@@ -1,7 +1,7 @@
 package category.tree.trie.LinkedList;
 import java.util.List;
 import java.util.ArrayList;
-import amazon.model.TreeNode;
+import companies.amazon.model.TreeNode;
 
 /**
  * https://www.lintcode.com/problem/boundary-of-binary-tree/description

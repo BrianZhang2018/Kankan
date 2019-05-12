@@ -1,4 +1,4 @@
-package amazon;
+package companies.amazon;
 
 import java.util.Collections;
 import java.util.HashMap;

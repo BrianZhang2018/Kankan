@@ -1,9 +1,8 @@
-package amazon;
+package companies.amazon;
 
-import amazon.model.DLinkedListNode;
+import companies.amazon.model.DLinkedListNode;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
 /**

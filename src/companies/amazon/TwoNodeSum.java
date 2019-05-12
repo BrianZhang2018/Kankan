@@ -1,6 +1,6 @@
-package amazon;
+package companies.amazon;
 
-import amazon.model.TreeNode;
+import companies.amazon.model.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

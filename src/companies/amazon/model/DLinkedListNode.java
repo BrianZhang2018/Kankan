@@ -1,4 +1,4 @@
-package amazon.model;
+package companies.amazon.model;
 
 
 /**

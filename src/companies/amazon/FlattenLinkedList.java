@@ -1,6 +1,6 @@
-package amazon;
+package companies.amazon;
 
-import amazon.model.TreeNode;
+import companies.amazon.model.TreeNode;
 
 /**
  * Created by brianzhang on 7/18/18.

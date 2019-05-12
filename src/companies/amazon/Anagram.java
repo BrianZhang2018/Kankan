@@ -1,4 +1,4 @@
-package amazon;
+package companies.amazon;
 
 /**
  * Created by brianzhang on 7/8/18.

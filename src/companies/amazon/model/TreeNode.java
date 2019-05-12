@@ -1,4 +1,4 @@
-package amazon.model;
+package companies.amazon.model;
 
 /**
  * Created by brianzhang on 7/18/18.

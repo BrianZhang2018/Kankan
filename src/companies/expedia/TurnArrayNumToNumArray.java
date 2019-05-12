@@ -1,4 +1,4 @@
-package expedia;
+package companies.expedia;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

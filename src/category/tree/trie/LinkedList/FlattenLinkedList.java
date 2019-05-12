@@ -1,7 +1,6 @@
 package category.tree.trie.LinkedList;
 
-import amazon.model.TreeNode;
-import apple.laf.JRSUIUtils;
+import companies.amazon.model.TreeNode;
 
 import java.util.Stack;
 

@@ -1,6 +1,6 @@
 package category.binaryTreeAndBinarySerach;
 
-import amazon.model.TreeNode;
+import companies.amazon.model.TreeNode;
 
 /**
  * Created by brianzhang on 4/15/19.

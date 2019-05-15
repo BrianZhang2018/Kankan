@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SlidingWindowMedian",
+            "request": "launch",
+            "mainClass": "category.PriorityQueue.SlidingWindowMedian",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "practise.Test",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Test",
             "request": "launch",
             "mainClass": "category.array.Test",

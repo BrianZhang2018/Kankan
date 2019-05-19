@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FindKthMissingNumber",
+            "request": "launch",
+            "mainClass": "companies.google.FindKthMissingNumber",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SlidingWindowMedian",
             "request": "launch",
             "mainClass": "category.PriorityQueue.SlidingWindowMedian",

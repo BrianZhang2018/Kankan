@@ -11,8 +11,6 @@ public class RangePickWithWeight {
     public static void main(String[] args) {
         RangePickWithWeight test = new RangePickWithWeight(new int[]{1, 5, 2, 2});
         System.out.println(test.pickIndex());
-
-        Stack<Character> haha = new Stack();
     }
 
     Random random;

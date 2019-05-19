@@ -2,17 +2,27 @@ package category.PriorityQueue;
 
 import java.util.Collections;
 import java.util.PriorityQueue;
-
 /**
+ * https://leetcode.com/problems/find-median-from-data-stream/
+ * 
  * Created by brianzhang on 10/22/18.
  */
 public class FindmedianFromStream {
 
-    static PriorityQueue<Integer> minHeap = new PriorityQueue<>();//heap is a minimal heap by default
-    static PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());//change to a maximum heap
+    public static void main(String[] args) {
+
+        FindmedianFromStream test = new FindmedianFromStream();
+        test.addNum(1);
+        test.addNum(4);
+    }
+
+     //the num which greater than median
+     PriorityQueue<Integer> minHeap = new PriorityQueue();
+     //the num which less than median, so median is on the top.
+     PriorityQueue<Integer> maxHeap = new PriorityQueue(Collections.reverseOrder());
 
     // Adds a number into the data structure.
-    public static void addNum(int num) {
+    public void addNum(int num) {
         maxHeap.offer(num);
         minHeap.offer(maxHeap.poll());
         if (maxHeap.size() < minHeap.size())
@@ -20,16 +30,10 @@ public class FindmedianFromStream {
     }
 
     // Returns the median of current data stream
-    public static double findMedian() {
+    public double findMedian() {
         if (maxHeap.size() == minHeap.size())
             return (maxHeap.peek() + minHeap.peek()) / 2.0;
         else
             return maxHeap.peek();
     }
-
-    public static void main(String[] args) {
-        addNum(1);
-        addNum(4);
-    }
-
 }

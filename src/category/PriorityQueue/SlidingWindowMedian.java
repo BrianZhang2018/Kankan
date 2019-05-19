@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.PriorityQueue;
 
 /**
+ * Time complexity: O(nk)
  * https://leetcode.com/problems/sliding-window-median/
  */
 public class SlidingWindowMedian {
@@ -16,11 +17,10 @@ public class SlidingWindowMedian {
     }
 
     /**
-     * e.g.
+     * e.g.  median = (left.peek() + right.peek()) / 2
      *  left     right
      *   -1        1
      *   -3        3
-     *  median = (left.peek() + right.peek()) / 2
      */
     public double[] medianSlidingWindow(int[] nums, int k) {
         double[] result = new double[nums.length - k + 1];

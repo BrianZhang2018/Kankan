@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LongestSubstringwithoutRepeatingCharacters",
+            "request": "launch",
+            "mainClass": "category.slidingwindow.LongestSubstringwithoutRepeatingCharacters",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DecodeNumber",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.DecodeNumber",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SubsetsII",
+            "request": "launch",
+            "mainClass": "category.backtracingDFS.SubsetsII",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Caculator",
+            "request": "launch",
+            "mainClass": "category.string.Caculator",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FindKthMissingNumber",
             "request": "launch",
             "mainClass": "companies.google.FindKthMissingNumber",

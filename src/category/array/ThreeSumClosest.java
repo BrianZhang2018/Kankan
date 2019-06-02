@@ -14,6 +14,8 @@ import java.util.Arrays;
 public class ThreeSumClosest{
 
     public static void main(String[] args) {
+
+       System.out.println(3/2);
        System.out.println(threeSumClosest(new int[]{1,1,-1,-1,3}, -1));
     }
     public static int threeSumClosest(int[] num, int target) {

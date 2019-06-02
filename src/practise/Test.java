@@ -14,8 +14,7 @@ class Test {
         bits1.set(1);
         System.out.println(bits1);
         System.out.println(bits1.get(2));
+        System.out.println(Integer.valueOf('A') - 64);
+        System.out.println("ABC".substring(0,1));
     }
-
-
-
 }

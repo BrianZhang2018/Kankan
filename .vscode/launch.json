@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MinCostClimbingStairs",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.easyDP.MinCostClimbingStairs",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PopulatingNextRightPointerInEachNodeII",
+            "request": "launch",
+            "mainClass": "category.tree.PopulatingNextRightPointerInEachNodeII",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LongestSubstringwithoutRepeatingCharacters",
             "request": "launch",
             "mainClass": "category.slidingwindow.LongestSubstringwithoutRepeatingCharacters",

@@ -9,7 +9,6 @@ import java.util.*;
  * Step-2: use dfs to traverse the neighbors' map to get all the paths
  */
 public class WordLadder2 {
-
     public static void main(String[] args) {
         WordLadder2 wordLadder2 = new WordLadder2();
         System.out.println(wordLadder2.findLadders("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));

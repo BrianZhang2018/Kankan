@@ -1,4 +1,4 @@
-package category.tree.trie.LinkedList;
+package category.tree;
 
 /**
  * Interesting algorithm, not something from leetcode.

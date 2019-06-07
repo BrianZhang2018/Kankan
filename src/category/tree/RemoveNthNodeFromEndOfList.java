@@ -6,6 +6,9 @@ import category.model.ListNode;
  * Created by brianzhang on 9/16/18.
  */
 public class RemoveNthNodeFromEndOfList {
+    public static void main(String[] args) {
+
+    }
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0);
@@ -24,8 +27,5 @@ public class RemoveNthNodeFromEndOfList {
         second.next = second.next.next;
         return dummy.next;
     }
-
-    public static void main(String[] args) {
-
-    }
+   
 }

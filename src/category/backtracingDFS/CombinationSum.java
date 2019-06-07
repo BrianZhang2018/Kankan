@@ -10,8 +10,8 @@ import java.util.List;
 public class CombinationSum {
 
     public List<List<Integer>> combinationSum(int[] nums, int target) {
-        List<List<Integer>> res = new ArrayList();
-        List<Integer> temp = new ArrayList();
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        List<Integer> temp = new ArrayList<Integer>();
         Arrays.sort(nums);
         dfs(nums, target, 0, temp, res);
         return res;

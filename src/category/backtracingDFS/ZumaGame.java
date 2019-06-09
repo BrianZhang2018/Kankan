@@ -11,7 +11,6 @@ import java.util.Map;
  * Created by brianzhang on 4/15/19.
  */
 public class ZumaGame {
-
     public static void main(String[] args) {
         ZumaGame zumaGame = new ZumaGame();
         System.out.println(zumaGame.findMinStep("WWRRBBWW", "WRBRW"));

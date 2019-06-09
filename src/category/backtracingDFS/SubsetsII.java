@@ -30,7 +30,7 @@ public class SubsetsII {
         for(int p : tmpList)
             System.out.print(p + " ,");
         System.out.println("/r");
-        //** i = start
+
         for (int i = start; i < nums.length; i++) {
             if (i > start && nums[i] == nums[i - 1])
                 continue;

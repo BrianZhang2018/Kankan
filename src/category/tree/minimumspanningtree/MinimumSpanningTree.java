@@ -1,4 +1,4 @@
-package category.tree.trie.LinkedList.minimumspanningtree;
+package category.tree.minimumspanningtree;
 
 /**
  * https://github.com/zxqiu/leetcode-lintcode/blob/master/tree/Minimum_Spanning_Tree.java

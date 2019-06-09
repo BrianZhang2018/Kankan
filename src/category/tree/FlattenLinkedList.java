@@ -1,4 +1,4 @@
-package category.tree.trie.LinkedList;
+package category.tree;
 
 import companies.amazon.model.TreeNode;
 

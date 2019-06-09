@@ -1,4 +1,4 @@
-package category.tree.trie.LinkedList;
+package category.tree.trie;
 
 /**
  * a trie, also called digital tree, radix tree or prefix tree is a kind of search tree

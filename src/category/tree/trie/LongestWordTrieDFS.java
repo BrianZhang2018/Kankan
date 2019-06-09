@@ -1,4 +1,4 @@
-package category.tree.trie.LinkedList;
+package category.tree.trie;
 
 /**
  * Created by brianzhang on 11/5/18.

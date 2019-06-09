@@ -6,6 +6,9 @@ package category.DynamicPlanning.easyDP;
 public class MinCostClimbingStairs {
 
     public static void main(String[] args){
+        System.out.println(Integer.toBinaryString('A'));
+        System.out.println((int)('A'));
+        System.out.println((char)('a'^256));
         minCostClimbingStairs(new int[]{0,0,1,1});
     }
 

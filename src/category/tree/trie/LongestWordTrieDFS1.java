@@ -6,14 +6,13 @@ import java.util.HashMap;
  * Created by brianzhang on 11/4/18.
  */
 public class LongestWordTrieDFS1 {
-
-    HashMap<String, String> res = new HashMap<>();
-
     public static void main(String[] args) {
         String[] input = {"a", "banana", "app", "appl", "ap", "apply", "apple"};
         LongestWordTrieDFS1 longestWordTrieDFS1 = new LongestWordTrieDFS1();
         System.out.println(longestWordTrieDFS1.longestWord(input));
     }
+
+    HashMap<String, String> res = new HashMap<>();
 
     public String longestWord(String[] words) {
 

@@ -1,6 +1,7 @@
 package category.array;
 
 import java.util.Arrays;
+import java.util.*;
 
 /**
  * Similar to 3 Sum problem, use 3 pointers to point current element, next element and the last element. 
@@ -14,7 +15,34 @@ import java.util.Arrays;
 public class ThreeSumClosest{
 
     public static void main(String[] args) {
-       System.out.println(threeSumClosest(new int[]{1,1,-1,-1,3}, -1));
+
+        Map<String, Integer> people = new HashMap<>();
+        people.put("Jim", 25);
+        people.put("Scott", 28);
+        people.put("Anna", 23);
+
+        Map<String, Integer> test = new LinkedHashMap<>();
+        test.put("Anna", 23);
+        test.put("Jim", 25);
+        test.put("Scott", 28);
+       
+        for(Map.Entry<String, Integer> entry : test.entrySet()){
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+
+        List<Map.Entry<String, Integer>> lists = new LinkedList<Map.Entry<String, Integer>>(people.entrySet());
+        Collections.sort(lists, new Comparator<Map.Entry<Character, Integer>>() {
+            public int compare(Map.Entry<Character, Integer> o1, Map.Entry<Character, Integer> o2) {
+               return  o1.getValue().compareTo(o2.getValue());
+            }
+       });
+
+       StringBuilder sb = new StringBuilder();
+        for(Map.Entry<String, Integer> entry : lists){
+            sb.append(entry.getKey());
+        }
+
+        System.out.println(threeSumClosest(new int[]{1,1,-1,-1,3}, -1));
     }
     public static int threeSumClosest(int[] num, int target) {
         if(num == null || num.length <3)

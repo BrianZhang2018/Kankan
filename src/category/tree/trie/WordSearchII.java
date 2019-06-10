@@ -10,7 +10,8 @@ public class WordSearchII{
     public static List<String> findWords(char[][] board, String[] words) {
         List<String> ans = new LinkedList<>();
         TrieNode root = new TrieNode();
-        for (String word: words) insert(word, root);
+        for (String word: words) 
+            insert(word, root);
         
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
@@ -21,11 +22,13 @@ public class WordSearchII{
     }
     
     private static void findWords(char[][] board, TrieNode root, int i, int j, List<String> list) {
-        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length) return;
+        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length) 
+            return;
         
         char ch = board[i][j];
         int index = ch - 'a';
-        if (ch == '.' || root.children[index] == null) return;
+        if (ch == '.' || root.children[index] == null) 
+            return;
         
         root = root.children[index];
         if (root.word != null) {
@@ -44,7 +47,9 @@ public class WordSearchII{
     private static void insert(String word, TrieNode root) {
         for (char ch: word.toCharArray()) {
             int index = ch - 'a';
-            if (root.children[index] == null) root.children[index] = new TrieNode();
+            if (root.children[index] == null) 
+                root.children[index] = new TrieNode();
+
             root = root.children[index];
         }
         root.word = word;
@@ -54,5 +59,4 @@ public class WordSearchII{
         String word;
         TrieNode[] children = new TrieNode[26];
     }
-
 }

@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LongestWordTrieDFS",
+            "request": "launch",
+            "mainClass": "category.tree.trie.LongestWordTrieDFS",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MinCostClimbingStairs",
             "request": "launch",
             "mainClass": "category.DynamicPlanning.easyDP.MinCostClimbingStairs",

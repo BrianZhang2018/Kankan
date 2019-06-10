@@ -6,10 +6,13 @@ package category.DynamicPlanning.easyDP;
 public class MinCostClimbingStairs {
 
     public static void main(String[] args){
+
+        minCostClimbingStairs(new int[]{0,0,1,1});
+
+        //for fun
         System.out.println(Integer.toBinaryString('A'));
         System.out.println((int)('A'));
         System.out.println((char)('a'^256));
-        minCostClimbingStairs(new int[]{0,0,1,1});
     }
 
     public static int minCostClimbingStairs(int[] cost) {

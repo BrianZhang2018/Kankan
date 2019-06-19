@@ -6,7 +6,6 @@ package category.backtracingDFS;
  * Created by brianzhang on 10/8/18.
  */
 public class PermutationI2 {
-
     public static void main(String[] args) {
         String str = "ABC";
         int n = str.length();

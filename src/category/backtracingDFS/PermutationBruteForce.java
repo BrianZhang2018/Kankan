@@ -14,6 +14,11 @@ import java.util.List;
  */
 public class PermutationBruteForce {
 
+    public static void main(String[] args) {
+        int[] arr = new int[]{1, 2, 3};
+        System.out.println(permute(arr));
+    }
+
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         // Arrays.sort(nums); // not necessary
@@ -37,15 +42,10 @@ public class PermutationBruteForce {
                        // System.out.println("i = " + i);
                         System.out.println("remove before: " + tempList);
                 tempList.remove(tempList.size() - 1);
-                         System.out.println("               remove after: " + tempList);
+                        System.out.println("               remove after: " + tempList);
+                       
             }
         }
     }
 
-    public static void main(String[] args) {
-        int[] arr = new int[]{1, 2, 3};
-
-        System.out.println(permute(arr));
-
-    }
 }

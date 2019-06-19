@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FourSum",
+            "request": "launch",
+            "mainClass": "category.backtracingDFS.FourSum",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Subsets",
+            "request": "launch",
+            "mainClass": "category.backtracingDFS.Subsets",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PermutationBruteForce",
+            "request": "launch",
+            "mainClass": "category.backtracingDFS.PermutationBruteForce",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BestTimeToBuyAndSellStock",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.BestTimeToBuyAndSellStock",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LongestWordTrieDFS",
             "request": "launch",
             "mainClass": "category.tree.trie.LongestWordTrieDFS",

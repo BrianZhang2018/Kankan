@@ -19,7 +19,6 @@ public class Permutation{
 
         if (nums == null || nums.length == 0)
             return null;
-
         List<List<Integer>> result = new ArrayList();
         backTracing(nums, 0, result);
         return result;

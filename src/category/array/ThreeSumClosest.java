@@ -31,8 +31,8 @@ public class ThreeSumClosest{
         }
 
         List<Map.Entry<String, Integer>> lists = new LinkedList<Map.Entry<String, Integer>>(people.entrySet());
-        Collections.sort(lists, new Comparator<Map.Entry<Character, Integer>>() {
-            public int compare(Map.Entry<Character, Integer> o1, Map.Entry<Character, Integer> o2) {
+        Collections.sort(lists, new Comparator<Map.Entry<String, Integer>>() {
+            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
                return  o1.getValue().compareTo(o2.getValue());
             }
        });

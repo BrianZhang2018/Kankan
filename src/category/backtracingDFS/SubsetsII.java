@@ -10,15 +10,14 @@ import java.util.List;
  * Created by brianzhang on 7/29/18.
  */
 public class SubsetsII {
-
     public static void main(String[] args) {
         SubsetsII subsetsII = new SubsetsII();
-        int[] test = {1, 2, 3};
+        int[] test = {1, 2, 3}; 
         System.out.println(subsetsII.subsetsWithDup(test));
     }
 
     public List<List<Integer>> subsetsWithDup(int[] nums) {
-        List<List<Integer>> res = new ArrayList();
+        List<List<Integer>> res = new ArrayList<>();
         //sort the nums so that the nums[i] == nums[i - 1] can be used to check the duplicate number
         Arrays.sort(nums);
         backTrack(nums, 0, res, new ArrayList<Integer>());

@@ -14,6 +14,10 @@ import java.util.List;
  */
 
 public class Permutation{
+    public static void main(String[] args) {
+        int[] arr = new int[]{1, 2, 3};
+        System.out.println(new Permutation().permute(arr));
+    }
 
     public List<List<Integer>> permute(int[] nums) {
 
@@ -56,12 +60,6 @@ public class Permutation{
             result.add(i);
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        int[] arr = new int[]{1, 2, 3};
-
-        System.out.println(new Permutation().permute(arr));
     }
 }
 /*

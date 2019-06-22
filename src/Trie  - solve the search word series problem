@@ -29,3 +29,9 @@ Simple dfs: (refer the Trie.java)
 Backtracking is a more general purpose algorithm.
 
 Depth-First search is a specific form of backtracking related to searching tree structures.
+
+
+3. Solved problem
+search word, like palindrome    
+e.g. 
+https://leetcode.com/problems/palindrome-pairs/

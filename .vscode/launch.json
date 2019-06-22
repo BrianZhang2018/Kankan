@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DifferentWayToAddParentheses",
+            "request": "launch",
+            "mainClass": "category.divideAndConquer.DifferentWayToAddParentheses",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ExpressionAddOperators",
             "request": "launch",
             "mainClass": "category.backtracingDFS.ExpressionAddOperators",

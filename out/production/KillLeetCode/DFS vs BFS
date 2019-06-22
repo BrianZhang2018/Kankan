@@ -13,6 +13,8 @@ pseudo-DFS (i.e. if you simply replace the queue with a stack). But classic DFS 
 need stack depth of only 1 (!) to traverse this entire graph. See the difference? 1000 versus 1.
 This is what is meant by better space efficiency of DFS.
 
+BFS - level traverse  vs DFS - depth traverse
+
 套路：
     BFS:
 

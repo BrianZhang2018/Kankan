@@ -1,4 +1,4 @@
-package category.divideAndConquerRecursive;
+package category.DivideAndConquerRecursive;
 
 import java.util.Arrays;
 

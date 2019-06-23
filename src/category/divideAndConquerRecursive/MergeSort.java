@@ -1,4 +1,4 @@
-package category.divideAndConquerRecursive;
+package category.DivideAndConquerRecursive;
 
 /**
  * MergeSort is Divide and Conquer algorithm

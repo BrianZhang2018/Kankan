@@ -1,4 +1,4 @@
-package category.backtracingDFS;
+package category.BacktracingDFS;
 
 import java.util.List;
 import java.util.LinkedList;

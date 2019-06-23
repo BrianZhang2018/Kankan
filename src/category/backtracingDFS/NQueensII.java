@@ -1,4 +1,4 @@
-package category.backtracingDFS;
+package category.BacktracingDFS;
 
 /**
  *  Same idea with me for your reference

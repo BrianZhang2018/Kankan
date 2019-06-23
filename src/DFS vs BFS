@@ -1,3 +1,4 @@
+1.
 depth-first search (DFS) is "far more space efficient" than breadth-first search (BFS)
 
 DFS algorithm the maximum stack depth is equal to the maximum distance from the origin vertex
@@ -13,7 +14,15 @@ pseudo-DFS (i.e. if you simply replace the queue with a stack). But classic DFS 
 need stack depth of only 1 (!) to traverse this entire graph. See the difference? 1000 versus 1.
 This is what is meant by better space efficiency of DFS.
 
+2.
 BFS - level traverse  vs DFS - depth traverse
+
+3. 
+BFS related problems: 
+the shortest and the cost to move from one state to another is same, it is safe to assume that we can use BFS
+
+Note: find all possible paths or each cost differs, try to see if we can use Backtracking,
+    we need backtracking because we want to keep track of states between each call.
 
 套路：
     BFS:

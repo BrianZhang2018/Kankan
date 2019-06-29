@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Play",
+            "request": "launch",
+            "mainClass": "Play",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindmedianFromStream",
+            "request": "launch",
+            "mainClass": "category.PriorityQueue.FindmedianFromStream",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NextGreaterElement",
+            "request": "launch",
+            "mainClass": "category.MonotoneStack.NextGreaterElement",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TrimBST",
+            "request": "launch",
+            "mainClass": "category.tree.TrimBST",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - UniqueBinarySearchTrees",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.UniqueBinarySearchTrees",
+            "projectName": "WaWahaha_9c8aedd3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DifferentWayToAddParentheses",
             "request": "launch",
             "mainClass": "category.divideAndConquer.DifferentWayToAddParentheses",

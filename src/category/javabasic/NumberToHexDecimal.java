@@ -9,8 +9,9 @@ import java.util.Set;
 public class NumberToHexDecimal {
 
     public static void main(String[] args) {
-        System.out.println(toHex(26));
-
+        //System.out.println(toHex(26));
+        System.out.println(Math.sqrt(9));
+        System.out.println(Math.round(Math.sqrt(10)));
         Set<String> set = new HashSet<String>();
         //set.contains()
 

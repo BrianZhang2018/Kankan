@@ -4,6 +4,7 @@ import java.util.Stack;
 
 /**
  * Try to solve it as Monotone stack solution
+ * https://www.cnblogs.com/grandyang/p/4402392.html
  */
 public class TrappingRainWater{
 

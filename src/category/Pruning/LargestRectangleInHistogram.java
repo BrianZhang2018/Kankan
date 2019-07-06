@@ -1,4 +1,4 @@
-package category.MonotoneStack;
+package category.Pruning;
 
 import java.util.Stack;
 /**

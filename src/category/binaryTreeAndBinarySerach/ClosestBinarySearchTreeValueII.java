@@ -1,10 +1,10 @@
 package category.binaryTreeAndBinarySerach;
 
-import companies.amazon.model.TreeNode;
-
+import category.model.TreeNode;
 import java.util.*;
 
 /**
+ * https://www.lintcode.com/problem/closest-binary-search-tree-value-ii/description
  * Created by brianzhang on 2/11/19.
  */
 public class ClosestBinarySearchTreeValueII {

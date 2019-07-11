@@ -1,3 +1,6 @@
+// dp is used to get the number of the solution
+// backtracking can list all the solution
+
 1. DP = Recursion (e.g. Divide & Conquer) + Memorization   O(n^2)= 1 + 2 + 3 + 4+......n
 DP的两种解法：
 1) Recursion + Memorization - top-down (自顶向下)

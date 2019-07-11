@@ -11,17 +11,14 @@ public class FlipEquivalentBinaryTrees{
         
         if(root1 == null && root2 == null)
             return true;
-        
         if(root1 == null || root2 == null)
             return false;
-        
         if(root1.val != root2.val)
             return false;
         
         //不进行翻转
         boolean l1 = flipEquiv(root1.left, root2.left);
         boolean r1 = flipEquiv(root1.right, root2.right);
-        
         //进行翻转
         boolean l2 = flipEquiv(root1.left, root2.right);
         boolean r2 = flipEquiv(root1.right, root2.left);

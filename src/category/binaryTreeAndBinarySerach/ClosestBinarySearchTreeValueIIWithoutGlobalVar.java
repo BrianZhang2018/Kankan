@@ -1,10 +1,10 @@
 package category.binaryTreeAndBinarySerach;
 
-import companies.amazon.model.TreeNode;
-
+import category.model.TreeNode;
 import java.util.*;
 
 /**
+ * https://www.lintcode.com/problem/closest-binary-search-tree-value-ii/description
  * Created by brianzhang on 2/11/19.
  */
 public class ClosestBinarySearchTreeValueIIWithoutGlobalVar {
@@ -37,6 +37,7 @@ public class ClosestBinarySearchTreeValueIIWithoutGlobalVar {
             set.add(root.val);
         } else if (diff < maxHeap.peek()) {
             double x = maxHeap.poll();
+            //abs, so the value may "target + x" or "target - x"
             if (!set.remove((int) (target + x)))
                 set.remove((int) (target - x));
             maxHeap.offer(diff);

@@ -1,4 +1,5 @@
 package category.MonotoneStack;
+
 //https://leetcode.wang/leetCode-85-Maximal-Rectangle.html
 public class MaximalRectangle{
     public static void main(String[] args){

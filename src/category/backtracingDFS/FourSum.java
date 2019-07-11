@@ -7,7 +7,7 @@ import java.util.*;
 public class FourSum{
     public static void main(String[] args){
         FourSum test = new FourSum();
-        int[] data = {1,0,-1,0,-2,2};
+        int[] data = {1,0,1,0,-2,2};
         System.out.println(test.fourSum(data, 0));
     }
 

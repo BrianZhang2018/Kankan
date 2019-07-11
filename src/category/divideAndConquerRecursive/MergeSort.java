@@ -6,10 +6,8 @@ package category.DivideAndConquerRecursive;
  * Time Complexity:	O(nlog(n))
  */
 public class MergeSort {
-
     public static void main(String a[]) {
 
-        int[] inputArr = {11, 23, 13, 24, 45, 98, 54, 28, 65, 43};
         MergeSort mms = new MergeSort();
         mms.sort(inputArr);
         for (int i : inputArr) {

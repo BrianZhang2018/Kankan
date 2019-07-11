@@ -7,7 +7,7 @@ import java.util.Stack;
  * Monotone stack solution
  * DP solution same with TrappingRainWater, and this is fast
  */
-public class LargestRectangleInHistogram{
+public class LargestRectangleInHistogramStack{
     public static void main(String[] args){
        System.out.println(largestRectangleArea(new int[]{1,2,3,4,5,6}));
     }

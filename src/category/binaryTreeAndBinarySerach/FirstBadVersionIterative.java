@@ -3,13 +3,18 @@ package category.binaryTreeAndBinarySerach;
 /**
  * https://leetcode.com/problems/first-bad-version/
  * <p>
+ * binary serach condition comparation
+ * 
  * Created by brianzhang on 2/18/19.
  */
 public class FirstBadVersionIterative {
     
+
     public int firstBadVersion(int n) {
         int start = 1, end = n;
-        while (start <= end) { // compare with the below comment part to understand the condition
+
+// compare with the below comment part to understand the condition
+        while (start <= end) { 
             int mid = start + (end - start) / 2;
             if (isBadVersion(mid))
                 end = mid - 1;

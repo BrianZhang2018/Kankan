@@ -35,6 +35,7 @@ public class FourSumSolution{
         
         for (int index = start; index < nums.length; index++) {
             
+            //I dont think this condition should be used here.
             if (index > start && nums[index] == nums[index-1])
                 continue;
             

@@ -1,11 +1,16 @@
 package category.greedy;
 
 /**
+ * Greedy
+ * https://leetcode.com/problems/jump-game-ii/
  * Created by brianzhang on 4/7/19.
  */
 public class JumpGameII {
+    public static void main(String[] args){
+        System.out.println(jump(new int[]{2,3,1,1,4}));
+    }
 
-    public int jump(int[] nums) {
+    public static int jump(int[] nums) {
         if(nums == null || nums.length == 0)
             return 0;
 

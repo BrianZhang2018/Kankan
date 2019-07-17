@@ -1,5 +1,8 @@
-// dp is used to get the number of the solution
-// backtracking can list all the solution
+dp is used to get the number of the solution
+backtracking can list all the solution
+
+DP bottom-up (tabulation; iterative)  vs top-down (Memoization; recursive)
+https://www.geeksforgeeks.org/tabulation-vs-memoization/
 
 1. DP = Recursion (e.g. Divide & Conquer) + Memorization   O(n^2)= 1 + 2 + 3 + 4+......n
 DP的两种解法：
@@ -53,3 +56,9 @@ Similar problem: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanni
 
 非常好的DP讲解：
 https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems.
+
+bottom-up, top-down explanation
+https://leetcode.com/articles/jump-game/
+
+bottom-up: start from small subproblem and accumulate the answer as tabulation way, then finally reach to destination problem
+top-down: directly try to solve the problem, and store the value in the memo, and recursively solve the problem.

@@ -1,6 +1,8 @@
 package category.greedy;
 
 /**
+ * https://leetcode.com/problems/jump-game/
+ * 
  * Created by brianzhang on 4/6/19.
  */
 public class JumpGameGreedy {

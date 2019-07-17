@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * bottom up has the better performance as don't need the recursion
- * Done this referring the leetcode: https://leetcode.com/articles/jump-game/
+ * Done this referring the leetcode 55: https://leetcode.com/articles/jump-game/
  *
  * The observation to make here is that we only ever jump to the right.
  * This means that if we start from the right of the array, every time we will query a position to our right,

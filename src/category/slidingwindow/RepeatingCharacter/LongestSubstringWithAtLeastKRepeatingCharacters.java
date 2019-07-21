@@ -1,13 +1,15 @@
-package category.slidingwindow;
+package category.slidingwindow.RepeatingCharacter;
 
 /**
+ * https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
+ * 
  * Created by brianzhang on 3/20/19.
  */
 public class LongestSubstringWithAtLeastKRepeatingCharacters {
-
     public static void main(String[] args) {
         LongestSubstringWithAtLeastKRepeatingCharacters test = new LongestSubstringWithAtLeastKRepeatingCharacters();
-        System.out.println(test.longestSubstring("ababacb", 3));
+        //System.out.println(test.longestSubstring("ababbc", 2));
+        System.out.println(String.valueOf(123));
     }
 
     public int longestSubstring(String s, int k) {
@@ -23,7 +25,7 @@ public class LongestSubstringWithAtLeastKRepeatingCharacters {
 
         for (int numUniqueTarget = 1; numUniqueTarget <= 26; numUniqueTarget++){
             int res = longestKUniqueRepeatingCharacter(s, k, numUniqueTarget);
-            System.out.println(numUniqueTarget + ": " + res);
+            //System.out.println(numUniqueTarget + ": " + res);
             d = Math.max(d, res);
         }
 

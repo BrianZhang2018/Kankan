@@ -1,4 +1,4 @@
-package category.slidingwindow;
+package category.slidingwindow.UniqueCharacter;
 
 import java.util.HashSet;
 

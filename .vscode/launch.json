@@ -2,6 +2,36 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LongestSubstringWithAtLeastKRepeatingCharacters",
+            "request": "launch",
+            "mainClass": "category.slidingwindow.RepeatingCharacter.LongestSubstringWithAtLeastKRepeatingCharacters"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestSubstringWithAtLeastKRepeatingCharacters",
+            "request": "launch",
+            "mainClass": "category.slidingwindow.LongestSubstringWithAtLeastKRepeatingCharacters"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestSubstringwithoutRepeatingCharacters",
+            "request": "launch",
+            "mainClass": "category.slidingwindow.LongestSubstringwithoutRepeatingCharacters"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestSubstringWithUniqueCharacterSlidingWindow",
+            "request": "launch",
+            "mainClass": "category.string.LongestSubstringWithUniqueCharacterSlidingWindow"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestCommonPrefix",
+            "request": "launch",
+            "mainClass": "category.string.LongestCommonPrefix"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ThreeSum",
             "request": "launch",
             "mainClass": "category.Pointer.ThreeSum"

@@ -6,7 +6,7 @@ import java.util.HashSet;
  * Sliding window Asolution
  * related problem: https://www.techiedelight.com/sliding-window-problems/
  *
- * Leetcode 340
+ * Leetcode 340 - Longest Substring with At Most K Distinct Characters
  * Created by brianzhang on 3/3/19.
  */
 public class LongestSubstringWithUniqueCharacterSlidingWindow {
@@ -21,7 +21,7 @@ public class LongestSubstringWithUniqueCharacterSlidingWindow {
         int begin=0, end =0;
         HashSet<Character> window = new HashSet<Character>();
         int[] freq = new int[CHAR_RANGE];
-        int  low=0, high=0;
+        int low=0, high=0;
         while(high<s.length()){
             window.add(s.charAt(high));
             freq[s.charAt(high)]++;

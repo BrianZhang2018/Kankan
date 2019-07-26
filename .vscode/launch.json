@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MinimumWindowSubstring",
+            "request": "launch",
+            "mainClass": "category.slidingwindow.MinimumWindowSubstring"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LongestSubstringWithAtLeastKRepeatingCharacters",
             "request": "launch",
             "mainClass": "category.slidingwindow.RepeatingCharacter.LongestSubstringWithAtLeastKRepeatingCharacters"

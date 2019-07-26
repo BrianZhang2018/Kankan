@@ -9,14 +9,14 @@ public class LongestSubstringWithAtLeastKRepeatingCharacters {
     public static void main(String[] args) {
         LongestSubstringWithAtLeastKRepeatingCharacters test = new LongestSubstringWithAtLeastKRepeatingCharacters();
         //System.out.println(test.longestSubstring("ababbc", 2));
-        System.out.println(String.valueOf(123));
     }
 
     public int longestSubstring(String s, int k) {
         int d = 0;
 
-        //brute force to loop all the situation, 1 unique character, 2 unique character, 3 character...
-        //return the max one
+        //brute force to loop all the situation, 
+        //like 1 unique character, 2 unique character ... which repeat k times or moth k times in substring
+
      /*   for (int numUniqueTarget = 1; numUniqueTarget <= 26; numUniqueTarget++){
             int res = longestSubstringWithNUniqueChars(s, k, numUniqueTarget);
             System.out.println(numUniqueTarget + ": " + res);
@@ -36,10 +36,10 @@ public class LongestSubstringWithAtLeastKRepeatingCharacters {
         int[] map = new int[128];
         // counter 1, number of unique character
         int numUnique = 0;
-        // counter 2, number of character which frequent is more than K
+        // counter 2, number of character which frequent is equal or more than K
         int numNoLessThanK = 0;
         int begin = 0, end = 0;
-        int d = 0;
+        int maxLength = 0;
 
         while (end < s.length()) {
             if (map[s.charAt(end)]++ == 0) numUnique++; // increment map[c] after this statement
@@ -53,10 +53,10 @@ public class LongestSubstringWithAtLeastKRepeatingCharacters {
             // if we found a string where the number of unique chars equals our target
             // and all those chars are repeated at least K times then update max
             if (numUnique == numUniqueTarget && numUnique == numNoLessThanK)
-                d = Math.max(end - begin, d);
+                maxLength = Math.max(end - begin, maxLength);
         }
 
-        return d;
+        return maxLength;
     }
 
     public int longestKUniqueRepeatingCharacter(String s, int k, int cNum){

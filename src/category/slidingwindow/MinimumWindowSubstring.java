@@ -35,10 +35,10 @@ public class MinimumWindowSubstring {
                     window = right - left;
                     begin = left;
                 }
-                //sliding: increase left to find the character in "ABC"
+                // sliding: increase left to find the character in "ABC"
                 // 1: get the correct window range
-                // 2: increase the counter for the character of the begin of window to make it invalid,
-                // then slide to find it in the right substring to make a new satisfied window
+                // 2: increase the counter as we skip the character of the begin of last window,
+                // then slide (r) to find it in the right substring to make a new satisfied window
                 char lc = s.charAt(left++);
                 if (arr[lc] == 0) {
                     counter++;

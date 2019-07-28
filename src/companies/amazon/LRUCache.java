@@ -3,13 +3,34 @@ package companies.amazon;
 import java.util.HashMap;
 
 /**
- * Created by brianzhang on 7/15/18.
+ * https://medium.com/@krishankantsinghal/my-first-blog-on-medium-583159139237
+ * <p>
+ * So our Implementation of LRU cache will have HashMap and Doubly LinkedList.
+ * In Which HashMap will hold the keys and address of the Nodes of Doubly LinkedList . And Doubly LinkedList will hold the values of keys.
+ * <p>
+ * As We need to keep track of Recently used entries, We will use a clever approach. We will remove element from bottom and add element on start
+ * of LinkedList and whenever any entry is accessed , it will be moved to top. so that recently used entries will be on Top and Least used will be on Bottom.
+ * <p>
+ * hashMap 利用Key，DLinkedListNode
  */
 public class LRUCache {
+    public static void main(String[] args) {
+        LRUCache cache = new LRUCache(2 /* capacity */);
+
+        cache.put(1, 1);
+        cache.put(2, 2);
+        System.out.println(cache.get(1));       // returns 1
+        cache.put(3, 3);    // evicts key 2
+        System.out.println(cache.get(2));       // returns -1 (not found)
+        cache.put(4, 4);    // evicts key 1
+        cache.get(1);       // returns -1 (not found)
+        cache.get(3);       // returns 3
+        cache.get(4);       // returns 4
+    }
 
     private int cacheSize;
-    private HashMap<Integer, Node> map = new HashMap();
-    private Node start, end;
+    private HashMap<Integer, DNode> map = new HashMap();
+    private DNode start, end;
 
     public LRUCache(int capacity) {
         this.cacheSize = capacity;
@@ -20,22 +41,19 @@ public class LRUCache {
         if (map.get(key) == null) {
             return -1;
         } else {
-
-            Node node = map.get(key);
+            DNode node = map.get(key);
             removeNode(node);
             addToTop(node);
-
             return node.value;
         }
-
     }
 
     public void put(int key, int value) {
 
-        Node newNode = new Node(key, value);
-
+        DNode newNode = new DNode(key, value);
         if (map.containsKey(key)) {
-            Node oldNode = map.get(key);
+            
+            DNode oldNode = map.get(key);
             removeNode(oldNode);
             map.remove(key);
             addToTop(newNode);
@@ -47,15 +65,12 @@ public class LRUCache {
                 addToTop(newNode);
             } else {
                 addToTop(newNode);
-
             }
-
         }
         map.put(key, newNode);
     }
 
-
-    public void removeNode(Node node) {
+    public void removeNode(DNode node) {
 
         if (node.left != null) {
             node.left.right = node.right;
@@ -64,65 +79,35 @@ public class LRUCache {
         }
 
         if (node.right != null) {
-
             node.right.left = node.left;
         } else {
-
             end = node.left;
         }
-
     }
 
-
-    public void addToTop(Node node) {
+    public void addToTop(DNode node) {
         node.right = start;
-        node.left = null;
+        node.left = null;  // if you just used (invoke the get() method) a node, you will need add it to the top as it just used. And, you have to set "left = null".
 
-        if (start != null)
+        if (start != null){
             start.left = node;
+        }
 
         start = node;
 
         if (end == null) {
             end = node;
         }
-
     }
-
-    public static void main(String[] args) {
-        LRUCache cache = new LRUCache(2 /* capacity */);
-
-        cache.put(2, 1);
-        cache.put(2, 2);
-        System.out.println(cache.get(2));       // returns 1
-       /* cache.put(3, 3);    // evicts key 2
-        System.out.println(cache.get(2));       // returns -1 (not found)
-        cache.put(4, 4);    // evicts key 1
-        cache.get(1);       // returns -1 (not found)
-        cache.get(3);       // returns 3
-        cache.get(4);       // returns 4*/
-
-    }
-
-
 }
 
-
-class Node {
+class DNode {
     int value;
     int key;
-    Node left, right;
+    DNode left, right;
 
-    public Node(int key, int value) {
+    public DNode(int key, int value) {
         this.value = value;
         this.key = key;
     }
 }
-
-
-/**
- * Your LRUCache object will be instantiated and called as such:
- * LRUCache obj = new LRUCache(capacity);
- * int param_1 = obj.get(key);
- * obj.put(key,value);
- */

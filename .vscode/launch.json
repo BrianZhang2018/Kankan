@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LRUCache",
+            "request": "launch",
+            "mainClass": "companies.amazon.LRUCache"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LRU",
+            "request": "launch",
+            "mainClass": "companies.amazon.LRU"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MinimumWindowSubstring",
             "request": "launch",
             "mainClass": "category.slidingwindow.MinimumWindowSubstring"

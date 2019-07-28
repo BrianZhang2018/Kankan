@@ -10,4 +10,9 @@ public class DLinkedListNode {
     public String value;
     public DLinkedListNode left;
     public DLinkedListNode right;
+
+    public DLinkedListNode(int key, int value){
+        this.key = key;
+        this.value = value;
+    }
 }

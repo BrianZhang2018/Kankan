@@ -4,6 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
+ * LinkedHashMap from java API
  * Created by brianzhang on 7/14/18.
  */
 public class LRU2<K, V> extends LinkedHashMap<K, V> {
@@ -25,6 +26,5 @@ public class LRU2<K, V> extends LinkedHashMap<K, V> {
         }
 
     }
-
 
 }

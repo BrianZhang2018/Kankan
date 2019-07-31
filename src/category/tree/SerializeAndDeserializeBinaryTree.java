@@ -4,12 +4,14 @@ import category.model.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Arrays;
 
 /**
+ * BFS solution
  * Created by brianzhang on 7/21/18.
  */
 
-//level traverse Asolution
+//level traverse solution
 public class SerializeAndDeserializeBinaryTree {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(6);
@@ -20,9 +22,8 @@ public class SerializeAndDeserializeBinaryTree {
 
         SerializeAndDeserializeBinaryTree test = new SerializeAndDeserializeBinaryTree();
         String str = test.serialize(root);
+        System.out.println(str);
         test.deserialize(str);
-
-        System.out.println(test.serialize(root));
     }
 
     public String serialize(TreeNode root) {
@@ -45,7 +46,7 @@ public class SerializeAndDeserializeBinaryTree {
             }
         }
 
-        sb.deleteCharAt(sb.length() - 1);
+        //sb.deleteCharAt(sb.length() - 1); don't need
         return sb.toString();
     }
 
@@ -55,6 +56,7 @@ public class SerializeAndDeserializeBinaryTree {
 
         Queue<TreeNode> queue = new LinkedList<>();
         String[] nodes = serializedTree.split(",");
+        //System.out.println(Arrays.toString(nodes));
         TreeNode root = new TreeNode(Integer.valueOf(nodes[0]));
         queue.add(root);
 

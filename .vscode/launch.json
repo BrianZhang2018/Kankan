@@ -2,6 +2,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TrimBST",
+            "request": "launch",
+            "mainClass": "category.tree.TrimBST"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SerializeAndDeseBTPreorder",
+            "request": "launch",
+            "mainClass": "category.tree.SerializeAndDeseBTPreorder"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SerializeAndDeserializeBinaryTree",
+            "request": "launch",
+            "mainClass": "category.tree.SerializeAndDeserializeBinaryTree"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LRUCache",
             "request": "launch",
             "mainClass": "companies.amazon.LRUCache"

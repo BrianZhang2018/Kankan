@@ -62,43 +62,6 @@ class Small extends Vehicle {
     }
 }
 
-class Level {
-    int floor;
-    ParkingSpot[] spots;
-    int availableSpot = 0;
-
-    public Level (int floor, int num_row, int spots_per_row) {
-        this.floor = floor;
-        int spot_Index = 0;
-        spots = new ParkingSpot[num_row * spots_per_row];
-
-        //init size for each spot in array spots
-        for (int row = 0; row < num_row; row++) {
-            for (int spot = 0; spot < spots_per_row / 4; spot++) {
-                VehicleSize mc = VehicleSize.SMALL;
-                spots[spot_Index] = new ParkingSpot(this, row, spot_Index, mc);
-                spot_Index += 1;
-            }
-            for (int spot = spots_per_row / 4; spot < spots_per_row / 4 * 3; ++spot) {
-                VehicleSize car = VehicleSize.COMPACT;
-                spots[spot_Index] = new ParkingSpot(this, row, spot_Index, car);
-                spot_Index ++;
-            }
-            for (int spot = spots_per_row / 4 * 3; spot < spots_per_row; ++spot) {
-                VehicleSize bus = VehicleSize.LARGE;
-                spots[spot_Index] = new ParkingSpot(this, row, spot_Index, bus);
-                spot_Index ++;
-            }
-        }
-        availableSpot = spot_Index;
-    }
-
-    public void spotFreed () {
-        availableSpot += 1;
-    }
-
-}
-
 class ParkingSpot {
     Vehicle vehicle;
     VehicleSize size;
@@ -140,6 +103,43 @@ class ParkingSpot {
     public boolean canFitVehicle (Vehicle vehicle) {
         return isAvailable() && vehicle.canFitInSpot(this);
     }
+}
+
+class Level {
+    int floor;
+    ParkingSpot[] spots;
+    int availableSpot = 0;
+
+    public Level (int floor, int num_row, int spots_per_row) {
+        this.floor = floor;
+        int spot_Index = 0;
+        spots = new ParkingSpot[num_row * spots_per_row];
+
+        //init size for each spot in array spots
+        for (int row = 0; row < num_row; row++) {
+            for (int spot = 0; spot < spots_per_row / 4; spot++) {
+                VehicleSize mc = VehicleSize.SMALL;
+                spots[spot_Index] = new ParkingSpot(this, row, spot_Index, mc);
+                spot_Index += 1;
+            }
+            for (int spot = spots_per_row / 4; spot < spots_per_row / 4 * 3; ++spot) {
+                VehicleSize car = VehicleSize.COMPACT;
+                spots[spot_Index] = new ParkingSpot(this, row, spot_Index, car);
+                spot_Index ++;
+            }
+            for (int spot = spots_per_row / 4 * 3; spot < spots_per_row; ++spot) {
+                VehicleSize bus = VehicleSize.LARGE;
+                spots[spot_Index] = new ParkingSpot(this, row, spot_Index, bus);
+                spot_Index ++;
+            }
+        }
+        availableSpot = spot_Index;
+    }
+
+    public void spotFreed () {
+        availableSpot += 1;
+    }
+
 }
 
 public class ParkingLot {

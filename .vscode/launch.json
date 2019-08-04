@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CutOffTreesForGolfEventBFSGetMinSteps",
+            "request": "launch",
+            "mainClass": "category.BFS.minimumsteps.CutOffTreesForGolfEventBFSGetMinSteps"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileSystem",
+            "request": "launch",
+            "mainClass": "OOD.FileSystem"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TrimBST",
             "request": "launch",
             "mainClass": "category.tree.TrimBST"

@@ -6,6 +6,7 @@ import java.util.Queue;
 /**
  * 把BFS套路看懂了，做这题so easy。参阅：/Users/brianzhang/workspace/WaWahaha/src/DFS vs BFS
  *
+ * https://www.lintcode.com/problem/the-maze/my-submissions
  * Created by brianzhang on 4/9/19.
  */
 public class TheMaze {

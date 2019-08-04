@@ -1,7 +1,9 @@
 package category.BacktracingDFS;
 
 /**
- * https://leetcode.com/problems/word-search-ii/
+ * DFS here, don't use BFS will has the visited state issue
+ * 
+ * https://leetcode.com/problems/word-search/
  */
 public class WordSearch{
     private int m = 0;

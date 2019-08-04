@@ -3,6 +3,11 @@ package category.tree;
 import category.model.TreeNode;
 import java.util.Arrays;
 
+/**
+ * preOrser -> serialize
+ * DFS -> deserialize
+ * https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+ */
 public class SerializeAndDeseBTPreorder{
     public static void main(String[] args) {
         TreeNode root = new TreeNode(6);
@@ -37,7 +42,7 @@ public class SerializeAndDeseBTPreorder{
     public TreeNode deserialize(String data) {
         String[] ss = data.split(",");
         System.out.println(Arrays.toString(ss));
-        return helper(ss, new int[1]);
+        return helper(ss, new int[0]);
     }
 
     public TreeNode helper(String[] ss, int[] index) {

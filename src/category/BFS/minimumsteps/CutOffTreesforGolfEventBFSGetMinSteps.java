@@ -13,7 +13,6 @@ import java.util.*;
  * https://www.youtube.com/watch?v=OFkLC30OxXM
  */
 public class CutOffTreesForGolfEventBFSGetMinSteps {
-
     public static void main(String[] args) {
         CutOffTreesForGolfEventBFSGetMinSteps test = new CutOffTreesForGolfEventBFSGetMinSteps();
         List<List<Integer>> forest = new ArrayList<List<Integer>>();

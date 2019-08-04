@@ -1,7 +1,8 @@
 package category.BFS.SearchIn2DMatrix;
 /**
  * https://leetcode.com/problems/search-a-2d-matrix-ii/
- * BFS的经典用法，可以用在很多其他的问题中去寻找一个element在2D matrix中
+ * 
+ * BFS的经典用法，可以用在很多其他的问题中去寻找一个element在2D matrix中,
  * 而且是最快的方法，快于DFS
  */
 public class SearchA2DMatrixII{
@@ -15,7 +16,6 @@ public class SearchA2DMatrixII{
         
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
-                
                 if(matrix[i][j] == target){
                     return true;
                 }else{

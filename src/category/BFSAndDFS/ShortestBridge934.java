@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
+ * https://leetcode.com/problems/shortest-bridge/
+ * 
  * Created by brianzhang on 4/14/19.
  */
 public class ShortestBridge934 {

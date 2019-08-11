@@ -6,6 +6,9 @@ import java.util.Queue;
 /**
  * https://leetcode.com/problems/shortest-bridge/
  * 
+ * Keys: DFS and BFS
+ * Solution: DFS flip 1 to 2 for first island, then do minimum step by BFS
+ * 
  * Created by brianzhang on 4/14/19.
  */
 public class ShortestBridge934 {
@@ -24,7 +27,8 @@ public class ShortestBridge934 {
         boolean found1 = false;
         Queue<int[]> queue = new LinkedList<int[]>();
 
-        //DFS
+        //1. DFS: first, Find a connected island
+        //2. add left '1' nodes's coordinate belong to another island into the queue
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
                 if(A[i][j] == 1 && !found1){
@@ -38,8 +42,9 @@ public class ShortestBridge934 {
         }
         int[][] dicts = new int[][]{{1,0}, {0,1}, {-1, 0}, {0, -1}} ;
         int level = 0;
+        //Find shortest path by BFS
         while(!queue.isEmpty()){
-            int size = queue.size();
+            int size = queue.size(); //another island's coordinates
             for(int i=0; i<size; i++){
                 int[] curr = queue.poll();
                 int r = curr[0];

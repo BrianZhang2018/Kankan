@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ShortestBridge934",
+            "request": "launch",
+            "mainClass": "category.BFSAndDFS.ShortestBridge934"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CutOffTreesForGolfEventBFSGetMinSteps",
             "request": "launch",
             "mainClass": "category.BFS.minimumsteps.CutOffTreesForGolfEventBFSGetMinSteps"

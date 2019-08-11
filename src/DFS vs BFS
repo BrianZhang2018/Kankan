@@ -94,3 +94,6 @@ while(!queue.isEmpty){
 
 e.g /Users/brianzhang/workspace/WaWahaha/src/category/BFSAndDFS/ShortestBridge934.java
 /Users/brianzhang/workspace/WaWahaha/src/category/BFS/minimumsteps/CutOffTreesForGolfEventBFSGetMinSteps.java
+
+5. Compare the BFS and DFS by probelms
+e.g. ShortestBridge934

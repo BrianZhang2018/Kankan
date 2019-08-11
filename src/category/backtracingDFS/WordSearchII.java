@@ -27,7 +27,6 @@ public class WordSearchII{
         if (i < 0 || i >= board.length || j < 0 || j >= board[0].length) 
             return;
         
-        // `ch` will be used to reset the visited board[i][j] value when backtracking
         char ch = board[i][j];
         int index = ch - 'a';
         if (ch == '.' || root.children[index] == null) 
@@ -37,7 +36,7 @@ public class WordSearchII{
         if (root.word != null) {
             list.add(root.word);
             root.word = null;
-            // no return here as one branch of Trie can contain multiple word 
+            // no `return` here as one branch of Trie can contain multiple word
         }
         
         //mark the visited board[i][j]

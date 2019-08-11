@@ -6,6 +6,11 @@ import java.util.concurrent.ExecutionException;
  * Created by brianzhang on 9/4/18.
  */
 public class IncreasingTripletSubsequence {
+    public static void main(String[] args) {
+        int[] arr = new int[]{2, 1, 5, 0, 4, 6};
+        System.out.println(increasingTriplet(arr));
+    }
+
     public static boolean increasingTriplet(int[] nums) {
         for (int i = 0; i <= nums.length - 3; i++) {
             int temp = i;
@@ -24,20 +29,5 @@ public class IncreasingTripletSubsequence {
             }
         }
         return false;
-    }
-
-    public static void main(String[] args) {
-        int[] arr = new int[]{2, 1, 5, 0, 4, 6};
-        System.out.println(increasingTriplet(arr));
-
-        try{
-            throw new RuntimeException("hahha");
-        }catch (Exception ex){
-
-            throw new RuntimeException("huhu");
-
-        }finally{
-            System.out.println("finally");
-        }
     }
 }

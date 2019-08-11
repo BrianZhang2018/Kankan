@@ -3,6 +3,10 @@ package category.tree.trie;
 import java.util.List;
 import java.util.LinkedList;
 /**
+ * 1. DFS
+ * 2. reset the state by backtracking
+ * 3. Trie keep the words
+ * 
  * https://leetcode.com/problems/word-search-ii/
  */
 public class WordSearchII{
@@ -41,7 +45,7 @@ public class WordSearchII{
         findWords(board, root, i - 1, j, list);
         findWords(board, root, i, j + 1, list);
         findWords(board, root, i, j - 1, list);
-        board[i][j] = ch;
+        board[i][j] = ch; //reset the state
     }
     
     private static void insert(String word, TrieNode root) {

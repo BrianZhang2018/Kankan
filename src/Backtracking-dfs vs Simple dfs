@@ -30,7 +30,7 @@ Backtracking is a more general purpose algorithm.
 
 Depth-First search is a specific form of backtracking related to searching tree structures.
 
-3. Two way to record and recover the state by backtracking
+3. Two way to manipulate the memo's state by backtracking
 traditionaly:
 boolean[][] visited = new boolean[][];
 

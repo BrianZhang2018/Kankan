@@ -1,0 +1,12 @@
+key elements in sliding window solution:
+
+1. window data structure: int[] 
+
+2. boundary: check whether beyound the boundary
+
+3. if yes remove the element from the start of window
+
+4. sliding move forward
+
+Good example:
+LongestSubstringWithUniqueCharacterSlidingWindow.java

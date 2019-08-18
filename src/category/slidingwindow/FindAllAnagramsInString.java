@@ -9,6 +9,10 @@ import java.util.List;
  * Created by brianzhang on 8/22/18.
  */
 public class FindAllAnagramsInString {
+    public static void main(String[] args) {
+        System.out.println(findAnagrams("cbaebabacd", "abc"));
+    }
+
     public static List<Integer> findAnagrams(String s, String p) {
         List<Integer> list = new ArrayList<>();
         if (s == null || s.length() == 0 || p == null || p.length() == 0) return list;
@@ -49,9 +53,5 @@ public class FindAllAnagramsInString {
             }
         }
         return list;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(findAnagrams("cbaebabacd", "abc"));
     }
 }

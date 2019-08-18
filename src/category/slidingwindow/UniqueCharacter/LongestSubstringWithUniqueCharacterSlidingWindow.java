@@ -3,14 +3,13 @@ package category.slidingwindow.UniqueCharacter;
 import java.util.HashSet;
 
 /**
- * Sliding window Asolution
+ * Sliding window solution
  * related problem: https://www.techiedelight.com/sliding-window-problems/
  *
  * Leetcode 340 - Longest Substring with At Most K Distinct Characters
  * Created by brianzhang on 3/3/19.
  */
 public class LongestSubstringWithUniqueCharacterSlidingWindow {
-
     public static void main(String[] args) {
         System.out.println(solution("nutdrgzdrkrvfdfcvzuunxwlzegjukhkjpvqruitobiahxhgdrpqttsebjsg", 11));
     }

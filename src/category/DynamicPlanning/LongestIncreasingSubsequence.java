@@ -1,9 +1,14 @@
 package category.DynamicPlanning;
 
 /**
+ * https://leetcode.com/problems/longest-increasing-subsequence/
+ * 
  * Created by brianzhang on 9/7/18.
  */
 public class LongestIncreasingSubsequence {
+    public static void main(String[] args) {
+        LongestIncreasingSubsequence.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18});
+    }
 
     public static int lengthOfLIS(int[] nums) {
         if (nums == null || nums.length == 0) {
@@ -47,7 +52,4 @@ public class LongestIncreasingSubsequence {
             return right;
     }
 
-    public static void main(String[] args) {
-        LongestIncreasingSubsequence.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18});
-    }
 }

@@ -5,9 +5,16 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * https://leetcode.com/problems/combination-sum/
+ * https://leetcode.com/problems/combinations/
  * Created by brianzhang on 7/29/18.
  */
 public class CombinationSum {
+    public static void main(String[] args) {
+        int[] arr = new int[]{2, 3, 6, 7};
+        int target = 7;
+        System.out.println(new CombinationSum().combinationSum(arr, target));
+    }
 
     public List<List<Integer>> combinationSum(int[] nums, int target) {
         List<List<Integer>> res = new ArrayList<List<Integer>>();
@@ -32,13 +39,7 @@ public class CombinationSum {
         }
     }
 
-    private void printout(List<Integer> list){
+    private void printOut(List<Integer> list){
         System.out.println(Arrays.toString(list.toArray()));
-    }
-
-    public static void main(String[] args) {
-        int[] arr = new int[]{2, 3, 6, 7};
-        int target = 7;
-        System.out.println(new CombinationSum().combinationSum(arr, target));
     }
 }

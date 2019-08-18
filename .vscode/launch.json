@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CombinationSum",
+            "request": "launch",
+            "mainClass": "category.BacktracingDFS.CombinationSum"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SortColors",
             "request": "launch",
             "mainClass": "category.twopointer.SortColors"

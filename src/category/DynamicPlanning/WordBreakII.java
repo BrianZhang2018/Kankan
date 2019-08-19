@@ -3,6 +3,9 @@ package category.DynamicPlanning;
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/word-break-ii/
+ * 
+ * this should be a backtracking solution :)
  * Created by brianzhang on 2/20/19.
  */
 public class WordBreakII {
@@ -24,7 +27,7 @@ public class WordBreakII {
         return DFS(s, wordDict, new HashMap<String, List<String>>());
     }
 
-    // DFS function returns an array including all substrings derived from s.
+    // DFS function returns an array including all substrings derived from s - backtracking
     List<String> DFS(String s, List<String> wordDict, HashMap<String, List<String>>map) {
         if (map.containsKey(s))
             return map.get(s);

@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - WordBreakDP",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.WordBreakDP"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CombinationSum",
             "request": "launch",
             "mainClass": "category.BacktracingDFS.CombinationSum"

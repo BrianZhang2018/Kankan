@@ -3,10 +3,11 @@ package category.DataStructure;
 import java.util.*;
 
 /**
- *
+ * https://www.lintcode.com/problem/meeting-rooms/description
+ * 
  * Created by brianzhang on 10/24/18.
  */
-public class MeetingRoom {
+public class MeetingRoomII {
     public static void main(String[] args) {
         Interval source = new Interval(9, 77);
         Interval source1 = new Interval(9, 10);
@@ -33,6 +34,36 @@ public class MeetingRoom {
             max = Math.max(max, room);
         }
         return max;
+    }
+
+//https://www.youtube.com/watch?v=jUpuIio_oYo
+    public int minMeetingRooms1(List<Interval> intervals) {
+        // Write your code here
+        
+        int n = intervals.size();
+        int[] starts = new int[n];
+        int[] ends = new int[n];
+        
+        for(int i=0; i<n; i++){
+            starts[i] = intervals.get(i).start;
+            ends[i] = intervals.get(i).end;
+        }
+        
+        Arrays.sort(starts);
+        Arrays.sort(ends);
+        
+        int room = 0;
+        int endIndex = 0;
+        
+        for(int i = 0; i<n; i++){
+            if(starts[i] < ends[endIndex]){
+                room++;
+            }else{
+                endIndex++;
+            }
+        }
+        
+        return room;
     }
 }
 

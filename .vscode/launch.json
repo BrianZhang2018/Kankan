@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MaximumGap",
+            "request": "launch",
+            "mainClass": "category.sort.MaximumGap"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - WordBreakDP",
             "request": "launch",
             "mainClass": "category.DynamicPlanning.WordBreakDP"

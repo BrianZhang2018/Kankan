@@ -6,6 +6,12 @@ import companies.amazon.model.TreeNode;
  * Created by brianzhang on 7/18/18.
  */
 public class FlattenLinkedList {
+    public static void main(String[] args) {
+        int m = 3;
+        int n = 3;
+        int last = --m + --n +1;
+        System.out.println(last);
+    }
 
     public void flatten(TreeNode root) {
 
@@ -15,11 +21,9 @@ public class FlattenLinkedList {
         while (root != null) {
 
             if (root.left != null) {
-
                 TreeNode p = root.left;
 
                 if (p.right != null) {
-
                     p = p.right;
                 }
 
@@ -27,7 +31,6 @@ public class FlattenLinkedList {
                 p.right = root.right;
                 root.right = root.left;
                 root.left = null;
-
             }
 
             root = root.right;
@@ -49,20 +52,7 @@ public class FlattenLinkedList {
         }
 
         prev = root;
-
         flatten(root.left);
         flatten(right);
     }
-
-    public static void main(String[] args) {
-
-        int m = 3;
-        int n = 3;
-        int last = --m + --n +1;
-
-        System.out.println(last);
-
-
-    }
-
 }

@@ -20,49 +20,34 @@ public class TowSum {
                 Map<Integer, Integer> temp = new HashMap<>();
                 temp.put(arr[i], targetMinus);
             }
-
             map.put(arr[i], i);
-
         }
-
         return result;
-
     }
-
 
     public List find2Sum2(int[] arr, int target) {
 
         List<Integer> result = new ArrayList();
-
         Arrays.sort(arr);
-
 
         if (arr != null && arr.length != 0) {
             int start = 0;
             int end = arr.length - 1;
 
-
             while (start < end) {
 
                 if (arr[start] + arr[end] > target) {
-
                     end--;
                 }
-
                 if (arr[start] + arr[end] < target) {
                     start++;
-
                 }
-
                 if (arr[start] + arr[end] == target) {
-
                     result.add(arr[start]);
                     result.add(arr[end]);
                 }
-
             }
         }
-
         return result;
     }
 }

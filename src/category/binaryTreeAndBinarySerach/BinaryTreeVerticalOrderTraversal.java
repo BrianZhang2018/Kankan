@@ -10,6 +10,8 @@ import java.util.ArrayList;
  * 对于一棵树，我们设其根节点的位置为0
  * For each node, its left child's degree is -1 and is right child's degree is +1. 
  * We can do a level order traversal and save the degree information.
+ * 
+ * https://www.programcreek.com/2014/04/leetcode-binary-tree-vertical-order-traversal-java/
  */
 public class BinaryTreeVerticalOrderTraversal{
 
@@ -31,24 +33,24 @@ public class BinaryTreeVerticalOrderTraversal{
      
         while (!q1.isEmpty()) {
             TreeNode node = q1.poll();
-            int order = q2.poll();
+            int level = q2.poll();
      
             //add to map
-            ArrayList<Integer> list = map.get(order);
+            ArrayList<Integer> list = map.get(level);
             if (list == null) {
                 list = new ArrayList<>();
-                map.put(order, list);
+                map.put(level, list);
             }
             list.add(node.val);
      
             if (node.left != null) {
                 q1.offer(node.left);
-                q2.offer(order - 1);
+                q2.offer(level - 1);
             }
      
             if (node.right != null) {
                 q1.offer(node.right);
-                q2.offer(order + 1);
+                q2.offer(level + 1);
             }
         }
     }

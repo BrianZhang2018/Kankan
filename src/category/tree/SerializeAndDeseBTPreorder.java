@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /**
  * preOrser -> serialize
- * DFS -> deserialize
+ * dfs -> deserialize
  * https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
  */
 public class SerializeAndDeseBTPreorder{
@@ -24,35 +24,35 @@ public class SerializeAndDeseBTPreorder{
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
-        helper(sb, root);
+        shelper(sb, root);
         return sb.toString();
     }
     //preorder traversal
-    public void helper(StringBuilder sb, TreeNode root) {
+    public void shelper(StringBuilder sb, TreeNode root) {
         if (root == null) {
             sb.append("#,");
             return;
         }
         sb.append(root.val + ",");
-        helper(sb, root.left);
-        helper(sb, root.right);
+        shelper(sb, root.left);
+        shelper(sb, root.right);
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
         String[] ss = data.split(",");
         System.out.println(Arrays.toString(ss));
-        return helper(ss, new int[0]);
+        return dhelper(ss, new int[0]);
     }
 
-    public TreeNode helper(String[] ss, int[] index) {
+    public TreeNode dhelper(String[] ss, int[] index) {
         if (ss[index[0]].equals("#")) {
             index[0]++;
             return null;
         }
         TreeNode node = new TreeNode(Integer.parseInt(ss[index[0]++]));
-        node.left = helper(ss, index);
-        node.right = helper(ss, index);
+        node.left = dhelper(ss, index);
+        node.right = dhelper(ss, index);
         return node;
     }
 }

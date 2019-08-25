@@ -29,7 +29,7 @@ public class MinimumCostForTickets {
 
             int min;
             min = minCost[i - 1] + costs[0];
-            min = Math.min(min, minCost[Math.max(0, i - 7)] + costs[1]);
+            min = Math.min(min, minCost[Math.max(0, i - 7)] + costs[1]); // Math.max(0, i-7) 0 is the default value if the (i-7) <0.
             min = Math.min(min, minCost[Math.max(0, i - 30)] + costs[2]);
             minCost[i] = min;
         }

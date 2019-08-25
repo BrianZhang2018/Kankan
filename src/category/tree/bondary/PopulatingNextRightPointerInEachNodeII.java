@@ -1,9 +1,10 @@
-package category.tree;
+package category.tree.bondary;
 
+/**
+ * https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+ * 
+ */
 public class PopulatingNextRightPointerInEachNodeII {
-    public static void main(String[] args){
-     
-    }
 
     public Node connect(Node root) {
         Node dummyHead = new Node();
@@ -25,6 +26,40 @@ public class PopulatingNextRightPointerInEachNodeII {
                 dummyHead.next = null;
             }
         }
+        return root;
+    }
+
+    //lever order traverse
+    public Node connectMySolution(Node root) {
+        if(root == null)
+            return root;
+    
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+        
+        while(!queue.isEmpty()){
+            
+            int size = queue.size();
+            Node pre = null;
+            for(int i=0; i<size; i++){
+                Node curr = queue.poll();
+                if(i == 0){
+                    pre = curr;
+                }
+                if(i > 0){
+                    pre.next = curr;
+                    pre = pre.next;
+                }
+                if(curr.left != null){
+                    queue.add(curr.left);
+                }
+                if(curr.right != null){
+                    queue.add(curr.right);
+                }
+            }
+            pre = null;
+        }
+        
         return root;
     }
 }

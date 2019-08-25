@@ -1,4 +1,5 @@
-package category.tree;
+package category.tree.bondary;
+
 import java.util.List;
 import java.util.ArrayList;
 import companies.amazon.model.TreeNode;
@@ -6,7 +7,6 @@ import companies.amazon.model.TreeNode;
 /**
  * https://www.lintcode.com/problem/boundary-of-binary-tree/description
  */
-
 public class BoundaryOfBinaryTree{
 
     public List<Integer> boundaryOfBinaryTree(TreeNode root) {

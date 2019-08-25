@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - InsertInterval",
+            "request": "launch",
+            "mainClass": "category.sort.InsertInterval"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - UniqueBinarySearchTrees",
             "request": "launch",
             "mainClass": "category.DynamicPlanning.UniqueBinarySearchTrees"

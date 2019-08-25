@@ -1,4 +1,4 @@
-package category.binaryTreeAndBinarySerach;
+package category.tree.bondary;
 
 import java.util.List;
 import java.util.TreeMap;

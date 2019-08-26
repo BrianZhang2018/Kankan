@@ -1,6 +1,8 @@
 package category.DynamicPlanning;
 
 /**
+ * 重要
+ * amazon dianmian
  * DP: sub problem to solve the big problem
  * time complexity: O(n^2), space: O(n)
  * 
@@ -17,7 +19,7 @@ public class UniqueBinarySearchTrees{
         if(n == 0)
             return 0;
         
-        // dp[k] represents the number of BST trees built from 1....n (like, 3)
+        // dp[n] represents the number of BST trees built from 1....n (like, 3)
         int[] dp = new int[n+1];
         dp[0] = 1;
         dp[1] = 1; //only have one node

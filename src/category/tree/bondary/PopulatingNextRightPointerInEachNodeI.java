@@ -1,5 +1,9 @@
 package category.tree.bondary;
-
+/**
+ * https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+ * 
+ * level order traverse - leftmost way rather than the queue
+ */
 public class PopulatingNextRightPointerInEachNodeI { 
     
     public Node connect(Node root) {
@@ -19,6 +23,7 @@ public class PopulatingNextRightPointerInEachNodeI {
                 
                 curr = curr.next; // go the next node of in this level
             }
+            //start from left most
             leftMost = leftMost.left;
         }
         return root;

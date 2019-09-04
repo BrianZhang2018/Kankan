@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 /**
+ * 最小生成树问题
+ * 
  * I referenced the RedundantConnection.java and
  * https://algorithms.tutorialhorizon.com/kruskals-algorithm-minimum-spanning-tree-mst-complete-java-implementation/
  * https://www.youtube.com/watch?v=5xosHRdxqHA
@@ -17,7 +19,6 @@ import java.util.PriorityQueue;
  * Created by brianzhang on 3/26/19.
  */
 public class KrushkalMinimumSpanningTree {
-
     public static void main(String[] args) {
         int vertices = 6;
         Graph graph = new Graph(vertices);

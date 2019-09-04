@@ -4,15 +4,10 @@ import companies.amazon.model.TreeNode;
 
 import java.util.Stack;
 
-/**
- * Created by brianzhang on 7/21/18.
- */
-
 /*
 如hint所给出，这道题就是使用先序遍历，遍历到的值作为新的右孩子存起来，左孩子变为空。
 注意的是，因为右孩子会更新，所以为了递归右子树，要在更新之前提前保存右孩子。
 整个程序需要维护一个全局变量，保存当前所遍历的节点。
-
  */
 public class FlattenLinkedList {
 

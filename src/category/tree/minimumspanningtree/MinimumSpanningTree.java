@@ -6,5 +6,5 @@ package category.tree.minimumspanningtree;
  * Created by brianzhang on 3/24/19.
  */
 public class MinimumSpanningTree {
-
+    
 }

@@ -6,6 +6,11 @@ package category.sort;
  * https://leetcode.com/problems/kth-largest-element-in-an-array/description/
  */
 public class FindKthLargest {
+    public static void main(String[] args) {
+        FindKthLargest quickSelect = new FindKthLargest();
+        int arr[] = {10, 7, 8, 9, 1, 5};
+        System.out.println(quickSelect.findKthLargest(arr, 4));
+    }
 
     public int findKthLargest(int[] nums, int k) {
         int start = 0, end = nums.length - 1, index = nums.length - k;
@@ -33,12 +38,4 @@ public class FindKthLargest {
         nums[pivot] = temp;
         return end;
     }
-
-    public static void main(String[] args) {
-        FindKthLargest quickSelect = new FindKthLargest();
-
-        int arr[] = {10, 7, 8, 9, 1, 5};
-        System.out.println(quickSelect.findKthLargest(arr, 4));
-    }
-
 }

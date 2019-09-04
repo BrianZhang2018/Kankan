@@ -13,20 +13,22 @@ import java.util.ArrayList;
  * 
  * https://www.programcreek.com/2014/04/leetcode-binary-tree-vertical-order-traversal-java/
  */
+//level order traverse
 public class BinaryTreeVerticalOrderTraversal{
 
     public List<List<Integer>> verticalOrder(TreeNode root) {
-        TreeMap<Integer, ArrayList<Integer>> map = new TreeMap<>();
+        TreeMap<Integer, List<Integer>> map = new TreeMap<>();
         helper(root, map);
         return new ArrayList<List<Integer>>(map.values());
     }
      
-    private void helper(TreeNode t, TreeMap<Integer, ArrayList<Integer>> map) {
+    private void helper(TreeNode t, TreeMap<Integer, List<Integer>> map) {
         if (t == null) {
             return;
         }
-     
+        //queue for tree node
         LinkedList<TreeNode> q1 = new LinkedList<>();
+        //queue for tree node's degree
         LinkedList<Integer> q2 = new LinkedList<>();
         q1.offer(t);
         q2.offer(0);

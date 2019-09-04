@@ -9,7 +9,6 @@ import static category.BFS.Constant.largeTestData;
  * Created by brian Zhang on 8/21/18.
  */
 public class WordLadderTwoEndBFS {
-
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
         System.out.println(ladderLength("hit", "log",

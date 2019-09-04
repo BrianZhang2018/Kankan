@@ -21,6 +21,12 @@ class WordNode {
 }
 
 public class WordLadder {
+    public static void main(String[] args) {
+        
+        System.out.println(ladderLength("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
+        //System.out.println(System.currentTimeMillis() - start);
+    }
+
     public static int ladderLength(String beginWord, String endWord, List<String> wordDict) {
 
         if (!wordDict.contains(endWord))
@@ -59,13 +65,5 @@ public class WordLadder {
             }
         }
         return 0;
-    }
-
-
-    public static void main(String[] args) {
-        long start = System.currentTimeMillis();
-
-        System.out.println(ladderLength("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
-        //System.out.println(System.currentTimeMillis() - start);
     }
 }

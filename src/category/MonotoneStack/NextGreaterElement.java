@@ -7,7 +7,6 @@ import java.util.HashMap;
  * https://leetcode.com/problems/next-greater-element-i/
  */
 public class NextGreaterElement{
-
     public static void main(String[] args){
         NextGreaterElement test = new NextGreaterElement();
         test.nextGreaterElement1(new int[]{4, 1, 2}, new int[]{1,3,4,2});

@@ -38,10 +38,12 @@ public class TheMaze {
             for(int[] dict : dicts){
                 int nr = r+ dict[0];
                 int nc = c+ dict[1];
+                //walk util block by wall (1)
                 while(nr<maze.length && nc<maze[0].length && nr>=0 && nc>=0 && maze[nr][nc] == 0){
                     nr += dict[0];
                     nc += dict[1];
                 }
+                //nr-dict[0], nc-dict[1] is previous place before the wall which ball stop there
                 if(!visited[nr-dict[0]][nc-dict[1]]){
                     queue.add(new int[]{nr-dict[0], nc-dict[1]});
                     visited[nr-dict[0]][nc-dict[1]] = true;

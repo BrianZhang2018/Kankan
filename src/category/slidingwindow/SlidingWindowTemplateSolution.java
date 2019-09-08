@@ -6,7 +6,6 @@ package category.slidingwindow;
  * Created by brianzhang on 3/22/19.
  */
 public class SlidingWindowTemplateSolution {
-
     public static void main(String[] args) {
         System.out.println(minWindow("ADOBECODEBANC", "ABC"));
     }

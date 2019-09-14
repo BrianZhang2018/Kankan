@@ -10,7 +10,6 @@ import static category.BFS.Constant.largeTestData;
  */
 public class WordLadderTwoEndBFS {
     public static void main(String[] args) {
-        long start = System.currentTimeMillis();
         System.out.println(ladderLength("hit", "log",
                 new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
         //System.out.println(ladderLength("nanny", "aloud", new ArrayList(largeTestData)));

@@ -11,7 +11,6 @@ package category.slidingwindow;
  * Created by brianzhang on 3/24/19.
  */
 public class MinimumWindowSubstring {
-
     public static void main(String[] args) {
         System.out.println(minWindow("DAOBECEBANC", "ABC"));
     }

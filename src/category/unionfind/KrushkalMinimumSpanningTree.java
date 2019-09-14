@@ -63,10 +63,8 @@ public class KrushkalMinimumSpanningTree {
                 Edge edge = pq.poll();
                 int root1 = find(edge.vertex1);
                 int root2 = find(edge.vertex2);
-
                 if (root1 == root2)
                     continue;
-
                 mstEdges.add(edge);
                 union(root1, root2);
                 index++;

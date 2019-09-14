@@ -13,7 +13,6 @@ import java.util.*;
  */
 
 public class ThreeSumClosest{
-
     public static void main(String[] args) {
 
         Map<String, Integer> people = new HashMap<>();
@@ -44,6 +43,7 @@ public class ThreeSumClosest{
 
         System.out.println(threeSumClosest(new int[]{1,1,-1,-1,3}, -1));
     }
+
     public static int threeSumClosest(int[] num, int target) {
         if(num == null || num.length <3)
             return 0;

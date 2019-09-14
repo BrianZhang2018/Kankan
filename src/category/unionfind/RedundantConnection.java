@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * Union find + weight + flat tree
+ * 
  * Union find is used to determine the cycle when add a new edge
  * Weighted union find and path compression
  * <p>
@@ -50,13 +52,16 @@ public class RedundantConnection {
             if (pu == pv) return false;
 
             //merge the "small" disjoint tree to big one by comparing the size (ranking) to flat the tree
-            if (ranks[pv] > ranks[pu]) 
+            if (ranks[pv] > ranks[pu]){
                 parents[pu] = pv;   //make "smaller" disjoint tree point to larger one
-            else if (ranks[pu] > ranks[pv])
+                ranks[pu]++; //weight++
+            }
+            else if (ranks[pu] > ranks[pv]){
                 parents[pv] = pu;
-            else {
+                ranks[pv]++;
+            }else {
                 parents[pv] = pu;
-                ranks[pu] += 1;
+                ranks[pv] += 1;
             }
 
             return true;
@@ -70,7 +75,7 @@ public class RedundantConnection {
             // (parents[u] == u) is the root node as the root node pointing to itself
             // (and all the node was initiated as parents[u] = u in the beginning of this function)
             while (parents[u] != u) {
-                //parent point to the grandfather node
+                //parent point to the grandfather node, falt the tree
                 parents[u] = parents[parents[u]];
                 //assign the value grandfather node to u, then check again whether parents[u] == u in while condition
                 u = parents[u];
@@ -78,12 +83,12 @@ public class RedundantConnection {
             return u;
         }
 
-        public int find2(int u) {
-            if (parents[u] != u) {
-                parents[u] = find2(parents[u]);
-            }
-            return parents[u];
-        }
+        // public int find2(int u) {
+        //     if (parents[u] != u) {
+        //         parents[u] = find2(parents[u]);
+        //     }
+        //     return parents[u];
+        // }
     }
 
 }

@@ -10,21 +10,18 @@ import java.util.stream.IntStream;
  * https://zxi.mytechroad.com/blog/dynamic-programming/leetcode-322-coin-change/
  * Transition: dp[i][j] = min(dp[i][j], dp[i][j - coin_i] + 1)
  * <p>
- * 本题要点：1. DP 2. 降维
+ * Knowledge：1. DP with 降维 
+ *            2. 剪枝法
  */
 public class CoinChange {
-
     public static void main(String[] args) {
         CoinChange coinChange = new CoinChange();
         int[] coins = {1, 2, 5};
         System.out.println(coinChange.coinChangeDp(coins, 11));
         System.out.println(coinChange.coinChangeDFS(coins, 11));
-
-        System.out.println(2121 % 1000);
     }
 
     // Solution 1: DP
-
     /**
      * 降维: 二维数组, 但其实是滚动数组，所以可以降维成 一维数组
      */
@@ -79,8 +76,7 @@ public class CoinChange {
         }
     }
 
-    //the simple dfs compared with above one
-
+    // Solution 3: the simple dfs compared with above one
     /**
      * huahua 称其为剪枝法，the idea is 先用最大的面值的硬币去算， 因为得出的结果可能是 需要最少的硬币 的数目，因为用的面值最大
      * 然后，在比较小的面值，跟最大面值需要的硬币数目比较 多的 都去掉（剪枝）

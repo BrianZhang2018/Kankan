@@ -1,7 +1,10 @@
 dp is used to get the number of the solution
 backtracking can list all the solution
 
-DP bottom-up (tabulation; iterative)  vs top-down (Memoization; recursive)
+
+DP can be done:
+a) Top-Down approach: Recursion + Memoization.
+b) Botttom-Up approach: Iterative + Tabulation.
 https://www.geeksforgeeks.org/tabulation-vs-memoization/
 
 1. DP = Recursion (e.g. Divide & Conquer) + Memorization   O(n^2)= 1 + 2 + 3 + 4+......n

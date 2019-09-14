@@ -100,7 +100,7 @@ public class ShezhaoAmazonOA {
             if (find(i, j)) {
                 return false;
             } else {
-                parents[root(i)] = j;
+                parents[root(i)] = j; // parents[root(j)] = i, also work here. Here can be improved with "weight" so that append the small tree to big tree when do union
                 return true;
             }
         }
@@ -264,8 +264,6 @@ public class ShezhaoAmazonOA {
         }
     }
  
- 
- 
     // 6. (Two Sum Closest)
     // Two sum 的变种，回答位置，多个答案，选出包含最大数字的答案。
     // - 给两个array和一个K，每个array里面各选一个数，要求sum<=K的最大组
@@ -310,45 +308,7 @@ public class ShezhaoAmazonOA {
     }
  
     // 8. Partition label
-    public List<Integer> partitionLabels(String S) { // O(nlogn)
-        List<Integer> res = new ArrayList<>();
-        int[][] ranges = new int[26][];
-        for (int i = 0; i < S.length(); i++) {
-            int loc = S.charAt(i) - 'a';
-            if (ranges[loc] == null) {
-                ranges[loc] = new int[] {i, i};
-            } else {
-                ranges[loc][1] = i;
-            }
-        }
-        List<int[]> sorted = new ArrayList<>();
-        for (int[] range: ranges) {
-            if (range != null) {
-                sorted.add(range);
-            }
-        }
-        Collections.sort(sorted, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                if (o1[0] == o2[0]) {
-                    return 0;
-                }
-                return o1[0] < o2[0]? -1: 1;
-            }
-        });
-        int[] cur = sorted.get(0);
-        for (int[] range: sorted) {
-            if (range[0] <= cur[1]) {
-                cur[1] = Math.max(range[1], cur[1]);
-            } else {
-                res.add(cur[1] - cur[0] + 1);
-                cur = range;
-            }
-        }
-        res.add(cur[1] - cur[0] + 1);
-        return res;
-    }
- 
+    //https://leetcode.com/problems/partition-labels/
     public List<Integer> partitionLabels2(String S) { // O(n)
         int[] last = new int[26];
         for (int i = 0; i < S.length(); ++i) {
@@ -366,6 +326,7 @@ public class ShezhaoAmazonOA {
         }
         return res;
     }
+ 
 }
 
 

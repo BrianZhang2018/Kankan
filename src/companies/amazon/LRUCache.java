@@ -3,15 +3,16 @@ package companies.amazon;
 import java.util.HashMap;
 
 /**
+ * Solution: (HashMap + Double LinkedList) = Java LinkedHashMap
+ * 
  * https://medium.com/@krishankantsinghal/my-first-blog-on-medium-583159139237
  * <p>
  * So our Implementation of LRU cache will have HashMap and Doubly LinkedList.
  * In Which HashMap will hold the keys and address of the Nodes of Doubly LinkedList . And Doubly LinkedList will hold the values of keys.
  * <p>
- * As We need to keep track of Recently used entries, We will use a clever approach. We will remove element from bottom and add element on start
- * of LinkedList and whenever any entry is accessed , it will be moved to top. so that recently used entries will be on Top and Least used will be on Bottom.
+ * As We need to keep track of Recently used entries. We will remove element from bottom and add element on the top
+ * of LinkedList and whenever any entry is accessed again, it will be moved to the top. So, recently used entries will be on Top and Least used will be on Bottom.
  * <p>
- * hashMap 利用Key，DLinkedListNode
  */
 public class LRUCache {
     public static void main(String[] args) {
@@ -37,7 +38,6 @@ public class LRUCache {
     }
 
     public int get(int key) {
-
         if (map.get(key) == null) {
             return -1;
         } else {
@@ -49,16 +49,13 @@ public class LRUCache {
     }
 
     public void put(int key, int value) {
-
         DNode newNode = new DNode(key, value);
         if (map.containsKey(key)) {
-            
             DNode oldNode = map.get(key);
             removeNode(oldNode);
             map.remove(key);
             addToTop(newNode);
         } else {
-
             if (map.size() == cacheSize) {
                 map.remove(end.key);
                 removeNode(end);
@@ -71,7 +68,6 @@ public class LRUCache {
     }
 
     public void removeNode(DNode node) {
-
         if (node.left != null) {
             node.left.right = node.right;
         } else {
@@ -92,9 +88,7 @@ public class LRUCache {
         if (start != null){
             start.left = node;
         }
-
         start = node;
-
         if (end == null) {
             end = node;
         }

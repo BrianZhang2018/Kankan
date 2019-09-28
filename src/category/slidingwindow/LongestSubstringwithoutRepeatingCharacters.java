@@ -11,7 +11,7 @@ public class LongestSubstringwithoutRepeatingCharacters {
     }
     
     public int lengthOfLongestRepeatingSubstring(String s) {
-        if(s== null || s.length() == 0)
+        if(s == null || s.length() == 0)
             return 0;
         int max = 0;
         

@@ -22,6 +22,7 @@ public class TopologicalSortDFS {
         return canFinish[course] = true;
         //return true;
     }
+    
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         canFinish = new boolean[numCourses];
         visited = new boolean[numCourses];

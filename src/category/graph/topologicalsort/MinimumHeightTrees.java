@@ -1,7 +1,7 @@
 package category.graph.topologicalsort;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/minimum-height-trees/discuss/76055/Share-some-thoughts
@@ -9,16 +9,16 @@ import java.util.List;
  * Created by brianzhang on 4/19/19.
  */
 public class MinimumHeightTrees {
-
     public static void main(String[] args) {
-        System.out.println(findMinHeightTrees(11, new int[][]{{0,1},{0,2},{2,3},{0,4},{2,5},{5,6},{3,7},{6,8},{8,9},{9,10}
-}));
+        //System.out.println(findMinHeightTrees(11, new int[][]{{0,1},{0,2},{2,3},{0,4},{2,5},{5,6},{3,7},{6,8},{8,9},{9,10}}));
+        System.out.println(findMinHeightTrees2(6, new int[][]{{0,3},{1,3},{2,3},{4,3},{5,4}}));
     }
     public static List<Integer> findMinHeightTrees(int n, int[][] edges) {
 
         List<Integer> res = new ArrayList<Integer>();
         if(edges == null)
             return res;
+
         int[] degree = new int[n];
         ArrayList<Integer>[] graph = new ArrayList[n];
         List<Integer> leaves = new ArrayList<Integer>();
@@ -53,6 +53,47 @@ public class MinimumHeightTrees {
                     newLeaves.add(incomingEdgeV);
             }
 
+            leaves = newLeaves;
+        }
+        return leaves;
+    }
+
+    //better write way using the List rather than the array to construct the adjacent relationship of nodes
+    public static List<Integer> findMinHeightTrees2(int n, int[][] edges) {
+        
+        List<Integer> res = new ArrayList<Integer>();
+        if (n == 1) 
+            return Collections.singletonList(0);
+        
+        int[] degree = new int[n];
+        List<Set<Integer>> graph = new ArrayList<>(n);
+        List<Integer> leaves = new ArrayList<Integer>();
+        
+        for(int i=0; i<n; i++){
+            graph.add(new HashSet<Integer>());
+        }
+        
+        for(int[] edge : edges){
+            graph.get(edge[0]).add(edge[1]);
+            graph.get(edge[1]).add(edge[0]);
+        }
+        
+        for(int i=0; i<graph.size(); i++){
+            if(graph.get(i).size() == 1){
+                leaves.add(i);
+            }
+        }
+        
+        while(n > 2){
+            n -= leaves.size();
+            List<Integer> newLeaves = new ArrayList<Integer>();
+            for(int i : leaves){
+                int incomingEdgeV = graph.get(i).iterator().next();
+                graph.get(incomingEdgeV).remove(i);
+                
+                if( graph.get(incomingEdgeV).size() == 1)
+                    newLeaves.add(incomingEdgeV);
+            }
             leaves = newLeaves;
         }
         return leaves;

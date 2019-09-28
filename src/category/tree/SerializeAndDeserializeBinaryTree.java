@@ -10,7 +10,6 @@ import java.util.Arrays;
  * BFS solution
  * Created by brianzhang on 7/21/18.
  */
-
 //level traverse solution
 public class SerializeAndDeserializeBinaryTree {
     public static void main(String[] args) {

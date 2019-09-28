@@ -15,13 +15,14 @@ public class FindAllAnagramsInString {
 
     public static List<Integer> findAnagrams(String s, String p) {
         List<Integer> list = new ArrayList<>();
-        if (s == null || s.length() == 0 || p == null || p.length() == 0) return list;
+        if (s == null || s.length() == 0 || p == null || p.length() == 0) 
+            return list;
 
-        int[] hash = new int[256]; //character hash
+        int[] hash = new int[26]; //character hash
 
         //record each character in p to hash
         for (char c : p.toCharArray()) {
-            hash[c]++;
+            hash[c-'a']++;
         }
         //two points, initialize count to p's length
         int left = 0, right = 0, count = p.length();
@@ -29,26 +30,26 @@ public class FindAllAnagramsInString {
         while (right < s.length()) {
             //move right every time, if the character exists in p's hash[], decrease the count
             //current hash value >= 1 means the character is existing in p's hash[]
-            if (hash[s.charAt(right)] >= 1) {
+            if (hash[s.charAt(right) - 'a'] >= 1) {
                 count--;
             }
-            hash[s.charAt(right)]--;
+            hash[s.charAt(right)- 'a']--;
             right++;
 
             //when the count is down to 0, means we found the right anagram, add window's left to result
-            if (count == 0) list.add(left);
+            if (count == 0) 
+                list.add(left);
 
             //if we find the window's size equals to target size, then we have to slid left to find the new match window
             //reset left as we have a new slide window
             //only increase the count if the character is in p
             if (right - left == p.length()) {
-
                 //check if it's in the target string
-                if (hash[s.charAt(left)] >= 0) {
+                if (hash[s.charAt(left)-'a'] >= 0) {
                     count++;
                 }
                 //reset left( -1 or 0) to (0 or 1)
-                hash[s.charAt(left)]++;
+                hash[s.charAt(left)-'a']++;
                 left++;
             }
         }

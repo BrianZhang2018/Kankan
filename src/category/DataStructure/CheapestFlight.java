@@ -6,6 +6,8 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
+ * PriorityQueue
+ * 
  * Created by brianzhang on 10/7/18.
  */
 public class CheapestFlight {

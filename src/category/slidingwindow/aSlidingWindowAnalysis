@@ -1,8 +1,8 @@
 key elements in sliding window solution:
 
-1. window data structure: int[] 
+1. window data structure (e.g. target string): int[] (or Map, but intp[] is better, so Dong use int[])
 
-2. boundary: check whether beyound the boundary
+2. boundary: check whether beyond the boundary
 
 3. if yes remove the element from the start of window
 

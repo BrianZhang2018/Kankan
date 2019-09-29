@@ -152,6 +152,8 @@ public class ShezhaoAmazonOA {
     // 3. 零件装配/合并part
     // 给一个array表示零件的size，每次可以把两个组装在一起。每次组装的cost是两个size之和。就是数字可能重复
     // 新组装出来零件的size也是这两个小零件size之和。问把所有零件组装成一整个的min cost。
+    // time: O(nlogn), space: O(n), In Java programming, Java Priority Queue is implemented using Heap 
+    // Data Structures and Heap has O(log(n)) time complexity to insert and delete element.
     public int minSum(int[] array) {
         if (array == null || array.length < 2) {
             return 0;
@@ -173,8 +175,7 @@ public class ShezhaoAmazonOA {
         return cost;
     }
  
- 
- 
+
     // 4. 卡车送货的题 (k closest points to origin)
     // N个地点List<List<Integer>> 地点的坐标, M代表需要送的数量
     // output：一个List<List<Integer>> 代表送货的地点坐标x,y, 其实就是让你计算距离卡车最近的M个地点.
@@ -307,6 +308,7 @@ public class ShezhaoAmazonOA {
         return res;
     }
  
+
     // 8. Partition label
     //https://leetcode.com/problems/partition-labels/
     public List<Integer> partitionLabels2(String S) { // O(n)

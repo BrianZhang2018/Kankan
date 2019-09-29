@@ -15,16 +15,43 @@ public class LongestSubstringWithUniqueCharacterSlidingWindow {
     }
 
     public static final int CHAR_RANGE = 128;
-
-    public static String solution(String s, int k){
+    //return the length
+    public static int solution(String s, int k){
+        
+        int maxLength = Integer.MIN_VALUE;
+        HashSet<Character> counter = new HashSet<Character>();
+        int[] freq = new int[CHAR_RANGE]; //bucket array
+        int left=0, right=0;
+        while(right<s.length()){
+            
+            counter.add(s.charAt(right));
+            freq[s.charAt(right)]++;
+            right++;
+            //slide the window
+            while(counter.size() > k){
+                if(--freq[s.charAt(left)] == 0){
+                    counter.remove(s.charAt(left));
+                }
+                left++;
+            }
+            maxLength = Math.max(maxLength, right-left);
+        }
+  
+        return maxLength;
+    }
+    
+    // return the substring
+    /*public static String solution(String s, int k){
         
         int begin=0, end =0;
         HashSet<Character> window = new HashSet<Character>();
         int[] freq = new int[CHAR_RANGE];
         int low=0, high=0;
         while(high<s.length()){
+            
             window.add(s.charAt(high));
             freq[s.charAt(high)]++;
+
             while(window.size() > k){
                 if(--freq[s.charAt(low)] == 0){
                     window.remove(s.charAt(low));
@@ -38,9 +65,9 @@ public class LongestSubstringWithUniqueCharacterSlidingWindow {
 
             high++;
         }
-        //System.out.println(begin + "  " + end);
+  
         return s.substring(begin, end+1);
-    }
+    } */
 
     //Simple version
    /* public static String lengthOfLongestSubstringKDistinct(String s, int k) {

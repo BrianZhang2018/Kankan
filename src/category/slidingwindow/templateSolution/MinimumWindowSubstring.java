@@ -1,13 +1,17 @@
 package category.slidingwindow.templateSolution;
 
 /**
- * leetcode 76
- * the tricky part is hwo to track the "ABC" which use the bucket val to track
+ * Duplicate one with SlidingWindowTemplateSolution.java
+ * leetcode 76 
+ * the tricky part is hwo to track the "ABC" which use the freq val to track
  * e.g 1->0->1
  *     1->0->-1->0->1
  *
- * https://briansuperzhang.gitbook.io/project/sliding-window-questions
- *
+ * https://briansuperzhang.gitbook.io/project/sliding-minLen-questions
+ * 
+ * solution reference: (but I didn't follow this when I solved this question, just for reference)
+ * https://leetcode.com/problems/minimum-minLen-substring/discuss/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems
+ * 
  * Created by brianzhang on 3/24/19.
  */
 public class MinimumWindowSubstring {
@@ -16,35 +20,35 @@ public class MinimumWindowSubstring {
     }
 
     public static String minWindow(String s, String t) {
-        int[] arr = new int[128];
+        int[] freq = new int[128]; //bucket array frequency of character
         for (int i = 0; i < t.length(); i++) {
-            arr[t.charAt(i)]++;
+            freq[t.charAt(i)]++;
         }
 
-        int counter = t.length(), left = 0, right = 0, window = Integer.MAX_VALUE, begin = -1;
+        int counter = t.length(), left = 0, right = 0, minStart = -1, minLen = Integer.MAX_VALUE;
         while (right < s.length()) {
-            char rc = s.charAt(right++);
-            if (arr[rc] > 0) {
+            char rc = s.charAt(right);
+            if (freq[rc] > 0) {
                 counter--;
             }
-            arr[rc]--;
-
+            freq[rc]--;
+            right++;
+            
+            //slide minLen by recover the counter(++) and move the start(++)
             while (counter == 0) {
-                if (right - left < window) {
-                    window = right - left;
-                    begin = left;
+                if (right - left < minLen) {
+                    minLen = right - left;
+                    minStart = left;
                 }
                 // sliding: increase left to find the character in "ABC"
-                // 1: get the correct window range
-                // 2: increase the counter as we skip the character of the begin of last window,
-                // then slide (r) to find it in the right substring to make a new satisfied window
+                // increase the counter as we skip the character of the minStart of last minLen,
                 char lc = s.charAt(left++);
-                if (arr[lc] == 0) {
+                if (freq[lc] == 0) {
                     counter++;
                 }
-                arr[lc]++;
+                freq[lc]++;
             }
         }
-        return begin == -1 ? "" : s.substring(begin, begin + window);
+        return minStart == -1 ? "" : s.substring(minStart, minStart + minLen);
     }
 }

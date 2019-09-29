@@ -1,12 +1,14 @@
 key elements in sliding window solution:
 
-1. window data structure (e.g. target string): int[] (or Map, but intp[] is better, so Dong use int[])
+1. int[]: bucket array to store the frequency of character (or Map, but intp[] is better)
 
-2. boundary: check whether beyond the boundary
+2. counter (HashSet): record the number of character and notify to slide the window 
 
-3. if yes remove the element from the start of window
+3. two pointer: left, right. min Or maxLen variable.
 
-4. sliding move forward
+4. add the character into the freq[] and increase or decrease the couter
+
+5. slide the window. Remove the element from the start of window, and increae the start by add 1 everytime
 
 Good example:
 LongestSubstringWithUniqueCharacterSlidingWindow.java

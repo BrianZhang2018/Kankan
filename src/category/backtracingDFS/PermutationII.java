@@ -10,8 +10,8 @@ import java.util.List;
 public class PermutationII {
 
     public List<List<Integer>> permuteUnique(int[] nums) {
-        List<List<Integer>> res = new ArrayList();
-        List<Integer> temp = new ArrayList();
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> temp = new ArrayList<>();
         Arrays.sort(nums);
         backTrace(nums, temp, res, new boolean[nums.length]);
         return res;

@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * https://leetcode.com/problems/expression-add-operators/
  * 
+ * https://leetcode.com/problems/expression-add-operators/discuss/71895/Java-Standard-Backtrace-AC-Solutoin-short-and-clear
  * Created by brianzhang on 3/17/19.
  */
 public class ExpressionAddOperators {
@@ -22,8 +23,7 @@ public class ExpressionAddOperators {
      * previous number. So we can use a variable preNum to record every previous
      * number in each recursion step. If current recursive call is trying
      * multiplication, we should use previous calculation value subtract previous
-     * number, and then adding multiplication result between previous number and
-     * current number.
+     * number, and then adding multiplication result between previous number and current number.
      */
     public List<String> addOperators(String num, int target) {
         if (num.length() == 0) {
@@ -58,24 +58,20 @@ public class ExpressionAddOperators {
         // start from first index of current position in num string, try all possible
         // length of nums
         for (int i = pos; i < num.length(); i++) {
-            // corner case: if current position is 0, we can only use it as a single digit
-            // number, should be 0
-            // if it is not a single digit number with leading 0, it should be considered as
-            // an invalid number
+            // corner case: if current position's digit is 0, we can only use it as a single digit number which is 0
+            // if it is not a single digit number with leading 0, it's an invalid number
             if (i != pos && num.charAt(pos) == '0') { // check leading 0
                 break;
             }
             long curNum = Long.parseLong(num.substring(pos, i + 1));
 
-            // position 0 should be considered individually, since it does not have any
-            // operand character before curNum
+            // position 0 should be considered individually, since it does not have any operand character before curNum
             if (pos == 0) {
                 dfs(result, num, target, expr + curNum, curNum, curNum, i + 1);
             } else {
                 dfs(result, num, target, expr + "+" + curNum, calcVal + curNum, curNum, i + 1);
                 dfs(result, num, target, expr + "-" + curNum, calcVal - curNum, -curNum, i + 1);
-                // trick part: to calculate multiplication, we should subtract previous number,
-                // and then add current multiplication result
+                // trick part: to calculate multiplication, we should subtract previous number, and then add current multiplication result
                 // also, put the current multiplication result as preMultiplicationNum
                 dfs(result, num, target, expr + "*" + curNum,
                         calcVal - preMultiplicationNum + preMultiplicationNum * curNum, preMultiplicationNum * curNum,

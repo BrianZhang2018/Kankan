@@ -1,4 +1,4 @@
-package category.slidingwindow;
+package category.slidingwindow.templateSolution;
 
 import java.util.HashSet;
 /**
@@ -9,23 +9,25 @@ public class LongestSubstringwithoutRepeatingCharacters {
         LongestSubstringwithoutRepeatingCharacters test = new LongestSubstringwithoutRepeatingCharacters();
         System.out.println(test.lengthOfLongestRepeatingSubstring("abcabcbb"));
     }
-    
+
+    //simple version
     public int lengthOfLongestRepeatingSubstring(String s) {
         if(s == null || s.length() == 0)
             return 0;
-        int max = 0;
-        
-        int i=0, j=0;
-        HashSet<Character> set = new HashSet<Character>();
-        while(i<s.length() && j<s.length()){
-            if(!set.contains(s.charAt(j))){
-                set.add(s.charAt(j++));
-                max=Math.max(max, j-i);
+
+        int left=0, right=0, maxLen = Integer.MIN_VALUE;
+        HashSet<Character> counter = new HashSet<Character>();
+        //although didn't copy the template exactly, but the below logic is simpler
+        while(left<s.length() && right<s.length()){
+            if(!counter.contains(s.charAt(right))){
+                counter.add(s.charAt(right++));
+                maxLen=Math.max(maxLen, right-left);
             }else{
-                set.remove(s.charAt(i++));
+                counter.remove(s.charAt(left++));
             }
         }
         
-        return max;
+        return maxLen;
     }
+
 }

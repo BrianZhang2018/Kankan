@@ -1,11 +1,11 @@
-package category.slidingwindow;
+package category.slidingwindow.templateSolution;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Leetcode 438. find All Anagrams in a String
- * <p>
+ * 
  * Created by brianzhang on 8/22/18.
  */
 public class FindAllAnagramsInString {
@@ -41,8 +41,7 @@ public class FindAllAnagramsInString {
                 list.add(left);
 
             //if we find the window's size equals to target size, then we have to slid left to find the new match window
-            //reset left as we have a new slide window
-            //only increase the count if the character is in p
+            //reset left as we have a new slide window, only increase the count if the character is in p
             if (right - left == p.length()) {
                 //check if it's in the target string
                 if (hash[s.charAt(left)-'a'] >= 0) {

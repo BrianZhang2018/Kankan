@@ -6,7 +6,9 @@ public class Play {
        // System.out.println(dirs.length);
         BitSet bitSet = new BitSet(8);
         bitSet.set(2);
-        System.out.println((int)'A' - 64);
+        bitSet.set(-1);
+
+        System.out.println(bitSet.get(2));
        // System.out.println(Character.getNumericValue('A'));
     }
 

@@ -15,7 +15,7 @@ need stack depth of only 1 (!) to traverse this entire graph. See the difference
 This is what is meant by better space efficiency of DFS.
 
 2.
-BFS - level traverse  vs DFS - depth traverse
+BFS - level traverse vs DFS - depth traverse
 
 3. 
 BFS related problems: 
@@ -24,10 +24,13 @@ the shortest and the cost to move from one state to another is same, it is safe 
 Note: find all possible paths or each cost differs, try to see if we can use Backtracking,
     we need backtracking because we want to keep track of states between each call.
 
+DFS problems:
+Search a word in matrix (word search: leetcode73), the BFS method will cause the complicate visited state issue.
+
 套路：
     BFS:
 
-    boolean[].. visited
+    boolean[].. visited //memo cache
     Queue queue
     //direction matrix
     int[][] dicts = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
@@ -68,7 +71,7 @@ example: /Users/brianzhang/workspace/WaWahaha/src/category/BFS/TheMaze.java
 
 example:
 /Users/brianzhang/workspace/WaWahaha/src/category/DFS/NumsOfIsland.java
-
+https://leetcode.com/problems/word-search/
 =================================================
 BFS： find shortest path
 
@@ -91,3 +94,6 @@ while(!queue.isEmpty){
 
 e.g /Users/brianzhang/workspace/WaWahaha/src/category/BFSAndDFS/ShortestBridge934.java
 /Users/brianzhang/workspace/WaWahaha/src/category/BFS/minimumsteps/CutOffTreesForGolfEventBFSGetMinSteps.java
+
+5. Compare the BFS and DFS by probelms
+e.g. ShortestBridge934

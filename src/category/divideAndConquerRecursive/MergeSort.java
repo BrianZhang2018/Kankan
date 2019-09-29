@@ -9,6 +9,8 @@ public class MergeSort {
     public static void main(String a[]) {
 
         MergeSort mms = new MergeSort();
+
+        int[] inputArr = new int[]{2,3,25,25,6};
         mms.sort(inputArr);
         for (int i : inputArr) {
             System.out.print(i);

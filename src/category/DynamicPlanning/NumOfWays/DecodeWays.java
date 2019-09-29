@@ -12,7 +12,7 @@ package category.DynamicPlanning.NumOfWays;
  */
 public class DecodeWays {
     public static void main(String[] args){
-        DecodeNumber test = new DecodeNumber();
+        DecodeWays test = new DecodeWays();
         System.out.println(test.numDecodings("102213"));
     }
 

@@ -1,5 +1,7 @@
 package category.binaryTreeAndBinarySerach;
 
+import category.model.TreeNode;
+
 public class InorderSuccessor{
 
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {

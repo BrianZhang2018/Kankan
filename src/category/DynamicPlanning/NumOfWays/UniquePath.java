@@ -5,7 +5,7 @@ package category.DynamicPlanning.NumOfWays;
  *
  * Created by brianzhang on 10/14/18.
  */
-public class UniquePaths {
+public class UniquePath {
     public static void main(String[] args) {
 
         int nir[][] = new int[5][];

@@ -1,5 +1,6 @@
 package OOD;
 
+import java.util.*;
 /* Java program to implement basic stack 
 operations */
 class ImplementAStack { 
@@ -20,7 +21,7 @@ class ImplementAStack {
 	{ 
 		return (top < 0); 
 	} 
-	Stack() 
+
 	{ 
 		top = -1; 
 	} 

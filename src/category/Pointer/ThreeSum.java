@@ -1,6 +1,6 @@
 package category.Pointer;
 
-import java.util.List;
+import java.util.*;
 import java.util.LinkedList;
 import java.util.Arrays;
 

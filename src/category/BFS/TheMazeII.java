@@ -2,6 +2,7 @@ package category.BFS;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.*;
 
 /**
  * https://leetcode.com/articles/the-maze-ii/

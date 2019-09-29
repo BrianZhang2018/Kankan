@@ -1,8 +1,9 @@
 package category.tree.bondary;
 
-import java.util.List;
+import java.util.*;
 import java.util.TreeMap;
 import java.util.ArrayList;
+import category.model.TreeNode;
 
 /**
  * https://www.lintcode.com/problem/binary-tree-vertical-order-traversal/
@@ -38,7 +39,7 @@ public class BinaryTreeVerticalOrderTraversal{
             int level = q2.poll();
      
             //add to map
-            ArrayList<Integer> list = map.get(level);
+            List<Integer> list = map.get(level);
             if (list == null) {
                 list = new ArrayList<>();
                 map.put(level, list);

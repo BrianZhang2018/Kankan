@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Set;
 import java.util.List;
 import java.util.HashSet;
+import category.model.TreeNode;
 
 /**
  * For tree problem, consider to use the recursion first.

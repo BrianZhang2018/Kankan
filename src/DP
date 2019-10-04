@@ -1,32 +1,29 @@
 dp is used to get the number of the solution
 backtracking can list all the solution
 
+1. DP ways:
+    a) Top-Down approach: Recursion + Memoization.
+    b) Botttom-Up approach: Iterative + Tabulation, which avoid the recursion.
+    https://www.geeksforgeeks.org/tabulation-vs-memoization/
 
-DP can be done:
-a) Top-Down approach: Recursion + Memoization.
-b) Botttom-Up approach: Iterative + Tabulation.
-https://www.geeksforgeeks.org/tabulation-vs-memoization/
-
-1. DP = Recursion (e.g. Divide & Conquer) + Memorization   O(n^2)= 1 + 2 + 3 + 4+......n
-DP的两种解法：
-1) Recursion + Memorization - top-down (自顶向下)
-example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
-2) 自底向上循环递推  bottom -> top,  two 'for' loop, time complexity is O(n^2)
-example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
+    1) Recursion (e.g. Divide & Conquer) + Memorization - top-down (自顶向下), O(n^2)= 1 + 2 + 3 + 4+......n
+    example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
+    2) 自底向上循环递推  bottom -> top,  two 'for' loop, time complexity is O(n^2)
+    example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
 
 2.
-Backtracking is a more general purpose algorithm.
+    Backtracking is a more general purpose algorithm.
 
-Depth-First search is a specific form of backtracking related to searching tree structures.
+    Depth-First search is a specific form of backtracking related to searching tree structures.
 
 3.
-Binary search tree:
-DFS, BFS
+    Binary search tree:
+    DFS, BFS
 
-DFS - Traverse
-    - Divide & Conquer - O(2^n)
+    DFS - Traverse
+        - Divide & Conquer - O(2^n)
 
-Divide & Conquer - Recursion
+    Divide & Conquer - Recursion
 
 4.
 表达式match题目的套路分析：

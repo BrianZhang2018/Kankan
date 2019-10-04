@@ -12,9 +12,9 @@ import java.util.*;
  * <p>
  * https://www.youtube.com/watch?v=OFkLC30OxXM
  */
-public class CutOffTreesForGolfEventBFSGetMinSteps {
+public class CutOffTreesforGolfEventBFSGetMinSteps {
     public static void main(String[] args) {
-        CutOffTreesForGolfEventBFSGetMinSteps test = new CutOffTreesForGolfEventBFSGetMinSteps();
+        CutOffTreesforGolfEventBFSGetMinSteps test = new CutOffTreesforGolfEventBFSGetMinSteps();
         List<List<Integer>> forest = new ArrayList<List<Integer>>();
         forest.add(Arrays.asList(4, 3, 2));
         forest.add(Arrays.asList(0, 0, 5));

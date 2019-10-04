@@ -1,6 +1,7 @@
 package category.graph.topologicalsort;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -46,7 +47,7 @@ public class TopologicalSortBFS {
 // Queue version:
     public boolean canFinish1(int numCourses, int[][] prerequisites) {
         int[] indegree = new int[numCourses];
-        List<Integer>[] adjlist = new ArrayList<>[numCourses];
+        List<Integer>[] adjlist = new ArrayList[numCourses];
 
         for(int i=0; i<numCourses; i++) 
             adjlist[i] = new ArrayList<>();

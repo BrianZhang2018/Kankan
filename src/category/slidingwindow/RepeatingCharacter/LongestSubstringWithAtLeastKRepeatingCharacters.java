@@ -8,28 +8,62 @@ package category.slidingwindow.RepeatingCharacter;
 public class LongestSubstringWithAtLeastKRepeatingCharacters {
     public static void main(String[] args) {
         LongestSubstringWithAtLeastKRepeatingCharacters test = new LongestSubstringWithAtLeastKRepeatingCharacters();
-        //System.out.println(test.longestSubstring("ababbc", 2));
+        System.out.println(test.longestSubstring("ababbc", 2));
     }
 
     public int longestSubstring(String s, int k) {
-        int d = 0;
+        int ls= 0;
 
         //brute force to loop all the situation, 
-        //like 1 unique character, 2 unique character ... which repeat k times or moth k times in substring
+        //like 1 unique character, 2 unique character ... which repeat at least k times in substring
 
      /*   for (int numUniqueTarget = 1; numUniqueTarget <= 26; numUniqueTarget++){
             int res = longestSubstringWithNUniqueChars(s, k, numUniqueTarget);
             System.out.println(numUniqueTarget + ": " + res);
-            d = Math.max(d, res);
+            ls = Math.max(ls, res);
         }*/
 
         for (int numUniqueTarget = 1; numUniqueTarget <= 26; numUniqueTarget++){
             int res = longestKUniqueRepeatingCharacter(s, k, numUniqueTarget);
             //System.out.println(numUniqueTarget + ": " + res);
-            d = Math.max(d, res);
+            ls = Math.max(ls, res);
         }
 
-        return d;
+        return ls;
+    }
+
+    public int longestKUniqueRepeatingCharacter(String s, int k, int cNum){
+        int low = 0, high = 0;
+        int[] repeatNum = new int[26];
+        int uniqueCNum = 0;
+        int uniqueKNum = 0;
+        int res = 0;
+
+        while(high < s.length()){
+            Character c = s.charAt(high);
+            if(repeatNum[c-'a']++ == 0)
+                uniqueCNum++;
+            if(repeatNum[c-'a'] == k)
+                uniqueKNum++;
+            high++;
+
+            //slide window
+            while(uniqueCNum>cNum){
+                Character cl = s.charAt(low);
+                if(repeatNum[cl-'a']-- == k){
+                    uniqueKNum--;
+                }
+                if(repeatNum[cl-'a'] == 0){
+                    uniqueCNum--;
+                }
+                low++;
+            }
+            
+            if(uniqueCNum == cNum && uniqueCNum == uniqueKNum){
+                res = Math.max(high-low, res);
+            }
+        }
+        return res;
     }
 
     private int longestSubstringWithNUniqueChars(String s, int k, int numUniqueTarget) {
@@ -57,37 +91,5 @@ public class LongestSubstringWithAtLeastKRepeatingCharacters {
         }
 
         return maxLength;
-    }
-
-    public int longestKUniqueRepeatingCharacter(String s, int k, int cNum){
-        int low = 0, high = 0;
-        int[] repeatNum = new int[26];
-        int uniqueCNum = 0;
-        int uniqueKNum = 0;
-        int res = 0;
-
-        while(high < s.length()){
-            Character c = s.charAt(high);
-            if(repeatNum[c-'a']++ == 0)
-                uniqueCNum++;
-            if(repeatNum[c-'a'] == k)
-                uniqueKNum++;
-
-            while(uniqueCNum>cNum){
-                Character cl = s.charAt(low);
-                if(repeatNum[cl-'a']-- == k){
-                    uniqueKNum--;
-                }
-                if(repeatNum[cl-'a'] == 0){
-                    uniqueCNum--;
-                }
-                low++;
-            }
-            high++;
-            if(uniqueCNum == cNum && uniqueCNum == uniqueKNum){
-                res = Math.max(high-low, res);
-            }
-        }
-        return res;
     }
 }

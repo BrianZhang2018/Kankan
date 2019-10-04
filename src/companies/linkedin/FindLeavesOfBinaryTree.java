@@ -1,5 +1,7 @@
 package companies.linkedin;
 
+import category.model.TreeNode;
+
 import java.util.*;
 
 /**

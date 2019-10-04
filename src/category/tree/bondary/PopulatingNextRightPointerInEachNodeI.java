@@ -30,6 +30,7 @@ public class PopulatingNextRightPointerInEachNodeI {
     }
 }
 
+/*
 class Node {
     public int val;
     public Node left;
@@ -44,4 +45,4 @@ class Node {
         right = _right;
         next = _next;
     }
-};
+};*/

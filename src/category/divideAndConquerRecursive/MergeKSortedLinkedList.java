@@ -1,5 +1,7 @@
 package category.DivideAndConquerRecursive;
 
+import category.model.ListNode;
+
 /**
  * https://leetcode.com/problems/merge-k-sorted-lists/
  */

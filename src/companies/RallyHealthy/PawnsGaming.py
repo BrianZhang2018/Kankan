@@ -2,37 +2,36 @@
 # 这答案缺东西, failed on rally healthy OA.
 
 def solution(B):
-    # write your code in Python 3.6
     pos_x = 0
     pos_y = 0
-    # find "O" character from B
-    for i in range(len(B)):
-        for j in range(len(B[i])):
-            if B[i][j] == "O":
+    
+    m=len(B)
+    n=len(B[0])
+    for i in range(m):
+        for j in range(n):
+            
+            if B[i][j] == 'O':
                 pos_x = i
                 pos_y = j
 
-    # if O is located in first line, return 0
     if pos_x-1 < 0:
         return 0
-
-    # if O is located in end line
-    elif pos_x + 1 > len(B):
-        # if O is located in up-left, return 1
-        if B[pos_x-1][pos_y-1] == "X":
-            return 1
-        # if O is located in up-right, return 1
-        elif B[pos_x-1][pos_y+1] == "X":
-            return 1
-        # if O is located in up-left and up-right, return 2
-        elif B[pos_x-1][pos_y-1]=="X" and B[pos_x-1][pos_y+1] == "X":
-            return 2
-    # if X is located in down status, return 0
-    elif B[pos_x+1][pos_y-1] == "X" or B[pos_x+1][pos_y+1] == "X":
-        return 0
+    elif pos_x + 1 >= len(B):
+        x = 0
+        if B[pos_x-1][pos_y+1] == "X" and pos_y+1<n:
+            if pos_x-2>0 and pos_y+2<n and B[pos_x-2][pos_y+2] != "X":
+                x+=1
+        if B[pos_x-1][pos_y-1] == "X" and pos_x-1>0: 
+            x+=1
+        return x
     else:
         return 0
+    pass
+
 
 B = ['X....', '.X...', '..O..', '...X.', '.....'] 
+B1 = ['X....', '.X...', '..O..', '...X.', '.....']
+B2 = ['..X...', '......', '....X.', 'XXXXX.', '..X..X', '....O.']
 print(solution(B))
-print(111)
+print(solution(B1))
+print(solution(B2))

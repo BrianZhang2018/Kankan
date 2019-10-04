@@ -1,5 +1,8 @@
 package OOD;
 
+import java.util.HashMap;
+import java.util.List;
+
 /**
  * https://github.com/danielmiaomtm/Algorithm-OOD-java/blob/master/OOD%20Battleship.java
  * 
@@ -73,13 +76,14 @@ class GameBoard {
         relations.remove(coor);
     }
 
-    Ship getRelatedShip(Coordination coor) throws Exception {
+    Ship getRelatedShip(Coordination coor) {
         if(relations.containsKey(coor)){
             return relations.get(coor);
         }
-        else {                
+     /*   else {
             throw new Exception("wrong coordination");
-        }
+        }*/
+     return null;
     }
     boolean isShipSunk(Ship ship) {
         return !relations.containsValue(ship);

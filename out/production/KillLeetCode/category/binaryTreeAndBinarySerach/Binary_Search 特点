@@ -1,0 +1,6 @@
+Binary Search have to use in an “ordered" array or "rotated ordered array".
+
+FirstBadVersionIterative - binary search condition explanation
+    while (start <= end) { ... (java source code solution)
+        vs
+    while (start < end) { ...

@@ -1,0 +1,37 @@
+backtracking dfs: (refer the WordLadder2.java)
+
+    if(exit condition){
+        ....
+        return;
+    }
+
+    for(..)
+        dfs(..)
+        results.remove(result.size()-1);
+
+Simple dfs: (refer the Trie.java)
+    1.
+    if(exit condition)
+            ....
+
+     for(..)
+         dfs(..)
+
+     2.
+     result = value;
+
+     for()
+        newValue = dfs()
+        if()
+            result=newValue;
+
+2. 需要理解一下下面的:
+Backtracking is a more general purpose algorithm.
+
+Depth-First search is a specific form of backtracking related to searching tree structures.
+
+
+3. Solved problem
+search word, like palindrome    
+e.g. 
+https://leetcode.com/problems/palindrome-pairs/

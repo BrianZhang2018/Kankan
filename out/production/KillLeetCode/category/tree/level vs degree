@@ -1,0 +1,10 @@
+level order traverse:
+tree node's level
+
+level + 1
+
+vertical order traverse:  e.g. BinaryTreeVerticalOrderTraversal 
+tree node's degree
+
+left : degree - 1
+right : degree + 1

@@ -1,9 +1,11 @@
 package category.DFS;
 
 /**
+ * Flip Number solution for number of island I
  * Created by brianzhang on 4/14/19.
  */
 public class NumberOfIslandFlippingNumber {
+
     private int count = 0;
     public int numIslands(char[][] grid) {
         for(int i=0; i<grid.length; i++){

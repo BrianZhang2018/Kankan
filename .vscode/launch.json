@@ -2,6 +2,60 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DecodeString",
+            "request": "launch",
+            "mainClass": "category.javabasic.stack.DecodeString"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindMissingPositive",
+            "request": "launch",
+            "mainClass": "category.array.BitSet.FindMissingPositive"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WordBreakII",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.WordBreakII"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WordBreakDP",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.WordBreakDP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestCommonSubstring",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.LongestCommonSubstring"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestCommonPrefix",
+            "request": "launch",
+            "mainClass": "category.string.LongestCommonPrefix"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestConsecutiveSubList",
+            "request": "launch",
+            "mainClass": "companies.wayfair.LongestConsecutiveSubList"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - InitialPublicOffer",
+            "request": "launch",
+            "mainClass": "companies.braze.InitialPublicOffer"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestArithmeticSubsequenceOfGivenDifference",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.LongestArithmeticSubsequenceOfGivenDifference"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Test",
             "request": "launch",
             "mainClass": "Test"

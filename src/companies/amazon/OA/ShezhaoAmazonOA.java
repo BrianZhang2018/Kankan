@@ -3,7 +3,6 @@ package companies.amazon.OA;
 import java.util.*;
 
 public class ShezhaoAmazonOA {
-    
     // https://leetcode.com/company/amazon/
     //1. MST
     //2. reorder log

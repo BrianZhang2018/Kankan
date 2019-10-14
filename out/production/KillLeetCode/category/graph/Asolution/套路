@@ -6,7 +6,7 @@
     for(int i=1;i<=N;i++){
         graph[i] = new ArrayList<Integer>();
     }
-    //构建图
+    //构建图, example here the edge is undirected
     for(int[] edge: dislikes){//遍历二维数组中每一个一维数组
         //因为每一个一维数组在这道题目里面都只有两个值，因而只用保证两个连同分量的相互关联
         graph[edge[0]].add(edge[1]);

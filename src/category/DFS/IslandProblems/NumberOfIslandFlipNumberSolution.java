@@ -1,13 +1,15 @@
-package category.DFS;
+package category.DFS.IslandProblems;
 
 /**
  * Flip Number solution for number of island I
  * Created by brianzhang on 4/14/19.
  */
-public class NumberOfIslandFlippingNumber {
+public class NumberOfIslandFlipNumberSolution {
 
     private int count = 0;
+
     public int numIslands(char[][] grid) {
+    
         for(int i=0; i<grid.length; i++){
             for(int j=0; j<grid[0].length; j++){
                 if(grid[i][j] =='1'){
@@ -20,7 +22,7 @@ public class NumberOfIslandFlippingNumber {
     }
 
     public void dfs(char[][] grid, int i, int j){
-        if(i>=grid.length || j>=grid[0].length || j<0 || i<0){
+        if(i>=grid.length || j>=grid[0].length || j<0 || i<0 || grid[i][j] == '0'){
             return;
         }
 

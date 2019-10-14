@@ -12,7 +12,6 @@ import java.util.Queue;
  * Created by brianzhang on 4/7/19.
  */
 public class NetworkDelayTime {
-
     public static void main(String[] args) {
         NetworkDelayTime test = new NetworkDelayTime();
 

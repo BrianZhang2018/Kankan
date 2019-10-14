@@ -11,89 +11,88 @@ import java.util.*;
 public class MinimumHeightTrees {
     public static void main(String[] args) {
         //System.out.println(findMinHeightTrees(11, new int[][]{{0,1},{0,2},{2,3},{0,4},{2,5},{5,6},{3,7},{6,8},{8,9},{9,10}}));
-        System.out.println(findMinHeightTrees2(6, new int[][]{{0,3},{1,3},{2,3},{4,3},{5,4}}));
+        System.out.println(findMinHeightTrees2(6, new int[][] { { 0, 3 }, { 1, 3 }, { 2, 3 }, { 4, 3 }, { 5, 4 } }));
     }
+
+    //better write way using the List rather than the array to construct the adjacent relationship of nodes
+    public static List<Integer> findMinHeightTrees2(int n, int[][] edges) {
+        if (n == 1)
+            return Collections.singletonList(0);
+
+        List<Set<Integer>> graph = new ArrayList<>(n);
+        List<Integer> leaves = new ArrayList<Integer>();
+
+        for (int i = 0; i < n; i++) {
+            graph.add(new HashSet<Integer>());
+        }
+
+        for (int[] edge : edges) {
+            graph.get(edge[0]).add(edge[1]);
+            graph.get(edge[1]).add(edge[0]);
+        }
+
+        for (int i = 0; i < graph.size(); i++) {
+            if (graph.get(i).size() == 1) {
+                leaves.add(i);
+            }
+        }
+
+        while (n > 2) {
+            n -= leaves.size();
+            List<Integer> newLeaves = new ArrayList<Integer>();
+            for (int i : leaves) {
+                int incomingEdgeV = graph.get(i).iterator().next();
+                graph.get(incomingEdgeV).remove(i);
+
+                if (graph.get(incomingEdgeV).size() == 1)
+                    newLeaves.add(incomingEdgeV);
+            }
+            leaves = newLeaves;
+        }
+        return leaves;
+    }
+    
+    //solution - 2
     public static List<Integer> findMinHeightTrees(int n, int[][] edges) {
 
         List<Integer> res = new ArrayList<Integer>();
-        if(edges == null)
+        if (edges == null)
             return res;
 
         int[] degree = new int[n];
         ArrayList<Integer>[] graph = new ArrayList[n];
         List<Integer> leaves = new ArrayList<Integer>();
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             graph[i] = new ArrayList<Integer>();
         }
 
-        for(int[] edge : edges){
+        for (int[] edge : edges) {
             graph[edge[0]].add(edge[1]);
             graph[edge[1]].add(edge[0]);
             degree[edge[1]]++;
             degree[edge[0]]++;
         }
 
-        for(int i=0; i<degree.length; i++){
-            if(degree[i] == 1){
+        for (int i = 0; i < degree.length; i++) {
+            if (degree[i] == 1) {
                 leaves.add(i);
             }
         }
 
-        while(n>2){
+        while (n > 2) {
             n -= leaves.size();
             List<Integer> newLeaves = new ArrayList<Integer>();
-            for(int i : leaves){
+            for (int i : leaves) {
                 int incomingEdgeV = graph[i].get(0); //get the vertex of incoming edge of the leaf vertex, get(0) as the leaf only has one incoming edge
-               //remove the leaf edge from incoming vertex side, e.g 0 is the leaf vertex, 0->4, 4->0, here is remove later one 
-               //as the first one in the curr leaves which is discarded after the curr loop                
-                graph[incomingEdgeV].remove(new Integer(i)); 
+                //remove the leaf edge from incoming vertex side, e.g 0 is the leaf vertex, 0->4, 4->0, here is remove later one 
+                //as the first one in the curr leaves which is discarded after the curr loop                
+                graph[incomingEdgeV].remove(new Integer(i));
                 degree[incomingEdgeV]--;
                 //add it if it's a leaf edge
-                if(degree[incomingEdgeV] == 1)
+                if (degree[incomingEdgeV] == 1)
                     newLeaves.add(incomingEdgeV);
             }
 
-            leaves = newLeaves;
-        }
-        return leaves;
-    }
-
-    //better write way using the List rather than the array to construct the adjacent relationship of nodes
-    public static List<Integer> findMinHeightTrees2(int n, int[][] edges) {
-        
-        List<Integer> res = new ArrayList<Integer>();
-        if (n == 1) 
-            return Collections.singletonList(0);
-        
-        int[] degree = new int[n];
-        List<Set<Integer>> graph = new ArrayList<>(n);
-        List<Integer> leaves = new ArrayList<Integer>();
-        
-        for(int i=0; i<n; i++){
-            graph.add(new HashSet<Integer>());
-        }
-        
-        for(int[] edge : edges){
-            graph.get(edge[0]).add(edge[1]);
-            graph.get(edge[1]).add(edge[0]);
-        }
-        
-        for(int i=0; i<graph.size(); i++){
-            if(graph.get(i).size() == 1){
-                leaves.add(i);
-            }
-        }
-        
-        while(n > 2){
-            n -= leaves.size();
-            List<Integer> newLeaves = new ArrayList<Integer>();
-            for(int i : leaves){
-                int incomingEdgeV = graph.get(i).iterator().next();
-                graph.get(incomingEdgeV).remove(i);
-                
-                if( graph.get(incomingEdgeV).size() == 1)
-                    newLeaves.add(incomingEdgeV);
-            }
             leaves = newLeaves;
         }
         return leaves;

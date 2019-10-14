@@ -16,7 +16,6 @@ public class LongestConsecutiveSubList {
         List<String> sl = new ArrayList<String>();
         sl.add("aa");
         sl.add("bb");
-
         System.out.println(findConsecutiveSubList(sl, bl));
     }
 
@@ -34,26 +33,26 @@ public class LongestConsecutiveSubList {
         int index=0;
         int max = 0;
         int left = 0, right=0;
-        while(index < sl.size()){
-            if(bl.indexOf(sl.get(index)) != -1){
-                int slIndex = index+1;
+        while (index < sl.size()) {
+            if (bl.indexOf(sl.get(index)) != -1) {
+                int slIndex = index + 1;
                 int start = bl.indexOf(sl.get(index));
-                for(int i=start+1; i<bl.size(); i++){
-                    if(bl.get(i) == sl.get(slIndex)){
-                        if(i - start > max){
+                for (int i = start + 1; i < bl.size(); i++) {
+                    if (bl.get(i).equals(sl.get(slIndex))) {
+                        if (i - start > max) {
                             left = start;
                             right = i;
                             max = i - start;
                         }
                         slIndex++;
-                    }else{
+                    } else {
                         break;
                     }
                 }
             }
             index++;
         }
-
+        
         return bl.subList(left, right+1);
     }
     

@@ -9,7 +9,6 @@ import java.util.Map;
  * Created by brianzhang on 2/10/19.
  */
 public class MaxAreaOfIsland {
-
     public static void main(String[] args) {
         //int[][] grid = {{1, 1, 0, 0, 0}, {1, 1, 0, 0, 0}, {0, 0, 0, 1, 1}, {0, 0, 0, 1, 1}};
         int[][] grid = {{1, 1}, {1, 0}};

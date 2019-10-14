@@ -2,6 +2,54 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FindMeanAndMedianOfScores",
+            "request": "launch",
+            "mainClass": "companies.stash.FindMeanAndMedianOfScores"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxAreaOfIsland",
+            "request": "launch",
+            "mainClass": "category.DFS.MaxAreaOfIsland"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestPalindromeSubseq",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.LongestPalindromeSubseq"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestConsecutiveSullist",
+            "request": "launch",
+            "mainClass": "companies.wayfair.LongestConsecutiveSullist"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MinimumHeightTrees",
+            "request": "launch",
+            "mainClass": "category.graph.topologicalsort.MinimumHeightTrees"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindNoParentAndOneParentNodes",
+            "request": "launch",
+            "mainClass": "companies.wayfair.FindNoParentAndOneParentNodes"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - IsGraphBipartite",
+            "request": "launch",
+            "mainClass": "category.graph.ColorSolution.IsGraphBipartite"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TopologicalSortBFS",
+            "request": "launch",
+            "mainClass": "category.graph.topologicalsort.TopologicalSortBFS"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DecodeString",
             "request": "launch",
             "mainClass": "category.javabasic.stack.DecodeString"

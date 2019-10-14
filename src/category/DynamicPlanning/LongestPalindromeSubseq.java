@@ -2,19 +2,21 @@ package category.DynamicPlanning;
 
 /**
  * Dynamic programming
- * <p>
+ * 1. get the lenght of longest Palindrome substring
+ * 2. get the substring of longest Palindrome
  * Created by brianzhang on 8/12/18.
  */
 public class LongestPalindromeSubseq {
-
     public static void main(String[] args) {
-        System.out.println(getLongestPalindromeSubseq("bbbab"));
+        //get the length of longest Palindrome substring
+        System.out.println(getLongestPalindromeSubseq("cbbd"));
+        //get the substring of longest Palindrome
+        System.out.println(longestPalindrome("cbbd"));
     }
 
     /**
-     * Solution - 1:
+     * Solution - 1: get the length of longest Palindrome substring
      * https://zxi.mytechroad.com/blog/dynamic-programming/leetcode-516-longest-palindromic-subsequence/
-     * <p>
      * bottom-top
      */
     public static int getLongestPalindromeSubseq(String s) {
@@ -26,24 +28,51 @@ public class LongestPalindromeSubseq {
 
         //从小规模，子字符串长度为1，开始
         for (int winSize = 1; winSize <= sl; winSize++) {
-            for (int startIndex = 0; startIndex <= sl - winSize; startIndex++) {
-                int endIndex = startIndex + winSize - 1;
+            for (int start = 0; start <= sl - winSize; start++) {
+                int end = start + winSize - 1;
                 //base case
-                if (startIndex == endIndex) {
-                    dp[startIndex][endIndex] = 1;
+                if (start == end) {
+                    dp[start][end] = 1;
                     continue;
                 }
 
-                if (s.charAt(startIndex) == s.charAt(endIndex)) { //case 1:
-                    dp[startIndex][endIndex] = dp[startIndex + 1][endIndex - 1] + 2;
+                if (s.charAt(start) == s.charAt(end)) { //case 1:
+                    dp[start][end] = dp[start + 1][end - 1] + 2;
                 } else {// case 2:
-                    dp[startIndex][endIndex] = Math.max(dp[startIndex + 1][endIndex], dp[startIndex][endIndex - 1]);
+                    dp[start][end] = Math.max(dp[start + 1][end], dp[start][end - 1]);
                 }
             }
         }
 
         return dp[0][sl - 1];
     }
+
+    //https://leetcode.com/problems/longest-palindromic-substring
+    //get the substring of longest Palindrome
+    public static String longestPalindrome(String s) {
+        
+        if(s == null || s.length() == 0)
+            return "";
+      
+        int n = s.length();
+        String res = null;
+        boolean[][] dp = new boolean[n][n];
+
+         //bottom-up, tabulation -> DP
+        for (int ws = 1; ws <=n; ws++) {  //ws: windowSize
+          for (int start = 0; start <= n - ws; start++) { 
+              
+            int end = ws + start -1;
+            dp[start][end] = s.charAt(start) == s.charAt(end) && (end - start < 3 || dp[start + 1][end - 1]);
+
+            if (dp[start][end] && (res == null || end - start + 1 > res.length())) {
+              res = s.substring(start, end + 1);
+            }
+          }
+        }
+
+        return res;
+  }
 
     //Solution-2
     //top-bottom
@@ -83,12 +112,12 @@ public class LongestPalindromeSubseq {
         }
 
         for (int winSize = 2; winSize <= str.length; winSize++) {
-            for (int startIndex = 0; startIndex <= str.length - winSize; startIndex++) {
-                int endIndex = startIndex + winSize - 1;
-                if (str[startIndex] == str[endIndex]) {
-                    table[startIndex][endIndex] = table[startIndex + 1][endIndex - 1] + 2;
+            for (int start = 0; start <= str.length - winSize; start++) {
+                int end = start + winSize - 1;
+                if (str[start] == str[end]) {
+                    table[start][end] = table[start + 1][end - 1] + 2;
                 } else {
-                    table[startIndex][endIndex] = Math.max(table[startIndex + 1][endIndex], table[startIndex][endIndex - 1]);
+                    table[start][end] = Math.max(table[start + 1][end], table[start][end - 1]);
                 }
             }
         }

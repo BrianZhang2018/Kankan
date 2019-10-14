@@ -8,7 +8,6 @@ import java.util.Stack;
  * Created by brianzhang on 4/17/19.
  */
 public class IsGraphBipartite {
-
     public static void main(String[] args) {
         Stack stack = new Stack();
         stack.push(null);

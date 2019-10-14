@@ -8,7 +8,6 @@ import java.util.*;
  * https://www.youtube.com/watch?v=GazC3A4OQTE
  */
 public class Dijkstra {
-
 	public static void main(String[] args) {
 		// mark all the vertices
 		Vertex A = new Vertex("A");

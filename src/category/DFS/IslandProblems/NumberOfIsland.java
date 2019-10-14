@@ -1,4 +1,4 @@
-package category.DFS;
+package category.DFS.IslandProblems;
 
 /**
  * https://leetcode.com/problems/number-of-islands/

@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DeckOfCards",
+            "request": "launch",
+            "mainClass": "OOD.DeckOfCards.DeckOfCards"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SumEachDigitInANumber",
+            "request": "launch",
+            "mainClass": "companies.grubhub.SumEachDigitInANumber"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FindMeanAndMedianOfScores",
             "request": "launch",
             "mainClass": "companies.stash.FindMeanAndMedianOfScores"

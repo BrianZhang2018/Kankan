@@ -1,9 +1,5 @@
 package OOD.DeckOfCards;
-/*
-   An object of class card represents one of the 52 cards in a
-   standard deck of playing cards.  Each card has a suit and
-   a value.
-*/
+
 public class Card {
 
     private static final String[] Suit = {"d", "c", "h", "s"};

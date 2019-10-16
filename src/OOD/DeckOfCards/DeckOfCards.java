@@ -1,5 +1,6 @@
 package OOD.DeckOfCards;
 
+//http://www.mathcs.emory.edu/~cheung/Courses/170/Syllabus/10/cards.html
 public class DeckOfCards {
     public static void main(String[] args) {
         DeckOfCards dc = new DeckOfCards();

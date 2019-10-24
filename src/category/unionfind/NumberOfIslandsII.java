@@ -64,3 +64,9 @@ public class NumberOfIslandsII{
        return d;
    }
 }
+
+class Point{
+    int x;
+    int y;
+
+}

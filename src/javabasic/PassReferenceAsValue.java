@@ -7,7 +7,6 @@ import java.util.List;
  * Created by brianzhang on 11/24/18.
  */
 public class PassReferenceAsValue {
-
     public static void main(String[] args) {
         //example 1: pass reference as value, so original list will be changed
         List<Integer> jj = new ArrayList<>();

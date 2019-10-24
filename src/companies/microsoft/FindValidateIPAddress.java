@@ -14,7 +14,7 @@ public class FindValidateIPAddress{
 		"([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
 		"([01]?\\d\\d?|2[0-4]\\d|25[0-5])$";
 	  
-    public IPAddressValidator(){
+    public FindValidateIPAddress(){
 	  pattern = Pattern.compile(IPADDRESS_PATTERN);
     }
 	  

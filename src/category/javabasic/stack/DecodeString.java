@@ -2,8 +2,10 @@ package category.javabasic.stack;
 
 import java.util.*;
 import java.lang.*;
+
 /**
  * Cruise
+ * https://leetcode.com/problems/decode-string/
  */
 public class DecodeString{
     public static void main(String[] args){
@@ -19,7 +21,7 @@ public class DecodeString{
         int k = 0;
         for (char ch : s.toCharArray()) {
             if (Character.isDigit(ch)) {
-                k = k * 10 + ch - '0';
+                k = k * 10 + ch - '0';  // e.g. 10[bc]
             } else if ( ch == '[') {
                 numStack.push(k);
                 strStack.push(cur);

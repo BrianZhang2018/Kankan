@@ -3,58 +3,46 @@ package category.string;
 import java.util.Stack;
 
 /**
+ * https://leetcode.com/problems/valid-parenthesis-string/
  * Created by brianzhang on 3/2/19.
  */
 public class ValidateParenthesisString {
-
     public static void main(String[] args) {
         ValidateParenthesisString test = new ValidateParenthesisString();
-        System.out.println(test.checkValidString("(*)"));
+        System.out.println(test.checkValidString("((*)"));
     }
-    public boolean checkValidString(String s) {
 
-        if(s == null)
+    public boolean checkValidString(String s) {
+        if (s == null)
             return true;
 
-        char left = '(';
-        char right = ')';
-        char star = '*';
-        char[] charArr = s.toCharArray();
-        Stack<Character> stack = new Stack<Character>();
-        int i=0;
-        for(char temp : charArr){
-            i++;
-            if(temp == left){
-                stack.push(right);
-            }else if(temp == star){
-                stack.push(star);
-            }else{
-                if(stack.isEmpty()){
-                    stack.push(temp);
-                }else{
-                    Character peek = stack.pop();
-                    while(!stack.isEmpty() && charArr.length-i+1 == stack.size() && peek == star){
-                        if(!stack.isEmpty())
-                            peek = stack.pop();
-                        if(!stack.isEmpty())
-                            peek = stack.pop();
-                    }
-                    if(peek != temp && peek != star){
-                        return false;
-                    }
+        Stack<Integer> left = new Stack<Integer>();
+        Stack<Integer> star = new Stack<Integer>();
+
+        for (int i = 0; i < s.length(); i++) {
+
+            char c = s.charAt(i);
+            if (c == '(') {
+                left.push(i);
+            } else if (c == '*') {
+                star.push(i);
+            } else {
+                if (left.isEmpty() && star.isEmpty())
+                    return false;
+
+                if (!left.isEmpty()) {
+                    left.pop();
+                } else if (!star.isEmpty()) {
+                    star.pop();
                 }
             }
         }
 
-        if(!stack.isEmpty()){
-            Character last;
-            while(!stack.isEmpty() && (last = stack.peek()) == star){
-                last = stack.pop();
-                if(!stack.isEmpty())
-                    last = stack.pop();
-            }
+        while (!left.isEmpty() && !star.isEmpty()) {
+            if (left.pop() > star.pop())
+                return false;
         }
 
-        return stack.isEmpty();
+        return left.isEmpty();
     }
 }

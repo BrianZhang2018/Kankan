@@ -8,12 +8,13 @@ import java.util.List;
  * Created by brianzhang on 8/5/18.
  */
 public class GenerateParenthesis {
+    public static void main(String[] args) {
+        generateParenthesis(3);
+    }
 
     public static List<String> generateParenthesis(int n) {
         List<String> list = new ArrayList<String>();
         backtrack(list, "", 0, 0, n);
-
-     
         return list;
     }
 
@@ -31,10 +32,4 @@ public class GenerateParenthesis {
         if (close < open)
             backtrack(list, str + ")", open, close + 1, max);
     }
-
-    public static void main(String[] args) {
-
-        generateParenthesis(3);
-    }
-
 }

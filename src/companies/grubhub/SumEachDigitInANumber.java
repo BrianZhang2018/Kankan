@@ -1,6 +1,7 @@
 package companies.grubhub;
 
 public class SumEachDigitInANumber {
+
     public static void main(String[] args) {
         System.out.println(getSumIteratively(123));
         System.out.println(getSumRecursively(12));

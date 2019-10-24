@@ -17,7 +17,6 @@ import java.util.HashMap;
 public class LRUCache {
     public static void main(String[] args) {
         LRUCache cache = new LRUCache(2 /* capacity */);
-
         cache.put(1, 1);
         cache.put(2, 2);
         System.out.println(cache.get(1));       // returns 1

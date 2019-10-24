@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ValidateParenthesisString",
+            "request": "launch",
+            "mainClass": "category.string.ValidateParenthesisString"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DeckOfCards",
             "request": "launch",
             "mainClass": "OOD.DeckOfCards.DeckOfCards"

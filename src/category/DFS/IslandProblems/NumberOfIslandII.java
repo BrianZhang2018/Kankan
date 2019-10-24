@@ -13,7 +13,7 @@ public class NumberOfIslandII {
         if(operators == null || operators.length == 0)
            return res;
            
-       int[] parents = new int[nm];
+       int[] parents = new int[n*m];
        Arrays.fill(parents, -1);
        
        int num = 0;

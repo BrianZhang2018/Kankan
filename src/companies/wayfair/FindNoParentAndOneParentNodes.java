@@ -24,9 +24,9 @@ public class FindNoParentAndOneParentNodes {
         Set<Integer> res = new HashSet<>();
         Map<Integer, Set<Integer>> map = new HashMap<>();
         for (int[] i : pairs) {
-            Set<Integer> set = map.getOrDefault(i[1], new HashSet<Integer>());
+            Set<Integer> set = map.getOrDefault(i[1], new HashSet<>());
             set.add(i[0]);
-            map.put(i[1], s);
+            map.put(i[1], set);
         }
 
         for (Map.Entry<Integer, Set<Integer>> entry : map.entrySet()) {
@@ -40,7 +40,7 @@ public class FindNoParentAndOneParentNodes {
                 res.add(i[0]);
             }
         }
-        return new ArrayList<Integer>(set);
+        return new ArrayList<Integer>(res);
     }
     
     //dfs + reversed graph to find the common descendant

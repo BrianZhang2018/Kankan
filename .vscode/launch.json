@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ShortestCommonSupersequence",
+            "request": "launch",
+            "mainClass": "category.DynamicPlanning.LCS.ShortestCommonSupersequence"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ValidateParenthesisString",
             "request": "launch",
             "mainClass": "category.string.ValidateParenthesisString"

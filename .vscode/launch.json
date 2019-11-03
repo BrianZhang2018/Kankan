@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - WordSearch",
+            "request": "launch",
+            "mainClass": "category.BacktracingDFS.WordSearch"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PermutationBruteForce",
+            "request": "launch",
+            "mainClass": "category.BacktracingDFS.PermutationBruteForce"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ShortestCommonSupersequence",
             "request": "launch",
             "mainClass": "category.DynamicPlanning.LCS.ShortestCommonSupersequence"

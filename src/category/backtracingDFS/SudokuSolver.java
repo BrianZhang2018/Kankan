@@ -8,11 +8,11 @@ public class SudokuSolver{
     public void solveSudoku(char[][] board) {
         dfs(board, 0);
     }
-    //返回值不是void的backtracking, compare with SubsetsII and Permutation
+    //返回值不是void的backtracking, compare with SubsetsII and Permutation. 这个递归和wordsearch相似。
     public boolean dfs(char[][] board, int d) {
-        if(d==81) //exit if filled all cells - "9X9=81"
+        if(d == 81) //exit if filled all cells - "9X9=81"
             return true;
-        int i=d/9, j=d%9; // get the index of next cell
+        int i= d/9, j= d%9; // get the index of next cell
         if (board[i][j] != '.')
             return dfs(board, d+1);
         

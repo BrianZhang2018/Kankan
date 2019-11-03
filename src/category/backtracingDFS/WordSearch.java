@@ -5,26 +5,25 @@ package category.BacktracingDFS;
  * 
  * https://leetcode.com/problems/word-search/
  */
-public class WordSearch{
-    private int m = 0;
-    private int n = 0;
-    private boolean[][] visited;
+public class WordSearch {
+    public static void main(String[] args) {
+        WordSearch ws = new WordSearch();
+        char[][] board = {{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}};
+        System.out.println(ws.exist(board, "ABCCED"));
+    }
+
     public boolean exist(char[][] board, String word) {
         if(board == null || board.length == 0){
             return false;
         }
         
-        m = board.length;
-        n = board[0].length;
-        visited = new boolean[m][n];
-        for(int i=0; i<m; i++){
-            for(int j=0; j<n; j++){
+        for(int i=0; i<board.length; i++){
+            for(int j=0; j<board[0].length; j++){
                if(dfs(i, j, board, word, 0)){
                     return true;
                 } 
             }
         }
-        
         return false;
     }
     
@@ -32,16 +31,13 @@ public class WordSearch{
         if(index == word.length()) 
             return true;
         
-        if(row >=m || row < 0 || col>=n || col<0 || visited[row][col] || board[row][col] != word.charAt(index)){
+        if(row >=board.length || row < 0 || col>=board[0].length || col<0 || board[row][col] != word.charAt(index)){
             return false;
         }
-        
-        visited[row][col] = true;
-        index++;
-        boolean exist =  dfs(row, col+1, board, word, index) || dfs(row, col-1, board, word, index) ||
-            dfs(row+1, col, board, word, index) || dfs(row-1, col, board, word, index);
-        
-        visited[row][col] = false;
+        board[row][col] = '*';
+        boolean exist =  dfs(row, col+1, board, word, index+1) || dfs(row, col-1, board, word, index+1) ||
+            dfs(row+1, col, board, word, index+1) || dfs(row-1, col, board, word, index+1);
+        board[row][col] = word.charAt(index);
         return exist;
     }
    

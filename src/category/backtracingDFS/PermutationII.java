@@ -19,8 +19,7 @@ public class PermutationII {
 
     public void backTrace(int nums[], List<Integer> temp, List<List<Integer>> res, boolean[] used) {
         if (nums.length == temp.size()) {
-            //deep copy
-            res.add(new ArrayList<Integer>(temp));
+            res.add(new ArrayList<Integer>(temp)); //deep copy
         } else {
             for (int i = 0; i < nums.length; i++) {
                 if (used[i])
@@ -38,5 +37,5 @@ public class PermutationII {
 
     //We sorted the array
     //The problem for Permutation II is that different orders of duplicates should only be considered as one permutation.
-    // In other words, you should make sure that when these duplicates are selected, there has to be one fixed order.
+    //In other words, you should make sure that when these duplicates are selected, there has to be one fixed order.
 }

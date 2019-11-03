@@ -13,7 +13,6 @@ import java.util.List;
  * <p>
  */
 public class PermutationBruteForce {
-
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3};
         System.out.println(permute(arr));

@@ -8,6 +8,10 @@ import java.util.List;
  * Created by brianzhang on 7/25/18.
  */
 public class Subsets {
+    public static void main(String[] args) {
+        int[] nums = new int[]{1, 2, 3};
+        System.out.println(subsets(nums));
+    }
     public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(nums);
@@ -25,10 +29,5 @@ public class Subsets {
             //backTrace
             tempList.remove(tempList.size() - 1);
         }
-    }
-
-    public static void main(String[] args) {
-        int[] nums = new int[]{1, 2, 3};
-        System.out.println(subsets(nums));
     }
 }

@@ -6,7 +6,6 @@ package category.DynamicPlanning.LCS;
  * https://leetcode.com/problems/longest-common-subsequence/discuss/398711/4-different-ways-to-solve-Longest-Common-Sub-sequence-including-O(N)-Solution
  */
 public class LongestCommonSubsequence {
- 
     //two dimension
     public int solution1(String text1, String text2) {
 

@@ -1,8 +1,10 @@
 package OOD;
 
 import java.util.*;
-/* Java program to implement basic stack 
-operations */
+
+/**
+ * Java program to implement basic stack operations
+ */
 class ImplementAStack { 
     public static void main(String args[]) 
 	{ 

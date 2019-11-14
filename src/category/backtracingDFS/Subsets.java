@@ -5,11 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * T: O(n*2^n)
+ * S: O(n)
  * Created by brianzhang on 7/25/18.
  */
 public class Subsets {
     public static void main(String[] args) {
-        int[] nums = new int[]{1, 2, 3};
+        int[] nums = new int[]{1, 2, 3, 4};
         System.out.println(subsets(nums));
     }
     public static List<List<Integer>> subsets(int[] nums) {

@@ -1,4 +1,4 @@
-package category.DynamicPlanning.LCS;
+package category.DynamicPlanning.LCSubSequence;
 
 /**
  * https://leetcode.com/problems/longest-common-subsequence/submissions/

@@ -1,5 +1,8 @@
 package category.Pruning;
 
+/**
+ * Refer the solution from LargestRectangleInHistogram
+ */
 public class MaximalRectangle{
     public static void main(String[] args){
         char[][] matrix = new char[][]{{'0', '1'}, {'1', '0'}};

@@ -1,10 +1,11 @@
 package category.graph.topologicalsort;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by brianzhang on 4/18/19.
  */
-import java.util.ArrayList;
-import java.util.List;
 //DFS
 public class TopologicalSortDFS {
     private boolean[] canFinish;

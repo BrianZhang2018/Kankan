@@ -59,7 +59,7 @@ public class ConcatenatedWordTrieImpl {
                 return false;
             }
 
-            if(node.isLastword){
+            if(node.isLastWord){
                 if(i == word.length()-1) {
                     return count >= 1;
                 }
@@ -88,12 +88,12 @@ public class ConcatenatedWordTrieImpl {
         }
 
         curr.word = word;
-        curr.isLastword = true;
+        curr.isLastWord = true;
     }
 
     class TrieNode{
         HashMap<Character, TrieNode> children = new HashMap<Character, TrieNode>();
-        boolean isLastword = false;
+        boolean isLastWord = false;
         Character val = ' ';
         String word = "";
 

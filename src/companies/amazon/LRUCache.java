@@ -82,8 +82,8 @@ public class LRUCache {
 
     public void addToTop(DNode node) {
         node.right = start;
-        node.left = null;  // if you just used (invoke the get() method) a node, you will need add it to the top as it just used. And, you have to set "left = null".
-
+        //if you just used (invoke the get() method) a node, you will need add it to the top as it just used. And, you have to set "left = null".
+        node.left = null;
         if (start != null){
             start.left = node;
         }

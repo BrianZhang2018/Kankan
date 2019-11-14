@@ -3,6 +3,8 @@ package category.DynamicPlanning.BestStockEasyToHard;
 import java.util.Arrays;
 
 /**
+ * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+ *
  * Created by brianzhang on 2/24/19.
  */
 public class BestTimeToBuyAndSellStockIII {
@@ -39,7 +41,7 @@ public class BestTimeToBuyAndSellStockIII {
         System.out.println(Arrays.toString(left));
         System.out.println(Arrays.toString(right));
 
-        //if can have two transcations, which must two non-overlap slot.
+        //if can have two transactions, which must two non-overlap slot.
         //And, you can't buy and sell at same day.
         for (int i = 0; i < n; i++) {
             profit = Math.max(profit, left[i] + right[i]);

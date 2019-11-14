@@ -21,7 +21,7 @@ public class TheMaze {
             return false;
         }
         int[][] dicts = new int[][]{{1,0}, {0,1}, {-1, 0}, {0, -1}};
-        Queue<int[]> queue = new LinkedList<int[]>();
+        Queue<int[]> queue = new LinkedList<>();
         queue.add(start);
 
         boolean[][] visited = new boolean[maze.length][maze[0].length];

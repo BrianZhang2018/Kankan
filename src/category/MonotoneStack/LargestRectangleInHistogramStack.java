@@ -9,23 +9,25 @@ import java.util.Stack;
  */
 public class LargestRectangleInHistogramStack{
     public static void main(String[] args){
-       System.out.println(largestRectangleArea(new int[]{1,2,3,4,5,6}));
+       //System.out.println(largestRectangleArea4(new int[]{1,2,3,4,5,6}));
+       System.out.println(largestRectangleArea4(new int[]{2,1,5,6,2,3}));
+
     }
 
      // Pruning. Find peak
-    //  Best sultion for this problem
-    public int largestRectangleArea4(int[] heights) {
+    //  Best solution for this problem
+    public static int largestRectangleArea4(int[] heights) {
         int n = heights.length;
         if (n == 0) return 0;
         int res = 0;
         
         for (int i = 0; i < n; i++) {
-            //pruning. Because higher height after current will contribute to the final result
+            //find the peak position
             if (i + 1 < n  && heights[i] <= heights[i + 1]) continue;
-            
+
             int minVal = heights[i];
 
-            // j starts from the peek
+            // j starts from the peek, then look back each unit to find the largest rectangle
             for (int j = i; j >= 0; j--) {
                 minVal = Math.min(minVal, heights[j]);
                 res = Math.max(res, (i - j + 1) * minVal);

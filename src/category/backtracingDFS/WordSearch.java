@@ -2,7 +2,10 @@ package category.BacktracingDFS;
 
 /**
  * DFS here, don't use BFS will has the visited state issue
- * 
+ *
+ * T: O(mn*4^k)
+ * S: O(4mn)
+ *
  * https://leetcode.com/problems/word-search/
  */
 public class WordSearch {

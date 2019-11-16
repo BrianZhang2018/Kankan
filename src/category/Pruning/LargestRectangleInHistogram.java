@@ -1,31 +1,35 @@
 package category.Pruning;
 
+import java.util.Arrays;
 import java.util.Stack;
 /**
  * https://leetcode.com/problems/largest-rectangle-in-histogram/
- * 
- * Monotone stack solution
- * DP solution same with TrappingRainWater, and this is fast
+ *
+ * Solutions:
+ * 1. Pruning
+ * 2. Monotone stack
+ * 3. DP solution which is the similar with TrappingRainWater, and this is fast
  */
 public class LargestRectangleInHistogram{
     public static void main(String[] args){
-       System.out.println(largestRectangleArea(new int[]{1,2,3,4,5,6}));
+        //System.out.println(largestRectangleAreaPruning(new int[]{1,2,3,4,5,6}));
+        System.out.println(largestRectangleAreaDP(new int[]{2,1,5,6,2,3}));
     }
 
-     // Pruning. Find peak
-    //  Best sultion for this problem
-    public int largestRectangleArea4(int[] heights) {
+     // Pruning. Best solution for this problem
+     // Find peak bar, and then reversely walk to get the rectangle area by common area
+    public static int largestRectangleAreaPruning(int[] heights) {
         int n = heights.length;
         if (n == 0) return 0;
         int res = 0;
         
         for (int i = 0; i < n; i++) {
-            //pruning. Because higher height after current will contribute to the final result
+            // Pruning step. Find the peak bar
             if (i + 1 < n  && heights[i] <= heights[i + 1]) continue;
             
             int minVal = heights[i];
 
-            // j starts from the peek
+            // j starts from the peak, and reversely walk to get rectangle area base on the common area.
             for (int j = i; j >= 0; j--) {
                 minVal = Math.min(minVal, heights[j]);
                 res = Math.max(res, (i - j + 1) * minVal);
@@ -35,9 +39,43 @@ public class LargestRectangleInHistogram{
         return res;
     }
 
-    //Monotone stack solution
-    //create a increate stack
-    public static int largestRectangleArea(int[] heights) {
+    // Important: DP solution which is the similar with TrappingRainWater question
+    public static int largestRectangleAreaDP(int[] heights) {
+        if (heights == null || heights.length == 0) {
+            return 0;
+        }
+
+        int len = heights.length;
+        // towards-left-most which is larger than current
+        int[] left = new int[len];
+        for (int i = 0; i < len; i++) {
+            int p = i;
+            while (p > 0 && heights[p - 1] >= heights[i]) {
+                p = left[--p];
+            }
+            left[i] = p;
+        }
+        System.out.println(Arrays.toString(left));
+
+        int[] right = new int[len];
+        for (int i = len - 1; i >= 0; i--) {
+            int p = i;
+            while (p < len - 1 && heights[p + 1] >= heights[i]) {
+                p = right[++p];
+            }
+            right[i] = p;
+        }
+        System.out.println(Arrays.toString(right));
+
+        int max = 0;
+        for (int i = 0; i < len; i++) {
+            max = Math.max(max, (right[i] - left[i] + 1) * heights[i]);
+        }
+        return max;
+    }
+
+    //Monotone stack solution, create a increase stack
+    public static int largestRectangleAreaMonotone(int[] heights) {
         if(heights == null || heights.length == 0)
         return 0;
     
@@ -64,11 +102,11 @@ public class LargestRectangleInHistogram{
      }
 
     //my modified version
-    public int largestRectangleArea11(int[] heights) {
+    public int largestRectangleArea2(int[] heights) {
         if(heights == null || heights.length == 0)
             return 0;
         
-        Stack<Integer> s = new Stack<Integer>();
+        Stack<Integer> s = new Stack<>();
         int len = heights.length;
         int maxArea = 0;
         
@@ -93,37 +131,4 @@ public class LargestRectangleInHistogram{
         return maxArea;
     }
 
-    // Important:
-    // DP solution which is the same with TrappingRainWater question
-    public int largestRectangleArea3(int[] heights) {
-        if (heights == null || heights.length == 0) {
-            return 0;
-        }
-        
-        int len = heights.length;
-        // towards-left-most which is larger than current
-        int[] left = new int[len];
-        for (int i = 0; i < len; i++) {
-            int p = i;
-            while (p > 0 && heights[p - 1] >= heights[i]) {
-                p = left[--p];
-            }
-            left[i] = p;
-        }
-
-        int[] right = new int[len];
-        for (int i = len - 1; i >= 0; i--) {
-            int p = i;
-            while (p < len - 1 && heights[p + 1] >= heights[i]) {
-                p = right[++p];
-            }
-            right[i] = p;
-        }
-        
-        int max = 0;
-        for (int i = 0; i < len; i++) {
-            max = Math.max(max, (right[i] - left[i] + 1) * heights[i]);
-        }
-        return max;
-    }
 }

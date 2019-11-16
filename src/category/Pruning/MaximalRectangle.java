@@ -1,6 +1,8 @@
 package category.Pruning;
 
 /**
+ * https://leetcode.com/problems/largest-rectangle-in-histogram/
+ *
  * Refer the solution from LargestRectangleInHistogram
  */
 public class MaximalRectangle{

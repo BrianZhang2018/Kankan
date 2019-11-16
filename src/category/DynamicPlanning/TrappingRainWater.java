@@ -1,4 +1,4 @@
-package category.MonotoneStack;
+package category.DynamicPlanning;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
  * Similar with the BestTimeToBuyAndSellStockIII
  * https://www.cnblogs.com/grandyang/p/4402392.html
  */
-public class TrappingRainWater{
+public class TrappingRainWater {
 
     public static void main(String[] args) {
         TrappingRainWater test = new TrappingRainWater();

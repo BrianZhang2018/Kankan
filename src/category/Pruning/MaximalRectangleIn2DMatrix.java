@@ -1,13 +1,17 @@
-package category.MonotoneStack;
+package category.Pruning;
 
-//https://leetcode.wang/leetCode-85-Maximal-Rectangle.html
-public class MaximalRectangle{
+/**
+ * https://leetcode.com/problems/largest-rectangle-in-histogram/
+ *
+ * Refer the solution from LargestRectangleInHistogram
+ */
+public class MaximalRectangleIn2DMatrix {
     public static void main(String[] args){
         char[][] matrix = new char[][]{{'0', '1'}, {'1', '0'}};
-        MaximalRectangle test = new MaximalRectangle();
+        MaximalRectangleIn2DMatrix test = new MaximalRectangleIn2DMatrix();
         System.out.println(test.maximalRectangle(matrix));
     }
-
+    
     public int maximalRectangle(char[][] matrix) {
         if(matrix == null || matrix.length ==0)
             return 0;

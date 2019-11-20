@@ -16,7 +16,7 @@ public class LargestRectangleInHistogram{
         System.out.println(largestRectangleAreaDP(new int[]{2,1,5,6,2,3}));
     }
 
-     // Pruning. Best solution for this problem
+     // Pruning - best solution for this problem
      // Find peak bar, and then reversely walk to get the rectangle area by common area
     public static int largestRectangleAreaPruning(int[] heights) {
         int n = heights.length;

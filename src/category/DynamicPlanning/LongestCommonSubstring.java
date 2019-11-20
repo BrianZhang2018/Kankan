@@ -2,26 +2,23 @@ package category.DynamicPlanning;
 
 /**
  * https://www.geeksforgeeks.org/longest-common-substring-dp-29/
- * 非常想longest Common SubSequence, so compare two problems to understand this questions
+ * 非常像longest Common SubSequence, so compare two problems to understand this questions
  */
 public class LongestCommonSubstring{
 	public static void main(String[] args) 
 	{ 
 		String X = "OldSite:GeeksforGeeks.org"; 
 		String Y = "NewSite:GeeksQuiz.com"; 
-
-		int m = X.length(); 
+		int m = X.length();
 		int n = Y.length(); 
-
-		System.out.println("Length of Longest Common Substring is "
-				+ LCSubStr(X.toCharArray(), Y.toCharArray(), m, n)); 
+		System.out.println("Length of Longest Common Substring is " + LCSubStr(X.toCharArray(), Y.toCharArray(), m, n));
     }
 
 	// Returns length of longest common substring of X[0..m-1] and Y[0..n-1]
 	static int LCSubStr(char X[], char Y[], int m, int n) 
 	{ 
-		// Create a table to store lengths of longest common suffixes of
-		// substrings. Note that LCSuff[i][j] contains length of longest common suffix of X[0..i-1] and Y[0..j-1].
+		// Create a table to store lengths of longest common suffixes of sub strings.
+		// Note that LCSuff[i][j] contains length of longest common suffix of X[0..i-1] and Y[0..j-1].
 		// The first row and first column entries have no logical meaning, they are used only for simplicity of program
 		int LCStuff[][] = new int[m + 1][n + 1]; 
 		int result = 0; // To store length of the longest common substring 

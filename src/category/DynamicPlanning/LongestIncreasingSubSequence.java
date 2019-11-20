@@ -5,9 +5,9 @@ package category.DynamicPlanning;
  * 
  * Created by brianzhang on 9/7/18.
  */
-public class LongestIncreasingSubsequence {
+public class LongestIncreasingSubSequence {
     public static void main(String[] args) {
-        LongestIncreasingSubsequence.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18});
+        LongestIncreasingSubSequence.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18});
     }
 
     public static int lengthOfLIS(int[] nums) {

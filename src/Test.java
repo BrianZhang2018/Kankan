@@ -3,7 +3,7 @@ import java.util.*;
 class Test {
     public static void main(String[] args){
        //System.out.println(solution(new long[]{1,4,3,4,2,5}, 3));
-       //System.out.println(longestSubsequence(new int[]{1,5,7,8,5,3,4,2,1}, -2));
+       //System.out.println(longestSubSequence(new int[]{1,5,7,8,5,3,4,2,1}, -2));
        System.out.println(ls(new int[]{1,5,7,8,5,3,4,2,1}, -2));
        //System.out.println(ls(new int[]{1,2,3,4}, 1));
        System.out.println("aeiout".indexOf('p'));

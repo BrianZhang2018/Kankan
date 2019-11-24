@@ -7,13 +7,14 @@ import java.util.Arrays;
  *
  * Try to solve it as Monotone stack solution
  * Similar with the BestTimeToBuyAndSellStockIII
+ *
  * https://www.cnblogs.com/grandyang/p/4402392.html
  */
 public class TrappingRainWater {
 
     public static void main(String[] args) {
         TrappingRainWater test = new TrappingRainWater();
-        System.out.println(test.trap(new int[]{0,1,0,0,0,0,1,3,2,1,2,1}));
+        System.out.println(test.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
     }
 
     public int trap(int[] height) {
@@ -24,7 +25,7 @@ public class TrappingRainWater {
         int[] maxLeft = new int[height.length];
         int[] maxRight = new int[height.length];
 
-        //got the left and right height distribution
+        //got the left and right max height distribution
         maxLeft[0] = height[0];
         for (int i = 1; i < height.length - 1; i++) {
             maxLeft[i] = Math.max(maxLeft[i - 1], height[i]);
@@ -36,8 +37,8 @@ public class TrappingRainWater {
             maxRight[i] = Math.max(maxRight[i + 1], height[i]);
         }
         System.out.println(Arrays.toString(maxRight));
-        
-        //calculate tripping the water base on the above left right height distribution
+
+        // Current bar can trap water = "The minimum height of leftmax and rightmax height minus current height"
         for (int i = 0; i < height.length - 1; i++) {
             int min = Math.min(maxLeft[i], maxRight[i]);
             if (min > height[i]) {

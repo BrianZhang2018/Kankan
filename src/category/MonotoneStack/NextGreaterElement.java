@@ -1,5 +1,6 @@
 package category.MonotoneStack;
 
+import java.util.Arrays;
 import java.util.Stack;
 import java.util.Map;
 import java.util.HashMap;
@@ -9,15 +10,15 @@ import java.util.HashMap;
 public class NextGreaterElement{
     public static void main(String[] args){
         NextGreaterElement test = new NextGreaterElement();
-        test.nextGreaterElement1(new int[]{4, 1, 2}, new int[]{1,3,4,2});
+        System.out.println(Arrays.toString(test.nextGreaterElement1(new int[]{4, 1, 2}, new int[]{1,3,4,2})));
     }
 
     //in-sequence traversal
     public int[] nextGreaterElement1(int[] nums1, int[] nums2) {
-        Stack<Integer> stack = new Stack<Integer>();
+        Stack<Integer> stack = new Stack<>();
         Map<Integer, Integer> map = new HashMap<>();
         
-        for(int num : nums2){
+        for(int num : nums2){ //Monotone increase stack
             while(!stack.isEmpty() && num > stack.peek()){
                 map.put(stack.pop(), num);
             }

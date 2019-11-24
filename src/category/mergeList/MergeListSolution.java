@@ -17,15 +17,14 @@ public class MergeListSolution {
         ListNode prevMergedList = null;
 
         for (int i = 0; i < lists.length; i++) {
-//key point
+            //key point
             prevMergedList = mergeTwoList(prevMergedList, lists[i]);
         }
         return prevMergedList;
     }
 
-    /*
-        Common Asolution for merge tow lists, like merge two sorted list
-     */
+
+    // Common solution for merge tow lists, like merge two sorted list
     public ListNode mergeTwoList(ListNode l1, ListNode l2) {
 
         if (l1 == null) return l2;

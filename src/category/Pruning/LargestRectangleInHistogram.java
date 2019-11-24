@@ -12,24 +12,25 @@ import java.util.Stack;
  */
 public class LargestRectangleInHistogram{
     public static void main(String[] args){
-        //System.out.println(largestRectangleAreaPruning(new int[]{1,2,3,4,5,6}));
-        System.out.println(largestRectangleAreaDP(new int[]{2,1,5,6,2,3}));
+        System.out.println(largestRectangleAreaPruning(new int[]{1,2,3,4,5,6}));
+        //System.out.println(largestRectangleAreaDP(new int[]{2,1,5,6,2,3}));
     }
 
      // Pruning - best solution for this problem
-     // Find peak bar, and then reversely walk to get the rectangle area by common area
+     // Find each peak bar, and then reversely walk to get the largest rectangle
     public static int largestRectangleAreaPruning(int[] heights) {
         int n = heights.length;
         if (n == 0) return 0;
         int res = 0;
         
         for (int i = 0; i < n; i++) {
-            // Pruning step. Find the peak bar
-            if (i + 1 < n  && heights[i] <= heights[i + 1]) continue;
+            // Pruning step, find the peak bar
+            if (i + 1 < n  && heights[i] <= heights[i + 1])
+                continue;
             
             int minVal = heights[i];
 
-            // j starts from the peak, and reversely walk to get rectangle area base on the common area.
+            // j starts from the peak, and reversely walk to get largest rectangle
             for (int j = i; j >= 0; j--) {
                 minVal = Math.min(minVal, heights[j]);
                 res = Math.max(res, (i - j + 1) * minVal);
@@ -39,7 +40,7 @@ public class LargestRectangleInHistogram{
         return res;
     }
 
-    // Important: DP solution which is the similar with TrappingRainWater question
+    // DP solution which is the similar with TrappingRainWater question
     public static int largestRectangleAreaDP(int[] heights) {
         if (heights == null || heights.length == 0) {
             return 0;
@@ -79,7 +80,7 @@ public class LargestRectangleInHistogram{
         if(heights == null || heights.length == 0)
         return 0;
     
-        Stack<Integer> s = new Stack<Integer>();
+        Stack<Integer> s = new Stack<>();
         int len = heights.length;
         int maxArea = 0;
         

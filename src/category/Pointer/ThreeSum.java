@@ -14,6 +14,7 @@ public class ThreeSum{
     public static void main(String[] args){
         ThreeSum test = new ThreeSum();
         test.threeSum(new int[]{-1, 0, 1, 2, -1, -4});
+        test.threeSum1(new int[]{-1, 0, 1, 2, -1, -4});
     }
 
     public List<List<Integer>> threeSum(int[] nums) {
@@ -44,7 +45,7 @@ public class ThreeSum{
         return res;
     }
 
-    //Easy solution with HashSet to fliter out the duplicate result, performance not best.
+    //Easy solution with HashSet to filter out the duplicate result, performance not best.
     public List<List<Integer>> threeSum1(int[] nums) {
         Arrays.sort(nums);
         HashSet<List<Integer>> set = new HashSet<>();
@@ -66,6 +67,6 @@ public class ThreeSum{
                 }
         }
        
-        return new ArrayList<List<Integer>>(set);
+        return new ArrayList<>(set);
     }
 }

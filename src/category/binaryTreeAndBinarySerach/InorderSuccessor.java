@@ -6,7 +6,7 @@ public class InorderSuccessor{
 
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         TreeNode successor = null;
-        //find the p node from tree
+        //find the p node from binaryTree
          while (root != null && root.val != p.val) {
              if (root.val > p.val) {
                  successor = root;

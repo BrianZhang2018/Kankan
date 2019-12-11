@@ -9,30 +9,31 @@ import java.util.HashSet;
  * Leetcode 340 - Longest Substring with At Most K Distinct Characters
  * Created by brianzhang on 3/3/19.
  */
-public class LongestSubstringWithUniqueCharacterSlidingWindow {
+public class LongestSubstringWithKDistinctCharacter {
     public static void main(String[] args) {
         System.out.println(solution("nutdrgzdrkrvfdfcvzuunxwlzegjukhkjpvqruitobiahxhgdrpqttsebjsg", 11));
     }
 
     public static final int CHAR_RANGE = 128;
-    //return the length
+    //return the length - template solution
     public static int solution(String s, int k){
         
         int maxLength = Integer.MIN_VALUE;
-        HashSet<Character> counter = new HashSet<Character>();
+        HashSet<Character> counter = new HashSet<>();
         int[] freq = new int[CHAR_RANGE]; //bucket array
         int left=0, right=0;
         while(right<s.length()){
-            
-            counter.add(s.charAt(right));
-            freq[s.charAt(right)]++;
+            char rc = s.charAt(right);
+            counter.add(rc);
+            freq[rc]++;
             right++;
+
             //slide the window
             while(counter.size() > k){
-                if(--freq[s.charAt(left)] == 0){
-                    counter.remove(s.charAt(left));
+                char lc = s.charAt(left++);
+                if(--freq[lc] == 0){
+                    counter.remove(lc);
                 }
-                left++;
             }
             maxLength = Math.max(maxLength, right-left);
         }
@@ -40,10 +41,10 @@ public class LongestSubstringWithUniqueCharacterSlidingWindow {
         return maxLength;
     }
     
-    // return the substring
+    // Get the substring, https://www.techiedelight.com/sliding-window-problems/
     /*public static String solution(String s, int k){
         
-        int begin=0, end =0;
+        int begin=0, end =0; // just need this additional two pointer to store the position compare with above solution
         HashSet<Character> window = new HashSet<Character>();
         int[] freq = new int[CHAR_RANGE];
         int low=0, high=0;
@@ -58,7 +59,7 @@ public class LongestSubstringWithUniqueCharacterSlidingWindow {
                 }
                 low++;
             }
-            if(end - begin <high - low){
+            if(end - begin < high - low){
                 end = high;
                 begin = low;
             }

@@ -8,7 +8,7 @@ import java.util.Stack;
  */
 public class DepthFirstSearch {
     /**
-     * This method performs a depth first search on a binary tree
+     * This method performs a depth first search on a binary binaryTree
      * @param root
      */
     public void depthFirstSearch(Node root) {

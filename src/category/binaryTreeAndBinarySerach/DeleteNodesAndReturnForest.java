@@ -7,7 +7,7 @@ import java.util.HashSet;
 import category.model.TreeNode;
 
 /**
- * For tree problem, consider to use the recursion first.
+ * For binaryTree problem, consider to use the recursion first.
  * https://leetcode.com/problems/delete-nodes-and-return-forest/discuss/328853/JavaPython-Recursion-Solution
  * https://leetcode.com/problems/delete-nodes-and-return-forest/
  */

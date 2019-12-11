@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Union find + weight + flat tree
+ * Union find + weight + flat binaryTree
  * 
  * Union find is used to determine the cycle when add a new edge
  * Weighted union find and path compression
@@ -51,9 +51,9 @@ public class RedundantConnection {
             int pv = find(v);
             if (pu == pv) return false;
 
-            //merge the "small" disjoint tree to big one by comparing the size (ranking) to flat the tree
+            //merge the "small" disjoint binaryTree to big one by comparing the size (ranking) to flat the binaryTree
             if (ranks[pv] > ranks[pu]){
-                parents[pu] = pv;   //make "smaller" disjoint tree point to larger one
+                parents[pu] = pv;   //make "smaller" disjoint binaryTree point to larger one
                 ranks[pu]++; //weight++
             }
             else if (ranks[pu] > ranks[pv]){
@@ -69,13 +69,13 @@ public class RedundantConnection {
 
         /**
          * 1. find the root node of disjoint set
-         * 2. path compression to flat the tree
+         * 2. path compression to flat the binaryTree
          */
         public int find(int u) {
             // (parents[u] == u) is the root node as the root node pointing to itself
             // (and all the node was initiated as parents[u] = u in the beginning of this function)
             while (parents[u] != u) {
-                //parent point to the grandfather node, falt the tree
+                //parent point to the grandfather node, falt the binaryTree
                 parents[u] = parents[parents[u]];
                 //assign the value grandfather node to u, then check again whether parents[u] == u in while condition
                 u = parents[u];

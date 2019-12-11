@@ -4,9 +4,9 @@ import java.util.HashSet;
 /**
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
  */
-public class LongestSubstringwithoutRepeatingCharacters {
+public class LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
-        LongestSubstringwithoutRepeatingCharacters test = new LongestSubstringwithoutRepeatingCharacters();
+        LongestSubstringWithoutRepeatingCharacters test = new LongestSubstringWithoutRepeatingCharacters();
         System.out.println(test.lengthOfLongestRepeatingSubstring("abcabcbb"));
     }
 

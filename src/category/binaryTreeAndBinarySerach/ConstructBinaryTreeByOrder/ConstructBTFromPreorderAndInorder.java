@@ -27,7 +27,7 @@ public class ConstructBTFromPreorderAndInorder{
         TreeNode root = new TreeNode(preorder[preStart]);
         int inRoot = inorderMap.get(root.val);
         
-        //recursively build the tree.  
+        //recursively build the binaryTree.
         //(instart, inRoot-1) -> left subtree, (inRoot+1, inEnd) -> right subtree
         //(preStart+1) -> root of left subtree, (preStart + inRoot-inStart+1) -> root of right subtree
         root.left = traveral(preStart+1, inStart, inRoot-1, preorder, inorder);

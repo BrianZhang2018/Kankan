@@ -9,6 +9,21 @@ import companies.amazon.model.TreeNode;
  * https://leetcode.com/problems/binary-tree-right-side-view/
  */
 public class BinaryTreeRightSideView{
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(20);
+        root.right = new TreeNode(30);
+        root.left.left = new TreeNode(40);
+        root.left.right = new TreeNode(60);
+/*        root.right.right = new TreeNode(-25);
+        root.right.right.left = new TreeNode(3);
+        root.right.right.right = new TreeNode(4);*/
+
+        BinaryTreeRightSideView btr = new BinaryTreeRightSideView();
+        for(Integer i : btr.rightSideView(root)) System.out.println(i);
+
+        for(Integer i : btr.rightSideViewDFS(root)) System.out.println(i);
+    }
 
 //solution-1
     //dfs - recursive
@@ -24,7 +39,7 @@ public class BinaryTreeRightSideView{
     
     
     public void dfs(TreeNode root, int level, List<Integer> res){
-        System.out.println(level);
+        System.out.println("Tree level is: " + level);
         
         if(root == null)
             return;
@@ -55,18 +70,14 @@ public class BinaryTreeRightSideView{
 
                 TreeNode node = queue.poll();
                 //key point, record the right most node's value
-                if(i == size -1){
+                if(i == size -1)
                     res.add(node.val);
-                }
-                
-                if(node.left != null){
+
+                if(node.left != null)
                     queue.add(node.left);
-                }
-                
-                if(node.right != null){
+
+                if(node.right != null)
                     queue.add(node.right);
-                }
-                
             }
         }
         return res;

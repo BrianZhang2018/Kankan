@@ -21,7 +21,7 @@ public class SerializeAndDeseBTPreorder{
         System.out.println(str);
         test.deserialize(str);
     }
-    // Encodes a tree to a single string.
+    // Encodes a binaryTree to a single string.
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
         shelper(sb, root);
@@ -38,7 +38,7 @@ public class SerializeAndDeseBTPreorder{
         shelper(sb, root.right);
     }
 
-    // Decodes your encoded data to tree.
+    // Decodes your encoded data to binaryTree.
     public TreeNode deserialize(String data) {
         String[] ss = data.split(",");
         System.out.println(Arrays.toString(ss));

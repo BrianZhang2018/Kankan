@@ -1,6 +1,7 @@
 package category.slidingwindow;
 
 public class LongestRepeatingCharacterReplacement{
+
     public static void main(String[] args){
         System.out.println(characterReplacement("AABABBA", 1));
     }

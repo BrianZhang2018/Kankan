@@ -10,9 +10,9 @@ import java.util.PriorityQueue;
 /*
   Extend knowledge:
   Heaps:
-  A heap is a specific tree based data structure in which all the nodes of tree are in a specific order.
+  A heap is a specific binaryTree based data structure in which all the nodes of binaryTree are in a specific order.
     https://www.hackerearth.com/practice/notes/heaps-and-priority-queues/
-  this is tree structure, so the complexity is O(log n)
+  this is binaryTree structure, so the complexity is O(log n)
  */
 public class PriorityQueueSolution {
 

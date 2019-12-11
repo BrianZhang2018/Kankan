@@ -52,7 +52,7 @@ public class KrushkalMinimumSpanningTree {
 
         public List<Edge> mst() {
             //sort the edges by PriorityQeuue so that we start from the small weighted egdge to gurantee we get
-            //minimum spanning tree
+            //minimum spanning binaryTree
             PriorityQueue<Edge> pq = new PriorityQueue<>((a, b) -> a.weight - b.weight);
             for (Edge edge : inputEdges)
                 pq.add(edge);

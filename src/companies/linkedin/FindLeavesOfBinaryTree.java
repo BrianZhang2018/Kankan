@@ -5,7 +5,7 @@ import category.model.TreeNode;
 import java.util.*;
 
 /**
- * use the tree height as the index to collect the nodes
+ * use the binaryTree height as the index to collect the nodes
  * and the leave node's height = 0
  * 
  * https://www.lintcode.com/problem/find-leaves-of-binary-tree/note/191875
@@ -29,7 +29,7 @@ public class FindLeavesOfBinaryTree{
         
         int height = Math.max(left, right) + 1;
         // the first time this code is reached is when curr==0,
-        //since the tree is bottom-up processed
+        //since the binaryTree is bottom-up processed
         if(res.size() == height){
             res.add(new ArrayList<Integer>());
         }

@@ -5,7 +5,7 @@ import java.util.*;
  * Easy question
  */
 public class FindLargestSubtreeSumInATree {
-    // Structure of a tree node.
+    // Structure of a binaryTree node.
     static class Node {
         int key;
         Node left, right;
@@ -19,7 +19,7 @@ public class FindLargestSubtreeSumInATree {
         }
     }
 
-    // Function to create new tree node.
+    // Function to create new binaryTree node.
     static Node newNode(int key) {
         Node temp = new Node();
         temp.key = key;
@@ -45,7 +45,7 @@ public class FindLargestSubtreeSumInATree {
 
     // Function to find largest subtree sum.
     static int findLargestSubtreeSum(Node root) {
-        // If tree does not exist, then answer is 0.
+        // If binaryTree does not exist, then answer is 0.
         if (root == null)
             return 0;
 

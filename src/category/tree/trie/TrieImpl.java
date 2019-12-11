@@ -1,7 +1,7 @@
 package category.tree.trie;
 
 /**
- * a trie, also called digital tree, radix tree or prefix tree is a kind of search tree
+ * a trie, also called digital binaryTree, radix binaryTree or prefix binaryTree is a kind of search binaryTree
  * <p>
  * Created by brianzhang on 11/4/18.
  */

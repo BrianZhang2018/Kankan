@@ -9,7 +9,7 @@ public class GraphValidTree{
     /**
      * @param n an integer
      * @param edges a list of undirected edges
-     * @return true if it's a valid tree, or false
+     * @return true if it's a valid binaryTree, or false
      */
     public boolean validTree(int n, int[][] edges) {
         if (n == 0) {

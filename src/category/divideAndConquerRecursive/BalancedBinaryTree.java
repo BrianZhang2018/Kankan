@@ -20,7 +20,7 @@ public class BalancedBinaryTree {
         int left = maxDepth(root.left);
         int right = maxDepth(root.right);
 
-        //-1 flag means it's a unbalanced tree
+        //-1 flag means it's a unbalanced binaryTree
         if (left == -1 || right == -1 || Math.abs(right - left) > 1)
             return -1;
 

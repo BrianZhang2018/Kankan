@@ -8,13 +8,13 @@ import companies.amazon.model.TreeNode;
 /**
  * My solutiion - good job, man.
  * 
- * tree node's degree for vertical order
- * tree node's level for level order traverse
+ * binaryTree node's degree for vertical order
+ * binaryTree node's level for level order traverse
  * dfs recursive + customized LevelNode object + List comparator
  */
 public class BinaryTreeVerticalOrderTraversalRecursive{
     /**
-     * @param root: the root of tree
+     * @param root: the root of binaryTree
      * @return: the vertical order traversal
      */
     public List<List<Integer>> verticalOrder(TreeNode root) {

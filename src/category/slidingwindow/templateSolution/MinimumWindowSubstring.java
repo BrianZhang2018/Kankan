@@ -1,10 +1,9 @@
 package category.slidingwindow.templateSolution;
 
 /**
- * Duplicate one with SlidingWindowTemplateSolution.java
  * leetcode 76 
  * the tricky part is hwo to track the "ABC" which use the freq val to track
- * e.g 1->0->1
+ * e.g 1->0->1   initial freq `A` is 1, and minus 1 when found a `A`, then slide to re-increase to 1
  *     1->0->-1->0->1
  *
  * https://briansuperzhang.gitbook.io/project/sliding-minLen-questions
@@ -21,8 +20,8 @@ public class MinimumWindowSubstring {
 
     public static String minWindow(String s, String t) {
         int[] freq = new int[128]; //bucket array frequency of character
-        for (int i = 0; i < t.length(); i++) {
-            freq[t.charAt(i)]++;
+        for (char c : t.toCharArray()) {
+            freq[c]++;
         }
 
         int counter = t.length(), left = 0, right = 0, minStart = -1, minLen = Integer.MAX_VALUE;
@@ -40,8 +39,8 @@ public class MinimumWindowSubstring {
                     minLen = right - left;
                     minStart = left;
                 }
-                // sliding: increase left to find the character in "ABC"
-                // increase the counter as we skip the character of the minStart of last minLen,
+                // Sliding: increase left to find the character in "ABC",
+                // if we find one of target character (freq[lc] == 0), then increase the counter as the pointer is left++.
                 char lc = s.charAt(left++);
                 if (freq[lc] == 0) {
                     counter++;

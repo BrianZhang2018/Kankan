@@ -83,7 +83,7 @@ public class MinimumSpanningTree {
             if (find(i, j)) {
                 return false;
             } else {
-                parents[root(i)] = j; // parents[root(j)] = i, also work here. Here can be improved with "weight" so that append the small tree to big tree when do union
+                parents[root(i)] = j; // parents[root(j)] = i, also work here. Here can be improved with "weight" so that append the small binaryTree to big binaryTree when do union
                 return true;
             }
         }

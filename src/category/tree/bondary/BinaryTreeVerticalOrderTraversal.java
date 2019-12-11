@@ -27,9 +27,9 @@ public class BinaryTreeVerticalOrderTraversal{
         if (t == null) {
             return;
         }
-        //queue for tree node
+        //queue for binaryTree node
         LinkedList<TreeNode> q1 = new LinkedList<>();
-        //queue for tree node's degree
+        //queue for binaryTree node's degree
         LinkedList<Integer> q2 = new LinkedList<>();
         q1.offer(t);
         q2.offer(0);

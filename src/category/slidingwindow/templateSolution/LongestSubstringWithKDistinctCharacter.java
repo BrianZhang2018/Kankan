@@ -6,6 +6,7 @@ import java.util.HashSet;
  * Sliding window solution
  * related problem: https://www.techiedelight.com/sliding-window-problems/
  *
+ * https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/description
  * Leetcode 340 - Longest Substring with At Most K Distinct Characters
  * Created by brianzhang on 3/3/19.
  */

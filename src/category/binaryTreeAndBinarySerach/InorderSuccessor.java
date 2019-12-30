@@ -2,11 +2,25 @@ package category.binaryTreeAndBinarySerach;
 
 import category.model.TreeNode;
 
+/**
+ * https://www.lintcode.com/problem/inorder-successor-in-bst/description
+ */
 public class InorderSuccessor{
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(2);
+        root.left = new TreeNode(1);
+        root.right = new TreeNode(3);
+
+        InorderSuccessor test = new InorderSuccessor();
+        TreeNode p = new TreeNode(1);
+        TreeNode tn = test.inorderSuccessor(root, p);
+        System.out.println(tn.val);
+    }
 
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         TreeNode successor = null;
-        //find the p node from binaryTree
+        //find the p node from binary search tree
          while (root != null && root.val != p.val) {
              if (root.val > p.val) {
                  successor = root;
@@ -15,7 +29,7 @@ public class InorderSuccessor{
                  root = root.right;
              }
          }
-         //if root == null means p doesn't find from above while loop, or the input root == null, so return null
+         // if root == null means p doesn't find from above while loop, or the input root == null, so return null
          if (root == null) {
              return null;
          }

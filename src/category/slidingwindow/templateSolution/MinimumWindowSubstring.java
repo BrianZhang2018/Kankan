@@ -19,7 +19,7 @@ public class MinimumWindowSubstring {
     }
 
     public static String minWindow(String s, String t) {
-        int[] freq = new int[128]; //bucket array frequency of character
+        int[] freq = new int[128]; //bucket array to record the frequency of character
         for (char c : t.toCharArray()) {
             freq[c]++;
         }

@@ -18,7 +18,7 @@ public class FindNoParentAndOneParentNodes {
     }
 
     //without "the number of nodes" as input parameters
-    //reversed group: son -> parent
+    //reverse the graph: son -> parent
     public static List<Integer> findNoParentAndOneParentNodes(int[][] pairs) {
 
         Set<Integer> res = new HashSet<>();
@@ -40,7 +40,7 @@ public class FindNoParentAndOneParentNodes {
                 res.add(i[0]);
             }
         }
-        return new ArrayList<Integer>(res);
+        return new ArrayList<>(res);
     }
     
     //dfs + reversed graph to find the common descendant
@@ -49,7 +49,7 @@ public class FindNoParentAndOneParentNodes {
 
         for (int[] i : pairs) {
             //reversed graph: son -> parent
-            Set<Integer> set = graph.getOrDefault(i[1], new HashSet<Integer>());
+            Set<Integer> set = graph.getOrDefault(i[1], new HashSet<>());
             set.add(i[0]);
             graph.put(i[1], set);
         }

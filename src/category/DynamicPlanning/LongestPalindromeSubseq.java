@@ -74,8 +74,7 @@ public class LongestPalindromeSubseq {
         return res;
   }
 
-    //Solution-2
-    //top-bottom
+    //Solution-2: top-bottom
     public static int get2(String s) {
 
         int sl = s.length();
@@ -97,7 +96,7 @@ public class LongestPalindromeSubseq {
     }
 
 
-    //Asolution-3
+    //A solution-3
     //步骤最多，最细的一个
     //https://leetcode.com/problems/longest-palindromic-subsequence/discuss/99101/Straight-forward-Java-DP-solution
     //bottom-up approach

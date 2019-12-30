@@ -6,6 +6,11 @@ package category.DynamicPlanning.LCSubSequence;
  * https://leetcode.com/problems/longest-common-subsequence/discuss/398711/4-different-ways-to-solve-Longest-Common-Sub-sequence-including-O(N)-Solution
  */
 public class LongestCommonSubsequence {
+
+    public static void main(String[] args) {
+        LongestCommonSubsequence test = new LongestCommonSubsequence();
+        System.out.println(test.longestCommonSubsequence("abcde", "ace"));
+    }
     //two dimension
     public int solution1(String text1, String text2) {
 
@@ -32,7 +37,7 @@ public class LongestCommonSubsequence {
         int m = text1.length();
         int n = text2.length();
         
-       int[][] dp = new int[m+1][n+1];
+        int[][] dp = new int[m+1][n+1];
         
         for(int i=1; i<=m; i++){
             for(int j=1; j<=n; j++){
@@ -40,7 +45,7 @@ public class LongestCommonSubsequence {
                 if(text1.charAt(i-1) == text2.charAt(j-1)){
                     dp[i][j] = dp[i-1][j-1] +1;
                 }else{
-                    dp[i][j] = Math.max(dp[i][j-1],dp[i-1][j]);
+                    dp[i][j] = Math.max(dp[i][j-1], dp[i-1][j]);
                 }
             }
         }
@@ -53,7 +58,7 @@ public class LongestCommonSubsequence {
         int m = text1.length();
         int n = text2.length();
 
-        int[] dp = new int[n + 1]; //one demension rolling array
+        int[] dp = new int[n + 1]; //one dimension rolling array
 
         for (int i = 1; i <= m; i++) {
             int prev = 0;

@@ -1,9 +1,16 @@
 package category.algorithms;
 
 /**
+ * https://leetcode.com/problems/majority-element/
+ *
  * Created by brianzhang on 2/18/19.
  */
 public class FindMajorityElementMooreVotingAlgorithm {
+
+    public static void main(String[] args) {
+        FindMajorityElementMooreVotingAlgorithm test = new FindMajorityElementMooreVotingAlgorithm();
+        System.out.println(test.majorityElement(new int[]{2,2,1,1,1,2,2,2,3}));
+    }
 
     public int majorityElement(int[] num) {
         int major = num[0], count = 1;

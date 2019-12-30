@@ -4,10 +4,9 @@ import java.util.Arrays;
 
 /**
  * https://leetcode.com/problems/trapping-rain-water/
+ * Similar approach with the BestTimeToBuyAndSellStockIII problem.
  *
- * Try to solve it as Monotone stack solution
- * Similar with the BestTimeToBuyAndSellStockIII
- *
+ * Can be solved with Monotone stack solution.
  * https://www.cnblogs.com/grandyang/p/4402392.html
  */
 public class TrappingRainWater {
@@ -38,7 +37,7 @@ public class TrappingRainWater {
         }
         System.out.println(Arrays.toString(maxRight));
 
-        // Current bar can trap water = "The minimum height of leftmax and rightmax height minus current height"
+        // Current bar can trap water = "The minimum height of (left-max and right-max height) - current height"
         for (int i = 0; i < height.length - 1; i++) {
             int min = Math.min(maxLeft[i], maxRight[i]);
             if (min > height[i]) {

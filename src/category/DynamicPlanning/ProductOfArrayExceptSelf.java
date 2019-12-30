@@ -5,6 +5,7 @@ package category.DynamicPlanning;
  * 
  */
 public class ProductOfArrayExceptSelf{
+
     public static void main(String[] args){
         ProductOfArrayExceptSelf test = new ProductOfArrayExceptSelf();
         test.productExceptSelf(new int[]{1,2,3,4});

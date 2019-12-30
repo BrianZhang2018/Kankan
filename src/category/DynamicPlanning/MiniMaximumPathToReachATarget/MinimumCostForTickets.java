@@ -1,4 +1,4 @@
-package category.DynamicPlanning;
+package category.DynamicPlanning.MiniMaximumPathToReachATarget;
 
 /**
  * 这道题 最后转化成一年的minimum cost

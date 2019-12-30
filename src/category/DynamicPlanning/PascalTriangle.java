@@ -22,10 +22,14 @@ public class PascalTriangle {
         arr[0] = 1;
 
         for (int i = 1; i <= k; i++) {
-            for (int j = i; j > 0; j--) {   //从后向前算 (j=i), 就是 i 代表处理到了第几行.
+            for (int j = i; j > 0; j--) {   //从end of row向前推(j=i), i 代表处理到了第几行
                 arr[j] = arr[j] + arr[j - 1];
             }
         }
+        // i=1, arr[0], arr[1]
+        // i=2, arr[0], arr[1], arr[2]
+        // i=3, arr[0], arr[1], arr[2], arr[3]
+
         return Arrays.asList(arr);
     }
 }

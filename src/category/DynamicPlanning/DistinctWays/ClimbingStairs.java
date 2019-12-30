@@ -1,4 +1,4 @@
-package category.DynamicPlanning.NumOfWays;
+package category.DynamicPlanning.DistinctWays;
 
 /**
  * https://leetcode.com/problems/climbing-stairs/

@@ -1,4 +1,4 @@
-package category.DynamicPlanning;
+package category.DynamicPlanning.MiniMaximumPathToReachATarget;
 
 import java.util.Arrays;
 import java.util.Collections;

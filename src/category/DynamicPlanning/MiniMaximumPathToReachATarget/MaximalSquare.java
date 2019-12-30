@@ -1,4 +1,4 @@
-package category.DynamicPlanning.classicLove;
+package category.DynamicPlanning.MiniMaximumPathToReachATarget;
 
 /**
  * Great Article: https://leetcode.com/articles/maximal-square/ ,

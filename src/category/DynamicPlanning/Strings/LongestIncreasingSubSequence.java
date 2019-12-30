@@ -1,4 +1,4 @@
-package category.DynamicPlanning;
+package category.DynamicPlanning.Strings;
 
 /**
  * https://leetcode.com/problems/longest-increasing-subsequence/

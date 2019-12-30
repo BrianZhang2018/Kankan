@@ -1,4 +1,4 @@
-package category.DynamicPlanning;
+package category.DynamicPlanning.Strings;
 
 /**
  * https://www.geeksforgeeks.org/longest-common-substring-dp-29/

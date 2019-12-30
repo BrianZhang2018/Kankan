@@ -1,4 +1,4 @@
-package category.DynamicPlanning.NumOfWays;
+package category.DynamicPlanning.DistinctWays;
 
 /**
  * Created by brianzhang on 7/23/18.

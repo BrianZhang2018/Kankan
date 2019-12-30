@@ -1,4 +1,4 @@
-package category.DynamicPlanning.LCSubSequence;
+package category.DynamicPlanning.Strings.LCSubSequence;
 
 /**
  * LCSubSequence 变形

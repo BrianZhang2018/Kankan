@@ -8,6 +8,7 @@ import java.util.List;
  * Created by brianzhang on 2/23/19.
  */
 public class PascalTriangleII {
+
     public List<Integer> getRow(int rowIndex) {
         Integer[] pascal = new Integer[rowIndex + 1];
         Arrays.fill(pascal, 0);

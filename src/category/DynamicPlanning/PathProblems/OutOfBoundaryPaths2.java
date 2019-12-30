@@ -1,4 +1,4 @@
-package category.DynamicPlanning.PathIssues;
+package category.DynamicPlanning.PathProblems;
 
 /**
  * Created by brianzhang on 2/25/19.

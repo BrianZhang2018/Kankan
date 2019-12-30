@@ -1,4 +1,4 @@
-package category.DynamicPlanning;
+package category.DynamicPlanning.Strings;
 
 /**
  * Dynamic programming

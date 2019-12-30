@@ -1,4 +1,4 @@
-package category.DynamicPlanning;
+package category.DynamicPlanning.MiniMaximumPathToReachATarget;
 
 /**
  * https://leetcode.com/problems/minimum-path-sum/

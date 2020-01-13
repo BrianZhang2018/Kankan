@@ -3,6 +3,8 @@ package category.DynamicPlanning.Strings.LCSubSequence;
 /**
  * https://leetcode.com/problems/edit-distance/discuss/25849/Java-DP-solution-O(nm)
  *
+ * State: dp[i][j]: word1的前 i 个字符最少要用几次编辑可以变成b的前 j 个字符, 九章视频有讲解-DP4
+ *
  * Created by brianzhang on 11/3/19.
  */
 public class ConvertWord1ToWord2EditDistance {
@@ -31,7 +33,6 @@ public class ConvertWord1ToWord2EditDistance {
                 if(word1.charAt(i-1) == word2.charAt(j-1)){
                     dp[i][j] = dp[i-1][j-1];
                 }else{
-
                     int insert = dp[i][j-1];
                     int delete = dp[i-1][j];
                     int replace = dp[i-1][j-1];
@@ -39,8 +40,6 @@ public class ConvertWord1ToWord2EditDistance {
                 }
             }
         }
-
         return dp[m][n];
     }
-
 }

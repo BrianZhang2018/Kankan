@@ -1,4 +1,4 @@
-package category.DynamicPlanning.TrianleMiniPath;
+package category.DynamicPlanning.MiniMaximumPathToReachATarget.TriangleMiniPath;
 
 import java.util.List;
 

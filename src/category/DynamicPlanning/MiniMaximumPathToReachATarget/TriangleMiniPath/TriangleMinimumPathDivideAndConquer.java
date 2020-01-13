@@ -1,9 +1,9 @@
-package category.DynamicPlanning.TrianleMiniPath;
+package category.DynamicPlanning.MiniMaximumPathToReachATarget.TriangleMiniPath;
 
 import java.util.List;
 
 /**
- * DP -> Divide & Conquer + Memorization for this Asolution
+ * DP -> Divide & Conquer + Memorization for this solution
  * <p>
  * Created by brianzhang on 9/9/18.
  */

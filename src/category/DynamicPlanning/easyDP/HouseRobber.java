@@ -18,14 +18,14 @@ public class HouseRobber {
     
     //iterative - bottom up
     public int rob(int[] nums) {
-        int rob = 0; //max monney can get if rob current house
-        int notrob = 0; //max money can get if not rob current house
+        int rob = 0; //max money can get if rob current house
+        int notRob = 0; //max money can get if not rob current house
         for(int i=0; i<nums.length; i++) {
-            int currob = notrob + nums[i]; //if rob current value, previous house must not be robbed
-            notrob = Math.max(notrob, rob); //if not rob ith house, take the max value of robbed (i-1)th house and not rob (i-1)th house
-            rob = currob;
+            int curRob = notRob + nums[i]; //if rob current value, previous house must not be robbed
+            notRob = Math.max(notRob, rob); //if not rob ith house, take the max value of robbed (i-1)th house and not rob (i-1)th house
+            rob = curRob;
         }
-        return Math.max(rob, notrob);
+        return Math.max(rob, notRob);
     }
 
     //recursive - top down

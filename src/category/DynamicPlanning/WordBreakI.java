@@ -12,14 +12,14 @@ import java.util.Set;
  */
 public class WordBreakI {
     public static void main(String[] args) {
-        //Asolution-1
+        //solution-1
         HashSet<String> hashSet = new HashSet<>();
         Map<String, Boolean> mem = new HashMap<String, Boolean>();
         hashSet.add("leet");
         hashSet.add("co");
         System.out.println(wordBreak("leetco", hashSet));
 
-        //Asolution-2
+        //solution-2
         //System.out.println(wordBreakDPMem("leetco", hashSet, mem));
         for(String key : mem.keySet()){
             System.out.println(key);

@@ -1,13 +1,19 @@
-package category.DynamicPlanning.PathProblems;
+package category.DynamicPlanning.DistinctWays.PathProblems;
 
 /**
+ * https://leetcode.com/problems/out-of-boundary-paths/
+ *
  * Created by brianzhang on 2/25/19.
  */
 public class OutOfBoundaryPaths1 {
 
-    public int findPaths(int m, int n, int N, int i, int j) {
+    public static void main(String[] args) {
+        System.out.println(findPaths(2,2,2,0,0));
+    }
 
-        int mod = 1000000007;
+    public static int findPaths(int m, int n, int N, int i, int j) {
+
+        int mod = 1000000007;  //The answer may be very large, return it after mod 109 + 7 (given in the question)
         int[][][] dp = new int[N + 1][m][n];
         int[][] dicts = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
 

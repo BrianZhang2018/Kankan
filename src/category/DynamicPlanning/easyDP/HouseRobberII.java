@@ -15,13 +15,13 @@ public class HouseRobberII {
     
     public int robHelper(int[] nums, int start, int end){
         int rob = 0;
-        int notrob = 0;
+        int notRob = 0;
         for(int i=start; i<end; i++){
-            int currRob = notrob + nums[i];
-            notrob = Math.max(notrob, rob);
+            int currRob = notRob + nums[i];
+            notRob = Math.max(notRob, rob);
             rob = currRob;
         }
 
-        return Math.max(rob, notrob);
+        return Math.max(rob, notRob);
     }
 }

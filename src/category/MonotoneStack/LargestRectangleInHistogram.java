@@ -11,7 +11,6 @@ public class LargestRectangleInHistogram {
     public static void main(String[] args){
        //System.out.println(largestRectangleArea4(new int[]{1,2,3,4,5,6}));
        System.out.println(largestRectangleArea4(new int[]{2,1,5,6,2,3}));
-
     }
 
     // Pruning to find peak. Best solution for this problem

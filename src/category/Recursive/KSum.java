@@ -19,7 +19,7 @@ public class KSum {
         return kSum(nums, target, 4, 0);
     }
    private ArrayList<List<Integer>> kSum(int[] nums, int target, int k, int index) {
-        ArrayList<List<Integer>> res = new ArrayList<List<Integer>>();
+        ArrayList<List<Integer>> res = new ArrayList<>();
         if(index >= len) {
             return res;
         }

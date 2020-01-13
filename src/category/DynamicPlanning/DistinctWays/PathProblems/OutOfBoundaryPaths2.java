@@ -1,12 +1,11 @@
-package category.DynamicPlanning.PathProblems;
+package category.DynamicPlanning.DistinctWays.PathProblems;
 
 /**
+ *
  * Created by brianzhang on 2/25/19.
  */
 public class OutOfBoundaryPaths2 {
-    int mod = 1000000007;
-    int m;
-    int n;
+    int mod = 1000000007, m, n;
 
     public int findPaths(int m, int n, int N, int i, int j) {
         this.m = m;
@@ -27,11 +26,13 @@ public class OutOfBoundaryPaths2 {
         if (N == 0) return 0;
         if (dp[N][i][j] != -1) return dp[N][i][j];
         long ans = 0;
+
         ans += solve(N - 1, i - 1, j, dp);
         ans += solve(N - 1, i + 1, j, dp);
         ans += solve(N - 1, i, j - 1, dp);
         ans += solve(N - 1, i, j + 1, dp);
         dp[N][i][j] = (int) (ans % mod);
+
         return dp[N][i][j];
     }
 }

@@ -3,9 +3,22 @@ package category.DivideAndConquerRecursive;
 import category.model.TreeNode;
 
 /**
+ * https://leetcode.com/problems/balanced-binary-tree/
+ *
  * Created by brianzhang on 8/5/18.
  */
 public class BalancedBinaryTree {
+
+    public static void main(String[] args) {
+        BalancedBinaryTree test = new BalancedBinaryTree();
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(11);
+        root.left.left = new TreeNode(20);
+        root.left.right = new TreeNode(1);
+
+        System.out.println(test.isBalancedBTree(root));
+    }
 
     public boolean isBalancedBTree(TreeNode root) {
 

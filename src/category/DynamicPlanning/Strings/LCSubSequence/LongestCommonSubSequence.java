@@ -1,15 +1,16 @@
 package category.DynamicPlanning.Strings.LCSubSequence;
 
 /**
- * https://leetcode.com/problems/longest-common-subsequence/submissions/
- * 
+ *
  * https://leetcode.com/problems/longest-common-subsequence/discuss/398711/4-different-ways-to-solve-Longest-Common-Sub-sequence-including-O(N)-Solution
+ *
+ * dp[i][j], 表示前i个字符和前J个字符的LCS长度
  */
-public class LongestCommonSubsequence {
+public class LongestCommonSubSequence {
 
     public static void main(String[] args) {
-        LongestCommonSubsequence test = new LongestCommonSubsequence();
-        System.out.println(test.longestCommonSubsequence("abcde", "ace"));
+        LongestCommonSubSequence test = new LongestCommonSubSequence();
+        System.out.println(test.longestCommonSubSequence("bacde", "tace"));
     }
     //two dimension
     public int solution1(String text1, String text2) {
@@ -33,7 +34,7 @@ public class LongestCommonSubsequence {
     }
 
     //solution 1 简写
-    public int longestCommonSubsequence(String text1, String text2) {
+    public int longestCommonSubSequence(String text1, String text2) {
         int m = text1.length();
         int n = text2.length();
         

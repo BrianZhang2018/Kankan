@@ -4,30 +4,32 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by brianzhang on 8/11/18.
- *
+ * https://leetcode.com/problems/longest-palindromic-substring/
  * Time complexity: O(n^2), Space complexity: O(1)
+ *
+ * Created by brianzhang on 8/11/18.
  */
 public class LongestPalindromicSubstring {
-    public static void main(String[] args) {
-        System.out.println(longestPalindrome("babad"));
 
+    public static void main(String[] args) {
+        LongestPalindromicSubstring test = new LongestPalindromicSubstring();
+        System.out.println(test.longestPalindrome("babad"));
     }
 
-    public static String longestPalindrome(String s) {
+    public String longestPalindrome(String s) {
         HashMap<String, String> res = new HashMap();
         res.put("longest", "");
         for (int i = 0; i < s.length(); i++) {
-            // get longest palindrome with center of i
+            // assume odd length, try to extend Palindrome as possible
             count(s, i, i, res);
-            // get longest palindrome with center of i, i+1
+            // assume even length
             count(s, i, i + 1, res);
         }
 
         return res.get("longest");
     }
 
-    public static void count(String s, int left, int right, Map<String, String> res) {
+    public void count(String s, int left, int right, Map<String, String> res) {
 
         while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
             if (res.get("longest").length() < right-left){

@@ -7,11 +7,11 @@ import java.util.PriorityQueue;
  * 
  * Created by brianzhang on 10/22/18.
  */
-public class FindmedianFromStream {
+public class FindMedianFromStream {
 
     public static void main(String[] args) {
 
-        FindmedianFromStream test = new FindmedianFromStream();
+        FindMedianFromStream test = new FindMedianFromStream();
         test.addNum(1);
         test.addNum(4);
     }

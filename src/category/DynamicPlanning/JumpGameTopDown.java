@@ -3,6 +3,8 @@ package category.DynamicPlanning;
 import java.util.Arrays;
 
 /**
+ * https://leetcode.com/articles/jump-game/
+ *
  * Created by brianzhang on 4/5/19.
  */
 public class JumpGameTopDown {
@@ -24,7 +26,7 @@ public class JumpGameTopDown {
     }
 
     public boolean helper(int position, int[] nums){
-        //memorization help you to record the result from previous loop to save ur time here
+        //memorization help to record the result from previous loop to save overlap calculation
         //just like this question, it will help you skip some loop which already run before.
         if(memo[position] != Index.UNKNOWN){
             return memo[position] == Index.GOOD ? true : false;

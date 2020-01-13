@@ -1,4 +1,4 @@
-package category.DynamicPlanning.PathProblems;
+package category.DynamicPlanning.DistinctWays.PathProblems;
 
 /**
  * https://leetcode.com/problems/unique-paths/description/

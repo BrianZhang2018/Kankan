@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/BinarySearchTest.java" afterPath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/BinarySearchTest.java" />
     </list>
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
@@ -96,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstructBinarySearchTreeByPreOrder.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConstructBinarySearchTreeByPreOrder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinarySearchTreeByPreOrder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="737">
@@ -140,11 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinarySearchTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BinarySearchTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/BinarySearchTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="169">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -280,13 +281,13 @@
         <option value="$PROJECT_DIR$/src/category/BFS/WordLadderTwoEndBFS.java" />
         <option value="$PROJECT_DIR$/src/category/algorithms/MajorityElementMooreVotingAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/category/algorithms/MajorityElementII.java" />
-        <option value="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/BinarySearchTest.java" />
         <option value="$PROJECT_DIR$/src/companies/Nordstrom/FindOriginalIndexBeforeRotated.java" />
         <option value="$PROJECT_DIR$/src/companies/Nordstrom/ReverseNestedString.java" />
         <option value="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinaryTreeByOrder/ConstructBTFromPreorderAndInorder.java" />
         <option value="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinaryTreeByOrder/ConstructBTFromPostorderAndInorder.java" />
         <option value="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinaryTreeByTraversalOrder/ConstructBTFromPostorderAndInorder.java" />
         <option value="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinarySearchTreeByPreOrder.java" />
+        <option value="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/BinarySearchTest.java" />
       </list>
     </option>
   </component>
@@ -1635,7 +1636,7 @@
       <workItem from="1578163197090" duration="17888000" />
       <workItem from="1580053391723" duration="640000" />
       <workItem from="1580697906921" duration="6508000" />
-      <workItem from="1581716822265" duration="6301000" />
+      <workItem from="1581716822265" duration="6356000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -1688,7 +1689,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="973737000" />
+    <option name="totallyTimeSpent" value="973792000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1715,7 +1716,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3890411" sideWeight="0.48707592" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6815817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36039603" sideWeight="0.49434572" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5148515" sideWeight="0.49434572" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33226836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2323,6 +2324,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2500,14 +2502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/BinarySearchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/category/BacktracingDFS/NQueens.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -2579,6 +2573,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/BinarySearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

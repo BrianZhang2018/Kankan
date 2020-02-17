@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/DFS/CountCompleteTreeNodes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/algorithms/MajorityElementII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/BinarySearchTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinarySearchTreeByPreOrder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/FindFirstAndLastPositionOfElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/companies/Nordstrom/FindOriginalIndexBeforeRotated.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/companies/Nordstrom/ReverseNestedString.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/binaryTreeAndBinarySerach/ConstructBinaryTreeByOrder/VS" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BFS/WordLadder.java" afterPath="$PROJECT_DIR$/src/category/BFS/WordLadderBFS.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/ProductOfArrayExceptSelf.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/ProductOfArrayExceptSelf.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWater.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/algorithms/FindMajorityElementMooreVotingAlgorithm.java" afterPath="$PROJECT_DIR$/src/category/algorithms/MajorityElementMooreVotingAlgorithm.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinaryTreeByOrder/ConstructBTFromPostorderAndInorder.java" afterPath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinaryTreeByTraversalOrder/ConstructBTFromPostorderAndInorder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinaryTreeByOrder/ConstructBTFromPreorderAndInorder.java" afterPath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinaryTreeByTraversalOrder/ConstructBTFromPreorderAndInorder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinaryTreeByOrder/VS" afterPath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinaryTreeByTraversalOrder/VS" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/binaryTreeAndBinarySerach/Binary_Search 特点" afterPath="$PROJECT_DIR$/out/production/KillLeetCode/category/binaryTreeAndBinarySerach/Binary_Search 特点" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BFS/WordLadderTwoEndBFS.java" afterPath="$PROJECT_DIR$/src/category/BFS/WordLadderTwoEndBFS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/backtracingDFS/WordLadder.java" afterPath="$PROJECT_DIR$/src/category/backtracingDFS/WordLadder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/Binary_Search 特点" afterPath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/Binary_Search 特点" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/SearchInRotatedSortedArray.java" afterPath="$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/SearchInRotatedSortedArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/companies/amazon/Palindrome.java" afterPath="$PROJECT_DIR$/src/companies/amazon/Palindrome.java" />
     </list>
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
@@ -120,8 +99,8 @@
       <file leaf-file-name="ConstructBinarySearchTreeByPreOrder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinarySearchTreeByPreOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="29" column="73" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="73" />
+            <state relative-caret-position="737">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1656,7 +1635,7 @@
       <workItem from="1578163197090" duration="17888000" />
       <workItem from="1580053391723" duration="640000" />
       <workItem from="1580697906921" duration="6508000" />
-      <workItem from="1581716822265" duration="6038000" />
+      <workItem from="1581716822265" duration="6301000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -1709,7 +1688,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="973474000" />
+    <option name="totallyTimeSpent" value="973737000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1722,7 +1701,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-266" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1736,10 +1715,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3890411" sideWeight="0.48707592" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6815817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.74520546" sideWeight="0.49434572" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36039603" sideWeight="0.49434572" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33279485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33226836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2595,8 +2574,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/category/binaryTreeAndBinarySerach/ConstructBinarySearchTreeByPreOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="29" column="73" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="73" />
+        <state relative-caret-position="737">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

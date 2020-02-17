@@ -8,6 +8,7 @@ import java.util.Arrays;
 public class BinarySearchTest {
 
     public static void main(String[] args) {
+
         System.out.println(bs(new int[]{1,4,7,8,9,23,54}, 10));
     }
 

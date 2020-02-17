@@ -12,7 +12,7 @@ public class Palindrome {
     }
 
     public static boolean canPermutePalindrome(String s) {
-        Set<Character> set = new HashSet<Character>();
+        Set<Character> set = new HashSet<>();
         for (int i = 0; i < s.length(); ++i) {
             if (!set.contains(s.charAt(i)))
                 set.add(s.charAt(i));

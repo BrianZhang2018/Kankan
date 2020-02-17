@@ -5,14 +5,13 @@ package category.algorithms;
  *
  * Created by brianzhang on 2/18/19.
  */
-public class FindMajorityElementMooreVotingAlgorithm {
+public class MajorityElementMooreVotingAlgorithm {
 
     public static void main(String[] args) {
-        FindMajorityElementMooreVotingAlgorithm test = new FindMajorityElementMooreVotingAlgorithm();
-        System.out.println(test.majorityElement(new int[]{2,2,1,1,1,2,2,2,3}));
+        System.out.println(majorityElement(new int[]{2,2,1,1,1,2,2,2,3}));
     }
 
-    public int majorityElement(int[] num) {
+    public static int majorityElement(int[] num) {
         int major = num[0], count = 1;
         for (int i = 1; i < num.length; i++) {
             if (count == 0) {

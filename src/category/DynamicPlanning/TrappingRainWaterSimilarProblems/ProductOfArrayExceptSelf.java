@@ -1,8 +1,8 @@
-package category.DynamicPlanning;
+package category.DynamicPlanning.TrappingRainWaterSimilarProblems;
 /**
- * 
+ * https://leetcode.com/problems/product-of-array-except-self/s
+ *
  * Similar question: https://leetcode.com/problems/trapping-rain-water/
- * 
  */
 public class ProductOfArrayExceptSelf{
 
@@ -10,6 +10,7 @@ public class ProductOfArrayExceptSelf{
         ProductOfArrayExceptSelf test = new ProductOfArrayExceptSelf();
         test.productExceptSelf(new int[]{1,2,3,4});
     }
+
     public int[] productExceptSelf(int[] nums) {
         if(nums == null)
             return null;
@@ -34,6 +35,34 @@ public class ProductOfArrayExceptSelf{
         }
         
         return product;
+    }
+
+    //count "0" solutions, https://www.1point3acres.com/bbs/thread-584451-1-1.html
+    public int[] productExceptSelf2(int[] nums) {
+
+        int product = 1;
+        int zeros = 0;
+        for (int num : nums) {
+            if (num == 0) {
+                zeros++;
+            } else {
+                product *= num;
+            }
+        }
+        if (product == 0) {
+            return nums;
+        }
+        int size = nums.length - 1;
+        for(int i = 0; i < nums.length; i++) {
+            if (zeros == 0) {
+                nums[i] = product / nums[i];
+            } else if (zeros == 1 && nums[i] == 0) {
+                nums[i] = product;
+            } else {
+                nums[i] = 0;
+            }
+        }
+        return nums;
     }
 
 }

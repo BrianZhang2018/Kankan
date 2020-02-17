@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by brianzhang on 8/20/18.
  * <p>
- * right Asolution, but Time Limit Exceeded in Leetcode, (30/39 test cases passed)
+ * right solution, but Time Limit Exceeded in Leetcode, (30/39 test cases passed)
  */
 class WordNode {
     String word;
@@ -20,7 +20,7 @@ class WordNode {
     }
 }
 
-public class WordLadder {
+public class WordLadderBFS {
     public static void main(String[] args) {
         
         System.out.println(ladderLength("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));

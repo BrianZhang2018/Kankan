@@ -1,4 +1,4 @@
-package category.binaryTreeAndBinarySerach.ConstructBinaryTreeByOrder;
+package category.binaryTreeAndBinarySerach.ConstructBinaryTreeByTraversalOrder;
 
 import category.model.TreeNode;
 import java.util.*;
@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class ConstructBTFromPostorderAndInorder{
 
-    Map<Integer, Integer> inorderMap = new HashMap<Integer, Integer>();
+    Map<Integer, Integer> inorderMap = new HashMap<>();
     
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         

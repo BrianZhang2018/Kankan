@@ -19,13 +19,13 @@ class WordNode {
 
 public class WordLadder {
     public List<List<String>> findLadders(String start, String end, Set<String> dict) {
-        List<List<String>> result = new ArrayList<List<String>>();
-        LinkedList<WordNode> queue = new LinkedList<WordNode>();
+        List<List<String>> result = new ArrayList<>();
+        LinkedList<WordNode> queue = new LinkedList<>();
         queue.add(new WordNode(start, 1, null));
         dict.add(end);
         int minStep = 0;
-        HashSet<String> visited = new HashSet<String>();
-        HashSet<String> unvisited = new HashSet<String>();
+        HashSet<String> visited = new HashSet<>();
+        HashSet<String> unvisited = new HashSet<>();
         unvisited.addAll(dict);
         int preNumSteps = 0;
         while (!queue.isEmpty()) {

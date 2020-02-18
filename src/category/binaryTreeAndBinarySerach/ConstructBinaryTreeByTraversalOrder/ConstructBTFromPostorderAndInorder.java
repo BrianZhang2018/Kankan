@@ -7,6 +7,13 @@ import java.util.*;
  */
 public class ConstructBTFromPostorderAndInorder{
 
+    public static void main(String[] args) {
+        ConstructBTFromPostorderAndInorder test = new ConstructBTFromPostorderAndInorder();
+        TreeNode root = test.buildTree(new int[]{9,3,15,20,7}, new int[]{9,15,7,20,3});
+
+        preOrderTraversal(root);
+    }
+
     Map<Integer, Integer> inorderMap = new HashMap<>();
     
     public TreeNode buildTree(int[] inorder, int[] postorder) {
@@ -14,7 +21,7 @@ public class ConstructBTFromPostorderAndInorder{
         for(int i = 0; i < inorder.length; i++) {
             inorderMap.put(inorder[i], i);
         }
-        //poststart = postorder.length - 1 -> start from the end of postorder array as it's the root
+        //poststart = postorder.length - 1 -> start from the end of postorder array as it's the root of binary tree
         return helper(postorder.length - 1, 0, inorder.length -1, inorder, postorder);
     }
     
@@ -32,5 +39,15 @@ public class ConstructBTFromPostorderAndInorder{
         root.right = helper(postStart-1, inRoot+1, inEnd, inorder, postorder);
         
         return root;
+    }
+
+    public static void preOrderTraversal(TreeNode node){
+        if(node == null){
+            System.out.println("leaf");
+            return;
+        }
+        System.out.println(node.val);
+        preOrderTraversal(node.left);
+        preOrderTraversal(node.right);
     }
 }

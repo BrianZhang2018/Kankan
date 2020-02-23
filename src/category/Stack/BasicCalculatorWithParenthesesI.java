@@ -5,9 +5,11 @@ import java.util.Stack;
 /**
  * https://leetcode.com/problems/basic-calculator/
  *
+ * only has the '+' and '-' operation
+ *
  * Created by brianzhang on 11/17/19.
  */
-public class BasicCalculatorWithParenthesesExp {
+public class BasicCalculatorWithParenthesesI {
 
     public static void main(String[] args) {
         System.out.println(calculate("2-(5-6)"));

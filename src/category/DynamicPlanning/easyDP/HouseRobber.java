@@ -22,7 +22,7 @@ public class HouseRobber {
         int notRob = 0; //max money can get if not rob current house
         for(int i=0; i<nums.length; i++) {
             int curRob = notRob + nums[i]; //if rob current value, previous house must not be robbed
-            notRob = Math.max(notRob, rob); //if not rob ith house, take the max value of robbed (i-1)th house and not rob (i-1)th house
+            notRob = Math.max(notRob, rob); //if don't rob i-th house, take the max value of (robbed (i-1)th house , not rob (i-1)th house)
             rob = curRob;
         }
         return Math.max(rob, notRob);

@@ -6,14 +6,22 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Bucket Sort
  * https://leetcode.com/problems/top-k-frequent-elements
- * <p>
+ * Bucket Sort
+ *
+ * 相似问题: TopKFrequentWords.java - priorityQueue
+ *
  * Created by brianzhang on 1/6/19.
  */
 public class TopKFrequentElementsBucketSort {
 
-    public List<Integer> topKFrequent(int[] nums, int k) {
+    public static void main(String[] args) {
+        for(int i : topKFrequent(new int[]{1,1,2,2,3}, 1)){
+            System.out.println(i);
+        }
+    }
+
+    public static List<Integer> topKFrequent(int[] nums, int k) {
         List<Integer>[] bucket = new List[nums.length + 1];
         Map<Integer, Integer> counter = new HashMap();
 
@@ -23,7 +31,7 @@ public class TopKFrequentElementsBucketSort {
 
         for (Map.Entry<Integer, Integer> entry : counter.entrySet()) {
             if (bucket[entry.getValue()] == null) {
-                bucket[entry.getValue()] = new ArrayList<Integer>();
+                bucket[entry.getValue()] = new ArrayList<>();
             }
             bucket[entry.getValue()].add(entry.getKey());
         }

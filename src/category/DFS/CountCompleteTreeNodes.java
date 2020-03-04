@@ -10,6 +10,14 @@ import category.model.TreeNode;
 public class CountCompleteTreeNodes {
     public static void main(String[] args) {
 
+        int start = 1;
+        int backoffrate = 2;
+        int waitSecond = 3;
+
+        for(int i=0;i<9; i++){
+            waitSecond = waitSecond * backoffrate;
+            System.out.println(waitSecond);
+        }
     }
 
     public int countNodes(TreeNode root) {

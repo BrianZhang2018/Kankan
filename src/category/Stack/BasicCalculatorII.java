@@ -24,8 +24,8 @@ public class BasicCalculatorII {
             if(Character.isDigit(s.charAt(i))){
                 num = num * 10 + s.charAt(i)-'0';
             }
-            // not "else if" here as we need calculate the last number
-            if((i==len-1 || !Character.isDigit(s.charAt(i)) && s.charAt(i) != ' ')){
+            // Not "else if" here as we need calculate the last number
+            if(i==len-1 || (!Character.isDigit(s.charAt(i)) && s.charAt(i) != ' ')){
                 if(prevSign=='-'){
                     stack.push(-num);
                 } else if(prevSign=='+'){

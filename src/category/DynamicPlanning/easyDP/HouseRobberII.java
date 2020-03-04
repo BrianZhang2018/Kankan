@@ -1,9 +1,14 @@
 package category.DynamicPlanning.easyDP;
 
 /**
- * 
+ * https://leetcode.com/problems/house-robber-ii/
  */
 public class HouseRobberII {
+
+    public static void main(String[] args) {
+        HouseRobberII test = new HouseRobberII();
+        System.out.println(test.rob(new int[]{2,3,2}));
+    }
     
     public int rob(int[] nums) {
         if(nums.length == 1)

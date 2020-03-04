@@ -1,4 +1,4 @@
-package category.Recursive;
+package category.Recursion;
 
 import java.util.*;
 

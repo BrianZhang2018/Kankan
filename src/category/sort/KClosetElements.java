@@ -41,7 +41,7 @@ public class KClosetElements {
         if (points == null)
             return null;
 
-        PriorityQueue<int[]> pq = new PriorityQueue<int[]>((int[] p2, int[] p1) ->
+        PriorityQueue<int[]> pq = new PriorityQueue<>((int[] p2, int[] p1) ->
                 p1[0] * p1[0] + p1[1] * p1[1] - p2[0] * p2[0] - p2[1] * p2[1]);
 
         for (int i = 0; i < points.length; i++) {

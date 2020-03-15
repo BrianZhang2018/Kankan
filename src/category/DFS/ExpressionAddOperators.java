@@ -55,8 +55,7 @@ public class ExpressionAddOperators {
             return;
         }
 
-        // start from first index of current position in num string, try all possible
-        // length of nums
+        // start from first index of current position in num string, try all possible length of nums
         for (int i = pos; i < num.length(); i++) {
             // corner case: if current position's digit is 0, we can only use it as a single digit number which is 0
             // if it is not a single digit number with leading 0, it's an invalid number

@@ -1,0 +1,13 @@
+1. time complexity of backtracking algorithm:
+https://stackoverflow.com/questions/20049829/how-to-calculate-time-complexity-of-backtracking-algorithm
+
+In Hamiltonian cycle, in each recursive call one of the remaining vertices is selected in the worst case.
+In each recursive call the branch factor decreases by 1.
+Recursion in this case can be thought of as n nested loops where in each loop the number of iterations decreases by one.
+Hence the time complexity is given by:
+
+T(N) = N*(T(N-1) + O(1))
+T(N) = N*(N-1)*(N-2).. = O(N!)
+
+2. time complexity of recursion:
+https://stackoverflow.com/questions/13467674/determining-complexity-for-recursive-functions-big-o-notation

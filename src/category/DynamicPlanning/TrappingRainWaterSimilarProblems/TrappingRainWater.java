@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * https://leetcode.com/problems/trapping-rain-water/
- * Similar approach with the BestTimeToBuyAndSellStockIII problem.
+ * Similar approach with the BestTimeToBuyAndSellStockIIIAtMostTwoTransactions problem.
  *
  * Can be solved with Monotone stack solution.
  * https://www.cnblogs.com/grandyang/p/4402392.html

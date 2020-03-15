@@ -7,8 +7,8 @@ import java.util.Stack;
 /**
  * https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/discuss/382421/JavaPython-3-Iterative-short-codes-w-comment-and-analysis.
  *
- * 这道题的窍门是：when arrive the ')', you need reverse the substring within the paired bracket before the ')', then combine it with last substring in stack
- * which will be reversed when you arrive next ')'
+ * 这道题的窍门是：When meets the ')', you need reverse the substring within the paired bracket before the ')',
+ * then combine it with last substring in stack which will be reversed when you arrive next ')'
  *
  * Created by brianzhang on 2/14/20.
  */

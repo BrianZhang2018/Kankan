@@ -20,15 +20,15 @@ public class SubsetsII {
         List<List<Integer>> res = new ArrayList<>();
         //sort the nums so that the nums[i] == nums[i - 1] can be used to check the duplicate number
         Arrays.sort(nums);
-        backTrack(nums, 0, res, new ArrayList<Integer>());
+        backTrack(nums, 0, res, new ArrayList<>());
         return res;
     }
 
     private void backTrack(int[] nums, int start, List<List<Integer>> res, List<Integer> tmpList) {
-        res.add(new ArrayList<Integer>(tmpList));
+        res.add(new ArrayList<>(tmpList));
         for(int p : tmpList)
             System.out.print(p + " ,");
-        System.out.println("/r");
+        System.out.println("\r");
 
         for (int i = start; i < nums.length; i++) {
             if (i > start && nums[i] == nums[i - 1])

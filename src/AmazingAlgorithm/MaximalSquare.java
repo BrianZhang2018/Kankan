@@ -26,7 +26,7 @@ public class MaximalSquare {
             for (int j = 1; j <= cols; j++) {
                 if (matrix[i-1][j-1] == '1'){
                     //e.g. i=1, j=1 and matrix[i-1][j-1] = 1, so dp[1][1] = min(dp(0, 1), dp(0, 0), dp(1, j0)) + 1, this
-                    //is caluated 
+                    //is calculated
                     dp[i][j] = Math.min(Math.min(dp[i][j - 1], dp[i - 1][j]), dp[i - 1][j - 1]) + 1;
                     maxsqlen = Math.max(maxsqlen, dp[i][j]);
                 }

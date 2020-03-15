@@ -7,7 +7,7 @@ import java.util.Stack;
  *
  * solution: https://leetcode.com/problems/trapping-rain-water/discuss/244167/A-general-stack-approach-you-can-solve-42-84-85
  *
- * Similar with the BestTimeToBuyAndSellStockIII
+ * Similar with the BestTimeToBuyAndSellStockIIIAtMostTwoTransactions
  * https://www.cnblogs.com/grandyang/p/4402392.html
  */
 public class TrappingRainWater{

@@ -4,13 +4,16 @@ import java.util.Arrays;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+ *
  * Reference:
  * http://bangbingsyb.blogspot.com/2014/11/leetcode-best-time-to-buy-and-sell.html
  *
  * Similar question: TrappingRainWater.java
+ *
+ * the key of this question: You may complete at most two transactions.
  * Created by brianzhang on 2/24/19.
  */
-public class BestTimeToBuyAndSellStockIII {
+public class BestTimeToBuyAndSellStockIIIAtMostTwoTransactions {
     public static void main(String[] args) {
         int[] test = { 1, 2,3,4,5};
         System.out.println(maxProfit(test));
@@ -45,7 +48,7 @@ public class BestTimeToBuyAndSellStockIII {
         System.out.println(Arrays.toString(right));
 
         // You can sell and buy at the same day (refer above reference link)
-        // 最后这两个收益之和便是以i为分割的最大收益. 将序列从左向右扫一遍可以获取 first transaction, 从右向左扫一遍可以获取 second transaction. 相加后取最大值即为答案
+        // 最后这两个收益之和便是以 i 为分割的最大收益-(可以理解为分成了两个"Best Time to Buy and Sell Stock II"的问题, 对 i 的左右区间).
         for (int i = 0; i < n; i++) {
             profit = Math.max(profit, left[i] + right[i]);
         }

@@ -7,30 +7,6 @@ import java.util.Stack;
  * Created by brianzhang on 10/16/18.
  */
 public class DepthFirstSearch {
-    /**
-     * This method performs a depth first search on a binary binaryTree
-     * @param root
-     */
-    public void depthFirstSearch(Node root) {
-        if (root == null) {
-            return;
-        }
-
-        Stack<Node> nodeStack = new Stack<Node>();
-        nodeStack.push(root);
-
-        while (!nodeStack.isEmpty()) {
-            Node node = nodeStack.pop();
-            System.out.print(node.data + " ");
-
-            if (node.right != null) {
-                nodeStack.push(node.right);
-            }
-            if (node.left != null) {
-                nodeStack.push(node.left);
-            }
-        }
-    }
 
     public static void main(String args[]) {
         Node root = new Node(10);
@@ -46,15 +22,40 @@ public class DepthFirstSearch {
         DepthFirstSearch dfs = new DepthFirstSearch();
         dfs.depthFirstSearch(root);
     }
+
+    /**
+     * This method performs a depth first search on a binary binaryTree
+     * @param root
+     */
+    public void depthFirstSearch(Node root) {
+        if (root == null) {
+            return;
+        }
+
+        Stack<Node> nodeStack = new Stack<Node>();
+        nodeStack.push(root);
+
+        while (!nodeStack.isEmpty()) {
+            Node node = nodeStack.pop();
+            System.out.print(node.val + " ");
+
+            if (node.right != null) {
+                nodeStack.push(node.right);
+            }
+            if (node.left != null) {
+                nodeStack.push(node.left);
+            }
+        }
+    }
 }
 
 class Node {
-    int data;
+    int val;
     Node left;
     Node right;
 
     public Node(int value) {
-        data = value;
+        val = value;
         left = right = null;
     }
 }

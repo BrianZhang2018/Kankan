@@ -7,10 +7,10 @@ package category.string;
  */
 public class StringWithoutAAAOrBBB {
     public static void main(String[] args) {
-
+        System.out.println(strWithout3a3b(2, 3));
     }
 
-    public String strWithout3a3b(int A, int B) {
+    public static String strWithout3a3b(int A, int B) {
 
         StringBuilder sb = new StringBuilder(A+B);
         while(A + B>0){

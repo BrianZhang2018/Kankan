@@ -1,3 +1,4 @@
 /bin/
 *.class
-*workspace.xml
+*/workspace.xml
+out/product*

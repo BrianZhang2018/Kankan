@@ -8,6 +8,7 @@ import java.util.List;
  * https://www.lintcode.com/problem/word-squares/
  * https://zhuhan0.blogspot.com/2017/09/leetcode-425-word-squares.html
  *
+ * 这个一道查找搜索的题，所以不能用简单的permutation+backtracking去做，要用Trie数据结构搜索word，进行排列组合和backtracking
  * Created by brianzhang on 3/27/20.
  */
 public class WordSquare {
@@ -45,8 +46,8 @@ public class WordSquare {
         }
         List<String> children = new ArrayList<>();
         getChildren(node, prefix, children); // get children words which matched the prefix
-        //Continue searching for the next prefix match recursively
-        for (String child : children) {
+
+        for (String child : children) { //Continue searching for the next prefix match recursively
             square.add(child);
             dfs(root, len, square, res);
             square.remove(square.size() - 1);

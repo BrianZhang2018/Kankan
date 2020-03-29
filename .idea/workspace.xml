@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/tree/trie/WordSquare.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/RallyHealthy/Screen Shot 2019-09-30 at 10.10.43 PM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/RallyHealthy/Screen Shot 2019-09-30 at 10.10.51 PM.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BFS/minimumsteps/CutOffTreesforGolfEventBFSGetMinSteps.java" afterPath="$PROJECT_DIR$/src/category/BFS/minimumsteps/CutOffTreesForGolfEventBFSGetMinSteps.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/array/MergeTwoSortedArray.java" afterPath="$PROJECT_DIR$/src/category/linkedList/MergeTwoSortedList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/tree/trie/InsertAnodeINtoBST.java" afterPath="$PROJECT_DIR$/src/category/tree/InsertANodeIntoBST.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/companies/RallyHealthy/Screen Shot 2019-09-30 at 10.10.43 PM.png" afterPath="$PROJECT_DIR$/src/companies/RallyHealthy/Reserve-Seat-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/companies/RallyHealthy/Screen Shot 2019-09-30 at 10.10.51 PM.png" afterPath="$PROJECT_DIR$/src/companies/RallyHealthy/Reserve-seat-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/tree/trie/TrieTree.JPG" afterPath="$PROJECT_DIR$/out/production/KillLeetCode/category/tree/trie/TrieTree.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/tree/trie/TrieTree.JPG" afterPath="$PROJECT_DIR$/src/category/tree/trie/TrieTree.JPG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BFS/CheapestFlight.java" afterPath="$PROJECT_DIR$/src/category/BFS/CheapestFlight.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BFS/WordLadderBFS.java" afterPath="$PROJECT_DIR$/src/category/BFS/WordLadderBFS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/Strings/LCSubSequence/ConvertWord1ToWord2EditDistance.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Strings/LCSubSequence/ConvertWord1ToWord2EditDistance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/linkedList/AddTwoNumbersII.java" afterPath="$PROJECT_DIR$/src/category/linkedList/AddTwoNumbersII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/tree/FlattenLinkedList.java" afterPath="$PROJECT_DIR$/src/category/tree/FlattenLinkedList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/tree/trie/ConcatenatedWordTrieImpl.java" afterPath="$PROJECT_DIR$/src/category/tree/trie/ConcatenatedWordTrieImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/tree/trie/WordSearchII.java" afterPath="$PROJECT_DIR$/src/category/tree/trie/WordSearchII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/companies/RallyHealthy/FlightReservationFor4MembersFamily.java" afterPath="$PROJECT_DIR$/src/companies/RallyHealthy/FlightReservationFor4MembersFamily.java" />
     </list>
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
@@ -121,8 +103,8 @@
       <file leaf-file-name="WordSquare.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/category/tree/trie/WordSquare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1325">
-              <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            <state relative-caret-position="295">
+              <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1651,7 +1633,7 @@
       <workItem from="1580697906921" duration="6508000" />
       <workItem from="1581716822265" duration="26460000" />
       <workItem from="1583087242510" duration="11172000" />
-      <workItem from="1584145894378" duration="41572000" />
+      <workItem from="1584145894378" duration="41758000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -1704,7 +1686,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1046640000" />
+    <option name="totallyTimeSpent" value="1046826000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1717,7 +1699,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1738,7 +1720,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39178082" sideWeight="0.48707592" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6808219" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6849315" sideWeight="0.49434572" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6849315" sideWeight="0.49434572" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2552504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67671233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2584,8 +2566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/category/tree/trie/WordSquare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1325">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        <state relative-caret-position="295">
+          <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

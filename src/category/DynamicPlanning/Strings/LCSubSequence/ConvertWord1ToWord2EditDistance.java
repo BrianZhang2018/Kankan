@@ -3,7 +3,7 @@ package category.DynamicPlanning.Strings.LCSubSequence;
 /**
  * https://leetcode.com/problems/edit-distance/discuss/25849/Java-DP-solution-O(nm)
  *
- * State: dp[i][j]: word1的前 i 个字符最少要用几次编辑可以变成b的前 j 个字符, 九章视频有讲解-DP4
+ * State: f(i, j) := minimum cost (or steps) required to convert first i characters of word1 to first j characters of word2
  *
  * Created by brianzhang on 11/3/19.
  */

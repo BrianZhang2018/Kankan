@@ -12,11 +12,15 @@ import java.util.Queue;
  */
 public class CheapestFlight {
 
+    public static void main(String[] args) {
+
+    }
+
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
         Map<Integer, Map<Integer, Integer>> prices = new HashMap();
         for (int[] f : flights) {
             if (!prices.containsKey(f[0])) {
-                prices.put(f[0], new HashMap<Integer, Integer>());
+                prices.put(f[0], new HashMap<>());
             }
             prices.get(f[0]).put(f[1], f[2]);
         }

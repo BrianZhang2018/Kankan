@@ -3,7 +3,7 @@ package category.tree.trie;
 import java.util.*;
 
 /**
- * intuitive from
+ * Intuitive from
  * https://leetcode.com/problems/concatenated-words/discuss/95644/102ms-java-Trie-%2B-DFS-solution.-With-explanation-easy-to-understand.
  * Created by brianzhang on 3/12/19.
  */
@@ -20,11 +20,11 @@ public class ConcatenatedWordTrieImpl {
 
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
 
-        List<String> res = new ArrayList<String>();
+        List<String> res = new ArrayList<>();
         if(words == null || words.length ==0)
             return res;
         TrieNode root = new TrieNode(' ');
-        HashSet<String> set = new HashSet<String>();
+        HashSet<String> set = new HashSet<>();
         for(String word : words){
             if (word.length() == 0) {
                 continue;
@@ -92,7 +92,7 @@ public class ConcatenatedWordTrieImpl {
     }
 
     class TrieNode{
-        HashMap<Character, TrieNode> children = new HashMap<Character, TrieNode>();
+        HashMap<Character, TrieNode> children = new HashMap<>();
         boolean isLastWord = false;
         Character val = ' ';
         String word = "";

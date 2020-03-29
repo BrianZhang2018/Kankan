@@ -3,6 +3,7 @@ package companies.RallyHealthy;
 import java.util.*;
 
 /**
+ * Reserve 4 continuous seats for 4 members family
  * Created by brianzhang on 3/22/20.
  */
 public class FlightReservationFor4MembersFamily {

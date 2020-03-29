@@ -32,7 +32,7 @@ public class WordLadderBFS {
         if (!wordDict.contains(endWord))
             return 0;
 
-        LinkedList<WordNode> queue = new LinkedList<WordNode>();
+        LinkedList<WordNode> queue = new LinkedList<>();
         queue.add(new WordNode(beginWord, 1));
 
         while (!queue.isEmpty()) {

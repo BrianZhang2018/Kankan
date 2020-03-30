@@ -11,6 +11,10 @@ import java.util.Stack;
  */
 public class FlattenLinkedList {
 
+    public static void main(String[] args) {
+
+    }
+
     TreeNode lastVisited = null;
 
     public void flatten(TreeNode root) {

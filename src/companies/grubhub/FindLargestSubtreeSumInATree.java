@@ -1,6 +1,5 @@
 package companies.grubhub;
 
-import java.util.*;
 /**
  * Easy question
  */

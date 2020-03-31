@@ -18,7 +18,7 @@ public class ZumaGame {
     public int findMinStep(String board, String hand) {
         if(board == null)
             return 0;
-        HashMap<Character, Integer> hands = new HashMap<Character, Integer>();
+        HashMap<Character, Integer> hands = new HashMap<>();
         for(int i=0; i<hand.length(); i++){
             hands.put(hand.charAt(i), hands.getOrDefault(hand.charAt(i), 0) +1);
         }

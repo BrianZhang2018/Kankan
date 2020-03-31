@@ -14,9 +14,8 @@ public class WordBreakI {
     public static void main(String[] args) {
         //solution-1
         HashSet<String> hashSet = new HashSet<>();
-        Map<String, Boolean> mem = new HashMap<String, Boolean>();
-        hashSet.add("leet");
-        hashSet.add("co");
+        Map<String, Boolean> mem = new HashMap<>();
+        hashSet.add("leet");hashSet.add("co");
         System.out.println(wordBreak("leetco", hashSet));
 
         //solution-2

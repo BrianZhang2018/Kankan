@@ -19,8 +19,8 @@ public class ClosestBinarySearchTreeValueII {
         System.out.println(closestBinarySearchTreeValueII.closestKValues(root, 3.714286, 3));
     }
 
-    private PriorityQueue<Double> pq = new PriorityQueue<Double>(Collections.reverseOrder());
-    private HashMap<Double, Integer> map = new HashMap<Double, Integer>();
+    private PriorityQueue<Double> pq = new PriorityQueue<>(Collections.reverseOrder());
+    private HashMap<Double, Integer> map = new HashMap<>();
     private double target = 0.0;
     private int k = 0;
     private double threshold = Integer.MIN_VALUE;

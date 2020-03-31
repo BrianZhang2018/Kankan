@@ -31,8 +31,7 @@ public class TopologicalSortBFS {
         //find the start node -> inDegree = 0, 没有前驱节点
         for (int i = 0; i < n; ++i)
             if (inDegree[i] == 0)
-                bfs.add(i);
-        //把入度为零的vertex放入list, 看做remove the vertex which "inDegree=0" and add into the list,
+                bfs.add(i); //把入度为零的vertex放入list, 看做remove the vertex which "inDegree=0" and add into the list,
         //then, "--inDegree" the connected vertex as the prerequisite course has done, then recursive the same logic
         for (int i = 0; i < bfs.size(); ++i){
             for (int j : graph[bfs.get(i)]){

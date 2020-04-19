@@ -1,4 +1,4 @@
-package category.MonotoneQueue;
+package category.MonotoneQueue.increasing;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -6,7 +6,13 @@ import java.util.Deque;
 /**
  * https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/discuss/204290/Monotonic-Queue-Summary
  * Maintain a "monoqueue" of indices of P: a deque of indices x_0, x_1, ... such that P[x_0], P[x_1], ... is increasing.
- * (单调递增queue)
+ * 单调递增queue:
+ * 找到两个indexes(i, j) which corresponding prefixSum之间的大于K(prefixSum[j]-prefixSum[j]>=K)
+ * remove the previous (x1) value which greater than current (x2) from queue as lager number(Y) which Y-X2 > Y-X1,
+ * 所以Y-X2可以去到更短的subArray
+ *
+ * 套路：
+ * 1. maintain an increasing queue which store the indexes, not the value
  *
  * Created by brianzhang on 4/12/20.
  */

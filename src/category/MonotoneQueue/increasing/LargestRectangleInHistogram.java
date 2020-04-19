@@ -1,4 +1,4 @@
-package category.MonotoneQueue;
+package category.MonotoneQueue.increasing;
 
 import java.util.Stack;
 /**
@@ -9,11 +9,11 @@ import java.util.Stack;
  */
 public class LargestRectangleInHistogram {
     public static void main(String[] args){
-       //System.out.println(largestRectangleArea4(new int[]{1,2,3,4,5,6}));
-       System.out.println(largestRectangleArea4(new int[]{2,1,5,6,2,3}));
+       System.out.println(largestRectangleArea(new int[]{1,2,3,4,5}));
+       //System.out.println(largestRectangleArea4(new int[]{2,1,5,6,2,3}));
     }
 
-    // Pruning to find peak. Best solution for this problem
+    // Pruning to find peak. Simplest solution for this problem
     public static int largestRectangleArea4(int[] heights) {
         int n = heights.length;
         if (n == 0) return 0;
@@ -36,7 +36,7 @@ public class LargestRectangleInHistogram {
         return res;
     }
 
-    //Monotone stack solution, create an increase stack
+    //Monotone stack solution, maintain an increasing stack
     public static int largestRectangleArea(int[] heights) {
         if(heights == null || heights.length == 0)
         return 0;
@@ -46,14 +46,14 @@ public class LargestRectangleInHistogram {
         int maxArea = 0;
         
         for(int i=0; i<=len; i++){
-            //add 0 height to the end of array so that the last bucket bar can be calculated by itself
+            //add "0" height to the end of array so that the last histogram bar can be included into calculation
             int h = (i == len ? 0 : heights[i]);
             
-            // (height < the top value of stack) is the trigger to calculate the area
+            // (height < the peek value in stack) is the trigger to calculate the area
             while(!s.isEmpty() && h < heights[s.peek()]){
                 int currHeight = heights[s.pop()];
                 int prevIndex = s.isEmpty() ? -1 : s.peek();
-                maxArea = Math.max(maxArea, currHeight * (i - prevIndex - 1)); //i - prevIndex -1 = width
+                maxArea = Math.max(maxArea, currHeight * (i - prevIndex - 1)); //i - prevIndex -1 = width of histogram
             }
             //store the index rather than the value into the stack - (monotone stack feature, but not always)
             s.push(i);

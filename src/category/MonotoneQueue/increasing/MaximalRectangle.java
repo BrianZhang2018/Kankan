@@ -1,14 +1,14 @@
-package category.MonotoneQueue;
+package category.MonotoneQueue.increasing;
 
 /**
  * https://leetcode.com/problems/maximal-rectangle/
  *
  * https://leetcode.wang/leetCode-85-Maximal-Rectangle.html
  */
-public class MaximalRectangleIn2DMatrix {
+public class MaximalRectangle {
     public static void main(String[] args){
         char[][] matrix = new char[][]{{'0', '1'}, {'1', '0'}};
-        MaximalRectangleIn2DMatrix test = new MaximalRectangleIn2DMatrix();
+        MaximalRectangle test = new MaximalRectangle();
         System.out.println(test.maximalRectangle(matrix));
     }
 
@@ -18,7 +18,7 @@ public class MaximalRectangleIn2DMatrix {
         
         int m = matrix.length;
         int n = matrix[0].length;
-        //record the column heights in every level
+        // record the column heights in every level
         int[] heights = new int[n];
         int max = 0;
         for(int i=0; i<m; i++){
@@ -26,8 +26,8 @@ public class MaximalRectangleIn2DMatrix {
                 if(matrix[i][j] == '1'){
                     heights[j]++;
                 }else{
-                    //reset to '0' if '1' is not continuous in the same column
-                    heights[j] =0;
+                    // reset to '0' if '1' is not continuous in the same column
+                    heights[j] = 0;
                 }
             }
             max = Math.max(max, getLargestRectangleInHistogram(heights));

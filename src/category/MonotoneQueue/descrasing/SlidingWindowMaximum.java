@@ -1,4 +1,4 @@
-package category.MonotoneQueue;
+package category.MonotoneQueue.descrasing;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
@@ -24,7 +24,7 @@ public class SlidingWindowMaximum {
                 indexDeque.pollFirst();
             }
 
-            while(!indexDeque.isEmpty() && arr[indexDeque.peekLast()] < arr[i]) {
+            while(!indexDeque.isEmpty() && arr[i] > arr[indexDeque.peekLast()]) {
                 indexDeque.pollLast();
             }
             indexDeque.offerLast(i);

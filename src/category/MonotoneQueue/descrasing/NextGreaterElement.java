@@ -1,4 +1,4 @@
-package category.MonotoneQueue;
+package category.MonotoneQueue.descrasing;
 
 import java.util.Arrays;
 import java.util.Stack;

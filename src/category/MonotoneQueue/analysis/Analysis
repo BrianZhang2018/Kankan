@@ -1,0 +1,74 @@
+https://leetcode.com/problems/trapping-rain-water/discuss/244167/A-general-stack-approach-you-can-solve-42-84-85
+
+Increasing vs Decreasing queue
+如果问题是通过低谷去计算(Trapping Water)，用decreasing queue
+如果问题是通过peek去计算(largestRectangleArea, maximal-rectangle)，用increasing queue
+
+套路：
+1. maintain an increasing or decreasing "queue" which store the "index" of element, not the value.
+2. "While loop" to compare current value with peek value in stack, and remove the value from stack as per increasing or decreasing
+
+Template:
+
+public int template(int[] arr)
+    int ans = 0;
+    Stack/Deque<Integer> stack = new Stack/ArrayQueue<>(); // monotone queue
+    for (int i = 0; i < arr.length; i++) {
+        int curr = arr[i];
+        while (!stack.isEmpty() && curr > input[stack.peek()]) {
+            int top = stack.pop();
+            .....
+        }
+
+        .....
+        stack.push(i);
+    }
+    return ans;
+
+
+具体分析：
+1.
+Basic idea is to maintain a monotonic stack. In this question, we keep a "decreasing" order(因为要寻找谷底，然后计算),
+once the current height is larger than the height[stack.peek()] we need to calculate the water.
+
+public int trap(int[] height) {
+	int cumulativeWater = 0;
+    Stack<Integer> stack = new Stack<>(); //decreasing stack that hold the index of bar
+    for (int i = 0; i < height.length; i++) {
+        int h = height[i];
+        while (!stack.isEmpty() && h > height[stack.peek()]) {
+            int valley = stack.pop();
+            int start = stack.isEmpty()? i-1: stack.peek();
+            int curWater = (Math.min(height[start], h) - height[valley]) * (i - start - 1);
+            cumulativeWater += curWater;
+        }
+        stack.push(i);
+    }
+    return cumulativeWater;
+}
+
+2.
+You just need to modify the calculation part for "LeetCode-84 LargestRectangleHistogram", the below is my solution.
+But, this time we maintain an "increasing" stack:
+
+public int largestRectangleArea(int[] heights) {
+        if (heights == null || heights.length == 0) return 0;
+        Stack<Integer> stack = new Stack<>();
+        int area, max = 0;
+        int len = heights.length;
+        for (int i = 0 ; i <= len; i++) {
+            int height = (i == len) ? 0 : heights[i];
+            while (!stack.isEmpty() && height < heights[stack.peek()]) {
+                int top = stack.pop();
+                int start = stack.isEmpty()? -1: stack.peek();
+                area = heights[top] * (i - start - 1);
+                max = Math.max(max, area);
+            }
+            stack.push(i);
+
+        }
+        return max;
+    }
+
+For LeetCode-85, we can use the same approach like leetcode-84, but need treat each row as a histogram and calculate it.
+https://leetcode.com/problems/maximal-rectangle/

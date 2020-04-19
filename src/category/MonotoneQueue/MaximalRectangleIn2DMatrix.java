@@ -1,4 +1,4 @@
-package category.MonotoneStack;
+package category.MonotoneQueue;
 
 /**
  * https://leetcode.com/problems/maximal-rectangle/

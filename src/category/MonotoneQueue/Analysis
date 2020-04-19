@@ -1,7 +1,6 @@
 https://leetcode.com/problems/trapping-rain-water/discuss/244167/A-general-stack-approach-you-can-solve-42-84-85
 
 
-
 Basic idea is to maintain a monotonic stack. In this question, we keep a decreasing order, once the current height is larger than the height [stack.peek()] we start to calculate the water.
 
 public int trap(int[] height) {
@@ -11,14 +10,14 @@ public int trap(int[] height) {
             int h = height[i];
             while (!stack.isEmpty() && h > height[stack.peek()]) {
                 int top = stack.pop();
-                int start = stack.isEmpty()?i-1: stack.peek();
-                curWater = (Math.min(height[start],h) - height[top]) * (i - start - 1);
+                int start = stack.isEmpty() ? i-1 : stack.peek();
+                curWater = (Math.min(height[start], h) - height[top]) * (i - start - 1);
                 water += curWater;
             }
             stack.push(i);
         }
         return water;
-    }
+}
 You just need to modify the calculation part: Here is my solution for LeetCode 84 LargestRectangleinHistrogram, this time we maintain an increasing stack:
 
 public int largestRectangleArea(int[] heights) {
@@ -41,4 +40,4 @@ public int largestRectangleArea(int[] heights) {
 
 
     }
-As for the LeetCode 85, you can use the same approch in 84, just need to calculate each row and treat each row as a histogram.
+As for the LeetCode 85, you can use the same approach in 84, just need to calculate each row and treat each row as a histogram.

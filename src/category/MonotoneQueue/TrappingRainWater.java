@@ -1,4 +1,4 @@
-package category.MonotoneStack;
+package category.MonotoneQueue;
 
 import java.util.Stack;
 

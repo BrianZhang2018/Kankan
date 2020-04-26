@@ -17,7 +17,7 @@ public class TopologicalSortBFS {
     }
 
     public static boolean canFinish(int n, int[][] prerequisites) {
-        List<Integer>[] graph = new ArrayList[n]; //describe the adjacent relationship
+        List<Integer>[] graph = new ArrayList[n]; //describe the adjacent relationship (you can use map here also)
         int[] inDegree = new int[n];  //入度
         List<Integer> bfs = new ArrayList(); // you can also use a queue here
         //initiate the graph
@@ -32,8 +32,8 @@ public class TopologicalSortBFS {
         for (int i = 0; i < n; ++i)
             if (inDegree[i] == 0)
                 bfs.add(i); //把入度为零的vertex放入list, 看做remove the vertex which "inDegree=0" and add into the list,
-        //then, "--inDegree" the connected vertex as the prerequisite course has done, then recursive the same logic
-        for (int i = 0; i < bfs.size(); ++i){
+
+        for (int i = 0; i < bfs.size(); ++i){//then, "--inDegree" the connected vertex as the prerequisite course has done, then recursive the same logic
             for (int j : graph[bfs.get(i)]){
                 if (--inDegree[j] == 0) //means we can remove the vertex as prerequisite course
                     bfs.add(j);

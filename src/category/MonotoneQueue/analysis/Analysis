@@ -5,7 +5,7 @@ Increasing vs Decreasing queue
 如果问题是通过peek去计算(largestRectangleArea, maximal-rectangle)，用increasing queue
 
 套路：
-1. maintain an increasing or decreasing "queue" which store the "index" of element, not the value.
+1. maintain an increasing or decreasing "queue" which store the "index" (queue can be implemented with Stack or Deque)
 2. "While loop" to compare current value with peek value in stack, and remove the value from stack as per increasing or decreasing
 
 Template:

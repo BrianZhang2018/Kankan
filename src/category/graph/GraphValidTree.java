@@ -30,8 +30,8 @@ public class GraphValidTree{
             adjList[edges[i][1]].add(edges[i][0]);
         }
         
-        Queue<Integer> queue = new LinkedList<Integer>();
-        HashSet<Integer> hash = new HashSet<Integer>();
+        Queue<Integer> queue = new LinkedList<>();
+        HashSet<Integer> hash = new HashSet<>();
         queue.add(0);
         hash.add(0);
         

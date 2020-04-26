@@ -24,3 +24,33 @@ the root.
 
 (7) The height of a rooted tree is the number of edges on the longest
 downward path between root and a leaf.
+
+
+套路: (code example from TopologicalSortBFS.java)
+
+1. Construct the graph (map), and inDegree array
+       //initiate the graph
+        for (int i = 0; i < n; ++i)
+            graph[i] = new ArrayList<>();
+
+        for (int[] e : prerequisites) {
+            graph[e[1]].add(e[0]); // e[1] is the prerequisite course of e[0]
+            inDegree[e[0]]++; // e[1]->e[0], so inDegree[e[0]]++
+        }
+
+2. Collect the element which inDegree is "0" which means they don't have precede element, so they are the in the front of order.
+
+       //find the start node -> inDegree = 0, 没有前驱节点
+        for (int i = 0; i < n; ++i)
+            if (inDegree[i] == 0)
+                bfs.add(i); //把入度为零的vertex放入list, 看做remove the vertex which "inDegree=0" and add into the list,
+
+
+3. Get the child element and reduce the inDegree, then get the order.
+
+        for (int i = 0; i < bfs.size(); ++i){//then, "--inDegree" the connected vertex as the prerequisite course has done, then recursive the same logic
+            for (int j : graph[bfs.get(i)]){
+                if (--inDegree[j] == 0) //means we can remove the vertex as prerequisite course
+                    bfs.add(j);
+            }
+        }

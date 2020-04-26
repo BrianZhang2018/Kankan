@@ -9,7 +9,11 @@ import java.util.Stack;
  */
 public class ShortestUnsortedContinuousSubArray {
 
-    public int findUnsortedSubarray(int[] nums) {
+    public static void main(String[] args) {
+        System.out.println(findUnsortedSubArray(new int[]{2, 6, 4, 8, 10, 9, 15}));
+    }
+
+    public static int findUnsortedSubArray(int[] nums) {
         Stack< Integer > stack = new Stack <> ();
         int l = nums.length, r = 0;
         for (int i = 0; i < nums.length; i++) {

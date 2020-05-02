@@ -5,14 +5,15 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * //** means important points
- * <p>
+ * https://leetcode.com/problems/subsets-ii/
+ *
+ * The solution set must not contain duplicate subsets.
  * Created by brianzhang on 7/29/18.
  */
 public class SubsetsII {
     public static void main(String[] args) {
         SubsetsII subsetsII = new SubsetsII();
-        int[] test = {1, 2, 3}; 
+        int[] test = {1, 2, 2};
         System.out.println(subsetsII.subsetsWithDup(test));
     }
 
@@ -26,9 +27,7 @@ public class SubsetsII {
 
     private void backTrack(int[] nums, int start, List<List<Integer>> res, List<Integer> tmpList) {
         res.add(new ArrayList<>(tmpList));
-        for(int p : tmpList)
-            System.out.print(p + " ,");
-        System.out.println("\r");
+        System.out.println(Arrays.toString(tmpList.toArray()));
 
         for (int i = start; i < nums.length; i++) {
             if (i > start && nums[i] == nums[i - 1])

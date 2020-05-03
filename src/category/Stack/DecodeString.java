@@ -1,4 +1,4 @@
-package category.javabasic.stack;
+package category.Stack;
 
 import java.util.*;
 import java.lang.*;

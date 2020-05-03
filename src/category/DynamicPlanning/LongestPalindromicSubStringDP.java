@@ -9,6 +9,10 @@ package category.DynamicPlanning;
  */
 public class LongestPalindromicSubStringDP {
 
+    public static void main(String[] args) {
+
+    }
+
     public String longestPalindrome(String s) {
 
         if(s == null || s.length() == 0)

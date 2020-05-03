@@ -2,21 +2,21 @@
 
 https://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741376.html
 
-   1: int a[n];
-   2: try(int i)
+   1: List temp;
+   2: try(int start)
    3: {
-   4:     if(i>n)
+   4:     if(start>n)
    5:        输出结果;
    6:      else
    7:     {
-   8:        for(j = 下界; j <= 上界; j=j+1)  // 枚举i所有可能的路径 for current fixed number
+   8:        for(int i = start; i < 上界; i++)  // 枚举i所有可能的路径 for current fixed number
    9:        {
-  10:            if(fun(j))                 // 满足限界函数和约束条件
+  10:            if(fun(i))                 // 满足限界函数和约束条件
   11:              {
-  12:                 a[i] = j;
+  12:                 temp.add(nums[i]);
   13:               ...                         // 其他操作
   14:                 try(i+1);                 // move to next number（很重要， 核心）
-  15:               回溯前的清理工作(e.g. 还原状态);    //如remove (size-1)th character from a[i], or recover a[i] or 置空a[i]值等。这些其实都是还原到之前的状态，然后看有没有更多的解
+  15:                 回溯前的清理工作(e.g. 还原状态);    //如remove (size-1)th character from a[i], or recover a[i] or 置空a[i]值等。这些其实都是还原到之前的状态，然后看有没有更多的解
   16:               }
   17:          }
   18:      }

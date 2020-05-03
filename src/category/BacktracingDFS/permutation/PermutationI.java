@@ -12,7 +12,6 @@ import java.util.List;
  *
  * DFS + BackTracing
  */
-
 public class PermutationI{
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3};
@@ -20,9 +19,7 @@ public class PermutationI{
     }
 
     public List<List<Integer>> permute(int[] nums) {
-
-        if (nums == null || nums.length == 0)
-            return null;
+        if (nums == null || nums.length == 0) return null;
         List<List<Integer>> result = new ArrayList();
         backTracing(nums, 0, result);
         return result;

@@ -14,7 +14,6 @@ public class PermutationI2 {
     }
 
     /**
-     * @param str string to calculate permutation for
      * @param l   starting index
      * @param r   end index
      */
@@ -32,11 +31,8 @@ public class PermutationI2 {
 
     /**
      * Swap Characters at position
-     *
-     * @param a string value
      * @param i position 1
      * @param j position 2
-     * @return swapped string
      */
     public String swap(String a, int i, int j) {
         char temp;

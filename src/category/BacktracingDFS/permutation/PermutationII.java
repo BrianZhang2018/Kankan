@@ -44,8 +44,8 @@ public class PermutationII {
             }
         }
     }
-    //The problem for Permutation II is that different orders of duplicates should only be considered as one permutation.
-    //In other words, you should make sure that when these duplicates are selected, there has to be one fixed order.
-    // if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]), makes sure when duplicates are selected, the order is ascending.
-    //so used[i - 1] = false means i-1 hasn't been used, so not an ascending order, we will skip it.
+    // The problem for Permutation II is that different orders of duplicates should only be considered as one permutation.
+    // In other words, you should make sure that when these duplicates are selected, there has to be one fixed order.
+    // if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1])
+    // so used[i - 1] = false means "i-1" hasn't been used, so not an ascending order, we will skip it.
 }

@@ -4,6 +4,9 @@ package category.BacktracingDFS;
  * https://leetcode.com/problems/sudoku-solver/
  */
 public class SudokuSolver{
+    public static void main(String[] args) {
+
+    }
 
     public void solveSudoku(char[][] board) {
         dfs(board, 0);

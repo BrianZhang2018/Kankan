@@ -39,12 +39,11 @@ public class WordSearch {
             return false;
         }
         board[row][col] = '*';
-        boolean exist =  dfs(row, col+1, board, word, index+1) ||
-                            dfs(row, col-1, board, word, index+1) ||
-                            dfs(row+1, col, board, word, index+1) ||
-                            dfs(row-1, col, board, word, index+1);
+        boolean exist = dfs(row, col+1, board, word, index+1) ||
+                        dfs(row, col-1, board, word, index+1) ||
+                        dfs(row+1, col, board, word, index+1) ||
+                        dfs(row-1, col, board, word, index+1);
         board[row][col] = word.charAt(index);
         return exist;
     }
-   
 }

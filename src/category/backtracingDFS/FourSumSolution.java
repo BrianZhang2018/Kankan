@@ -2,7 +2,7 @@ package category.BacktracingDFS;
 import java.util.*;
 /**
  * this can be turned into the K Sum.
- * 
+
  */
 public class FourSumSolution{
     public static void main(String[] args){
@@ -35,7 +35,7 @@ public class FourSumSolution{
         
         for (int index = start; index < nums.length; index++) {
             
-            //I dont think this condition should be used here.
+            //I don't think this condition should be used here.
             if (index > start && nums[index] == nums[index-1])
                 continue;
             

@@ -1,8 +1,0 @@
-Unique combination problem which has similar approach:
-
-    Permutation II
-    ThreeSum
-    Subset II
-
-Difference:
-ThreeSum and SubSetII "i=start" in the nest for loop, but Permutation is "i=0".

@@ -15,10 +15,10 @@ public class SubsetsII {
     public static void main(String[] args) {
         SubsetsII subsetsII = new SubsetsII();
         int[] test = {1, 2, 2};
-        System.out.println(subsetsII.subsetsWithDup(test));
+        System.out.println(subsetsII.subsetsWithoutDup(test));
     }
 
-    public List<List<Integer>> subsetsWithDup(int[] nums) {
+    public List<List<Integer>> subsetsWithoutDup(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         //sort the nums so that the nums[i] == nums[i - 1] can be used to check the duplicate number
         Arrays.sort(nums);
@@ -26,17 +26,17 @@ public class SubsetsII {
         return res;
     }
 
-    private void backTrack(int[] nums, int start, List<List<Integer>> res, List<Integer> tmpList) {
-        res.add(new ArrayList<>(tmpList));
-        System.out.println(Arrays.toString(tmpList.toArray()));
+    private void backTrack(int[] nums, int start, List<List<Integer>> res, List<Integer> temp) {
+        res.add(new ArrayList<>(temp));
+        System.out.println(Arrays.toString(temp.toArray()));
 
         for (int i = start; i < nums.length; i++) {
             if (i > start && nums[i] == nums[i - 1])
                 continue;
 
-            tmpList.add(nums[i]);
-            backTrack(nums, i + 1, res, tmpList);
-            tmpList.remove(tmpList.size() - 1);
+            temp.add(nums[i]);
+            backTrack(nums, i + 1, res, temp);
+            temp.remove(temp.size() - 1);
         }
     }
 }

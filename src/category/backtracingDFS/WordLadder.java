@@ -5,29 +5,22 @@ import java.util.*;
 /**
  * Created by brianzhang on 10/12/18.
  */
-class WordNode {
-    String word;
-    int numSteps;
-    WordNode pre;
-
-    public WordNode(String word, int numSteps, WordNode pre) {
-        this.word = word;
-        this.numSteps = numSteps;
-        this.pre = pre;
-    }
-}
 
 public class WordLadder {
+    public static void main(String[] args) {
+
+    }
     public List<List<String>> findLadders(String start, String end, Set<String> dict) {
         List<List<String>> result = new ArrayList<>();
         LinkedList<WordNode> queue = new LinkedList<>();
         queue.add(new WordNode(start, 1, null));
         dict.add(end);
-        int minStep = 0;
+
         HashSet<String> visited = new HashSet<>();
         HashSet<String> unvisited = new HashSet<>();
         unvisited.addAll(dict);
-        int preNumSteps = 0;
+
+        int minStep = 0, preNumSteps = 0;
         while (!queue.isEmpty()) {
             WordNode top = queue.remove();
             String word = top.word;
@@ -69,5 +62,16 @@ public class WordLadder {
             }
         }
         return result;
+    }
+}
+class WordNode {
+    String word;
+    int numSteps;
+    WordNode pre;
+
+    public WordNode(String word, int numSteps, WordNode pre) {
+        this.word = word;
+        this.numSteps = numSteps;
+        this.pre = pre;
     }
 }

@@ -4,64 +4,42 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 最易懂的解法 of permutation
+ * https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
+ * brute force solution using DFS & backtrack
+ * 深度搜素到底，然后在回溯，遍历每一层，重复这个动作
  *
- * Created by brianzhang on 7/25/18.
- *
- * https://www.youtube.com/watch?v=KBHFyg2AcZ4
- *
- * DFS + BackTracing
+ * Created by brianzhang on 7/26/18.
  */
-public class PermutationI{
+public class PermutationI {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3};
-        System.out.println(new PermutationI().permute(arr));
+        System.out.println(permute(arr));
     }
 
-    public List<List<Integer>> permute(int[] nums) {
-        if (nums == null || nums.length == 0) return null;
-        List<List<Integer>> result = new ArrayList();
-        backTracing(nums, 0, result);
-        return result;
+    public static List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> list = new ArrayList<>();
+        // Arrays.sort(nums); // not necessary
+        backtrack(list, new ArrayList<>(), nums);
+        return list;
     }
 
-    /**
-     * Don't need involve another tempList to store the result, like other Asolution
-     */
-    private void backTracing(int[] nums, int start, List<List<Integer>> result) {
-        if (start == nums.length - 1)
-            result.add(convertToIntegerArr(nums));
-        else {
-            //i is used to loop the all numbers to swap with the fixed number (nums[start])
-            for (int i = start; i <= nums.length - 1; i++) {
-
-                //swap the value
-                int tmp = nums[start];
-                nums[start] = nums[i];
-                nums[i] = tmp;
-
-                //start is used to go next number which is next swap number with others
-                backTracing(nums, start + 1, result);
-
-                //backTracing: return to last level
-                tmp = nums[start];
-                nums[start] = nums[i];
-                nums[i] = tmp;
+    private static void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums) {
+        if (tempList.size() == nums.length) {
+            list.add(new ArrayList<>(tempList));
+        } else {
+            //遍历每一个数字(i), 每一个数字当成一层，回溯遍历所有数字当前这一层, 找出排列, 然后程序回溯到根，开始遍历下一个数字
+            for (int i = 0; i < nums.length; i++) {
+                if (tempList.contains(nums[i])) { //看看SubsetII, you will understand
+                    continue;
+                }
+                tempList.add(nums[i]);
+                backtrack(list, tempList, nums);
+                       // System.out.println("i = " + i);
+                        System.out.println("remove before: " + tempList);
+                tempList.remove(tempList.size() - 1);
+                        System.out.println("               remove after: " + tempList);
             }
         }
     }
 
-    private List<Integer> convertToIntegerArr(int[] arr) {
-        List<Integer> result = new ArrayList();
-        for (int i : arr) {
-            result.add(i);
-        }
-        return result;
-    }
 }
-/*
-    remove the last element, so you can iterate numbers in that position. For example, you need to get the permutations of [1,2,3,4,5].
-    And you have already got [1,2,3] as tempList. then you add 4, and backtrack(list, [1,2,3,4], nums); you will get [1,2,3,4,5]
-    then, you REMOVE LAST element of tempList, it will be [1,2,3], and the outer "for" will add 5 to tempList, then you will get [1,2,3,5,4] .
-*/
-

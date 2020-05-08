@@ -38,4 +38,9 @@ Subsets is a classic backtrack questions, refer the Subsets.java
 =======================================
 important difference:
 
-backtracking doesn't need "exit" condition which loop to the end, then backtrack, refer the SubSets questions
+backtracking doesn't need "exit" condition which loop to the end, then backtrack (refer the SubSets questions)
+
+
+==========================================
+A general approach to backtracking questions in Java (Subsets, Permutations, Combination Sum, Palindrome Partitioning)
+https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)

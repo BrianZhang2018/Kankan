@@ -23,11 +23,11 @@ public class PermutationII {
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> temp = new ArrayList<>();
         Arrays.sort(nums);
-        backTrace(nums, temp, res, new boolean[nums.length]);
+        backTracking(nums, temp, res, new boolean[nums.length]);
         return res;
     }
 
-    public void backTrace(int nums[], List<Integer> temp, List<List<Integer>> res, boolean[] used) {
+    public void backTracking(int nums[], List<Integer> temp, List<List<Integer>> res, boolean[] used) {
         if (nums.length == temp.size()) {
             res.add(new ArrayList<>(temp)); //deep copy
         } else {
@@ -38,7 +38,7 @@ public class PermutationII {
                     continue;
                 used[i] = true;
                 temp.add(nums[i]);
-                backTrace(nums, temp, res, used);
+                backTracking(nums, temp, res, used);
                 used[i] = false;
                 temp.remove(temp.size() - 1);
             }

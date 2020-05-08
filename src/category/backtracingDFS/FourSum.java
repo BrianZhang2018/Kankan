@@ -1,8 +1,7 @@
 package category.BacktracingDFS;
 import java.util.*;
 /**
- * this can be turned into the K Sum.
- * 
+ * this can be turned into the K Sum solution
  */
 public class FourSum{
     public static void main(String[] args){
@@ -18,7 +17,7 @@ public class FourSum{
         
         Arrays.sort(nums);
         Set<List<Integer>> set = new HashSet<>();
-        backtrack(set, new ArrayList<Integer>(), nums, target, 0);
+        backtrack(set, new ArrayList<>(), nums, target, 0);
         return new ArrayList<>(set);
     }
     

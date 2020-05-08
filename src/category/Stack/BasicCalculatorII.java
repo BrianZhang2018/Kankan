@@ -22,7 +22,7 @@ public class BasicCalculatorII {
 
         for(int i=0;i<len;i++){
             if(Character.isDigit(s.charAt(i))){
-                num = num * 10 + s.charAt(i)-'0';
+                num = num * 10 + s.charAt(i)-'0'; //sum up the multi-digit number e.g. "23" -> 2*10+3
             }
             // Not "else if" here as we need calculate the last number
             if(i==len-1 || (!Character.isDigit(s.charAt(i)) && s.charAt(i) != ' ')){

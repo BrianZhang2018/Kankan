@@ -1,7 +1,7 @@
 package category.BacktracingDFS.permutation;
 
 /**
- * Same with the Permutation.java
+ * Similar with the PermutationI1.java
  *
  * Created by brianzhang on 10/8/18.
  */
@@ -13,10 +13,7 @@ public class PermutationI2 {
         permutation.permute(str, 0, n - 1);
     }
 
-    /**
-     * @param l   starting index
-     * @param r   end index
-     */
+    // l - starting index, r - end index
     private void permute(String str, int l, int r) {
         if (l == r)
             System.out.println(str);
@@ -31,8 +28,7 @@ public class PermutationI2 {
 
     /**
      * Swap Characters at position
-     * @param i position 1
-     * @param j position 2
+     * i position 1, j position 2
      */
     public String swap(String a, int i, int j) {
         char temp;
@@ -42,5 +38,4 @@ public class PermutationI2 {
         charArray[j] = temp;
         return String.valueOf(charArray);
     }
-
 }

@@ -23,12 +23,11 @@ public class Subsets {
 
     private static void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums, int start) {
         list.add(new ArrayList<>(tempList));
-        //'i' is used to go to next level
+
         for (int i = start; i < nums.length; i++) {
             tempList.add(nums[i]);
             //the 'i+1' is used to go next number
             backtrack(list, tempList, nums, i + 1);
-            //backTrace
             tempList.remove(tempList.size() - 1);
         }
     }

@@ -58,11 +58,9 @@ public class RemoveInvalidParentheses {
         if (c == '(') {
             dfs(s, i + 1, res, tempSb, rmL - 1, rmR, open);		    // not use (
             dfs(s, i + 1, res, tempSb.append(c), rmL, rmR, open + 1);       // use (
-
         } else if (c == ')') {
             dfs(s, i + 1, res, tempSb, rmL, rmR - 1, open);	            // not use  )
             dfs(s, i + 1, res, tempSb.append(c), rmL, rmR, open - 1);  	    // use )
-
         } else {
             dfs(s, i + 1, res, tempSb.append(c), rmL, rmR, open);
         }

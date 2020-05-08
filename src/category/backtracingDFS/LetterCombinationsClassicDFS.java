@@ -5,23 +5,23 @@ import java.util.List;
 
 /**
  * Created by brianzhang on 10/9/18.
- * <p>
  *
- * classic DFS
+ * Classic DFS
  */
 public class LetterCombinationsClassicDFS {
 
+    public static void main(String[] args) {
+        LetterCombinationsClassicDFS test = new LetterCombinationsClassicDFS();
+        System.out.println(test.letterCombinations("23"));
+    }
+
     public List<String> letterCombinations(String digits) {
-
         List<String> result = new ArrayList();
-
         if (digits == null || digits.length() == 0)
             return result;
 
         String[] phoneLetters = new String[]{"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-
         char[] digitArr = digits.toCharArray();
-
         dfs(phoneLetters, digitArr, new StringBuilder(), result, 0);
 
         return result;
@@ -40,11 +40,5 @@ public class LetterCombinationsClassicDFS {
             dfs(letters, digitArr, curr, result, index + 1);    //index +1: point to the next phoneLetters
             curr.deleteCharAt(curr.length() - 1);
         }
-    }
-
-    public static void main(String[] args) {
-
-        LetterCombinationsClassicDFS letterCombinationsClassicDFS = new LetterCombinationsClassicDFS();
-        System.out.println(letterCombinationsClassicDFS.letterCombinations("23"));
     }
 }

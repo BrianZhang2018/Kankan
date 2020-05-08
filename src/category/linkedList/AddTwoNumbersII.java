@@ -1,41 +1,39 @@
 package category.linkedList;
 
 import category.model.ListNode;
-
-import java.util.BitSet;
 /**
  * https://leetcode.com/problems/add-two-numbers-ii/
  *
- * Solution: reverse the linkedlist + carry the number
- * stack can be another solution
+ * Solution: reverse the LinkedList + carry the number
+ * Stack can be another solution
  */
 public class AddTwoNumbersII {
 
     public static void main(String[] args) {
-        BitSet bitSet = new BitSet(10);
-        bitSet.set(0);
+        ListNode a = new ListNode(7), b = new ListNode(2), c = new ListNode(4), d = new ListNode(3);
+        a.next = b; b.next = c; c.next = d;
 
-        int[] test = new int[12];
-        System.out.println(test[0]);
+        ListNode e = new ListNode(5), f = new ListNode(6), g = new ListNode(4);
+        e.next =f; f.next=g;
 
-        System.out.println(bitSet.get(0));
+        AddTwoNumbersII test = new AddTwoNumbersII();
+        ListNode res = test.addTwoNumbers(a, e);
 
-        String haha = "abc";
-
-        System.out.println(haha.charAt(0) + haha.charAt(1));
-
-        //System.out.println(bitSet.length());
+        while(res != null){
+            System.out.println(res.val);
+            res = res.next;
+        }
     }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null)
             return null;
 
-        ListNode rel1 = reverse(l1);
-        ListNode rel2 = reverse(l2);
+        ListNode rel1 = reverseLinkedList(l1);
+        ListNode rel2 = reverseLinkedList(l2);
 
-        ListNode res = new ListNode(0);
-        ListNode currP = res;
+        ListNode dummyNode = new ListNode(0);
+        ListNode curr = dummyNode;
 
         int carry = 0;
         while (rel1 != null || rel2 != null) {
@@ -44,33 +42,27 @@ public class AddTwoNumbersII {
             int digit = sum % 10;
             rel1 = (rel1 == null ? null : rel1.next);
             rel2 = (rel2 == null ? null : rel2.next);
-            ListNode curr = new ListNode(digit);
-            currP.next = curr;
-            currP = curr;
+            curr.next = new ListNode(digit);
+            curr = curr.next;
         }
 
         if (carry != 0) {
-            ListNode curr = new ListNode(carry);
-            currP.next = curr;
+            curr.next = new ListNode(carry);
         }
 
-        return reverse(res.next);
-
+        return reverseLinkedList(dummyNode.next);
     }
 
-    public ListNode reverse(ListNode head) {
-        ListNode curr = head;
+    public ListNode reverseLinkedList(ListNode head) {
         ListNode prev = null;
-        ListNode next = null;
+        ListNode curr = head;
 
         while (curr != null) {
-            next = curr.next;
+            ListNode tempNext = curr.next;
             curr.next = prev;
             prev = curr;
-            curr = next;
+            curr = tempNext;
         }
-        head = prev;
-        return head;
+        return prev;
     }
-
 }

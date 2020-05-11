@@ -1,0 +1,10 @@
+DFS' time complexity is proportional to the total number of vertexes and edges of the graph visited.
+In that case, there are N*M vertexes and slightly less than 4*N*M edges, their sum is still O(N*M).
+
+Why so: because we process each edge exactly once in each direction. Situation where recursive call is immediately
+terminated does not matter as time spent for that call can be accounted for on the call site; and there is at most once call
+for each directed edge, hence O(N*M).
+
+BFS' time complexity is quite similar. Maximal length of the queue does not matter at all because at no point
+we examine it in a whole. Queue only gets "append" and "remove first" queries, which can be processed in constant time
+regardless of queue's size. If we need to check whether a vertex was already visited, we do so in constant time.

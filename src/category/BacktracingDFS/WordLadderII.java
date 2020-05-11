@@ -6,9 +6,9 @@ import java.util.*;
  * Step-1: create a map that key-value is node -> all neighbors' node
  * Step-2: use dfs to traverse the neighbors' map to get all the paths
  */
-public class WordLadder2 {
+public class WordLadderII {
     public static void main(String[] args) {
-        WordLadder2 wordLadder2 = new WordLadder2();
+        WordLadderII wordLadder2 = new WordLadderII();
         System.out.println(wordLadder2.findLadders("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
     }
 
@@ -22,9 +22,9 @@ public class WordLadder2 {
             return res;
 
         for (String word : wordList) {
-            neighborsMap.put(word, new ArrayList<String>());
+            neighborsMap.put(word, new ArrayList<>());
         }
-        neighborsMap.put(beginWord, new ArrayList<String>());
+        neighborsMap.put(beginWord, new ArrayList<>());
 
         boolean found = false;
         HashSet<String> visited = new HashSet<>();

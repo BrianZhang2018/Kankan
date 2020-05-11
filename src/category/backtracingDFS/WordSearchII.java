@@ -3,15 +3,26 @@ package category.BacktracingDFS;
 import java.util.List;
 import java.util.LinkedList;
 /**
- * DFS + TrieNode + backtracking
  * https://leetcode.com/problems/word-search-ii/
+ *
+ * DFS + TrieNode + backtracking
  */
 public class WordSearchII{
+    public static void main(String[] args) {
+        char[][] board = {{'o','a','a','n'},
+                          {'e','t','a','e'},
+                          {'i','h','k','r'},
+                          {'i','f','l','v'}};
+        WordSearchII test = new WordSearchII();
+        for(String str : test.findWords(board, new String[]{"oath","pea","eat","rain"})){
+            System.out.println(str);
+        }
+    }
 
-    public static List<String> findWords(char[][] board, String[] words) {
+    public List<String> findWords(char[][] board, String[] words) {
         List<String> ans = new LinkedList<>();
         TrieNode root = new TrieNode();
-        //construct TrieNode for each word under the `root`
+        //Create TrieNode for each word under the "root"
         for (String word: words) 
             insert(word, root);
         
@@ -23,7 +34,7 @@ public class WordSearchII{
         return ans;
     }
     
-    private static void dfs(char[][] board, TrieNode root, int i, int j, List<String> list) {
+    private void dfs(char[][] board, TrieNode root, int i, int j, List<String> list) {
         if (i < 0 || i >= board.length || j < 0 || j >= board[0].length) 
             return;
         
@@ -49,7 +60,7 @@ public class WordSearchII{
         board[i][j] = ch;
     }
     
-    private static void insert(String word, TrieNode root) {
+    private void insert(String word, TrieNode root) {
         for (char ch: word.toCharArray()) {
             int index = ch - 'a';
             if (root.children[index] == null) 
@@ -60,7 +71,7 @@ public class WordSearchII{
         root.word = word;
     }
     
-    private static class TrieNode {
+    private class TrieNode {
         String word;
         TrieNode[] children = new TrieNode[26];
     }

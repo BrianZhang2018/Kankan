@@ -1,4 +1,4 @@
-package category.BinaryTreeAndBinarySerach.huahuaBinaryTreeRecursiveTemplate;
+package category.BinaryTreeAndBinarySerach.BinaryTreeRecursiveTemplate;
 
 import category.model.TreeNode;
 

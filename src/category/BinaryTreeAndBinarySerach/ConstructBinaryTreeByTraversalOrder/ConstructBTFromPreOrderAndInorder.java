@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
  */
-public class ConstructBTFromPreorderAndInorder{
+public class ConstructBTFromPreOrderAndInorder {
 
     Map<Integer, Integer> inorderMap = new HashMap<>();
     

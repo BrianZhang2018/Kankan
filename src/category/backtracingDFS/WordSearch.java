@@ -1,12 +1,10 @@
 package category.BacktracingDFS;
 
 /**
+ * https://leetcode.com/problems/word-search/
  * DFS here, don't use BFS will has the visited state issue
  *
- * T: O(mn*4^k)
- * S: O(4mn)
- *
- * https://leetcode.com/problems/word-search/
+ * T: O(mn*4^k), S: O(4mn)
  */
 public class WordSearch {
 
@@ -39,10 +37,10 @@ public class WordSearch {
             return false;
         }
         board[row][col] = '*';
-        boolean exist = dfs(row, col+1, board, word, index+1) ||
-                        dfs(row, col-1, board, word, index+1) ||
-                        dfs(row+1, col, board, word, index+1) ||
-                        dfs(row-1, col, board, word, index+1);
+        boolean exist = dfs(row, col+1, board, word, index+1)
+                        || dfs(row, col-1, board, word, index+1)
+                        || dfs(row+1, col, board, word, index+1)
+                        || dfs(row-1, col, board, word, index+1);
         board[row][col] = word.charAt(index);
         return exist;
     }

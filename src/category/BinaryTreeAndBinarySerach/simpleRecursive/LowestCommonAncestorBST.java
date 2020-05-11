@@ -8,7 +8,7 @@ import category.model.TreeNode;
  * Created by brianzhang on 4/8/20.
  */
 
-public class LowestCommonAncestor {
+public class LowestCommonAncestorBST {
 
     public static void main(String[] args) {
 
@@ -16,20 +16,13 @@ public class LowestCommonAncestor {
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 
-        // Value of current node or parent node.
+        int pVal = p.val;
+        int qVal = q.val;
         int parentVal = root.val;
 
-        // Value of p
-        int pVal = p.val;
-
-        // Value of q;
-        int qVal = q.val;
-
-        if (pVal > parentVal && qVal > parentVal) {
-            // If both p and q are greater than parent
+        if (pVal > parentVal && qVal > parentVal) {// both p and q are greater than parent node
             return lowestCommonAncestor(root.right, p, q);
-        } else if (pVal < parentVal && qVal < parentVal) {
-            // If both p and q are lesser than parent
+        } else if (pVal < parentVal && qVal < parentVal) { //both p and q are lesser than parent node
             return lowestCommonAncestor(root.left, p, q);
         } else {
             // We have found the split point, i.e. the LCA node.

@@ -1,11 +1,15 @@
-package category.BinaryTreeAndBinarySerach;
+package category.BinaryTreeAndBinarySerach.binarySearchTree;
 
 import companies.amazon.model.TreeNode;
 
 /**
+ * https://leetcode.com/problems/validate-binary-search-tree/
+ *
  * Created by brianzhang on 4/15/19.
  */
 public class ValidateBinarySearchTree {
+
+    public static void main(String[] args) {}
 
     public boolean isValidBST(TreeNode root) {
         if(root == null)

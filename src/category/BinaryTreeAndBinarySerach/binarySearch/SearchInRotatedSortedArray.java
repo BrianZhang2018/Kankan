@@ -1,10 +1,10 @@
-package category.BinaryTreeAndBinarySerach;
+package category.BinaryTreeAndBinarySerach.binarySearch;
 
 /**
  * Binary Search for Rotated array
  * https://leetcode.com/problems/search-in-rotated-sorted-array/
  *
- * The idea is that when rotating the array, there must be one half of the array that is still in sorted order.
+ * The idea is if it's a rotating the array, there must be one half of the array which is still in sorted order.
  * Created by brianzhang on 2/27/19.
  */
 public class SearchInRotatedSortedArray {
@@ -15,8 +15,7 @@ public class SearchInRotatedSortedArray {
     }
 
     public int search(int[] nums, int target) {
-        int start = 0;
-        int end = nums.length - 1;
+        int start = 0, end = nums.length - 1;
         
         while(start <= end){
             
@@ -25,7 +24,7 @@ public class SearchInRotatedSortedArray {
                 return mid;
         
             if(nums[start] <= nums[mid]){
-               // start -> mid is ordered increasingly, so check whether target falls in this range by compare the number on 'start' and 'mid' position
+                // start -> mid is ordered increasingly, so check whether target falls in this range by compare the number on 'start' and 'mid' position
                 //if not, which means the number falls in another half (mid -> end), so "start = mid +1"
                 if(target >= nums[start] && target < nums[mid])
                     end = mid -1;

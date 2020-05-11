@@ -17,7 +17,6 @@ public class NumberOfIslandII {
        Arrays.fill(parents, -1);
        
        int num = 0;
-      
        int[][] dirs = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
        
        for(Point p : operators){
@@ -55,12 +54,10 @@ public class NumberOfIslandII {
    }
 
     public int find(int[] parents, int d) {
-
         while (parents[d] != d) {
             parents[d] = parents[parents[d]];
             d = parents[d];
         }
-
         return d;
     }
 }
@@ -68,12 +65,6 @@ public class NumberOfIslandII {
 class Point {
     int x;
     int y;
-    Point() {
-        x = 0;
-        y = 0;
-    }
-    Point(int a, int b) {
-        x = a;
-        y = b;
-    }
+    Point() {x = 0;y = 0;}
+    Point(int a, int b) {x = a;y = b;}
 }

@@ -5,10 +5,10 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/submissions/
  */
-public class ConstructBTFromPostorderAndInorder{
+public class ConstructBTFromPostOrderAndInorder {
 
     public static void main(String[] args) {
-        ConstructBTFromPostorderAndInorder test = new ConstructBTFromPostorderAndInorder();
+        ConstructBTFromPostOrderAndInorder test = new ConstructBTFromPostOrderAndInorder();
         TreeNode root = test.buildTree(new int[]{9,3,15,20,7}, new int[]{9,15,7,20,3});
 
         preOrderTraversal(root);

@@ -1,5 +1,6 @@
 package category.sort;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,17 +9,9 @@ import java.util.Collections;
  */
 public class InsertInterval{
     public static void main(String[] args){
-        List<String> strs = new ArrayList<>();
-        strs.add("11:10");
-        strs.add("01:44");
-        strs.add("12:01");
-        Collections.sort(strs);
-
-        for(String str : strs){
-            System.out.println(str);
-        }
-
-        System.out.println(Integer.valueOf("05"));
+        InsertInterval test = new InsertInterval();
+        for(int[] res : test.insert(new int[][]{{6,9},{11,13}}, new int[]{7,8}))
+            System.out.println(Arrays.toString(res));
     }
 
     public int[][] insert(int[][] intervals, int[] newInterval) {
@@ -29,12 +22,11 @@ public class InsertInterval{
             if(newInterval == null || i[1] < newInterval[0]){
                 result.add(i);
             }else if(i[0] > newInterval[1]){
-               // be carefult the sequence here
+               // be careful the sequence here
                 result.add(newInterval);
                 result.add(i);
                 newInterval = null;
             }else{
-                
                 newInterval[0] = Math.min(newInterval[0], i[0]);//get min
                 newInterval[1] = Math.max(newInterval[1], i[1]);//get max
             }

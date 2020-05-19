@@ -1,4 +1,4 @@
-package category.MonotoneQueue.descrasing;
+package category.MonotoneQueueStack.descrasing.stack;
 
 import java.util.Arrays;
 import java.util.Stack;
@@ -6,15 +6,15 @@ import java.util.Map;
 import java.util.HashMap;
 /**
  * https://leetcode.com/problems/next-greater-element-i/
+ * https://leetcode.com/problems/next-greater-element-i/discuss/97595/java-10-lines-linear-time-complexity-on-with-explanation
  *
- * You are given two arrays (without duplicates) nums1 and nums2 where nums1’s elements are subset of nums2.
- * Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
+ * Monotone stack
  */
 public class NextGreaterElement{
     public static void main(String[] args){
         NextGreaterElement test = new NextGreaterElement();
         System.out.println(Arrays.toString(test.nextGreaterElement1(new int[]{4, 1, 2}, new int[]{1,3,4,2})));
-        System.out.println(Arrays.toString(test.nextGreaterElement2(new int[]{4, 1, 2}, new int[]{1,3,4,2})));
+        //System.out.println(Arrays.toString(test.nextGreaterElement2(new int[]{4, 1, 2}, new int[]{1,3,4,2})));
     }
 
     //in-sequence traversal (start from the left of array)
@@ -28,6 +28,7 @@ public class NextGreaterElement{
             }
             stack.push(num);
         }
+        // above code get the next greater element for num2. Since nums1 is subset of nums2, so just need get value from reuslt map.
         
         int[] res = new int[nums1.length];
         for(int i=0; i<nums1.length; i++){

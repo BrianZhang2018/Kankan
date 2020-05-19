@@ -23,14 +23,14 @@ public class SearchInRotatedSortedArray {
             if(nums[mid] == target)
                 return mid;
         
-            if(nums[start] <= nums[mid]){
+            if(nums[mid] >= nums[start]){
                 // start -> mid is ordered increasingly, so check whether target falls in this range by compare the number on 'start' and 'mid' position
                 //if not, which means the number falls in another half (mid -> end), so "start = mid +1"
                 if(target >= nums[start] && target < nums[mid])
                     end = mid -1;
                 else
                     start = mid+1;
-            }else{
+            }else if(nums[mid] <= nums[start]){
                 //mid -> end is ordered increasingly, so check whether target falls in this range by comparing the number on 'mid' and 'end' position
                 //if not, which means the number falls in another half (start - mid), so end = mid - 1
                 if(target > nums[mid] && target <= nums[end])

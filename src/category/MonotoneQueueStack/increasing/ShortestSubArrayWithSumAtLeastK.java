@@ -1,4 +1,4 @@
-package category.MonotoneQueue.increasing;
+package category.MonotoneQueueStack.increasing;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

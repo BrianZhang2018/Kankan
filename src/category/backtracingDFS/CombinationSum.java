@@ -1,19 +1,21 @@
 package category.BacktracingDFS;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
+import java.util.*;
 /**
  * https://leetcode.com/problems/combination-sum/
- * the same number can be used unlimited times
+ * The same number can be used unlimited times
+ *
+ * Can be used to solve the "Coin Change" problem if need output the combination, but slow.
+ * "CoinChangeOutputCombination.java" use the 剪枝法DFS中, make it faster.
  *
  * Created by brianzhang on 7/29/18.
  */
 public class CombinationSum {
     public static void main(String[] args) {
-        int[] arr = new int[]{2,3,6,7}; int target = 7;
+        int[] arr = new int[]{1,2,5}; int target = 5;
         System.out.println(new CombinationSum().combinationSum(arr, target));
+
+        System.out.println(new CombinationSum().change(target, arr));
     }
 
     public List<List<Integer>> combinationSum(int[] nums, int target) {
@@ -32,7 +34,30 @@ public class CombinationSum {
         } else {
             for (int i = start; i < nums.length; i++) {
                 temp.add(nums[i]);
-                dfs(nums, i,target - nums[i], temp, res); //not i + 1 because we can reuse same element
+                dfs(nums, i,target - nums[i], temp, res); //not "i + 1" here because we can reuse same element
+                temp.remove(temp.size() - 1);
+            }
+        }
+    }
+
+    List<List<Integer>> res = new ArrayList<>();
+    public int change(int amount, int[] coins) {
+        Arrays.sort(coins);
+        dfs(coins, 0, amount, new ArrayList());
+        return res.size();
+    }
+
+    public void dfs(int[] coins, int start, int amount, List<Integer> temp){
+
+        if (amount < 0)
+            return;
+        else if(amount == 0){
+            res.add(new ArrayList(temp));
+            return;
+        } else {
+            for (int i = start; i < coins.length; i++) {
+                temp.add(coins[start]);
+                dfs(coins, i, amount - coins[start], temp);
                 temp.remove(temp.size() - 1);
             }
         }

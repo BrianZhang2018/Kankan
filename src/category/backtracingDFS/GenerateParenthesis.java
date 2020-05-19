@@ -19,11 +19,12 @@ public class GenerateParenthesis {
         return list;
     }
 
+    // note: str rather than the StringBuilder, and pass new reference (e.g. str + ")") into next loop.
+    // (don't have the remove action for this problem, so can't pass a reference type to next loop)
     public static void backtrack(List<String> list, String str, int open, int close, int max) {
 
         if (str.length() == max * 2) {
-            list.add(str);
-            System.out.println(str);
+            list.add(str); System.out.println(str);
             return;
         }
 

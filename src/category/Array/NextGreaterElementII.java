@@ -1,18 +1,19 @@
 package category.Array;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 /**
  * https://leetcode.com/problems/next-greater-element-ii/
  *
- * Note: Use % to solve the circular array issue
+ * Note: Use %(modulo) to solve the circular array issue
  *
  * Created by brianzhang on 11/24/19.
  */
 public class NextGreaterElementII {
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(nextGreaterElements(new int[]{1,2,1})));
+        System.out.println(Arrays.toString(nextGreaterElements(new int[]{4,3,2,1})));
     }
 
     public static int[] nextGreaterElements(int[] nums) {
@@ -29,7 +30,6 @@ public class NextGreaterElementII {
                 }
             }
         }
-
         return res;
     }
 }

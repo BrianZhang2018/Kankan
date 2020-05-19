@@ -9,12 +9,8 @@ public class PrefixTreeByTrie {
 
     public static void main(String[] args) {
         PrefixTreeByTrie trie = new PrefixTreeByTrie();
-        trie.insert("app");
-        trie.insert("apple");
-        trie.insert("beer");
-        trie.insert("add");
-        trie.insert("jam");
-        trie.insert("rental");
+        trie.insert("app");trie.insert("apple");trie.insert("beer");
+        trie.insert("add");trie.insert("jam");trie.insert("rental");
         trie.insert("apps");
         System.out.println(trie.startsWith("jam"));
     }

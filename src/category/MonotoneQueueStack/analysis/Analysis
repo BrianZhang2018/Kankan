@@ -1,8 +1,8 @@
 https://leetcode.com/problems/trapping-rain-water/discuss/244167/A-general-stack-approach-you-can-solve-42-84-85
 
 Increasing vs Decreasing queue
-如果问题是通过低谷去计算(Trapping Water)，用decreasing queue
-如果问题是通过peek去计算(largestRectangleArea, maximal-rectangle)，用increasing queue
+如果问题是通过valley去计算(Trapping Water)，用decreasing queue
+如果问题是通过peak去计算(largestRectangleArea, maximal-rectangle)，用increasing queue
 
 套路：
 1. maintain an increasing or decreasing "queue" which store the "index" (queue can be implemented with Stack or Deque)

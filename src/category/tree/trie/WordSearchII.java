@@ -3,22 +3,20 @@ package category.tree.trie;
 import java.util.List;
 import java.util.LinkedList;
 /**
+ * https://leetcode.com/problems/word-search-ii/
+ *
  * 1. DFS
  * 2. reset the state by backtracking
  * 3. Trie keep the words
- * 
- * https://leetcode.com/problems/word-search-ii/
  */
 public class WordSearchII{
 
     public static void main(String[] args) {
         WordSearchII ws = new WordSearchII();
-        char[][] board = {
-                            {'o','a','a','n'},
+        char[][] board = {{'o','a','a','n'},
                             {'e','t','a','e'},
                             {'i','h','k','r'},
-                            {'i','f','l','v'}
-                        };
+                            {'i','f','l','v'}};
         for(String res : ws.findWords(board, new String[]{"oath","pea","eat","rain"})){
             System.out.println(res);
         }

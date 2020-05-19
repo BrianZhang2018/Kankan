@@ -2,7 +2,7 @@ package category.DynamicPlanning.MiniMaximumPathToReachATarget;
 
 /**
  * https://leetcode.com/problems/minimum-path-sum/
- * <p>
+ *
  * Created by brianzhang on 11/25/18.
  */
 public class MinimumPathSum {

@@ -13,29 +13,29 @@ import java.util.stream.IntStream;
  * Def: dp[i][j]-min coins to make up j amount using first i types of coins.
  * Transition: dp[i][j] = min(dp[i][j], dp[i][j - coin_i] + 1)
  *
- * Knowledge：1. DP with 降维 
+ * Knowledge：1. DP with 降维
  *            2. 剪枝法
+ *
+ * Output the combination: we can use the CombinationSum.java (backtracking) which will print out all the combinations.
  */
 public class CoinChange {
     public static void main(String[] args) {
         CoinChange coinChange = new CoinChange();
-        int[] coins = {1, 2, 5};
-        System.out.println(coinChange.coinChangeDp(coins, 11));
+        int[] coins = {3, 5};
+        System.out.println(coinChange.coinChangeDp(coins, 6));
         System.out.println(coinChange.coinChangeDFS(coins, 11));
     }
 
-    // Solution 1: DP
     /**
-     * 降维: dp[i][j] which only rely on dp[i] and dp[i-1], so 二维数组, 但其实是滚动数组，可以降维成一维数组
+     * Solution 1: DP
      *
+     * 降维: dp[i][j] which only rely on dp[i] and dp[i-1], so 二维数组, 但其实是滚动数组，可以降维成一维数组
      * def: dp[p] (p is the amount) : the least coins to make "p" amount
      */
     public int coinChangeDp(int[] coins, int targetAmount) {
+        if (coins == null || coins.length == 0 || targetAmount < 0) return -1;
 
-        if (coins == null || coins.length == 0 || targetAmount < 0)
-            return -1;
-
-        //Init
+        //init
         int[] dp = new int[targetAmount + 1];
         Arrays.fill(dp, Integer.MAX_VALUE);
         dp[0] = 0;
@@ -50,7 +50,6 @@ public class CoinChange {
                 }
             }
         }
-
         return dp[targetAmount] == Integer.MAX_VALUE ? -1 : dp[targetAmount];
     }
 
@@ -58,17 +57,34 @@ public class CoinChange {
     int fewest = Integer.MAX_VALUE;
 
     public int coinChangeDFS(int[] coins, int amount) {
-        if (coins == null || coins.length == 0 || amount < 0)
-            return -1;
+        if (coins == null || coins.length == 0 || amount < 0) return -1;
 
         Integer[] boxedArr = IntStream.of(coins).boxed().toArray(Integer[]::new);
         Arrays.sort(boxedArr, Collections.reverseOrder());
-        dfsHelper2(boxedArr, 0, amount, 0);
+        dfsHelper(boxedArr, 0, amount, 0);
 
         return fewest == Integer.MAX_VALUE ? -1 : fewest;
     }
 
+    /**
+     * DFS + 剪枝法
+     * huahua 称其为剪枝法，the idea is 先用最大的面值的硬币去算，因为得出的结果可能是 需要最少的硬币 的数目，因为用的面值最大.
+     * 然后，在比较小的面值，跟最大面值需要的硬币数目比较, 多的都去掉（剪枝）
+     */
     public void dfsHelper(Integer[] coins, int start, int amount, int count) {
+
+        if (amount == 0) fewest = Integer.min(fewest, count);
+
+        if (start == coins.length) return;
+
+        int coin = coins[start];
+        for (int k = amount / coin; k >= 0 && count + k < fewest; k--) {
+            dfsHelper(coins, start + 1, amount - k * coin, count + k);
+        }
+    }
+
+    // another dfs solution
+    public void dfsHelper2(Integer[] coins, int start, int amount, int count) {
         int coin = coins[start];
         if (start == coins.length - 1) {
             if (amount % coin == 0) {
@@ -78,26 +94,6 @@ public class CoinChange {
             for (int k = amount / coin; k >= 0 && count + k < fewest; k--) {
                 dfsHelper(coins, start + 1, amount - k * coin, count + k);
             }
-        }
-    }
-
-    // Solution 3: the simple dfs compared with above one
-    /**
-     * huahua 称其为剪枝法，the idea is 先用最大的面值的硬币去算， 因为得出的结果可能是 需要最少的硬币 的数目，因为用的面值最大
-     * 然后，在比较小的面值，跟最大面值需要的硬币数目比较 多的 都去掉（剪枝）
-     */
-    public void dfsHelper2(Integer[] coins, int start, int amount, int count) {
-
-        if (amount == 0) {
-            fewest = Integer.min(fewest, count);
-        }
-
-        if (start == coins.length)
-            return;
-
-        int coin = coins[start];
-        for (int k = amount / coin; k >= 0 && count + k < fewest; k--) {
-            dfsHelper2(coins, start + 1, amount - k * coin, count + k);
         }
     }
 

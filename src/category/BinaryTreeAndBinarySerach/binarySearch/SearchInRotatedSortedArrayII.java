@@ -39,7 +39,6 @@ public class SearchInRotatedSortedArrayII {
                 // means nums[start] == nums[mid], but != target, we need move the pointer start++ to skip the duplicate value
                 start++;
             }
-
         }
         return false;
     }

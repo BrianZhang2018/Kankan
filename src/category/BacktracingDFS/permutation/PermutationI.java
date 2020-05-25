@@ -8,6 +8,7 @@ import java.util.List;
  * brute force solution using DFS & backtrack
  * 深度搜素到底，然后在回溯，遍历每一层，重复这个动作
  *
+ * time complexity: O(n!)
  * Created by brianzhang on 7/26/18.
  */
 public class PermutationI {

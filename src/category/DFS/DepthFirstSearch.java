@@ -3,7 +3,8 @@ package category.DFS;
 import java.util.Stack;
 
 /**
- * DFS + preOrder search
+ * DFS traverse a binary tree which is a Preorder traversal
+ *
  * Created by brianzhang on 10/16/18.
  */
 public class DepthFirstSearch {
@@ -16,8 +17,8 @@ public class DepthFirstSearch {
         root.left.right = new Node(8);
         root.right.left = new Node(13);
         root.right.right = new Node(25);
-        root.right.left.left = new Node(12);
-        root.right.left.right = new Node(18);
+/*        root.right.left.left = new Node(12);
+        root.right.left.right = new Node(18);*/
 
         DepthFirstSearch dfs = new DepthFirstSearch();
         dfs.depthFirstSearch(root);
@@ -25,26 +26,23 @@ public class DepthFirstSearch {
 
     /**
      * This method performs a depth first search on a binary binaryTree
-     * @param root
+     * it's actually a preOrder traversal (root, left, right)
      */
     public void depthFirstSearch(Node root) {
-        if (root == null) {
-            return;
-        }
+        if (root == null) return;
 
-        Stack<Node> nodeStack = new Stack<Node>();
+        Stack<Node> nodeStack = new Stack<>();
         nodeStack.push(root);
 
         while (!nodeStack.isEmpty()) {
             Node node = nodeStack.pop();
             System.out.print(node.val + " ");
 
-            if (node.right != null) {
+            if (node.right != null)
                 nodeStack.push(node.right);
-            }
-            if (node.left != null) {
+
+            if (node.left != null)
                 nodeStack.push(node.left);
-            }
         }
     }
 }

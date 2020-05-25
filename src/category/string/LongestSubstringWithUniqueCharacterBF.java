@@ -3,7 +3,7 @@ package category.string;
 import java.util.*;
 
 /**
- * Brute force Asolution
+ * Brute force solution
  * Created by brianzhang on 3/3/19.
  */
 public class LongestSubstringWithUniqueCharacterBF {

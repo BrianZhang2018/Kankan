@@ -4,8 +4,9 @@ import category.model.TreeNode;
 import java.util.Stack;
 
 /**
- * Created by brianzhang on 2/17/20.
  * https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
+ *
+ * Created by brianzhang on 2/17/20.
  */
 public class ConstructBinarySearchTreeByPreOrder {
 
@@ -15,10 +16,10 @@ public class ConstructBinarySearchTreeByPreOrder {
     }
 
     //recursion solution
-    public static TreeNode bstFromPreorder(int[] preorder) {
-        TreeNode root = new TreeNode(preorder[0]);
-        for (int i = 1; i < preorder.length; i++)
-            addBST(root, preorder[i]);
+    public static TreeNode bstFromPreorder(int[] preOrder) {
+        TreeNode root = new TreeNode(preOrder[0]);
+        for (int i = 1; i < preOrder.length; i++)
+            addBST(root, preOrder[i]);
         return root;
     }
 

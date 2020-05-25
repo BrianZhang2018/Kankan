@@ -16,11 +16,10 @@ public class ValidateParenthesisString {
         if (s == null)
             return true;
 
-        Stack<Integer> left = new Stack<Integer>();
-        Stack<Integer> star = new Stack<Integer>();
+        Stack<Integer> left = new Stack<>();
+        Stack<Integer> star = new Stack<>();
 
         for (int i = 0; i < s.length(); i++) {
-
             char c = s.charAt(i);
             if (c == '(') {
                 left.push(i);

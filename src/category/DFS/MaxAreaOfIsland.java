@@ -1,25 +1,22 @@
 package category.DFS;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 /**
+ * https://leetcode.com/problems/max-area-of-island/
+ *
  * Created by brianzhang on 2/10/19.
  */
 public class MaxAreaOfIsland {
     public static void main(String[] args) {
         //int[][] grid = {{1, 1, 0, 0, 0}, {1, 1, 0, 0, 0}, {0, 0, 0, 1, 1}, {0, 0, 0, 1, 1}};
-        int[][] grid = {{1, 1}, {1, 0}};
         //int[][] grid = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
-        MaxAreaOfIsland maxAreaOfIsland = new MaxAreaOfIsland();
-        System.out.println(maxAreaOfIsland.maxAreaOfIsland1(grid));
+        int[][] grid = {{1, 1}, {1, 0}};
+        MaxAreaOfIsland test = new MaxAreaOfIsland();
+        System.out.println(test.maxAreaOfIsland1(grid));
     }
 
-    private int maxArea = 0;
-
+    // time complexity O(mn)
     public int maxAreaOfIsland(int[][] grid) {
+        int maxArea = 0;
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == 1) {
@@ -43,19 +40,50 @@ public class MaxAreaOfIsland {
         return 0;
     }
 
-    //another solution which base on the 'Numbers of Island I'
+    // 另一种写法
+    private int currArea = 0;
     public int maxAreaOfIsland1(int[][] grid) {
+        int maxArea = 0;
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == 1) {
-                    //if you do int currArea = 0, which won't work as you pass value as value to method
-                    //rather than pass a reference as value to the method. So, all dfs method in the dfs
-                    //only get the copy of primitive value, but if you do pass object reference here (e.g. List, Map)
-                    //, all dfs methods will get a reference copy for the object so that they all pointing to the same object in heap
+                    currArea = 0;
+                    dfs1(grid, i, j);
+                    if(currArea > maxArea) maxArea = currArea;
+                }
+            }
+        }
+        return maxArea;
+    }
+
+    public void dfs1(int[][] grid, int i, int j) {
+        if (i >= grid.length || j >= grid[0].length || j < 0 || i < 0 || grid[i][j] == 2) {
+            return;
+        }
+
+        if (grid[i][j] == 1) {
+            currArea++;
+            grid[i][j] = 2; // marked as visited
+            dfs1(grid, i + 1, j);
+            dfs1(grid, i, j + 1);
+            dfs1(grid, i - 1, j);
+            dfs1(grid, i, j - 1);
+        }
+    }
+
+    // Not recommended way pass an reference into the dfs rather than use the global variables
+
+/*    public int maxAreaOfIsland1(int[][] grid) {
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 1) {
+                    // if you do int currArea = 0, which won't work as you pass value as value to method rather than pass a reference as value to the method.
+                    // So, all dfs method in the dfs only get the copy of primitive value, but if you pass object reference here (e.g. List, Map)
+                    // , all dfs methods will get a reference copy for the object so that they all pointing to the same object in heap
                     // the change on that object will be reflected other methods as they are pointing the same object, booooom!
-                    Map<String, Integer> currArea = new HashMap<String, Integer>();
+                    Map<String, Integer> currArea = new HashMap<>();
                     currArea.put("currArea", 0);
-                    dfs1(grid, i, j, currArea);
+                    dfs1(grid, i, j, currArea); // pass reference here
                     if (currArea.get("currArea") > maxArea)
                         maxArea = currArea.get("currArea");
                 }
@@ -71,11 +99,11 @@ public class MaxAreaOfIsland {
 
         if (grid[i][j] == 1) {
             currArea.put("currArea", currArea.get("currArea") + 1);
-            grid[i][j] = 2;
+            grid[i][j] = 2; // marked as visited
             dfs1(grid, i + 1, j, currArea);
             dfs1(grid, i, j + 1, currArea);
             dfs1(grid, i - 1, j, currArea);
             dfs1(grid, i, j - 1, currArea);
         }
-    }
+    }*/
 }

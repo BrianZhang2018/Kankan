@@ -1,4 +1,4 @@
-package category.sort;
+package category.Sort;
 
 /**
  * https://www.geeksforgeeks.org/selection-sort/

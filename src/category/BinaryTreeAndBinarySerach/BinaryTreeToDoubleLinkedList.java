@@ -30,7 +30,7 @@ public class BinaryTreeToDoubleLinkedList {
         inOrderTraversalIterative(root);
         return head;
     }
-
+    // recursive
     public void inOrderTraversal(TreeNode node){
         if(node == null)
             return;
@@ -39,6 +39,7 @@ public class BinaryTreeToDoubleLinkedList {
         inOrderTraversal(node.right);
     }
 
+    // iterative
     public void inOrderTraversalIterative(TreeNode root){
         if(root == null) return;
 

@@ -1,18 +1,21 @@
 package category.DFS;
 
 /**
+ * 另一种写法
+ * https://leetcode.com/problems/max-area-of-island/
+ *
  * Created by brianzhang on 2/10/19.
  */
-public class MaxAreaOfIslandVisitedArray {
+public class MaxAreaOfIslandSolution1 {
 
-    int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    private int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
     public static void main(String[] args) {
         //int[][] grid = {{1, 1, 0, 0, 0}, {1, 1, 0, 0, 0}, {0, 0, 0, 1, 1}, {0, 0, 0, 1, 1}};
         int[][] grid = {{1, 1}, {1, 0}};
         //int[][] grid = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
-        MaxAreaOfIslandVisitedArray maxAreaOfIsland = new MaxAreaOfIslandVisitedArray();
-        System.out.println(maxAreaOfIsland.maxAreaOfIsland(grid));
+        MaxAreaOfIslandSolution1 test = new MaxAreaOfIslandSolution1();
+        System.out.println(test.maxAreaOfIsland(grid));
     }
 
     public int maxAreaOfIsland(int[][] grid) {
@@ -32,13 +35,11 @@ public class MaxAreaOfIslandVisitedArray {
         int m = grid.length, n = grid[0].length;
         if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == 0)
             return 0;
-        //flip th number which mark the cell as visited
-        grid[i][j] = 0;
+
+        grid[i][j] = 0; // flip th number to "0" which make the cell has been visited
         int res = 1;
         for (int[] dir : dirs) {
-            int i1 = dir[0] + i;
-            int j1 = dir[1] + j;
-            res += dfs(grid, i1, j1);
+            res += dfs(grid, dir[0] + i, dir[1] + j);
         }
         return res;
     }

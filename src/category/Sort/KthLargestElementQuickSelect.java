@@ -1,13 +1,13 @@
-package category.sort;
+package category.Sort;
 
 /**
- * Qucik select algorithm
- * <p>
+ * Quick select algorithm
+ *
  * https://leetcode.com/problems/kth-largest-element-in-an-array/description/
  */
-public class FindKthLargest {
+public class KthLargestElementQuickSelect {
     public static void main(String[] args) {
-        FindKthLargest quickSelect = new FindKthLargest();
+        KthLargestElementQuickSelect quickSelect = new KthLargestElementQuickSelect();
         int arr[] = {10, 7, 8, 9, 1, 5};
         System.out.println(quickSelect.findKthLargest(arr, 4));
     }
@@ -15,7 +15,7 @@ public class FindKthLargest {
     public int findKthLargest(int[] nums, int k) {
         int start = 0, end = nums.length - 1, index = nums.length - k;
         while (start < end) {
-            int pivot = partion(nums, start, end);
+            int pivot = partition(nums, start, end);
             if (pivot < index) start = pivot + 1;
             else if (pivot > index) end = pivot - 1;
             else return nums[pivot];
@@ -23,7 +23,7 @@ public class FindKthLargest {
         return nums[start];
     }
 
-    private int partion(int[] nums, int start, int end) {
+    private int partition(int[] nums, int start, int end) {
         int pivot = start, temp;
         while (start <= end) {
             while (start <= end && nums[start] <= nums[pivot]) start++;

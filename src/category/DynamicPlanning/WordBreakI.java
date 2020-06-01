@@ -1,9 +1,6 @@
 package category.DynamicPlanning;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/word-break/
@@ -13,19 +10,20 @@ import java.util.Set;
 public class WordBreakI {
     public static void main(String[] args) {
         //solution-1
-        HashSet<String> hashSet = new HashSet<>();
-        Map<String, Boolean> mem = new HashMap<>();
-        hashSet.add("leet");hashSet.add("co");
-        System.out.println(wordBreak("leetco", hashSet));
+        HashSet<String> wordDict = new HashSet<>();
+        wordDict.add("leet");wordDict.add("co");
+        //System.out.println(wordBreak("leetco", wordDict));
 
         //solution-2
-        //System.out.println(wordBreakDPMem("leetco", hashSet, mem));
-        for(String key : mem.keySet()){
-            System.out.println(key);
-        }
+        Map<String, Boolean> memo = new HashMap<>();
+        HashSet<String> words = new HashSet<>(Arrays.asList("cat", "son", "goal", "song"));
+        System.out.println(wordBreakDFSMem("songoalcat", words, memo));
+        for(String key : memo.keySet()) System.out.println(key);
+
+        res.forEach(s -> System.out.println(s)); // "song" won't be in res as it can't make a valid words break with other words
     }
 
-    //递推, O(n^2)
+    //DP递推, O(n^2) ("n square" Or "n to the power of 2") - Bottom-Up solution
     public static boolean wordBreak(String s, Set<String> dict) {
         if (s == null || s.length() == 0) return false;
 
@@ -45,19 +43,23 @@ public class WordBreakI {
         return dp[n - 1];
     }
 
-    //递归
-    public static boolean wordBreakDPMem(String s, Set<String> dict, Map<String, Boolean> mem) {
+    static List<String> res = new ArrayList<>();
+
+    //DFS递归, time complexity: n! (factorial n) - Top-Down solution
+    public static boolean wordBreakDFSMem(String s, Set<String> dict, Map<String, Boolean> mem) {
         if (mem.containsKey(s))
             return mem.get(s);
 
         if (dict.contains(s)) {
+            res.add(s);
             mem.put(s, true);
             return true;
         }
 
         for (int i = 1; i < s.length(); i++) {
             // For '&&' condition, if 'dict.contains(s.substring(i))' is false, won't run the ' wordBreak(s.substring(0, i), mem, dict)' 
-            if (dict.contains(s.substring(i)) && wordBreakDPMem(s.substring(0, i), dict, mem)) {
+            if (dict.contains(s.substring(0, i)) && wordBreakDFSMem(s.substring(i), dict, mem)) {
+                res.add(s.substring(0,i));
                 mem.put(s, true);
                 return true;
             }

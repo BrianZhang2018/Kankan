@@ -1,9 +1,9 @@
-package category.sort;
+package category.Sort;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Collections;
+
 /**
  * https://leetcode.com/problems/insert-interval/discuss/21600/Short-java-code
  */

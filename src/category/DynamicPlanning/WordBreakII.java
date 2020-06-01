@@ -5,47 +5,43 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/word-break-ii/
  * 
- * this should be a backtracking solution :)
+ * this's an backtracking problem
  * 
  * Time complexity:
- * Lets say total number of words be w, and the string length of s be n. then at each char of n places we would check by w possibilities.
- * I believe it is w^(n) - time complexity for general idea of above code.
+ * Lets say total number of words be w, and the string length of s be n. then at each char of n places
+ * we would check by w possibilities. I believe it is w^(n) - time complexity for general idea of above code.
  * 
  * Created by brianzhang on 2/20/19.
  */
 public class WordBreakII {
     public static void main(String[] args) {
         WordBreakII wordBreakII = new WordBreakII();
-        List<String> dicts = new ArrayList<>();
-        dicts.add("cat"); dicts.add("cats");dicts.add("and");
-        dicts.add("sand"); dicts.add("dog");
-        
-       for(String str : wordBreakII.wordBreak1("catsanddog", dicts))
-           System.out.println(str);
+        List<String> dicts = new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"));
+        wordBreakII.wordBreak("catsanddog", dicts).forEach(s -> System.out.println(s));
     }
 
-    public List<String> wordBreak1(String s, List<String> wordDict) {
-        return dfs(s, wordDict, new HashMap<String, List<String>>());
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        return dfs(s, wordDict, new HashMap<>());
     }
 
-    // DFS function returns an array including all substrings derived from s - backtracking
-    List<String> dfs(String s, List<String> wordDict, HashMap<String, List<String>>map) {
-        if (map.containsKey(s))
-            return map.get(s);
+    // DFS function returns an array including all substring derived from s - backtracking
+    List<String> dfs(String s, List<String> wordDict, HashMap<String, List<String>> memo) {
+        if (memo.containsKey(s))
+            return memo.get(s);
 
-        List<String> res = new ArrayList<>();
+        List<String> subWords = new ArrayList<>();
         if (s.length() == 0) {
-            res.add("");
-            return res;
+            subWords.add("");
+            return subWords;
         }
         for (String word : wordDict) {
             if (s.startsWith(word)) {
-                List<String> sublist = dfs(s.substring(word.length()), wordDict, map);
+                List<String> sublist = dfs(s.substring(word.length()), wordDict, memo);
                 for (String sub : sublist)
-                    res.add(word + (sub.isEmpty() ? "" : " ") + sub);
+                    subWords.add(word + (sub.isEmpty() ? "" : " ") + sub);
             }
         }
-        map.put(s, res);
-        return res;
+        memo.put(s, subWords);
+        return subWords;
     }
 }

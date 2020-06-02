@@ -28,7 +28,7 @@ public class NextGreaterElement{
             }
             stack.push(num);
         }
-        // above code get the next greater element for num2. Since nums1 is subset of nums2, so just need get value from reuslt map.
+        // above code get the next greater element for num2. Since nums1 is subset of nums2, so just need get value from result map.
         
         int[] res = new int[nums1.length];
         for(int i=0; i<nums1.length; i++){

@@ -1,0 +1,10 @@
+Remember you can use Deque replace Stack.
+
+Deques can also be used as LIFO (Last-In-First-Out) stacks. This interface should be used in preference to the legacy Stack class.
+When a deque is used as a stack, elements are pushed and popped from the beginning of the deque. Stack methods are precisely
+equivalent to Deque methods as indicated in the table below:
+
+Stack Method	Equivalent Deque Method
+push(e)	            addFirst(e)
+pop()	            removeFirst()
+peek()	            peekFirst()

@@ -14,7 +14,7 @@ public class ShortestUnsortedContinuousSubArray {
     }
 
     public static int findUnsortedSubArray(int[] nums) {
-        Stack< Integer > stack = new Stack <> ();
+        Stack<Integer> stack = new Stack<>();
         int l = nums.length, r = 0;
         for (int i = 0; i < nums.length; i++) {
             while (!stack.isEmpty() && nums[stack.peek()] > nums[i])

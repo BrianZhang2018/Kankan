@@ -1,19 +1,18 @@
-DP is used to get the number of the solution
-backtracking can list all the solution
+- DP is used to get the number of the solution
+- Backtracking can list all the solution
 
 1. DP ways:
     a) Top-Down approach: Recursion + Memoization. 记忆化递归
     b) Bottom-Up approach: Iterative + Tabulation, which can avoid the recursion. 递推
-    https://www.geeksforgeeks.org/tabulation-vs-memoization/
+       (https://www.geeksforgeeks.org/tabulation-vs-memoization/)
 
     1) Recursion (e.g. Divide & Conquer) + Memoization - top-down (自顶向下), O(n^2)= 1 + 2 + 3 + 4+......n
-    example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
+        example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
     2) 自底向上循环递推  bottom -> top,  two 'for' loop, time complexity is O(n^2)
-    example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
+        example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
 
 2.
     Backtracking is a more general purpose algorithm.
-
     Depth-First search is a specific form of backtracking related to searching tree structures.
 
 3.
@@ -25,9 +24,9 @@ backtracking can list all the solution
 
     Divide & Conquer - Recursion
 
-4.
-表达式match题目的套路分析：
+4. 表达式match题目的套路分析：
 problem: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/WildcardMatching.java
+
 Solution:
 DP: Top-down
 https://leetcode.com/problems/wildcard-matching/
@@ -38,15 +37,16 @@ https://leetcode.com/problems/wildcard-matching/
     这个题的套路是：
     1. initiate a two dimensional boolean array, text is row, pattern is column
     2. initiate the first row
-    3. for(row:i ...)  这个题就有下面的三种case
-          for(column:j ...)
-      if(s[i] == p[j] || p[j] == '?'){
-             dp[i][j] = dp[i-1][j-1];
-        }else if (p[j]== '*' ){
-             dp[i][j] = dp[i-1][j] || dp[i][j-1];
-        }else{ // case 3: two characters are not equal
-             dp[i][j] = false;
-         }
+    3.
+    for(row:i ...)
+          for(column:j ...) // 这个题就有下面的三种case
+              if(s[i] == p[j] || p[j] == '?'){
+                 dp[i][j] = dp[i-1][j-1];
+              }else if (p[j]== '*' ){
+                 dp[i][j] = dp[i-1][j] || dp[i][j-1];
+              }else{ // Case 3: two characters are not equal
+                 dp[i][j] = false;
+              }
 
 Similar problem: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/RegularExpressionMatching.java
 解法分析：https://www.youtube.com/watch?v=3ZDZ-N0EPV0&t=76s

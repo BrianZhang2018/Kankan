@@ -1,0 +1,17 @@
+String number problem: e.g. AddBinary, AddStrings
+
+这种题会有边界问题(e.g. beyond range of Integer type),
+所以可以把问题转化成处理数字每一位的方法去解决 (string.charAt('x') - '0')
+
+怎么算出sum：
+
+1. carry
+
+2.
+  loop (start from end of string or array) {
+    int sum =..
+    sum+= ...
+    ...
+    sum%10;
+    carry = sum/10;
+  }

@@ -14,8 +14,7 @@ public class CombinationSum {
     public static void main(String[] args) {
         int[] arr = new int[]{1,2,5}; int target = 5;
         System.out.println(new CombinationSum().combinationSum(arr, target));
-
-        System.out.println(new CombinationSum().change(target, arr));
+        //System.out.println(new CombinationSum().change(target, arr));
     }
 
     public List<List<Integer>> combinationSum(int[] nums, int target) {
@@ -40,6 +39,9 @@ public class CombinationSum {
         }
     }
 
+
+
+    // 另一种写法-用global variable
     List<List<Integer>> res = new ArrayList<>();
     public int change(int amount, int[] coins) {
         Arrays.sort(coins);

@@ -1,7 +1,6 @@
 package category.Array.prefixSum;
 
 import category.model.TreeNode;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,50 +13,52 @@ import java.util.Map;
 public class PathSumIII {
 
     public static void main(String[] args) {
-
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(5);
+        root.left.left = new TreeNode(3);
+        root.left.left = new TreeNode(3);
+        PathSumIII test = new PathSumIII();
+        System.out.println(test.pathSumBacktrack(root, 8));
+        System.out.println(test.pathSumRecursive(root, 8));
     }
 
-//Brute force solution - Time Complexity: O(nlogn)
-    public int pathSum1(TreeNode root, int sum) {
-        if (root == null)
-            return 0;
-
-        return getPathFrom1(root, sum) + pathSum(root.left, sum) + pathSum(root.right, sum);
+    // Brute force - Time Complexity: O(nlogn)
+    public int pathSumRecursive(TreeNode root, int sum) {
+        if (root == null) return 0;
+        // Get the paths start from each node
+        return getPathFrom(root, sum) + pathSumRecursive(root.left, sum) + pathSumRecursive(root.right, sum);
     }
 
-    //Typical recursive DFS, no backtrack
-    public int getPathFrom1(TreeNode node, int sum) {
-        if (node == null)
-            return 0;
+    public int getPathFrom(TreeNode node, int sum) { //Typical recursive DFS, no backtrack
+        if (node == null) return 0;
 
-        return (node.val == sum ? 1 : 0) + getPathFrom1(node.left, sum - node.val) + getPathFrom1(node.right, sum - node.val);
+        int count = node.val == sum ? 1 : 0;
+        return count + getPathFrom(node.left, sum - node.val) + getPathFrom(node.right, sum - node.val);
     }
 
-// prefixSum solution
-    public int pathSum(TreeNode root, int sum) {
+    // PrefixSum solution
+    public int pathSumBacktrack(TreeNode root, int sum) {
         Map<Integer, Integer> prefixSumMap = new HashMap<>();
         prefixSumMap.put(0, 1);
         return backtrack(root, prefixSumMap, 0, sum);
     }
 
-    //Time Complexity O(n)
+    // Time Complexity O(n)
+    // Pre order traversal - firstly traverse whole left subtree of root, then traverse the whole right subtree of root
     public int backtrack(TreeNode node, Map<Integer, Integer> prefixSumMap, Integer currSum, int target) {
-        if (node == null)
-            return 0;
-        // update the prefix sum by adding the current val
+        if (node == null) return 0;
+        // update the prefix sum by adding the current node val
         currSum += node.val;
+        // get the number of valid previous prefix-sum which target + prefix-sum = currSum
+        int numPathToCurr = prefixSumMap.getOrDefault(currSum - target, 0);
         // update the map with the current sum, so the map is good to be passed to the next recursion
         prefixSumMap.put(currSum, prefixSumMap.getOrDefault(currSum, 0) + 1);
-        // get the number of valid path, ended by the current node
-        int numPathToCurr = prefixSumMap.getOrDefault(currSum - target, 0);  //currSum-target = the sum of qualified paths
 
         int res = numPathToCurr + backtrack(node.left, prefixSumMap, currSum, target) + backtrack(node.right, prefixSumMap, currSum, target);
 
-        //backtrack step: remove the current node from map
-        prefixSumMap.put(currSum, prefixSumMap.get(currSum) - 1);
-        //currSum -= node.val;
+        //backtrack: remove the current prefix sum which added current node value
+        prefixSumMap.put(currSum, prefixSumMap.get(currSum) - 1); //
 
         return res;
     }
-
 }

@@ -52,7 +52,7 @@ public class MaxAreaOfIsland {
                     //only get the copy of primitive value, but if you do pass object reference here (e.g. List)
                     //, all dfs methods will get a reference copy for the object so that they all pointing to the same object in heap
                     // the change on that object will be reflected other methods as they are pointing the same object, booooom!
-                    List<Integer> currArea = new ArrayList<Integer>();
+                    List<Integer> currArea = new ArrayList<>();
                     dfs1(grid, i, j, currArea);
                     if (currArea.get(currArea.size() - 1) > maxArea)
                         maxArea = currArea.get(currArea.size() - 1);

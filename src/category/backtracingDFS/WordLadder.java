@@ -3,21 +3,27 @@ package category.BacktracingDFS;
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/word-ladder-ii/
+ *
+ * BFS
+ *
  * Created by brianzhang on 10/12/18.
  */
 
 public class WordLadder {
     public static void main(String[] args) {
-
+        WordLadder wl = new WordLadder();
+        Set<String> dict = new HashSet<>(Arrays.asList("hot","dot","dog","lot","log","cog"));
+        System.out.println(wl.findLadders("hit", "cog", dict));
     }
-    public List<List<String>> findLadders(String start, String end, Set<String> dict) {
+
+    public List<List<String>> findLadders(String beginWord, String endWord, Set<String> dict) {
         List<List<String>> result = new ArrayList<>();
         LinkedList<WordNode> queue = new LinkedList<>();
-        queue.add(new WordNode(start, 1, null));
-        dict.add(end);
+        queue.add(new WordNode(beginWord, 1, null));
+        dict.add(endWord);
 
-        HashSet<String> visited = new HashSet<>();
-        HashSet<String> unvisited = new HashSet<>();
+        HashSet<String> visited = new HashSet<>(), unvisited = new HashSet<>();
         unvisited.addAll(dict);
 
         int minStep = 0, preNumSteps = 0;
@@ -25,13 +31,13 @@ public class WordLadder {
             WordNode top = queue.remove();
             String word = top.word;
             int currNumSteps = top.numSteps;
-            if (word.equals(end)) {
+            if (word.equals(endWord)) {
                 if (minStep == 0) {
                     minStep = top.numSteps;
                 }
                 if (top.numSteps == minStep && minStep != 0) {
                     //nothing
-                    ArrayList<String> t = new ArrayList<String>();
+                    ArrayList<String> t = new ArrayList<>();
                     t.add(top.word);
                     while (top.pre != null) {
                         t.add(0, top.pre.word);

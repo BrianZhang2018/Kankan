@@ -27,7 +27,7 @@ public class LongestIncreasingPathInMatrix{
     }
     
     public void dfs(int[][] matrix, int i, int j, int val, int count){
-        //if the count ==0, means this frist time enter into dfs method for this cell in the grid, no previous value, we should skip the below logic
+        //if the count ==0, means this first time enter into dfs method for this cell in the grid, no previous value, we should skip the below logic
         if(count != 0){
             if(i<0 || j<0 || i>=matrix.length || j>=matrix[0].length || matrix[i][j]<= val){
                 if(count > max){

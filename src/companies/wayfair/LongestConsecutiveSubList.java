@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class LongestConsecutiveSubList {
     public static void main(String[] args){
-        List<String> bl = new ArrayList<String>();
+        List<String> bl = new ArrayList<>();
         bl.add("Start");
         bl.add("haha");
         bl.add("aa");

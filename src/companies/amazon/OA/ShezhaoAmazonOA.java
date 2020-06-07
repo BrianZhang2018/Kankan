@@ -17,7 +17,7 @@ public class ShezhaoAmazonOA {
     // 1. MST 城市建路题。minimum spanning binaryTree，
     // https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=498030
     // 就是给的road是重复的
-    // 题目意思是有一定数量的城市，城市之间已经有了一些道路。还有一些可以供选择的道路来建设。每个新建的道路有 cost。问如果要连接所有的城市，新建路的最小的 cost 是多少。举个栗子：
+    // 题目意思是有一定数量的城市，城市之间已经有了一些道路。还有一些可以供选择的道路来建设。每个新建的道路有cost。问如果要连接所有的城市，新建路的最小的cost是多少。举个栗子：
     //Input 如下：
     //numTotalAvailableCities = 6
     //numTotalAvailableRoads = 3
@@ -34,7 +34,7 @@ public class ShezhaoAmazonOA {
         roadsAvailable.add(Arrays.asList(new Integer[]{4,5}));
         roadsAvailable.add(Arrays.asList(new Integer[]{2,3}));
 
-        int numNewRoadsContruct = 4;
+        int numNewRoadsConstruct = 4;
         List<List<Integer>> costNewRoadsConstruct = new ArrayList<>();
         costNewRoadsConstruct.add(Arrays.asList(new Integer[]{1,2,5}));
         costNewRoadsConstruct.add(Arrays.asList(new Integer[]{1,3,10}));
@@ -42,9 +42,9 @@ public class ShezhaoAmazonOA {
         costNewRoadsConstruct.add(Arrays.asList(new Integer[]{5,6,5}));
 
         ShezhaoAmazonOA test = new ShezhaoAmazonOA();
-        System.out.println(test.getMinimumCostConstruct(n, numTotalAvailableRoads, roadsAvailable, numNewRoadsContruct, costNewRoadsConstruct));
+        System.out.println(test.getMinimumCostConstruct(n, numTotalAvailableRoads, roadsAvailable, numNewRoadsConstruct, costNewRoadsConstruct));
     }
-    // unionfind solution without "weight" ccompare with KrushkalMinimumSpanningTree.java
+    // union-find solution without "weight" compare with KrushkalMinimumSpanningTree.java
     public int getMinimumCostConstruct(int n, int numTotalAvaiableRoads, List<List<Integer>> roadsAvailable,
                                        int numNewRoadsContruct,  List<List<Integer>> costNewRoadsConstruct) {
         if (n < 2) {

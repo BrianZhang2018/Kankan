@@ -3,14 +3,14 @@ package category.BFS.minimumsteps;
 import java.util.*;
 
 /**
- * Solution: Find the shortest path between each binaryTree
+ * Solve the problems: Find the shortest path between each binaryTree
  *
  * The worst case time complexity could be O(m^2 * n^2) (m = number of rows, n = number of columns)
  * since there are m * n trees and for each BFS worst case time complexity is O(m * n) too.
- * <p>
- * Created by brianzhang on 2/18/19.
- * <p>
+ *
  * https://www.youtube.com/watch?v=OFkLC30OxXM
+ *
+ * Created by brianzhang on 2/18/19.
  */
 public class CutOffTreesForGolfEventBFSGetMinSteps {
     public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class CutOffTreesForGolfEventBFSGetMinSteps {
 
         int m = forest.size();
         int n = forest.get(0).size();
-        PriorityQueue<int[]> pq = new PriorityQueue<int[]>((a, b) -> a[2] - b[2]);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[2] - b[2]);
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {

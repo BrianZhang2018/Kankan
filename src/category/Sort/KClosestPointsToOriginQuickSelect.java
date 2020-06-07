@@ -5,6 +5,8 @@ import java.util.Arrays;
 /**
  * https://leetcode.com/problems/k-closest-points-to-origin
  *
+ * Quick Select base on Quick sort
+ *
  * Created by brianzhang on 5/27/20.
  */
 public class KClosestPointsToOriginQuickSelect {
@@ -18,7 +20,7 @@ public class KClosestPointsToOriginQuickSelect {
     public int[][] kClosest(int[][] points, int K) {
         int len =  points.length, l = 0, r = len - 1;
         while (l <= r) {
-            int mid = helper(points, l, r);
+            int mid = helper1(points, l, r);
             if (mid == K) break;
             if (mid < K) {
                 l = mid + 1;
@@ -29,13 +31,14 @@ public class KClosestPointsToOriginQuickSelect {
         return Arrays.copyOfRange(points, 0, K);
     }
 
-    // my solution - easily understood
+    // my solution for quick select - easily understood
     private int helper(int[][] points, int l, int r) {
 
-        int[] pivot = points[r]; int pivotIdx = l;
+        int[] pivot = points[r]; // set rightmost as pivot
+        int pivotIdx = l;
         for (int i = l; i <= r; i++)
         {
-            // inserting elements of less value to the left of the pivot location
+            // place small element to the left of the pivot element
             if(compare(points[i], pivot) < 0)
             {
                 int[] temp = points[i];
@@ -53,13 +56,15 @@ public class KClosestPointsToOriginQuickSelect {
         return pivotIdx;
     }
 
-    // leetcode solution
+    // leetcode solution - quick select
     private int helper1(int[][] A, int l, int r) {
         int[] pivot = A[l];
         while (l < r) {
-            while (l < r && compare(A[r], pivot) >= 0) r--;
+            while (l < r && compare(A[r], pivot) >= 0)
+                r--;
             A[l] = A[r];
-            while (l < r && compare(A[l], pivot) <= 0) l++;
+            while (l < r && compare(A[l], pivot) <= 0)
+                l++;
             A[r] = A[l];
         }
         A[l] = pivot;

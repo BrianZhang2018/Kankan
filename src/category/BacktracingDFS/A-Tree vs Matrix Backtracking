@@ -1,0 +1,6 @@
+Tree Backtracking: e.g. PathSumIII
+Backtrack tree will traverse the unvisited subtree, e.g. pre-order traverse will traverse the right subtree when backtracking.
+
+Array: e.g. CombinationSum.java
+Loop an array, will traverse the next element in array on each level when backtrack
+

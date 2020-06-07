@@ -3,6 +3,8 @@ package category.BacktracingDFS;
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/word-ladder-ii/
+ *
  * Step-1: create a map that key-value is node -> all neighbors' node
  * Step-2: use dfs to traverse the neighbors' map to get all the paths
  */
@@ -61,12 +63,12 @@ public class WordLadderII {
         return res;
     }
 
-    //dfs + backtracking: the exit condition will have the return for backtracking, but the simply dfs don't need return.
+    //dfs + backtracking: the exit condition will have the return for backtracking, but the simple dfs don't need return.
     private void dfs(String beginWord, String endWord) {
         list.add(beginWord);
         if (beginWord.equals(endWord)) {
-            //deep copy -> new ArrayList<String>(list), otherwise the value will be changed
-            res.add(new ArrayList<String>(list));
+            res.add(new ArrayList<>(list)); //deep copy
+            return;
         }
 
         for (String next : neighborsMap.get(beginWord)) {

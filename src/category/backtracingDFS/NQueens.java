@@ -26,8 +26,8 @@ public class NQueens {
     private boolean[] cols;
     private boolean[] dign1; //正对角线
     private boolean[] dign2; //反对角线
-    private List<List<String>> res = new ArrayList<List<String>>();
-    private List<String> board = new ArrayList<String>();
+    private List<List<String>> res = new ArrayList<>();
+    private List<String> board = new ArrayList<>();
 
     public List<List<String>> solveNQueens(int n) {
         if(n ==0){
@@ -44,7 +44,7 @@ public class NQueens {
 
     public void nQueen(int row, int n){
         if(row == n){
-            res.add(new ArrayList<String>(board));
+            res.add(new ArrayList<>(board));
             return;
         }
         for(int col=0; col<n; col++){

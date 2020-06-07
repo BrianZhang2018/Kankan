@@ -1,9 +1,5 @@
 package category.unionfind;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 /**
  * Union find + weight + flat binaryTree
  * 

@@ -1,1 +1,6 @@
+Tree:
+O(Vertex+Edge) or O(N)
 https://www.educative.io/edpresso/what-is-depth-first-search
+
+Grid or Matrix:
+O(M*N) or O(N^2)

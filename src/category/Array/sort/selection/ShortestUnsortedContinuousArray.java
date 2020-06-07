@@ -10,10 +10,10 @@ package category.Array.sort.selection;
  */
 public class ShortestUnsortedContinuousArray {
     public static void main(String[] args) {
-        System.out.println(findUnsortedSubarray(new int[]{2, 6, 4, 8, 10, 9, 15}));
+        System.out.println(findUnsortedSubArray(new int[]{2, 6, 4, 8, 10, 9, 15}));
     }
 
-    public static int findUnsortedSubarray(int[] nums) {
+    public static int findUnsortedSubArray(int[] nums) {
 
         int l = nums.length, r = 0;
 

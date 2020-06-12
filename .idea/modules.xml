@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Documents/workspace/InterviewPath/InterviewPath.iml" filepath="$USER_HOME$/Documents/workspace/InterviewPath/InterviewPath.iml" />
-      <module fileurl="file://$USER_HOME$/workspace/InterviewTest/InterviewTest.iml" filepath="$USER_HOME$/workspace/InterviewTest/InterviewTest.iml" />
+      <module fileurl="file://$USER_HOME$/workspace/InterviewPrep/InterviewTest.iml" filepath="$USER_HOME$/workspace/InterviewPrep/InterviewTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/KillLeetCode.iml" filepath="$PROJECT_DIR$/KillLeetCode.iml" />
     </modules>
   </component>

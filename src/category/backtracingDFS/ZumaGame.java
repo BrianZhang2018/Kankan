@@ -29,8 +29,7 @@ public class ZumaGame {
         if(board.isEmpty())
             return 0;
 
-        int i=0;
-        int j=0;
+        int i=0, j=0;
         int ans = Integer.MAX_VALUE;
         while(i<board.length()){ //loop color ball in the board
             while(j<board.length() && (board.charAt(i) == board.charAt(j))){

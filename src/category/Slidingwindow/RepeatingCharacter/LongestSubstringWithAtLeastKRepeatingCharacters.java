@@ -35,8 +35,7 @@ public class LongestSubstringWithAtLeastKRepeatingCharacters {
     public int longestKUniqueRepeatingCharacter(String s, int k, int cNum){
         int low = 0, high = 0;
         int[] repeatNum = new int[26];
-        int uniqueCNum = 0;
-        int uniqueKNum = 0;
+        int uniqueCNum = 0, uniqueKNum = 0;
         int res = 0;
 
         while(high < s.length()){

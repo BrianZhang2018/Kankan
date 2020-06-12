@@ -39,8 +39,6 @@ public class CombinationSum {
         }
     }
 
-
-
     // 另一种写法-用global variable
     List<List<Integer>> res = new ArrayList<>();
     public int change(int amount, int[] coins) {

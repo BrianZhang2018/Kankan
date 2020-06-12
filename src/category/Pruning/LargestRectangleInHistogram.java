@@ -94,8 +94,7 @@ public class LargestRectangleInHistogram{
                 int prevIndex = s.isEmpty() ? -1 : s.peek();
                 maxArea = Math.max(maxArea, currHeight * (i - prevIndex - 1)); //i - prevIndex -1 = width
             }
-            //create a "increase stack",
-            //store the index rather than the value into the stack - (monotone stack feature, but not always)
+            //create a "increase stack", store the index rather than the value into the stack - (monotone stack feature, but not always)
             s.push(i);
         }
         

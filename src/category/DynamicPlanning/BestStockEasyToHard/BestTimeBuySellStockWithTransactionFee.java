@@ -3,7 +3,7 @@ package category.DynamicPlanning.BestStockEasyToHard;
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
  *
- * *** 这题其实也很好理解，只要自己拿个例子走一遍，就很好理解了。
+ * 这题其实也很好理解，只要自己拿个例子走一遍，就很好理解了。
  *
  * Created by brianzhang on 3/31/19.
  */

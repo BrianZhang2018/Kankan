@@ -74,7 +74,4 @@ public class WallsAndGates {
         dfs(i+1, j, distance + 1, rooms);
         dfs(i-1, j, distance + 1, rooms);
     }
-
-
-
 }

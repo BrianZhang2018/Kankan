@@ -18,6 +18,8 @@ public class CoinChangeOutputCombination {
         int[] coins = {1, 2, 5}; System.out.println(coinChange.coinChangeDFS(coins, 11));
     }
 
+    List<Integer> fewestCombination; int fewest = Integer.MAX_VALUE;
+
     public String coinChangeDFS(int[] coins, int amount) {
         if (coins == null || coins.length == 0 || amount < 0) return null;
 
@@ -27,8 +29,6 @@ public class CoinChangeOutputCombination {
         dfsHelper(boxedArr, 0, amount, new ArrayList<>());
         return Arrays.toString(fewestCombination.toArray(new Integer[fewestCombination.size()]));
     }
-
-    List<Integer> fewestCombination; int fewest = Integer.MAX_VALUE;
 
     /**
      * DFS + 剪枝法

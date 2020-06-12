@@ -44,20 +44,19 @@ public class PathSumIII {
     }
 
     // Time Complexity O(n)
-    // Pre order traversal - firstly traverse whole left subtree of root, then traverse the whole right subtree of root
+    // Pre-order traversal - firstly traverse whole left subtree of root, then traverse the whole right subtree of root
     public int backtrack(TreeNode node, Map<Integer, Integer> prefixSumMap, Integer currSum, int target) {
         if (node == null) return 0;
-        // update the prefix sum by adding the current node val
+
         currSum += node.val;
         // get the number of valid previous prefix-sum which target + prefix-sum = currSum
         int numPathToCurr = prefixSumMap.getOrDefault(currSum - target, 0);
-        // update the map with the current sum, so the map is good to be passed to the next recursion
+        // update the map with the current sum
         prefixSumMap.put(currSum, prefixSumMap.getOrDefault(currSum, 0) + 1);
 
         int res = numPathToCurr + backtrack(node.left, prefixSumMap, currSum, target) + backtrack(node.right, prefixSumMap, currSum, target);
 
-        //backtrack: remove the current prefix sum which added current node value
-        prefixSumMap.put(currSum, prefixSumMap.get(currSum) - 1); //
+        prefixSumMap.put(currSum, prefixSumMap.get(currSum) - 1); //backtrack: remove the current prefix sum which added current node value
 
         return res;
     }

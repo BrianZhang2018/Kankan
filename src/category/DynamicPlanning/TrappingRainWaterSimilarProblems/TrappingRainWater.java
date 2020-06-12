@@ -37,7 +37,7 @@ public class TrappingRainWater {
         }
         System.out.println(Arrays.toString(maxRight));
 
-        // Current bar can trap water = "The minimum height of (left-max and right-max height) - current height"
+        // Current bar can trap water = "The minimum height of (left_max and right_max height) - current height"
         for (int i = 0; i < height.length - 1; i++) {
             int min = Math.min(maxLeft[i], maxRight[i]);
             if (min > height[i]) {

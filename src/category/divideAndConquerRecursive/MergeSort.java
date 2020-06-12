@@ -1,5 +1,7 @@
 package category.DivideAndConquerRecursive;
 
+import java.util.Arrays;
+
 /**
  * MergeSort is Divide and Conquer algorithm
  * <p>
@@ -7,15 +9,10 @@ package category.DivideAndConquerRecursive;
  */
 public class MergeSort {
     public static void main(String a[]) {
-
         MergeSort mms = new MergeSort();
-
         int[] inputArr = new int[]{2,3,25,25,6};
         mms.sort(inputArr);
-        for (int i : inputArr) {
-            System.out.print(i);
-            System.out.print(" ");
-        }
+        System.out.println(Arrays.toString(inputArr));
     }
 
     private int[] array;

@@ -11,6 +11,27 @@ public class AddStrings {
         System.out.println(addStrings("0", "9"));
     }
 
+    public static int maxVowels(String s, int k) {
+        String vowels = "aeiou";
+
+        int max = 0;
+        for(int i=0; i<s.length(); i++){
+            int count = 0;
+            for(int j=i; j<s.length() && j<i+k; j++){
+                if(i == 3)
+                    System.out.println(111);
+                if(vowels.indexOf(s.charAt(j)) >= 0){
+                    count++;
+                    System.out.println("hahah");
+                }
+
+            }
+            max = Math.max(count, max);
+        }
+
+        return max;
+    }
+
     public static String addStrings(String num1, String num2) {
 
         StringBuilder sb = new StringBuilder();

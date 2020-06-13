@@ -2,9 +2,9 @@ package category.string;
 
 /**
  * leetcode: 28
-   https://leetcode.com/problems/implement-strstr/discuss/13167/Java-KMP-algorithm
-   https://www.youtube.com/watch?time_continue=139&v=kBW6oPaVjq0
-     http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html
+ * https://leetcode.com/problems/implement-strstr/discuss/13167/Java-KMP-algorithm
+ * https://www.youtube.com/watch?time_continue=139&v=kBW6oPaVjq0
+ * http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html
  */
 
 public class KMPAlgorithm {

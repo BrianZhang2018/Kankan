@@ -27,13 +27,13 @@ public class TrappingRainWater {
         //got the left and right max height distribution
         maxLeft[0] = height[0];
         for (int i = 1; i < height.length - 1; i++) {
-            maxLeft[i] = Math.max(maxLeft[i - 1], height[i]);
+            maxLeft[i] = Math.max(maxLeft[i - 1], height[i]); //DP
         }
         System.out.println(Arrays.toString(maxLeft));
 
         maxRight[height.length - 1] = height[height.length - 1];
         for (int i = height.length - 2; i >= 0; i--) {
-            maxRight[i] = Math.max(maxRight[i + 1], height[i]);
+            maxRight[i] = Math.max(maxRight[i + 1], height[i]); //DP
         }
         System.out.println(Arrays.toString(maxRight));
 

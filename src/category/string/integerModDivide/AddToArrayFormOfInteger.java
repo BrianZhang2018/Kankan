@@ -1,4 +1,4 @@
-package category.Array.integerModDivide;
+package category.string.integerModDivide;
 
 import java.util.*;
 

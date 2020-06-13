@@ -2,36 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/greedy/BestTimeToBuyAndSellStockI-peak-Valley.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/BacktracingDFS/AllPathsFromSourceToTarget.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockEasyToHard/BestTimeToBuyAndSellStockI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/PriorityQueue/MeetingRoomII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/easy/MaximumNumberOfVowelsInSubstring.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/greedy/BestTimeToBuyAndSellStockII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/peak-valley-problems" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/tree/nary/NaryPreorderTraversal.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/category/DataStructure/MeetingRoomII.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Array/integerModDivide/AddStrings.java" afterPath="$PROJECT_DIR$/src/category/Array/integerModDivide/AddStrings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Array/integerModDivide/套路" afterPath="$PROJECT_DIR$/src/category/Array/integerModDivide/套路" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Array/prefixSum/PathSumIII.java" afterPath="$PROJECT_DIR$/src/category/Array/prefixSum/PathSumIII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BFS/WallsAndGates.java" afterPath="$PROJECT_DIR$/src/category/BFS/WallsAndGates.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BinaryTreeAndBinarySerach/BinaryTreeMaximumPathSum.java" afterPath="$PROJECT_DIR$/src/category/BinaryTreeAndBinarySerach/BinaryTreeMaximumPathSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DFS/MaxAreaOfIsland.java" afterPath="$PROJECT_DIR$/src/category/DFS/MaxAreaOfIsland.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DFS/PathSumII.java" afterPath="$PROJECT_DIR$/src/category/DFS/PathSumII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockEasyToHard/BestTimeBuySellStockWithTransactionFee.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockEasyToHard/BestTimeBuySellStockWithTransactionFee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockEasyToHard/BestTimeToBuyAndSellStockIIIAtMostTwoTransactions.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockEasyToHard/BestTimeToBuyAndSellStockIIIAtMostTwoTransactions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathToReachATarget/CoinChangeOutputCombination.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathToReachATarget/CoinChangeOutputCombination.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Pruning/LargestRectangleInHistogram.java" afterPath="$PROJECT_DIR$/src/category/Pruning/LargestRectangleInHistogram.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Slidingwindow/RepeatingCharacter/LongestSubstringWithAtLeastKRepeatingCharacters.java" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/RepeatingCharacter/LongestSubstringWithAtLeastKRepeatingCharacters.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/backtracingDFS/CombinationSum.java" afterPath="$PROJECT_DIR$/src/category/backtracingDFS/CombinationSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/backtracingDFS/ZumaGame.java" afterPath="$PROJECT_DIR$/src/category/backtracingDFS/ZumaGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/divideAndConquerRecursive/MergeSort.java" afterPath="$PROJECT_DIR$/src/category/divideAndConquerRecursive/MergeSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/divideAndConquerRecursive/QuickSort.java" afterPath="$PROJECT_DIR$/src/category/divideAndConquerRecursive/QuickSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/高频题/TwoMatrixBoard/ProblemsList" afterPath="$PROJECT_DIR$/src/高频题/TwoMatrixBoard/ProblemsList" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/高频题/problems" afterPath="$PROJECT_DIR$/src/高频题/problems" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/string/KMPAlgorithm.java" afterPath="$PROJECT_DIR$/src/category/string/KMPAlgorithm.java" />
     </list>
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
@@ -93,48 +67,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TrappingRainWater.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java">
+      <file leaf-file-name="SemaphoreTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/javabasic/SemaphoreTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="126">
+              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BestTimeToBuyAndSellStockII.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/greedy/BestTimeToBuyAndSellStockII.java">
+      <file leaf-file-name="SumEachDigitInANumber.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/grubhub/problems/SumEachDigitInANumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="306">
+              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LargestRectangleInHistogram.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/MonotoneQueueStack/increasing/LargestRectangleInHistogram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-522">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LargestRectangleInHistogram.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/Pruning/LargestRectangleInHistogram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="19" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaximalRectangleIn2DMatrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/Pruning/MaximalRectangleIn2DMatrix.java">
+      <file leaf-file-name="SudokuGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/javabasic/SudokuGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -143,51 +97,77 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problems" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/高频题/problems">
+      <file leaf-file-name="IntegerToEnglishWords.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/string/IntegerToEnglishWords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="-16">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProblemsList" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/高频题/TwoMatrixBoard/ProblemsList">
+      <file leaf-file-name="IsomorphicString.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/string/IsomorphicString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="A常考基础算法" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/高频题/highFrequent/A常考基础算法">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="peak-valley-problems" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/peak-valley-problems">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaxAreaOfIsland.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/高频题/highFrequent/MaxAreaOfIsland.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
+            <state relative-caret-position="126">
               <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KMPAlgorithm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/string/KMPAlgorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="套路" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/Array/integerModDivide/套路">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddBinary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/Array/integerModDivide/AddBinary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="e#307#308#0" expanded="false" />
+                <element signature="e#368#369#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddStrings.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/category/Array/integerModDivide/AddStrings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="45" />
+              <folding>
+                <element signature="e#205#206#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayStringCharToInteger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/Array/integerModDivide/PlayStringCharToInteger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -263,8 +243,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/category/unionfind/ConnnectingCtitiesWithMinumumCost.java" />
-        <option value="$PROJECT_DIR$/src/category/unionfind/ConnectingCtitiesWithMinumumCost.java" />
         <option value="$PROJECT_DIR$/src/category/unionfind/ConnectingCitiesWithMinmumCost.java" />
         <option value="$PROJECT_DIR$/src/companies/bloomberg/CountNumberOfPossibleTriangle.java" />
         <option value="$PROJECT_DIR$/src/companies/wayfair/LongestConsecutiveSubList.java" />
@@ -282,7 +260,6 @@
         <option value="$PROJECT_DIR$/src/category/Array/integerModDivide/PlayStringCharToInteger.java" />
         <option value="$PROJECT_DIR$/src/category/Array/integerModDivide/AddToArrayFormOfInteger.java" />
         <option value="$PROJECT_DIR$/src/category/Array/integerModDivide/套路" />
-        <option value="$PROJECT_DIR$/src/category/Array/integerModDivide/AddStrings.java" />
         <option value="$PROJECT_DIR$/src/category/Slidingwindow/easy/MaximumNumberofVowelsInSubstring.java" />
         <option value="$PROJECT_DIR$/src/category/Slidingwindow/easy/MaximumNumberOfVowelsInSubstring.java" />
         <option value="$PROJECT_DIR$/src/category/Slidingwindow/RepeatingCharacter/LongestSubstringWithAtLeastKRepeatingCharacters.java" />
@@ -304,16 +281,19 @@
         <option value="$PROJECT_DIR$/src/category/PriorityQueue/MeetingRoomII.java" />
         <option value="$PROJECT_DIR$/src/category/DivideAndConquerRecursive/MergeSort.java" />
         <option value="$PROJECT_DIR$/src/category/DivideAndConquerRecursive/QuickSort.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/remitly/CurrencyStream.java" />
         <option value="$USER_HOME$/workspace/InterviewPrep/src/remitly/BestTimeToBuyAndSellStockI.java" />
         <option value="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockEasyToHard/BestTimeToBuyAndSellStockI.java" />
         <option value="$PROJECT_DIR$/src/category/greedy/BestTimeToBuyAndSellStockII.java" />
         <option value="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockEasyToHard/BestTimeBuySellStockWithTransactionFee.java" />
         <option value="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockEasyToHard/BestTimeToBuyAndSellStockIIIAtMostTwoTransactions.java" />
-        <option value="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java" />
         <option value="$PROJECT_DIR$/src/category/Pruning/LargestRectangleInHistogram.java" />
         <option value="$PROJECT_DIR$/src/高频题/problems" />
+        <option value="$PROJECT_DIR$/src/高频题/peak-valley-problems" />
         <option value="$PROJECT_DIR$/src/高频题/TwoMatrixBoard/ProblemsList" />
+        <option value="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/remitly/CurrencyStream.java" />
+        <option value="$PROJECT_DIR$/src/category/string/KMPAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/category/Array/integerModDivide/AddStrings.java" />
       </list>
     </option>
   </component>
@@ -738,7 +718,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="高频题" />
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="string" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Array" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Array" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integerModDivide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterviewPrep" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -789,14 +849,14 @@
       <recent name="category.DynamicPlanning.MiniMaximumPathToReachATarget" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/高频题" />
       <recent name="$PROJECT_DIR$/src/category/greedy" />
       <recent name="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockEasyToHard" />
       <recent name="$PROJECT_DIR$/src/category/DynamicPlanning" />
       <recent name="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathToReachATarget" />
-      <recent name="$PROJECT_DIR$/src/category/AnalysisDiagrams" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TrappingRainWater">
+  <component name="RunManager" selected="Application.CurrencyStream">
     <configuration default="false" name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1522,9 +1582,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TrappingRainWater" />
-        <item index="1" class="java.lang.String" itemvalue="Application.BestTimeToBuyAndSellStockI" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CurrencyStream" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CurrencyStream" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TrappingRainWater" />
+        <item index="2" class="java.lang.String" itemvalue="Application.BestTimeToBuyAndSellStockI" />
         <item index="3" class="java.lang.String" itemvalue="Application.QuickSort" />
         <item index="4" class="java.lang.String" itemvalue="Application.MergeSort" />
       </list>
@@ -1639,7 +1699,7 @@
       <workItem from="1589647796966" duration="26183000" />
       <workItem from="1589839224780" duration="32647000" />
       <workItem from="1590459715968" duration="31221000" />
-      <workItem from="1591468144991" duration="24713000" />
+      <workItem from="1591468144991" duration="31028000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -1692,7 +1752,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1273741000" />
+    <option name="totallyTimeSpent" value="1280056000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1726,7 +1786,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67945206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4287671" sideWeight="0.48707592" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6871287" sideWeight="0.49434572" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68630135" sideWeight="0.49434572" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3101777" sideWeight="0.49224806" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6739726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2059,12 +2119,6 @@
           <option name="timeStamp" value="590" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/Array/integerModDivide/AddStrings.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="604" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/category/DivideAndConquerRecursive/QuickSort.java</url>
           <line>19</line>
           <properties />
@@ -2080,7 +2134,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="609" />
+      <option name="time" value="611" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2089,136 +2143,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/category/BacktracingDFS/FactorCombination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BacktracingDFS/CombinationSumII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BacktracingDFS/CombinationSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DFS/DepthFirstSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DFS/ExpressionAddOperators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-433">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DFS/LongestIncreasingPathDicts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DFS/LongestIncreasingPathInMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DFS/CountCompleteTreeNodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BacktracingDFS/AllPathsFromSourceToTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DFS/MaxAreaOfIsland.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DFS/MaxAreaOfIslandSolution1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DFS/NestedListWeightSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DFS/PathSumII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/PriorityQueue/MeetingRoomII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/category/PriorityQueue/SlidingWindowMedianBST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -2342,25 +2266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/remitly/CurrencyStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/remitly/BestTimeToBuyAndSellStockI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/BestStockEasyToHard/Analysis">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2422,10 +2327,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/高频题/TwoMatrixBoard/ProblemsList">
+    <entry file="file://$PROJECT_DIR$/src/category/Pruning/MaximalRectangleIn2DMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="126">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/DecodeNumber-sh.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/高频题/problems">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2438,6 +2356,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/高频题/highFrequent/常考基础算法">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/高频题/TwoMatrixBoard/ProblemsList">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/高频题/peak-valley-problems">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Pruning/LargestRectangleInHistogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="385" column="15" lean-forward="false" selection-start-line="385" selection-start-column="15" selection-end-line="385" selection-end-column="15" />
+          <folding>
+            <element signature="e#11985#11986#0" expanded="true" />
+            <element signature="e#12016#12017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/category/greedy/BestTimeToBuyAndSellStockII.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -2446,7 +2415,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/Pruning/MaximalRectangleIn2DMatrix.java">
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/remitly/BestTimeToBuyAndSellStockI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/remitly/CurrencyStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/javabasic/NumberToHexDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/javabasic/CountPrimeNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/javabasic/BitSetExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -2454,48 +2462,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/Pruning/LargestRectangleInHistogram.java">
+    <entry file="file://$PROJECT_DIR$/src/category/javabasic/PriorityQueuePlay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="19" selection-end-column="80" />
+        <state relative-caret-position="126">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/DecodeNumber-sh.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/高频题/highFrequent/A常考基础算法">
+    <entry file="file://$PROJECT_DIR$/src/category/javabasic/SortHashMapByValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/peak-valley-problems">
+    <entry file="file://$PROJECT_DIR$/src/category/javabasic/SemaphoreTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java">
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/grubhub/problems/SumEachDigitInANumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="306">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/高频题/problems">
+    <entry file="file://$PROJECT_DIR$/src/category/javabasic/SudokuGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/string/IntegerToEnglishWords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/string/IsomorphicString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/string/KMPAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Array/integerModDivide/套路">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Array/integerModDivide/AddBinary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#307#308#0" expanded="false" />
+            <element signature="e#368#369#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Array/integerModDivide/PlayStringCharToInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Array/integerModDivide/AddStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="45" />
+          <folding>
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

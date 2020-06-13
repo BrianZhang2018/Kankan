@@ -1,4 +1,4 @@
-package category.Array.integerModDivide;
+package category.string.integerModDivide;
 
 /**
  * https://leetcode.com/problems/add-strings/
@@ -28,7 +28,6 @@ public class AddStrings {
             }
             max = Math.max(count, max);
         }
-
         return max;
     }
 
@@ -36,7 +35,7 @@ public class AddStrings {
 
         StringBuilder sb = new StringBuilder();
         int carry = 0;
-        int m = num1.length()-1,  n = num2.length()-1;
+        int m = num1.length()-1, n = num2.length()-1;
 
         while(m>=0 || n>=0){
             int sum = carry;
@@ -57,6 +56,5 @@ public class AddStrings {
         }
 
         return sb.reverse().toString();
-
     }
 }

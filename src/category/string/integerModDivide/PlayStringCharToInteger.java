@@ -1,4 +1,4 @@
-package category.Array.integerModDivide;
+package category.string.integerModDivide;
 
 /**
  * Created by brianzhang on 6/7/20.
@@ -13,6 +13,5 @@ public class PlayStringCharToInteger {
         System.out.println(num1);  System.out.println(num2);
 
         //
-
     }
 }

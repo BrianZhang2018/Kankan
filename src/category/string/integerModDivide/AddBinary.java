@@ -1,4 +1,4 @@
-package category.Array.integerModDivide;
+package category.string.integerModDivide;
 
 /**
  * https://leetcode.com/problems/add-binary/

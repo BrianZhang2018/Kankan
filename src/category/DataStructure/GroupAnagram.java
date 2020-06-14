@@ -1,17 +1,16 @@
 package category.DataStructure;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
+ * https://leetcode.com/problems/group-anagrams/
+ *
  * Created by brianzhang on 11/24/18.
  */
 public class GroupAnagram {
 
     public static void main(String[] args) {
-        System.out.println(groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"}).size());
+        groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"}).forEach(a -> System.out.println(Arrays.toString(a.toArray())));
     }
 
     public static List<List<String>> groupAnagrams(String[] strs) {
@@ -20,18 +19,19 @@ public class GroupAnagram {
             return null;
 
         List<List<String>> res = new ArrayList();
-        HashMap<String, List<String>> map = new HashMap();
+        Map<String, List<String>> map = new HashMap();
         for (String str : strs) {
-            char[] charArr = str.toCharArray();
-            Arrays.sort(charArr);
+            char[] chars = str.toCharArray();
+            Arrays.sort(chars);
             List temp;
-            if (map.get(String.valueOf(charArr)) != null) {
-                temp = map.get(String.valueOf(charArr));
+            String sortedStr = new String(chars);
+            if (map.containsKey(sortedStr)) {
+                temp = map.get(sortedStr);
             } else {
                 temp = new ArrayList();
             }
             temp.add(str);
-            map.put(String.valueOf(charArr), temp);
+            map.put(sortedStr, temp);
         }
 
         res.addAll(map.values());

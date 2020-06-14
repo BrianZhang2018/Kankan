@@ -1,4 +1,4 @@
-package category.string.integerModDivide;
+package category.string.numberModDivide;
 
 /**
  * Created by brianzhang on 6/7/20.

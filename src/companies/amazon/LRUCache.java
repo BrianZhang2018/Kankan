@@ -1,23 +1,27 @@
 package companies.amazon;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Solution: (HashMap + Double LinkedList) = Java LinkedHashMap
  * 
  * https://medium.com/@krishankantsinghal/my-first-blog-on-medium-583159139237
- * <p>
+ *
  * So our Implementation of LRU cache will have HashMap and Doubly LinkedList.
  * In Which HashMap will hold the keys and address of the Nodes of Doubly LinkedList . And Doubly LinkedList will hold the values of keys.
- * <p>
- * As We need to keep track of Recently used entries. We will remove element from bottom and add element on the top
- * of LinkedList and whenever any entry is accessed again, it will be moved to the top. So, recently used entries will be on Top and Least used will be on Bottom.
- * <p>
+ *
+ * As We need to keep track of recently used entries. We will remove element from bottom and add element on the top of LinkedList
+ * and whenever any entry is accessed again, it will be moved to the top. So, recently used entries will be on Top and Least used will be on Bottom.
+ *
  */
 public class LRUCache {
     public static void main(String[] args) {
         LRUCache cache = new LRUCache(2 /* capacity */);
         cache.put(1, 1);
+        cache.put(2, 2);
         cache.put(2, 2);
         System.out.println(cache.get(1));       // returns 1
         cache.put(3, 3);    // evicts key 2
@@ -26,6 +30,14 @@ public class LRUCache {
         cache.get(1);       // returns -1 (not found)
         cache.get(3);       // returns 3
         cache.get(4);       // returns 4
+
+
+        Map<Integer, ArrayList<Integer>> map = new HashMap<>();
+        map.put(1, new ArrayList<>(1));
+        map.put(2, new ArrayList<>(Arrays.asList(1,3)));
+
+        System.out.println(map.size());
+
     }
 
     private int cacheSize;

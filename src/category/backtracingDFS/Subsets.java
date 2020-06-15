@@ -5,7 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * T: O(n*2^n)
+ * Subsets: 2^N , since each element could be absent or present.
+ *
+ * So, if N numbers, the T: O(n*2^n)
  * S: O(n)
  * Created by brianzhang on 7/25/18.
  */

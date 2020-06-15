@@ -9,22 +9,23 @@ import java.util.Map;
  */
 public class LRU2<K, V> extends LinkedHashMap<K, V> {
 
-    private static int MAX_CACHE_SIZE = 10;
+    public static void main(String[] args) {
+        LRU2 test = new LRU2(3);
+    }
 
-    public LRU2(int maxSize) {
-        super(MAX_CACHE_SIZE, 1.0f);
+    private int MAX_CACHE_SIZE;
 
+    public LRU2(int maxCacheSize) {
+        super(maxCacheSize);
+        this.MAX_CACHE_SIZE = maxCacheSize;
     }
 
     @Override
     protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
-
         if (size() > MAX_CACHE_SIZE) {
             return true;
         } else {
             return false;
         }
-
     }
-
 }

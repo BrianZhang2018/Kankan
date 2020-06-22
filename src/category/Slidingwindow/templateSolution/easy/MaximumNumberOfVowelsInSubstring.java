@@ -13,7 +13,7 @@ public class MaximumNumberOfVowelsInSubstring {
         System.out.println(maxVowels( "abciiidef",  3));
     }
 
-    // my solution
+    // My solution
     public static int maxVowels(String s, int k) {
         String vowels = "aeiou";
 

@@ -23,13 +23,9 @@ public class GroupAnagram {
         for (String str : strs) {
             char[] chars = str.toCharArray();
             Arrays.sort(chars);
-            List temp;
             String sortedStr = new String(chars);
-            if (map.containsKey(sortedStr)) {
-                temp = map.get(sortedStr);
-            } else {
-                temp = new ArrayList();
-            }
+
+            List<String> temp = map.getOrDefault(sortedStr, new ArrayList<>());
             temp.add(str);
             map.put(sortedStr, temp);
         }

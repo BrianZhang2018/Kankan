@@ -1,4 +1,4 @@
-package category.Array.slotseparation;
+package category.Array.slotSeparation;
 
 import java.util.Arrays;
 

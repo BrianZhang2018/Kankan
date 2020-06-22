@@ -10,10 +10,6 @@ public class TwoSum3 {
 
     HashMap<Integer, Integer> map = new HashMap();
 
-    /**
-     * @param number: An integer
-     * @return: nothing
-     */
     public void add(int number) {
         // write your code here
         map.put(number, map.getOrDefault(number, 0) + 1);

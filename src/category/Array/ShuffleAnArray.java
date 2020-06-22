@@ -1,6 +1,7 @@
 package category.Array;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  * https://leetcode.com/problems/shuffle-an-array/
@@ -25,9 +26,12 @@ public class ShuffleAnArray {
         System.out.println(Arrays.toString(test.shuffle()));
     }
 
-    int[] nums;
+    private int[] nums;
+    private Random rand;
+
     public ShuffleAnArray(int[] nums) {
         this.nums = nums;
+        rand = new Random();
     }
 
     /** Resets the array to its original configuration and return it. */
@@ -35,7 +39,34 @@ public class ShuffleAnArray {
         return nums;
     }
 
+    // 容易理解的版本
     /** Returns a random shuffling of the array. */
+    public int[] shuffle() {
+        if(nums == null || nums.length<2)
+            return nums;
+
+        int[] copy = nums.clone();
+        for(int i=0; i<copy.length; i++){
+            int r = rand.nextInt(i + 1);
+            int temp = copy[r];
+            copy[r] = copy[i];
+            copy[i] = temp;
+        }
+
+        return copy;
+    }
+
+    /** Simple Version **/
+    /*
+    int[] nums;
+    public ShuffleAnArray(int[] nums) {
+        this.nums = nums;
+    }
+
+    public int[] reset() {
+        return nums;
+    }
+
     public int[] shuffle() {
         if(nums == null || nums.length<2)
             return nums;
@@ -48,5 +79,5 @@ public class ShuffleAnArray {
         }
 
         return rand;
-    }
+    }*/
 }

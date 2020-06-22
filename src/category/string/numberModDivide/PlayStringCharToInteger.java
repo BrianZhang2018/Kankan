@@ -11,7 +11,7 @@ public class PlayStringCharToInteger {
         // get digit from string
         String nums = "123";
         Integer num1 = nums.charAt(2) - '0';
-        Integer num2 =Integer.parseInt(String.valueOf(nums.charAt(2)));
+        Integer num2 = Integer.parseInt(String.valueOf(nums.charAt(2)));
         Integer num3 = Character.getNumericValue(nums.charAt(2));
         System.out.println(num1);  System.out.println(num2); System.out.println(num3);
 

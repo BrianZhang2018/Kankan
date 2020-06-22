@@ -8,7 +8,7 @@ import java.util.List;
  * 
  * Created by brianzhang on 11/24/18.
  */
-public class FindAllAnagramsFromAString {
+public class FindAllAnagramsInAString {
     public static void main(String[] args) {
         System.out.println(findAnagrams("cbaebabacd", "abc"));
     }

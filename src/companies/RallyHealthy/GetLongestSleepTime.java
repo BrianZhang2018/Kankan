@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Rally Healthy - OA
  * James has all week meeting, please find a longest sleep time between the meetings.
- * <p>
+ *
  * Created by brianzhang on 3/22/20.
  */
 public class GetLongestSleepTime {
@@ -45,7 +45,6 @@ public class GetLongestSleepTime {
             } else {
                 return s1.dayOfWeek.compareTo(s2.dayOfWeek);
             }
-
         };
         Collections.sort(list, dateComparator);
 

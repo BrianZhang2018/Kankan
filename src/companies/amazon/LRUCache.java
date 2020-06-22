@@ -31,13 +31,11 @@ public class LRUCache {
         cache.get(3);       // returns 3
         cache.get(4);       // returns 4
 
-
         Map<Integer, ArrayList<Integer>> map = new HashMap<>();
         map.put(1, new ArrayList<>(1));
         map.put(2, new ArrayList<>(Arrays.asList(1,3)));
 
         System.out.println(map.size());
-
     }
 
     private int cacheSize;

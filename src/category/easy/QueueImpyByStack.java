@@ -7,8 +7,8 @@ import java.util.Stack;
  */
 public class QueueImpyByStack {
 
-    Stack<Integer> input = new Stack<Integer>();
-    Stack<Integer> output = new Stack<Integer>();
+    Stack<Integer> input = new Stack<>();
+    Stack<Integer> output = new Stack<>();
     int peek = 0;
 
     /**

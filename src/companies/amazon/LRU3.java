@@ -30,6 +30,8 @@ public class LRU3 {
             ll.remove(key);
             ll.add(key);
 
+
+
             //if(map.s)
         }
 

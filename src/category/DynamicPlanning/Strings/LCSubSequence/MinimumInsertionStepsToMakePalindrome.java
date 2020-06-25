@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Strings;
+package category.DynamicPlanning.Strings.LCSubSequence;
 
 /**
  * https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
@@ -12,14 +12,10 @@ package category.DynamicPlanning.Strings;
 public class MinimumInsertionStepsToMakePalindrome {
 
     public static void main(String[] args) {
-        String s = "leetcode";
+        String s = "zzazz";
         MinimumInsertionStepsToMakePalindrome test = new MinimumInsertionStepsToMakePalindrome();
         System.out.println(test.minInsertions(s));
-
-
-        String sReverse = new StringBuilder(s).reverse().toString();
-        int lcs = test.longestCommonSubSequence(s.toCharArray(), sReverse.toCharArray());
-        System.out.println(s.length() - lcs);
+        System.out.println(test.minInsertionsLCS(s));
     }
 
     //bottom-up, 递推
@@ -32,7 +28,7 @@ public class MinimumInsertionStepsToMakePalindrome {
         int[][] dp = new int[n][n];
 
         for(int l=2; l<=n; l++){ // 第一层for loop是子问题的规模or长度
-            for(int i=0, j=l-1; j<n; i++, j++){//
+            for(int i=0, j=l-1; j<n; i++, j++){
                 dp[i][j] = s.charAt(i) == s.charAt(j) ? dp[i+1][j-1] : Math.min(dp[i+1][j], dp[i][j-1]) +1;
             }
         }
@@ -40,7 +36,14 @@ public class MinimumInsertionStepsToMakePalindrome {
         return dp[0][n-1];
     }
 
-    //LCS solution - tricky
+    // LCS Solution - smart way
+    // dp[i][j] -> the lcs of str-i(0-i) and str-j(0-j)
+    public int minInsertionsLCS(String s) {
+        String sReverse = new StringBuilder(s).reverse().toString();
+        int lcs = longestCommonSubSequence(s.toCharArray(), sReverse.toCharArray());
+        return s.length() - lcs;
+    }
+
     public int longestCommonSubSequence(char[] arr1, char[] arr2) {
         int n1 = arr1.length, n2 = arr2.length;
         int[][] dp = new int[n1 + 1][n2 + 1];

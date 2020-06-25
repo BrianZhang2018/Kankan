@@ -6,11 +6,12 @@ import java.util.PriorityQueue;
 import java.util.TreeMap;
 
 /**
+ * 1. Sort by start-time
+ * 2. Check overlap: compare the minimum end-time with current start-time, and update the minimum end-time when need
+ *
  * https://leetcode.com/problems/car-pooling/
  *
- * Similar with MeetingRoomII
- * 关键点就是 compare last end-time with start-time of current
- * 看有没有conflict, 有的话就是累加，例如连个room，负责就可以利用当前的room，或者可以把之前的去掉
+ * 关键点就是 compare "previous end-time" with "start-time of current". 看有没有conflict, 有的话就是累加
  *
  * Created by brianzhang on 6/19/20.
  */
@@ -23,17 +24,16 @@ public class CarPolling {
 
     public static boolean carPooling(int[][] trips, int capacity) {
 
-        Arrays.sort(trips, (a, b) -> a[1] - b[1]);
+        Arrays.sort(trips, (a, b) -> a[1] - b[1]); // sort by start-time
 
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[2]-b[2]);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[2]-b[2]); //store the end-time, and keep the minimum end-time on top
         int count = 0;
         for(int[] trip : trips) {
-
             while(!pq.isEmpty() && pq.peek()[2]<=trip[1]){
                 count-= pq.poll()[0];
             }
 
-            if(count + trip[0] >capacity) return false;
+            if(count + trip[0] > capacity) return false;
 
             count+=trip[0];
             pq.add(trip);
@@ -42,6 +42,7 @@ public class CarPolling {
         return count<=capacity ? true : false;
     }
 
+    // Map solution - good idea
     public static boolean carPoolingMap(int[][] trips, int capacity) {
         Map<Integer, Integer> m = new TreeMap<>(); //sort the time by ascending
         for (int[] t : trips) {

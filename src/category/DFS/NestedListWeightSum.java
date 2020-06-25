@@ -7,10 +7,15 @@ import java.util.List;
 /**
  * https://www.lintcode.com/problem/nested-list-weight-sum
  *
- * facebook dian mian
+ * facebook, google 店面
  * Created by brianzhang on 5/26/20.
  */
 public class NestedListWeightSum {
+
+    public static void main(String[] args) {
+        NestedListWeightSum test = new NestedListWeightSum();
+        //test.depthSum();
+    }
 
     public int depthSum(List<NestedInteger> nestedList) {
         // Write your code here

@@ -43,7 +43,7 @@ public class MergeSort {
 
     private void merge(final int low, final int middle, final int high) {
 
-        // Copy both parts into the helper - tempMergArr array
+        // Copy both parts into the dfs - tempMergArr array
         for (int i = low; i <= high; i++) {
             tempMergArr[i] = array[i];
         }

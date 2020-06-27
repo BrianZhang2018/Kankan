@@ -20,7 +20,7 @@ public class KClosestPointsToOriginQuickSelect {
     public int[][] kClosest(int[][] points, int K) {
         int len =  points.length, l = 0, r = len - 1;
         while (l <= r) {
-            int mid = helper1(points, l, r);
+            int mid = partition(points, l, r);
             if (mid == K) break;
             if (mid < K) {
                 l = mid + 1;
@@ -32,7 +32,7 @@ public class KClosestPointsToOriginQuickSelect {
     }
 
     // my solution for quick select - easily understood
-    private int helper(int[][] points, int l, int r) {
+    private int partition(int[][] points, int l, int r) {
 
         int[] pivot = points[r]; // set rightmost as pivot
         int pivotIdx = l;
@@ -57,14 +57,12 @@ public class KClosestPointsToOriginQuickSelect {
     }
 
     // leetcode solution - quick select
-    private int helper1(int[][] A, int l, int r) {
+    private int partition1(int[][] A, int l, int r) {
         int[] pivot = A[l];
         while (l < r) {
-            while (l < r && compare(A[r], pivot) >= 0)
-                r--;
+            while (l < r && compare(A[r], pivot) >= 0) r--;
             A[l] = A[r];
-            while (l < r && compare(A[l], pivot) <= 0)
-                l++;
+            while (l < r && compare(A[l], pivot) <= 0) l++;
             A[r] = A[l];
         }
         A[l] = pivot;

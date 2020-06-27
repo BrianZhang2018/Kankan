@@ -3,9 +3,9 @@ package category.PriorityQueue.overlapInterval;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
- *
  * Find non-overlap interval - same with NonOverlapInterval.java
+ *
+ * https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
  *
  * Created by brianzhang on 6/21/20.
  */
@@ -20,7 +20,7 @@ public class MinNumberArrowsToBurstBalloons {
 
         Arrays.sort(points, (a, b) -> a[0] - b[0]);
 
-        int count=0;
+        int count=1;
         int minEnd = Integer.MAX_VALUE;
         for(int[] i : points) {
             if (minEnd < i[0]) { // find non-overlap
@@ -31,6 +31,6 @@ public class MinNumberArrowsToBurstBalloons {
             }
         }
 
-        return count+1;
+        return count;
     }
 }

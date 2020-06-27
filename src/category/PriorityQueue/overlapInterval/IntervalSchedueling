@@ -1,4 +1,4 @@
-套路 for all overlap interval problems:
+模板套路 for all overlap interval problems:
 
 1. Sort by start-time, ascending order
 2. Check overlap: compare the minimum end-time with current start-time, and update the minimum end-time when need

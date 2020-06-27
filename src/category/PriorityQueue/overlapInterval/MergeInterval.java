@@ -12,7 +12,6 @@ public class MergeInterval {
         Interval v1 = new Interval(1, 3), v2 = new Interval(2, 6), v3 = new Interval(8, 10);
         List<Interval> intervals = Arrays.asList(v1, v2, v3);
         for (Interval i : merge(intervals)) System.out.println(i.start + " - " + i.end);
-
         for (Interval i : merge1(intervals)) System.out.println(i.start + " - " + i.end);
     }
 
@@ -24,7 +23,7 @@ public class MergeInterval {
         Interval prev = intervals.get(0);
 
         for (int i = 1; i < intervals.size(); i++) {
-            if (prev.end >= intervals.get(i).start) {  // find overlap
+            if (prev.end >= intervals.get(i).start) {  // template step: find overlap
                 prev.end = Math.max(prev.end, intervals.get(i).end);
             } else {
                 res.add(prev);

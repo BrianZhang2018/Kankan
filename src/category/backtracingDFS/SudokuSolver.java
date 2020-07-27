@@ -4,7 +4,7 @@ package category.BacktracingDFS;
  */
 public class SudokuSolver{
     public static void main(String[] args) {
-
+        System.out.println(1/3);
     }
 
     public void solveSudoku(char[][] board) {

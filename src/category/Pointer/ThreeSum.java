@@ -15,15 +15,44 @@ public class ThreeSum{
         ThreeSum test = new ThreeSum();
         test.threeSum(new int[]{-1, 0, 1, 2, -1, -4});
         test.threeSum1(new int[]{-1, 0, 1, 2, -1, -4});
+
+        //System.out.println(Integer.valueOf("-2147483648"));
+
+        float i = Float.valueOf("01111");
+
+        System.out.println(i);
     }
 
+    // Easy solution with HashSet to filter out the duplicate result, performance not best.
     public List<List<Integer>> threeSum(int[] nums) {
+        Arrays.sort(nums);
+        HashSet<List<Integer>> set = new HashSet<>();
+
+        for(int i=0; i<nums.length; i++){
+            int low = i+1, high = nums.length-1;
+            int sum = 0-nums[i];
+            while(low < high){
+                if(nums[low] + nums[high] == sum){
+                    set.add(Arrays.asList(nums[i], nums[low], nums[high]));
+
+                    low++; high--;
+                } else if (nums[low] + nums[high]>sum){
+                    high--;
+                } else {
+                    low++;
+                }
+            }
+        }
+
+        return new ArrayList<>(set);
+    }
+
+    public List<List<Integer>> threeSum1(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> res = new LinkedList();
         for(int i=0; i<nums.length; i++){
             if(i==0 || (i>0 && nums[i] != nums[i-1])){
-                int low = i+1;
-                int high = nums.length-1;
+                int low = i+1, high = nums.length-1;
                 int sum = 0-nums[i];
                 while(low < high){
                     if(nums[low] + nums[high] == sum){
@@ -45,28 +74,4 @@ public class ThreeSum{
         return res;
     }
 
-    //Easy solution with HashSet to filter out the duplicate result, performance not best.
-    public List<List<Integer>> threeSum1(int[] nums) {
-        Arrays.sort(nums);
-        HashSet<List<Integer>> set = new HashSet<>();
-        
-        for(int i=0; i<nums.length; i++){
-                int low = i+1;
-                int high = nums.length-1;
-                int sum = 0-nums[i];
-                while(low < high){
-                    if(nums[low] + nums[high] == sum){
-                        set.add(Arrays.asList(nums[i], nums[low], nums[high]));
-                        
-                        low++; high--;
-                    } else if (nums[low] + nums[high]>sum){
-                        high--;
-                    } else {
-                        low++;
-                    }
-                }
-        }
-       
-        return new ArrayList<>(set);
-    }
 }

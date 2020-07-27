@@ -1,4 +1,4 @@
-package category.BacktracingDFS;
+package category.BacktracingDFS.wordLadder;
 
 import java.util.*;
 

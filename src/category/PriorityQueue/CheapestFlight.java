@@ -1,4 +1,4 @@
-package category.DataStructure;
+package category.PriorityQueue;
 
 import java.util.HashMap;
 import java.util.Map;

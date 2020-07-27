@@ -5,7 +5,8 @@ package category.DynamicPlanning.Strings.LCSubSequence;
  * https://leetcode.com/problems/shortest-common-supersequence/discuss/319439/Java-DP-bottom-up-(2D-matrix)
  * 
  * 解题思路: the path to get the length of LCSubSequence is the shortest common superSequence.
- * so, we firstly get the LCSubSequence, then bottom-up to get the reverse string of shortest common superSequence, then reverse it which is the result
+ * so, we firstly get the LCSubSequence, then bottom-up to get the reverse string of shortest common superSequence,
+ * then reverse it which is the result
  */
 public class ShortestCommonSupersequence {
     public static void main(String[] args) {

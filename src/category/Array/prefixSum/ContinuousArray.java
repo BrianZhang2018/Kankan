@@ -6,11 +6,13 @@ import java.util.Map;
 /**
  * https://leetcode.com/problems/contiguous-array/
  *
- * prefixsum + hashmap
+ * Prefix-Sum + HashMap
  *
- * The idea is to change 0 in the original array to -1. then, the SUM[i, j] == 0
- * Also put the sum to index mapping to a HashMap to make search faster.
- * (the subarray between two same prefixsum on index (stat+1, end) is an answer)
+ * binary array, so only contain 0 or 1.
+ *
+ * The idea is to change 0 in the original array to -1.
+ * Put the prefix-sum to index mapping to a HashMap.
+ * (the sub-array between two same prefix-sum on index (stat+1, end) is an answer)
  *
  * Created by brianzhang on 4/18/20.
  */
@@ -27,7 +29,7 @@ public class ContinuousArray {
         for (int i = 0; i < nums.length; i++) {
             count = count + (nums[i] == 1 ? 1 : -1);
             if (map.containsKey(count)) {
-                System.out.println(count);
+                //System.out.println(count);
                 maxLen = Math.max(maxLen, i - map.get(count));
             } else {
                 map.put(count, i);

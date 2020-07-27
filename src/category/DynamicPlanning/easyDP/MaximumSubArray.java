@@ -5,7 +5,6 @@ package category.DynamicPlanning.easyDP;
  *
  * Easy
  * Can be solved using Kadane's algorithm in linear time and without using additional space. The main ideas are:
-
      - Use the input vector nums to store the candidate subarrays sum (i.e. the greatest contiguous sum so far).
      - Ignore cumulative negatives, as they don't contribute positively to the sum.
 
@@ -32,7 +31,7 @@ public class MaximumSubArray {
     public static int maxSubArray(int[] nums) {
         int max = nums[0];
         for(int i=1; i<nums.length; i++){
-            if(nums[i-1] >0){
+            if(nums[i-1] > 0){
                 nums[i] = nums[i-1] + nums[i];
             }
             max = Math.max(nums[i], max);

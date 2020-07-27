@@ -1,10 +1,9 @@
 package category.DynamicPlanning.Strings.LCSubSequence;
 
 /**
- *
  * https://leetcode.com/problems/longest-common-subsequence/discuss/398711/4-different-ways-to-solve-Longest-Common-Sub-sequence-including-O(N)-Solution
  *
- * dp[i][j], 表示前i个字符和前J个字符的LCS长度
+ * dp[i][j], 表示前i个字符(in text1)和前J个字符(in text2)的LCS长度
  */
 public class LongestCommonSubSequence {
 
@@ -13,7 +12,7 @@ public class LongestCommonSubSequence {
         System.out.println(test.longestCommonSubSequence("bacde", "tace"));
     }
 
-    //solution 1 简写
+    // Solution-1: 简写
     public int longestCommonSubSequence(String text1, String text2) {
         int m = text1.length(), n = text2.length();
         int[][] dp = new int[m+1][n+1];
@@ -21,7 +20,7 @@ public class LongestCommonSubSequence {
         for(int i=1; i<=m; i++){
             for(int j=1; j<=n; j++){
                 if(text1.charAt(i-1) == text2.charAt(j-1)){
-                    dp[i][j] = dp[i-1][j-1] +1; // why memo[i - 1][j - 1], 因为这是前两个字符（one from each string）比较的结果, 斜对角的的cell
+                    dp[i][j] = dp[i-1][j-1] +1; // dp[i - 1][j - 1], 前两个字符（one from each string)
                 }else{
                     dp[i][j] = Math.max(dp[i][j-1], dp[i-1][j]);
                 }
@@ -31,7 +30,7 @@ public class LongestCommonSubSequence {
         return dp[m][n];
     }
 
-    // one dimension
+    // One Dimension
     public int solution(String text1, String text2) {
         int m = text1.length();
         int n = text2.length();

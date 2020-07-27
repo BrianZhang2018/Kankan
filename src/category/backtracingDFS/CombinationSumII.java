@@ -16,9 +16,7 @@ import java.util.List;
 public class CombinationSumII {
 
     public static void main(String[] args) {
-        int[] arr = new int[]{10,1,2,7,6,1,5};
-        int target = 8;
-        System.out.println(new CombinationSumII().combinationSum(arr, target));
+        System.out.println(new CombinationSumII().combinationSum(new int[]{10,1,2,7,6,1,5}, 8));
     }
 
     public List<List<Integer>> combinationSum(int[] nums, int target) {

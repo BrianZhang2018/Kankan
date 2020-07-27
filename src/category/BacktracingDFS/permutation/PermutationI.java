@@ -5,16 +5,15 @@ import java.util.List;
 
 /**
  * https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
- * brute force solution using DFS & backtrack
+ * brute force solution using DFS & dfs
  * 深度搜素到底，然后在回溯，遍历每一层，重复这个动作
  *
- * time complexity: O(n!)
+ * Time complexity: O(n!)
  * Created by brianzhang on 7/26/18.
  */
 public class PermutationI {
     public static void main(String[] args) {
-        int[] arr = new int[]{1, 2, 3};
-        System.out.println(permute(arr));
+        System.out.println(permute(new int[]{1, 2, 3}));
     }
 
     public static List<List<Integer>> permute(int[] nums) {
@@ -34,10 +33,9 @@ public class PermutationI {
                 }
                 tempList.add(nums[i]);
                 backtrack(list, tempList, nums);
-                       // System.out.println("i = " + i);
-                        System.out.println("remove before: " + tempList);
+                System.out.println("remove before: " + tempList);
                 tempList.remove(tempList.size() - 1);
-                        System.out.println("               remove after: " + tempList);
+                System.out.println("               remove after: " + tempList);
             }
         }
     }

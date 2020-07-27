@@ -16,12 +16,10 @@ public class MaximumDepthBinarySearchTree {
         root.left.left = new TreeNode(20);
         root.left.right = new TreeNode(1);
 
-        MaximumDepthBinarySearchTree test = new MaximumDepthBinarySearchTree();
-        System.out.println(test.maxDepth(root));
+        System.out.println(new MaximumDepthBinarySearchTree().maxDepth(root));
     }
 
     public int maxDepth(TreeNode root) {
-
         return helper(root);
     }
 

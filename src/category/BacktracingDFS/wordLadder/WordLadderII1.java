@@ -1,4 +1,4 @@
-package category.BacktracingDFS;
+package category.BacktracingDFS.wordLadder;
 
 import java.util.*;
 
@@ -9,10 +9,9 @@ import java.util.*;
  *
  * Created by brianzhang on 10/12/18.
  */
-
-public class WordLadder {
+public class WordLadderII1 {
     public static void main(String[] args) {
-        WordLadder wl = new WordLadder();
+        WordLadderII1 wl = new WordLadderII1();
         Set<String> dict = new HashSet<>(Arrays.asList("hot","dot","dog","lot","log","cog"));
         System.out.println(wl.findLadders("hit", "cog", dict));
     }

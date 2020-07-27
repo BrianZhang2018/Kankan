@@ -1,4 +1,4 @@
-package category.DataStructure;
+package category.HashMap;
 
 import java.util.*;
 

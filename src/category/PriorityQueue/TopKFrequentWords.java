@@ -5,26 +5,14 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/top-k-frequent-words/
  *
+ * Time complexity: NlogK
  * Created by brianzhang on 1/29/19.
  */
 public class TopKFrequentWords {
 
     public static void main(String[] args) {
-        String[] words = {"i", "love", "leetcode", "i", "love", "coding"};
-        System.out.println(topKFrequent(words, 2));
-
-        String test1 = "abc";
-        String test2 = "aac";
-        System.out.println(test1.compareTo(test2));
-
-        PriorityQueue<Integer> tq = new PriorityQueue<>((i1, i2) -> i2-i1);
-        tq.add(5);
-        tq.add(1);
-        tq.add(2);
-
-        while(!tq.isEmpty()){
-            System.out.println(tq.poll());
-        }
+        String[] words = {"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"};
+        System.out.println(topKFrequent(words, 4));
     }
 
     public static List<String> topKFrequent(String[] words, int k) {
@@ -33,22 +21,33 @@ public class TopKFrequentWords {
             counter.put(word, counter.getOrDefault(word, 0) + 1);
         }
 
-        // min heap, so "counter.get(w1) - counter.get(w2)"
-        PriorityQueue<String> heap = new PriorityQueue<>(
-                (w1, w2) -> counter.get(w1) == counter.get(w2) ? w2.compareTo(w1) : counter.get(w1) - counter.get(w2));
+        // minheap
+        PriorityQueue<Map.Entry<String, Integer>> queue = new PriorityQueue<>(
+                (w1, w2) -> w1.getValue() == w2.getValue() ? w2.getKey().compareTo(w1.getKey()) : w1.getValue() - w2.getValue());
 
-        //pop out the word with low frequency
-        for (String word : counter.keySet()) {
-            heap.offer(word);
-            if (heap.size() > k)
-                heap.poll();
+        // pop out the word with low frequency
+        for (Map.Entry<String, Integer> entry : counter.entrySet()) {
+            queue.offer(entry);
+            if (queue.size() > k) queue.poll();
         }
 
         List<String> ans = new ArrayList();
-        while (!heap.isEmpty())
-            ans.add(heap.poll());
+        while (!queue.isEmpty())
+            ans.add(0, queue.poll().getKey());
 
-        Collections.reverse(ans);
         return ans;
     }
 }
+/** Time Complexity detailed explanation for priority queue:
+
+ *  In case of a max heap, we need to insert all the elements into the priority queue first and then pick the
+ *  topmost k elements ( as the max elements will always be at the top). Hence, the size of your queue will be N
+ *  and every subsequent insertion/removal will cost logN resulting in total cost of NlogN. On the other hand,
+ *  using a min queue requires you to maintain the queue size at 'K' as at any point in time you will remove the
+ *  top min element (with max elements always present at the bottom of the queue). So, eventually you would have traversed
+ *  all the n elements in the array and would have removed the min elements from the top of the queue , still maintaining
+ *  its size at K. Hence, every operation of removal/insertion then will be logK and for N elements the final
+ *  time complexity will be NlogK.
+ *
+ *  https://leetcode.com/problems/top-k-frequent-elements/discuss/81635/3-java-solution-using-array-maxheap-treemap/606153
+ */

@@ -20,9 +20,8 @@ import java.util.stream.IntStream;
  */
 public class CoinChange {
     public static void main(String[] args) {
-        CoinChange coinChange = new CoinChange();
-        int[] coins = {3, 5};
-        System.out.println(coinChange.coinChangeDp(coins, 6));
+        CoinChange coinChange = new CoinChange(); int[] coins = {3, 5};
+        System.out.println(coinChange.coinChangeDP(coins, 6));
         System.out.println(coinChange.coinChangeDFS(coins, 11));
     }
 
@@ -32,17 +31,17 @@ public class CoinChange {
      * 降维: dp[i][j] which only rely on dp[i] and dp[i-1], so 二维数组, 但其实是滚动数组，可以降维成一维数组
      * def: dp[p] (p is the amount) : the least coins to make "p" amount
      */
-    public int coinChangeDp(int[] coins, int targetAmount) {
-        if (coins == null || coins.length == 0 || targetAmount < 0) return -1;
+    public int coinChangeDP(int[] coins, int target) {
+        if (coins == null || coins.length == 0 || target < 0) return -1;
 
-        //init
-        int[] dp = new int[targetAmount + 1];
+        // init
+        int[] dp = new int[target + 1];
         Arrays.fill(dp, Integer.MAX_VALUE);
         dp[0] = 0;
 
-        //loop for the min coins for amount 'i', finally got the dp[amount].
+        // loop for the min coins for amount 'i', finally got the dp[amount].
         for (int coin : coins) {
-            for (int i = coin; i <= targetAmount; i++) {
+            for (int i = coin; i <= target; i++) {
                 if (dp[i - coin] != Integer.MAX_VALUE) {
                     //e.g. i=2, min(dp[2], dp[2-2] + 1),
                     //"dp[2-2]" means the least num of coins need for previous amount (j - coin_i), + 1 means plus current coin
@@ -50,7 +49,7 @@ public class CoinChange {
                 }
             }
         }
-        return dp[targetAmount] == Integer.MAX_VALUE ? -1 : dp[targetAmount];
+        return dp[target] == Integer.MAX_VALUE ? -1 : dp[target];
     }
 
     // Solution 2 : DFS
@@ -80,20 +79,6 @@ public class CoinChange {
         int coin = coins[start];
         for (int k = amount / coin; k >= 0 && count + k < fewest; k--) {
             dfsHelper(coins, start + 1, amount - k * coin, count + k);
-        }
-    }
-
-    // another dfs solution
-    public void dfsHelper2(Integer[] coins, int start, int amount, int count) {
-        int coin = coins[start];
-        if (start == coins.length - 1) {
-            if (amount % coin == 0) {
-                fewest = Integer.min(fewest, count + amount / coin);
-            }
-        } else {
-            for (int k = amount / coin; k >= 0 && count + k < fewest; k--) {
-                dfsHelper(coins, start + 1, amount - k * coin, count + k);
-            }
         }
     }
 

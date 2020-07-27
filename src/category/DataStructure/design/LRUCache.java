@@ -1,4 +1,4 @@
-package companies.amazon;
+package category.DataStructure.design;
 
 import java.util.HashMap;
 

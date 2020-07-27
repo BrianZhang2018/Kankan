@@ -15,16 +15,14 @@ import java.util.HashMap;
 public class SubArraySumPrefixSum {
 
     public static void main(String[] args) {
-        int[] nums = {1,1,1, -1, -1, 1, 2};
-        System.out.println(subArraySum(nums, 2));
+        System.out.println(subArraySum(new int[]{1,1,1, -1, -1, 1, 2}, 2));
     }
 
     public static int subArraySum(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap();
         map.put(0, 1);
 
-        int res = 0;
-        int prefixSum = 0;
+        int res = 0, prefixSum = 0;
         for (int i = 0; i < nums.length; i++) {
             prefixSum += nums[i];
             res += map.getOrDefault(prefixSum - k, 0);

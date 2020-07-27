@@ -5,29 +5,27 @@ import java.util.*;
 
 /**
  * https://leetcode.com/problems/minimum-height-trees/discuss/76055/Share-some-thoughts
- *
+ * <p>
  * Our problem want us to find the minimum height trees and return their root labels. First we can think about a simple case -- a path graph.
-   For a path graph of n nodes, find the minimum height trees is trivial. Just designate the "middle point(s)" as roots.
- *
- *
+ * For a path graph of n nodes, find the minimum height trees is trivial. Just designate the "middle point(s)" as roots.
+ * <p>
  * Created by brianzhang on 4/19/19.
  */
 public class MinimumHeightTrees {
     public static void main(String[] args) {
-        System.out.println(findMinHeightTrees(11, new int[][]{{0,1},{0,2},{2,3},{0,4},{2,5},{5,6},{3,7},{6,8},{8,9},{9,10}}));
+        System.out.println(findMinHeightTrees(11, new int[][]{{0, 1}, {0, 2}, {2, 3}, {0, 4}, {2, 5}, {5, 6}, {3, 7}, {6, 8}, {8, 9}, {9, 10}}));
         //System.out.println(findMinHeightTrees2(6, new int[][] { { 0, 3 }, { 1, 3 }, { 2, 3 }, { 4, 3 }, { 5, 4 } }));
     }
 
     //better way to List as the structure instead of the array to store the adjacent relationship of nodes
     public static List<Integer> findMinHeightTrees(int n, int[][] edges) {
-        if (n == 1)
-            return Collections.singletonList(0);
+        if (n == 1) return Collections.singletonList(0);
 
         List<Set<Integer>> graph = new ArrayList<>(n);
         List<Integer> leaves = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
-            graph.add(new HashSet<Integer>());
+            graph.add(new HashSet<>());
         }
 
         for (int[] edge : edges) {
@@ -55,19 +53,17 @@ public class MinimumHeightTrees {
         }
         return leaves;
     }
-    
+
     //solution-2 use array to store the adjacent relationship
     public static List<Integer> findMinHeightTrees2(int n, int[][] edges) {
-
         List<Integer> res = new ArrayList<>();
-        if (edges == null)
-            return res;
+        if (edges == null) return res;
 
         int[] degree = new int[n];
         ArrayList<Integer>[] graph = new ArrayList[n];
         List<Integer> leaves = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            graph[i] = new ArrayList<Integer>();
+            graph[i] = new ArrayList<>();
         }
 
         for (int[] edge : edges) {

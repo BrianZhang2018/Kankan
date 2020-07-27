@@ -1,5 +1,7 @@
 package OOD.DeckOfCards;
 
+import java.util.Random;
+
 //http://www.mathcs.emory.edu/~cheung/Courses/170/Syllabus/10/cards.html
 public class DeckOfCards {
     public static void main(String[] args) {
@@ -9,14 +11,14 @@ public class DeckOfCards {
         //System.out.println(dc.deal());
     }
 
-    private int NCARDS;
+    private int numOfCards;
     private Card[] deckOfCards;         // Contains all 52 cards
     private int cardsUsed;
 
     public DeckOfCards() 
     {
-        this.NCARDS = Card.getRank().length * Card.getSuit().length;
-        this.deckOfCards = new Card[NCARDS];
+        this.numOfCards = Card.getRank().length * Card.getSuit().length;
+        this.deckOfCards = new Card[numOfCards];
 
         int i = 0;
 
@@ -27,33 +29,23 @@ public class DeckOfCards {
         cardsUsed = 0;
     }
 
-    /* ---------------------------------
-      shuffle(n): shuffle the deck
-      --------------------------------- */
-    public void shuffle() {
-        int i, j, k;
+    //
+    public void shuffle() { // refer from ShuffleAnArray.java
+        if (deckOfCards == null || deckOfCards.length < 2) return;
 
-        for (k = 0; k < NCARDS; k++) {
-            i = (int) (NCARDS * Math.random());  // Pick 2 random cards
-            j = (int) (NCARDS * Math.random());  // in the deck
-
+        Random rand = new Random();
+        for (int i = 0; i < deckOfCards.length; i++) {
+            int r = rand.nextInt(i + 1);
             Card tmp = deckOfCards[i];
-            deckOfCards[i] = deckOfCards[j];
-            deckOfCards[j] = tmp;
+            deckOfCards[i] = deckOfCards[r];
+            deckOfCards[r] = tmp;
         }
-
-        cardsUsed = 0;   // Reset cardsUsed
     }
 
-    /* -------------------------------------------
-      deal(): deal deckOfCards[currentCard] out
-      ------------------------------------------- */
     public Card deal() {
-        if (cardsUsed == NCARDS) {
-            shuffle();
-        }
-        cardsUsed++;
-        return deckOfCards[cardsUsed - 1];
+        if (cardsUsed == numOfCards) shuffle();
+
+        return deckOfCards[++cardsUsed - 1];
     }
 
     public String toString() {

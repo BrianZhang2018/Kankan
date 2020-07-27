@@ -13,26 +13,26 @@ public class BasicCalculatorII {
     }
 
     public static int calculate(String s) {
-        if(s==null || s.length() == 0) return 0;
+        if (s == null || s.length() == 0) return 0;
 
-        int len = s.length();
         Stack<Integer> stack = new Stack<>();
+        int len = s.length();
         char prevSign = '+';
-        int num = 0;
 
-        for(int i=0;i<len;i++){
-            if(Character.isDigit(s.charAt(i))){
-                num = num * 10 + s.charAt(i)-'0'; //sum up the multi-digit number e.g. "23" -> 2*10+3
+        int num = 0;
+        for (int i = 0; i < len; i++) {
+            if (Character.isDigit(s.charAt(i))) {
+                num = num * 10 + s.charAt(i) - '0'; //sum up the multi-digit number e.g. "23" -> 2*10+3
             }
             // Not "else if" here as we need calculate the last number
-            if(i==len-1 || (!Character.isDigit(s.charAt(i)) && s.charAt(i) != ' ')){
-                if(prevSign=='-'){
+            if (i == len - 1 || (!Character.isDigit(s.charAt(i)) && s.charAt(i) != ' ')) {
+                if (prevSign == '-') {
                     stack.push(-num);
-                } else if(prevSign=='+'){
+                } else if (prevSign == '+') {
                     stack.push(num);
-                } else if(prevSign=='*'){
+                } else if (prevSign == '*') {
                     stack.push(stack.pop() * num);
-                } else if(prevSign=='/'){
+                } else if (prevSign == '/') {
                     stack.push(stack.pop() / num);
                 }
                 prevSign = s.charAt(i);
@@ -41,9 +41,8 @@ public class BasicCalculatorII {
         }
 
         int res = 0;
-        for(int i:stack){
-            res += i;
-        }
+        for (int i : stack) res += i;
+
         return res;
     }
 

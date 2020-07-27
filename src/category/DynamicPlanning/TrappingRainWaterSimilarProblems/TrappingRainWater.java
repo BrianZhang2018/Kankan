@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * https://leetcode.com/problems/trapping-rain-water/
- * Similar approach with the BestTimeToBuyAndSellStockIIIAtMostTwoTransactions problem.
+ * Similar approach with the BestTimeToBuyAndSellStockIIIAtMostTwoTransactions.java problem.
  *
  * Can be solved with Monotone stack solution.
  * https://www.cnblogs.com/grandyang/p/4402392.html
@@ -24,7 +24,7 @@ public class TrappingRainWater {
         int[] maxLeft = new int[height.length];
         int[] maxRight = new int[height.length];
 
-        //got the left and right max height distribution
+        // got the left and right max height distribution
         maxLeft[0] = height[0];
         for (int i = 1; i < height.length - 1; i++) {
             maxLeft[i] = Math.max(maxLeft[i - 1], height[i]); //DP

@@ -3,10 +3,15 @@ package category.string;
 /**
  * Created by brianzhang on 8/19/18.
  */
-public class LPSOneDementional {
+public class LPSOneDimentional {
 
-    // Returns the length of the longest
-    // palindromic subsequence in str
+    public static void main(String[] args) {
+        String str = "GEEKSFORGEEKS";
+        System.out.println(lps(str));
+
+    }
+
+    // Returns the length of the longest palindromic subsequence in str
     static int lps(String s) {
         int n = s.length();
 
@@ -41,12 +46,5 @@ public class LPSOneDementional {
             }
         }
         return a[n - 1];
-    }
-
-    /* Driver program to test above functions */
-    public static void main(String[] args) {
-        String str = "GEEKSFORGEEKS";
-        System.out.println(lps(str));
-
     }
 }

@@ -12,22 +12,21 @@ public class BinarySearchTest {
 
     public static int bs(int[] arr, int target){
 
-        int lo = 0;
-        int hi = arr.length;
+        int left = 0;
+        int right = arr.length;
 
-
-        while(lo<=hi){
-            int mid = lo + (hi-lo)/2;
+        while(left<right){
+            int mid = left + (right-left)/2;
             if (arr[mid] == target){
                 return mid;
             }
             if(arr[mid] > target){
-                hi = mid-1;
+                right = mid;
             }else{
-                lo = mid+1;
+                left = mid+1;
             }
         }
 
-        return lo;
+        return left;
     }
 }

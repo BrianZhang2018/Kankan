@@ -5,6 +5,7 @@ import java.util.*;
 /**
  * Find the shortest path from Node A to Z
  * Dijkstra is greedy algorithm
+ *
  * https://www.youtube.com/watch?v=GazC3A4OQTE
  */
 public class Dijkstra {

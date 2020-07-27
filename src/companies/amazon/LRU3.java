@@ -1,20 +1,24 @@
 package companies.amazon;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.Map;
+import java.util.List;
 
 /**
  * HashMap + LinkedList
- *
+ * <p>
  * Created by brianzhang on 6/14/20.
  */
 public class LRU3 {
 
-    private Map<Integer, LinkedList<Integer>> map = new HashMap<>();
-    private int cacheSize;
-    private LinkedList start, end;
+    public static void main(String[] args) {
+        LinkedList<Integer> ll = new LinkedList<>();
+        System.out.println(ll.size());
+    }
 
+    private List<Integer> list = new ArrayList<>();
+    private int cacheSize;
+    private LinkedList<Integer> ll = new LinkedList<>();
 
     public LRU3(int capacity) {
         this.cacheSize = capacity;
@@ -25,14 +29,11 @@ public class LRU3 {
     }*/
 
     public void put(int key, int value) {
-        if(map.containsKey(key)){
-            LinkedList<Integer> ll = map.get(key);
+        if (list.contains(key)) {
+            int val = ll.get(key);
             ll.remove(key);
-            ll.add(key);
+            ll.add(0, val);
 
-
-
-            //if(map.s)
         }
 
     }

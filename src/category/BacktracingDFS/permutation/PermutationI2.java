@@ -8,9 +8,8 @@ package category.BacktracingDFS.permutation;
 public class PermutationI2 {
     public static void main(String[] args) {
         String str = "ABC";
-        int n = str.length();
         PermutationI2 permutation = new PermutationI2();
-        permutation.permute(str, 0, n - 1);
+        permutation.permute(str, 0, str.length() - 1);
     }
 
     // l - starting index, r - end index
@@ -26,10 +25,6 @@ public class PermutationI2 {
         }
     }
 
-    /**
-     * Swap Characters at position
-     * i position 1, j position 2
-     */
     public String swap(String a, int i, int j) {
         char temp;
         char[] charArray = a.toCharArray();

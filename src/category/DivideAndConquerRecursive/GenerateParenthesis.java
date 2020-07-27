@@ -1,4 +1,4 @@
-package category.BacktracingDFS;
+package category.DivideAndConquerRecursive;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,23 +15,23 @@ public class GenerateParenthesis {
 
     public static List<String> generateParenthesis(int n) {
         List<String> list = new ArrayList<>();
-        backtrack(list, "", 0, 0, n);
+        dfs(list, "", 0, 0, n);
         return list;
     }
 
-    // note: str rather than the StringBuilder, and pass new reference (e.g. str + ")") into next loop.
-    // (don't have the remove action for this problem, so can't pass a reference type to next loop)
-    public static void backtrack(List<String> list, String str, int open, int close, int max) {
+    //  str + ")" will create a new string and pass into next loop.
+    //  don't have the remove action here, so can't pass same string to next loop
+    public static void dfs(List<String> list, String str, int open, int close, int max) {
 
         if (str.length() == max * 2) {
             list.add(str); System.out.println(str);
             return;
         }
 
-        //divide and conquer idea (traverse和divide conquer 都属于DFS)
+        // divide and conquer
         if (open < max)
-            backtrack(list, str + "(", open + 1, close, max);
+            dfs(list, str + "(", open + 1, close, max);
         if (close < open)
-            backtrack(list, str + ")", open, close + 1, max);
+            dfs(list, str + ")", open, close + 1, max);
     }
 }

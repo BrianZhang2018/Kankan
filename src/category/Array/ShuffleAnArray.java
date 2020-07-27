@@ -10,12 +10,13 @@ import java.util.Random;
  *
  * discussion里的解释：
  * Suppose that len(nums) = n.
- Algorithm:
- ○ for i in 0 ... n - 1: swap(nums[i], nums[random.randint(i, n - 1)]). # uniform sampling in the closed interval [i, n - 1]
+     Algorithm:
+     ○ for i in 0 ... n - 1: swap(nums[i], nums[random.randint(i, n - 1)]). # uniform sampling in the closed interval [i, n - 1]
 
- Proof:
- ○ To generate one sequence, there are n ways of generating the first number, n - 1 ways of generating the second number, n - 2 ways of generating the third number, ..., 1 way of generating the last number. Propability for any particular sequence is (1/n) * (1/(n - 1)) * (1/(n - 2)) * ... * 1/1 = 1/n!.
- ○ Any generated sequence must be of the same probability 1/n! In fact, we also know that there are n! possible sequences (permutations).
+     Proof:
+     ○ To generate one sequence, there are n ways of generating the first number, n - 1 ways of generating the second number, n - 2 ways of generating the third number, ..., 1 way of generating the last number.
+       Probability for any particular sequence is (1/n) * (1/(n - 1)) * (1/(n - 2)) * ... * 1/1 = 1/n!.
+     ○ Any generated sequence must be of the same probability 1/n! In fact, we also know that there are n! possible sequences (permutations).
  *
  * Created by brianzhang on 6/14/20.
  */

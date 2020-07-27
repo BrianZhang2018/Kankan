@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class DailyTemperature{
     public int[] dailyTemperatures(int[] temperatures) {
-        Stack<Integer> stack = new Stack<Integer>();
+        Stack<Integer> stack = new Stack<>();
         int n = temperatures.length;
         int[] res = new int[n];
        

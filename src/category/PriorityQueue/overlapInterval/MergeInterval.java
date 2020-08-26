@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * https://leetcode.com/problems/merge-intervals/
- *
+ * <p>
  * Created by brianzhang on 1/15/19.
  */
 public class MergeInterval {
@@ -15,7 +15,28 @@ public class MergeInterval {
         for (Interval i : merge1(intervals)) System.out.println(i.start + " - " + i.end);
     }
 
+    // my refactored solution
     public static List<Interval> merge(List<Interval> intervals) {
+        List<Interval> res = new ArrayList<>();
+        if (intervals.size() == 0) return res;
+
+        Collections.sort(intervals, (i1, i2) -> i1.start - i2.start);
+
+        for (int i = 1; i < intervals.size(); i++) {
+            if (intervals.get(i - 1).end >= intervals.get(i).start) {  // template step: find overlap
+                intervals.get(i).end = Math.max(intervals.get(i - 1).end, intervals.get(i).end);
+                intervals.get(i).start = intervals.get(i - 1).start;
+            } else {
+                res.add(intervals.get(i - 1));
+            }
+        }
+        res.add(intervals.get(intervals.size() - 1));
+
+        return res;
+    }
+
+    // leetcode solution
+    public static List<Interval> merge1(List<Interval> intervals) {
         List<Interval> res = new ArrayList<>();
         if (intervals.size() == 0) return res;
 
@@ -23,7 +44,7 @@ public class MergeInterval {
         Interval prev = intervals.get(0);
 
         for (int i = 1; i < intervals.size(); i++) {
-            if (prev.end >= intervals.get(i).start) {  // template step: find overlap
+            if (prev.end >= intervals.get(i).start) {       // template step: find overlap
                 prev.end = Math.max(prev.end, intervals.get(i).end);
             } else {
                 res.add(prev);
@@ -36,7 +57,7 @@ public class MergeInterval {
     }
 
     // foreach loop for fun
-    public static List<Interval> merge1(List<Interval> intervals) {
+    public static List<Interval> merge2(List<Interval> intervals) {
         List<Interval> res = new ArrayList<>();
         if (intervals.size() == 0) return res;
 

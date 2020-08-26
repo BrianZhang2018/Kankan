@@ -21,9 +21,9 @@ public class PermutationII {
 
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
-        List<Integer> temp = new ArrayList<>();
+
         Arrays.sort(nums);
-        backTracking(nums, temp, res, new boolean[nums.length]);
+        backTracking(nums, new ArrayList<>(), res, new boolean[nums.length]);
         return res;
     }
 
@@ -32,8 +32,8 @@ public class PermutationII {
             res.add(new ArrayList<>(temp)); //deep copy
         } else {
             for (int i = 0; i < nums.length; i++) {
-                if (used[i])
-                    continue;
+                if (used[i]) continue;
+
                 if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) //makes sure when duplicates are selected, the order is ascending.
                     continue;
                 used[i] = true;

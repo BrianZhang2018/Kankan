@@ -46,7 +46,7 @@ public class MaxAreaOfIsland {
                 if (grid[i][j] == 1) {
                     currArea = 0;
                     dfs1(grid, i, j);
-                    if(currArea > maxArea) maxArea = currArea;
+                    maxArea = Math.max(maxArea, currArea);
                 }
             }
         }
@@ -58,14 +58,12 @@ public class MaxAreaOfIsland {
             return;
         }
 
-        if (grid[i][j] == 1) {
-            currArea++;
-            grid[i][j] = 2; // marked as visited
-            dfs1(grid, i + 1, j);
-            dfs1(grid, i, j + 1);
-            dfs1(grid, i - 1, j);
-            dfs1(grid, i, j - 1);
-        }
+        currArea++;
+        grid[i][j] = 2; // marked as visited
+        dfs1(grid, i + 1, j);
+        dfs1(grid, i, j + 1);
+        dfs1(grid, i - 1, j);
+        dfs1(grid, i, j - 1);
     }
 
     // Not recommended way pass an reference into the dfs rather than use the global variable 去统计

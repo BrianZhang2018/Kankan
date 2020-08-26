@@ -17,10 +17,19 @@ import category.model.TreeNode;
 //level order traverse
 public class BinaryTreeVerticalOrderTraversal{
 
+    public static void main(String[] args) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        pq.add(19);
+        pq.add(10);
+
+        Integer[] temp = new Integer[pq.size()];
+        pq.toArray(temp);
+    }
+
     public List<List<Integer>> verticalOrder(TreeNode root) {
         TreeMap<Integer, List<Integer>> map = new TreeMap<>();
         helper(root, map);
-        return new ArrayList<List<Integer>>(map.values());
+        return new ArrayList<>(map.values());
     }
      
     private void helper(TreeNode t, TreeMap<Integer, List<Integer>> map) {
@@ -54,6 +63,42 @@ public class BinaryTreeVerticalOrderTraversal{
             if (node.right != null) {
                 q1.offer(node.right);
                 q2.offer(level + 1);
+            }
+        }
+    }
+
+    public List<List<Integer>> verticalTraversal(TreeNode root) {
+        TreeMap<Integer, List<Integer>> tm = new TreeMap();
+        helper(root, tm);
+        return new ArrayList<>(tm.values());
+    }
+
+    public void helper(TreeNode root, Map<Integer, List<Integer>> map){
+
+        LinkedList<TreeNode> q1 = new LinkedList();
+        LinkedList<Integer> q2 = new LinkedList();
+
+        q1.add(root); q2.add(0);
+
+        while(!q1.isEmpty()){
+            TreeNode node = q1.poll();
+            int level = q2.poll();
+
+            List<Integer> pq = map.get(level);
+            if(pq == null){
+                pq = new ArrayList<>();
+                map.put(level, pq);
+            }
+            pq.add(node.val);
+
+            if(node.left != null){
+                q1.add(node.left);
+                q2.add(level-1);
+            }
+
+            if(node.right != null){
+                q1.add(node.right);
+                q2.add(level+1);
             }
         }
     }

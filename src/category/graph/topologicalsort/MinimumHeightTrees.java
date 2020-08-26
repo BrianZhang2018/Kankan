@@ -54,13 +54,13 @@ public class MinimumHeightTrees {
         return leaves;
     }
 
-    //solution-2 use array to store the adjacent relationship
+    // solution-2 use array to store the adjacent relationship
     public static List<Integer> findMinHeightTrees2(int n, int[][] edges) {
         List<Integer> res = new ArrayList<>();
         if (edges == null) return res;
 
         int[] degree = new int[n];
-        ArrayList<Integer>[] graph = new ArrayList[n];
+        List<Integer>[] graph = new ArrayList[n];
         List<Integer> leaves = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             graph[i] = new ArrayList<>();

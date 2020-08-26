@@ -13,7 +13,8 @@ import java.util.List;
  */
 public class PermutationI {
     public static void main(String[] args) {
-        System.out.println(permute(new int[]{1, 2, 3}));
+        System.out.println(permute(new int[]{1, 2, 3, 4}));
+        System.out.println("".compareTo("8"));
     }
 
     public static List<List<Integer>> permute(int[] nums) {

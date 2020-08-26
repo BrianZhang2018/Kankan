@@ -1,7 +1,6 @@
 package category.BacktracingDFS;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 知识点: DFS + Recover array

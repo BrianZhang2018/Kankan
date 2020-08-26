@@ -5,7 +5,16 @@ import java.util.List;
 
 /**
  * https://leetcode.com/problems/expression-add-operators/
- * 
+ *
+ * When we use dfs to do this question, the most tricky part is that how to deal
+ * with multiplication. For every addition and subtraction, we just directly
+ * adding or subtracting the new number. However, for multiplication, we should
+ * multiply current number and previous number firstly, and then add previous
+ * previous number. So we can use a variable preNum to record every previous
+ * number in each recursion step. If current recursive call is trying
+ * multiplication, we should use previous calculation value subtract previous
+ * number, and then adding multiplication result between previous number and current number.
+ *
  * https://leetcode.com/problems/expression-add-operators/discuss/71895/Java-Standard-Backtrace-AC-Solutoin-short-and-clear
  * Created by brianzhang on 3/17/19.
  */
@@ -15,16 +24,7 @@ public class ExpressionAddOperators {
         System.out.println(test.addOperators("103", 6));
     }
 
-    /**
-     * When we use dfs to do this question, the most tricky part is that how to deal
-     * with multiplication. For every addition and subtraction, we just directly
-     * adding or subtracting the new number. However, for multiplication, we should
-     * multiply current number and previous number firstly, and then add previous
-     * previous number. So we can use a variable preNum to record every previous
-     * number in each recursion step. If current recursive call is trying
-     * multiplication, we should use previous calculation value subtract previous
-     * number, and then adding multiplication result between previous number and current number.
-     */
+
     public List<String> addOperators(String num, int target) {
         if (num.length() == 0) {
             return new ArrayList<>();
@@ -42,8 +42,7 @@ public class ExpressionAddOperators {
      * @param expr:                 current expression string
      * @param calcVal:              current calculation value
      * @param preMultiplicationNum: previous multiplication number, e.g 1+2*3*4, the
-     *                              first preMultiplicationNum is 2, and the next is
-     *                              2*3
+     *                              first preMultiplicationNum is 2, and the next is 2*3
      * @param pos:                  current index in the input num array
      */
     public void dfs(List<String> result, String num, int target, String expr, long calcVal, long preMultiplicationNum,

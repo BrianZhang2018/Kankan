@@ -18,10 +18,8 @@ import java.util.*;
  */
 public class MeetingRoomII {
     public static void main(String[] args) {
-        Interval source = new Interval(1, 10);
-        Interval source1 = new Interval(3, 5);
-        Interval source2 = new Interval(4, 6);
-        Interval source3 = new Interval(7, 9);
+        Interval source = new Interval(1, 10), source1 = new Interval(3, 5);
+        Interval source2 = new Interval(4, 6), source3 = new Interval(7, 9);
         System.out.println(minMeetingRooms(Arrays.asList(source, source1, source2, source3)));
     }
     /**

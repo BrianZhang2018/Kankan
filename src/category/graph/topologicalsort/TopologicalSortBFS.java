@@ -5,7 +5,9 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/course-schedule/
  * https://leetcode.com/problems/course-schedule-ii/
- * <p>
+ * 1. find order
+ * 2. find cycle
+ *
  * Time Complexity: O(V+E) 稀疏图->O(V), 稠密图->O(V2), V is vertex, E is edge
  * Created by brianzhang on 4/18/19.
  */
@@ -13,6 +15,8 @@ public class TopologicalSortBFS {
     public static void main(String[] args) {
         System.out.println(canFinish(4, new int[][]{{1, 0}, {3, 1}, {2, 0}, {1, 2}, {3, 2}}));
         System.out.println(Arrays.toString(findOrder(4, new int[][]{{1, 0}, {3, 1}, {2, 0}, {1, 2}, {3, 2}})));
+        System.out.println(Arrays.toString(findCycle(4, new int[][]{{0, 1}, {2, 0}, {0, 3}, {3, 2}}).toArray()));
+        System.out.println(Arrays.toString(findCycle(4, new int[][]{{2, 0}, {3, 2}, {1, 3}, {2, 1}}).toArray()));
     }
 
     // course-1
@@ -68,6 +72,7 @@ public class TopologicalSortBFS {
                     bfs.add(j);
                 }
             }
+
         }
 
         if (bfs.size() == n) {
@@ -77,6 +82,43 @@ public class TopologicalSortBFS {
         } else {
             return new int[]{};
         }
+    }
+
+    // start from each point to find the cycle, if traverse back to the start point which means it's a cycle
+    public static List<Integer> findCycle(int n, int[][] preRequisites) {
+        List<Integer>[] adjacent = new ArrayList[n];
+        int[] degree = new int[n];
+
+        for (int i = 0; i < n; ++i) adjacent[i] = new ArrayList<>();
+
+        for (int[] e : preRequisites) {
+            adjacent[e[1]].add(e[0]);
+            degree[e[0]]++;
+        }
+
+        int index = 0;
+        while (index < n) {  // start from each point to find the cycle
+            int[] temp = degree;
+            List<Integer> bfs = new ArrayList(), res = new ArrayList();
+            bfs.add(index); res.add(index);
+
+            while (!bfs.isEmpty()) {
+                for (int i : adjacent[bfs.get(0)]) {
+                    if (i == index) {       //detect cycle when traverse back to the start point
+                        return res;
+                    }
+                    if (--temp[i] == 0) {
+                        bfs.add(i);
+                        res.add(i);
+                    }
+                }
+                bfs.remove(0);
+            }
+
+            index++;
+        }
+
+        return new ArrayList<>();
     }
 
 }

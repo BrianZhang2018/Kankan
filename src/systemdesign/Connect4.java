@@ -1,7 +1,9 @@
 package systemdesign;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
+
 /**
  * coding1: connect 4那个游戏，实现两个部分. 第一部分是改成只输入列. 第二部分是加一个机器人对战
  *
@@ -15,6 +17,7 @@ public class Connect4 {
     public static void main(String[] args) {
         fillBoard(board, 'o');
         Scanner input = new Scanner(System.in);
+
         while (true) {
             // Show the state of the board
             showGameBoard(board);
@@ -32,8 +35,11 @@ public class Connect4 {
         }
     }
 
+    // play with robot player
     public static boolean tryDropPiece(char[][] board, int col, char player) {
-        boolean result = false;
+
+        if (player == 'Y') col = robotPlayer(board); // robot player
+
         // Check if the column is full
         if (board[0][col] != 'o') {
             System.out.println("That column is already full.");
@@ -46,7 +52,11 @@ public class Connect4 {
                 return true;
             }
         }
-        return result;
+        return false;
+    }
+
+    public static int robotPlayer(char[][] board) {
+        return new Random().nextInt(board.length);
     }
 
     public static boolean checkForWin() {
@@ -99,7 +109,6 @@ public class Connect4 {
                 }
             }
         }
-
         return false;
     }
 

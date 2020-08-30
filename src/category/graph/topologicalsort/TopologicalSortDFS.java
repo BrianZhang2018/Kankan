@@ -23,20 +23,21 @@ public class TopologicalSortDFS {
         TopologicalSortDFS test = new TopologicalSortDFS();
         System.out.println(test.canFinish(4, new int[][]{{0, 1}, {2, 1}, {2, 0}}));
         System.out.println(test.canFinish(4, new int[][]{{0, 1}, {2, 1}, {1, 2}}));
+
     }
 
     private boolean[] canFinish;
     private boolean[] visited;
     private List<Integer>[] depends; // 先导课
 
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
+    public boolean canFinish(int numCourses, int[][] preRequisites) {
         canFinish = new boolean[numCourses];
         visited = new boolean[numCourses];
         depends = new List[numCourses];
 
         for (int i = 0; i < numCourses; i++) depends[i] = new ArrayList<>();
 
-        for (int[] i : prerequisites) {
+        for (int[] i : preRequisites) {
             depends[i[1]].add(i[0]);
         }
 

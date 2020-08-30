@@ -5,14 +5,14 @@ import category.model.TreeNode;
 /**
  * https://www.lintcode.com/problem/inorder-successor-in-bst/description
  */
-public class InorderSuccessor{
+public class InOrderSuccessor {
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(2);
         root.left = new TreeNode(1);
         root.right = new TreeNode(3);
 
-        InorderSuccessor test = new InorderSuccessor();
+        InOrderSuccessor test = new InOrderSuccessor();
         TreeNode p = new TreeNode(1);
         TreeNode tn = test.inorderSuccessor(root, p);
         System.out.println(tn.val);

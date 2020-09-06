@@ -1,0 +1,15 @@
+https://medium.com/@jgefroh/software-architecture-image-uploading-67997101a034
+
+
+重点：
+
+1. decouple the file(image ...) upload service from main API
+2. signed upload/download url
+3. manage request lifecycle
+
+    Step 1: Client request an upload URL from the server (REQUEST)
+    Step 2: Client uploads the image data to the upload URL (UPLOAD)
+    Step 3: Client tells the server the upload is completed (CONFIRM)
+    Step 4: Server processes image in background (PROCESS)
+    Step 5: Client checks image processing status (CHECK)
+    Step 6: Server is done processing image, notifies client (FINALIZE)

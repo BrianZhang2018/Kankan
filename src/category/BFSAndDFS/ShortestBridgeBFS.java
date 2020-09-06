@@ -11,10 +11,10 @@ import java.util.Queue;
  * 
  * Created by brianzhang on 4/14/19.
  */
-public class ShortestBridge934 {
+public class ShortestBridgeBFS {
 
     public static void main(String[] args) {
-        ShortestBridge934 test = new ShortestBridge934();
+        ShortestBridgeBFS test = new ShortestBridgeBFS();
         System.out.println(test.shortestBridge(new int[][]{{0,1,0},{0,0,0},{0,1,1}}));
     }
     public int shortestBridge(int[][] A) {
@@ -22,10 +22,9 @@ public class ShortestBridge934 {
         if(A == null || A.length == 0)
             return 0;
 
-        int m = A.length;
-        int n = A[0].length;
+        int m = A.length, n = A[0].length;
         boolean found1 = false;
-        Queue<int[]> queue = new LinkedList<int[]>();
+        Queue<int[]> queue = new LinkedList<>();
 
         //1. DFS: first, Find a connected island
         //2. add left '1' nodes's coordinate belong to another island into the queue
@@ -40,6 +39,7 @@ public class ShortestBridge934 {
                 }
             }
         }
+
         int[][] dicts = new int[][]{{1,0}, {0,1}, {-1, 0}, {0, -1}} ;
         int level = 0;
         //Find shortest path by BFS

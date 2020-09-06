@@ -76,9 +76,9 @@ https://leetcode.com/problems/word-search/
 BFS： find shortest path
 
 BFS to find shortest path if graph or matrix is unweighted.
-Psudo code:
+Pseudo code:
 ...
-int level = 0;  //level also means need hwo much steps to find the element
+int level = 0;  //level also means need hwo much steps to find the target element
 while(!queue.isEmpty){
        int size = queue.size;
        //loop the current level, the above normal BFS don't need this loop.
@@ -92,7 +92,7 @@ while(!queue.isEmpty){
 }
 ...
 
-e.g /Users/brianzhang/workspace/WaWahaha/src/category/BFSAndDFS/ShortestBridge934.java
+e.g /Users/brianzhang/workspace/WaWahaha/src/category/BFSAndDFS/ShortestBridgeBFS.java
 /Users/brianzhang/workspace/WaWahaha/src/category/BFS/minimumsteps/CutOffTreesForGolfEventBFSGetMinSteps.java
 
 5. Compare the BFS and DFS by probelms

@@ -1,0 +1,5 @@
+don't store the client state which maintain on client side so that rest service is able to
+handle lots of current request from different client
+
+
+https://restfulapi.net/statelessness/

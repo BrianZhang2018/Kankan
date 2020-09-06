@@ -6,6 +6,9 @@ package category.BFS.SearchIn2DMatrix;
  * 而且是最快的方法，快于DFS
  */
 public class SearchA2DMatrixII{
+    public static void main(String[] args) {
+
+    }
     public boolean searchMatrix(int[][] matrix, int target) {
         
         if(matrix == null || matrix.length == 0)
@@ -47,6 +50,25 @@ public class SearchA2DMatrixII{
             }
         }
         
+        return false;
+    }
+
+    // https://leetcode.com/problems/search-a-2d-matrix-ii/discuss/66140/My-concise-O(m%2Bn)-Java-solution
+    public boolean searchMatrix1(int[][] matrix, int target) {
+        if(matrix == null || matrix.length < 1 || matrix[0].length <1) {
+            return false;
+        }
+        int col = matrix[0].length-1;
+        int row = 0;
+        while(col >= 0 && row <= matrix.length-1) {
+            if(target == matrix[row][col]) {
+                return true;
+            } else if(target < matrix[row][col]) {
+                col--;
+            } else if(target > matrix[row][col]) {
+                row++;
+            }
+        }
         return false;
     }
 }

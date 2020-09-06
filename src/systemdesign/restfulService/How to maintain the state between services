@@ -1,0 +1,5 @@
+Use a message queue between the service
+
+e.g. Apache Flink
+
+flink-job => kafka queue <=flink-job

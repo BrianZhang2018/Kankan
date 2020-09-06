@@ -6,14 +6,12 @@ import java.util.List;
 /**
  * https://leetcode.com/problems/expression-add-operators/
  *
- * When we use dfs to do this question, the most tricky part is that how to deal
- * with multiplication. For every addition and subtraction, we just directly
- * adding or subtracting the new number. However, for multiplication, we should
- * multiply current number and previous number firstly, and then add previous
- * previous number. So we can use a variable preNum to record every previous
- * number in each recursion step. If current recursive call is trying
- * multiplication, we should use previous calculation value subtract previous
- * number, and then adding multiplication result between previous number and current number.
+ * When we use dfs to do this question, the most tricky part is that how to deal with multiplication.
+ * For every addition and subtraction, we just directly adding or subtracting the new number.
+ * However, for multiplication, we should multiply current number and previous number firstly,
+ * and then add previous previous number. So we can use a variable preNum to record every previous number in each recursion step.
+ * If current recursive call is trying multiplication, we should use previous calculation value subtract previous number,
+ * and then adding multiplication result between previous number and current number.
  *
  * https://leetcode.com/problems/expression-add-operators/discuss/71895/Java-Standard-Backtrace-AC-Solutoin-short-and-clear
  * Created by brianzhang on 3/17/19.

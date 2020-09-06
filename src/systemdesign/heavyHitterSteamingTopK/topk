@@ -1,7 +1,7 @@
 
 Single host - topK algorithm (priorityQueue) - not scalable
 
-multiple host - Count min sketch - two dimensions table + N hash functions
+multiple host - Count min sketch - two dimensions table + "N" hash functions
 
 
 accuracy:

@@ -1,12 +1,10 @@
-package systemdesign;
+package OOD;
 
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * coding1: connect 4那个游戏，实现两个部分. 第一部分是改成只输入列. 第二部分是加一个机器人对战
- *
+ * <p>
  * https://cs.nyu.edu/courses/fall16/CSCI-UA.0101-009/notes/Lecture12.pdf
  * Created by brianzhang on 8/23/20.
  */
@@ -17,7 +15,6 @@ public class Connect4 {
     public static void main(String[] args) {
         fillBoard(board, 'o');
         Scanner input = new Scanner(System.in);
-
         while (true) {
             // Show the state of the board
             showGameBoard(board);
@@ -35,7 +32,7 @@ public class Connect4 {
         }
     }
 
-    // play with robot player
+    // only give the col num, and play with robot player
     public static boolean tryDropPiece(char[][] board, int col, char player) {
 
         if (player == 'Y') col = robotPlayer(board); // robot player
@@ -100,21 +97,12 @@ public class Connect4 {
             }
         }
 
-        // Check for win diagonally, from top right
-        for (int row = 0; row < board.length - 3; row++) {
-            for (int col = 3; col < board[row].length; col++) {
-                if (board[row][col] != 'o' && board[row][col] == board[row + 1][col - 1]
-                        && board[row][col] == board[row + 2][col - 2] && board[row][col] == board[row + 3][col - 3]) {
-                    return true;
-                }
-            }
-        }
         return false;
     }
 
     public static char[][] fillBoard(char[][] board, char myChar) {
-        for (int row = 0; row < board.length; row++) {
-            Arrays.fill(board[row], 0, board[row].length, myChar);
+        for (char[] row : board) {
+            Arrays.fill(row, 0, row.length, myChar);
         }
         return board;
     }

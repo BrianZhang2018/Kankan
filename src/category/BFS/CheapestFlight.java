@@ -13,10 +13,10 @@ import java.util.Queue;
 public class CheapestFlight {
 
     public static void main(String[] args) {
-
+        System.out.println(findCheapestPrice(3, new int[][]{{0, 1, 100}, {1, 2, 100}, {0, 2, 500}}, 0, 2, 1));
     }
 
-    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+    public static int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
         Map<Integer, Map<Integer, Integer>> prices = new HashMap();
         for (int[] f : flights) {
             if (!prices.containsKey(f[0])) {
@@ -36,7 +36,7 @@ public class CheapestFlight {
 
             if (city == dst)
                 return price;
-            
+
             if (stops > 0) {
                 Map<Integer, Integer> flight = prices.getOrDefault(city, new HashMap());
                 for (int key : flight.keySet()) {

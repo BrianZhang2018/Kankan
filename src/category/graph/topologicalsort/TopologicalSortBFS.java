@@ -84,7 +84,7 @@ public class TopologicalSortBFS {
         }
     }
 
-    // start from each point to find the cycle, if traverse back to the start point which means it's a cycle
+    // find cycle: start from each point to find the cycle, if traverse back to the start point which means it's a cycle
     public static List<Integer> findCycle(int n, int[][] preRequisites) {
         List<Integer>[] adjacent = new ArrayList[n];
         int[] degree = new int[n];

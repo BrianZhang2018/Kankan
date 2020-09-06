@@ -284,7 +284,7 @@ public class ShezhaoAmazonOA {
                 }
             }
         }
-        return max == 0 ? new ArrayList<Integer>() : res;
+        return max == 0 ? new ArrayList<>() : res;
     }
  
  

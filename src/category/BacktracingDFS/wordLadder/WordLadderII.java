@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/word-ladder-ii/
  *
- * Step-1: create a map that key-value is node -> all neighbors' node
+ * Step-1: create a map that node -> all neighbors' node
  * Step-2: use dfs to traverse the neighbors' map to get all the paths
  */
 public class WordLadderII {
@@ -14,29 +14,24 @@ public class WordLadderII {
         System.out.println(wordLadder2.findLadders("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
     }
 
-    //record all node's neighbors' node, then use dfs to figure out the path
+    // record all node's neighbors' nodes, then use dfs to figure out the path
     HashMap<String, List<String>> neighborsMap = new HashMap<>();
-    List<List<String>> res = new ArrayList<>();
-    List<String> list = new ArrayList<>();
 
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
-        if (wordList.isEmpty())
-            return res;
+        if (wordList.isEmpty()) return res;
 
-        for (String word : wordList) {
-            neighborsMap.put(word, new ArrayList<>());
-        }
+        for (String word : wordList) neighborsMap.put(word, new ArrayList<>());
+
         neighborsMap.put(beginWord, new ArrayList<>());
 
         boolean found = false;
-        HashSet<String> visited = new HashSet<>();
-        HashSet<String> unvisited = new HashSet<>(wordList);
+        HashSet<String> visited = new HashSet<>(), unvisited = new HashSet<>(wordList);
         visited.add(beginWord);
         unvisited.remove(beginWord);
 
         while (!visited.isEmpty()) {
-            if (found)
-                break;
+            if (found) break;
+
             HashSet<String> temp = new HashSet<>();
             for (String s : visited) {
                 for (int i = 0; i < s.length(); i++) {
@@ -47,10 +42,9 @@ public class WordLadderII {
                         if (unvisited.contains(newWord)) {
                             if (newWord.equals(endWord))
                                 found = true;
-                            temp.add(newWord);
 
-                            //building the neighbour map
-                            neighborsMap.get(s).add(newWord);
+                            temp.add(newWord);
+                            neighborsMap.get(s).add(newWord); // building the neighbour map
                         }
                     }
                 }
@@ -59,21 +53,23 @@ public class WordLadderII {
             visited = temp;
         }
 
-        dfs(beginWord, endWord);
+        dfs(beginWord, endWord, new ArrayList<>());
         return res;
     }
 
+    List<List<String>> res = new ArrayList<>();
+
     //dfs + backtracking: the exit condition will have the return for backtracking, but the simple dfs don't need return.
-    private void dfs(String beginWord, String endWord) {
-        list.add(beginWord);
+    private void dfs(String beginWord, String endWord, List<String> temp) {
+        temp.add(beginWord);
         if (beginWord.equals(endWord)) {
-            res.add(new ArrayList<>(list)); //deep copy
+            res.add(new ArrayList<>(temp)); //deep copy
             return;
         }
 
         for (String next : neighborsMap.get(beginWord)) {
-            dfs(next, endWord);
-            list.remove(list.size() - 1);
+            dfs(next, endWord, temp);
+            temp.remove(temp.size() - 1);
         }
     }
 }

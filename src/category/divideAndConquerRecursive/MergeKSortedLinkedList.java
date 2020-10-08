@@ -7,9 +7,12 @@ import category.model.ListNode;
  */
 public class MergeKSortedLinkedList{
 
+    public static void main(String[] args) {
+       // new MergeKSortedLinkedList().mergeKLists()
+    }
+
     public ListNode mergeKLists(ListNode[] lists) {
-        if(lists == null || lists.length == 0)
-            return null;
+        if(lists == null || lists.length == 0) return null;
         
         return mergeSort(lists, 0, lists.length - 1);
     }
@@ -18,7 +21,6 @@ public class MergeKSortedLinkedList{
         if(low == high) return lists[low];
         
         int mid = low + (high - low) / 2;
-        
         ListNode left = mergeSort(lists, low, mid);
         ListNode right = mergeSort(lists, mid + 1, high);
         

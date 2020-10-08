@@ -11,7 +11,6 @@ public class NumberOf1Bits {
 
     public static void main(String[] args) {
         Integer i = 00001111110055;
-        Integer j = -00000000000000000000000000000011;
 
         System.out.println(i);
        /* System.out.println(hammingWeight(i));

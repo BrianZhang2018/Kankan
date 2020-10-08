@@ -9,24 +9,19 @@ import category.model.TreeNode;
  */
 public class CountUniValSubtrees {
 
-    public static void main(String[] args) {
-
-    }
+    public static void main(String[] args) {}
 
     int count = 0;
     public int countUnivalSubtrees(TreeNode root) {
-        // write your code here
         if(root == null) return count;
         if(isUniVal(root, root.val)) count++;
 
         countUnivalSubtrees(root.left);
         countUnivalSubtrees(root.right);
-
         return count;
     }
 
     public boolean isUniVal(TreeNode root, int val){
-
         if(root == null) return true;
 
         return root.val == val && isUniVal(root.left, val) && isUniVal(root.right, val);

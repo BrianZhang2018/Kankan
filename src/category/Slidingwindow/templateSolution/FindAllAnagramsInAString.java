@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class FindAllAnagramsInAString {
     public static void main(String[] args) {
-        System.out.println(findAnagrams("cbaebabacd", "abc"));
+        System.out.println(findAnagrams("cbaebacd", "abc"));
     }
 
     public static List<Integer> findAnagrams(String s, String p) {
@@ -29,8 +29,8 @@ public class FindAllAnagramsInAString {
         int left = 0, right = 0, count = p.length();
 
         while (right < s.length()) {
-            //move right every time, if the character exists in p's freq[], decrease the count
-            //current freq value >= 1 means the character is existing in p's freq[]
+            // move right every time, if the character exists in p's freq[], decrease the count
+            // current freq value >= 1 means the character is existing in p's freq[]
             char rc = s.charAt(right);
             if (freq[rc - 'a'] >= 1) {
                 count--;
@@ -38,17 +38,17 @@ public class FindAllAnagramsInAString {
             freq[rc-'a']--;
             right++;
 
-            //when the count is down to 0, which means we found the right anagram, so add window's left to result
+            // when the count is down to 0 which means found the anagram, so add window's left to result
             if (count == 0) list.add(left);
 
             //if we find the window's size equals to target size, then we need to slide the window (left++) to look for next match window
             //increase the count if the character is in target
             if (right - left == p.length()) {
                 char lc = s.charAt(left);
-                if (freq[lc - 'a'] >= 0) {  //if left character in the target string
+                if (freq[lc - 'a'] >= 0) {  // means character in the target string. if less than 0, like -1, means not in target string, don't need increase count.
                     count++;
                 }
-                //reset left( -1 to 0: if left character not in target), (0 to 1) if left character in the target
+                //reset left (-1 to 0: if left character not in target), (0 to 1) if left character in the target
                 freq[lc - 'a']++;
                 left++;
             }

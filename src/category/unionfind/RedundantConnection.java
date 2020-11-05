@@ -4,6 +4,7 @@ package category.unionfind;
  * Union find + weight + flat binaryTree
  * 
  * Union find is used to determine the cycle when add a new edge
+ *
  * Weighted union find and path compression
  * <p>
  * Kruskal’s Algorithm is also leveraged this algorithm
@@ -71,7 +72,7 @@ public class RedundantConnection {
             // (parents[u] == u) is the root node as the root node pointing to itself
             // (and all the node was initiated as parents[u] = u in the beginning of this function)
             while (parents[u] != u) {
-                //parent point to the grandfather node, falt the binaryTree
+                //parent point to the grandfather node, flat the binaryTree
                 parents[u] = parents[parents[u]];
                 //assign the value grandfather node to u, then check again whether parents[u] == u in while condition
                 u = parents[u];

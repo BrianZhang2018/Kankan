@@ -4,16 +4,17 @@ import category.model.ListNode;
 
 /**
  * https://leetcode.com/problems/merge-k-sorted-lists/
+ *
+ * time complexity: O(nlogn)
  */
-public class MergeKSortedLinkedList{
+public class MergeKSortedList {
 
     public static void main(String[] args) {
-       // new MergeKSortedLinkedList().mergeKLists()
+       // new MergeKSortedList().mergeKLists()
     }
 
     public ListNode mergeKLists(ListNode[] lists) {
         if(lists == null || lists.length == 0) return null;
-        
         return mergeSort(lists, 0, lists.length - 1);
     }
     

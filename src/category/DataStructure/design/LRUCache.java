@@ -1,6 +1,6 @@
 package category.DataStructure.design;
 
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * Solution: (HashMap + Doubly LinkedList) = Java LinkedHashMap
@@ -29,7 +29,7 @@ public class LRUCache {
     }
 
     private int cacheSize;
-    private HashMap<Integer, DNode> map = new HashMap();
+    private Map<Integer, DNode> map = Collections.synchronizedMap(new HashMap());
     private DNode head = new DNode(0, 0), tail = new DNode(0, 0);
 
     public LRUCache(int capacity) {
@@ -64,11 +64,15 @@ public class LRUCache {
     public void removeNode(DNode node) {
         node.prev.next = node.next;
         node.next.prev = node.prev;
-        map.remove(node.key);
+        synchronized (map){
+            map.remove(node.key);
+        }
     }
 
     public void addToTop(DNode node) {
-        map.put(node.key, node);
+        synchronized (map){
+            map.put(node.key, node);
+        }
         DNode headNext = head.next;
         head.next = node;
         node.prev = head;

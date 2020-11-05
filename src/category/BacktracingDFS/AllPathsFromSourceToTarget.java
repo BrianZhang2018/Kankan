@@ -1,6 +1,7 @@
 package category.BacktracingDFS;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * https://leetcode.com/problems/all-paths-from-source-to-target/
@@ -11,7 +12,6 @@ import java.util.*;
 public class AllPathsFromSourceToTarget {
 
     public static void main(String[] args) {
-
     }
 
     List<List<Integer>> res = new ArrayList<>();

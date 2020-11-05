@@ -21,7 +21,6 @@ public class LRULinkedHashMap {
 }
 
 class LRU2<K, V> extends LinkedHashMap<K, V> {
-
     private int MAX_CACHE_SIZE;
 
     public LRU2(int maxCacheSize) {

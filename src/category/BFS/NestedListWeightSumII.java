@@ -10,7 +10,6 @@ import java.util.List;
  * https://yeqiuquan.blogspot.com/2017/07/364-nested-list-weight-sum-ii.html
  * Linkedin, facebook
  *
- *
  * Traverse the nested list level by level.
  * keep a cumulative sum by adding all integers from level 1 to the current level.
  * After traversing each level, we add this cumulative sum to the final result.

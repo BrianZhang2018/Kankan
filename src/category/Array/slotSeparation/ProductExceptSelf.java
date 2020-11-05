@@ -6,13 +6,12 @@ import java.util.Arrays;
  * https://leetcode.com/problems/product-of-array-except-self/discuss/65638/My-simple-Java-solution
  *
  * The idea is simple. We can divide the each slot of result array to two parts: left and right.
-     For example:
-     the left of result[i] means the product of all elements with index less than i or 1
-     the right of result[i] means the product of all elements with index larger than i or 1
-
-     We use two loops to calculate left and right. Then we store the result in the result array in the meanwhile.
-
- /*
+ *    For example:
+ *    the left of result[i] means the product of all elements with index less than i or 1
+ *    the right of result[i] means the product of all elements with index larger than i or 1
+ *
+ *    We use two loops to calculate left and right. Then we store the result in the result array in the meanwhile.
+ *
  * Visualized the idea of the solution
  * nums   = [1, 2, 3, 4]
  * output = product of nums[left of i] * product of nums[right of i]
@@ -33,7 +32,7 @@ public class ProductExceptSelf {
     public static int[] productExceptSelf(int[] nums) {
         int[] result = new int[nums.length];
         for (int i = 0, tmp = 1; i < nums.length; i++) {
-            result[i] = tmp;
+            result[i] = tmp;  // note here
             tmp *= nums[i];
         }
         for (int i = nums.length - 1, tmp = 1; i >= 0; i--) {

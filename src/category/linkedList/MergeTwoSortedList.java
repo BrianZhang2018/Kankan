@@ -11,8 +11,8 @@ public class MergeTwoSortedList {
         if(l1 == null || l2 == null)
             return l1 != null? l1 : (l2 !=null ? l2 : null);
 
-        ListNode head = new ListNode(0);
-        ListNode curr = head;
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
         while(l1 != null || l2 != null){
             if(l1 == null || l2 == null){
                 curr.next = (l2 ==null? l1 : l2);
@@ -27,6 +27,6 @@ public class MergeTwoSortedList {
             }
             curr = curr.next;
         }
-        return head.next;
+        return dummy.next;
     }
 }

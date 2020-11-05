@@ -1,4 +1,4 @@
-1. Find a middle node by "slow-and-fast-pointer" in the LinkedList:
+1. Find middle node by "slow-and-fast-pointer" in the LinkedList:
 
 We can use the two pointer approach for finding out the middle element of a linked list. Essentially, 
 we have two pointers called "slow_ptr" and "fast_ptr". The slow_ptr moves "one node" at a time whereas the fast_ptr moves
@@ -6,9 +6,10 @@ we have two pointers called "slow_ptr" and "fast_ptr". The slow_ptr moves "one n
 the middle element of the linked list. 
 For an even sized list, any of the two middle elements can act as the root of the BST.
 
-2. common check when iterate the LinkedList, whatever find a cycle in the LinkedList or find the middle element of LinkedList
-while(fast != null && fast.next !=null){
-             left = slow;
-             slow = slow.next;
-             fast = fast.next.next;
+2. Commonly used to check when iterate the LinkedList, whatever find a cycle in the LinkedList or find the middle element of LinkedList
+
+while(fast != null && fast.next !=null) {
+     left = slow;
+     slow = slow.next;
+     fast = fast.next.next;
 }

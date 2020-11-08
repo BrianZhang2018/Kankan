@@ -1,4 +1,4 @@
-package category.string.numberModDivide;
+package category.String.numberModDivide;
 
 /**
  * https://leetcode.com/problems/add-strings/

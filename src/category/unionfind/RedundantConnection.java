@@ -1,38 +1,35 @@
 package category.unionfind;
 
 /**
- * Union find + weight + flat binaryTree
- * 
+ * Union find + weight + flat binaryTree (Weighted union find and path compression)
  * Union find is used to determine the cycle when add a new edge
  *
- * Weighted union find and path compression
- * <p>
  * Kruskal’s Algorithm is also leveraged this algorithm
  * https://algorithms.tutorialhorizon.com/kruskals-algorithm-minimum-spanning-tree-mst-complete-java-implementation/
- * <p>
+ *
  * Created by brianzhang on 1/13/19.
  * 
  * https://www.youtube.com/watch?v=0jNmHPfA_yE  - Union Find
  */
 public class RedundantConnection {
     public static void main(String[] args) {
-        RedundantConnection redundantConnection = new RedundantConnection();
+        RedundantConnection test = new RedundantConnection();
         int[][] edges = {{1, 2}, {1, 3}, {2, 3}};
-        int[] res = redundantConnection.findRedundantConnection(edges);
+        int[] res = test.findRedundantConnection(edges);
         System.out.println(res[0] + " , " + res[1]);
     }
 
     public int[] findRedundantConnection(int[][] edges) {
         UnionFindSet s = new UnionFindSet(edges.length);
         for (int[] edge : edges)
-            if (!s.Union(edge[0], edge[1]))
-                return edge;
+            if (!s.Union(edge[0], edge[1])) return edge;
+
         return null;
     }
 
     class UnionFindSet {
         private int[] parents;
-        private int[] ranks; //weighted: size of parent 1, 2, 3...n
+        private int[] ranks;    //weighted: size of parent 1, 2, 3...n
 
         public UnionFindSet(int n) {
             parents = new int[n + 1];
@@ -44,14 +41,13 @@ public class RedundantConnection {
         }
 
         public boolean Union(int u, int v) {
-            int pu = find(u);
-            int pv = find(v);
-            if (pu == pv) return false;
+            int pu = find(u), pv = find(v);
+            if (pu == pv) return false;   // find circle as has the same parent root
 
             //merge the "small" disjoint binaryTree to big one by comparing the size (ranking) to flat the binaryTree
             if (ranks[pv] > ranks[pu]){
                 parents[pu] = pv;   //make "smaller" disjoint binaryTree point to larger one
-                ranks[pu]++; //weight++
+                ranks[pu]++;        //weight++
             }
             else if (ranks[pu] > ranks[pv]){
                 parents[pv] = pu;
@@ -69,13 +65,11 @@ public class RedundantConnection {
          * 2. path compression to flat the binaryTree
          */
         public int find(int u) {
-            // (parents[u] == u) is the root node as the root node pointing to itself
+            // parents[u] == u, is the root node as the root node pointing to itself
             // (and all the node was initiated as parents[u] = u in the beginning of this function)
             while (parents[u] != u) {
-                //parent point to the grandfather node, flat the binaryTree
-                parents[u] = parents[parents[u]];
-                //assign the value grandfather node to u, then check again whether parents[u] == u in while condition
-                u = parents[u];
+                parents[u] = parents[parents[u]];  //parent point to the grandfather node which flat the binaryTree
+                u = parents[u];   //assign the value grandfather node to u, then check again whether parents[u] == u in while condition
             }
             return u;
         }
@@ -87,6 +81,5 @@ public class RedundantConnection {
         //     return parents[u];
         // }
     }
-
 }
 

@@ -1,4 +1,4 @@
-package category.string;
+package category.String;
 
 /**
  * Created by brianzhang on 8/19/18.

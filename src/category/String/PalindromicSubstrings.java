@@ -1,4 +1,4 @@
-package category.string;
+package category.String;
 
 import java.util.Arrays;
 

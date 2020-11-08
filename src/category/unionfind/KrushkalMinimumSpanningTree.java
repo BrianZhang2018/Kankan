@@ -34,11 +34,10 @@ public class KrushkalMinimumSpanningTree {
     }
 
     static class Graph {
-        public List<Edge> inputEdges = new ArrayList<Edge>();
-        public List<Edge> mstEdges = new ArrayList<Edge>();
+        public List<Edge> inputEdges = new ArrayList<>();
+        public List<Edge> mstEdges = new ArrayList<>();
         public int vertices;
-        public int[] parents;
-        public int[] ranking;
+        public int[] parents, ranking;
 
         public Graph(int vertices) {
             this.vertices = vertices;
@@ -51,8 +50,8 @@ public class KrushkalMinimumSpanningTree {
         }
 
         public List<Edge> mst() {
-            //sort the edges by PriorityQeuue so that we start from the small weighted egdge to gurantee we get
-            //minimum spanning binaryTree
+            // sort the edges by PriorityQueue so that we start from the small weighted egdge to gurantee we get
+            // minimum spanning binaryTree
             PriorityQueue<Edge> pq = new PriorityQueue<>((a, b) -> a.weight - b.weight);
             for (Edge edge : inputEdges)
                 pq.add(edge);
@@ -102,9 +101,7 @@ public class KrushkalMinimumSpanningTree {
         public void printGraph(List<Edge> edgeList) {
             for (int i = 0; i < edgeList.size(); i++) {
                 Edge edge = edgeList.get(i);
-                System.out.println("Edge-" + i + " vertex1: " + edge.vertex1 +
-                        " vertex2: " + edge.vertex2 +
-                        " weight: " + edge.weight);
+                System.out.println("Edge-" + i + " vertex1: " + edge.vertex1 + " vertex2: " + edge.vertex2 + " weight: " + edge.weight);
             }
         }
     }

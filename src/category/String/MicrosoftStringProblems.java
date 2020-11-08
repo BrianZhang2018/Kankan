@@ -1,10 +1,7 @@
-package category.string;
-
-import javafx.util.Pair;
+package category.String;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.Stack;
 
 /**
  * "Fuck up point is the "getStringWithNoThreeIdenticalConsecutiveLetter", My string manipulation is suck"

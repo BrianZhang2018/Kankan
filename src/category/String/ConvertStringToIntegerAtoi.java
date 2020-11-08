@@ -1,4 +1,4 @@
-package category.string;
+package category.String;
 
 /**
  * https://leetcode.com/problems/string-to-integer-atoi/

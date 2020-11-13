@@ -7,18 +7,15 @@ import java.util.*;
  *
  * Created by brianzhang on 6/14/20.
  */
-public class LRU3Simple {
+public class LRUSDKSolution {
     
-    public static void main(String[] args) {
-        LinkedList<Integer> ll = new LinkedList<>();
-        System.out.println(ll.size());
-    }
+    public static void main(String[] args) {}
 
     private Deque<Integer> doublyQueue;
     private HashSet<Integer> hashSet;
     private final int CACHE_SIZE;
 
-    LRU3Simple(int capacity) {
+    LRUSDKSolution(int capacity) {
         doublyQueue = new LinkedList<>();
         hashSet = new HashSet<>();
         CACHE_SIZE = capacity;

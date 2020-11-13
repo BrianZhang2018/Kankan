@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * https://www.lintcode.com/problem/nested-list-weight-sum-ii/description
  * https://yeqiuquan.blogspot.com/2017/07/364-nested-list-weight-sum-ii.html
+ *
  * Linkedin, facebook
  *
  * Traverse the nested list level by level.
@@ -20,25 +21,23 @@ import java.util.List;
 
 public class NestedListWeightSumII {
 
-    public int depthSumInverse(List<NestedInteger> nestedList) {
-        // Write your code here.
-        if(nestedList == null || nestedList.size() == 0) {
-            return 0;
-        }
+    public static void main(String[] args) {}
 
-        int sum = 0;
-        int cumulative = 0;
+    public int depthSumInverse(List<NestedInteger> nestedList) {
+        if(nestedList == null || nestedList.size() == 0) return 0;
+
+        int sum = 0, cumulative = 0;
         while (!nestedList.isEmpty()) {
             List<NestedInteger> next = new ArrayList<>();
             for (NestedInteger n : nestedList) {
                 if (n.isInteger()) {
-                    cumulative += n.getInteger();
+                    cumulative += n.getInteger(); // key point, the value will be counted depth times from bottom to up
                 }
                 else {
                     next.addAll(n.getList());
                 }
             }
-            sum += cumulative; // here is key, the leaf number will be added its depth times
+            sum += cumulative;
             nestedList = next;
         }
         return sum;

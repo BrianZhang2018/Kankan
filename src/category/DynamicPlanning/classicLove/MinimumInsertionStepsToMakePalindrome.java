@@ -22,7 +22,7 @@ public class MinimumInsertionStepsToMakePalindrome {
         System.out.println(s.length() - lcs);
     }
 
-    //bottom-up, 递推
+    // Bottom-up, 递推
     public int minInsertions(String s) {
 
         if(s == null || s.length() <=1)
@@ -40,7 +40,7 @@ public class MinimumInsertionStepsToMakePalindrome {
         return dp[0][n-1];
     }
 
-    //LCS solution
+    // LCS solution
     public int longestCommonSubSequence(char[] arr1, char[] arr2) {
         int n1 = arr1.length, n2 = arr2.length;
         int[][] dp = new int[n1 + 1][n2 + 1];

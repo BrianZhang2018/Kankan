@@ -22,8 +22,7 @@ public class WordBreakI {
         if (s == null || s.length() == 0) return false;
 
         int n = s.length();
-        // dp[i] represents whether s[0...i] can be formed by dict
-        boolean[] dp = new boolean[n];
+        boolean[] dp = new boolean[n]; // dp[i] represents whether s[0...i] can be formed by dict
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <= i; j++) {

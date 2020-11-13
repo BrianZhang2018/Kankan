@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/word-break-ii/
  * 
- * this's an backtracking problem
+ * this's a backtracking problem
  * 
  * Time complexity:
  * Lets say total number of words be w, and the string length of s be n. then at each char of n places
@@ -26,8 +26,7 @@ public class WordBreakII {
 
     // DFS function returns an array including all substring derived from s - backtracking
     List<String> dfs(String s, List<String> wordDict, HashMap<String, List<String>> memo) {
-        if (memo.containsKey(s))
-            return memo.get(s);
+        if (memo.containsKey(s)) return memo.get(s);
 
         List<String> subWords = new ArrayList<>();
         if (s.length() == 0) {
@@ -41,6 +40,7 @@ public class WordBreakII {
                     subWords.add(word + (sub.isEmpty() ? "" : " ") + sub);
             }
         }
+
         memo.put(s, subWords);
         return subWords;
     }

@@ -8,7 +8,6 @@ import java.util.Stack;
  * Created by brianzhang on 5/16/20.
  */
 public class EvaluateReversePolishNotation {
-
     public static void main(String[] args) {
         System.out.println(evalRPN(new String[] {"2", "1", "+", "3", "*"}));
         System.out.println(isValidRPN(new String[] {"2", "1", "+", "3", "*"}));
@@ -23,7 +22,7 @@ public class EvaluateReversePolishNotation {
 
         for(String str : tokens){
             if(operators.contains(str)){
-                int num2 = stack.pop(); // important here
+                int num2 = stack.pop(); // note here
                 int num1 = stack.pop();
 
                 switch (str) {
@@ -50,7 +49,6 @@ public class EvaluateReversePolishNotation {
 
     // https://stackoverflow.com/questions/14506831/whats-the-fastest-way-to-check-if-input-string-is-a-correct-rpn-expression
     public static boolean isValidRPN(String[] tokens) {
-
         int count = 0;
         String operators = "+-*/";
         for(String s : tokens){

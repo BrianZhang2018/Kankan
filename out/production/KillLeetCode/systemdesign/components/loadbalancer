@@ -1,7 +1,0 @@
-1. AWS loadbalancer
-
-2. Do your loadbalancer: nginx, HAproxy can acheive that.
-
-3. Can do the SSL verification on loadbalancer leverl rather than on application server leverl 
-
-

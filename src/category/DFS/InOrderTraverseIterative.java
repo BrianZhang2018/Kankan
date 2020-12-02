@@ -15,16 +15,13 @@ public class InOrderTraverseIterative {
         root.right = new TreeNode(5);
         root.left.right = new TreeNode(9);
         root.right.left = new TreeNode(1);
-
         inOrder(root);
     }
 
     public static void inOrder(TreeNode root) {
         Stack<TreeNode> stack = new Stack<>();
         TreeNode curr = root;
-
         while (!stack.isEmpty() || curr != null) {
-
             if (curr != null) {
                 stack.add(curr);
                 curr = curr.left;

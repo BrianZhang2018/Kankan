@@ -35,7 +35,8 @@ public class TopologicalSortDFS {
         visited = new boolean[numCourses];
         depends = new List[numCourses];
 
-        for (int i = 0; i < numCourses; i++) depends[i] = new ArrayList<>();
+        for (int i = 0; i < numCourses; i++)
+            depends[i] = new ArrayList<>();
 
         for (int[] i : preRequisites) {
             depends[i[1]].add(i[0]);

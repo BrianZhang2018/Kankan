@@ -17,7 +17,6 @@ public class PathSumIII {
         TreeNode root = new TreeNode(10);
         root.left = new TreeNode(1);
         root.right = new TreeNode(9);
-
         System.out.println(new PathSumIII().pathSum(root, 8));
     }
 
@@ -39,8 +38,7 @@ public class PathSumIII {
         // get the number of valid path ended by the current node (currSum-target = the sum of qualified paths)
         int numPathToCurr = prefixSumMap.getOrDefault(currSum - target, 0);
 
-        int res = numPathToCurr + backtrack(node.left, prefixSumMap, currSum, target)
-                + backtrack(node.right, prefixSumMap, currSum, target);
+        int res = numPathToCurr + backtrack(node.left, prefixSumMap, currSum, target) + backtrack(node.right, prefixSumMap, currSum, target);
 
         //dfs: remove the current prefix sum which added current node value
         prefixSumMap.put(currSum, prefixSumMap.get(currSum) - 1); // 

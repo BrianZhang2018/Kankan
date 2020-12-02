@@ -33,8 +33,7 @@ public class MaxAreaOfIsland1 {
 
     private int dfs(int[][] grid, int i, int j) {
         int m = grid.length, n = grid[0].length;
-        if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == 0)
-            return 0;
+        if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == 0) return 0;
 
         grid[i][j] = 0; // flip th number to "0" which make the cell has been visited
         int res = 1;

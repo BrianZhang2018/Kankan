@@ -10,7 +10,6 @@ import java.util.Map;
  *
  * Created by brianzhang on 6/16/20.
  */
-
 class LFUCache {
 
     public static void main(String[] args) {

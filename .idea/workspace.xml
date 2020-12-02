@@ -5,15 +5,103 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/String/classic/StringCompressAndDecode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/companies/amazon/LRU3Simple.java" afterPath="$PROJECT_DIR$/src/companies/amazon/LRUSDKSolution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/DB/Cassandra/Screen Shot 2020-11-15 at 2.50.38 PM.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/distributedCache/Architecture Summary.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/distributedCache/Consisten hashing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/distributedCache/How to maintain a list of cache servers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/documentSearch/inverted index.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/googleCalendar/Dynamodb ttl S3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Architecture-summary-step-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Data retrieval-step-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/MapReduceJob.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/keyValueStore/Architecture-Memtable-SST-Write.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/keyValueStore/Data replication-VirtualNodes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/keyValueStore/Key Hashing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/keyValueStore/Skip List.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/notificationService/Architecture-HighLevelDesign.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/notificationService/Architecture-detailed summary.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/notificationService/Cluster control strategy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/notificationService/Sender.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/notificationService/Temporay storage solutions.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/rateLimiter/Architecture Summary.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/rateLimiter/Message broadcasting.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/rateLimiter/bucket token algorigthm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/techTalk/instagram/Invaliate memcache.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/techTalk/instagram/Memcache Lease.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/tinyUrl/Architecture-summary.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Memo/EditDistanceMemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Memo/Memo Analysis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/PriorityQueue/MyCalendarThree732.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/easy/MaxConsecutiveOnesIII.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/greedy/CourseScheduleIII.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/linkedList/AllOoneDataStructure.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/distributedCache/ConsistentHashingFlaw" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/distributedCache/Replica Mechanism" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/documentSearch/mechanism" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/googleCalendar/link" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/keyValueStore/KeyValueStore Mechanism" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/notificationService/link" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/systemDesign/techTalk/instagram/optimal solutions" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/components/loadbalancer" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/systemdesign/components/loadbalancer" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/systemdesign/heavyHitterSteamingTopK/Data retrieval - step-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/systemdesign/heavyHitterSteamingTopK/system-architecture - step-1.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/Strings/LCSubSequence/ConvertWord1ToWord2EditDistance.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Strings/LCSubSequence/EditDistance.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/LongestSubstringWithKDistinctCharacter.java" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/LongestSubstringAtMostKDistinctCharacter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/A-MyInterviewExperience" afterPath="$PROJECT_DIR$/src/systemDesign/A-MyInterviewExperience" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/DB/NoSql vs Sql - how to select.png" afterPath="$PROJECT_DIR$/src/systemDesign/DB/NoSql vs Sql - how to select.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/DB/dataStoreType-DBType.png" afterPath="$PROJECT_DIR$/src/systemDesign/DB/dataStoreType-DBType.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/DB/dataformat" afterPath="$PROJECT_DIR$/src/systemDesign/DB/dataformat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/DB/sharding vs partition" afterPath="$PROJECT_DIR$/src/systemDesign/DB/sharding vs partition" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/DesignLearning" afterPath="$PROJECT_DIR$/src/systemDesign/DesignLearning" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/GeneralDesignTips" afterPath="$PROJECT_DIR$/src/systemDesign/GeneralDesignTips" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/SNAKE.png" afterPath="$PROJECT_DIR$/src/systemDesign/SNAKE.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/Saga distributed message.png" afterPath="$PROJECT_DIR$/src/systemDesign/Saga distributed message.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/SystemDesign-Standard" afterPath="$PROJECT_DIR$/src/systemDesign/SystemDesign-Standard" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/TinyURL.png" afterPath="$PROJECT_DIR$/src/systemDesign/TinyURL.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/Top K problem" afterPath="$PROJECT_DIR$/src/systemDesign/Top K problem" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/Twitter-design" afterPath="$PROJECT_DIR$/src/systemDesign/Twitter-design" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/Twitter.png" afterPath="$PROJECT_DIR$/src/systemDesign/Twitter.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/TypeAhead-analysis.png" afterPath="$PROJECT_DIR$/src/systemDesign/TypeAhead-analysis.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/Vertical&amp;Horizontal Scaling.png" afterPath="$PROJECT_DIR$/src/systemDesign/Vertical&amp;Horizontal Scaling.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/dropbox/solution-1" afterPath="$PROJECT_DIR$/src/systemDesign/dropbox/solution-1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/fileUploadService/architecture.png" afterPath="$PROJECT_DIR$/src/systemDesign/fileUploadService/architecture.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/fileUploadService/explanation" afterPath="$PROJECT_DIR$/src/systemDesign/fileUploadService/explanation" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/heavyHitterSteamingTopK/fast-path flow - step-2.png" afterPath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/heavyHitterSteamingTopK/topk" afterPath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/topK" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/loadBalancer/LoadBalancerAndReverseProxy.png" afterPath="$PROJECT_DIR$/src/systemDesign/components/loadBalancer/LoadBalancerAndReverseProxy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/loadBalancer/why (DNS)Route53 need connect to ALB.png" afterPath="$PROJECT_DIR$/src/systemDesign/components/loadBalancer/why (DNS)Route53 need connect to ALB.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/messageQueue/explanation" afterPath="$PROJECT_DIR$/src/systemDesign/messageQueue/explanation" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/messagingSystem/link" afterPath="$PROJECT_DIR$/src/systemDesign/messagingSystem/link" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/messagingSystem/msg system design.png" afterPath="$PROJECT_DIR$/src/systemDesign/messagingSystem/msg system design.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/restfulService/Handle the lifecycle of request" afterPath="$PROJECT_DIR$/src/systemDesign/restfulService/Handle the lifecycle of request" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/restfulService/How to maintain the state between services" afterPath="$PROJECT_DIR$/src/systemDesign/restfulService/How to maintain the state between services" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/restfulService/REST explanation" afterPath="$PROJECT_DIR$/src/systemDesign/restfulService/REST explanation" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/theater/technologies" afterPath="$PROJECT_DIR$/src/systemDesign/theater/technologies" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/systemdesign/theater/theaterBookingSeat.png" afterPath="$PROJECT_DIR$/src/systemDesign/theater/theaterBookingSeat.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BFS/NestedListWeightSumII.java" afterPath="$PROJECT_DIR$/src/category/BFS/NestedListWeightSumII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakII.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/classicLove/MinimumInsertionStepsToMakePalindrome.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/classicLove/MinimumInsertionStepsToMakePalindrome.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/PriorityQueue/CheapestFlight.java" afterPath="$PROJECT_DIR$/src/category/PriorityQueue/CheapestFlight.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Stack/EvaluateReversePolishNotation.java" afterPath="$PROJECT_DIR$/src/category/Stack/EvaluateReversePolishNotation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/DB/sharding vs partition" afterPath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/DB/sharding vs partition" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BFS/WordLadderBFS.java" afterPath="$PROJECT_DIR$/src/category/BFS/WordLadderBFS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BacktracingDFS/binarytree/PathSumIII.java" afterPath="$PROJECT_DIR$/src/category/BacktracingDFS/binarytree/PathSumIII.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BacktracingDFS/wordLadder/WordLadderI.java" afterPath="$PROJECT_DIR$/src/category/BacktracingDFS/wordLadder/WordLadderI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BinaryTreeAndBinarySerach/ClosestBinarySearchTreeValueII.java" afterPath="$PROJECT_DIR$/src/category/BinaryTreeAndBinarySerach/ClosestBinarySearchTreeValueII.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BinaryTreeAndBinarySerach/binarySearch/Sqrt.java" afterPath="$PROJECT_DIR$/src/category/BinaryTreeAndBinarySerach/binarySearch/Sqrt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DFS/InOrderTraverseIterative.java" afterPath="$PROJECT_DIR$/src/category/DFS/InOrderTraverseIterative.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DFS/MaxAreaOfIsland.java" afterPath="$PROJECT_DIR$/src/category/DFS/MaxAreaOfIsland.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DFS/MaxAreaOfIsland1.java" afterPath="$PROJECT_DIR$/src/category/DFS/MaxAreaOfIsland1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/DP" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/DP" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/JumpGameTopDown.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/JumpGameTopDown.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/HashMap/LFUCache.java" afterPath="$PROJECT_DIR$/src/category/HashMap/LFUCache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/PriorityQueue/KClosestPointsToOrigin.java" afterPath="$PROJECT_DIR$/src/category/PriorityQueue/KClosestPointsToOrigin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/FindAllAnagramsInAString.java" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/FindAllAnagramsInAString.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/LongestSubstringWithoutRepeatingCharacters.java" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/LongestSubstringWithoutRepeatingCharacters.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/easy/MaximumNumberOfVowelsInSubstring.java" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/easy/MaximumNumberOfVowelsInSubstring.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/graph/topologicalsort/TopologicalSortDFS.java" afterPath="$PROJECT_DIR$/src/category/graph/topologicalsort/TopologicalSortDFS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/unionfind/NumberOfIslandsII.java" afterPath="$PROJECT_DIR$/src/category/unionfind/NumberOfIslandsII.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/companies/amazon/LRULinkedHashMap.java" afterPath="$PROJECT_DIR$/src/companies/amazon/LRULinkedHashMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/companies/linkedin/PaintHouse.java" afterPath="$PROJECT_DIR$/src/companies/linkedin/PaintHouse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/高频题/highFrequent/MaxAreaOfIsland.java" afterPath="$PROJECT_DIR$/src/高频题/highFrequent/MaxAreaOfIsland.java" />
     </list>
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
@@ -81,109 +169,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NestedListWeightSumII.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/NestedListWeightSumII.java">
+      <file leaf-file-name="WordLadder127.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/WordLadder127.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="468">
+              <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NestedListWeightSumII.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/category/BFS/NestedListWeightSumII.java">
+      <file leaf-file-name="WordLadderBFS.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/BFS/WordLadderBFS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NestedListWeightSumI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/NestedListWeightSumI.java">
+      <file leaf-file-name="PermutationI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/BacktracingDFS/permutation/PermutationI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShortWordDistanceI243.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/ShortWordDistanceI243.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="504">
+              <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShortWordDistanceII244.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/ShortWordDistanceII244.java">
+      <file leaf-file-name="WordLadderWithEdgePreCalculations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/myVO/WordLadderWithEdgePreCalculations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="720">
+              <caret line="40" column="71" lean-forward="false" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FindCelebrity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/FindCelebrity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-              <folding />
-            </state>
+      <file leaf-file-name="Data retrieval-step-3.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Data retrieval-step-3.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EvaluateReversePolishNotation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/EvaluateReversePolishNotation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
-              <folding>
-                <element signature="method#main#0;class#EvaluateReversePolishNotation#0" expanded="false" />
-              </folding>
-            </state>
+      <file leaf-file-name="Architecture-summary-step-1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Architecture-summary-step-1.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FriendCircle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/FriendCircle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-              <folding />
-            </state>
+      <file leaf-file-name="Fast-path flow-step-2-1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FriendCircleSimpleUnionFind.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/unionfind/simple/FriendCircleSimpleUnionFind.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-              <folding />
-            </state>
+      <file leaf-file-name="MapReduceJob.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/MapReduceJob.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LowestCommonAncestor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/LowestCommonAncestor.java">
+      <file leaf-file-name="Slow-path-long-period-aggregation-2-2.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+            <state relative-caret-position="2970">
+              <caret line="198" column="6" lean-forward="false" selection-start-line="198" selection-start-column="6" selection-end-line="198" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -204,27 +269,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getLongestPalindromeSubseq</find>
-      <find>system</find>
-      <find>coinChangeDp</find>
-      <find>find</find>
-      <find>to</find>
-      <find>\\n</find>
-      <find>-\n</find>
-      <find>Sun</find>
-      <find>valOfNewNode</find>
-      <find>https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)</find>
-      <find>element</find>
-      <find>Node</find>
-      <find>top down</find>
-      <find>poler</find>
-      <find>linkedlist</find>
-      <find>static</find>
-      <find>backtrack</find>
-      <find>pointer</find>
-      <find>array.fil</find>
-      <find>cardsUsed</find>
-      <find>quickSort</find>
       <find>busySlots.get(i - 1)</find>
       <find>busySlots.get(i)</find>
       <find>[</find>
@@ -234,6 +278,27 @@
       <find>11111111111111111111111111111</find>
       <find>00000000000000000000000000000</find>
       <find>map</find>
+      <find>category.model.TreeNode</find>
+      <find>72</find>
+      <find>366</find>
+      <find>272</find>
+      <find>256</find>
+      <find>149</find>
+      <find>200</find>
+      <find>716</find>
+      <find>69</find>
+      <find>71</find>
+      <find>76</find>
+      <find>68</find>
+      <find>MyCalendarThree</find>
+      <find>159</find>
+      <find>max.push</find>
+      <find>187</find>
+      <find>432</find>
+      <find>380</find>
+      <find>712</find>
+      <find>636</find>
+      <find>AllOoneDataStructure.DoublyLinkedNode</find>
     </findStrings>
     <replaceStrings>
       <replace>DLinkedListNode</replace>
@@ -244,7 +309,6 @@
       <replace>-\n</replace>
       <replace>\n</replace>
       <replace>valOfInsertNode</replace>
-      <replace>TreeNode</replace>
       <replace>perf</replace>
       <replace>prev</replace>
       <replace>curr</replace>
@@ -252,6 +316,9 @@
       <replace>o</replace>
       <replace>100000000000000000000</replace>
       <replace>1111111111111111111111111111111111111111</replace>
+      <replace>TreeNode</replace>
+      <replace>test</replace>
+      <replace>DoublyLinkedNode</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -265,57 +332,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/oracle/MregeKSortedList.java" />
-        <option value="$PROJECT_DIR$/src/category/BinaryTreeAndBinarySerach/ClosestBinarySearchTreeValueII.java" />
-        <option value="$PROJECT_DIR$/src/category/mergeList/PriorityQueueSolution.java" />
-        <option value="$PROJECT_DIR$/src/category/DivideAndConquerRecursive/MergeKSortedLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/category/DivideAndConquerRecursive/MergeKSortedList.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/oracle/MergeKSortedList.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/oracle/BinarySearchTreeDeleteNode.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/oracle/MaxValuePathIntegerMatrix.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/oracle/ClosestBinarySearchTreeValueII.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/oracle/ThreeArrayFindTarget.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/thread vs process" />
-        <option value="$PROJECT_DIR$/src/javabasic/Pow.java" />
+        <option value="$PROJECT_DIR$/src/category/DynamicPlanning/Strings/LCSubSequence/EditDistance.java" />
+        <option value="$PROJECT_DIR$/src/systemdesign/keyValueStore/KeyValueStore" />
+        <option value="$PROJECT_DIR$/src/systemdesign/documentSearch/mechanism" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/phoneScreening/mine/NestedListWeightSumII.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/phoneScreening/highF/TournamentTree.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/phoneScreening/highF/ShortWordDistanceII244.java" />
+        <option value="$PROJECT_DIR$/src/category/DynamicPlanning/JumpGameTopDown.java" />
+        <option value="$PROJECT_DIR$/src/category/BacktracingDFS/binarytree/PathSumIII.java" />
+        <option value="$PROJECT_DIR$/src/category/DynamicPlanning/Memo/EditDistanceMemo.java" />
+        <option value="$PROJECT_DIR$/src/category/DynamicPlanning/DP" />
+        <option value="$PROJECT_DIR$/src/category/DynamicPlanning/Memo/Memo Analysis" />
+        <option value="$PROJECT_DIR$/src/systemDesign/A-MyInterviewExperience" />
         <option value="$PROJECT_DIR$/src/category/BinaryTreeAndBinarySerach/binarySearch/Sqrt.java" />
-        <option value="$PROJECT_DIR$/src/category/unionfind/FriendCircle.java" />
-        <option value="$PROJECT_DIR$/src/category/unionfind/FriendCircleSimpleUnionFind.java" />
-        <option value="$PROJECT_DIR$/src/category/unionfind/KrushkalMinimumSpanningTree.java" />
-        <option value="$PROJECT_DIR$/src/category/unionfind/simple/FriendCircleSimpleUnionFind.java" />
-        <option value="$PROJECT_DIR$/src/category/unionfind/RedundantConnection.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/microsoft/OA/LexicographicallySmallestString.java" />
-        <option value="$PROJECT_DIR$/src/category/String/classic/StringCompressAndDecode.java" />
-        <option value="$PROJECT_DIR$/src/category/String/LongestPalindromeSubsequence.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/MinimunInsertionMakePalindrom.java" />
-        <option value="$PROJECT_DIR$/src/companies/amazon/LRU3Simple.java" />
-        <option value="$PROJECT_DIR$/src/category/PriorityQueue/CheapestFlight.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/InsertInterval.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/hard/CountDifferentPalindromeSubsequence.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/maybe/InsertInterval.java" />
-        <option value="$PROJECT_DIR$/src/companies/amazon/LRU3SDKSolution.java" />
-        <option value="$PROJECT_DIR$/src/companies/amazon/LRUSDKSolution.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/StringCompressAndDecode.java" />
-        <option value="$PROJECT_DIR$/src/category/Stack/EvaluateReversePolishNotation.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/MyPow.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/CapacityToShipPackagesWithNDays.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/SemaphoreExample.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/LRUCache.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/MinimunInsertionMakePalindrome.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/MinimumInsertionMakePalindrome.java" />
-        <option value="$PROJECT_DIR$/src/category/DynamicPlanning/classicLove/MinimumInsertionStepsToMakePalindrome.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/EvaluateReversePolishNotation.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/StringToInteger.java" />
-        <option value="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java" />
-        <option value="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakII.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/ShortWordDistanceI243.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/ShortWordDistanceII244.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/LowestCommonAncestor.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/NestedListWeightSumI.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/FriendCircle.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/FIndCelebrity.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/FindCelebrity.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/NestedListWeightSumII.java" />
-        <option value="$PROJECT_DIR$/src/category/BFS/NestedListWeightSumII.java" />
+        <option value="$PROJECT_DIR$/src/category/PriorityQueue/KClosestPointsToOrigin.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/MaxPointsOnALine149.java" />
+        <option value="$PROJECT_DIR$/src/companies/linkedin/PaintHouse.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/PaintHouseII265.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/LongestSubstringAtMostTwoDistinctCharacters159.java" />
+        <option value="$PROJECT_DIR$/src/category/BacktracingDFS/wordLadder/WordLadderI.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/TextJustification68.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/recent/MaxStack716.java" />
+        <option value="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/LongestSubstringAtMostKDistinctCharacter.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/DLLProblems/MaxStack716.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/hard/CountDifferentPalindromeSubsequence730DP.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/InsertDeleteGetRandomOone.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/InsertDeleteGetRandomOone380.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/InsectionOfTwoLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/easy/MaxConsecutiveOnesIII.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/greedy/ExclusiveTimeOfFunctions.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/DLLProblems/AllOoneDataStructureTreeMap.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/DLLProblems/MaxStackLinkedListTreeMap.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/EditDistance72.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/hard/CountDifferentPalindromeSubsequenceDP730.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/recent/LongestSubstringAtMostTwoDistinctCharacters159.java" />
+        <option value="$PROJECT_DIR$/src/category/DFS/InOrderTraverseIterative.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/ClosestBinarySearchTreeValueII272.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/FindBinaryLeaves366.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/MaximumSumOfNonAdjacentElements.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/MinimumASCIIDeleteSumTwoStrings712.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/NumberOfIslandAndSort200.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/RotateList.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/WordLadder127.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/PaintHouse256.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/PaintHouseII265.java" />
+        <option value="$PROJECT_DIR$/src/category/unionfind/NumberOfIslandsII.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/DLLProblems/AllOoneDataStructure.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/greedy/MyCalendarThree732.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/SqrtX69.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/TrappingWater42.java" />
+        <option value="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/myVO/WordLadderWithEdgePreCalculations.java" />
+        <option value="$PROJECT_DIR$/src/category/BFS/WordLadderBFS.java" />
       </list>
     </option>
   </component>
@@ -688,8 +755,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -730,6 +798,90 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="systemDesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="systemDesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tinyUrl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="systemDesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notificationService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="systemDesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="heavyHitterSteamingTopK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="category" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -752,7 +904,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="unionfind" />
+              <option name="myItemId" value="BacktracingDFS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -774,103 +926,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="unionfind" />
+              <option name="myItemId" value="BacktracingDFS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kankan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kankan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="category" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kankan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kankan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="category" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DynamicPlanning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kankan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kankan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="category" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DynamicPlanning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classicLove" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kankan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kankan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="category" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BFS" />
+              <option name="myItemId" value="permutation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -895,30 +955,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kankan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewPrep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linkedin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -946,40 +987,40 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$USER_HOME$/workspace/InterviewPrep/src/microsoft/OA/ms2020" />
-      <recent name="$USER_HOME$/workspace/InterviewPrep/src/compass/myVO" />
-      <recent name="$USER_HOME$/workspace/InterviewPrep/src/doordash/myVO" />
-      <recent name="$PROJECT_DIR$/src/systemdesign/fileUploadService" />
-      <recent name="$PROJECT_DIR$/src/OOD" />
+      <recent name="$PROJECT_DIR$/src/systemDesign/tinyUrl" />
+      <recent name="$PROJECT_DIR$/src/systemDesign/rateLimiter" />
+      <recent name="$PROJECT_DIR$/src/systemdesign/rateLimiter" />
+      <recent name="$PROJECT_DIR$/src/systemdesign/heavyHitterSteamingTopK" />
+      <recent name="$PROJECT_DIR$/src/systemdesign/documentSearch" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="category.PriorityQueue.overlapInterval" />
       <recent name="companies.RallyHealthy" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="linkedin.vo" />
+      <recent name="linkedin.vo.recent" />
+      <recent name="linkedin.vo.DLLProblems" />
+      <recent name="linkedin" />
       <recent name="category.String.classic" />
-      <recent name="category.unionfind" />
-      <recent name="compass.onsite" />
-      <recent name="category.DataStructure.design" />
-      <recent name="affirm" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/DLLProblems" />
+      <recent name="$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo" />
+      <recent name="$USER_HOME$/workspace/InterviewPrep/src/linkedin/systemDesign" />
       <recent name="$USER_HOME$/workspace/InterviewPrep/src/linkedin" />
       <recent name="$USER_HOME$/workspace/InterviewPrep" />
-      <recent name="$PROJECT_DIR$/src/category/DataStructure/design" />
-      <recent name="$PROJECT_DIR$/src/category/DataStructure" />
-      <recent name="$PROJECT_DIR$/src/category/BacktracingDFS/binarytree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShortWordDistanceII244">
-    <configuration default="false" name="ShortWordDistanceII244" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.ShortWordDistanceI243">
+    <configuration default="false" name="PaintHouse256" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="linkedin.*" />
+          <option name="PATTERN" value="linkedin.vo.recent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="linkedin.ShortWordDistanceII244" />
+      <option name="MAIN_CLASS_NAME" value="linkedin.vo.PaintHouse256" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -992,14 +1033,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PaintHouseII265" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="linkedin.*" />
+          <option name="PATTERN" value="linkedin.vo.recent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="linkedin.LRUCache" />
+      <option name="MAIN_CLASS_NAME" value="linkedin.vo.PaintHouseII265" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1012,14 +1053,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="MinimumInsertionMakePalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FindBinaryLeaves366" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="linkedin.*" />
+          <option name="PATTERN" value="linkedin.vo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="linkedin.MinimumInsertionMakePalindrome" />
+      <option name="MAIN_CLASS_NAME" value="linkedin.vo.FindBinaryLeaves366" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1032,14 +1073,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="StringToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="AllOoneDataStructure" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="linkedin.*" />
+          <option name="PATTERN" value="linkedin.vo.DLLProblems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="linkedin.StringToInteger" />
+      <option name="MAIN_CLASS_NAME" value="linkedin.vo.DLLProblems.AllOoneDataStructure" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1055,11 +1096,11 @@
     <configuration default="false" name="ShortWordDistanceI243" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="linkedin.*" />
+          <option name="PATTERN" value="linkedin.phoneScreening.highF.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="linkedin.ShortWordDistanceI243" />
+      <option name="MAIN_CLASS_NAME" value="linkedin.phoneScreening.highF.ShortWordDistanceI243" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1654,19 +1695,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ShortWordDistanceII244" />
-      <item index="1" class="java.lang.String" itemvalue="Application.LRUCache" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MinimumInsertionMakePalindrome" />
-      <item index="3" class="java.lang.String" itemvalue="Application.StringToInteger" />
+      <item index="0" class="java.lang.String" itemvalue="Application.PaintHouse256" />
+      <item index="1" class="java.lang.String" itemvalue="Application.PaintHouseII265" />
+      <item index="2" class="java.lang.String" itemvalue="Application.FindBinaryLeaves366" />
+      <item index="3" class="java.lang.String" itemvalue="Application.AllOoneDataStructure" />
       <item index="4" class="java.lang.String" itemvalue="Application.ShortWordDistanceI243" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ShortWordDistanceII244" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ShortWordDistanceI243" />
-        <item index="2" class="java.lang.String" itemvalue="Application.StringToInteger" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MinimumInsertionMakePalindrome" />
-        <item index="4" class="java.lang.String" itemvalue="Application.LRUCache" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ShortWordDistanceI243" />
+        <item index="1" class="java.lang.String" itemvalue="Application.FindBinaryLeaves366" />
+        <item index="2" class="java.lang.String" itemvalue="Application.AllOoneDataStructure" />
+        <item index="3" class="java.lang.String" itemvalue="Application.PaintHouseII265" />
+        <item index="4" class="java.lang.String" itemvalue="Application.PaintHouse256" />
       </list>
     </recent_temporary>
   </component>
@@ -1797,7 +1838,14 @@
       <workItem from="1601644094518" duration="11912000" />
       <workItem from="1602522448794" duration="5774000" />
       <workItem from="1602795758394" duration="11799000" />
-      <workItem from="1604249759742" duration="52368000" />
+      <workItem from="1604249759742" duration="53432000" />
+      <workItem from="1605379790145" duration="9489000" />
+      <workItem from="1605583260629" duration="15893000" />
+      <workItem from="1605912074369" duration="14357000" />
+      <workItem from="1606161973783" duration="14764000" />
+      <workItem from="1606353372279" duration="11428000" />
+      <workItem from="1606580721129" duration="53910000" />
+      <workItem from="1606920486110" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -1850,7 +1898,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1730912000" />
+    <option name="totallyTimeSpent" value="1851825000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1863,41 +1911,75 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30547947" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68630135" sideWeight="0.5121163" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16773163" sideWeight="0.4920792" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67945206" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4041096" sideWeight="0.48707592" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6232877" sideWeight="0.4878837" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6818653" sideWeight="0.4878837" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32471728" sideWeight="0.49224806" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24760383" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26171243" sideWeight="0.49224806" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6739726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28836834" sideWeight="0.50775194" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27945206" sideWeight="0.4946752" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24760383" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38032305" sideWeight="0.4946752" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30547947" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="399" y="322" width="481" height="175" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26431718" sideWeight="0.48707592" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720517" sideWeight="0.5079208" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32465753" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6732673" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68630135" sideWeight="0.5121163" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16773163" sideWeight="0.4920792" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24760383" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27945206" sideWeight="0.4946752" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30547947" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="399" y="322" width="481" height="175" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67945206" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2657856" sideWeight="0.48707592" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720517" sideWeight="0.5079208" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6219178" sideWeight="0.4878837" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32148626" sideWeight="0.49224806" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32673267" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6739726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28836834" sideWeight="0.50775194" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -2159,28 +2241,16 @@
           <option name="timeStamp" value="726" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/CapacityToShipPackagesWithNDays.java</url>
+          <url>file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/phoneScreening/CapacityToShipPackagesWithNDays.java</url>
           <line>10</line>
           <properties />
           <option name="timeStamp" value="730" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/StringCompressAndDecode.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="737" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/StringCompressAndDecode.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="738" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="742" />
+      <option name="time" value="765" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2189,429 +2259,328 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/category/String/StringWithoutAAAOrBBB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/String/PrintGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/String/PalindromicSubstrings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/String/LongestCommonPrefix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/compass/onsite/StringCompressAndDecode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/String/classic/StringCompressAndDecode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="49" column="42" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/String/LongestPalindromeSubsequence.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="852" column="18" lean-forward="false" selection-start-line="852" selection-start-column="18" selection-end-line="852" selection-end-column="18" />
-          <folding>
-            <element signature="e#32344#32345#0" expanded="false" />
-            <element signature="e#32390#32391#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/String/LongestPalindromeSubsequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="10" column="64" lean-forward="false" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-          <folding>
-            <element signature="e#185#186#0" expanded="false" />
-            <element signature="e#256#257#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/companies/amazon/PartitionLabels.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/PriorityQueue/overlapInterval/CarPolling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/PriorityQueue/FindMedianFromStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/PriorityQueue/CheapestFlight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/PriorityQueue/KClosestPointsToOrigin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/PriorityQueue/SlidingWindowMedian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/Sort/InsertInterval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/Strings/LongestPalindromeSubseq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="112" column="37" lean-forward="true" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BacktracingDFS/Subsets.java">
+    <entry file="file://$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/TrappingRainWater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/TreeSet.java">
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/PaintHouse256.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="423" column="13" lean-forward="false" selection-start-line="423" selection-start-column="13" selection-end-line="423" selection-end-column="13" />
-          <folding>
-            <element signature="e#15897#15898#0" expanded="false" />
-            <element signature="e#15933#15934#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/hard/CountDifferentPalindromeSubsequence.java">
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/NumberOfIslandAndSort200.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="486">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/maybe/InsertInterval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/model/NestedInteger.java">
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/PaintHouseII265.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding />
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/companies/amazon/LRUSDKSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/concurrent/PriorityBlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="218" column="11" lean-forward="false" selection-start-line="218" selection-start-column="11" selection-end-line="218" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="86" column="53" lean-forward="false" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="53" />
-          <folding>
-            <element signature="e#5256#5257#0" expanded="false" />
-            <element signature="e#5314#5315#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/CapacityToShipPackagesWithNDays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/MyPow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/LRUCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/classicLove/MinimumInsertionStepsToMakeAPalindrome-analysis.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/classicLove/MinimumInsertionStepsToMakePalindrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/MinimumInsertionMakePalindrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding>
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/TournamentTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/MinimumInsertionStepsToMakeAPalindrome-analysis.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/High Frequnecy problems">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/Stack/EvaluateReversePolishNotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/thread vs process">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/StringToInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java">
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/RotateList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/SemaphoreExample.java">
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/recent/MaxStack716.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
+        <state relative-caret-position="1026">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/DFS/IslandProblems/NumberOfIslandII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/unionfind/NumberOfIslandsII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/DLLProblems/MaxStack716.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/StringCompressAndDecode.java">
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/DLLProblems/MaxStackLinkedListTreeMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="414">
+          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/LowestCommonAncestor.java">
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/dropbox/solution-1">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/ShortWordDistanceI243.java">
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/fileUploadService/architecture.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/fileUploadService/explanation">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/ShortWordDistanceII244.java">
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/googleCalendar/Dynamodb ttl S3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/topK">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/NestedListWeightSumI.java">
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/keyValueStore/Architecture-Memtable-SST-Write.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/keyValueStore/Data replication-VirtualNodes.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/keyValueStore/Key Hashing.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/keyValueStore/Skip List.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/messagingSystem/msg system design.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/notificationService/Architecture-detailed summary.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/documentSearch/inverted index.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/documentSearch/mechanism">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/notificationService/Temporay storage solutions.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/notificationService/link">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/notificationService/Sender.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/techTalk/instagram/Invaliate memcache.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/tinyUrl/Architecture-summary.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/techTalk/instagram/Memcache Lease.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/messageQueue/explanation">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/DLLProblems/AllOoneDataStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/greedy/ExclusiveTimeOfFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-          </folding>
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/unionfind/simple/FriendCircleSimpleUnionFind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/FriendCircle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/FindCelebrity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/EvaluateReversePolishNotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
-          <folding>
-            <element signature="method#main#0;class#EvaluateReversePolishNotation#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/NestedListWeightSumII.java">
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/greedy/CourseScheduleIII.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BFS/NestedListWeightSumII.java">
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/greedy/MyCalendarThree732.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/SqrtX69.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/TextJustification68.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/TrappingWater42.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/InsertDeleteGetRandomOone380.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/phoneScreening/highF/ShortWordDistanceI243.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/DynamicPlanning/Strings/LCSubSequence/EditDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BFS/WordLadderTwoEndBFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/WordLadder127.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BacktracingDFS/permutation/PermutationI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2970">
+          <caret line="198" column="6" lean-forward="false" selection-start-line="198" selection-start-column="6" selection-end-line="198" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BFS/WordLadderBFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/myVO/WordLadderWithEdgePreCalculations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="71" lean-forward="false" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Data retrieval-step-3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Architecture-summary-step-1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/MapReduceJob.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>

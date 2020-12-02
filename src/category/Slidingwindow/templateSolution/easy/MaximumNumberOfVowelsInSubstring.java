@@ -16,10 +16,7 @@ public class MaximumNumberOfVowelsInSubstring {
     // My solution
     public static int maxVowels(String s, int k) {
         String vowels = "aeiou";
-
-        int l = 0;
-        int r = 0;
-
+        int l = 0, r = 0;
         int max = 0, count = 0;
 
         while(r<s.length()){

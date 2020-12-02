@@ -10,8 +10,7 @@ public class NumberOfIslandsII{
 
     public List<Integer> numIslands2(int n, int m, Point[] operators) {
         List<Integer> res = new ArrayList<>();
-        if(operators == null || operators.length == 0)
-           return res;
+        if(operators == null || operators.length == 0) return res;
            
        int[] parents = new int[n*m];
        Arrays.fill(parents, -1);
@@ -42,25 +41,22 @@ public class NumberOfIslandsII{
                if(parents[pn] == -1){
                    continue;
                }
-               //combine with the visited cell, so numm--
+               //combine with the visited cell, so num--
                if(find(parents, po) != find(parents, pn)){
                    parents[find(parents, po)] = find(parents, pn);
                    num--;
                }
            }
-           
            res.add(num);
        }
        return res;
    }
    
    public int find(int[] parents, int d){
-       
        while(parents[d] != d){
            parents[d] = parents[parents[d]];
            d = parents[d];
        }
-       
        return d;
    }
 }
@@ -68,5 +64,4 @@ public class NumberOfIslandsII{
 class Point{
     int x;
     int y;
-
 }

@@ -25,8 +25,7 @@ public class KClosestPointsToOrigin {
 
         for(int[] point: points) {
             pq.add(point);
-            if(pq.size() > K)
-                pq.poll();
+            if(pq.size() > K) pq.poll();
         }
         return pq.toArray(new int[0][0]);
     }

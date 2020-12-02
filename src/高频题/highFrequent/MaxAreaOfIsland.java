@@ -1,8 +1,5 @@
 package 高频题.highFrequent;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * https://leetcode.com/problems/max-area-of-island/
  *

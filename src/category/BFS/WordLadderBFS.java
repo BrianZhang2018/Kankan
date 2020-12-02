@@ -1,9 +1,6 @@
 package category.BFS;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by brianzhang on 8/20/18.
@@ -22,7 +19,6 @@ class WordNode {
 
 public class WordLadderBFS {
     public static void main(String[] args) {
-        
         System.out.println(ladderLength("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
         //System.out.println(System.currentTimeMillis() - start);
     }

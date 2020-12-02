@@ -3,6 +3,8 @@ package category.DFS;
 /**
  * https://leetcode.com/problems/max-area-of-island/
  *
+ * Time Complexity: O(R*C), where RR is the number of rows in the given grid, and CC is the number of columns. We visit every square once.
+ *
  * Created by brianzhang on 2/10/19.
  */
 public class MaxAreaOfIsland {
@@ -29,9 +31,8 @@ public class MaxAreaOfIsland {
     }
 
     public int dfs(int[][] grid, int i, int j) {
-        if (i >= grid.length || j >= grid[0].length || j < 0 || i < 0 || grid[i][j] == 0) {
+        if (i >= grid.length || j >= grid[0].length || j < 0 || i < 0 || grid[i][j] == 0)
             return 0;
-        }
 
         grid[i][j] = 0; // flip the number to mark as visited
         return 1 + dfs(grid, i + 1, j) + dfs(grid, i, j + 1) + dfs(grid, i - 1, j) + dfs(grid, i, j - 1);
@@ -54,9 +55,7 @@ public class MaxAreaOfIsland {
     }
 
     public void dfs1(int[][] grid, int i, int j) {
-        if (i >= grid.length || j >= grid[0].length || j < 0 || i < 0 || grid[i][j] == 2) {
-            return;
-        }
+        if (i >= grid.length || j >= grid[0].length || j < 0 || i < 0 || grid[i][j] == 2) return;
 
         currArea++;
         grid[i][j] = 2; // marked as visited

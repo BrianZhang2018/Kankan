@@ -8,7 +8,6 @@ import java.util.Arrays;
  * Created by brianzhang on 4/5/19.
  */
 public class JumpGameTopDown {
-
     public static void main(String[] args) {
         JumpGameTopDown jumpGame = new JumpGameTopDown();
         jumpGame.canJump(new int[]{2, 4, 2, 1, 0, 2, 0});
@@ -16,8 +15,7 @@ public class JumpGameTopDown {
 
     Index[] memo;
     public boolean canJump(int[] nums) {
-        if(nums == null || nums.length ==0)
-            return true;
+        if(nums == null || nums.length ==0) return true;
 
         memo = new Index[nums.length];
         Arrays.fill(memo, Index.UNKNOWN);
@@ -26,8 +24,8 @@ public class JumpGameTopDown {
     }
 
     public boolean helper(int position, int[] nums){
-        //memorization help to record the result from previous loop to save overlap calculation
-        //just like this question, it will help you skip some loop which already run before.
+        // memorization help to record the result from previous loop to save overlap calculation
+        // just like this question, it will help you skip some loop which already run before.
         if(memo[position] != Index.UNKNOWN){
             return memo[position] == Index.GOOD ? true : false;
         }

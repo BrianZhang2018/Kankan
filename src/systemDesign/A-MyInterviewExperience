@@ -1,0 +1,2 @@
+1. how to handle the request lifecycle
+    a. how to handle the recovery state, e.g. failed on calling external service. Use queue to retain the request for recovering

@@ -9,10 +9,12 @@ import java.lang.Math;
  * https://youtube.com/watch?v=fZIsEPhSBgM
  */
 public class PaintHouse{
+    public static void main(String[] args) {
+        System.out.println(minCost(new int[][]{{14,2,11}, {11,14,5}, {14,3,10}}));
+    }
 
-    public int minCost(int[][] costs) {
-        if(costs==null||costs.length==0)
-            return 0;
+    public static int minCost(int[][] costs) {
+        if(costs==null||costs.length==0) return 0;
      
         for(int i=1; i<costs.length; i++){
             costs[i][0] += Math.min(costs[i-1][1], costs[i-1][2]);

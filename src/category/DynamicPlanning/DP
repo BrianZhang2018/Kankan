@@ -1,15 +1,15 @@
 - DP is used to get the number of the solution
 - Backtracking can list all the solution
 
-1. DP ways:
+1. DP Ways:
     a) Top-Down approach: Recursion + Memoization. 记忆化递归
     b) Bottom-Up approach: Iterative + Tabulation, which can avoid the recursion. 递推
        (https://www.geeksforgeeks.org/tabulation-vs-memoization/)
 
-    1) Recursion (e.g. Divide & Conquer) + Memoization - top-down (自顶向下), O(n^2)= 1 + 2 + 3 + 4+......n
+    1) Recursion (e.g. Divide & Conquer) + Memoization - top-down (自顶向下), O(n*n)= 1 + 2 + 3 + 4+......n
         example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
-    2) 自底向上循环递推  bottom -> top,  two 'for' loop, time complexity is O(n^2)
-        example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
+    2) 自底向上循环递推  bottom -> top,  two 'for' loop, time complexity is O(n*n)
+        example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameBottomUp.java
 
 2.
     Backtracking is a more general purpose algorithm.

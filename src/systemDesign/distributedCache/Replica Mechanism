@@ -1,0 +1,14 @@
+probabilistic protocols: (favor the eventual consistency)
+
+gossip,
+epidemic broadcast,
+bimodal multicast
+
+consensus protocols: (favor strong consistency)
+2 or 3 phase commit,
+paxos
+raft
+
+
+
+

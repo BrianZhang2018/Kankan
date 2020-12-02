@@ -1,0 +1,5 @@
+Introduction To Apache Cassandra - key value store
+https://www.youtube.com/watch?v=B_HTdrTgGNs&t=32s
+
+Design a key-value store (介绍levelDB的底层实现，上面的视频中用Cassandra以例子介绍了一下)
+https://soulmachine.gitbooks.io/system-design/content/cn/key-value-store.html

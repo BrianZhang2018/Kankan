@@ -24,7 +24,6 @@ public class Subsets {
     }
 
     private static void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums, int start) {
-        //if(tempList.size() == n) // only print out n length of subsets
         list.add(new ArrayList<>(tempList));
 
         for (int i = start; i < nums.length; i++) {

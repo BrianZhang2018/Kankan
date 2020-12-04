@@ -11,7 +11,6 @@ import java.util.List;
  * Created by brianzhang on 7/29/18.
  */
 public class PermutationII {
-
     public static void main(String[] args) {
         PermutationII test = new PermutationII();
         for(List<Integer> l : test.permuteUnique(new int[]{1,1,2})){
@@ -21,7 +20,6 @@ public class PermutationII {
 
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
-
         Arrays.sort(nums);
         backTracking(nums, new ArrayList<>(), res, new boolean[nums.length]);
         return res;
@@ -33,7 +31,6 @@ public class PermutationII {
         } else {
             for (int i = 0; i < nums.length; i++) {
                 if (used[i]) continue;
-
                 if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) //makes sure when duplicates are selected, the order is ascending.
                     continue;
                 used[i] = true;

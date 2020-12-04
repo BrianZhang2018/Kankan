@@ -23,7 +23,7 @@ public class PermutationI1 {
     }
 
     /**
-     * Don't need involve another tempList to store the result, like other Asolution
+     * Don't need a tempList to store the result, like other solution, since swap the number to get the different permutation
      */
     private void backTracing(int[] nums, int start, List<List<Integer>> result) {
         if (start == nums.length - 1)
@@ -31,15 +31,12 @@ public class PermutationI1 {
         else {
             //i is used to loop the all numbers to swap with the fixed number (nums[start])
             for (int i = start; i <= nums.length - 1; i++) {
-
                 //swap the value
                 int tmp = nums[start];
                 nums[start] = nums[i];
                 nums[i] = tmp;
-
                 //start is used to go next number which is next swap number with others
                 backTracing(nums, start + 1, result);
-
                 //backTracing: return to last level
                 tmp = nums[start];
                 nums[start] = nums[i];
@@ -50,9 +47,7 @@ public class PermutationI1 {
 
     private List<Integer> convertToIntegerArr(int[] arr) {
         List<Integer> result = new ArrayList();
-        for (int i : arr) {
-            result.add(i);
-        }
+        for (int i : arr) {result.add(i);}
         return result;
     }
 }

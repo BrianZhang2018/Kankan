@@ -8,11 +8,10 @@ import java.util.TreeMap;
 /**
  * 1. Sort by start-time
  * 2. Check overlap: compare the minimum end-time with current start-time, and update the minimum end-time when need
- * <p>
+ *
  * https://leetcode.com/problems/car-pooling/
- * <p>
  * 关键点就是 compare "previous end-time" with "start-time of current". 看有没有conflict, 有的话就是累加
- * <p>
+ *
  * Created by brianzhang on 6/19/20.
  */
 public class CarPolling {

@@ -1,4 +1,4 @@
-package category.twopointer;
+package category.twoPointer;
 /**
  * O(n) in-place solution
  * another solution is the couting sort in two pass

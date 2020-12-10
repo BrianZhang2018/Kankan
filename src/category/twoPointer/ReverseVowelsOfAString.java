@@ -1,4 +1,4 @@
-package category.twopointer;
+package category.twoPointer;
 
 /**
  * https://leetcode.com/problems/reverse-vowels-of-a-string/

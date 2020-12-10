@@ -5,10 +5,10 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/employee-free-time/
  * Use Merge Interval solution to solve this problem (MergeInterval.java)
- * <p>
+ *
  * 1. Merge interval
  * 2. Collect the Gap time
- * <p>
+ *
  * Created by brianzhang on 8/2/20.
  */
 public class EmployeeFreeTime {

@@ -1,6 +1,4 @@
-package category.twopointer;
-
-import java.util.concurrent.ExecutionException;
+package category.twoPointer;
 
 /**
  * Created by brianzhang on 9/4/18.

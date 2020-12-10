@@ -4,11 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/
- *
  * https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/discuss/382421/JavaPython-3-Iterative-short-codes-w-comment-and-analysis.
- *
- *
  * Created by brianzhang on 2/17/20.
  */
 public class ReverseSubStringsBetweenPairedParentheses {

@@ -17,9 +17,7 @@ public class NaryPreorderTraversal {
     }
 
     public void helper(Node node){
-
         if(node == null) return;
-
         list.add(node.val);
 
         for(Node sub : node.children){

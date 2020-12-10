@@ -1,4 +1,4 @@
-package category.easy;
+package category.HashMap;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +16,6 @@ public class TwoSum {
 
     }
     public static int[] twoSum(int[] nums, int target) {
-
         Map<Integer, Integer> map = new HashMap<>();
 
         for(int index=0; index<nums.length; index++){

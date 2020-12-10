@@ -1,4 +1,4 @@
-package category.twopointer;
+package category.twoPointer;
 
 /**
  * https://leetcode.com/problems/valid-palindrome/

@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * https://leetcode.com/problems/merge-intervals/
- * <p>
+ *
  * Created by brianzhang on 1/15/19.
  */
 public class MergeInterval {
@@ -30,8 +30,8 @@ public class MergeInterval {
                 res.add(intervals.get(i - 1));
             }
         }
-        res.add(intervals.get(intervals.size() - 1));
 
+        res.add(intervals.get(intervals.size() - 1));
         return res;
     }
 
@@ -51,8 +51,8 @@ public class MergeInterval {
                 prev = intervals.get(i);
             }
         }
-        res.add(prev);
 
+        res.add(prev);
         return res;
     }
 
@@ -75,7 +75,6 @@ public class MergeInterval {
         }
 
         res.add(temp);
-
         return res;
     }
 }

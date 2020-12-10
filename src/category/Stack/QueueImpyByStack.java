@@ -1,4 +1,4 @@
-package category.easy;
+package category.Stack;
 
 import java.util.Stack;
 

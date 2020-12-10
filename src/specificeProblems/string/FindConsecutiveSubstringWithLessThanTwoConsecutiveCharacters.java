@@ -1,8 +1,8 @@
 package specificeProblems.string;
 
 /**
- * //"baaabbabbb" -> "aabbabb" (7)
- * <p>
+ * "baaabbabbb" -> "aabbabb" (7)
+ *
  * Created by brianzhang on 10/20/19.
  */
 public class FindConsecutiveSubstringWithLessThanTwoConsecutiveCharacters {
@@ -13,8 +13,7 @@ public class FindConsecutiveSubstringWithLessThanTwoConsecutiveCharacters {
 
     public static int solution(String s) {
 
-        if (s.length() < 3)
-            return s.length();
+        if (s.length() < 3) return s.length();
 
         // Initialize temporary and final ans to 2 as this is the minimum length of substring when length of the given string is greater than 2
         int temp = 2;

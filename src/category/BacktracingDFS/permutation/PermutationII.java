@@ -1,8 +1,6 @@
 package category.BacktracingDFS.permutation;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/permutations-ii/
@@ -33,6 +31,7 @@ public class PermutationII {
                 if (used[i]) continue;
                 if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) //makes sure when duplicates are selected, the order is ascending.
                     continue;
+
                 used[i] = true;
                 temp.add(nums[i]);
                 backTracking(nums, temp, res, used);

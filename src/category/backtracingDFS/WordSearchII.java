@@ -47,7 +47,7 @@ public class WordSearchII{
         if (root.word != null) {
             list.add(root.word);
             root.word = null;
-            // no `return` here as one branch of Trie can contain multiple word
+            // no `return` here as one branch of TrieN can contain multiple word
         }
         
         //mark the visited board[i][j]

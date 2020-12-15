@@ -4,22 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
- * brute force solution using DFS & dfs
- * 深度搜素到底，然后在回溯，遍历每一层，重复这个动作
- *
  * Time complexity: O(n!*n)
  * Space complexity: O(n!*n)
  *
  * The worst-case time complexity is O(n! * n).
- * For any recursive function, the time complexity is O(branches^depth) * amount of work at each node in the recursive call tree. However, in this case, we have n*(n-1)*(n*2)*(n-3)*...*1 branches at each level = n!, so the total recursive calls is O(n!)
- * We do n-amount of work in each node of the recursive call tree, (a) the for-loop and (b) at each leaf when we add n elements to an ArrayList. So this is a total of O(n) additional work per node.
+ * For any recursive function, the time complexity is O(branches^depth) * (amount of work at each node, e.g for-loop) in the recursive call tree.
+ * However, in this case, we have n*(n-1)*(n*2)*(n-3)*...*1 branches at each level = n!, so the total recursive calls is O(n!)
+ * We do n-amount of work in each node of the recursive call tree, the for-loop. So this is a total of O(n) additional work per node.
  *
+ * https://www.youtube.com/watch?v=KukNnoN-SoY
  * Created by brianzhang on 7/26/18.
  */
 public class PermutationI {
     public static void main(String[] args) {
-        System.out.println(permute(new int[]{1, 2, 3, 4}));
+        System.out.println(permute(new int[]{1, 2, 3}));
     }
 
     public static List<List<Integer>> permute(int[] nums) {
@@ -32,18 +30,21 @@ public class PermutationI {
         if (tempList.size() == nums.length) {
             list.add(new ArrayList<>(tempList));
         } else {
-            // 遍历每一个数字(i), 每一个数字当成一层，回溯遍历所有数字当前这一层, 找出排列, 然后程序回溯到根，开始遍历下一个数字
             for (int i = 0; i < nums.length; i++) {
                 if(used[i]) continue;
-
                 tempList.add(nums[i]);
                 used[i] = true;
-                backtrack(list, tempList, nums, used);
-System.out.println("remove before: " + tempList);
+                backtrack(list, tempList, nums, used);      System.out.println("remove before: " + tempList);
                 tempList.remove(tempList.size() - 1);
-                used[i] = false;
-System.out.println("               remove after: " + tempList);
+                used[i] = false;        System.out.println("               remove after: " + tempList);
             }
         }
     }
 }
+
+
+/*
+ * https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
+ * brute force solution using DFS & dfs
+ * 深度搜素到底，然后在回溯，遍历每一层，重复这个动作
+ **/

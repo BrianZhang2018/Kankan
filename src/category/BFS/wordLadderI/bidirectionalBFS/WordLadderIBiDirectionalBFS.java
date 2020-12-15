@@ -1,17 +1,17 @@
-package category.BFS.wordLadderOne.bidirectionalBFS;
+package category.BFS.wordLadderI.bidirectionalBFS;
 
 import java.util.*;
 
 /**
  * https://leetcode.com/problems/word-ladder/solution/
  *
- * Bidirectional BFS search + Pre-processing adjacent nodes
+ * Bidirectional BFS search
  *
  * time complexity: O(n*l*26) -> O(n*l),l = len(word), n=|wordList|
  *
  * Created by brian Zhang on 8/21/18.
  */
-public class WordLadderITwoEndBFS {
+public class WordLadderIBiDirectionalBFS {
     public static void main(String[] args) {
         System.out.println(ladderLength("hit", "cog", new ArrayList<>(Arrays.asList("hot", "hat", "dot", "dog", "lot", "log", "cog"))));
         System.out.println(ladderLengthRecursive("hit", "log", new ArrayList<>(Arrays.asList("hot", "hat", "dot", "dog", "lot", "log", "cog"))));

@@ -7,26 +7,23 @@ import java.util.LinkedList;
  *
  * 1. DFS
  * 2. reset the state by backtracking
- * 3. Trie keep the words
+ * 3. TrieN keep the words
  */
 public class WordSearchII{
-
     public static void main(String[] args) {
         WordSearchII ws = new WordSearchII();
         char[][] board = {{'o','a','a','n'},
                             {'e','t','a','e'},
                             {'i','h','k','r'},
                             {'i','f','l','v'}};
-        for(String res : ws.findWords(board, new String[]{"oath","pea","eat","rain"})){
-            System.out.println(res);
-        }
+        for(String res : ws.findWords(board, new String[]{"oath","pea","eat","rain"})) System.out.println(res);
     }
 
     public List<String> findWords(char[][] board, String[] words) {
         List<String> ans = new LinkedList<>();
         TrieNode root = new TrieNode();
-        for (String word: words) 
-            buildTrie(word, root);
+        // build trie tree
+        for (String word: words) buildTrie(word, root);
         
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
@@ -51,7 +48,6 @@ public class WordSearchII{
             root.word = null;
         }
 
-        //backtracking
         board[i][j] = '.';
         findWords(board, root, i + 1, j, res);
         findWords(board, root, i - 1, j, res);

@@ -1,4 +1,4 @@
-package category.Slidingwindow.templateSolution;
+package category.Slidingwindow;
 
 import java.util.HashSet;
 /**

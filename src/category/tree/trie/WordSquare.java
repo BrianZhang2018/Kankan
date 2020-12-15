@@ -12,13 +12,10 @@ import java.util.List;
  * Created by brianzhang on 3/27/20.
  */
 public class WordSquare {
-
     public static void main(String[] args) {
         WordSquare ws = new WordSquare();
         List<List<String>> res = ws.wordSquare(new String[]{"area","lead","wall","lady","ball"});
-        for(List l : res){
-            System.out.println(Arrays.toString(l.toArray()));
-        }
+        for(List l : res)System.out.println(Arrays.toString(l.toArray()));
     }
 
     public List<List<String>> wordSquare(String[] words) {
@@ -87,7 +84,7 @@ public class WordSquare {
         }
     }
 
-    //Trie solution 看上去确实很很长，但是下面的build Trie和Trie class是固定的(Trie data structure)
+    //TrieN solution 看上去确实很很长，但是下面的build Trie和Trie class是固定的(TrieN data structure)
     private TrieNode buildTrie(String[] words) {
         TrieNode root = new TrieNode();
         for (String word : words) {

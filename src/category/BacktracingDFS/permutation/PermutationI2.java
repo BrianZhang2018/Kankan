@@ -9,10 +9,10 @@ import java.util.List;
  *
  * Created by brianzhang on 7/25/18.
  */
-public class PermutationI1 {
+public class PermutationI2 {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3};
-        System.out.println(new PermutationI1().permute(arr));
+        System.out.println(new PermutationI2().permute(arr));
     }
 
     public List<List<Integer>> permute(int[] nums) {

@@ -2,75 +2,76 @@ package category.tree.trie;
 
 /**
  * A trie, also called digital binaryTree, radix binaryTree or prefix binaryTree is a kind of search binaryTree
+ * https://leetcode.com/problems/implement-trie-prefix-tree/
  *
+ * oracle
  * Created by brianzhang on 11/4/18.
  */
 public class TrieImpl {
     public static void main(String args[]) {
         String keys[] = {"the", "a", "there", "answer", "any", "by", "bye", "their"};
-
-        String output[] = {"Not present in trie", "Present in trie"};
-        root = new TrieNode();
-
         // Construct trie
-        for (int i = 0; i < keys.length; i++)
-            insert(keys[i]);
+        TrieN root = new TrieN();
+        for (int i = 0; i < keys.length; i++) root.insert(keys[i]);
 
-        // Search for different keys
-        if (search("the")) System.out.println("the --- " + output[1]);
-        else System.out.println("the --- " + output[0]);
-
-        if (search("these")) System.out.println("these --- " + output[1]);
-        else System.out.println("these --- " + output[0]);
-
-        if (search("their")) System.out.println("their --- " + output[1]);
-        else System.out.println("their --- " + output[0]);
-
-        if (search("thaw")) System.out.println("thaw --- " + output[1]);
-        else System.out.println("thaw --- " + output[0]);
-    }
-
-    // Alphabet size (# of symbols)
-    private static final int ALPHABET_SIZE = 26;
-    private static TrieNode root;
-
-    // TrieNode class
-    public static class TrieNode {
-        TrieNode[] children = new TrieNode[ALPHABET_SIZE];
-        String word = "";
-        // isEndOfWord is true if the node represents end of a word
-        boolean isEndOfWord = false;
-
-        TrieNode() {}
-    }
-
-    // If not present, inserts word into trie
-    // If the word is prefix of trie node, just marks leaf node
-    public static void insert(String word) {
-        TrieNode curr = root;
-        for (int level = 0; level < word.length(); level++) {
-            int index = word.charAt(level) - 'a';
-            if (curr.children[index] == null) {
-                curr.children[index] = new TrieNode();
-            }
-            curr = curr.children[index];
-        }
-        // mark last node as leaf
-        curr.isEndOfWord = true;
-        curr.word = word;
-    }
-
-    // Returns true if word presents in trie, else false
-    public static boolean search(String word) {
-        TrieNode curr = root;
-
-        for (int level = 0; level < word.length(); level++) {
-            int index = word.charAt(level) - 'a';
-            if (curr.children[index] == null)
-                return false;
-            curr = curr.children[index];
-        }
-        return curr != null && curr.isEndOfWord;
+        System.out.println(root.search("the"));
+        System.out.println(root.search("these"));
+        System.out.println(root.startsWith("th"));
     }
 }
+
+class TrieN {
+    boolean isEnd;
+    TrieN[] next;
+
+    /** Initialize your data structure here. */
+    public TrieN() {
+        isEnd = false;
+        next = new TrieN[26];
+    }
+
+    /** Inserts a word into the trie. */
+    public void insert(String word) {
+        TrieN a = this;
+        char [] c = word.toCharArray();
+        for (int i = 0; i < c.length; i++) {
+            if (a.next[c[i] - 'a'] == null) {
+                a.next[c[i] - 'a'] = new TrieN();
+            }
+            a = a.next[c[i] - 'a'];
+        }
+        a.isEnd = true;
+        return;
+    }
+
+    /** Returns if the word is in the trie. */
+    public boolean search(String word) {
+        TrieN a = this;
+        char [] c = word.toCharArray();
+        for (int i = 0; i < c.length; i++) {
+            if (a.next[c[i] - 'a'] == null) {
+                return false;
+            } else {
+                a = a.next[c[i] - 'a'];
+            }
+        }
+        return a.isEnd;
+    }
+
+    /** Returns if there is any word in the trie that starts with the given prefix. */
+    public boolean startsWith(String prefix) {
+        TrieN a = this;
+        char [] c = prefix.toCharArray();
+        for (int i = 0; i < c.length; i++) {
+            if (a.next[c[i] - 'a'] == null) {
+                return false;
+            } else {
+                a = a.next[c[i] - 'a'];
+            }
+        }
+        return true;
+    }
+}
+
+
 

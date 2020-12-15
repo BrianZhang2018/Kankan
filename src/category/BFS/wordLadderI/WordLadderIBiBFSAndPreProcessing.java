@@ -1,4 +1,4 @@
-package category.BFS.wordLadderOne;
+package category.BFS.wordLadderI;
 
 import java.util.*;
 /**

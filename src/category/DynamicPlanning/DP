@@ -6,14 +6,14 @@
     b) Bottom-Up approach: Iterative + Tabulation, which can avoid the recursion. 递推
        (https://www.geeksforgeeks.org/tabulation-vs-memoization/)
 
-    1) Recursion (e.g. Divide & Conquer) + Memoization - top-down (自顶向下), O(n*n)= 1 + 2 + 3 + 4+......n
+    1) Recursion (e.g. dfs, Divide & Conquer) + Memoization - top-down (自顶向下), O(n*n)= 1 + 2 + 3 + 4+......n
         example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameTopDown.java
     2) 自底向上循环递推  bottom -> top,  two 'for' loop, time complexity is O(n*n)
         example: /Users/brianzhang/workspace/WaWahaha/src/category/DynamicPlanning/JumpGameBottomUp.java
 
 2.
     Backtracking is a more general purpose algorithm.
-    Depth-First search is a specific form of backtracking related to searching tree structures.
+    Depth-First-Search is a specific form of backtracking related to searching "tree structures".
 
 3.
     Binary search tree:
@@ -60,7 +60,7 @@ https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-Ho
 bottom-up, top-down explanation
 https://leetcode.com/articles/jump-game/
 
-bottom-up: start from small subproblem and accumulate the answer as tabulation way, then finally reach to destination problem
+bottom-up: start from small subProblem and accumulate the answer as tabulation way, then finally reach to destination problem
 top-down: directly try to solve the problem, and store the value in the memo, and recursively solve the problem.
 
 6.降维

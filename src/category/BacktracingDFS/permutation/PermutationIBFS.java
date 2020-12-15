@@ -4,11 +4,13 @@ import java.util.*;
 
 /**
  * https://leetcode.com/problems/permutations/
+ *
+ * time complexity: n * n!
  * Created by brianzhang on 12/3/20.
  */
 public class PermutationIBFS {
     public static void main(String[] args) {
-
+        permute(new int[]{1,2,3});
     }
 
     public static List<List<Integer>> permute(int[] nums) {
@@ -20,14 +22,16 @@ public class PermutationIBFS {
             queue.add(Arrays.asList(i));
         }
 
-        while(!queue.isEmpty()){
+        while(!queue.isEmpty()){ // tc: n!
             List<Integer> next = queue.poll();
             if(next.size() == nums.length) {
                 res.add(next);
                 continue;
             }
-            for(int i : nums){
-                if(next.contains(i)) continue;
+            for(int i : nums){ // tc: n
+                if(next.contains(i))
+                    continue;
+
                 List<Integer> tmp = new ArrayList(next);
                 tmp.add(i);
                 queue.add(tmp);

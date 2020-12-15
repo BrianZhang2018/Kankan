@@ -1,4 +1,4 @@
-package category.BFS.wordLadderOne.preProcessingAdjacentNodes;
+package category.BFS.wordLadderI.preCalculatedAdjacentWildcardNodes;
 
 import javafx.util.Pair;
 import java.util.*;
@@ -44,7 +44,7 @@ public class WordLadderI {
         Map<String, Boolean> visited = new HashMap<>();
         visited.put(beginWord, true);
 
-        // tc: O(N*L*M) = O(N*L), N is the number of word in wordList, L is the length of word, M=(N*L) is constant complexity that is pre-calculated above, e.g. 26
+        // tc: O(N*L*M) = O(N*L), N is the number of word in wordList, L is the length of word, M=(N*L) is constant complexity since it's pre-calculated in above
         while (!queue.isEmpty()) {  // TC: O(N)
             Pair<String, Integer> node = queue.poll();
             String word = node.getKey();

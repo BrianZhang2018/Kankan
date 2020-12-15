@@ -1,4 +1,4 @@
-package category.Slidingwindow.templateSolution.easy;
+package category.Slidingwindow.templateSolution.template;
 
 /**
  * https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/
@@ -13,7 +13,6 @@ public class MaximumNumberOfVowelsInSubstring {
         System.out.println(maxVowels( "abciiidef",  3));
     }
 
-    // My solution
     public static int maxVowels(String s, int k) {
         String vowels = "aeiou";
         int l = 0, r = 0;

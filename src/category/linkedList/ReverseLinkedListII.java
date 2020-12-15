@@ -22,7 +22,6 @@ public class ReverseLinkedListII{
         ListNode pre2 = pre1;
         ListNode q2 = null;
         for(int i=m; i<=n; i++){
-            
             q2 = curr2.next;
             curr2.next = pre2;
             pre2 =curr2;
@@ -32,8 +31,6 @@ public class ReverseLinkedListII{
         //reconnect
         pre1.next = pre2;
         curr1.next = curr2;
-        
         return dummy.next;
     }
-
 }

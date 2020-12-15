@@ -1,4 +1,4 @@
-package category.Slidingwindow.templateSolution;
+package category.Slidingwindow.templateSolution.template2;
 
 import java.util.*;
 

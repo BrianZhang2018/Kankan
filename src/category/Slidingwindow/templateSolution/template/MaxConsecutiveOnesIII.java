@@ -1,4 +1,4 @@
-package category.Slidingwindow.templateSolution.easy;
+package category.Slidingwindow.templateSolution.template;
 
 /**
  * https://leetcode.com/problems/max-consecutive-ones-iii/

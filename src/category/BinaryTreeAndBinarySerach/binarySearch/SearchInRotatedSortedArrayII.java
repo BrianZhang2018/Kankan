@@ -7,7 +7,6 @@ package category.BinaryTreeAndBinarySerach.binarySearch;
  * Created by brianzhang on 5/10/20.
  */
 public class SearchInRotatedSortedArrayII {
-
     public static void main(String[] args) {
         SearchInRotatedSortedArrayII test = new SearchInRotatedSortedArrayII();
         System.out.println(test.search(new int[]{2,5,6,0,0,1,2}, 0));
@@ -18,28 +17,29 @@ public class SearchInRotatedSortedArrayII {
         int end = nums.length - 1;
         while (start <= end) {
             int mid = start + (end -start) / 2;
-            if (target == nums[mid]) {
-                return true;
-            }
+            if (target == nums[mid]) return true;
 
-            if (nums[mid] > nums[start]) {
-                if (target >= nums[start] && target < nums[mid]) {
+            if (nums[mid] > nums[start]) { // left part is sorted
+                if (target >= nums[start] && target < nums[mid]) { // target is in sorted part
                     end = mid - 1;
                 } else {
                     start = mid + 1;
                 }
-
-            } else if(nums[mid] < nums[start]) {
-                if (target > nums[mid] && target <=nums[end]) {
+            } else if(nums[mid] < nums[start]) { // right part is sorted
+                if (target > nums[mid] && target <=nums[end]) { // target is in sorted part
                     start = mid + 1;
                 } else {
                     end = mid - 1;
                 }
             } else {
-                // means nums[start] == nums[mid], but != target, we need move the pointer start++ to skip the duplicate value
+                //duplicates, we know nums[mid] != target, so nums[start] != target
+                //based on current information, we can only move left pointer to skip one cell
+                //thus in the worst case, we would have target: 2, and array like 11111111, then
+                //the running time would be O(n)
                 start++;
             }
         }
         return false;
     }
+
 }

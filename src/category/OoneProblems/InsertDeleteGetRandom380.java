@@ -14,6 +14,8 @@ import java.util.*;
 public class InsertDeleteGetRandom380 {
 
     public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        list.get(1);
 
     }
 

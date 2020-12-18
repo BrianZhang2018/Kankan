@@ -7,7 +7,7 @@ import java.util.*;
  * 
  * backtracking problem
  * 
- * Time complexity Analysis:
+ * Time complexity Analysis: O(2^n)
  * 1. One way to explain O(2^n) is as follows: given an array of length n, there are n+1 ways/intervals to partition it into two parts.
  * Each interval has two choices - split or not. In the worse case, we will have to check all possibilities,
  * which becomes O(2^(n+1)) -> O(2^n). This analysis is similar to palindrome partitioning.
@@ -24,7 +24,6 @@ public class WordBreakII {
         WordBreakII wordBreakII = new WordBreakII();
         List<String> dicts = new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"));
         wordBreakII.wordBreak("catsanddog", dicts).forEach(s -> System.out.println(s));
-
         System.out.println("str".substring(3));
     }
 

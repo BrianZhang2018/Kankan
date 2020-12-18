@@ -65,11 +65,11 @@ public class WordBreakI {
     // BFS, https://leetcode.com/problems/word-break/discuss/43797/A-solution-using-BFS
     public static boolean wordBreakBFSMemo(String s, Set<String> wordDict) {
         if (wordDict.contains(s)) return true;
-        Queue<Integer> queue = new LinkedList<Integer>();
+        Queue<Integer> queue = new LinkedList<>();
         queue.offer(0);
         // use a set to record checked index to avoid repeated work.
         // This is the key to reduce the running time to O(N^2).
-        Set<Integer> visited = new HashSet<Integer>();
+        Set<Integer> visited = new HashSet<>();
         visited.add(0);
         while (!queue.isEmpty()) {
             int curIdx = queue.poll();

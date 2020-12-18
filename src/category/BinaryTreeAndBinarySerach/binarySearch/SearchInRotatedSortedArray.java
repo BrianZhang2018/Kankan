@@ -1,14 +1,13 @@
 package category.BinaryTreeAndBinarySerach.binarySearch;
 
 /**
- * Binary Search for Rotated array
  * https://leetcode.com/problems/search-in-rotated-sorted-array/
+ * Binary Search for Rotated array
  *
  * The idea is if it's a rotating the array, there must be one half of the array which is still in sorted order.
  * Created by brianzhang on 2/27/19.
  */
 public class SearchInRotatedSortedArray {
-
     public static void main(String[] args) {
         SearchInRotatedSortedArray test = new SearchInRotatedSortedArray();
         System.out.println(test.search(new int[]{4, 5, 6, 7, 0, 1, 2}, 7));
@@ -16,30 +15,24 @@ public class SearchInRotatedSortedArray {
 
     public int search(int[] nums, int target) {
         int start = 0, end = nums.length - 1;
-        
+
         while(start <= end){
-            
             int mid = start + (end - start)/2;
-            if(nums[mid] == target)
-                return mid;
-        
-            if(nums[mid] >= nums[start]){
-                // start -> mid is ordered increasingly, so check whether target falls in this range by compare the number on 'start' and 'mid' position
-                //if not, which means the number falls in another half (mid -> end), so "start = mid +1"
-                if(target >= nums[start] && target < nums[mid])
-                    end = mid -1;
+            if(nums[mid] == target) return mid;
+
+            if(nums[start] <= nums[mid]){ // left part is sorted
+                if(target >= nums[start] && target < nums[mid]) // target is in sorted part
+                    end = mid - 1;
                 else
-                    start = mid+1;
-            }else if(nums[mid] <= nums[start]){
-                //mid -> end is ordered increasingly, so check whether target falls in this range by comparing the number on 'mid' and 'end' position
-                //if not, which means the number falls in another half (start - mid), so end = mid - 1
-                if(target > nums[mid] && target <= nums[end])
-                    start = mid +1;
+                    start = mid + 1;
+            }else {  // right part is sorted
+                if(target > nums[mid] && target <= nums[end]) // target is in sorted part
+                    start = mid + 1;
                 else
-                    end = mid -1;
+                    end = mid - 1;
             }
         }
-        
+
         return -1;
     }
 }

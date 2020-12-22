@@ -1,7 +1,6 @@
 package category.BinaryTreeAndBinarySerach;
 
 import category.model.TreeNode;
-import javafx.util.Pair;
 import java.util.*;
 
 /**
@@ -15,8 +14,7 @@ public class ClosestBinarySearchTreeValueII {
         root.right = new TreeNode(6);
         root.left.left = new TreeNode(1);
         root.left.right = new TreeNode(3);
-        ClosestBinarySearchTreeValueII test = new ClosestBinarySearchTreeValueII();
-        System.out.println(test.closestKValues(root, 3.714286, 3));
+        System.out.println(closestKValues(root, 3.714286, 3));
     }
 
     // in-order traverse

@@ -1,0 +1,5 @@
+https://javabypatel.blogspot.com/2015/10/time-complexity-of-hashmap-get-and-put-operation.html#:~:text=Hashmap%20put%20and%20get%20operation,means%20hashcode%20implemented%20is%20good.
+
+
+To be very precise, The amortized/average case performance of Hashmap is said to be O(1) for put and get operation.
+Remember, hashmap's get and put operation takes O(1) time only in case of good hashcode implementation which distributes items across buckets.

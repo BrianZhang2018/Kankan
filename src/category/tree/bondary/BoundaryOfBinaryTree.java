@@ -5,20 +5,21 @@ import java.util.ArrayList;
 import companies.amazon.model.TreeNode;
 
 /**
- * The idea is very simple, break the boundary into 4 parts:
-    1. Root
-    2. Left Boundary
-    3. Right Boundary
-    4. Leaves.
-For left Boundary we add the result top down, and for right boundary we add the result bottom up.
-In both left and right boundary we ensure that we don't touch the leaves.
  * https://www.lintcode.com/problem/boundary-of-binary-tree/description
+ *
+ * The idea is very simple, break the boundary into 4 parts:
+ *   1. Root
+ *   2. Left Boundary
+ *   3. Right Boundary
+ *   4. Leaves.
+ * For left Boundary we add the result top down, and for right boundary we add the result bottom up.
+ * In both left and right boundary we ensure that we don't touch the leaves.
  */
 public class BoundaryOfBinaryTree{
 
     public List<Integer> boundaryOfBinaryTree(TreeNode root) {
         // write your code here
-        List<Integer> res = new ArrayList<Integer>();
+        List<Integer> res = new ArrayList<>();
         if(root == null)
             return res;
          
@@ -49,7 +50,7 @@ public class BoundaryOfBinaryTree{
         }
     }
 
-    //postorder traversal but the sequence is right->left->root
+    //postOrder traversal but the sequence is right->left->root
     public void collectRight(TreeNode root, List<Integer> res){
         if(root == null || isLeaf(root))
             return;

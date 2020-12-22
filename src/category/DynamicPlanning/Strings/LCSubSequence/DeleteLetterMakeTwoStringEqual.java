@@ -1,8 +1,9 @@
 package category.DynamicPlanning.Strings.LCSubSequence;
 
 /**
- * LCSubSequence 变形
  * https://leetcode.com/problems/delete-operation-for-two-strings/
+ *
+ * LCSubSequence 变形
  */
 public class DeleteLetterMakeTwoStringEqual {
     
@@ -27,5 +28,4 @@ public class DeleteLetterMakeTwoStringEqual {
           
         return (m + n - dp[m][n] *2);
       }
-
 }

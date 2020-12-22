@@ -7,9 +7,6 @@ package category.DFS;
  * Created by brianzhang on 2/10/19.
  */
 public class MaxAreaOfIsland1 {
-
-    private int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
-
     public static void main(String[] args) {
         //int[][] grid = {{1, 1, 0, 0, 0}, {1, 1, 0, 0, 0}, {0, 0, 0, 1, 1}, {0, 0, 0, 1, 1}};
         int[][] grid = {{1, 1}, {1, 0}};
@@ -17,6 +14,7 @@ public class MaxAreaOfIsland1 {
         MaxAreaOfIsland1 test = new MaxAreaOfIsland1();
         System.out.println(test.maxAreaOfIsland(grid));
     }
+    private int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
     public int maxAreaOfIsland(int[][] grid) {
         int max = 0;

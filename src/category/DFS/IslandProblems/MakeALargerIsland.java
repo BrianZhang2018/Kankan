@@ -9,7 +9,6 @@ package category.DFS.IslandProblems;
  * Created by brianzhang on 6/2/20.
  */
 public class MakeALargerIsland {
-
     public static void main(String[] args) {
         MakeALargerIsland test = new MakeALargerIsland();
         System.out.println(test.largestIsland(new int[][]{{0,0}, {0,1}}));

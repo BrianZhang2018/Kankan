@@ -9,14 +9,13 @@ import java.util.Stack;
  * Created by brianzhang on 2/17/20.
  */
 public class ConstructBinarySearchTreeByPreOrder {
-
     public static void main(String[] args) {
-        TreeNode root = bstFromPreorder(new int[]{8,5,1,7,10,12});
+        TreeNode root = bstFromPreOrder(new int[]{8,5,1,7,10,12});
         preOrderTraversal(root);
     }
 
-    //recursion solution
-    public static TreeNode bstFromPreorder(int[] preOrder) {
+    // recursion solution
+    public static TreeNode bstFromPreOrder(int[] preOrder) {
         TreeNode root = new TreeNode(preOrder[0]);
         for (int i = 1; i < preOrder.length; i++)
             addBST(root, preOrder[i]);
@@ -38,8 +37,8 @@ public class ConstructBinarySearchTreeByPreOrder {
         }
     }
 
-    //iterative solution
-    public static TreeNode bstFromPreOrder(int[] preOrder) {
+    // iterative solution
+    public static TreeNode bstFromPreOrder1(int[] preOrder) {
         if (preOrder == null || preOrder.length == 0) {
             return null;
         }

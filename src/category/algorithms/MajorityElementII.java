@@ -8,16 +8,14 @@ import java.util.List;
  * Created by brianzhang on 2/9/20.
  */
 public class MajorityElementII {
-
     public static void main(String[] args) {
-
         for(int n: majorityElement(new int[]{2,2,1,1,1,2,2})){
             System.out.println(n);
         }
     }
 
-    //there should be at most 2 different elements in nums more than n/3
-    //so we can find at most 2 elements based on Boyer-Moore Majority Vote algo
+    // there should be at most 2 different elements in nums more than n/3
+    // so we can find at most 2 elements based on Boyer-Moore Majority Vote algo
     public static List<Integer> majorityElement(int[] nums) {
         List<Integer> res = new ArrayList<>();
         if(nums == null || nums.length ==0)
@@ -30,7 +28,6 @@ public class MajorityElementII {
         for(int n : nums){
             if(m1 == n){
                 count1++;
-
             }else if(m2 == n){
                 count2++;
             }

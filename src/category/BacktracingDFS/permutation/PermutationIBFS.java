@@ -29,8 +29,7 @@ public class PermutationIBFS {
                 continue;
             }
             for(int i : nums){ // tc: n
-                if(next.contains(i))
-                    continue;
+                if(next.contains(i)) continue;
 
                 List<Integer> tmp = new ArrayList(next);
                 tmp.add(i);

@@ -1,7 +1,7 @@
 1. 
-postorder: root node start from the end of the postorder array
+postOrder: root node start from the end of the postorder array
 
-preorder: root node start from the start of the preorder array
+preOrder: root node start from the start of the preorder array
 
 2. fort this kind fo questions, the logic is:
 

@@ -8,8 +8,7 @@ import category.model.TreeNode;
  * Created by brianzhang on 2/8/20.
  */
 public class CountCompleteTreeNodes {
-    public static void main(String[] args) {
-    }
+    public static void main(String[] args) {}
 
     public int countNodes(TreeNode root) {
         return root != null ? 1 + countNodes(root.left) + countNodes(root.right): 0;

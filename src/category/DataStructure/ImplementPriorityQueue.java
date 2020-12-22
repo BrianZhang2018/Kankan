@@ -6,11 +6,8 @@ package category.DataStructure;
  * Created by brianzhang on 3/9/20.
  */
 
-class ImplementPriorityQueue
-{
-    public static void main(String args[])
-    {
-        // Create a Priority Queue
+class ImplementPriorityQueue {
+    public static void main(String args[]){
         ImplementPriorityQueue test = new ImplementPriorityQueue();
         Node pq = test.newNode(5, 1);
         pq =test.push(pq, 6, 2);
@@ -23,20 +20,16 @@ class ImplementPriorityQueue
         }
     }
 
-    // Node
     class Node {
         int data;
-
         // Lower values indicate higher priority
         int priority;
 
         Node next;
-
     }
 
     // Function to Create A New Node
-     Node newNode(int d, int p)
-    {
+     Node newNode(int d, int p) {
         Node temp = new Node();
         temp.data = d;
         temp.priority = p;
@@ -46,33 +39,25 @@ class ImplementPriorityQueue
     }
 
     // Function to push according to priority
-     Node push(Node head, int d, int p)
-    {
+     Node push(Node head, int d, int p) {
         Node start = head;
 
         // Create new Node
         Node temp = newNode(d, p);
 
-        // Special Case: The head of list has lesser
-        // priority than new node. So insert new
-        // node before head node and change head node.
+        // Special Case: The head of list has lesser priority than new node.
+         // So insert new node before head node and change head node.
         if ((head).priority > p) {
-
             // Insert New Node before head
             temp.next = head;
             (head) = temp;
         }
         else {
-
-            // Traverse the list and find a
-            // position to insert new node
-            while (start.next != null &&
-                    start.next.priority < p) {
+            // Traverse the list and find a position to insert new node
+            while (start.next != null && start.next.priority < p) {
                 start = start.next;
             }
-
-            // Either at the ends of the list
-            // or at required position
+            // Either at the ends of the list or at required position
             temp.next = start.next;
             start.next = temp;
         }
@@ -85,12 +70,9 @@ class ImplementPriorityQueue
         return (head).data;
     }
 
-    // Removes the element with the
-// highest priority form the list
-     Node pop(Node head)
-    {
-        Node temp = head;
-        (head) = (head).next;
+    // Removes the element with the highest priority form the list
+     Node pop(Node head) {
+        head = head.next;
         return head;
     }
 

@@ -3,8 +3,9 @@ package category.DFS.IslandProblems;
 import java.util.*;
 
 /**
- * UnionFind solution
  * https://www.lintcode.com/problem/number-of-islands-ii/description
+ *
+ * UnionFind solution
  */
 public class NumberOfIslandII {
 

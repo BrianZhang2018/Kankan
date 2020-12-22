@@ -13,7 +13,7 @@ public class OutOfBoundaryPaths1 {
 
     public static int findPaths(int m, int n, int N, int i, int j) {
 
-        int mod = 1000000007;  //The answer may be very large, return it after mod 109 + 7 (given in the question)
+        int mod = 1000000007;  // The answer may be very large, return it after mod 109 + 7 (given in the question)
         int[][][] dp = new int[N + 1][m][n];
         int[][] dicts = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
 

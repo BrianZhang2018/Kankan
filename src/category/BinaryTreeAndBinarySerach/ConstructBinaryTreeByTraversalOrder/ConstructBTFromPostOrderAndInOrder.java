@@ -5,13 +5,15 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/submissions/
  */
-public class ConstructBTFromPostOrderAndInorder {
+public class ConstructBTFromPostOrderAndInOrder {
 
     public static void main(String[] args) {
-        ConstructBTFromPostOrderAndInorder test = new ConstructBTFromPostOrderAndInorder();
+        ConstructBTFromPostOrderAndInOrder test = new ConstructBTFromPostOrderAndInOrder();
         TreeNode root = test.buildTree(new int[]{9,3,15,20,7}, new int[]{9,15,7,20,3});
-
+        // print out the result
         preOrderTraversal(root);
+
+        System.out.println(new String(new char[]{'1', '2'}, 1,1));
     }
 
     Map<Integer, Integer> inorderMap = new HashMap<>();
@@ -27,9 +29,7 @@ public class ConstructBTFromPostOrderAndInorder {
     
     public TreeNode helper(int postStart, int inStart, int inEnd, int[] inorder, int[] postorder){
         
-        if(postStart > postorder.length || postStart < 0 || inStart > inEnd){
-            return null;
-        }
+        if(postStart > postorder.length || postStart < 0 || inStart > inEnd) return null;
         
         TreeNode root = new TreeNode(postorder[postStart]);
         int inRoot = inorderMap.get(root.val);

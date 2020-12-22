@@ -10,7 +10,6 @@ import category.model.TreeNode;
 public class InsertANodeIntoBST {
 
     public static void main(String[] args) {
-
         TreeNode root = new TreeNode(4);
         root.left = new TreeNode(2);
         root.right = new TreeNode(7);
@@ -22,14 +21,12 @@ public class InsertANodeIntoBST {
     }
 
     public TreeNode insertIntoBST(TreeNode root, int valOfInsertNode) {
-        if (root == null)
-            return null;
+        if (root == null) return null;
 
         return helper(root, valOfInsertNode);
     }
 
     public TreeNode helper(TreeNode root, int valOfInsertNode) {
-
         if (root == null) {
             return new TreeNode(valOfInsertNode);
         }
@@ -44,7 +41,6 @@ public class InsertANodeIntoBST {
     }
 
     public TreeNode insertIntoBSTIteration(TreeNode root, int val) {
-
         if(root == null)
             return new TreeNode(val);
 

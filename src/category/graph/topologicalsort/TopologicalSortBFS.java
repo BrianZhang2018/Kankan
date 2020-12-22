@@ -3,10 +3,13 @@ package category.graph.topologicalsort;
 import java.util.*;
 
 /**
+ * Topological sorting
+ * https://en.wikipedia.org/wiki/Topological_sorting#:~:text=In%20computer%20science%2C%20a%20topological,before%20v%20in%20the%20ordering.
+ *
  * https://leetcode.com/problems/course-schedule/
  * https://leetcode.com/problems/course-schedule-ii/
- * 1. find order
- * 2. find cycle
+ * 1. find order - courseI, II
+ * 2. find cycle - follow up question
  *
  * Time Complexity: O(V+E) 稀疏图->O(V), 稠密图->O(V2), V is vertex, E is edge
  * Created by brianzhang on 4/18/19.
@@ -19,7 +22,7 @@ public class TopologicalSortBFS {
         System.out.println(Arrays.toString(findCycle(4, new int[][]{{2, 0}, {3, 2}, {1, 3}, {2, 1}}).toArray()));
     }
 
-    // course-1
+    // CourseI
     public static boolean canFinish(int n, int[][] prerequisites) {
         List<Integer>[] graph = new ArrayList[n]; //describe the adjacent relationship (you can use map here also)
         int[] inDegree = new int[n];    //入度
@@ -34,7 +37,7 @@ public class TopologicalSortBFS {
         // find the start node -> inDegree = 0, 意味着它是起点
         for (int i = 0; i < n; ++i)
             if (inDegree[i] == 0)
-                preCourses.add(i); //把入度为零的vertex放入前驱list
+                preCourses.add(i); //把入度为零的vertex放入前导课list
 
         int index = 0;
         while (index < preCourses.size()) {
@@ -48,36 +51,35 @@ public class TopologicalSortBFS {
         return preCourses.size() == n;
     }
 
-    // course-2
+    // CourseII - print the order of courses
     public static int[] findOrder(int n, int[][] prerequisites) {
-        List<Integer>[] G = new ArrayList[n];
-        int[] degree = new int[n];
-        List<Integer> bfs = new ArrayList();
+        List<Integer>[] dag = new ArrayList[n];
+        int[] inDegree = new int[n];
+        List<Integer> bfs = new ArrayList<>();
 
-        for (int i = 0; i < n; ++i) G[i] = new ArrayList<>();
+        for (int i = 0; i < n; ++i) dag[i] = new ArrayList<>();
 
         for (int[] e : prerequisites) {
-            G[e[1]].add(e[0]);
-            degree[e[0]]++;
+            dag[e[1]].add(e[0]);
+            inDegree[e[0]]++;
         }
         for (int i = 0; i < n; ++i) {
-            if (degree[i] == 0) {
+            if (inDegree[i] == 0) {
                 bfs.add(i);
             }
         }
 
         for (int i = 0; i < bfs.size(); ++i) {
-            for (int j : G[bfs.get(i)]) {
-                if (--degree[j] == 0) {
+            for (int j : dag[bfs.get(i)]) {
+                if (--inDegree[j] == 0) {
                     bfs.add(j);
                 }
             }
-
         }
 
         if (bfs.size() == n) {
             int[] order = new int[n];
-            for (int i = 0; i < bfs.size(); i++) order[i] = bfs.get(i);
+            for (int i=0; i<bfs.size(); i++) order[i]=bfs.get(i);
             return order;
         } else {
             return new int[]{};

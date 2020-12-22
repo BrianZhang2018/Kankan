@@ -1,15 +1,14 @@
-package category.OoneProblems;
+package category.DataStructure.OoneProblems;
 
 import java.util.Stack;
 
 /**
  * https://www.lintcode.com/problem/max-stack/description
  *
- * f: 5
+ * f: 5, linkedin
  * Created by brianzhang on 11/12/20.
  */
 public class MaxStack716 {
-
     public static void main(String[] args) {
         MaxStack716 stack = new MaxStack716();
         stack.push(5);
@@ -27,30 +26,28 @@ public class MaxStack716 {
     Stack<Integer> data = new Stack<>();
     Stack<Integer> maxTrack = new Stack<>();
     public MaxStack716() {}
-    //O(1);
+    //O(1)
     public void push(int x) {
         data.push(x);
-        if (maxTrack.isEmpty()) {
+        if (maxTrack.isEmpty())
             maxTrack.push(x);
-        }
-        else {
+        else
             maxTrack.push(Math.max(x, maxTrack.peek()));
-        }
     }
-    //O(1);
+    //O(1)
     public int pop() {
         maxTrack.pop();
         return data.pop();
     }
-    //O(1);
+    //O(1)
     public int top() {
         return data.peek();
     }
-    //O(1);
+    //O(1)
     public int peekMax() {
         return maxTrack.peek();
     }
-    //O(n);
+    //O(n)
     public int popMax() {
         int res = maxTrack.peek();
         Stack<Integer> tmp = new Stack<>();

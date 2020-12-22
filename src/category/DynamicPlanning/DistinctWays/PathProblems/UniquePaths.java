@@ -25,21 +25,21 @@ public class UniquePaths {
         return grid[n - 1][m - 1];
     }
 
+    // 一维滚动数组
     public int uniquePathsOneDemension(int m, int n) {
-        //一维滚动数组
         int[] dp = new int[n];
-    
-        for(int r=0; r<m; r++){
-            for(int c=0; c<n; c++){
-                if(r==0 || c==0){
+
+        for (int r = 0; r < m; r++) {
+            for (int c = 0; c < n; c++) {
+                if (r == 0 || c == 0) {
                     dp[c] = 1;
-                }else{
-                    dp[c] += dp[c-1];
+                } else {
+                    dp[c] += dp[c - 1];
                 }
-                
+
             }
         }
-        return dp[n-1];
+        return dp[n - 1];
     }
 
 }

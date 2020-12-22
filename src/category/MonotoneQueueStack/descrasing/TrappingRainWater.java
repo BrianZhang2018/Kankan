@@ -3,15 +3,14 @@ package category.MonotoneQueueStack.descrasing;
 import java.util.Stack;
 
 /**
- * https://leetcode.com/problems/trapping-rain-water/
- *
  * solution: https://leetcode.com/problems/trapping-rain-water/discuss/244167/A-general-stack-approach-you-can-solve-42-84-85
  *
  * Similar with the BestTimeToBuyAndSellStockIIIAtMostTwoTransactions.java
  * https://www.cnblogs.com/grandyang/p/4402392.html
+ *
+ * Grubhub onsite
  */
 public class TrappingRainWater{
-
     public static void main(String[] args) {
         TrappingRainWater test = new TrappingRainWater();
         System.out.println(test.trap(new int[]{2,1,0,1,2}));

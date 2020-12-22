@@ -5,8 +5,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/course-schedule/
  *
- * 拓扑排序用来遍历一个有向无环图（DAG, Directed Acyclic Graph）
- * 如果遍历不了一个图或者说不存在一个拓扑排序，说明图中有环
+ * 拓扑排序用来遍历一个有向无环图（DAG, Directed Acyclic Graph, 如果遍历不了一个图或者说不存在一个拓扑排序，说明图中有环
  *
  * 在图论中，拓扑排序（Topological Sorting）是一个有向无环图（DAG, Directed Acyclic Graph）的所有顶点的线性序列。且该序列必须满足下面两个条件：
 
@@ -18,12 +17,10 @@ import java.util.*;
  * Created by brianzhang on 4/18/19.
  */
 public class TopologicalSortDFS {
-
     public static void main(String[] args) {
         TopologicalSortDFS test = new TopologicalSortDFS();
         System.out.println(test.canFinish(4, new int[][]{{0, 1}, {2, 1}, {2, 0}}));
         System.out.println(test.canFinish(4, new int[][]{{0, 1}, {2, 1}, {1, 2}}));
-
     }
 
     private boolean[] canFinish;

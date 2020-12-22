@@ -1,7 +1,6 @@
-package category.OoneProblems;
+package category.DataStructure.OoneProblems.dll;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/all-oone-data-structure/

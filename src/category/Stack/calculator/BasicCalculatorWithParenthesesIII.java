@@ -1,42 +1,48 @@
-package category.Stack;
+package category.Stack.calculator;
 
 import java.util.Stack;
 
 /**
- * https://www.lintcode.com/problem/basic-calculator-iii/description
- * 这个方法也可以解 BasicCalculatorWithParenthesesI
- * <p>
+ * https://www.lintcode.com/problem/basic-calculator-iii
+ *
+ * expression: parentheses + (+, -, *, /) + ' '
+ *
+ * 这个和BasicCalculatorII的 code structure很像，可以抽取为模板算法，
+ *
  * Created by brianzhang on 2/23/20.
  */
-public class BasicCalculatorWithParenthesesII {
+public class BasicCalculatorWithParenthesesIII {
 
     public static void main(String[] args) {
-        System.out.println(calculate("6-4 / 2"));
+        System.out.println(calculate("6-((4 / 2))"));
     }
 
     public static int calculate(String s) {
-        if (s == null || s.length() == 0)
-            return 0;
+        if (s == null || s.length() == 0) return 0;
 
-        int prevSign = '+';
+        char prevSign = '+';
+        String signs = "+-*/";
         int m = s.length();
         Stack<Integer> stack = new Stack<>();
         int num = 0;
         for (int i = 0; i < m; i++) {
-            if (Character.isDigit(s.charAt(i))) {
-                num = num * 10 + s.charAt(i) - '0';
-            } else if (s.charAt(i) == '(') {
+            char c = s.charAt(i);
+            if (Character.isDigit(c)) {
+                num = num * 10 + c - '0';
+            } else if (c == '(') {
                 int j = i, cnt = 0;
+                // find the "(.(...).)"
                 for (; i < m; i++) {
                     if (s.charAt(i) == '(') cnt++;
                     if (s.charAt(i) == ')') cnt--;
                     if (cnt == 0) break;
                 }
-                //solve the parentheses recursively
+                // calculate the found parentheses expression "Recursively"
                 num = calculate(s.substring(j + 1, i));
             }
 
-            if ((!Character.isDigit(s.charAt(i)) && s.charAt(i) != ' ') || i == m - 1) {
+            // 解题思路： common way to calculate the number before the current sign
+            if (i == m - 1 || (signs.indexOf(c)!=-1)) {
                 if (prevSign == '+') {
                     stack.push(num);
                 } else if (prevSign == '-') {
@@ -52,9 +58,7 @@ public class BasicCalculatorWithParenthesesII {
         }
 
         int res = 0;
-        for (int i : stack) {
-            res += i;
-        }
+        for (int i : stack) res += i;
 
         return res;
     }

@@ -3,6 +3,9 @@ package category.BacktracingDFS;
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/4sum/
+ *
+ * time complexity: 2^k, worst case
  * this can be turned into the K Sum solution
  */
 public class FourSum {
@@ -12,30 +15,38 @@ public class FourSum {
     }
 
     public List<List<Integer>> fourSum(int[] nums, int target) {
-
-        if (nums == null || nums.length == 0) return Collections.EMPTY_LIST;
+        if (nums == null || nums.length == 0) {
+            return Collections.EMPTY_LIST;
+        }
 
         Arrays.sort(nums);
         Set<List<Integer>> set = new HashSet<>();
-        backtrack(set, new ArrayList<>(), nums, target, 0);
-        return new ArrayList<>(set);
+        List<Integer> subList = new ArrayList<>();
+        findCombinations(set, subList, nums, 0, 0, target);
+        return new ArrayList(set);
     }
 
-    public void backtrack(Set<List<Integer>> set, List<Integer> tempList, int[] nums, int sum, int index) {
-        if (tempList.size() == 4) { // 4 can be K to turn this to K sum
-            if (sum == 0) {
-                set.add(new ArrayList<>(tempList));
+    private void findCombinations(Set<List<Integer>> set, List<Integer> subList, int[] nums, int sum, int start, int target) {
+        if (subList.size() == 4) {
+            if (sum == target) {
+                set.add(new ArrayList<>(subList));
             }
             return;
         }
 
-        for (int i = index; i < nums.length; i++) {
-            tempList.add(nums[i]);
-            sum -= nums[i];
-            backtrack(set, tempList, nums, sum, i + 1);
-            sum += nums[i];
-            tempList.remove(tempList.size() - 1);
+        if (start == nums.length) return;
+
+        for (int i = start; i < nums.length; i++) {
+            // the below conditions are used for "pruning" (剪枝) otherwise backtrack will timeout
+            // nums[i] is too small (maxVal * the number of available slots in the subList (4-subList.size() -1(num[i]))
+            if (sum + nums[i] + nums[nums.length-1] * (4-subList.size()-1) < target) continue;
+
+            // nums[i] is too big as the latter number is greater than num[i] in sorted list (this is more effective compare to above one)
+            if (sum + nums[i] * (4 - subList.size()) > target) return;
+
+            subList.add(nums[i]);
+            findCombinations(set, subList, nums, sum + nums[i], i+1, target);
+            subList.remove(subList.size() - 1);
         }
     }
-
 }

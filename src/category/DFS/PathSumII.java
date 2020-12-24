@@ -2,8 +2,7 @@ package category.DFS;
 
 import category.model.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  *
@@ -19,9 +18,7 @@ public class PathSumII {
     }
 
     public void pathSumHelper(TreeNode root, int sum, List<List<Integer>> result, List<Integer> path) {
-        if (root == null) {
-            return;
-        }
+        if (root == null) return;
 
         path.add(root.val);
         //reach a leaf

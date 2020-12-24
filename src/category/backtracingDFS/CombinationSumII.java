@@ -26,7 +26,7 @@ public class CombinationSumII {
         return res;
     }
 
-    //recursive dfs with backtracking
+    // backtracking
     private void dfs(int[] nums, int target, int start, List<Integer> temp, List<List<Integer>> res) {
         if (target < 0)
             return;
@@ -34,7 +34,7 @@ public class CombinationSumII {
             res.add(new ArrayList<>(temp));
         } else {
             for (int i = start; i < nums.length; i++) {
-                if(i>start && nums[i] == nums[i-1]) //avoid duplicate combination
+                if(i>start && nums[i] == nums[i-1]) // common way to avoid duplicate combination
                     continue;
                 temp.add(nums[i]);
                 dfs(nums, target - nums[i], i+1, temp, res);

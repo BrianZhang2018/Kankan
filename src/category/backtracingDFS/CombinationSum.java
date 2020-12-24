@@ -19,6 +19,7 @@ public class CombinationSum {
 
     public List<List<Integer>> combinationSum(int[] nums, int target) {
         List<List<Integer>> res = new ArrayList<>();
+
         Arrays.sort(nums);
         dfs(nums,0, target, new ArrayList<>(), res);
         return res;
@@ -26,38 +27,13 @@ public class CombinationSum {
 
     //recursive dfs with backtracking
     private void dfs(int[] nums, int start,int target, List<Integer> temp, List<List<Integer>> res) {
-        if (target < 0)
-            return;
+        if (target < 0) return;
         else if (target == 0) {
-            res.add(new ArrayList<>(temp));  //deep copy as the 'temp' is reference type which will be changed in recursive
+            res.add(new ArrayList<>(temp));
         } else {
             for (int i = start; i < nums.length; i++) {
                 temp.add(nums[i]);
-                dfs(nums, i,target - nums[i], temp, res); //not "i + 1" here because we can reuse same element
-                temp.remove(temp.size() - 1);
-            }
-        }
-    }
-
-    // 另一种写法-用global variable
-    List<List<Integer>> res = new ArrayList<>();
-    public int change(int amount, int[] coins) {
-        Arrays.sort(coins);
-        dfs(coins, 0, amount, new ArrayList());
-        return res.size();
-    }
-
-    public void dfs(int[] coins, int start, int amount, List<Integer> temp){
-
-        if (amount < 0)
-            return;
-        else if(amount == 0){
-            res.add(new ArrayList(temp));
-            return;
-        } else {
-            for (int i = start; i < coins.length; i++) {
-                temp.add(coins[start]);
-                dfs(coins, i, amount - coins[start], temp);
+                dfs(nums, i,target - nums[i], temp, res); // not "i + 1" here because we can reuse same element
                 temp.remove(temp.size() - 1);
             }
         }

@@ -5,6 +5,10 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/group-anagrams/
  *
+ * time complexity: O(NKlogK)
+ * The outer loop has complexity O(N) as we iterate through each string.
+ * Then, we sort each string in O(KlogK) time as Arrays.sort is O(KlogK), K is the maximum length of string
+ *
  * Created by brianzhang on 11/24/18.
  */
 public class GroupAnagram {
@@ -15,8 +19,7 @@ public class GroupAnagram {
 
     public static List<List<String>> groupAnagrams(String[] strs) {
 
-        if (strs == null || strs.length == 0)
-            return null;
+        if (strs == null || strs.length == 0) return null;
 
         List<List<String>> res = new ArrayList();
         Map<String, List<String>> map = new HashMap();

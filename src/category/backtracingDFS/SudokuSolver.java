@@ -6,9 +6,7 @@ package category.BacktracingDFS;
  * since each blank can have 9 choices.
  */
 public class SudokuSolver{
-    public static void main(String[] args) {
-
-    }
+    public static void main(String[] args) {}
 
     public void solveSudoku(char[][] board) {dfs(board, 0);}
     // 返回值不是void的backtracking, compare with SubsetsII and Permutation. 这个递归和wordSearch相似。

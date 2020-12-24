@@ -1,4 +1,4 @@
-package category.Recursion;
+package category.DFS;
 
 /**
  * https://leetcode.com/problems/target-sum/

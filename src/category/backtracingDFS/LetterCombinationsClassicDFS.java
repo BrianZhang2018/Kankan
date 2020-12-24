@@ -17,8 +17,7 @@ public class LetterCombinationsClassicDFS {
 
     public List<String> letterCombinations(String digits) {
         List<String> result = new ArrayList();
-        if (digits == null || digits.length() == 0)
-            return result;
+        if (digits == null || digits.length() == 0) return result;
 
         String[] phoneLetters = new String[]{"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         char[] digitArr = digits.toCharArray();
@@ -29,7 +28,6 @@ public class LetterCombinationsClassicDFS {
 
     //recursive dfs with backtracking
     private void dfs(String[] letters, char[] digitArr, StringBuilder curr, List<String> result, int index) {
-
         if (curr.length() == digitArr.length) {
             result.add(curr.toString());
             return;

@@ -5,11 +5,10 @@ import java.util.*;
 /**
  * HashSet + LinkedList
  *
- * 这个就是val的LRU，没有key
+ * 这个就是简单的single val list的LRU
  * Created by brianzhang on 6/14/20.
  */
 public class LRUSDKSolution {
-    
     public static void main(String[] args) {
         Deque<Integer> test = new ArrayDeque<>();
         test.push(1);

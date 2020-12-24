@@ -1,0 +1,24 @@
+题的递进：
+
+BasicCalculatorII -> BasicCalculatorWithParenthesesI -> BasicCalculatorWithParenthesesIII
+
+解题思路：
+
+BasicCalculatorII and BasicCalculatorWithParenthesesIII 一个套路，可以看成模板
+
+1. prevSign - track previous sign
+2. tmpNumber -  the number between the sign
+3. common way calculate the number
+     if (i == s.length() - 1 || (signs.indexOf(c)!=-1)) { // calculate the number before current sign = prevSign * tmpNum
+                    if (prevSign == '-') {
+                        stack.push(-tmpNum);
+                    } else if (prevSign == '+') {
+                        stack.push(tmpNum);
+                    } else if (prevSign == '*') {
+                        stack.push(stack.pop() * tmpNum);
+                    } else if (prevSign == '/') {
+                        stack.push(stack.pop() / tmpNum);
+                    }
+                    prevSign = c; //
+                    tmpNum = 0;
+                }

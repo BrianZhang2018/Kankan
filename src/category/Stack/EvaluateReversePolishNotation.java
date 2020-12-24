@@ -4,6 +4,7 @@ import java.util.Stack;
 
 /**
  * https://leetcode.com/problems/evaluate-reverse-polish-notation/
+ * 150. Evaluate Reverse Polish Notation
  *
  * Created by brianzhang on 5/16/20.
  */
@@ -47,6 +48,7 @@ public class EvaluateReversePolishNotation {
         return stack.pop();
     }
 
+    // Follow-up questions: how to check whether it's a valid RPN
     // https://stackoverflow.com/questions/14506831/whats-the-fastest-way-to-check-if-input-string-is-a-correct-rpn-expression
     public static boolean isValidRPN(String[] tokens) {
         int count = 0;

@@ -14,7 +14,6 @@ import java.util.*;
 
 public class ThreeSumClosest{
     public static void main(String[] args) {
-
         Map<String, Integer> people = new HashMap<>();
         people.put("Jim", 25);
         people.put("Scott", 28);

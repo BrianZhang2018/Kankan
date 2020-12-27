@@ -31,8 +31,8 @@ public class DecodeWays {
             if(oneDigit != 0) {
                dp[i] += dp[i-1];  
             }
-            //we have got the "dp" value for "single digit" from above
-            //the below is for the twoDigits = dp[i-1] + dp[i-2]
+            // we have got the "dp" value for "single digit" from above
+            // the below is for the twoDigits = dp[i-1] + dp[i-2]
             if(towDigits >= 10 && towDigits <= 26) {
                 dp[i] += dp[i-2];
             }

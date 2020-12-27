@@ -2,6 +2,7 @@ package category.DynamicPlanning.DistinctWays;
 
 /**
  * https://leetcode.com/problems/climbing-stairs/
+ * fibonacci problem
  */
 public class ClimbingStairs{
 

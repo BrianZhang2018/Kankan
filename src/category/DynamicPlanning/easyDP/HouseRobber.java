@@ -1,7 +1,6 @@
 package category.DynamicPlanning.easyDP;
 
 /**
- * Problem：
  * https://leetcode.com/problems/house-robber/
  * 
  * 详细解析5种做法
@@ -12,12 +11,11 @@ package category.DynamicPlanning.easyDP;
 public class HouseRobber {
 
     public static void main(String[] args){
-        HouseRobber hr = new HouseRobber();
-        System.out.println(hr.rob1(new int[]{1,2,3,1}));
+        System.out.println(rob1(new int[]{1,2,3,1}));
     }
     
-    //iterative - bottom up
-    public int rob(int[] nums) {
+    // iterative - bottom up
+    public static int rob(int[] nums) {
         int rob = 0; //max money can get if rob current house
         int notRob = 0; //max money can get if not rob current house
         for(int i=0; i<nums.length; i++) {
@@ -28,15 +26,14 @@ public class HouseRobber {
         return Math.max(rob, notRob);
     }
 
-    //recursive - top down
-    public int rob1(int[] nums) {
+    // recursive - top down
+    public static int rob1(int[] nums) {
         return helper(nums, nums.length-1);
     }
 
-    public int helper(int[] nums, int i){
-        if(i < 0){
-            return 0;
-        }
+    public static int helper(int[] nums, int i){
+        if(i < 0) return 0;
+
         return Math.max(helper(nums, i-2) + nums[i], helper(nums, i-1));
     }
 }

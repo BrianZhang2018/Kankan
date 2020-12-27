@@ -6,7 +6,7 @@ import java.util.*;
  * The same number can be used unlimited times
  *
  * Can be used to solve the "Coin Change" problem if need output the combination, but slow.
- * "CoinChangeOutputCombination.java" use the 剪枝法DFS中, make it faster.
+ * "CoinChangePrintOutCombination.java" use the 剪枝法DFS中, make it faster.
  *
  * Created by brianzhang on 7/29/18.
  */

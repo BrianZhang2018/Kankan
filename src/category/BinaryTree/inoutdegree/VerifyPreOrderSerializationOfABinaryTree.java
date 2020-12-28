@@ -3,7 +3,7 @@ package category.BinaryTree.inoutdegree;
 /**
  * Created by brianzhang on 2/17/20.
  *
- * //https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/discuss/78552/JAVA-Counting-Indegree-and-Outdegree-SIMPLE-and-CLEAR!
+ * https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/discuss/78552/JAVA-Counting-Indegree-and-Outdegree-SIMPLE-and-CLEAR!
  *
  * Since this is a preorder serialization, degrees are calculated in a top-down fashion, and, tree is a structure that each node has only one indegree and at most two outdegree.
  * Positive degree means there are more indegree than outdegree, which violates the definition.

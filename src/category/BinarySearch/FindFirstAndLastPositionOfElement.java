@@ -14,7 +14,7 @@ public class FindFirstAndLastPositionOfElement {
         System.out.println(Arrays.toString(test.searchRange1(new int[]{5,7,7,8,8,10}, 8)));
     }
 
-    // solution-1
+    // Solution-1
     public int[] searchRange(int[] nums, int target) {
         int[] result = {-1, -1};
         if(nums == null || nums.length ==0) return result;
@@ -32,12 +32,11 @@ public class FindFirstAndLastPositionOfElement {
     }
 
     public int binarySearch(int[] nums, int target, boolean left){
-        int lo = 0;
-        int hi = nums.length;
+        int lo = 0, hi = nums.length;
 
-        while(lo<hi){  // lo<=hi, 不适用于这里，会在下面 if(nums[mid] > target || left && target == nums[mid]) 出现越界问题
+        while(lo<hi){  // 这题lo==hi，就不用再loop了
             int mid = lo + (hi-lo)/2;
-            if(nums[mid] > target || left && target == nums[mid]) { //解题思路: "left && target == nums[mid]"和上面的解题思路其实是一样的，都是要保证在找leftmost or rightmost target时候stay对应的left/right subArray当target == nums[mid]时候。
+            if(target < nums[mid] || left && target == nums[mid]) { // 解题思路: "left && target == nums[mid]"的，要保证在找leftmost or rightmost target时候stay对应的left/right subArray when target == nums[mid]
                 hi = mid;
             }else{
                 lo = mid+1;
@@ -46,11 +45,12 @@ public class FindFirstAndLastPositionOfElement {
 
         return lo; // return lo, hi doesn't matter
     }
+    // 解题思路:
     // if(nums[mid] > target || left && target == nums[mid])
     // left=true && target == nums[mid], left is true means we are finding the leftmost target, so we need stay on left side, so hi = mid
     // left=false && target == nums[mid], left is false means we are finding the rightmost target, so we need stay on right side, so lo = mid + 1
 
-    // solution-2， 这个更直观一些，但其实是一样的解题方法
+    // Solution-2， 这个更直观一些，但其实是一样的解法
     public static int[] searchRange1(int[] nums, int target) {
         int low=0, hi = nums.length - 1;
         int[] rs = new int[2];

@@ -1,4 +1,4 @@
-package category.tree.bondary;
+package category.BinaryTree.boundaryView;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -18,29 +18,27 @@ import companies.amazon.model.TreeNode;
 public class BoundaryOfBinaryTree{
 
     public List<Integer> boundaryOfBinaryTree(TreeNode root) {
-        // write your code here
         List<Integer> res = new ArrayList<>();
-        if(root == null)
-            return res;
-         
-        res.add(root.val);  
+        if(root == null) return res;
+
+        res.add(root.val);
+        if(root.left == null && root.right == null) return res;
+
         collectLeft(root.left, res);
         collectLeaves(root, res);
         collectRight(root.right, res);
         return res;    
     }
     
-    //pre-order traversal, the normal sequence root->left->right
+    // pre-order traversal, the normal sequence root->left->right
     public void collectLeft(TreeNode root, List<Integer> res){
-        if(root == null || isLeaf(root))
-            return;
+        if(root == null || isLeaf(root)) return;
         res.add(root.val);
         collectLeft(root.left !=null ? root.left : root.right, res);
     }
 
     public void collectLeaves(TreeNode root, List<Integer> res){
-        if(root == null)
-            return;
+        if(root == null) return;
         if(isLeaf(root)){
             res.add(root.val);
             return;
@@ -50,10 +48,9 @@ public class BoundaryOfBinaryTree{
         }
     }
 
-    //postOrder traversal but the sequence is right->left->root
+    // postOrder traversal, but we do right->left->root rather than the normal sequence left->right->root
     public void collectRight(TreeNode root, List<Integer> res){
-        if(root == null || isLeaf(root))
-            return;
+        if(root == null || isLeaf(root)) return;
         
         collectRight(root.right != null ? root.right : root.left, res);
         res.add(root.val);

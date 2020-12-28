@@ -1,12 +1,10 @@
-package category.tree.bondary;
+package category.BinaryTree.boundaryView;
 
 import java.util.*;
-import java.util.TreeMap;
-import java.util.ArrayList;
 import companies.amazon.model.TreeNode;
 
 /**
- * My solutiion - good job, man.
+ * My solution - good job, man.
  * 
  * binaryTree node's degree for vertical order
  * binaryTree node's level for level order traverse

@@ -1,6 +1,0 @@
-Classic pattern
-
-Node dummyHead = new Node();
-Node pre = dummyHead;
-
-pre is a moving pointer

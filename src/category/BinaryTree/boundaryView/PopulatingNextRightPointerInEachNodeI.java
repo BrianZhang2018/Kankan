@@ -1,4 +1,4 @@
-package category.tree.bondary;
+package category.BinaryTree.boundaryView;
 /**
  * https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
  * 

@@ -1,4 +1,4 @@
-package category.tree.bondary;
+package category.BinaryTree.boundaryView;
 import java.util.*;
 
 /**

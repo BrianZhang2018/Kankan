@@ -18,7 +18,8 @@ public class BasicCalculatorWithParenthesesI {
     public static int calculate(String s) {
         if(s == null) return 0;
 
-        int result = 0,num = 0;
+        int result = 0;
+        int num = 0;
         int prevSign = 1; // means '+'
 
         Stack<Integer> signStack = new Stack<>(); // 解题思路, signStack
@@ -30,9 +31,9 @@ public class BasicCalculatorWithParenthesesI {
                 num = num * 10 + c - '0';
             } else if(c == '+' || c == '-') {
                 result += prevSign * num;
-                prevSign = signStack.peek() * (c == '+' ? 1: -1); // 解题思路: prevSign transformed here
-                // e.g. "2-(5-6)" will be converted to "2-5+6" as signStack.peek store the sign out of parentheses
-                num = 0; // reset num after the sign
+                prevSign = signStack.peek() * (c == '+' ? 1: -1); // 解题思路: prevSign is transformed here
+                                                                    // e.g. "2-(5-6)" will be converted to "2-5+6" as signStack.peek store the sign out of parentheses
+                num = 0; // reset num
             } else if(c == '(') {   // store the sign right before the "(....)"
                 signStack.push(prevSign);
             } else if(c == ')') {   // pop the sign right before the "(....)"

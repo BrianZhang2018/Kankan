@@ -1,10 +1,9 @@
 1. 
-postOrder: root node start from the end of the postorder array
+postOrder: root node start from the end of the postOrder array
 
-preOrder: root node start from the start of the preorder array
+preOrder: root node start from the start of the preOrder array
 
 2. fort this kind fo questions, the logic is:
-
     a. Find the root node
     b. Recursively build the right and left tree
 

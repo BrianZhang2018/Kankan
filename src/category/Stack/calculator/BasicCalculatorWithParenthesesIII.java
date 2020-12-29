@@ -14,7 +14,7 @@ import java.util.Stack;
 public class BasicCalculatorWithParenthesesIII {
 
     public static void main(String[] args) {
-        System.out.println(calculate("6-((4 / 2))"));
+        System.out.println(calculate("6-(1+(4/2))"));
     }
 
     public static int calculate(String s) {
@@ -30,7 +30,7 @@ public class BasicCalculatorWithParenthesesIII {
             if (Character.isDigit(c)) {
                 num = num * 10 + c - '0';
             } else if (c == '(') {
-                int j = i, cnt = 0;
+                int start = i, cnt = 0;
                 // find the "(.(...).)"
                 for (; i < m; i++) {
                     if (s.charAt(i) == '(') cnt++;
@@ -38,7 +38,7 @@ public class BasicCalculatorWithParenthesesIII {
                     if (cnt == 0) break;
                 }
                 // calculate the found parentheses expression "Recursively"
-                num = calculate(s.substring(j + 1, i));
+                num = calculate(s.substring(start + 1, i));
             }
 
             // 解题思路： common way to calculate the number before the current sign

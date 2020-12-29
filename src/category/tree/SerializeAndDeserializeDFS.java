@@ -7,18 +7,18 @@ import java.util.*;
  * https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
  *
  * PreOrder -> serialize
- * dfs -> deserialize
  */
 public class SerializeAndDeserializeDFS {
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(6);
-        root.left = new TreeNode(4);
-        root.right = new TreeNode(5);
-        root.left.right = new TreeNode(9);
-        root.right.left = new TreeNode(1);
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.right.left = new TreeNode(4);
+        root.right.right = new TreeNode(5);
 
         SerializeAndDeserializeDFS test = new SerializeAndDeserializeDFS();
-        String str = test.serialize(root);  System.out.println(Arrays.toString(str.split(",")));
+        String str = test.serialize(root);
+        System.out.println(Arrays.toString(str.split(",")));
         test.deserialize(str);
     }
     // Encodes a tree to a single string.
@@ -39,16 +39,16 @@ public class SerializeAndDeserializeDFS {
     }
 
     public TreeNode deserialize(String data) {
-        return deserial(new LinkedList<>(Arrays.asList(data.split(","))));
+        return buildTree(new LinkedList<>(Arrays.asList(data.split(","))));
     }
 
-    // deserial, preOrder走一遍
-    private TreeNode deserial(Queue<String> queue) {
+    // DFS to deserialize a tree
+    private TreeNode buildTree(Queue<String> queue) {
         String val = queue.poll();
         if ("#".equals(val)) return null;
         TreeNode root = new TreeNode(Integer.valueOf(val));
-        root.left = deserial(queue);
-        root.right = deserial(queue);
+        root.left = buildTree(queue);
+        root.right = buildTree(queue);
         return root;
     }
 }

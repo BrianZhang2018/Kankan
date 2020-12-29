@@ -23,7 +23,7 @@ public class NestedListWeightSum {
            if(ni.isInteger()){
                sum += ni.getInteger() * depth;
            }else{
-               sum += dfs(ni.getList(), depth +1); // here is depth+1, can't use depth++ since it's inside a for loop which can result in wrongly increase the depth in the same level
+               sum += dfs(ni.getList(), depth +1); // here is depth+1, can't use depth++ since it's inside a "for" loop which can result in wrongly increase the depth for others at the same level
            }
         }
 

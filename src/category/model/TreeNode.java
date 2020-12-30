@@ -12,5 +12,15 @@ public class TreeNode {
     public TreeNode(int x) {
         val = x;
     }
-}
 
+    public static void preOrderTraversal(TreeNode node){
+        if(node == null){
+            System.out.println("null");
+            return;
+        }
+        System.out.println(node.val);
+        preOrderTraversal(node.left);
+        preOrderTraversal(node.right);
+    }
+
+}

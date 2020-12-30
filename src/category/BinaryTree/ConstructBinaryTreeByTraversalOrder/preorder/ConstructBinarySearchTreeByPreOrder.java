@@ -1,4 +1,4 @@
-package category.BinaryTree.ConstructBinaryTreeByTraversalOrder.preOrder;
+package category.BinaryTree.ConstructBinaryTreeByTraversalOrder.preorder;
 
 import category.model.TreeNode;
 
@@ -41,8 +41,8 @@ public class ConstructBinarySearchTreeByPreOrder {
         }
     }
 
-    // Solution-2: DFS lower/upperLimit solution - refer from the ValidateBinarySearchTree.java solution
-    // TC: O(N), since we visit each node exactly once.  SC: O(N) to keep the entire tree.
+    // Solution-2: lower/upperLimit solution - refer from the ValidateBinarySearchTree.java solution
+    // TC: O(N), since we visit each node exactly once. SC: O(N) to keep the entire tree.
     int idx = 0;
     public TreeNode bstFromPreorder(int[] preorder) {
         return helper(preorder, Integer.MIN_VALUE, Integer.MAX_VALUE);

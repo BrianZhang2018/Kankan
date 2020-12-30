@@ -1,4 +1,4 @@
-package category.BinaryTree.ConstructBinaryTreeByTraversalOrder.preOrder;
+package category.BinaryTree.ConstructBinaryTreeByTraversalOrder.preorder;
 
 import companies.amazon.model.TreeNode;
 import java.util.*;

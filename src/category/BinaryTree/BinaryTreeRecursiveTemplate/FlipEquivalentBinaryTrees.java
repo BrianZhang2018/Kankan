@@ -6,6 +6,8 @@ import category.model.TreeNode;
  * flipEquiv函数的含义：判断两个树在进行翻转/不进行翻转的情况下，能不能相等。
  */
 public class FlipEquivalentBinaryTrees{
+    public static void main(String[] args) {
+    }
 
     public boolean flipEquiv(TreeNode root1, TreeNode root2) {
         

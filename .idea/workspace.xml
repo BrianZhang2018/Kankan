@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/validBSTLowerUpperLimit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrderInOrder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/Guide" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/ValidateBinarySearchTree.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/category/BinaryTree/binarySearchTree/ValidateBinarySearchTree.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinarySearchTreeByPreOrder.java" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/ConstructBinarySearchTreeByPreOrder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/VS" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/AGuide" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/Stack/calculator/note" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/Guide" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPostOrderAndInOrder.java" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPostorderAndInorder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPreOrderAndInorder.java" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPreorderAndInorder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/AGuide" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preorder/AGuide" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/ConstructBinarySearchTreeByPreOrder.java" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preorder/ConstructBinarySearchTreeByPreOrder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/ValidateBinarySearchTree.java" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preorder/ValidateBinarySearchTree.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/validBSTLowerUpperLimit.png" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preorder/validBSTLowerUpperLimit.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrderInOrder.png" afterPath="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/constructBTpreOrderInOrder.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DFS/NestedListWeightSum.java" afterPath="$PROJECT_DIR$/src/category/DFS/NestedListWeightSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorWithParenthesesI.java" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorWithParenthesesI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorWithParenthesesIII.java" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorWithParenthesesIII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/tree/SerializeAndDeserializeDFS.java" afterPath="$PROJECT_DIR$/src/category/tree/SerializeAndDeserializeDFS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/BinaryTree/BinaryTreeRecursiveTemplate/FlipEquivalentBinaryTrees.java" afterPath="$PROJECT_DIR$/src/category/BinaryTree/BinaryTreeRecursiveTemplate/FlipEquivalentBinaryTrees.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/model/TreeNode.java" afterPath="$PROJECT_DIR$/src/category/model/TreeNode.java" />
     </list>
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
@@ -87,45 +83,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ConstructBinarySearchTreeByPreOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/ConstructBinarySearchTreeByPreOrder.java">
+        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preorder/ConstructBinarySearchTreeByPreOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-              <folding>
-                <element signature="e#1577#1578#0" expanded="true" />
-                <element signature="e#1654#1655#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Deque.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Deque.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="499" column="35" lean-forward="false" selection-start-line="499" selection-start-column="35" selection-end-line="499" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidateBinarySearchTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/ValidateBinarySearchTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Guide" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/Guide">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="74" lean-forward="false" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+            <state relative-caret-position="-18">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,42 +102,79 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validBSTLowerUpperLimit.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/validBSTLowerUpperLimit.png">
+      <file leaf-file-name="RecursiveWaySolveTreeProblem.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/BinaryTreeRecursiveTemplate/RecursiveWaySolveTreeProblem.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OneRoot-template.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/BinaryTreeRecursiveTemplate/OneRoot-template.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TwoRoots-template.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/BinaryTreeRecursiveTemplate/TwoRoots-template.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConstructBinaryTreeFromPostOrderAndInOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPostOrderAndInOrder.java">
+      <file leaf-file-name="ValidateBinarySearchTree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preorder/ValidateBinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+            <state relative-caret-position="-615">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constructBTpreOrderInOrder.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/constructBTpreOrderInOrder.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountSmallerNumberOnRight.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/CountSmallerNumberOnRight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstructBinaryTreeFromPreOrderAndInorder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPreOrderAndInorder.java">
+      <file leaf-file-name="ConstructBinaryTreeFromPostorderAndInorder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPostorderAndInorder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="21" column="67" lean-forward="false" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+            <state relative-caret-position="414">
+              <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/model/TreeNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConstructBinaryTreeFromPreorderAndInorder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPreorderAndInorder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinaryTreeVerticalOrderTraversalRecursive.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/boundaryView/BinaryTreeVerticalOrderTraversalRecursive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -260,13 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/category/Stack/BasicCalculatorWithParenthesesI.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/oracle/vo/BasicCalculatorII.java" />
-        <option value="$USER_HOME$/workspace/InterviewPrep/src/oracle/vo/BasicCalculatorWithParenthesesI.java" />
-        <option value="$PROJECT_DIR$/src/category/Stack/BasicCalculatorWithParenthesesIII.java" />
-        <option value="$PROJECT_DIR$/src/category/Stack/Calculator/BasicCalculatorWithParenthesesIII.java" />
-        <option value="$PROJECT_DIR$/src/category/Stack/calculator/note" />
-        <option value="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/CoinChangeOutputCombination.java" />
         <option value="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/CoinChange.java" />
         <option value="$USER_HOME$/workspace/InterviewPrep/src/oracle/vo/CoinChange.java" />
         <option value="$USER_HOME$/workspace/InterviewPrep/src/oracle/vo/ReverseString.java" />
@@ -309,8 +300,15 @@
         <option value="$PROJECT_DIR$/src/category/BinaryTree/binarySearchTree/ValidateBinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinarySearchTreeByPreOrder.java" />
         <option value="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/ValidateBinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/ConstructBinarySearchTreeByPreOrder.java" />
         <option value="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/Guide" />
+        <option value="$PROJECT_DIR$/src/category/BinaryTree/BinaryTreeRecursiveTemplate/FlipEquivalentBinaryTrees.java" />
+        <option value="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPreOrderAndInorder.java" />
+        <option value="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPreOrderAndInOrder.java" />
+        <option value="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPostOrderAndInOrder.java" />
+        <option value="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPostorderAndInorder.java" />
+        <option value="$PROJECT_DIR$/src/category/model/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPreorderAndInorder.java" />
+        <option value="$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/ConstructBinarySearchTreeByPreOrder.java" />
       </list>
     </option>
   </component>
@@ -756,6 +754,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="BinaryTree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -812,7 +832,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="preOrder" />
+              <option name="myItemId" value="preorder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BinaryTree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boundaryView" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -898,27 +944,7 @@
       <recent name="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/coinChange" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConstructBinarySearchTreeByPreOrder">
-    <configuration default="false" name="RandomPickWithWeight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="category.BinarySearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="category.BinarySearch.RandomPickWithWeight" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="KillLeetCode" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.ConstructBinaryTreeFromPreorderAndInorder">
     <configuration default="false" name="BasicCalculatorWithParenthesesIII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -982,11 +1008,31 @@
     <configuration default="false" name="ConstructBinarySearchTreeByPreOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="category.BinaryTree.ConstructBinaryTreeByTraversalOrder.preOrder.*" />
+          <option name="PATTERN" value="category.BinaryTree.ConstructBinaryTreeByTraversalOrder.preorder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="category.BinaryTree.ConstructBinaryTreeByTraversalOrder.preOrder.ConstructBinarySearchTreeByPreOrder" />
+      <option name="MAIN_CLASS_NAME" value="category.BinaryTree.ConstructBinaryTreeByTraversalOrder.preorder.ConstructBinarySearchTreeByPreOrder" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="KillLeetCode" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConstructBinaryTreeFromPreorderAndInorder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="category.BinaryTree.ConstructBinaryTreeByTraversalOrder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="category.BinaryTree.ConstructBinaryTreeByTraversalOrder.ConstructBinaryTreeFromPreorderAndInorder" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1581,19 +1627,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.RandomPickWithWeight" />
-      <item index="1" class="java.lang.String" itemvalue="Application.BasicCalculatorWithParenthesesIII" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SerializeAndDeserializeDFS" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ValidateBinarySearchTree" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ConstructBinarySearchTreeByPreOrder" />
+      <item index="0" class="java.lang.String" itemvalue="Application.BasicCalculatorWithParenthesesIII" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SerializeAndDeserializeDFS" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ValidateBinarySearchTree" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ConstructBinarySearchTreeByPreOrder" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ConstructBinaryTreeFromPreorderAndInorder" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ConstructBinarySearchTreeByPreOrder" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ValidateBinarySearchTree" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SerializeAndDeserializeDFS" />
-        <item index="3" class="java.lang.String" itemvalue="Application.BasicCalculatorWithParenthesesIII" />
-        <item index="4" class="java.lang.String" itemvalue="Application.RandomPickWithWeight" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ConstructBinaryTreeFromPreorderAndInorder" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ConstructBinarySearchTreeByPreOrder" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ValidateBinarySearchTree" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SerializeAndDeserializeDFS" />
+        <item index="4" class="java.lang.String" itemvalue="Application.BasicCalculatorWithParenthesesIII" />
       </list>
     </recent_temporary>
   </component>
@@ -1734,7 +1780,7 @@
       <workItem from="1606920486110" duration="10396000" />
       <workItem from="1607007328934" duration="96355000" />
       <workItem from="1608681950963" duration="56605000" />
-      <workItem from="1609263562768" duration="4975000" />
+      <workItem from="1609263562768" duration="8420000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -1787,7 +1833,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2020148000" />
+    <option name="totallyTimeSpent" value="2023593000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1810,9 +1856,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720517" sideWeight="0.4920792" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6792079" sideWeight="0.4978701" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3739726" sideWeight="0.48707592" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45940593" sideWeight="0.48465267" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45890412" sideWeight="0.48465267" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4273021" sideWeight="0.48209366" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35541195" sideWeight="0.48209366" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32452276" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920128" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2143,27 +2189,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/microsoft/ms2020/vo/LRU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/microsoft/ms2020/vo/SudokuSolver37.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/phoneScreening/SemaphoreExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" column="57" lean-forward="true" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/microsoft/ms2020/vo/NumberOfIsland200.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -2217,20 +2242,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/boundaryView/dummyNode">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/boundaryView/levelOrdertraverse and dfs recursive">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -2297,13 +2308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/boundaryView/BinaryTreeVerticalOrderTraversalRecursive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/category/DFS/NestedListWeightSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -2350,6 +2354,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
           <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2390,6 +2395,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2418,11 +2424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrderInOrder.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/boundaryView/BinaryTreeRightSideView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -2431,7 +2432,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Deque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="499" column="35" lean-forward="false" selection-start-line="499" selection-start-column="35" selection-end-line="499" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preorder/validBSTLowerUpperLimit.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preorder/AGuide">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/BinaryTreeRecursiveTemplate/TwoRoots-template.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/BinaryTreeRecursiveTemplate/OneRoot-template.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/boundaryView/dummyNode">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/boundaryView/levelOrdertraverse and dfs recursive">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/boundaryView/BinaryTreeVerticalOrderTraversalRecursive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/BinaryTreeRecursiveTemplate/RecursiveWaySolveTreeProblem.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -2444,54 +2500,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/BinaryTreeRecursiveTemplate/OneRoot-template.png">
+    <entry file="file://$PROJECT_DIR$/src/category/model/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/constructBTpreOrderInOrder.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Deque.java">
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/CountSmallerNumberOnRight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="499" column="35" lean-forward="false" selection-start-line="499" selection-start-column="35" selection-end-line="499" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/ConstructBinarySearchTreeByPreOrder.java">
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preorder/ValidateBinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-          <folding>
-            <element signature="e#1577#1578#0" expanded="true" />
-            <element signature="e#1654#1655#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/validBSTLowerUpperLimit.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPostOrderAndInOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPreOrderAndInorder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="67" lean-forward="false" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/ValidateBinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
+        <state relative-caret-position="-615">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2499,11 +2531,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preOrder/Guide">
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/preorder/ConstructBinarySearchTreeByPreOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="74" lean-forward="false" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+        <state relative-caret-position="-18">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPreorderAndInorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/BinaryTree/ConstructBinaryTreeByTraversalOrder/ConstructBinaryTreeFromPostorderAndInorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

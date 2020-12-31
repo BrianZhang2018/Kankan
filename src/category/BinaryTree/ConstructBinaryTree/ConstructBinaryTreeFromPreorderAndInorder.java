@@ -1,4 +1,4 @@
-package category.BinaryTree.ConstructBinaryTreeByTraversalOrder;
+package category.BinaryTree.ConstructBinaryTree;
 
 import category.model.TreeNode;
 import java.util.*;
@@ -24,7 +24,8 @@ public class ConstructBinaryTreeFromPreorderAndInorder {
         }
         return traverse(0, 0, inorder.length-1, preorder);
     }
-    
+
+    // preIndex is used to track the left/right root node in inorder array from preorder array
     public TreeNode traverse(int preIndex, int inStart, int inEnd, int[] preorder){
         
         if(preIndex == preorder.length || inStart > inEnd) return null;
@@ -32,7 +33,7 @@ public class ConstructBinaryTreeFromPreorderAndInorder {
         TreeNode root = new TreeNode(preorder[preIndex]);
         int inRoot = inorderMap.get(root.val);
 
-        // 解题思路：
+        // 解题思路
        /** (inStart, inRoot-1) ->left subtree, (inRoot+1, inEnd) ->right subtree,
          * (preIndex+1) -> is the root of left subtree, (preIndex + inRoot-inStart+1) -> is the root of right subtree,
          * (inRoot-inStart) is the number of nodes in root's left subtree, so (preIndex + inRoot-inStart + 1) means

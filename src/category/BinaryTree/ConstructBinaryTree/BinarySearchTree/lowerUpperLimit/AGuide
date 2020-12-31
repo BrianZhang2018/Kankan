@@ -1,0 +1,2 @@
+用lower/upperLimit的方法check whether it's a valid binary search tree，
+同样的也可以用这个方法去construct a binary search tree with a preorder array

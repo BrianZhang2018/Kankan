@@ -1,4 +1,4 @@
-package category.BinaryTree.ConstructBinaryTreeByTraversalOrder.preorder;
+package category.BinaryTree.ConstructBinaryTree.BinarySearchTree.lowerUpperLimit;
 
 import category.model.TreeNode;
 
@@ -11,14 +11,35 @@ import java.util.*;
  * Created by brianzhang on 2/17/20.
  */
 public class ConstructBinarySearchTreeByPreOrder {
+
     public static void main(String[] args) {
-        TreeNode root = bstFromPreOrder(new int[]{8,5,1,7,10,12});
-        printOutByPreOrder(root);
+        TreeNode root = bstFromPreorderDFS(new int[]{8,5,1,7,10,12});
+        root.preOrderTraversal(root);
         bstFromPreOrderBFS(new int[]{8,5,1,7,10,12});
     }
 
-    // Solution-1: DFS preOrder recursive solution
-    public static TreeNode bstFromPreOrder(int[] preOrder) {
+    // Solution-1: lower/upperLimit solution - refer from the ValidateBinarySearchTree.java solution
+    // TC: O(N), since we visit each node exactly once. SC: O(N) to keep the entire tree.
+    int idx = 0;
+    public TreeNode bstFromPreorder(int[] preorder) {
+        return helper(preorder, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    public TreeNode helper(int[] preorder,int low, int high) {
+        if(idx == preorder.length) // means tree construction is done
+            return null;
+
+        if (preorder[idx] <= low || preorder[idx] >= high) return null;
+
+        TreeNode root = new TreeNode(preorder[idx++]);
+        root.left = helper(preorder, low, root.val);
+        root.right = helper(preorder, root.val, high);
+
+        return root;
+    }
+
+    // Solution-2: DFS preOrder recursive solution
+    public static TreeNode bstFromPreorderDFS(int[] preOrder) {
         TreeNode root = new TreeNode(preOrder[0]);
         for (int i = 1; i < preOrder.length; i++) {
             buildBST(root, preOrder[i]);
@@ -41,24 +62,6 @@ public class ConstructBinarySearchTreeByPreOrder {
         }
     }
 
-    // Solution-2: lower/upperLimit solution - refer from the ValidateBinarySearchTree.java solution
-    // TC: O(N), since we visit each node exactly once. SC: O(N) to keep the entire tree.
-    int idx = 0;
-    public TreeNode bstFromPreorder(int[] preorder) {
-        return helper(preorder, Integer.MIN_VALUE, Integer.MAX_VALUE);
-    }
-
-    public TreeNode helper(int[] preorder,int low, int high) {
-        if(idx == preorder.length) return null;
-
-        if (preorder[idx] <= low || preorder[idx] >= high) return null;
-
-        TreeNode root = new TreeNode(preorder[idx++]);
-        root.left = helper(preorder, low, root.val);
-        root.right = helper(preorder, root.val, high);
-
-        return root;
-    }
 
     // Solution-3: Iteration solution converted from Solution-2
     public static TreeNode bstFromPreOrderBFS(int[] preOrder) {
@@ -83,14 +86,5 @@ public class ConstructBinarySearchTreeByPreOrder {
         }
 
         return root;
-    }
-
-
-    // ignore: printOut result helper function
-    public static void printOutByPreOrder(TreeNode root){
-        if(root == null) {System.out.println("leaf"); return;}
-        System.out.println(root.val);
-        printOutByPreOrder(root.left);
-        printOutByPreOrder(root.right);
     }
 }

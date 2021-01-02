@@ -1,4 +1,4 @@
-package category.BacktracingDFS.permutation;
+package category.BacktracingDFS.permutation.one;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,16 +32,16 @@ public class PermutationI {
         } else {
             for (int i = 0; i < nums.length; i++) {
                 if(used[i]) continue;
+
                 tempList.add(nums[i]);
                 used[i] = true;
                 backtrack(list, tempList, nums, used);      System.out.println("remove before: " + tempList);
                 tempList.remove(tempList.size() - 1);
-                used[i] = false;        System.out.println("               remove after: " + tempList);
+                used[i] = false;                            System.out.println("               remove after: " + tempList);
             }
         }
     }
 }
-
 
 /*
  * https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)

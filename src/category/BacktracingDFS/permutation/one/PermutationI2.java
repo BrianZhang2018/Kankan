@@ -1,4 +1,4 @@
-package category.BacktracingDFS.permutation;
+package category.BacktracingDFS.permutation.one;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ public class PermutationI2 {
     }
 
     /**
-     * Don't need a tempList to store the result, like other solution, since swap the number to get the different permutation
+     * Don't need a tempList to store the result since we swap the number to get the different permutation
      */
     private void backTracing(int[] nums, int start, List<List<Integer>> result) {
         if (start == nums.length - 1)

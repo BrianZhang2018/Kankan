@@ -24,11 +24,11 @@ public class DecodeString{
     }
 
     public String dfs(Deque<Character> dq) {
-        int num = 0;
         StringBuilder sb = new StringBuilder();
+        int num = 0;
 
         while(!dq.isEmpty()){
-            char c = dq.pop(); // got character remove from queue
+            char c = dq.pop();
             if(Character.isDigit(c)){
                 num = num*10 + c - '0';
             }else if(c == '['){
@@ -47,7 +47,7 @@ public class DecodeString{
         return sb.toString();
     }
 
-    // two stacks
+    // Solution-2: two stacks
     public String decodeString(String s) {
         Stack<Integer> numStack = new Stack<>();
         Stack<StringBuilder> strStack = new Stack<>();

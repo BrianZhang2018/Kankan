@@ -2,10 +2,12 @@ package category.BinaryTree;
 
 import category.model.TreeNode;
 /**
- * https://leetcode.com/problems/recover-binary-search-tree/
  * https://leetcode.com/problems/recover-binary-search-tree/discuss/32535/No-Fancy-Algorithm-just-Simple-and-Powerful-In-Order-Traversal
  *
- * "in order traversal" can be used to compare the current and previous node as prev always less than curr node in in-order-traversal bst
+ * "inorder traversal" can be used to compare the current and previous node as prev always less than curr node in in-order-traversal bst
+ *
+ * TC: O(N) - N is the number of nodes
+ * Space complexity: Recursion stack is O(height), the best case will be O(logN), the worst case is O(N)
  *
  * Created by brianzhang on 5/22/20.
  */
@@ -15,7 +17,6 @@ public class RecoverBinarySearchTree {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(3);
         root.left.right = new TreeNode(2);
-
         System.out.println("Before"); BinaryTreeUtil.preOrderPrintOut(root);
 
         RecoverBinarySearchTree test = new RecoverBinarySearchTree();
@@ -24,8 +25,7 @@ public class RecoverBinarySearchTree {
         System.out.println("After");BinaryTreeUtil.preOrderPrintOut(root);
     }
 
-    TreeNode firstNode = null;
-    TreeNode secondNode = null;
+    TreeNode firstNode, secondNode;
     // The reason for this initialization is to avoid null pointer exception in the first comparison when prevNode has not been initialized
     TreeNode prevNode = new TreeNode(Integer.MIN_VALUE);
 
@@ -42,24 +42,22 @@ public class RecoverBinarySearchTree {
 
     private void traverse(TreeNode root) {
 
-        if (root == null)
-            return;
+        if (root == null) return;
 
         traverse(root.left);
 
-        // Start of "do some business",
-        // If first node has not been found, assign it to prevNode (refer to 6 in the example above)
-        if (firstNode == null && prevNode.val >= root.val) {
-            firstNode = prevNode;
+        if(prevNode != null){
+            if (firstNode == null && prevNode.val >= root.val) {
+                firstNode = prevNode;
+            }
+            if (firstNode != null && prevNode.val >= root.val) {
+                secondNode = root;
+                // due to swap value in binary search tree that must be the large value swap to the front, and corresponding small value go to behind.
+                // so line-51, we do firstNode = prevNode, but above line we do "secondNode = root" rather than prevNode as the small value is in the behind which is root.val
+            }
         }
 
-        // If first node is found, assign the second node to the root (refer to 2 in the example above)
-        if (firstNode != null && prevNode.val >= root.val) {
-            secondNode = root;
-        }
         prevNode = root;
-
-        // End of "do some business"
 
         traverse(root.right);
     }

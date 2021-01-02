@@ -4,7 +4,10 @@ package category.BacktracingDFS;
  * https://leetcode.com/problems/word-search/
  * DFS here, don't use BFS will has the visited state issue
  *
- * T: O(mn*4^k), S: O(4mn)
+ * TC: O(M*N*4^L) -  M*N is the size of the board, L is the length of the word
+ * SC: O(L), L is the length of the word to be matched.
+ * The main consumption of the memory lies in the recursion call of the backtracking function. The maximum length of the call stack would be the length of the word.
+ * Therefore, the space complexity of the algorithm is O(L).
  */
 public class WordSearch {
 
@@ -15,9 +18,7 @@ public class WordSearch {
     }
 
     public boolean exist(char[][] board, String word) {
-        if(board == null || board.length == 0){
-            return false;
-        }
+        if(board == null || board.length == 0) return false;
 
         for(int i=0; i<board.length; i++){
             for(int j=0; j<board[0].length; j++){
@@ -30,10 +31,9 @@ public class WordSearch {
     }
     
     public boolean dfs(int row, int col, char[][] board, String word, int index){
-        if(index == word.length()) 
-            return true;
+        if(index == word.length()) return true;
         
-        if(row >=board.length || row < 0 || col>=board[0].length || col<0 || board[row][col] != word.charAt(index)){
+        if(row >=board.length || row < 0 || col>=board[0].length || col<0 || board[row][col] != word.charAt(index)) {
             return false;
         }
         board[row][col] = '*';

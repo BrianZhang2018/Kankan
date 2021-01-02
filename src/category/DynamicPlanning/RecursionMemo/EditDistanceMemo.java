@@ -18,7 +18,6 @@ public class EditDistanceMemo {
     public static int minDistance(String word1, String word2) {
         int m = word1.length(), n = word2.length();
         int[][] memo = new int[m][n];
-
         return helper(word1, word2, m, n, memo);
     }
 

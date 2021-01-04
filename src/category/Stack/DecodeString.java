@@ -16,8 +16,9 @@ public class DecodeString{
         System.out.println(test.decodeStringDFS("3[a]2[bc]"));
     }
 
+    // Solution-1 : DFS
     public String decodeStringDFS(String s) {
-        // use a queue to pop character rather than loop a string to avoid append same character multiple times
+        // use a queue to track the progress, act as 全局变量，shared by all functions in recursive
         Deque<Character> dq = new ArrayDeque<>();
         for(Character c : s.toCharArray()) dq.add(c);
         return dfs(dq);
@@ -28,7 +29,7 @@ public class DecodeString{
         int num = 0;
 
         while(!dq.isEmpty()){
-            char c = dq.pop();
+            char c = dq.poll();
             if(Character.isDigit(c)){
                 num = num*10 + c - '0';
             }else if(c == '['){
@@ -47,30 +48,31 @@ public class DecodeString{
         return sb.toString();
     }
 
-    // Solution-2: two stacks
+    // Solution-2: two stacks - BFS
     public String decodeString(String s) {
         Stack<Integer> numStack = new Stack<>();
         Stack<StringBuilder> strStack = new Stack<>();
-        StringBuilder curr = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
 
         int k = 0;
         for (char ch : s.toCharArray()) {
             if (Character.isDigit(ch)) {
                 k = k * 10 + ch - '0';  // for the case like "10[bc]"
-            } else if ( ch == '[') {
+            } else if (ch == '[') {
                 numStack.push(k);
-                strStack.push(curr);
-                curr = new StringBuilder();
+                strStack.push(sb);
+                sb = new StringBuilder();
                 k = 0;
             } else if (ch == ']') {
                 StringBuilder prev = strStack.pop();
-                for (k = numStack.pop(); k > 0; --k)
-                    prev.append(curr);
+                for (int n = numStack.pop(); n > 0; --n)
+                    prev.append(sb);
                 
-                curr = prev;
-            } else 
-                curr.append(ch);
+                sb = prev;
+            } else {
+                sb.append(ch);
+            }
         }
-        return curr.toString();
+        return sb.toString();
     }
 }

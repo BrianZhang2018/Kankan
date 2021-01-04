@@ -62,7 +62,6 @@ public class ConstructBinarySearchTreeByPreOrder {
         }
     }
 
-
     // Solution-3: Iteration solution converted from Solution-2
     public static TreeNode bstFromPreOrderBFS(int[] preOrder) {
         if (preOrder == null || preOrder.length == 0) return null;

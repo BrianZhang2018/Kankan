@@ -36,4 +36,33 @@ public class GroupAnagram {
         res.addAll(map.values());
         return res;
     }
+
+    // Solution-2: better performance
+    public List<List<String>> groupAnagramsUniqueHash(String[] strs) {
+        List<List<String>> result = new ArrayList<>();
+        Map<Integer, List<String>> map = new HashMap<>();
+
+        for(String str: strs){
+
+            // take the sum of all values and product of all values and add together basically creating a unique hash
+            int sum = 1;
+            int total = 0;
+            for(int i=0; i < str.length(); i++){
+                int intVal = str.charAt(i);
+                sum = sum *intVal;
+                total = total + intVal;
+            }
+            sum = sum + total;
+
+            if(map.containsKey(sum)){
+                map.get(sum).add(str);
+            }else{
+                List<String> list = new ArrayList<>();
+                list.add(str);
+                map.put(sum, list);
+                result.add(list);
+            }
+        }
+        return result;
+    }
 }

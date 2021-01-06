@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * https://leetcode.com/problems/merge-sorted-array/
  *
- * Start in-place insert from the end of array
+ * Start "in-place" insert from the "end" of array
  *
  * Created by brianzhang on 6/2/20.
  */
@@ -18,8 +18,7 @@ public class MergeSortedArray {
     }
 
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
-
-        int last = m + n -1;
+        int last = m + n - 1;
         m--; n--;
 
         while(n>=0 && last>=0){

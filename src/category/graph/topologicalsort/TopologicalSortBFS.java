@@ -17,14 +17,14 @@ import java.util.*;
 public class TopologicalSortBFS {
     public static void main(String[] args) {
         System.out.println(canFinish(4, new int[][]{{1, 0}, {3, 1}, {2, 0}, {1, 2}, {3, 2}}));
-        System.out.println(Arrays.toString(findOrder(4, new int[][]{{1, 0}, {3, 1}, {2, 0}, {1, 2}, {3, 2}})));
-        System.out.println(Arrays.toString(findCycle(4, new int[][]{{0, 1}, {2, 0}, {0, 3}, {3, 2}}).toArray()));
-        System.out.println(Arrays.toString(findCycle(4, new int[][]{{2, 0}, {3, 2}, {1, 3}, {2, 1}}).toArray()));
+        System.out.println("Order is: " + Arrays.toString(findOrder(4, new int[][]{{1, 0}, {3, 1}, {2, 0}, {1, 2}, {3, 2}})));
+        // System.out.println(Arrays.toString(findCycle(4, new int[][]{{0, 1}, {2, 0}, {0, 3}, {3, 2}}).toArray()));
+        System.out.println("Cycle is: " + Arrays.toString(findCycle(4, new int[][]{{2, 0}, {3, 2}, {1, 3}, {2, 1}}).toArray()));
     }
 
     // CourseI
     public static boolean canFinish(int n, int[][] prerequisites) {
-        List<Integer>[] graph = new ArrayList[n]; //describe the adjacent relationship (you can use map here also)
+        List<Integer>[] graph = new ArrayList[n]; // describe the adjacent relationship (you can use map here also)
         int[] inDegree = new int[n];    //入度
         List<Integer> preCourses = new ArrayList(); // you can also use a queue here
 
@@ -57,7 +57,8 @@ public class TopologicalSortBFS {
         int[] inDegree = new int[n];
         List<Integer> bfs = new ArrayList<>();
 
-        for (int i = 0; i < n; ++i) dag[i] = new ArrayList<>();
+        for (int i = 0; i < n; ++i)
+            dag[i] = new ArrayList<>();
 
         for (int[] e : prerequisites) {
             dag[e[1]].add(e[0]);
@@ -91,22 +92,26 @@ public class TopologicalSortBFS {
         List<Integer>[] adjacent = new ArrayList[n];
         int[] degree = new int[n];
 
-        for (int i = 0; i < n; ++i) adjacent[i] = new ArrayList<>();
+        for (int i = 0; i < n; ++i)
+            adjacent[i] = new ArrayList<>();
 
         for (int[] e : preRequisites) {
             adjacent[e[1]].add(e[0]);
             degree[e[0]]++;
         }
 
-        int index = 0;
-        while (index < n) {  // start from each point to find the cycle
+        int start = 0;
+        while (start < n) {  // start from each point to find the cycle
             int[] temp = degree;
-            List<Integer> bfs = new ArrayList(), res = new ArrayList();
-            bfs.add(index); res.add(index);
+            Queue<Integer> bfs=new LinkedList();
+            List<Integer> res=new ArrayList();
+            bfs.add(start);
+            res.add(start);
 
             while (!bfs.isEmpty()) {
-                for (int i : adjacent[bfs.get(0)]) {
-                    if (i == index) {       //detect cycle when traverse back to the start point
+                List<Integer> adjacentList = adjacent[bfs.poll()];
+                for (int i : adjacentList) {
+                    if (i == start) {   // detected cycle since traversed back to the start point
                         return res;
                     }
                     if (--temp[i] == 0) {
@@ -114,13 +119,10 @@ public class TopologicalSortBFS {
                         res.add(i);
                     }
                 }
-                bfs.remove(0);
             }
-
-            index++;
+            start++;
         }
 
         return new ArrayList<>();
     }
-
 }

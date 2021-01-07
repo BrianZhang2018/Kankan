@@ -5,6 +5,7 @@ import java.util.*;
 
 /**
  * https://leetcode.com/problems/word-ladder/solution/
+ * Return the length of the shortest transformation sequence
  *
  * We will essentially be working with an undirected and unweighted graph with words as nodes and edges between words which differ by just one letter.
  * The problem boils down to finding the shortest path from a start node to a destination node, if there exists one. Hence it can be solved using Breadth First Search approach.
@@ -22,25 +23,25 @@ public class WordLadderI {
     }
 
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        int L = beginWord.length(); // Since all words are of same length.
+        int wordLength = beginWord.length(); // Since all words are of same length.
 
         // Pre-processing: get all adjacent wildcard words by changing one letter to "*"
         Map<String, List<String>> adjacentDict = new HashMap<>();
-        // Time Complexity: O(N*L)
+        // Pre calculate the wildcard word map, Time Complexity: O(N*L), e.g. h*t -> hot, hat
         for(String word : wordList){
-            for (int i = 0; i < L; i++) {
+            for (int i = 0; i < wordLength; i++) {
                 // Key is the generic word (wildcard word)
                 // Value is a list of words which have the same intermediate generic word.
-                String newWord = word.substring(0, i) + '*' + word.substring(i + 1, L);
-                adjacentDict.putIfAbsent(newWord, new ArrayList<>());
-                adjacentDict.get(newWord).add(word);
+                String wildcardWord = word.substring(0, i) + '*' + word.substring(i + 1, wordLength);
+                adjacentDict.putIfAbsent(wildcardWord, new ArrayList<>());
+                adjacentDict.get(wildcardWord).add(word);
             }
         }
         // Queue for BFS
         Queue<Pair<String, Integer>> queue = new LinkedList<>();
         queue.add(new Pair(beginWord, 1));
 
-        // Visited to make sure we don't repeat processing same word.
+        // visited to make sure we don't repeat processing same word.
         Map<String, Boolean> visited = new HashMap<>();
         visited.put(beginWord, true);
 
@@ -50,12 +51,13 @@ public class WordLadderI {
             String word = node.getKey();
             int level = node.getValue();
 
-            for (int i = 0; i < L; i++) {   // TC: O(L*M)
-                // Intermediate words for current word
-                String wildCardWord = word.substring(0, i) + '*' + word.substring(i + 1, L);
+            for (int i = 0; i < wordLength; i++) {   // TC: O(L*M)
 
-                // get all the words which share the same intermediate state.
+                String wildCardWord = word.substring(0, i) + '*' + word.substring(i + 1, wordLength);
+
+                // get all the words which map to the same wildcard word.
                 for (String adjacentWord : adjacentDict.getOrDefault(wildCardWord, new ArrayList<>())) {  // TC: O(M), M=N*L, pre-processing in above
+                    // reached the end word
                     if (adjacentWord.equals(endWord)) {
                         return level + 1;
                     }

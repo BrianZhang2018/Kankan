@@ -14,13 +14,14 @@ public class WordLadderII {
         System.out.println(wordLadder2.findLadders("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
     }
 
-    // record all node's neighbors' nodes, then use dfs to figure out the path
+    // record all node's neighbor nodes, then use dfs to figure out the path
     HashMap<String, List<String>> neighborsMap = new HashMap<>();
 
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         if (wordList.isEmpty()) return res;
 
-        for (String word : wordList) neighborsMap.put(word, new ArrayList<>());
+        for (String word : wordList)
+            neighborsMap.put(word, new ArrayList<>());
 
         neighborsMap.put(beginWord, new ArrayList<>());
 
@@ -59,7 +60,7 @@ public class WordLadderII {
 
     List<List<String>> res = new ArrayList<>();
 
-    //dfs + backtracking: the exit condition will have the return for backtracking, but the simple dfs don't need return.
+    //dfs backtracking: the exit condition will have the return for backtracking, but the simple dfs don't need return.
     private void dfs(String beginWord, String endWord, List<String> temp) {
         temp.add(beginWord);
         if (beginWord.equals(endWord)) {

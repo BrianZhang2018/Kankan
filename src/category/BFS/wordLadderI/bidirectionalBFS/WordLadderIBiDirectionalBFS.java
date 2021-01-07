@@ -18,11 +18,11 @@ public class WordLadderIBiDirectionalBFS {
         //System.out.println(ladderLengthRecursive("nanny", "aloud", new ArrayList(largeTestData)));
     }
 
+    // Solution-1: Bidirectional BFS
     public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
         if (wordList == null || !wordList.contains(endWord)) return 0;
 
-        Set<String> beginSet = new HashSet<>();
-        Set<String> endSet = new HashSet<>();
+        Set<String> beginSet = new HashSet<>(), endSet = new HashSet<>();
         int steps = 1;
         beginSet.add(beginWord);
         endSet.add(endWord);
@@ -39,7 +39,7 @@ public class WordLadderIBiDirectionalBFS {
 
             Set<String> temp = new HashSet<>();
             // time complexity: O(n*l*26) -> O(n*l),l = len(word), n=|wordList|
-            for (String word : beginSet) {// O(n)
+            for (String word : beginSet) { // O(n)
                 char[] chs = word.toCharArray();
                 for (int i = 0; i < chs.length; i++) {  // O(l)
                     for (char c = 'a'; c <= 'z'; c++) { // O(26)
@@ -63,7 +63,7 @@ public class WordLadderIBiDirectionalBFS {
         return 0;
     }
 
-    // recursive bfs - same idea with above one
+    // Solution-2: recursive bfs - same idea with above one
     public static int ladderLengthRecursive(String beginWord, String endWord, List<String> wordList) {
         if (wordList == null || wordList.size() == 0) {
             return 0;

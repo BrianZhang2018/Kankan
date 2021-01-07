@@ -11,6 +11,12 @@ import java.util.List;
  *
  * Linkedin, facebook
  *
+ * Input: nestedList = [[1,1],2,[1,1]]
+ * Output: 8
+ * Explanation: four 1's at depth 1, one 2 at depth 2
+ *
+ * 这个depth的计算和NestedListWeightSumI是相反的which consider 1's depth is 2, 2's depth is 1
+ *
  * Traverse the nested list level by level.
  * keep a cumulative sum by adding all integers from level 1 to the current level.
  * After traversing each level, we add this cumulative sum to the final result.
@@ -31,7 +37,7 @@ public class NestedListWeightSumII {
             List<NestedInteger> next = new ArrayList<>();
             for (NestedInteger n : nestedList) {
                 if (n.isInteger()) {
-                    cumulative += n.getInteger(); // key point, the value will be counted depth times from bottom to up
+                    cumulative += n.getInteger(); // key point: the value will be counted depth times from bottom to up
                 }
                 else {
                     next.addAll(n.getList());

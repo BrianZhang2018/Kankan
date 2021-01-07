@@ -1,35 +1,31 @@
-package category.BFS;
+package category.BFS.graph;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/network-delay-time/
  *
- * Dijkstra algorithm, and the biggest shortest path which is the total need time for all nodes got visited.
+ * Dijkstra's algorithm (or Dijkstra's Shortest Path First algorithm, SPF algorithm) is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks.
  *
  * Created by brianzhang on 4/7/19.
  */
 public class NetworkDelayTime {
 
     public static void main(String[] args) {
-        NetworkDelayTime test = new NetworkDelayTime();
         //int[][] times = new int[][]{{2,1,5}, {2,3,1}, {3,1,1}, {3,4,1}};
         //int[][] times = new int[][]{{1,2,1}, {2,3,2}, {1,3,2}};
         int[][] times = new int[][]{{1,2,1}, {1,3,2}, {2,4,1}, {4,3,1}};
-        System.out.println(test.networkDelayTime(times, 4, 1));
+        System.out.println(networkDelayTime(times, 4, 1));
     }
 
-    public int networkDelayTime(int[][] times, int N, int K) {
+    public static int networkDelayTime(int[][] times, int N, int K) {
         Map<Integer, Map<Integer,Integer>> map = new HashMap<>();
         for(int[] time : times){
             map.putIfAbsent(time[0], new HashMap<>());
             map.get(time[0]).put(time[1], time[2]);
         }
 
-        // int[]{distance, node}
+        // int[]{distance, node}, sort distance as ascending order, so the shortest path will always be selected firstly
         Queue<int[]> pq = new PriorityQueue<>((a, b) -> (a[0] - b[0]));
         pq.add(new int[]{0, K});
 

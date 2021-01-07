@@ -1,11 +1,11 @@
 package category.BFS.wordLadderI.preCalculatedAdjacentWildcardNodes;
 
-import javafx.util.Pair;
 import java.util.*;
 
 /**
- * https://leetcode.com/problems/word-ladder/solution/
- * Return the length of the shortest transformation sequence
+ * https://leetcode.com/problems/word-ladder/solution/, Return the length of the shortest transformation sequence
+ *
+ * Problem: BFS traverse undirected and unweighted graph
  *
  * We will essentially be working with an undirected and unweighted graph with words as nodes and edges between words which differ by just one letter.
  * The problem boils down to finding the shortest path from a start node to a destination node, if there exists one. Hence it can be solved using Breadth First Search approach.
@@ -38,33 +38,37 @@ public class WordLadderI {
             }
         }
         // Queue for BFS
-        Queue<Pair<String, Integer>> queue = new LinkedList<>();
-        queue.add(new Pair(beginWord, 1));
+        Queue<String> queue = new LinkedList<>();
+        queue.add(beginWord);
 
         // visited to make sure we don't repeat processing same word.
         Map<String, Boolean> visited = new HashMap<>();
         visited.put(beginWord, true);
 
-        // tc: O(N*L*M) = O(N*L), N is the number of word in wordList, L is the length of word, M=(N*L) is constant complexity since it's pre-calculated in above
+        int level = 0; // steps
+        // TC: O(N*L*M) = O(N*L), N is the number of word in wordList, L is the average length of each word, M=(N*L) is constant since it's pre-calculated in above, so can be ignored.
+        // 下面就是一个standard bfs 找最短路径的套路解法, e.g. CutOffTreesForGolfEventBFSGetMinSteps.java
         while (!queue.isEmpty()) {  // TC: O(N)
-            Pair<String, Integer> node = queue.poll();
-            String word = node.getKey();
-            int level = node.getValue();
+            level++;
+            int size = queue.size();
+            for(int j=0; j<size; j++){ // O(N), n is wordList.size
+                String word = queue.poll();
+                for (int i = 0; i < word.length(); i++) {   // TC: O(L*M), M is constant, e.g. 26
 
-            for (int i = 0; i < wordLength; i++) {   // TC: O(L*M)
+                    String wildCardWord = word.substring(0, i) + '*' + word.substring(i + 1, wordLength);
 
-                String wildCardWord = word.substring(0, i) + '*' + word.substring(i + 1, wordLength);
+                    // get all the words which map to the same wildcard word. // TC: N*L, constant complexity as already calculated in above
+                    for (String adjacentWord : adjacentDict.getOrDefault(wildCardWord, new ArrayList<>())) {  // TC: O(M), M=N*L, pre-processing in above
+                        // reached the end word
+                        if (adjacentWord.equals(endWord)) {
+                            return level + 1; // 1 is the endWord
 
-                // get all the words which map to the same wildcard word.
-                for (String adjacentWord : adjacentDict.getOrDefault(wildCardWord, new ArrayList<>())) {  // TC: O(M), M=N*L, pre-processing in above
-                    // reached the end word
-                    if (adjacentWord.equals(endWord)) {
-                        return level + 1;
-                    }
-                    // Otherwise, add it to the BFS Queue. Also mark it visited
-                    if (!visited.containsKey(adjacentWord)) {
-                        visited.put(adjacentWord, true);
-                        queue.add(new Pair(adjacentWord, level + 1));
+                        }
+                        // Otherwise, add it to the BFS Queue and mark it as visited
+                        if (!visited.containsKey(adjacentWord)) {
+                            visited.put(adjacentWord, true);
+                            queue.add(adjacentWord);
+                        }
                     }
                 }
             }

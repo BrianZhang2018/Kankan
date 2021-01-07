@@ -1,13 +1,11 @@
 package category.tree.trie;
 
-import java.util.List;
-import java.util.LinkedList;
+import java.util.*;
 /**
  * https://leetcode.com/problems/word-search-ii/
  *
- * 1. DFS
- * 2. reset the state by backtracking
- * 3. TrieN keep the words
+ * 1. build trie tree (store the words as trie tree structure)
+ * 2. backtracking find the word
  */
 public class WordSearchII{
     public static void main(String[] args) {
@@ -32,10 +30,9 @@ public class WordSearchII{
         }
         return ans;
     }
-    //DFS
+    //DFS backtracking, 1. got the character from board 2. search the character in the trie treeß
     private void findWords(char[][] board, TrieNode root, int i, int j, List<String> res) {
-        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length) 
-            return;
+        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length) return;
         
         char ch = board[i][j];
         int index = ch - 'a';
@@ -53,7 +50,7 @@ public class WordSearchII{
         findWords(board, root, i - 1, j, res);
         findWords(board, root, i, j + 1, res);
         findWords(board, root, i, j - 1, res);
-        board[i][j] = ch; //reset the value (state)
+        board[i][j] = ch;
     }
     
     private void buildTrie(String word, TrieNode root) {

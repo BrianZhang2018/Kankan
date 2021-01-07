@@ -5,10 +5,10 @@ import java.util.HashMap;
 /**
  * Created by brianzhang on 11/11/18.
  */
-public class PrefixTreeByTrie {
+public class PrefixTreeTrie {
 
     public static void main(String[] args) {
-        PrefixTreeByTrie trie = new PrefixTreeByTrie();
+        PrefixTreeTrie trie = new PrefixTreeTrie();
         trie.insert("app");trie.insert("apple");trie.insert("beer");
         trie.insert("add");trie.insert("jam");trie.insert("rental");
         trie.insert("apps");
@@ -20,7 +20,7 @@ public class PrefixTreeByTrie {
     /**
      * Initialize your data structure here.
      */
-    public PrefixTreeByTrie() {
+    public PrefixTreeTrie() {
         root = new TrieNode();
     }
 

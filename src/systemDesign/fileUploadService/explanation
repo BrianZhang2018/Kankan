@@ -1,6 +1,5 @@
 https://medium.com/@jgefroh/software-architecture-image-uploading-67997101a034
 
-
 重点：
 
 1. decouple the file(image ...) upload service from main API

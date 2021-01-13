@@ -30,14 +30,13 @@ public class WordSearchII{
         }
         return ans;
     }
-    //DFS backtracking, 1. got the character from board 2. search the character in the trie treeß
+    //DFS backtracking, 1. got the character from board 2. search the character in the trie tree
     private void findWords(char[][] board, TrieNode root, int i, int j, List<String> res) {
-        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length) return;
+        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] == '.') return;
         
         char ch = board[i][j];
         int index = ch - 'a';
-        if (ch == '.' || root.children[index] == null) 
-            return;
+        if (root.children[index] == null) return;
         
         root = root.children[index];
         if (root.word != null) {

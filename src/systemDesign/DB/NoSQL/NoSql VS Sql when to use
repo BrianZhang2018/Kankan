@@ -1,0 +1,21 @@
+### SQL vs NoSQL
+[Which Database Is Right for Your Use Case? ](https://www.xplenty.com/blog/which-database/)
+
+SQL is for ACID
+- if db is stable, less iteration (就是schema change not frequent)
+
+NoSQL is for unstructured data and esay to scale horizontally
+- Imagine you're tasked with managing large amounts of unstructured data, such as text from emails and customer surveys, data collected by a network of mobile apps, or random social media information. The information is unorganized.
+
+- rapid development, frequent iteration, need change db schema frequently
+
+
+#### how to choose Nosql vs SQL
+
+1. Atomicity
+If atomicity is a top priority for you, stick to a relational database.These are series of operations that are considered as a composite operation.
+In other words, either all operations in an atomic transaction occur, or none at all.
+
+2. high load/speed
+
+3. vertical or horizontal

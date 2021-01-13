@@ -28,7 +28,7 @@ public class MeetingRoomII {
      * 然后再将当前会议的结束时间加入到Queue中
      */
     public static int minMeetingRooms(List<Interval> intervals) {
-        // Write your code here
+
         Collections.sort(intervals, (a, b) -> a.start - b.start); // sort by start time
         PriorityQueue<Integer> pq = new PriorityQueue<>(); // store the end time of meeting, keep the minimum end-time on top
 

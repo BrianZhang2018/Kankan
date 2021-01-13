@@ -15,7 +15,7 @@ public class NonOverlapInterval {
         System.out.println(eraseOverlapIntervalsTemplate(new int[][]{{1, 100},{1, 11},{2, 12},{11, 22}}));
     }
 
-    // template solution - find non-overlap
+    // Template solution - find non-overlap
     public static int eraseOverlapIntervalsTemplate(int[][] intervals) {
         if(intervals == null || intervals.length == 0)
             return 0;

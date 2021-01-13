@@ -9,7 +9,7 @@ import java.util.Arrays;
  *
  * Created by brianzhang on 6/21/20.
  */
-public class MinNumberArrowsToBurstBalloons {
+public class MinimumNumberArrowsToBurstBalloons {
 
     public static void main(String[] args) {
         System.out.println(findMinArrowShots(new int[][]{{1, 100},{1, 11},{2, 12},{11, 22}}));

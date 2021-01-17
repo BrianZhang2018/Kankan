@@ -1,4 +1,4 @@
-package category.Pointer;
+package category.twoPointer;
 
 import java.util.*;
 import java.util.LinkedList;

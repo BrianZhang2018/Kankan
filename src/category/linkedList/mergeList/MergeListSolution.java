@@ -1,4 +1,4 @@
-package category.mergeList;
+package category.linkedList.mergeList;
 
 /**
  * Java PriorityQueue (Java Doc)
@@ -12,17 +12,15 @@ public class MergeListSolution {
 
     public ListNode mergeKLists(ListNode[] lists) {
 
-        if (lists == null || lists.length == 0)
-            return null;
+        if (lists == null || lists.length == 0) return null;
         ListNode prevMergedList = null;
 
         for (int i = 0; i < lists.length; i++) {
-            //key point
+            // key point
             prevMergedList = mergeTwoList(prevMergedList, lists[i]);
         }
         return prevMergedList;
     }
-
 
     // Common solution for merge tow lists, like merge two sorted list
     public ListNode mergeTwoList(ListNode l1, ListNode l2) {

@@ -1,4 +1,4 @@
-package category.mergeList;
+package category.linkedList.mergeList;
 
 import java.util.PriorityQueue;
 

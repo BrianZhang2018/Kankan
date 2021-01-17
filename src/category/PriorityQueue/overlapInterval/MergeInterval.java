@@ -12,7 +12,6 @@ public class MergeInterval {
         Interval v1 = new Interval(1, 3), v2 = new Interval(2, 6), v3 = new Interval(8, 10);
         List<Interval> intervals = Arrays.asList(v1, v2, v3);
         for (Interval i : merge(intervals)) System.out.println(i.start + " - " + i.end);
-        for (Interval i : merge1(intervals)) System.out.println(i.start + " - " + i.end);
     }
 
     // my refactored solution
@@ -23,36 +22,16 @@ public class MergeInterval {
         Collections.sort(intervals, (i1, i2) -> i1.start - i2.start);
 
         for (int i = 1; i < intervals.size(); i++) {
-            if (intervals.get(i - 1).end >= intervals.get(i).start) {  // template step: find overlap
+
+            if (intervals.get(i - 1).end >= intervals.get(i).start) {  // template step: find overlap and merge
                 intervals.get(i).end = Math.max(intervals.get(i - 1).end, intervals.get(i).end);
                 intervals.get(i).start = intervals.get(i - 1).start;
             } else {
-                res.add(intervals.get(i - 1));
+                res.add(intervals.get(i - 1)); // add to result only when non-overlap
             }
         }
 
         res.add(intervals.get(intervals.size() - 1));
-        return res;
-    }
-
-    // leetcode solution
-    public static List<Interval> merge1(List<Interval> intervals) {
-        List<Interval> res = new ArrayList<>();
-        if (intervals.size() == 0) return res;
-
-        Collections.sort(intervals, (i1, i2) -> i1.start - i2.start);
-        Interval prev = intervals.get(0);
-
-        for (int i = 1; i < intervals.size(); i++) {
-            if (prev.end >= intervals.get(i).start) {       // template step: find overlap
-                prev.end = Math.max(prev.end, intervals.get(i).end);
-            } else {
-                res.add(prev);
-                prev = intervals.get(i);
-            }
-        }
-
-        res.add(prev);
         return res;
     }
 

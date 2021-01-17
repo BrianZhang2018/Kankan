@@ -16,10 +16,3 @@ e.g. MeetingRoomII
        If don't sort: 例如: (3, 4), (1, 6), (5, 7)，你就需要 3 个rooms了
 
     3. Queue里最后剩下overlap的interval
-
-
-Template solution (find Non Overlap):
-https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/discuss/93735/A-Concise-Template-for-%22Overlapping-Interval-Problem%22
-
-
-

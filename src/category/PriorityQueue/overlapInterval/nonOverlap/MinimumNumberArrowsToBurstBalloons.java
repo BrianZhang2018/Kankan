@@ -1,4 +1,4 @@
-package category.PriorityQueue.overlapInterval;
+package category.PriorityQueue.overlapInterval.nonOverlap;
 
 import java.util.Arrays;
 
@@ -26,7 +26,7 @@ public class MinimumNumberArrowsToBurstBalloons {
             if (minEnd < i[0]) { // find non-overlap
                 count++;
                 minEnd = i[1];
-            } else {            // don't need count overlap interval as the prev interval which overlap with current interval has already been counted
+            } else {
                 minEnd = Math.min(minEnd, i[1]);
             }
         }

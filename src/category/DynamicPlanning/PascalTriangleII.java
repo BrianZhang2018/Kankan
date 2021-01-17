@@ -10,7 +10,11 @@ import java.util.List;
  */
 public class PascalTriangleII {
 
-    public List<Integer> getRow(int rowIndex) {
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(getRow(3).toArray()));
+    }
+
+    public static List<Integer> getRow(int rowIndex) {
         Integer[] pascal = new Integer[rowIndex + 1];
         Arrays.fill(pascal, 0);
         pascal[0] = 1;

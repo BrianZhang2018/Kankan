@@ -1,35 +1,34 @@
 package category.DynamicPlanning;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
- * https://leetcode.com/problems/pascals-triangle-ii/
+ * https://leetcode.com/problems/pascals-triangle/
  *
  * Created by brianzhang on 11/29/18.
  */
 public class PascalTriangle {
 
     public static void main(String[] args) {
-        for (Integer i : getRow(3)) {
-            System.out.println(i);
-        }
+        generate(5);
     }
 
-    public static List<Integer> getRow(int k) {
-        Integer[] arr = new Integer[k + 1];
-        Arrays.fill(arr, 0);
-        arr[0] = 1;
+    public static List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> res = new ArrayList<>();
+        if(numRows == 0)
+            return res;
 
-        for (int i = 1; i <= k; i++) {
-            for (int j = i; j > 0; j--) {   //从end of row向前推(j=i), i 代表处理到了第几行
-                arr[j] = arr[j] + arr[j - 1];
+        for(int i=0; i<numRows; i++){
+            List<Integer> list = new ArrayList();
+            for(int j=0; j<=i; j++){
+                if(j ==0 || j==i){
+                    list.add(1);
+                }else{
+                    list.add(res.get(i-1).get(j-1) + res.get(i-1).get(j));
+                }
             }
+            res.add(list);
         }
-        // i=1, arr[0], arr[1]
-        // i=2, arr[0], arr[1], arr[2]
-        // i=3, arr[0], arr[1], arr[2], arr[3]
-
-        return Arrays.asList(arr);
+        return res;
     }
 }

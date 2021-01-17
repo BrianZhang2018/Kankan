@@ -1,5 +1,7 @@
 package category.PriorityQueue.overlapInterval;
 
+import sun.jvm.hotspot.jdi.ArrayReferenceImpl;
+
 import java.util.*;
 
 /**
@@ -21,6 +23,15 @@ public class EmployeeFreeTime {
         for (Interval i : employeeFreeTime(busySlots)) {
             System.out.println("startTime: " + i.start + " endTime: " + i.end);
         }
+
+        ArrayDeque<Integer> queue = new ArrayDeque<>();
+        queue.add(1);
+        queue.add(2);
+        queue.add(3);
+
+        System.out.println(queue.pollFirst());
+
+        ArrayList<Integer> list = new ArrayList<>();
     }
 
     public static List<Interval> employeeFreeTime(List<List<Interval>> schedule) {

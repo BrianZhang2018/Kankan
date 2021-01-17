@@ -4,7 +4,7 @@ package category.DFS.IslandProblems.origin;
  * https://leetcode.com/problems/number-of-islands/
  * http://blog.welkinlan.com/2015/04/09/number-of-islands-leetcode-java-dfs/
  *
- * Time Complexity: O(rows*columns)
+ * Time Complexity: O(rows*columns + m*n) = O(rows*columns)
  *
  * DFS时间复杂度：https://stackoverflow.com/questions/50901203/dfs-and-bfs-time-and-space-complexities-of-number-of-islands-on-leetcode
 */

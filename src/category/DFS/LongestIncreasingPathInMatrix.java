@@ -1,45 +1,41 @@
 package category.DFS;
 
 /**
- * Time Limited Exceeded solution by myself
- *
+ * https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
  */
 public class LongestIncreasingPathInMatrix{
 
     public static void main(String[] args){
-        LongestIncreasingPathInMatrix test = new LongestIncreasingPathInMatrix();
-        test.longestIncreasingPath(new int[][]{{3,4,5},{3,2,6},{2,2,1}});
+        System.out.println(new LongestIncreasingPathInMatrix().longestIncreasingPath(new int[][]{{3,4,5},{3,2,6},{2,2,1}}));
     }
 
-    int max = Integer.MIN_VALUE;
     public int longestIncreasingPath(int[][] matrix) {
-        if(matrix == null || matrix.length == 0)
-            return 0;
-        int m = matrix.length;
-        int n = matrix[0].length;
-        for(int i=0; i<m; i++){
-            for(int j=0; j<n; j++){
-               dfs(matrix, i, j, matrix[i][j], 0);
+        if(matrix.length == 0) return 0;
+        int m = matrix.length, n = matrix[0].length;
+        int[][] cache = new int[m][n];
+        int longestPath = 1;
+        for(int i = 0; i < m; i++) {
+            for(int j = 0; j < n; j++) {
+                int len = dfs(matrix, i, j, m, n, cache);
+                longestPath = Math.max(longestPath, len);
             }
         }
-        System.out.println(max);
-        return max;
+        return longestPath;
     }
-    
-    public void dfs(int[][] matrix, int i, int j, int val, int count){
-        //if the count ==0, means this first time enter into dfs method for this cell in the grid, no previous value, we should skip the below logic
-        if(count != 0){
-            if(i<0 || j<0 || i>=matrix.length || j>=matrix[0].length || matrix[i][j]<= val){
-                if(count > max){
-                    max = count;
-                }
-                return;
-            }
+
+    public static final int[][] dirs = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+
+    public int dfs(int[][] matrix, int i, int j, int m, int n, int[][] cache) {
+        if(cache[i][j] != 0) return cache[i][j];
+        int pathLength = 1;
+        for(int[] dir: dirs) {
+            int x = i + dir[0], y = j + dir[1];
+            if(x < 0 || x >= m || y < 0 || y >= n || matrix[x][y] <= matrix[i][j]) continue;
+
+            int len = 1 + dfs(matrix, x, y, m, n, cache);
+            pathLength = Math.max(pathLength, len);
         }
-        count++;
-        dfs(matrix, i+1, j, matrix[i][j], count);
-        dfs(matrix, i, j+1, matrix[i][j], count);
-        dfs(matrix, i-1, j, matrix[i][j], count);
-        dfs(matrix, i, j-1, matrix[i][j], count);
+        cache[i][j] = pathLength;
+        return pathLength;
     }
 }

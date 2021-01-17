@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * https://leetcode.com/problems/pascals-triangle-ii/
- * <p>
+ *
  * Created by brianzhang on 11/29/18.
  */
 public class PascalTriangle {

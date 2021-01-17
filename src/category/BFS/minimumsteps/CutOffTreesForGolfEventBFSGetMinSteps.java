@@ -62,7 +62,7 @@ public class CutOffTreesForGolfEventBFSGetMinSteps {
         int n = forest.get(0).size();
         int[][] dicts = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
         boolean[][] visited = new boolean[m][n];
-        Queue<int[]> queue = new LinkedList<int[]>();
+        Queue<int[]> queue = new LinkedList<>();
         queue.add(start);
         visited[start[0]][start[1]] = true;
 
@@ -81,8 +81,7 @@ public class CutOffTreesForGolfEventBFSGetMinSteps {
                     int nr = curr[0] + d[0];
                     int nc = curr[1] + d[1];
                     //exclusive condition
-                    if (nr < 0 || nr >= m || nc < 0 || nc >= n
-                            || forest.get(nr).get(nc) == 0 || visited[nr][nc]) {
+                    if (nr < 0 || nr >= m || nc < 0 || nc >= n || forest.get(nr).get(nc) == 0 || visited[nr][nc]) {
                         continue;
                     }
                     //mark this element has been visited in current level, don't need visit again.

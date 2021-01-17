@@ -48,12 +48,12 @@ public class WordSearchII{
             // no `return` here as one branch of TrieN can contain multiple word
         }
 
-        board[i][j] = '.';    //mark the visited board[i][j]
+        board[i][j] = '.';  //mark the visited board[i][j]
         dfs(board, root, i + 1, j, list);
         dfs(board, root, i - 1, j, list);
         dfs(board, root, i, j + 1, list);
         dfs(board, root, i, j - 1, list);
-        board[i][j] = ch;  //reset the visited board[i][j] value
+        board[i][j] = ch;   //reset the visited board[i][j] value
     }
     
     private void insert(String word, TrieNode root) {

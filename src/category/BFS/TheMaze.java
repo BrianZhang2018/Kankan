@@ -36,8 +36,8 @@ public class TheMaze {
                 return true;
 
             for(int[] dict : dicts){
-                int nr = r+ dict[0];
-                int nc = c+ dict[1];
+                int nr = r + dict[0];
+                int nc = c + dict[1];
                 //walk util block by wall (1)
                 while(nr<maze.length && nc<maze[0].length && nr>=0 && nc>=0 && maze[nr][nc] == 0){
                     nr += dict[0];

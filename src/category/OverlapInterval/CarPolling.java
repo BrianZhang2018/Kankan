@@ -1,4 +1,4 @@
-package category.PriorityQueue.overlapInterval;
+package category.OverlapInterval;
 
 import java.util.Arrays;
 import java.util.Map;

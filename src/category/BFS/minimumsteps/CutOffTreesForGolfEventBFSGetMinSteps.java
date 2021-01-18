@@ -55,7 +55,7 @@ public class CutOffTreesForGolfEventBFSGetMinSteps {
     }
 
     /**
-     * Find the shortest path between each binaryTree
+     * Find the shortest path
      */
     public int getMinSteps(List<List<Integer>> forest, int[] start, int[] tree) {
         int m = forest.size();

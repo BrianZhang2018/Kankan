@@ -14,7 +14,7 @@ public class ShezhaoAmazonOA {
     //8. Partition Label (LC 原题) ???
  
  
-    // 1. MST 城市建路题。minimum spanning binaryTree，
+    // 1. MST 城市建路题 minimum spanning binaryTree，
     // https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=498030
     // 就是给的road是重复的
     // 题目意思是有一定数量的城市，城市之间已经有了一些道路。还有一些可以供选择的道路来建设。每个新建的道路有cost。问如果要连接所有的城市，新建路的最小的cost是多少。举个栗子：

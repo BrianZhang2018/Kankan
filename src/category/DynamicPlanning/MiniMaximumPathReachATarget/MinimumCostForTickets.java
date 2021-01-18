@@ -2,7 +2,7 @@ package category.DynamicPlanning.MiniMaximumPathReachATarget;
 
 /**
  * 这道题 最后转化成一年的minimum cost
- * <p>
+ *
  * https://leetcode.com/problems/minimum-cost-for-tickets/discuss/226670/Java-DP-Solution-with-explanation-O(n)
  * Created by brianzhang on 2/23/19.
  */

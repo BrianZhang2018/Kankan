@@ -1,11 +1,12 @@
 package category.tree;
 
 import category.model.TreeNode;
-
 import java.util.*;
 /**
  * https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
  *
+ * tc: O(N)
+ * sc: O(N)
  * PreOrder -> serialize
  */
 public class SerializeAndDeserializeDFS {
@@ -46,6 +47,7 @@ public class SerializeAndDeserializeDFS {
     private TreeNode buildTree(Queue<String> queue) {
         String val = queue.poll();
         if ("#".equals(val)) return null;
+
         TreeNode root = new TreeNode(Integer.valueOf(val));
         root.left = buildTree(queue);
         root.right = buildTree(queue);

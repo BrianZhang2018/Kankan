@@ -24,7 +24,7 @@ public class EmployeeFreeTime {
 
     public static List<Interval> employeeFreeTime(List<List<Interval>> schedule) {
 
-        List<Interval> freeIntervals = new ArrayList<>();
+        List<Interval> freeIntervals = new ArrayList<>(); // result
         List<Interval> busyIntervals = new ArrayList<>();
 
         for (List<Interval> l : schedule) busyIntervals.addAll(l);

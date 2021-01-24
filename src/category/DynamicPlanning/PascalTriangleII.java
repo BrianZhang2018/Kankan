@@ -20,7 +20,7 @@ public class PascalTriangleII {
         pascal[0] = 1;
 
         for (int i = 1; i <= rowIndex; i++) {
-            for (int j = i; j > 0; j--) {
+            for (int j = i; j > 0; j--) { // from right to left to calculate the pascal
                 pascal[j] = pascal[j] + pascal[j - 1];
             }
         }

@@ -1,13 +1,12 @@
 package category.tree;
 
 import category.model.TreeNode;
-
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
-
+import java.util.*;
 /**
  * BFS solution
+ *
+ * tc: O(N)
+ * sc: O(N)
  * Created by brianzhang on 7/21/18.
  */
 public class SerializeAndDeserializeBFS {
@@ -45,23 +44,25 @@ public class SerializeAndDeserializeBFS {
     }
 
     public TreeNode deserialize(String serializedTree) {
-        if (serializedTree == null) return null;
+        if (serializedTree == null || serializedTree == "") return null;
 
         Queue<TreeNode> queue = new LinkedList<>();
         String[] nodes = serializedTree.split(",");
+
         System.out.println(Arrays.toString(nodes));
+
         TreeNode root = new TreeNode(Integer.valueOf(nodes[0]));
         queue.add(root);
 
         for (int i = 1; i < nodes.length; i++) {
             TreeNode parent = queue.poll();
-            if (!nodes[i++].equals("#")) {
+            if (!nodes[i].equals("#")) {
                 TreeNode left = new TreeNode(Integer.valueOf(nodes[i]));
                 parent.left = left;
                 queue.add(left);
             }
 
-            if (!nodes[i].equals("#")) {
+            if (!nodes[++i].equals("#")) {
                 TreeNode right = new TreeNode(Integer.valueOf(nodes[i]));
                 parent.right = right;
                 queue.add(right);

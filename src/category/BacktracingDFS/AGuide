@@ -1,0 +1,8 @@
+backtracking的几大法宝：
+
+1. visited[] to record the visited place
+2. memo[] 相当于DP，减少重复计算
+3. reset the value for backTracking
+e.g.  temp.add(nums[i]);
+      ...
+      temp.remove(temp.size() - 1);

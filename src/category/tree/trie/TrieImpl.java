@@ -32,27 +32,27 @@ class TrieN {
 
     /** Inserts a word into the trie. */
     public void insert(String word) {
-        TrieN a = this;
+        TrieN node = this;
         char [] c = word.toCharArray();
         for (int i = 0; i < c.length; i++) {
-            if (a.next[c[i] - 'a'] == null) {
-                a.next[c[i] - 'a'] = new TrieN();
+            if (node.next[c[i] - 'a'] == null) {
+                node.next[c[i] - 'a'] = new TrieN();
             }
-            a = a.next[c[i] - 'a'];
+            node = node.next[c[i] - 'a'];
         }
-        a.isEnd = true;
+        node.isEnd = true;
         return;
     }
 
     /** Returns if the word is in the trie. */
     public boolean search(String word) {
         TrieN a = this;
-        char [] c = word.toCharArray();
-        for (int i = 0; i < c.length; i++) {
-            if (a.next[c[i] - 'a'] == null) {
+        char [] ca = word.toCharArray();
+        for (int i = 0; i < ca.length; i++) {
+            if (a.next[ca[i] - 'a'] == null) {
                 return false;
             } else {
-                a = a.next[c[i] - 'a'];
+                a = a.next[ca[i] - 'a'];
             }
         }
         return a.isEnd;
@@ -60,13 +60,13 @@ class TrieN {
 
     /** Returns if there is any word in the trie that starts with the given prefix. */
     public boolean startsWith(String prefix) {
-        TrieN a = this;
+        TrieN node = this;
         char [] c = prefix.toCharArray();
         for (int i = 0; i < c.length; i++) {
-            if (a.next[c[i] - 'a'] == null) {
+            if (node.next[c[i] - 'a'] == null) {
                 return false;
             } else {
-                a = a.next[c[i] - 'a'];
+                node = node.next[c[i] - 'a'];
             }
         }
         return true;

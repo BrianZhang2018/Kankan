@@ -23,6 +23,8 @@ public class CheapestFlightWithinKStops {
     }
 
     public static int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+
+        // build graph
         Map<Integer, Map<Integer, Integer>> adjacentMap = new HashMap();
         for (int[] f : flights) {
             if (!adjacentMap.containsKey(f[0])) {
@@ -37,16 +39,16 @@ public class CheapestFlightWithinKStops {
 
         while (!queue.isEmpty()) {
             int[] node = queue.poll();
-            int price = node[0];
+            int cost = node[0];
             int city = node[1];
             int stops = node[2];
 
-            if (city == dst) return price;
+            if (city == dst) return cost;
 
             if (stops > 0) {
-                Map<Integer, Integer> adjacentFlight = adjacentMap.getOrDefault(city, new HashMap());
-                for (int next : adjacentFlight.keySet()) {
-                    queue.add(new int[]{price + adjacentFlight.get(next), next, stops - 1});
+                Map<Integer, Integer> adjacentFlights = adjacentMap.getOrDefault(city, new HashMap());
+                for (int next : adjacentFlights.keySet()) {
+                    queue.add(new int[]{cost + adjacentFlights.get(next), next, stops - 1});
                 }
             }
         }

@@ -32,7 +32,7 @@ public class MeetingRoomII {
         PriorityQueue<Integer> pq = new PriorityQueue<>(); // store the end time of meeting, keep the minimum end-time on top
 
         for(Interval i : intervals){
-            if(!pq.isEmpty() && pq.peek() <= i.start){ // here is different with car-pooling (while) as we need get the total number of rooms
+            if(!pq.isEmpty() && pq.peek() <= i.start){ // here is different with car-pooling (while loop) as we need get the total number of rooms, so we only remove the time interval which can share same room with other intervals during that time
                 pq.poll();
             }
             pq.add(i.end);

@@ -1,9 +1,11 @@
-package category.Stack;
+package category.Stack.reversePolishNotation;
 
 import java.util.Stack;
 
 /**
  * https://leetcode.com/problems/evaluate-reverse-polish-notation/
+ *
+ * https://en.wikipedia.org/wiki/Reverse_Polish_notation
  *
  * e.g.
  * ["2", "1", "+", "3", "*"]

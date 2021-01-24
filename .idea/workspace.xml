@@ -5,46 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/BFS/shortestPath/knight/leetcode 1197.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/BFS/shortestPath/knight/MinimumKnightMoves.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/BFSAndDFS/FloodFill.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/BacktracingDFS/AGuide" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/BacktracingDFS/memo/FindLongestIncreasingOrderPath.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/BacktracingDFS/memo/KnightDialer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/AGuide" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/insertDeleteGetRandomO1/InsertDeleteGetRandom380.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/insertDeleteGetRandomO1/InsertDeleteRandom381.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/AGuide" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BFS/TheMaze.java" afterPath="$PROJECT_DIR$/src/category/BFS/shortestPath/TheMaze.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BFS/TheMazeII.java" afterPath="$PROJECT_DIR$/src/category/BFS/shortestPath/TheMazeII.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/BFS/minimumsteps/CutOffTreesForGolfEventBFSGetMinSteps.java" afterPath="$PROJECT_DIR$/src/category/BFS/shortestPath/CutOffTreesForGolfEventBFSGetMinSteps.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/ImplementHashMap.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/ImplementHashMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/ImplementPriorityQueue.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/ImplementPriorityQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/LRU/LRUCache.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUCache.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/LRU/LRULinkedHashMap.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRULinkedHashMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/LRU/LRUSDKSolution.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUSDKSolution.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/OoneProblems/DLL/AllOoneDataStructure.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/OoneProblems/DLL/AllOoneDataStructure.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/OoneProblems/DLL/MaxStackLinkedListTreeMap.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/OoneProblems/DLL/MaxStackLinkedListTreeMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/OoneProblems/InsertDeleteGetRandom380.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/OoneProblems/InsertDeleteGetRandom380.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/OoneProblems/InsertDeleteRandom381.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/OoneProblems/InsertDeleteRandom381.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/OoneProblems/MaxStack716.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/OoneProblems/MaxStack716.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/design/DesignHitCounter.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/design/DesignHitCounter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/design/DesignTicTacToe.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/design/DesignTicTacToe.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/design/ValidSuduko.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/design/ValidSuduko.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/hashMap/MyHashMap.java" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/MyhashMap/MyHashMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/hashMap/doc" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/MyhashMap/doc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/hashMap/hashmap-diagram.jpg" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/MyhashMap/hashmap-diagram.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/DataStructure/stack/DailyTemperature.java" afterPath="$PROJECT_DIR$/src/category/Stack/DailyTemperature.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/String/ConvertStringToIntegerAtoi.java" afterPath="$PROJECT_DIR$/src/category/String/StringToIntegerAtoi.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/category/Stack/reversePolishNotation/RPN binaryTree structure.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/category/Stack/EvaluateReversePolishNotation.java" afterPath="$PROJECT_DIR$/src/category/Stack/reversePolishNotation/EvaluateReversePolishNotation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/PascalTriangle.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/PascalTriangle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/PascalTriangleII.java" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/PascalTriangleII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/OverlapInterval/EmployeeFreeTime.java" afterPath="$PROJECT_DIR$/src/category/OverlapInterval/EmployeeFreeTime.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/OverlapInterval/MeetingRoomII.java" afterPath="$PROJECT_DIR$/src/category/OverlapInterval/MeetingRoomII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/CheapestFlightWithinKStops.java" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/CheapestFlightWithinKStops.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/tree/SerializeAndDeserializeBFS.java" afterPath="$PROJECT_DIR$/src/category/tree/SerializeAndDeserializeBFS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/tree/SerializeAndDeserializeDFS.java" afterPath="$PROJECT_DIR$/src/category/tree/SerializeAndDeserializeDFS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category/tree/trie/TrieImpl.java" afterPath="$PROJECT_DIR$/src/category/tree/trie/TrieImpl.java" />
     </list>
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
@@ -112,21 +75,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FlattenLinkedList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/tree/FlattenLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DailyTemperature.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/category/Stack/DailyTemperature.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DecodeString.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/category/Stack/DecodeString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueueImpyByStack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/Stack/QueueImpyByStack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinimumRemoveMakeValidParentheses.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/Stack/MinimumRemoveMakeValidParentheses.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertInterval.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category/Sort/InsertInterval.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -152,61 +145,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AGuide" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AGuide" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/category/RightDataStructure/AGuide">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InsertDeleteGetRandomOone380381.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/vo/myVO/InsertDeleteGetRandomOone380381.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InsertDeleteGetRandom380.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/高频/insertDeleteGetRandomO1/InsertDeleteGetRandom380.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InsertDeleteRandom381.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/RightDataStructure/insertDeleteGetRandomO1/InsertDeleteRandom381.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InsertDeleteGetRandom380.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/RightDataStructure/insertDeleteGetRandomO1/InsertDeleteGetRandom380.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyHashMap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category/RightDataStructure/MyhashMap/MyHashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="50" column="10" lean-forward="false" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -290,8 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/companies/amazon/OA/ShezhaoAmazonOA.java" />
-        <option value="$PROJECT_DIR$/src/category/tree/minimumspanningtree/MinimumSpanningTree.java" />
         <option value="$PROJECT_DIR$/src/category/tree/minimumspanningtree/MinimumCostConnectAllCities.java" />
         <option value="$PROJECT_DIR$/src/category/tree/minimumSpanningTree/MinimumCostConnectAllCities.java" />
         <option value="$USER_HOME$/workspace/InterviewPrep/src/qualtrics/TheMazeBFSshortestPath.java" />
@@ -341,6 +282,8 @@
         <option value="$PROJECT_DIR$/src/category/Stack/DailyTemperature.java" />
         <option value="$PROJECT_DIR$/src/category/DataStructure/AGuide" />
         <option value="$PROJECT_DIR$/src/category/RightDataStructure/AGuide" />
+        <option value="$PROJECT_DIR$/src/category/Stack/EvaluateReversePolishNotation.java" />
+        <option value="$PROJECT_DIR$/src/category/Stack/reversePolishNotation/EvaluateReversePolishNotation.java" />
       </list>
     </option>
   </component>
@@ -855,7 +798,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="RightDataStructure" />
+              <option name="myItemId" value="Stack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kankan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reversePolishNotation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -933,11 +902,11 @@
       <recent name="category.BinarySearch" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/category/Stack/reversePolishNotation" />
       <recent name="$PROJECT_DIR$/src/category/BFS/shortestPath/knight" />
       <recent name="$PROJECT_DIR$/src/category/BFS/shortestPath" />
       <recent name="$PROJECT_DIR$/src/systemDesign/twitter" />
       <recent name="$PROJECT_DIR$/src/category/linkedList/swapNodes/templateSolution" />
-      <recent name="$PROJECT_DIR$/src/category/linkedList/swapNodes" />
     </key>
   </component>
   <component name="RunManager" selected="Application.RemoveAdjacentString">
@@ -1780,7 +1749,7 @@
       <workItem from="1609773404543" duration="25524000" />
       <workItem from="1610061530975" duration="42000" />
       <workItem from="1610061764575" duration="95478000" />
-      <workItem from="1611328703303" duration="5137000" />
+      <workItem from="1611328703303" duration="5773000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -1833,7 +1802,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2169952000" />
+    <option name="totallyTimeSpent" value="2170588000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1856,7 +1825,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720517" sideWeight="0.4920792" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6792079" sideWeight="0.4978701" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41584158" sideWeight="0.48707592" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6784141" sideWeight="0.48465267" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67808217" sideWeight="0.48465267" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37802908" sideWeight="0.48209366" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32328767" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -2171,42 +2140,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/category/tree/trie/TrieImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/tree/trie/TrieImplByHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/InterviewPrep/src/qualtrics/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/OverlapInterval/EmployeeFreeTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/BacktracingDFS/Algorithm-analysis">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/category/BacktracingDFS/CombinationSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -2472,14 +2405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/Stack/EvaluateReversePolishNotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/category/tree/FlattenLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2528,14 +2453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category/Stack/DailyTemperature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/category/RightDataStructure/ImplementHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-592">
@@ -2555,7 +2472,60 @@
     <entry file="file://$PROJECT_DIR$/src/category/RightDataStructure/AGuide">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Stack/DailyTemperature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Stack/QueueImpyByStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Stack/MinimumRemoveMakeValidParentheses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Sort/InsertInterval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Stack/reversePolishNotation/RPN binaryTree structure.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Stack/reversePolishNotation/EvaluateReversePolishNotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category/Stack/DecodeString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>

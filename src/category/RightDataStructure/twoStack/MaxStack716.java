@@ -1,4 +1,4 @@
-package category.RightDataStructure.OoneProblems;
+package category.RightDataStructure.twoStack;
 
 import java.util.Stack;
 

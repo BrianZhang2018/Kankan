@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Knapsack_problems;
+package category.DynamicPlanning.Knapsack_problems.bound;
 
 /**
  * https://leetcode.com/problems/partition-equal-subset-sum/discuss/90627/Java-Solution-similar-to-backpack-problem-Easy-to-understand
@@ -25,9 +25,10 @@ public class PartitionEqualSubsetSum{
 
     public static void main(String[] args) {
         System.out.println(canPartition(new int[]{1, 5, 11, 5}));
-        System.out.println(canParition2D(new int[]{1, 5, 11, 5}));
+        System.out.println(canPartition2D(new int[]{1, 5, 11, 5}));
     }
 
+    // solution-1
     // This problem is essentially let us to find whether there are several numbers in a set which are able to sum to a specific value (in this problem, the value is sum/2).
     // cause 如果一个数列存在几个数字相加等于sum/2, which means这个数列可以做partition equal subsets sum
     public static boolean canPartition(int[] nums) {
@@ -52,8 +53,8 @@ public class PartitionEqualSubsetSum{
         return dp[sum];
     }
 
-    // 2D solution
-    public static boolean canParition2D(int[] nums) {
+    // solution-2: 2D solution
+    public static boolean canPartition2D(int[] nums) {
         if(nums == null || nums.length ==0) return true;
         int sum = 0;
         for(int i : nums) sum+=i;

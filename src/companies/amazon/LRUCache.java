@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 /**
  * Solution: (HashMap + Doubly LinkedList) = Java LinkedHashMap
- * doubly linkedList: create a DNode which will be used to generated a doubly linkedList
+ * doubly linkedList: create a DllNode which will be used to generated a doubly linkedList
  * <p>
  * https://medium.com/@krishankantsinghal/my-first-blog-on-medium-583159139237
  * <p>

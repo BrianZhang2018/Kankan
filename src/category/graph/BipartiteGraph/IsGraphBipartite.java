@@ -1,4 +1,4 @@
-package category.graph.ColorSolution;
+package category.graph.BipartiteGraph;
 
 /**
  * https://leetcode.com/problems/is-graph-bipartite/

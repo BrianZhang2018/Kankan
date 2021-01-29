@@ -3,16 +3,18 @@ package category.RightDataStructure.LRU;
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/lru-cache/
+ *
  * LRU (Least recently used)
  * Solution: (HashMap + Doubly LinkedList) = Java LinkedHashMap
- * doubly linkedList: create a DNode which will be used to generated a doubly linkedList
+ * doubly linkedList: create a DllNode which will be used to generated a doubly linkedList
  *
  * https://medium.com/@krishankantsinghal/my-first-blog-on-medium-583159139237
  *
- * In HashMap, will hold the keys and address of the Nodes in Doubly LinkedList. And Doubly LinkedList will hold the values of keys.
+ * In HashMap, will hold the "keys" and "address" of the Nodes in Doubly LinkedList. And Doubly LinkedList will hold the "values" of keys.
  *
- * As We need to keep track of recently used entries. We will remove element from bottom and add element on the top of LinkedList
- * and whenever any entry is accessed again, it will be moved to the top. So, recently used entries will be on Top and Least used will be on Bottom.
+ * As We need to keep track of recently used entries. We will "remove element from bottom" and "add element on the top of LinkedList" and
+ * whenever any entry is accessed again, it will be moved to the top. So, recently used entries will be on Top and Least used will be on Bottom.
  */
 public class LRUCache {
     public static void main(String[] args) {
@@ -30,8 +32,8 @@ public class LRUCache {
     }
 
     private int cacheSize;
-    private Map<Integer, DNode> map = Collections.synchronizedMap(new HashMap()); // with sync enhanced
-    private DNode head = new DNode(0, 0), tail = new DNode(0, 0);
+    private Map<Integer, DllNode> map = Collections.synchronizedMap(new HashMap()); // with sync enhanced
+    private DllNode head = new DllNode(0, 0), tail = new DllNode(0, 0);
 
     public LRUCache(int capacity) {
         this.cacheSize = capacity;
@@ -41,7 +43,7 @@ public class LRUCache {
 
     public int get(int key) {
         if (map.containsKey(key)) {
-            DNode node = map.get(key);
+            DllNode node = map.get(key);
             removeNode(node);
             addToTop(node);
             return node.value;
@@ -59,10 +61,10 @@ public class LRUCache {
             removeNode(tail.prev);
         }
 
-        addToTop(new DNode(key, value));
+        addToTop(new DllNode(key, value));
     }
 
-    public void removeNode(DNode node) {
+    public void removeNode(DllNode node) {
         node.prev.next = node.next;
         node.next.prev = node.prev;
         synchronized (map){
@@ -70,11 +72,11 @@ public class LRUCache {
         }
     }
 
-    public void addToTop(DNode node) {
+    public void addToTop(DllNode node) {
         synchronized (map){
             map.put(node.key, node);
         }
-        DNode headNext = head.next;
+        DllNode headNext = head.next;
         head.next = node;
         node.prev = head;
         node.next = headNext;
@@ -82,12 +84,11 @@ public class LRUCache {
     }
 }
 
-class DNode {
-    int value;
-    int key;
-    DNode prev, next;
+class DllNode { // double linkedList node
+    int key, value;
+    DllNode prev, next;
 
-    public DNode(int key, int value) {
+    public DllNode(int key, int value) {
         this.value = value;
         this.key = key;
     }

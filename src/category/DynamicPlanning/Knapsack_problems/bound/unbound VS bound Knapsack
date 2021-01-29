@@ -1,0 +1,11 @@
+unbound knapsack
+coinChangeII
+
+bound knapsack
+PartitionEqualSubsetSum
+
+comment:
+The differences between this problem and 518. Coin Change 2. In this problem, we CANNOT reuse an element while it can be reused in LT518.
+That is why we have dp[i-1][j-nums[i-1]] in this problem and dp[i][j-coins[i-1]] in LT518
+
+

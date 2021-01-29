@@ -1,4 +1,4 @@
-package category.PriorityQueue;
+package category.PriorityQueue.minMaxHeap;
 
 import java.util.Collections;
 import java.util.PriorityQueue;
@@ -8,9 +8,7 @@ import java.util.PriorityQueue;
  * Created by brianzhang on 10/22/18.
  */
 public class FindMedianFromStream {
-
     public static void main(String[] args) {
-
         FindMedianFromStream test = new FindMedianFromStream();
         test.addNum(1);
         test.addNum(4);

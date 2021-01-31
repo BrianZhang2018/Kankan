@@ -45,6 +45,6 @@ public class PermutationI {
 
 /*
  * https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
- * brute force solution using DFS & dfs
+ * brute force solution using DFS & dfsHelper
  * 深度搜素到底，然后在回溯，遍历每一层，重复这个动作
  **/

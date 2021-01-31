@@ -8,7 +8,7 @@ import companies.amazon.model.TreeNode;
  * 
  * binaryTree node's degree for vertical order
  * binaryTree node's level for level order traverse
- * dfs recursive + customized LevelNode object + List comparator
+ * dfsHelper recursive + customized LevelNode object + List comparator
  */
 public class BinaryTreeVerticalOrderTraversalRecursive{
     /**

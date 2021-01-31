@@ -65,15 +65,15 @@ public class MaxAreaOfIsland {
         dfs1(grid, i, j - 1);
     }
 
-    // Not recommended way pass an reference into the dfs rather than use the global variable 去统计
+    // Not recommended way pass an reference into the dfsHelper rather than use the global variable 去统计
 
 /*    public int maxAreaOfIsland1(int[][] grid) {
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == 1) {
                     // if you do "int currArea = 0", which won't work as you pass value as value to method rather than pass a reference as value to the method.
-                    // So, all dfs method in the dfs only get the copy of primitive value, but if you pass object reference here (e.g. List, Map)
-                    // , all dfs methods will get a reference copy for the object so that they all pointing to the same object in heap
+                    // So, all dfsHelper method in the dfsHelper only get the copy of primitive value, but if you pass object reference here (e.g. List, Map)
+                    // , all dfsHelper methods will get a reference copy for the object so that they all pointing to the same object in heap
                     // the change on that object will be reflected other methods as they are pointing the same object, booooom!
                     Map<String, Integer> currArea = new HashMap<>();
                     currArea.put("currArea", 0);

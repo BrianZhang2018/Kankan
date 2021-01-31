@@ -6,7 +6,7 @@ import java.util.*;
  * https://leetcode.com/problems/word-ladder-ii/
  *
  * Step-1: create a map that node -> all neighbors' node
- * Step-2: use dfs to traverse the neighbors' map to get all the paths
+ * Step-2: use dfsHelper to traverse the neighbors' map to get all the paths
  */
 public class WordLadderII {
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class WordLadderII {
         System.out.println(wordLadder2.findLadders("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
     }
 
-    // record all node's neighbor nodes, then use dfs to figure out the path
+    // record all node's neighbor nodes, then use dfsHelper to figure out the path
     HashMap<String, List<String>> neighborsMap = new HashMap<>();
 
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
@@ -60,7 +60,7 @@ public class WordLadderII {
 
     List<List<String>> res = new ArrayList<>();
 
-    //dfs backtracking: the exit condition will have the return for backtracking, but the simple dfs don't need return.
+    //dfsHelper backtracking: the exit condition will have the return for backtracking, but the simple dfsHelper don't need return.
     private void dfs(String beginWord, String endWord, List<String> temp) {
         temp.add(beginWord);
         if (beginWord.equals(endWord)) {

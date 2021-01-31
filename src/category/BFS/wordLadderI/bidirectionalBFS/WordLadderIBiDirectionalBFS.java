@@ -23,12 +23,12 @@ public class WordLadderIBiDirectionalBFS {
         if (wordList == null || !wordList.contains(endWord)) return 0;
 
         Set<String> beginSet = new HashSet<>(), endSet = new HashSet<>();
-        int steps = 1;
         beginSet.add(beginWord);
         endSet.add(endWord);
 
+        int steps = 1;
         while (!beginSet.isEmpty() && !endSet.isEmpty()) {
-            // Optimal way, 选小的queue去扩展
+            // optimization, 选小的queue去扩展
             if (beginSet.size() > endSet.size()) {
                 Set<String> temp = beginSet;
                 beginSet = endSet;

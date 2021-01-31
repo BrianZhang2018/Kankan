@@ -1,17 +1,16 @@
 package category.HashMap;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/lfu-cache
  * https://www.cnblogs.com/weiyinfu/p/8822876.html
  *
+ * LinkedHashMap
+ *
  * Created by brianzhang on 6/16/20.
  */
 class LFUCache {
-
     public static void main(String[] args) {
         LFUCache cache = new LFUCache(2);
         String[] op = {"put", "put", "get", "put", "get", "get", "put", "get", "get", "get"};

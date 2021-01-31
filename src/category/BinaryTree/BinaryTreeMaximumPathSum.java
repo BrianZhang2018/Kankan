@@ -7,7 +7,7 @@ import category.model.TreeNode;
  * 
  * https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39875/Elegant-Java-solution
  * 
- * you can imagine the dfs() function goes from the bottom of the binaryTree to the top, it's in "post-order" manner.
+ * you can imagine the dfsHelper() function goes from the bottom of the binaryTree to the top, it's in "post-order" manner.
    At every node, we need to make a decision, if the sum comes from the left path larger than the right path, 
    we pick the left path and plus the current node's value, this recursion goes all the way up to the root node (it return the 
    value to the invoker, the understood is `recursive call` pop out from stack. It's the recursive mechanism,

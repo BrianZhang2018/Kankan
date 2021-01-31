@@ -47,14 +47,13 @@ public class LRUCache {
             removeNode(node);
             addToTop(node);
             return node.value;
-        } else {
-            return -1;
         }
+        return -1;
     }
 
     public void put(int key, int value) {
         if (map.containsKey(key)) {
-            removeNode(map.get(key));
+            removeNode(map.get(key)); // remove existing node in LinkedList
         }
 
         if (map.size() == cacheSize) {

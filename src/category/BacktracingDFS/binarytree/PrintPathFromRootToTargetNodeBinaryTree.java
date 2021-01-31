@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * https://www.geeksforgeeks.org/print-path-root-given-node-binary-tree/
- * dfs + backtracking
+ * dfsHelper + backtracking
  *
  * Time complexity: O(n) in worst case, where n is the number of nodes in the binary tree.
  * Created by brianzhang on 3/19/20.

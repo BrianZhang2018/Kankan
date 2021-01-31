@@ -41,7 +41,7 @@ public class PathSumIII {
 
         int res = numPathToCurr + backtrack(node.left, prefixSumMap, currSum, target) + backtrack(node.right, prefixSumMap, currSum, target);
 
-        // dfs: remove the current prefix sum which added current node value
+        // dfsHelper: remove the current prefix sum which added current node value
         prefixSumMap.put(currSum, prefixSumMap.get(currSum) - 1);
 
         return res;

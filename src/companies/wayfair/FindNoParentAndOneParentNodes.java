@@ -43,7 +43,7 @@ public class FindNoParentAndOneParentNodes {
         return new ArrayList<>(res);
     }
     
-    //dfs + reversed graph to find the common descendant
+    //dfsHelper + reversed graph to find the common descendant
     public static boolean hasCommonAncestor(int[][] pairs, int n1, int n2) {
         Map<Integer, Set<Integer>> graph = new HashMap<>();
 

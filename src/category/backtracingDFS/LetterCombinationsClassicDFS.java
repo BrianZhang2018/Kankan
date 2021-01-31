@@ -26,7 +26,7 @@ public class LetterCombinationsClassicDFS {
         return result;
     }
 
-    //recursive dfs with backtracking
+    //recursive dfsHelper with backtracking
     private void dfs(String[] letters, char[] digitArr, StringBuilder curr, List<String> result, int index) {
         if (curr.length() == digitArr.length) {
             result.add(curr.toString());

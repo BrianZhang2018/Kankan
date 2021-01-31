@@ -53,7 +53,7 @@ public class PermutationI2 {
 }
 /*
     remove the last element, so you can iterate numbers in that position. For example, you need to get the permutations of [1,2,3,4,5].
-    And you have already got [1,2,3] as tempList. then you add 4, and dfs(list, [1,2,3,4], nums); you will get [1,2,3,4,5]
+    And you have already got [1,2,3] as tempList. then you add 4, and dfsHelper(list, [1,2,3,4], nums); you will get [1,2,3,4,5]
     then, you REMOVE LAST element of tempList, it will be [1,2,3], and the outer "for" will add 5 to tempList, then you will get [1,2,3,5,4] .
 */
 

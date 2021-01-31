@@ -23,7 +23,7 @@ public class KnightDialer {
         int[][] memo = new int[n][10]; // 0-9 dial number
 
         int cnt = 0;
-        // dfs backTracking + memo - step-2
+        // dfsHelper backTracking + memo - step-2
         for(int num=0; num<=9; num++){
             cnt = (cnt + helper(n-1, num, memo, graph)) % mod;
         }
@@ -31,7 +31,7 @@ public class KnightDialer {
         return cnt;
     }
 
-    // dfs backTracking + memo
+    // dfsHelper backTracking + memo
     public int helper(int n, int num, int[][] memo, int[][] graph){
         if(n == 0) return 1;
 

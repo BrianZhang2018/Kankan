@@ -26,7 +26,7 @@ public class BinaryTreeRightSideView{
     }
 
 //solution-1
-    //dfs - recursive
+    //dfsHelper - recursive
     public List<Integer> rightSideViewDFS(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if(root == null)
@@ -47,7 +47,7 @@ public class BinaryTreeRightSideView{
         if(res.size() == level)
             res.add(root.val);
         
-        //not ++level as it will impact the level value in second dfs
+        //not ++level as it will impact the level value in second dfsHelper
         dfs(root.right, level + 1, res);
         dfs(root.left, level +1 , res);
     }

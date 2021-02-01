@@ -11,11 +11,7 @@ import category.model.ListNode;
  */
 public class ReverseNodesInKGroup {
     public static void main(String[] args) {
-        ListNode n1 = new ListNode(1);
-        ListNode n2 = new ListNode(2);
-        ListNode n3 = new ListNode(3);
-        ListNode n4 = new ListNode(4);
-        ListNode n5 = new ListNode(5);
+        ListNode n1 = new ListNode(1),n2 = new ListNode(2),n3 = new ListNode(3),n4 = new ListNode(4),n5 = new ListNode(5);
         n1.next = n2; n2.next=n3; n3.next=n4; n4.next= n5;
         ListNode head = reverseKGroup(n1, 2);
         while(head != null) {System.out.println(head.val); head = head.next;}
@@ -42,7 +38,7 @@ public class ReverseNodesInKGroup {
                 prev = head;
                 head = next;
             }
-            head = prev; // perv point to the tail of direct part which will be the head for next group reversal
+            head = prev; // perv now point to the head of reversed part
         }
         return head;
     }

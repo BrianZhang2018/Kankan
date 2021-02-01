@@ -12,8 +12,6 @@ public class DecodeString{
     public static void main(String[] args){
         DecodeString test = new DecodeString();
         System.out.println(test.decodeStringBFS("3[a2[c]]"));
-        System.out.println(test.decodeStringBFS("10[bc]")); // this is why do "k= k*10 +ch -'0'"
-        System.out.println(test.decodeStringDFS("3[a]2[bc]"));
     }
 
     // Solution-1 : DFS

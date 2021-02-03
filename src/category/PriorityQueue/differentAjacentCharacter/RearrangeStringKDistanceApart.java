@@ -1,4 +1,4 @@
-package category.PriorityQueue;
+package category.PriorityQueue.differentAjacentCharacter;
 
 import java.util.*;
 

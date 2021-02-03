@@ -1,4 +1,4 @@
-package category.String.classic;
+package category.String;
 
 import java.util.*;
 

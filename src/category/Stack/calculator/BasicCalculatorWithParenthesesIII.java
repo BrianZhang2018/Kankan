@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * https://www.lintcode.com/problem/basic-calculator-iii
  *
- * expression: parentheses + (+, -, *, /) + ' '
+ * expression: (), +, -, *, / and ' '
  *
  * 这个和BasicCalculatorII的 code structure很像，可以抽取为模板算法，
  *
@@ -17,6 +17,7 @@ public class BasicCalculatorWithParenthesesIII {
         System.out.println(calculate("6-(1+(4/2))"));
     }
 
+    // Recursively calculate the nested expression
     public static int calculate(String s) {
         if (s == null || s.length() == 0) return 0;
 
@@ -31,17 +32,17 @@ public class BasicCalculatorWithParenthesesIII {
                 num = num * 10 + c - '0';
             } else if (c == '(') {
                 int start = i, cnt = 0;
-                // find the "(.(...).)"
+                // find start and end index of outer parenthesis "(.(...).)"
                 for (; i < m; i++) {
                     if (s.charAt(i) == '(') cnt++;
                     if (s.charAt(i) == ')') cnt--;
                     if (cnt == 0) break;
                 }
-                // calculate the found parentheses expression "Recursively"
+                // recursive
                 num = calculate(s.substring(start + 1, i));
             }
 
-            // 解题思路： common way to calculate the number before the current sign
+            // 解题思路：template way to calculate the number before the current sign
             if (i == m - 1 || (signs.indexOf(c)!=-1)) {
                 if (prevSign == '+') {
                     stack.push(num);

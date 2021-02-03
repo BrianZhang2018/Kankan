@@ -27,7 +27,7 @@ public class ReverseNodesInKGroup {
         }
         // 解题思路: recursively reversing a linkedList, so the reversal direction is from tail to head
         if (count == k) { // if k+1 node is available
-            ListNode prev = reverseKGroup(curr, k); // reverse list with (k+1)th node as head
+            ListNode prev = reverseKGroup(curr, k); // DFS reverse list with (k+1)th node as head
             // prev - head-pointer to reversed part
             // head - head-pointer to direct part (need to be reversed)
             // 解题思路: reverse current k-group (standard reverse linkedList way, but "prev" node is head of last reversed part)

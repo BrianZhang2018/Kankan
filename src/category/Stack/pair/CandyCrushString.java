@@ -1,7 +1,6 @@
 package category.Stack.pair;
 
 import javafx.util.Pair;
-
 import java.util.Stack;
 
 /**
@@ -21,7 +20,7 @@ public class CandyCrushString {
     public static String candyCrushString(String str){
 
         StringBuilder res = new StringBuilder();
-        Stack<Pair<Character, Integer>> stack = new Stack<>(); //key is Character, value is counter
+        Stack<Pair<Character, Integer>> stack = new Stack<>(); //key: letter, value: counter
 
         for(int i=0; i<str.length(); i++){
             if(stack.isEmpty()){

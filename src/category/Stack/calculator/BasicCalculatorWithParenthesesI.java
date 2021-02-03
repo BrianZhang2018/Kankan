@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * https://leetcode.com/problems/basic-calculator/
  *
- * expression: parentheses + ('+', '-') + ' '
+ * expression: (), '+', '-' and ' '
  *
  * Created by brianzhang on 11/17/19.
  */
@@ -31,12 +31,12 @@ public class BasicCalculatorWithParenthesesI {
                 num = num * 10 + c - '0';
             } else if(c == '+' || c == '-') {
                 result += prevSign * num;
-                prevSign = signStack.peek() * (c == '+' ? 1: -1); // 解题思路: prevSign is transformed here
+                prevSign = signStack.peek() * (c == '+' ? 1: -1);   // 解题思路: prevSign is transformed here
                                                                     // e.g. "2-(5-6)" will be converted to "2-5+6" as signStack.peek store the sign out of parentheses
                 num = 0; // reset num
-            } else if(c == '(') {   // store the sign right before the "(....)"
+            } else if(c == '(') {   // store the sign right before current "(....)"
                 signStack.push(prevSign);
-            } else if(c == ')') {   // pop the sign right before the "(....)"
+            } else if(c == ')') {   // remove the sign right before current "(....)"
                 signStack.pop();
             }
         }

@@ -5,8 +5,7 @@ import java.util.Stack;
 /**
  * https://www.lintcode.com/problem/basic-calculator-iii
  *
- * expression: (), +, -, *, / and ' '
- *
+ * Expression: (), +, -, *, / and ' '
  * 这个和BasicCalculatorII的 code structure很像，可以抽取为模板算法，
  *
  * Created by brianzhang on 2/23/20.
@@ -39,11 +38,11 @@ public class BasicCalculatorWithParenthesesIII {
                     if (cnt == 0) break;
                 }
                 // recursive
-                num = calculate(s.substring(start + 1, i));
+                num = calculate(s.substring(start + 1, i)); // take the string inside of ( ... )
             }
 
             // 解题思路：template way to calculate the number before the current sign
-            if (i == m - 1 || (signs.indexOf(c)!=-1)) {
+            if (i == m - 1 || signs.indexOf(c)!=-1) {
                 if (prevSign == '+') {
                     stack.push(num);
                 } else if (prevSign == '-') {

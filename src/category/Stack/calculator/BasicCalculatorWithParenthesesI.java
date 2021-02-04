@@ -15,6 +15,7 @@ public class BasicCalculatorWithParenthesesI {
         System.out.println(calculate("2-(5-6)"));
     }
 
+    // iterative
     public static int calculate(String s) {
         if(s == null) return 0;
 
@@ -22,7 +23,7 @@ public class BasicCalculatorWithParenthesesI {
         int num = 0;
         int prevSign = 1; // means '+'
 
-        Stack<Integer> signStack = new Stack<>(); // 解题思路, signStack
+        Stack<Integer> signStack = new Stack<>(); // 解题思路: signStack
         signStack.push(prevSign);
 
         for(int i = 0; i < s.length(); i++) {

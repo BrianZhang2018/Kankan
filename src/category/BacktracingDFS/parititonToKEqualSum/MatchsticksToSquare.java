@@ -3,10 +3,14 @@ package category.BacktracingDFS.parititonToKEqualSum;
 /**
  * https://leetcode.com/problems/matchsticks-to-square/
  *
- * exactly same problem with https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
+ * Exactly same problem with https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
  * Created by brianzhang on 1/25/21.
  */
 public class MatchsticksToSquare {
+
+    public static void main(String[] args) {
+        System.out.println(new MatchsticksToSquare().makesquare(new int[]{1,1,2,2,2}));
+    }
 
     public boolean makesquare(int[] nums) {
         return canPartitionKSubsets(nums, 4);

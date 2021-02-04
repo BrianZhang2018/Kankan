@@ -1,7 +1,11 @@
 package category.BinarySearch.binarySearch;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * https://leetcode.com/problems/median-of-two-sorted-arrays/
+ *
  * Intuition: Merge two sorted array
  */
 public class MedianOfTwoSortedArray{
@@ -9,6 +13,10 @@ public class MedianOfTwoSortedArray{
     public static void main(String[] args) {
         MedianOfTwoSortedArray test = new MedianOfTwoSortedArray();
         System.out.println(test.findMedianSortedArrays(new int[]{1, 2}, new int[]{3,4}));
+
+        Map<Integer, Integer> map = new HashMap<>();
+        System.out.println(map.put(1,10));
+        System.out.println(map.put(1,3));
     }
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {

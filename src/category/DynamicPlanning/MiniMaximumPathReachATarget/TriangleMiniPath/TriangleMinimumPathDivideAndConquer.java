@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * DP -> Divide & Conquer + Memorization for this solution
- * <p>
+ *
  * Created by brianzhang on 9/9/18.
  */
 public class TriangleMinimumPathDivideAndConquer {

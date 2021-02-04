@@ -7,7 +7,7 @@ import java.util.Stack;
  *
  * expression: +, -, *, / and ' ', but no parentheses
  *
- * store the calculated the number into a stack, then sum the value in stack and return
+ * prevSign + Stack
  *
  * Created by brianzhang on 11/16/19.
  */
@@ -31,7 +31,7 @@ public class BasicCalculatorII {
             }
 
             // Not "else if" here as we need calculate the last number, below is the template way to calculate the number
-            if (i == s.length() - 1 || (signs.indexOf(c)!=-1)) { // 当我们遇到一个新的sign时，要把前面的部分计算掉(prevSign + number).
+            if (i == s.length() - 1 || (signs.indexOf(c)!=-1)) { // 解题思路: 当我们遇到一个新的sign时，要把前面的部分计算掉(prevSign + number)
                 if (prevSign == '-') {
                     stack.push(-num);
                 } else if (prevSign == '+') {

@@ -1,4 +1,4 @@
-package category.HashMap;
+package category.Map;
 
 /**
  * Created by brianzhang on 6/16/20.

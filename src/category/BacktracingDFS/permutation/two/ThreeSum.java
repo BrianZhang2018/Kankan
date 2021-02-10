@@ -1,4 +1,4 @@
-package category.BacktracingDFS.permutation;
+package category.BacktracingDFS.permutation.two;
 
 import java.util.*;
 
@@ -37,7 +37,7 @@ public class ThreeSum {
 
         for(int i=start; i<nums.length; i++){
             if(used[i]) continue;
-            if ((i > 0 && nums[i] == nums[i-1]) && !used[i-1]) continue; // skip the duplicate result set
+            if ((i > 0 && nums[i] == nums[i-1]) && !used[i-1]) continue;  // makes sure when duplicates are selected, the order is ascending.
 
             target += nums[i];
             used[i] = true;

@@ -1,10 +1,11 @@
 package category.javabasic;
 
 import java.util.Arrays;
-
 /**
  * https://leetcode.com/problems/valid-triangle-number/
  *
+ *  1. sort array
+ *  2. linear scan to find the limit range
  * Created by brianzhang on 2/4/21.
  */
 public class ValidTriangleNumber {

@@ -18,7 +18,7 @@ public class FriendCircleSimpleUnionFind {
     public static int findCircleNum(int[][] M) {
 
         int m = M.length, n = M[0].length;
-        int[] root = IntStream.range(0, m).toArray();
+        int[] root = IntStream.range(0, m).toArray(); // for (int i = 0; i < m; i++) root[i] = i;
 
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){

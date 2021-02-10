@@ -6,10 +6,9 @@ package category.RightDataStructure.design;
  * Created by brianzhang on 7/26/20.
  */
 public class ValidSuduko {
+
     public boolean isValidSudoku(char[][] board) {
-
         if (board == null || board.length == 0 || board[0].length == 0) return true;
-
         int m = board.length, n = board[0].length;
 
         for (int i = 0; i < m; i++) {
@@ -21,7 +20,6 @@ public class ValidSuduko {
                 }
             }
         }
-
         return true;
     }
 
@@ -34,7 +32,7 @@ public class ValidSuduko {
             if (board[i][col] == num && i != row) {
                 return false;
             }
-            int m = row / 3 * 3 + i / 3, n = col / 3 * 3 + i % 3; // Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition.
+            int m = row/3*3 + i/3, n = col/3*3 + i%3; // Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition.
             if (m == row && n == col) {
                 continue;
             } else {

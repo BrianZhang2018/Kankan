@@ -7,9 +7,12 @@ import java.util.*;
  *
  * https://www.youtube.com/watch?v=7FPL7nAi9aM
  *
+ * p2<-----p1----->p3, p1到p2，p1到p3的斜率相等，那么它们在一条线
+ *
  *         y2-y1
  * slope = -----
  *         x2-x1
+ *
  * Created by brianzhang on 2/9/21.
  */
 public class MaxPointsOnALine {

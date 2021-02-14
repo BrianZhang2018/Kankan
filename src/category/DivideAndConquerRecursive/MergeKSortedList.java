@@ -3,15 +3,16 @@ package category.DivideAndConquerRecursive;
 import category.model.ListNode;
 
 /**
- * https://leetcode.com/problems/merge-k-sorted-lists/
+ * https://leetcode.com/problems/merge-k-sorted-lists/discuss/10522/My-simple-java-Solution-use-recursion
  *
- * time complexity: O(nlogn)
+ * O(log(k) * k * n), while k is the total number of lists, and n is the average length of all the lists.
+ *
+ * partition need log(k), k*n items iterated
+ *
  */
 public class MergeKSortedList {
 
-    public static void main(String[] args) {
-       // new MergeKSortedList().mergeKLists()
-    }
+    public static void main(String[] args) {}
 
     public ListNode mergeKLists(ListNode[] lists) {
         if(lists == null || lists.length == 0) return null;

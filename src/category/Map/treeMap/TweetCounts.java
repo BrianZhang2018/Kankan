@@ -15,7 +15,9 @@ public class TweetCounts {
         tm.put(4,4);
         SortedMap<Integer, Integer> nm = tm.subMap(1,3);
 
-        for(Map.Entry<Integer, Integer> entry : nm.entrySet()){
+        //System.out.println(tm.ceilingKey(2));
+
+        for(Map.Entry<Integer, Integer> entry : tm.entrySet()){
             System.out.println(entry.getKey());
         }
     }

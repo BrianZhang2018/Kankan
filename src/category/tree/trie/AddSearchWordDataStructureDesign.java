@@ -5,6 +5,7 @@ import java.util.Map;
 
 /**
  * https://leetcode.com/problems/add-and-search-word-data-structure-design/
+ *
  * Created by brianzhang on 5/12/20.
  */
 public class AddSearchWordDataStructureDesign {

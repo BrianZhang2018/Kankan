@@ -1,4 +1,6 @@
+.idea/workspace.xml
 /bin/
 *.class
 */workspace.xml
 out/product*
+target/

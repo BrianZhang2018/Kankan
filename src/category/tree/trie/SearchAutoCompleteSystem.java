@@ -3,43 +3,37 @@ package category.tree.trie;
 import java.util.*;
 
 /**
- * LeetCode 642. Design Search Autocomplete System
+ * https://leetcode.com/problems/design-search-autocomplete-system/
+ *
  * Created by brianzhang on 4/29/20.
  */
 class SearchAutoCompleteSystem {
 
     public static void main(String[] args) {
-        //SearchAutoCompleteSystem test = new SearchAutoCompleteSystem();
-        Random rand = new Random();
-        rand.nextInt(4);
 
-        for(int i=0; i<4; i++){
-            System.out.println(rand.nextInt(4));
-        }
     }
 
     class TrieNode implements Comparable<TrieNode> {
         TrieNode[] children;
-        String s;
+        String sentence;
         int times;
         List<TrieNode> hot;
 
         public TrieNode() {
             children = new TrieNode[128];
-            s = null;
+            sentence = null;
             times = 0;
-            hot = new ArrayList<>();
+            hot = new ArrayList<>(); // 关键: 每个node都记录它的top 3 hot sentence
         }
 
         public int compareTo(TrieNode o) {
             if (this.times == o.times) {
-                return this.s.compareTo(o.s);
+                return this.sentence.compareTo(o.sentence);
             }
-
             return o.times - this.times;
         }
 
-        public void update(TrieNode node) {
+        public void updateHotNodes(TrieNode node) {
             if (!this.hot.contains(node)) {
                 this.hot.add(node);
             }
@@ -53,18 +47,17 @@ class SearchAutoCompleteSystem {
     }
 
     TrieNode root;
-    TrieNode cur;
+    TrieNode curr;
     StringBuilder sb;
     public SearchAutoCompleteSystem(String[] sentences, int[] times) {
         root = new TrieNode();
-        cur = root;
+        curr = root;
         sb = new StringBuilder();
 
         for (int i = 0; i < times.length; i++) {
             add(sentences[i], times[i]);
         }
     }
-
 
     public void add(String sentence, int t) {
         TrieNode tmp = root;
@@ -79,11 +72,11 @@ class SearchAutoCompleteSystem {
             visited.add(tmp);
         }
 
-        tmp.s = sentence;
+        tmp.sentence = sentence;
         tmp.times += t;
 
         for (TrieNode node : visited) {
-            node.update(tmp);
+            node.updateHotNodes(tmp);
         }
     }
 
@@ -92,18 +85,18 @@ class SearchAutoCompleteSystem {
         if (c == '#') {
             add(sb.toString(), 1);
             sb = new StringBuilder();
-            cur = root;
+            curr = root;
             return res;
         }
 
         sb.append(c);
-        if (cur != null) {
-            cur = cur.children[c];
+        if (curr != null) {
+            curr = curr.children[c];
         }
 
-        if (cur == null) return res;
-        for (TrieNode node : cur.hot) {
-            res.add(node.s);
+        if (curr == null) return res;
+        for (TrieNode node : curr.hot) {
+            res.add(node.sentence);
         }
 
         return res;

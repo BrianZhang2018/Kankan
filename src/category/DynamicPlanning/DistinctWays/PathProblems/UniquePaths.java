@@ -8,6 +8,7 @@ package category.DynamicPlanning.DistinctWays.PathProblems;
 public class UniquePaths {
     public static void main(String[] args) {
         System.out.println(uniquePaths(3, 4));
+        System.out.println(uniquePathsOneDimension(3, 4));
     }
 
     public static int uniquePaths(int m, int n) {
@@ -26,7 +27,7 @@ public class UniquePaths {
     }
 
     // 一维滚动数组
-    public int uniquePathsOneDemension(int m, int n) {
+    public static int uniquePathsOneDimension(int m, int n) {
         int[] dp = new int[n];
 
         for (int r = 0; r < m; r++) {

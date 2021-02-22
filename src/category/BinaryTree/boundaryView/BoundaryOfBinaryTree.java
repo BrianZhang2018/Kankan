@@ -1,7 +1,6 @@
 package category.BinaryTree.boundaryView;
 
-import java.util.List;
-import java.util.ArrayList;
+import java.util.*;
 import companies.amazon.model.TreeNode;
 
 /**

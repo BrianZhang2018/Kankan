@@ -1,28 +1,28 @@
 package category.BacktracingDFS;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/remove-invalid-parentheses/
  * https://leetcode.com/problems/remove-invalid-parentheses/discuss/75034/Easiest-9ms-Java-Solution
- *
+
+    1. Limit max removal rmL and rmR for backtracking boundary. Otherwise it will exhaust all possible valid substrings, not shortest ones.
+    2. Scan from left to right, avoiding invalid strs (on the fly) by checking num of open parens.
+    3. If it's '(', either use it, or remove it.
+    4. If it's ')', either use it, or remove it.
+    5. Otherwise just append it.
+    6. Lastly set StringBuilder to the last decision point.
+
+ *  Backtracking solution
  * Created by brianzhang on 4/5/20.
  */
 public class RemoveInvalidParentheses {
 
     public static void main(String[] args) {
         RemoveInvalidParentheses rp = new RemoveInvalidParentheses();
-        for(String str : rp.removeInvalidParentheses("(a)())()"))
-            System.out.println(str);
-
-        StringBuilder sb = new StringBuilder("abc");
-        sb.setLength(1);
-        System.out.println(sb.toString()); // "a"
-
+        for(String str : rp.removeInvalidParentheses("(a)())()")) System.out.println(str);
     }
+
     public List<String> removeInvalidParentheses(String s) {
         int rmL = 0, rmR = 0;
         for (int i = 0; i < s.length(); i++) {
@@ -53,18 +53,17 @@ public class RemoveInvalidParentheses {
         }
 
         char c = s.charAt(i);
-        int len = tempSb.length();
 
         if (c == '(') {
             dfs(s, i + 1, res, tempSb, rmL - 1, rmR, open);		    // not use (
-            dfs(s, i + 1, res, tempSb.append(c), rmL, rmR, open + 1);       // use (
+            dfs(s, i + 1, res, tempSb.append(c), rmL, rmR, open + 1); // use (
         } else if (c == ')') {
-            dfs(s, i + 1, res, tempSb, rmL, rmR - 1, open);	            // not use  )
-            dfs(s, i + 1, res, tempSb.append(c), rmL, rmR, open - 1);  	    // use )
+            dfs(s, i + 1, res, tempSb, rmL, rmR - 1, open);	        // not use  )
+            dfs(s, i + 1, res, tempSb.append(c), rmL, rmR, open - 1); // use )
         } else {
             dfs(s, i + 1, res, tempSb.append(c), rmL, rmR, open);
         }
 
-        tempSb.setLength(len); //set StringBuilder to the last decision point.
+        tempSb.setLength(tempSb.length() - 1); // backtrack
     }
 }

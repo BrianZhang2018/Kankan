@@ -1,7 +1,6 @@
 package category.Stack.reversePolishNotation;
 
-import java.util.Stack;
-
+import java.util.*;
 /**
  * https://leetcode.com/problems/evaluate-reverse-polish-notation/
  *
@@ -15,9 +14,15 @@ import java.util.Stack;
  */
 public class EvaluateReversePolishNotation {
     public static void main(String[] args) {
-        System.out.println(evalRPN(new String[] {"2", "1", "+", "3", "*"}));
+/*        System.out.println(evalRPN(new String[] {"2", "1", "+", "3", "*"}));
         System.out.println(isValidRPN(new String[] {"2", "1", "+", "3", "*"}));
-        System.out.println(isValidRPN(new String[] {"2", "1", "+", "3", "*", "*"}));
+        System.out.println(isValidRPN(new String[] {"2", "1", "+", "3", "*", "*"}));*/
+
+        TreeMap<Integer, Integer> tm = new TreeMap();
+        tm.put(1,1);
+
+        System.out.println(tm.put(2,2));
+
     }
 
     public static int evalRPN(String[] tokens) {
@@ -36,13 +41,13 @@ public class EvaluateReversePolishNotation {
                         stack.push(num1 + num2);
                         break;
                     case "-":
-                        stack.push(num1 - num2);
+                        stack.push(num1 - num2); // has to be num1-num2
                         break;
                     case "*":
                         stack.push(num1 * num2);
                         break;
                     case "/":
-                        stack.push(num1 / num2);
+                        stack.push(num1 / num2); // has to be num1/num2
                         break;
                 }
             }else{

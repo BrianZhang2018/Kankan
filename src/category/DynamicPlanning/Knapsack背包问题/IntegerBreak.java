@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Knapsack_problems;
+package category.DynamicPlanning.Knapsack背包问题;
 
 import java.util.Arrays;
 

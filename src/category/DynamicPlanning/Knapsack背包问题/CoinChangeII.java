@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Knapsack_problems;
+package category.DynamicPlanning.Knapsack背包问题;
 
 /**
  * https://leetcode.com/problems/coin-change-2/discuss/99212/Knapsack-problem-Java-solution-with-thinking-process-O(nm)-Time-and-O(m)-Space

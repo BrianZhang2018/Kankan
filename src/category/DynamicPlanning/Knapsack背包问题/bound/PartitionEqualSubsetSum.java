@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Knapsack_problems.bound;
+package category.DynamicPlanning.Knapsack背包问题.bound;
 
 /**
  * https://leetcode.com/problems/partition-equal-subset-sum/discuss/90627/Java-Solution-similar-to-backpack-problem-Easy-to-understand

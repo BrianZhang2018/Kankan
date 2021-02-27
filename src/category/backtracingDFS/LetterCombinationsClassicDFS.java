@@ -26,13 +26,14 @@ public class LetterCombinationsClassicDFS {
         return result;
     }
 
-    //recursive dfsHelper with backtracking
+    // dfs backtracking
     private void dfs(String[] letters, char[] digitArr, StringBuilder curr, List<String> result, int index) {
         if (curr.length() == digitArr.length) {
             result.add(curr.toString());
             return;
         }
 
+        // index represent the digit number in the phone which associated with a letter string, e.g. 2->"abc"
         for (Character c : letters[digitArr[index] - '0'].toCharArray()) {
             curr.append(c);
             dfs(letters, digitArr, curr, result, index + 1);    //index +1: point to the next phoneLetters

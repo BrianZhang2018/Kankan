@@ -14,6 +14,7 @@ import java.util.*;
     6. Lastly set StringBuilder to the last decision point.
 
  *  Backtracking solution
+ *
  * Created by brianzhang on 4/5/20.
  */
 public class RemoveInvalidParentheses {
@@ -21,6 +22,9 @@ public class RemoveInvalidParentheses {
     public static void main(String[] args) {
         RemoveInvalidParentheses rp = new RemoveInvalidParentheses();
         for(String str : rp.removeInvalidParentheses("(a)())()")) System.out.println(str);
+
+        StringBuilder sb = new StringBuilder("abc");
+        sb.append('c');
     }
 
     public List<String> removeInvalidParentheses(String s) {
@@ -41,29 +45,32 @@ public class RemoveInvalidParentheses {
         return new ArrayList<>(res);
     }
 
-    public void dfs(String s, int i, Set<String> res, StringBuilder tempSb, int rmL, int rmR, int open) {
+    public void dfs(String s, int index, Set<String> res, StringBuilder tempSb, int rmL, int rmR, int open) {
         if (rmL < 0 || rmR < 0 || open < 0) {
             return;
         }
-        if (i == s.length()) {
+        if (index == s.length()) {
             if (rmL == 0 && rmR == 0 && open == 0) {
                 res.add(tempSb.toString());
             }
             return;
         }
 
-        char c = s.charAt(i);
+        for(int i=index; i<s.length(); i++){
+
+        }
+        char c = s.charAt(index);
 
         if (c == '(') {
-            dfs(s, i + 1, res, tempSb, rmL - 1, rmR, open);		    // not use (
-            dfs(s, i + 1, res, tempSb.append(c), rmL, rmR, open + 1); // use (
+            dfs(s, index + 1, res, tempSb, rmL - 1, rmR, open);		    // not use (
+            dfs(s, index + 1, res, tempSb.append(c), rmL, rmR, open + 1); // use (
         } else if (c == ')') {
-            dfs(s, i + 1, res, tempSb, rmL, rmR - 1, open);	        // not use  )
-            dfs(s, i + 1, res, tempSb.append(c), rmL, rmR, open - 1); // use )
+            dfs(s, index + 1, res, tempSb, rmL, rmR - 1, open);	        // not use  )
+            dfs(s, index + 1, res, tempSb.append(c), rmL, rmR, open - 1); // use )
         } else {
-            dfs(s, i + 1, res, tempSb.append(c), rmL, rmR, open);
+            dfs(s, index + 1, res, tempSb.append(c), rmL, rmR, open);
         }
 
-        tempSb.setLength(tempSb.length() - 1); // backtrack
+        tempSb.deleteCharAt(tempSb.length() - 1); // backtrack
     }
 }

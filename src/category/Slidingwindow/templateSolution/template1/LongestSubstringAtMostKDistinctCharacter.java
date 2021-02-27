@@ -1,6 +1,5 @@
-package category.Slidingwindow.templateSolution.template;
+package category.Slidingwindow.templateSolution.template1;
 
-import java.util.*;
 /**
  * Sliding window solution
  * 1. two pointer: left, right

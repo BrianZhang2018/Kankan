@@ -6,7 +6,8 @@ import category.model.ListNode;
  * https://leetcode.com/problems/reverse-nodes-in-k-group/
  * https://leetcode.com/problems/reverse-nodes-in-k-group/discuss/11423/Short-but-recursive-Java-code-with-comments
  *
- * Discovery phone screening
+ * Microsoft hiring event
+ *
  * Created by brianzhang on 9/27/20.
  */
 public class ReverseNodesInKGroup {
@@ -17,7 +18,7 @@ public class ReverseNodesInKGroup {
         while(head != null) {System.out.println(head.val); head = head.next;}
     }
 
-    // recursive solution - template solution
+    // Recursive solution (template solution)
     public static ListNode reverseKGroup(ListNode head, int k) {
         ListNode curr = head;
         int count = 0;
@@ -43,7 +44,7 @@ public class ReverseNodesInKGroup {
         return head;
     }
 
-    // non-recursive
+    // Non-recursive solution
     public ListNode reverseKGroup1(ListNode head, int k) {
         int n = 0;
         for (ListNode i = head; i != null; n++, i = i.next);

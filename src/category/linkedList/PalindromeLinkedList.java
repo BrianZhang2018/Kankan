@@ -17,27 +17,24 @@ public class PalindromeLinkedList{
 
     ListNode ref;
     public boolean isPalindrome(ListNode head) {
-        if(head == null)
-            return true;
-       ref = head; 
-       return dfs(head);
+        if(head == null) return true;
+
+        ref = head;
+        return dfs(head);
     }
     
-    public boolean dfs(ListNode node){
-        if(node == null)
-            return true;
-        
+    public boolean dfs(ListNode node) {
+        if(node == null) return true;
+
         boolean res = dfs(node.next);
-        
-        if(!res){
-            return false;
-        }
+
+        if(!res) return false;
+
         if(ref.val == node.val){
             ref = ref.next;
-        }else{
-            return false;
+            return true;
         }
-        
-        return true;
+
+        return false;
     }
 }

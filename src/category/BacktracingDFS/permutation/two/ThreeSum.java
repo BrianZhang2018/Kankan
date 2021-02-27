@@ -23,8 +23,8 @@ public class ThreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
         List<Integer> temp = new ArrayList<>();
         boolean[] used = new boolean[nums.length];
-
-        Arrays.sort(nums); // sort
+        // sort array
+        Arrays.sort(nums);
         dfs(nums, temp, 0, 0, used);
         return res;
     }
@@ -37,7 +37,7 @@ public class ThreeSum {
 
         for(int i=start; i<nums.length; i++){
             if(used[i]) continue;
-            if ((i > 0 && nums[i] == nums[i-1]) && !used[i-1]) continue;  // makes sure when duplicates are selected, the order is ascending.
+            if ((i > 0 && nums[i] == nums[i-1]) && !used[i-1]) continue;  // makes sure when duplicates are selected, we only take the ascending (used[i-1] = true) order
 
             target += nums[i];
             used[i] = true;

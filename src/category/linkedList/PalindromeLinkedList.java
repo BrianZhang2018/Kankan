@@ -7,8 +7,8 @@ package category.linkedList;
 
     ref points 1 initially.
     Make recursive calls until you reach the last element - 1.
-    On returning from each recurssion, check if it is equal to ref values. 
-    ref values are updated to on each recurssion.
+    On returning from each recursion, check if it is equal to ref values.
+    ref values are updated to on each recursion.
     So first check is ref 1 -  end 1
     Second ref 2 - second last 2 ...and so on.
  * 

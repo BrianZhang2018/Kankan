@@ -23,24 +23,9 @@ public class LowestCommonAncestorBT {
 
         // System.out.println(lowestCommonAncestor(root, p, q).val);
         // System.out.println(lowestCommonAncestorBFS(root, p, q).val);
-
-        max();
     }
 
-    public static void max() {
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(5);
-        list.add(10);
-
-        int i = 0;
-        while(i+1<list.size()){
-            System.out.println(list.get(i+1) - list.get(i));
-            i++;
-        }
-    }
-
-    // dfs solution
+    // DFS solution
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q){
         if(root == null || root.val == p.val || root.val ==q.val) return root;
 
@@ -52,7 +37,7 @@ public class LowestCommonAncestorBT {
         return left != null ? left : right;
     }
 
-    // bfs solution
+    // BFS solution
     public static TreeNode lowestCommonAncestorBFS(TreeNode root, TreeNode p, TreeNode q) {
         HashMap<TreeNode, TreeNode> parent = new HashMap();
 

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * MergeSort is Divide and Conquer algorithm
- * <p>
+ *
  * Time Complexity:	O(nlog(n))
  */
 public class MergeSort {
@@ -16,17 +16,16 @@ public class MergeSort {
     }
 
     private int[] array;
-    private int[] tempMergArr;
+    private int[] temp;
     private int length;
 
     public void sort(int inputArr[]) {
         this.array = inputArr;
         this.length = inputArr.length;
-        this.tempMergArr = new int[length];
+        this.temp = new int[length];
         mergeSortHelper(0, length - 1);
     }
 
-    //do merge sort
     private void mergeSortHelper(final int low, final int high) {
         // check if low is smaller then high
         if (low < high) {
@@ -43,30 +42,29 @@ public class MergeSort {
 
     private void merge(final int low, final int middle, final int high) {
 
-        // Copy both parts into the dfsHelper - tempMergArr array
+        // Copy both parts into the dfsHelper - temp array
         for (int i = low; i <= high; i++) {
-            tempMergArr[i] = array[i];
+            temp[i] = array[i];
         }
         int i = low;
         int j = middle + 1;
-        int k = low;
-        // Copy the smallest values from either the left or the
-        // right side back to the original array
+        int currIndex = low;
+        // Copy the smallest values from either the left or the right side back to the original array
         while (i <= middle && j <= high) {        //difference with quickSort
-            if (tempMergArr[i] <= tempMergArr[j]) {
-                array[k++] = tempMergArr[i++];
+            if (temp[i] <= temp[j]) {
+                array[currIndex++] = temp[i++];
             } else {
-                array[k++] = tempMergArr[j++];
+                array[currIndex++] = temp[j++];
             }
         }
         // Copy the rest of the left side of the array into the target array
         while (i <= middle) {
-            array[k++] = tempMergArr[i++];
+            array[currIndex++] = temp[i++];
         }
 
         // Copy the rest of the right side of the array into the target array
         while (j <= high) {
-            array[k++] = tempMergArr[j++];
+            array[currIndex++] = temp[j++];
         }
     }
 }

@@ -1,8 +1,7 @@
 package category.Array.prefixSum;
 
 import category.model.TreeNode;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/path-sum-iii/
@@ -19,8 +18,8 @@ public class PathSumIII {
         root.left = new TreeNode(5);
         root.left.left = new TreeNode(3);
         root.left.left = new TreeNode(3);
-        PathSumIII test = new PathSumIII();
-        System.out.println(test.pathSumBacktrack(root, 8));
+
+        System.out.println(new PathSumIII().pathSumBacktrack(root, 8));
     }
 
     public int pathSumBacktrack(TreeNode root, int sum) {
@@ -37,11 +36,10 @@ public class PathSumIII {
         // get the number of valid previous prefix-sum which target + prefix-sum = currSum
         int numPathToCurr = prefixSumMap.getOrDefault(currSum - target, 0);
 
-        prefixSumMap.put(currSum, prefixSumMap.getOrDefault(currSum, 0) + 1);// update the map with the current sum
+        prefixSumMap.put(currSum, prefixSumMap.getOrDefault(currSum, 0) + 1);
 
         int res = numPathToCurr + backtrack(node.left, prefixSumMap, currSum, target) + backtrack(node.right, prefixSumMap, currSum, target);
 
-        // dfsHelper: remove the current prefix sum which added current node value
         prefixSumMap.put(currSum, prefixSumMap.get(currSum) - 1);
 
         return res;

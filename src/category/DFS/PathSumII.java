@@ -1,10 +1,10 @@
 package category.DFS;
 
 import category.model.TreeNode;
-
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/path-sum-ii/
  *
  * Created by brianzhang on 12/4/18.
  */
@@ -24,9 +24,9 @@ public class PathSumII {
         //reach a leaf
         if (root.left == null && root.right == null) {
             //find path sum
-            if (root.val == sum)
-                result.add(new ArrayList<>(path));
-        } else {
+            if (root.val == sum) result.add(new ArrayList<>(path));
+        }
+        else {
             pathSumHelper(root.left, sum - root.val, result, path);
             pathSumHelper(root.right, sum - root.val, result, path);
         }

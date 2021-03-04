@@ -6,7 +6,7 @@ package category.BinarySearch;
 public class AStandardBinarySearch {
 
     public static void main(String[] args) {
-        System.out.println(bs(new int[]{1,4,7,8,9,10,23,54}, 9));
+        System.out.println(bs(new int[]{1,3}, 3));
         System.out.println(bs1(new int[]{1,4,7,8,9,9,23,54}, 9));
         System.out.println(bs2(new int[]{1,4,7,8,9,9,23,54}, 9));
     }
@@ -15,7 +15,7 @@ public class AStandardBinarySearch {
 
         int left = 0, right = arr.length;
 
-        while(left<right){
+        while(left < right){
             int mid = left + (right-left)/2;
             if (arr[mid] == target){
                 return mid;

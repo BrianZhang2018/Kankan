@@ -25,16 +25,15 @@ public class PathSumIII {
         return backtrack(root, prefixSumMap, 0, sum);
     }
 
-    // Time Complexity O(n)
     // Pre-order traversal - firstly traverse whole left subtree of root, then traverse the whole right subtree of root
     public int backtrack(TreeNode node, Map<Integer, Integer> prefixSumMap, Integer currSum, int target) {
         if (node == null) return 0;
 
-        currSum += node.val; // update the prefix sum by adding the current node val
+        currSum += node.val;
+        // get the number of valid previous prefix-sum which "target + prefix-sum = currSum"
+        int numPathToCurr = prefixSumMap.getOrDefault(currSum - target, 0);
 
-        prefixSumMap.put(currSum, prefixSumMap.getOrDefault(currSum, 0) + 1); // update the map with the current sum, then pass to next
-
-        int numPathToCurr = prefixSumMap.getOrDefault(currSum - target, 0);   // get the number of valid path ended by the current node (currSum-target)
+        prefixSumMap.put(currSum, prefixSumMap.getOrDefault(currSum, 0) + 1);
 
         int res = numPathToCurr + backtrack(node.left, prefixSumMap, currSum, target) + backtrack(node.right, prefixSumMap, currSum, target);
 
@@ -42,4 +41,5 @@ public class PathSumIII {
 
         return res;
     }
+
 }

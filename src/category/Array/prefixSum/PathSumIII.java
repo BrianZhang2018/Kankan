@@ -16,8 +16,10 @@ public class PathSumIII {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(10);
         root.left = new TreeNode(5);
-        root.left.left = new TreeNode(3);
-        root.left.left = new TreeNode(3);
+        root.left.left = new TreeNode(2);
+        root.left.left.left = new TreeNode(1);
+        root.left.left.left.left = new TreeNode(5);
+        root.left.left.left.left.left = new TreeNode(3);
 
         System.out.println(new PathSumIII().pathSumBacktrack(root, 8));
     }
@@ -33,7 +35,7 @@ public class PathSumIII {
         if (node == null) return 0;
 
         currSum += node.val;
-        // get the number of valid previous prefix-sum which target + prefix-sum = currSum
+        // get the number of valid previous prefix-sum which "currSum - target = prefix-sum"
         int numPathToCurr = prefixSumMap.getOrDefault(currSum - target, 0);
 
         prefixSumMap.put(currSum, prefixSumMap.getOrDefault(currSum, 0) + 1);

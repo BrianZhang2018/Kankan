@@ -1,8 +1,6 @@
 package category.BacktracingDFS;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * 我首先follow花花酱的解法，然后refactor根据下面的reference

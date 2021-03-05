@@ -1,7 +1,6 @@
 package category.BacktracingDFS;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://leetcode.jp/problemdetail.php?id=254

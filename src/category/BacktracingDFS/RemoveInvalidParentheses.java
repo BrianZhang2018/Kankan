@@ -20,11 +20,7 @@ import java.util.*;
 public class RemoveInvalidParentheses {
 
     public static void main(String[] args) {
-        RemoveInvalidParentheses rp = new RemoveInvalidParentheses();
-        for(String str : rp.removeInvalidParentheses("(a)())()")) System.out.println(str);
-
-        StringBuilder sb = new StringBuilder("abc");
-        sb.append('c');
+        for(String str : new RemoveInvalidParentheses().removeInvalidParentheses("(a)())()")) System.out.println(str);
     }
 
     public List<String> removeInvalidParentheses(String s) {

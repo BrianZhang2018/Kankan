@@ -1,18 +1,17 @@
 package category.BacktracingDFS;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
- * Created by brianzhang on 10/9/18.
+ * https://leetcode.com/problems/letter-combinations-of-a-phone-number/
  *
  * Classic DFS
+ * Created by brianzhang on 10/9/18.
  */
-public class LetterCombinationsClassicDFS {
+public class LetterCombinations {
 
     public static void main(String[] args) {
-        LetterCombinationsClassicDFS test = new LetterCombinationsClassicDFS();
-        System.out.println(test.letterCombinations("23"));
+        System.out.println(new LetterCombinations().letterCombinations("23"));
     }
 
     public List<String> letterCombinations(String digits) {
@@ -26,7 +25,7 @@ public class LetterCombinationsClassicDFS {
         return result;
     }
 
-    // dfs backtracking
+    // backtracking
     private void dfs(String[] letters, char[] digitArr, StringBuilder curr, List<String> result, int index) {
         if (curr.length() == digitArr.length) {
             result.add(curr.toString());

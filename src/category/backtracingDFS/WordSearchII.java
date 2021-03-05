@@ -7,14 +7,13 @@ import java.util.LinkedList;
  *
  * TrieNode + backtracking
  */
-public class WordSearchII{
+public class WordSearchII {
     public static void main(String[] args) {
         char[][] board = {{'o','a','a','n'},
                           {'e','t','a','e'},
                           {'i','h','k','r'},
                           {'i','f','l','v'}};
-        WordSearchII test = new WordSearchII();
-        for(String str : test.findWords(board, new String[]{"oath","pea","eat","rain"})){
+        for(String str : new WordSearchII().findWords(board, new String[]{"oath","pea","eat","rain"})){
             System.out.println(str);
         }
     }

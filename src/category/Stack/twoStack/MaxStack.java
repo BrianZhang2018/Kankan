@@ -1,4 +1,4 @@
-package category.RightDataStructure.twoStack;
+package category.Stack.twoStack;
 
 import java.util.Stack;
 
@@ -8,9 +8,9 @@ import java.util.Stack;
  * f: 5, linkedin
  * Created by brianzhang on 11/12/20.
  */
-public class MaxStack716 {
+public class MaxStack {
     public static void main(String[] args) {
-        MaxStack716 stack = new MaxStack716();
+        MaxStack stack = new MaxStack();
         stack.push(5);
         stack.push(1);
         stack.push(5);
@@ -25,7 +25,7 @@ public class MaxStack716 {
 
     Stack<Integer> data = new Stack<>();
     Stack<Integer> maxTrack = new Stack<>();
-    public MaxStack716() {}
+    public MaxStack() {}
     //O(1)
     public void push(int x) {
         data.push(x);
@@ -49,15 +49,15 @@ public class MaxStack716 {
     }
     //O(n)
     public int popMax() {
-        int res = maxTrack.peek();
-        Stack<Integer> tmp = new Stack<>();
-        while (top() != res) {
-            tmp.push(pop());
+        int max = maxTrack.peek();
+        Stack<Integer> beforeMax = new Stack<>();
+        while (top() != max) {
+            beforeMax.push(pop());
         }
-        pop();
-        while (!tmp.isEmpty()) {
-            push(tmp.pop());
+        pop(); // remove the max
+        while (!beforeMax.isEmpty()) { // put the elements back to stack
+            push(beforeMax.pop());
         }
-        return res;
+        return max;
     }
 }

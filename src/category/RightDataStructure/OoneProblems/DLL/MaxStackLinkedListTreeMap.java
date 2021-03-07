@@ -1,8 +1,6 @@
 package category.RightDataStructure.OoneProblems.DLL;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * https://www.lintcode.com/problem/max-stack/description

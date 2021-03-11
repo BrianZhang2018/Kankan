@@ -22,8 +22,7 @@ class ImplementPriorityQueue {
 
     class Node {
         int data;
-        // Lower values indicate higher priority
-        int priority;
+        int priority;// Lower values indicate higher priority
 
         Node next;
     }

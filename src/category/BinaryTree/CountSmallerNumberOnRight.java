@@ -32,14 +32,14 @@ public class CountSmallerNumberOnRight {
         int greaterNumCounter = 0;
         while(true) {
             if(val <= root.val) {
-                root.count++; //重点2 - count the number of nodes which less than or equal to current root
+                root.count++; // 重点2 - count the number of nodes which less than or equal to current root
                 if(root.left == null) {
                     root.left = new TreeNode(val);
                     break;
                 } else {
                     root = root.left;
                 }
-            } else { //重点1 - When go to the right subtree which means current node is less than inserted val, so we increase the counter
+            } else { // 重点1 - When go to the right subtree which means current node is less than inserted val, so we increase the counter
                 greaterNumCounter += root.count;
                 if(root.right == null) {
                     root.right = new TreeNode(val);

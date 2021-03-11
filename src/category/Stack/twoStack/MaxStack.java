@@ -24,9 +24,9 @@ public class MaxStack {
     }
 
     Stack<Integer> data = new Stack<>();
-    Stack<Integer> maxTrack = new Stack<>();
+    Stack<Integer> maxTrack = new Stack<>(); // track the current maximum value when push a new element into stack
     public MaxStack() {}
-    //O(1)
+    // O(1)
     public void push(int x) {
         data.push(x);
         if (maxTrack.isEmpty())
@@ -34,20 +34,20 @@ public class MaxStack {
         else
             maxTrack.push(Math.max(x, maxTrack.peek()));
     }
-    //O(1)
+    // O(1)
     public int pop() {
         maxTrack.pop();
         return data.pop();
     }
-    //O(1)
+    // O(1)
     public int top() {
         return data.peek();
     }
-    //O(1)
+    // O(1)
     public int peekMax() {
         return maxTrack.peek();
     }
-    //O(n)
+    // O(n)
     public int popMax() {
         int max = maxTrack.peek();
         Stack<Integer> beforeMax = new Stack<>();

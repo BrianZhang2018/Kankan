@@ -28,7 +28,7 @@ public class NumberOfProvinces {
         if (root[v1] != root[v2]) root[v2] = v1; // unite the 2 subtrees
     }
 
-    // Solution-2: dfs
+    // Solution-2: DFS
     public int findCircleNumDFS(int[][] M) {
         boolean[] visited = new boolean[M.length];
         int cnt = 0;

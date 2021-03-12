@@ -3,7 +3,8 @@ package category.RightDataStructure;
 /**
  * https://leetcode.com/problems/design-hashmap/discuss/152746/Java-Solution
  *
- * 其实就是 Java LinkedHashMap
+ * Apple phone screen interview
+ *
  * Created by brianzhang on 11/3/19.
  */
 public class ImplementHashMap {
@@ -17,7 +18,7 @@ public class ImplementHashMap {
         test.remove(2);
     }
 
-    class ListNode {
+    static class ListNode {
         int key, val;
         ListNode next;
 
@@ -31,36 +32,43 @@ public class ImplementHashMap {
 
     public void put(int key, int value) {
         int i = idx(key);
-        if (nodes[i] == null)
+        if (nodes[i] == null) {
             nodes[i] = new ListNode(-1, -1);
-        ListNode prev = find(nodes[i], key);
-        if (prev.next == null)
-            prev.next = new ListNode(key, value);
-        else
-            prev.next.val = value; // update new value for the same key
+        }
+
+        ListNode prev = findParent(nodes[i], key);
+        if (prev.next == null){
+            prev.next = new ListNode(key, value); // append the node
+        }
+        else{
+            prev.next.val = value; // Update new value for the same key, map.put will override the value if the key is same.
+        }
     }
 
     public int get(int key) {
         int i = idx(key);
-        if (nodes[i] == null)
-            return -1;
-        ListNode node = find(nodes[i], key);
+        if (nodes[i] == null) return -1;
+
+        ListNode node = findParent(nodes[i], key);
         return node.next == null ? -1 : node.next.val;
     }
 
     public void remove(int key) {
         int i = idx(key);
         if (nodes[i] == null) return;
-        ListNode prev = find(nodes[i], key);
+
+        ListNode prev = findParent(nodes[i], key);
         if (prev.next == null) return;
         prev.next = prev.next.next;
     }
 
+    // generate hash key
     private int idx(int key) {
         return Integer.hashCode(key) % nodes.length;
     }
 
-    private ListNode find(ListNode bucket, int key) {
+    // return the previous node of the target node
+    private ListNode findParent(ListNode bucket, int key) {
         ListNode node = bucket, prev = null;
         while (node != null && node.key != key) {
             prev = node;

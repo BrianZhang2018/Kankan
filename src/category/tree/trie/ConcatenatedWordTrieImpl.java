@@ -5,6 +5,7 @@ import java.util.*;
 /**
  * Intuitive from
  * https://leetcode.com/problems/concatenated-words/discuss/95644/102ms-java-Trie-%2B-DFS-solution.-With-explanation-easy-to-understand.
+ *
  * Created by brianzhang on 3/12/19.
  */
 public class ConcatenatedWordTrieImpl {

@@ -17,11 +17,15 @@ import java.util.*;
  */
 public class MaxPointsOnALine {
 
+    public static void main(String[] args) {
+    }
+
     public int maxPoints(int[][] points) {
         int m = points.length;
         int res = 0;
 
-        for (int i = 0; i < m; i++) { // 解题思路：计算一个点到所有其他点的slope（斜率），相同的slope说明在一条直线上.
+        // 解题思路：计算一个点到所有其他点的slope（斜率），相同的slope说明在一条直线上.
+        for (int i = 0; i < m; i++) {
             int duplicate = 0, currMax = 0;
             Map<String, Integer> map = new HashMap();
             for (int j = i + 1; j < m; j++) {

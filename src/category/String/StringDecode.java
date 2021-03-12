@@ -1,43 +1,20 @@
 package category.String;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
- * Created by brianzhang on 10/16/19.
+ * Created by brianzhang on 3/11/21.
  */
-public class StringCompressAndDecode {
+public class StringDecode {
 
     public static void main(String[] args) {
-        StringCompressAndDecode test = new StringCompressAndDecode();
-        System.out.println(test.compress("aaabbc")); // a3b2c
-        System.out.println(test.decodeString("a1b2c3")); // abbccc
-        System.out.println(test.decodeString2("3[a2[bc]]"));
-        // System.out.println(test.compress(new char[]{'a','a','b','b','c','c','c'}));
-    }
-
-    // Compress: aaabb -> a3b2, abb -> ab2, https://leetcode.com/problems/string-compression/
-    public String compress(String s) {
-
-        char[] charArr = s.toCharArray();
-        StringBuilder sb = new StringBuilder();
-        int index = 0, count = 0;
-        while (index < charArr.length) {
-            char curr = charArr[index];
-            while (index < charArr.length && curr == charArr[index]) {
-                index++;
-                count++;
-            }
-            sb.append(curr);
-            if (count != 1) {
-                sb.append((char) (count + '0'));
-            }
-            count = 0;
-        }
-        return sb.toString();
+        System.out.println(decodeString("a1b2c3")); // abbccc
+        System.out.println(decodeString2("3[a2[bc]]"));
     }
 
     // Decode: Aa1b2c2x -> Aabbccx
-    public String decodeString(String str) {
+    public static String decodeString(String str) {
         StringBuilder sb = new StringBuilder();
         int k = 0;
 
@@ -63,13 +40,13 @@ public class StringCompressAndDecode {
     }
 
     // Decode: "3[a]2[bc]"
-    public String decodeString2(String s) {
+    public static String decodeString2(String s) {
         Deque<Character> queue = new ArrayDeque();
         for(char c : s.toCharArray()) queue.add(c);
         return dfs(queue);
     }
 
-    public String dfs(Deque<Character> dq){
+    public static String dfs(Deque<Character> dq){
         int num = 0;
         StringBuilder sb = new StringBuilder();
         while(!dq.isEmpty()){
@@ -91,5 +68,4 @@ public class StringCompressAndDecode {
 
         return sb.toString();
     }
-
 }

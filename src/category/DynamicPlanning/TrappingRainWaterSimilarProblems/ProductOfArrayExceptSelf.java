@@ -1,11 +1,10 @@
 package category.DynamicPlanning.TrappingRainWaterSimilarProblems;
 /**
- * https://leetcode.com/problems/product-of-array-except-self
  * https://leetcode.com/problems/product-of-array-except-self/discuss/65632/My-solution-beats-100-java-solutions
  *
- * The idea is simply. The product basically is calculated using the numbers before the current number and the numbers
- * after the current number. Thus, we can scan the array twice. First, we calcuate the running product of the part
- * before the current number. Second, we calculate the running product of the part after the current number through scanning from the end of the array.
+ * The idea is simply. The product basically is calculated using the numbers before the current number and the numbers after the current number.
+ * Thus, we can scan the array twice. First, we calculate the running product of the part before the current number.
+ * Second, we calculate the running product of the part after the current number through scanning from the end of the array.
  *
  * Similar question: https://leetcode.com/problems/trapping-rain-water/
  */
@@ -19,8 +18,8 @@ public class ProductOfArrayExceptSelf{
     public int[] productExceptSelf(int[] nums) {
         if(nums == null) return null;
 
-        int[] left = new int[nums.length];  // Left is an array containing the left products
-        int[] right = new int[nums.length]; // Right is an array containing the array products
+        int[] left = new int[nums.length];  // Left is an array containing the left->right products
+        int[] right = new int[nums.length]; // Right is an array containing the right->left products
         int[] res = new int[nums.length];
 
         int leftPrefix = 1;

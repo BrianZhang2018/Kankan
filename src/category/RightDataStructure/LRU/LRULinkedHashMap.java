@@ -17,22 +17,24 @@ public class LRULinkedHashMap {
 
         System.out.println(lhm.size());
     }
-}
 
-class LRU2<K, V> extends LinkedHashMap<K, V> {
-    private int MAX_CACHE_SIZE;
+    static class LRU2<K, V> extends LinkedHashMap<K, V> {
+        private int MAX_CACHE_SIZE;
 
-    public LRU2(int maxCacheSize) {
-        super(maxCacheSize);
-        this.MAX_CACHE_SIZE = maxCacheSize;
-    }
+        public LRU2(int maxCacheSize) {
+            super(maxCacheSize);
+            this.MAX_CACHE_SIZE = maxCacheSize;
+        }
 
-    @Override
-    protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
-        if (size() > MAX_CACHE_SIZE) {
-            return true;
-        } else {
-            return false;
+        @Override
+        protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
+            if (size() > MAX_CACHE_SIZE) {
+                return true;
+            } else {
+                return false;
+            }
         }
     }
+
 }
+

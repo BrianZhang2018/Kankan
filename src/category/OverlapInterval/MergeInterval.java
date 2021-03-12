@@ -14,7 +14,7 @@ public class MergeInterval {
         for (Interval i : merge(intervals)) System.out.println(i.start + " - " + i.end);
     }
 
-    // my refactored solution
+    // Solution-1: my refactored solution
     public static List<Interval> merge(List<Interval> intervals) {
         List<Interval> res = new ArrayList<>();
         if (intervals.size() == 0) return res;
@@ -27,7 +27,7 @@ public class MergeInterval {
                 intervals.get(i).end = Math.max(intervals.get(i - 1).end, intervals.get(i).end);
                 intervals.get(i).start = intervals.get(i - 1).start;
             } else {
-                res.add(intervals.get(i - 1)); // add to result only when non-overlap
+                res.add(intervals.get(i - 1)); // add to result when non-overlap
             }
         }
 
@@ -35,7 +35,7 @@ public class MergeInterval {
         return res;
     }
 
-    // foreach loop for fun
+    // Solution-2: foreach loop for fun
     public static List<Interval> merge2(List<Interval> intervals) {
         List<Interval> res = new ArrayList<>();
         if (intervals.size() == 0) return res;

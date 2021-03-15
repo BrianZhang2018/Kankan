@@ -16,9 +16,9 @@ import java.util.*;
 
  * Created by brianzhang on 4/18/19.
  */
-public class TopologicalSortDFS {
+public class CourseScheduleTopologicalSortDFS {
     public static void main(String[] args) {
-        TopologicalSortDFS test = new TopologicalSortDFS();
+        CourseScheduleTopologicalSortDFS test = new CourseScheduleTopologicalSortDFS();
         System.out.println(test.canFinish(4, new int[][]{{0, 1}, {2, 1}, {2, 0}}));
         System.out.println(test.canFinish(4, new int[][]{{0, 1}, {2, 1}, {1, 2}}));
     }

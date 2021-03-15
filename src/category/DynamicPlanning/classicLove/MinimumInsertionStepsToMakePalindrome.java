@@ -4,7 +4,7 @@ package category.DynamicPlanning.classicLove;
  * https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
  * https://www.youtube.com/watch?v=XNWz9xbX8F0&t=5s
  *
- * compare with LongestCommonSubSequence.java as below smart solution which use the lCS solution to solve this problem:
+ * LCS solution: LongestCommonSubSequence.java
  * https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/discuss/470687/Java-Longest-Common-Subsequence-Solution-Clean-code
  *
  * Created by brianzhang on 1/5/20.
@@ -13,17 +13,12 @@ public class MinimumInsertionStepsToMakePalindrome {
 
     public static void main(String[] args) {
         String s = "leetcode";
-        MinimumInsertionStepsToMakePalindrome test = new MinimumInsertionStepsToMakePalindrome();
-        System.out.println(test.minInsertions(s));
-
-
-        String sReverse = new StringBuilder(s).reverse().toString();
-        int lcs = test.longestCommonSubSequence(s.toCharArray(), sReverse.toCharArray());
-        System.out.println(s.length() - lcs);
+        System.out.println(minInsertions(s));
+        System.out.println(minInsertionsLCS(s));
     }
 
     // Bottom-up, 递推
-    public int minInsertions(String s) {
+    public static int minInsertions(String s) {
 
         if(s == null || s.length() <=1)
             return 0;
@@ -40,8 +35,15 @@ public class MinimumInsertionStepsToMakePalindrome {
         return dp[0][n-1];
     }
 
-    // LCS solution
-    public int longestCommonSubSequence(char[] arr1, char[] arr2) {
+    // LCS Solution - smart way
+    // dp[i][j] -> the lcs of str-i(0-i) and str-j(0-j)
+    public static int minInsertionsLCS(String s) {
+        String sReverse = new StringBuilder(s).reverse().toString();
+        int lcs = longestCommonSubSequence(s.toCharArray(), sReverse.toCharArray());
+        return s.length() - lcs;
+    }
+
+    public static int longestCommonSubSequence(char[] arr1, char[] arr2) {
         int n1 = arr1.length, n2 = arr2.length;
         int[][] dp = new int[n1 + 1][n2 + 1];
         for (int i = 1; i <= n1; i++) {

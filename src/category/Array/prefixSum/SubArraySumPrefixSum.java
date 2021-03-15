@@ -3,12 +3,10 @@ package category.Array.prefixSum;
 import java.util.HashMap;
 
 /**
- * PrefixSum
- *
  * https://leetcode.com/problems/subarray-sum-equals-k/
  * Given an array of integers and an integer k, you need to find the total number of continuous subArrays whose sum equals to k.
  *
- * 利用PrefixSum的特点, prefixSum是continuously cumulative每一个element, 所以 prefixSum[3] - prefixSum[2] = value on index 3.
+ * 利用PrefixSum的特点, prefixSum是continuously cumulative 每一个element, 所以 prefixSum[3] - prefixSum[2] = value on index 3.
  *
  * Created by brianzhang on 12/8/18.
  */

@@ -3,7 +3,7 @@ package category.graph.topologicalsort;
 import java.util.*;
 
 /**
- * Topological sorting
+ * Topological Sorting BFS
  * https://en.wikipedia.org/wiki/Topological_sorting#:~:text=In%20computer%20science%2C%20a%20topological,before%20v%20in%20the%20ordering.
  *
  * https://leetcode.com/problems/course-schedule/
@@ -14,7 +14,7 @@ import java.util.*;
  * Time Complexity: O(V+E) 稀疏图->O(V), 稠密图->O(V2), V is vertex, E is edge
  * Created by brianzhang on 4/18/19.
  */
-public class TopologicalSortBFS {
+public class CourseScheduleTopologicalSortBFS {
     public static void main(String[] args) {
         System.out.println(canFinish(4, new int[][]{{1, 0}, {3, 1}, {2, 0}, {1, 2}, {3, 2}}));
         System.out.println("Order is: " + Arrays.toString(findOrder(4, new int[][]{{1, 0}, {3, 1}, {2, 0}, {1, 2}, {3, 2}})));
@@ -22,7 +22,7 @@ public class TopologicalSortBFS {
         System.out.println("Cycle is: " + Arrays.toString(findCycle(4, new int[][]{{2, 0}, {3, 2}, {1, 3}, {2, 1}}).toArray()));
     }
 
-    // CourseI
+// Course-Schedule-I
     public static boolean canFinish(int n, int[][] prerequisites) {
         List<Integer>[] graph = new ArrayList[n]; // describe the adjacent relationship (you can use map here also)
         int[] inDegree = new int[n];    //入度
@@ -51,7 +51,7 @@ public class TopologicalSortBFS {
         return preCourses.size() == n;
     }
 
-    // CourseII - print the order of courses
+// Course-Schedule-II - print the order of courses
     public static int[] findOrder(int n, int[][] prerequisites) {
         List<Integer>[] dag = new ArrayList[n];
         int[] inDegree = new int[n];
@@ -87,7 +87,7 @@ public class TopologicalSortBFS {
         }
     }
 
-    // find cycle: start from each point to find the cycle, if traverse back to the start point which means it's a cycle
+// find cycle: start from each point to find the cycle, if traverse back to the start point which means it's a cycle
     public static List<Integer> findCycle(int n, int[][] preRequisites) {
         List<Integer>[] adjacent = new ArrayList[n];
         int[] degree = new int[n];

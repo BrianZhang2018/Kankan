@@ -23,4 +23,17 @@ public class TreeNode {
         preOrderTraversal(node.right);
     }
 
+    @Override
+    public boolean equals(Object o){
+
+        TreeNode n = (TreeNode)o;
+
+        return n.val == this.val;
+    }
+
+    @Override
+    public int hashCode(){
+        return this.val;
+    }
+
 }

@@ -23,6 +23,7 @@ public class AllPathsFromSourceToTarget {
         return res;
     }
 
+    // dfs + backtracking
     public void dfs(int[][] graph, int currNode, List<Integer> path, int targetNode) {
         if(currNode == targetNode) {
             res.add(new ArrayList(path));

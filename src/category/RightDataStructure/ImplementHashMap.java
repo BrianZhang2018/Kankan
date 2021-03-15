@@ -16,6 +16,8 @@ public class ImplementHashMap {
 
         test.put(2,2);
         test.remove(2);
+
+        System.out.println();
     }
 
     static class ListNode {

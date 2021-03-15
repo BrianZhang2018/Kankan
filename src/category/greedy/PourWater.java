@@ -18,7 +18,7 @@ public class PourWater {
      * @return: how much water is at each index
      */
     public static int[] solution(int[] heights, int V, int K) {
-        // Write your code here
+
         if(heights == null || heights.length == 0)
             return heights;
 

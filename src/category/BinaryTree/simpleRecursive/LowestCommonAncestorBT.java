@@ -20,9 +20,8 @@ public class LowestCommonAncestorBT {
         root.left.right.left = new TreeNode(7);
         root.left.right.right = new TreeNode(4);
         TreeNode p = new TreeNode(5), q = new TreeNode(1);
-
-        // System.out.println(lowestCommonAncestor(root, p, q).val);
-        // System.out.println(lowestCommonAncestorBFS(root, p, q).val);
+        System.out.println(lowestCommonAncestor(root, p, q).val);
+        System.out.println(lowestCommonAncestorBFS(root, p, q).val);
     }
 
     // DFS solution
@@ -39,7 +38,7 @@ public class LowestCommonAncestorBT {
 
     // BFS solution
     public static TreeNode lowestCommonAncestorBFS(TreeNode root, TreeNode p, TreeNode q) {
-        HashMap<TreeNode, TreeNode> parent = new HashMap();
+        Map<TreeNode, TreeNode> parent = new HashMap(); // need override the equals and hasCode method for the Object TreeNode which is a key in map
 
         LinkedList<TreeNode> queue = new LinkedList();
         queue.add(root);

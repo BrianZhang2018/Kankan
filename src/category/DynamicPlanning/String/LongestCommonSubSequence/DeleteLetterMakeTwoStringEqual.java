@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Strings.LongestCommonSubSequence;
+package category.DynamicPlanning.String.LongestCommonSubSequence;
 
 /**
  * https://leetcode.com/problems/delete-operation-for-two-strings/

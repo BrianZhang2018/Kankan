@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Strings.LongestCommonSubSequence;
+package category.DynamicPlanning.String.LongestCommonSubSequence;
 
 /**
  * https://leetcode.com/problems/shortest-common-supersequence/submissions/

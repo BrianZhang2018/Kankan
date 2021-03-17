@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Strings;
+package category.DynamicPlanning.String;
 
 import java.util.*;
 

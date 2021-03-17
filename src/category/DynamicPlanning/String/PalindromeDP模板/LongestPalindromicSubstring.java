@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Strings.PalindromeDP模板;
+package category.DynamicPlanning.String.PalindromeDP模板;
 
 /**
  * https://leetcode.com/problems/longest-palindromic-substring

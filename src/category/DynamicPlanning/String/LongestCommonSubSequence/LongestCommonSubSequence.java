@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Strings.LongestCommonSubSequence;
+package category.DynamicPlanning.String.LongestCommonSubSequence;
 
 /**
  * https://leetcode.com/problems/longest-common-subsequence/discuss/398711/4-different-ways-to-solve-Longest-Common-Sub-sequence-including-O(N)-Solution

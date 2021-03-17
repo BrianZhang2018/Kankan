@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Strings.LongestCommonSubSequence;
+package category.DynamicPlanning.String.PalindromeDP模板;
 
 /**
  * https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
@@ -15,10 +15,9 @@ public class MinimumInsertionStepsToMakeAPalindrome {
         String s = "leetcode";
         System.out.println(minInsertions(s));
         System.out.println(minInsertionsLCS(s));
-        System.out.println(minInsertionsDFSTopDown(s));
     }
 
-    // Solution-1: DP Bottom-up, 递推
+    // Bottom-up, 递推
     public static int minInsertions(String s) {
 
         if(s == null || s.length() <=1) return 0;
@@ -35,7 +34,7 @@ public class MinimumInsertionStepsToMakeAPalindrome {
         return dp[0][n-1];
     }
 
-    // Solution-2: longest-common-subsequence Solution - this is also applicable for "minimum deletion to make a palindrome"
+    // longest-common-subsequence Solution - this si applicable for "minimum deletion to make a palindrome" also
     public static int minInsertionsLCS(String s) {
         String sReverse = new StringBuilder(s).reverse().toString();
         int lcs = longestCommonSubSequence(s.toCharArray(), sReverse.toCharArray());
@@ -56,30 +55,5 @@ public class MinimumInsertionStepsToMakeAPalindrome {
             }
         }
         return dp[n1][n2];
-    }
-
-    // Solution-3: Top-Down, dfs+ memoization (第一种DP方法用top-down实现, DP两种方法的相互转化实现)
-    // time complexity: O(N) as the memoization
-    public static int minInsertionsDFSTopDown(String s) {
-        int sl = s.length();
-        return dfs(s, 0, sl-1, new Integer[sl][sl]);
-    }
-
-    public static int dfs(String s, int i, int j, Integer[][] memo) {
-
-        if(i >= j) return 0;
-
-        if(memo[i][j] != null){
-            return memo[i][j];
-        }
-        int step;
-        if(s.charAt(i) == s.charAt(j)){
-            step = dfs(s, i+1, j-1, memo);
-        }else{
-            step = Math.min(dfs(s, i+1, j, memo), dfs(s, i, j-1, memo)) + 1;
-        }
-        memo[i][j] = step;
-
-        return step;
     }
 }

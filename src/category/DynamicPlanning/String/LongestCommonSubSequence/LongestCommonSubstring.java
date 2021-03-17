@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Strings.LongestCommonSubSequence;
+package category.DynamicPlanning.String.LongestCommonSubSequence;
 
 /**
  * https://www.geeksforgeeks.org/longest-common-substring-dp-29/

@@ -30,7 +30,6 @@ public class MergeSort {
         // check if low is smaller then high
         if (low < high) {
             int middle = low + (high - low) / 2;
-
             //sorts the left side of the array
             mergeSortHelper(low, middle);
             //sorts the right side of the array

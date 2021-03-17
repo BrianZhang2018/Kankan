@@ -7,15 +7,20 @@ package category.DynamicPlanning;
  */
 public class MinimumNumOfInsertionDeletionToTargetString {
 
+    public static void main(String[] args)
+    {
+        String str1 = new String("heap");
+        String str2 = new String("pea");
+        printMinDelAndInsert(str1, str2);
+    }
+
     static int lcs(String str1, String str2, int m, int n)
     {
         int L[][] = new int[m + 1][n + 1];
         int i, j;
 
-        // Following steps build L[m+1][n+1] in
-        // bottom up fashion. Note that L[i][j]
-        // contains length of LCS of str1[0..i-1]
-        // and str2[0..j-1]
+        // Following steps build L[m+1][n+1] in bottom up fashion.
+        // Note that L[i][j] contains length of LCS of str1[0..i-1] and str2[0..j-1]
         for (i = 0; i <= m; i++) {
             for (j = 0; j <= n; j++) {
                 if (i == 0 || j == 0){
@@ -45,16 +50,6 @@ public class MinimumNumOfInsertionDeletionToTargetString {
 
         System.out.println("Minimum number of " + "insertions = ");
         System.out.println(n - len);
-    }
-
-    // Driver code
-    public static void main(String[] args)
-    {
-        String str1 = new String("heap");
-        String str2 = new String("pea");
-
-        // Function Call
-        printMinDelAndInsert(str1, str2);
     }
 }
 

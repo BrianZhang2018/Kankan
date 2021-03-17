@@ -7,6 +7,6 @@ package category.RightDataStructure.insertDeleteGetRandomO1;
  *
  * Created by brianzhang on 11/24/20.
  */
-public class InsertDeleteRandom381 {
+public class InsertDeleteGetRandom381 {
 
 }

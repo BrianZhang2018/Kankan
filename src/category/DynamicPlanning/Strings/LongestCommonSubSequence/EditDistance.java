@@ -1,4 +1,4 @@
-package category.DynamicPlanning.Strings.LCSubSequence;
+package category.DynamicPlanning.Strings.LongestCommonSubSequence;
 
 /**
  * https://leetcode.com/problems/edit-distance/discuss/25849/Java-DP-solution-O(nm)

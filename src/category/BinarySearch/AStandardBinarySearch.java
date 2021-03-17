@@ -22,7 +22,7 @@ public class AStandardBinarySearch {
             }
             if(target > arr[mid]){
                 left = mid+1;
-            }else{ // target <= arr[mid]
+            }else{  // target <= arr[mid]
                 right = mid;
             }
         }

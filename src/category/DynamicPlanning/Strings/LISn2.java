@@ -9,7 +9,7 @@ import java.util.Arrays;
  * ...
  * 1, 3, 6, 7, 9 -> LIS = 5
  * 1, 3, 6, 7, 9, 4 -> 相对于 4，前面3<4, so LIS(4) = LIS(3) + 1 = 3
- * <p>
+ *
  * Created by brianzhang on 12/31/18.
  */
 public class LISn2 {

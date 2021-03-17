@@ -11,14 +11,14 @@ import java.util.*;
  *
  * Created by brianzhang on 11/30/20.
  */
-public class InsertDeleteGetRandom380 {
+public class InsertDeleteGetRandom {
 
     public static void main(String[] args) {}
 
     Map<Integer, Integer> map = new HashMap(); // <element, position in list>
     List<Integer> list = new ArrayList();   // store the elements
 
-    public InsertDeleteGetRandom380() {}
+    public InsertDeleteGetRandom() {}
 
     /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
     public boolean insert(int val) {

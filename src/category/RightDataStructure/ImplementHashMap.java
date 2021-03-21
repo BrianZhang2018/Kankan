@@ -33,22 +33,22 @@ public class ImplementHashMap {
     final ListNode[] nodes = new ListNode[10000];
 
     public void put(int key, int value) {
-        int i = idx(key);
+        int i = hashcode(key);
         if (nodes[i] == null) {
-            nodes[i] = new ListNode(-1, -1);
+            nodes[i] = new ListNode(-1, -1); // dummy head node
         }
 
         ListNode prev = findParent(nodes[i], key);
         if (prev.next == null){
-            prev.next = new ListNode(key, value); // append the node
+            prev.next = new ListNode(key, value); // append node
         }
-        else{
-            prev.next.val = value; // Update new value for the same key, map.put will override the value if the key is same.
+        else{  // Update the value if the key same, map.put will override the value if the key is same
+            prev.next.val = value;
         }
     }
 
     public int get(int key) {
-        int i = idx(key);
+        int i = hashcode(key);
         if (nodes[i] == null) return -1;
 
         ListNode node = findParent(nodes[i], key);
@@ -56,7 +56,7 @@ public class ImplementHashMap {
     }
 
     public void remove(int key) {
-        int i = idx(key);
+        int i = hashcode(key);
         if (nodes[i] == null) return;
 
         ListNode prev = findParent(nodes[i], key);
@@ -65,11 +65,11 @@ public class ImplementHashMap {
     }
 
     // generate hash key
-    private int idx(int key) {
+    private int hashcode(int key) {
         return Integer.hashCode(key) % nodes.length;
     }
 
-    // return the previous node of the target node
+    // return the previous node of the target node if existing, otherwise will return the tail node
     private ListNode findParent(ListNode bucket, int key) {
         ListNode node = bucket, prev = null;
         while (node != null && node.key != key) {

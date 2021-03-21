@@ -19,7 +19,7 @@ public class EditDistance {
 
         int[][] dp = new int[m+1][n+1];
 
-        //base case: f(0, k) = f(k, 0) = k
+        // base case: f(0, k) = f(k, 0) = k
         for(int i=1; i<=word1.length(); i++){ // row
             dp[i][0] = i;
         }

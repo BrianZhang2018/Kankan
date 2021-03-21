@@ -17,15 +17,16 @@ public class EditDistanceMemo {
 
     public static int minDistance(String word1, String word2) {
         int m = word1.length(), n = word2.length();
-        int[][] memo = new int[m][n];
-        return helper(word1, word2, m, n, memo);
+        return helper(word1, word2, m, n, new int[m][n]);
     }
 
     private static int helper(String word1, String word2, int m, int n, int[][] memo) {
         if(m == 0) return n;
         if(n == 0) return m;
 
-        if(memo[m - 1][n - 1] != 0) return memo[m - 1][n - 1];
+        if(memo[m - 1][n - 1] != 0) {
+            return memo[m - 1][n - 1];
+        }
 
         if(word1.charAt(m - 1) == word2.charAt(n - 1)) {
             return helper(word1, word2, m - 1, n - 1, memo);

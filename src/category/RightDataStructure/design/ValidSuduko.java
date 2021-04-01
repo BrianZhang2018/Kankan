@@ -3,6 +3,11 @@ package category.RightDataStructure.design;
 /**
  * https://leetcode.com/problems/valid-sudoku/
  *
+ * what's a valid sudoku?
+ * - Each row contains unique values from 1-9.
+ * - Each column contains unique values from 1-9.
+ * - Each of the 9 sub-squares, of size 3x3, ​contains a unique value from 1-9.
+ *
  * Created by brianzhang on 7/26/20.
  */
 public class ValidSuduko {
@@ -25,14 +30,14 @@ public class ValidSuduko {
 
     public boolean isValid(char[][] board, int row, int col, char num) {
         for (int i = 0; i < 9; i++) {
-            if (board[row][i] == num && i != col) {
+            if (board[row][i] == num && i != col) { // check row whether has repetition
                 return false;
             }
 
-            if (board[i][col] == num && i != row) {
+            if (board[i][col] == num && i != row) { // check column whether has repetition
                 return false;
             }
-            int m = row/3*3 + i/3, n = col/3*3 + i%3; // Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition.
+            int m = row/3*3 + i/3, n = col/3*3 + i%3; // check 3x3 sub-boxes of the grid whether has repetition
             if (m == row && n == col) {
                 continue;
             } else {

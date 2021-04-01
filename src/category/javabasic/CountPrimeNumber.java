@@ -1,7 +1,6 @@
 package category.javabasic;
 
 import java.util.BitSet;
-import java.util.Arrays;
 
 /**
  * https://leetcode.com/problems/count-primes/
@@ -19,21 +18,21 @@ public class CountPrimeNumber {
     public static int countPrimes(int n) {
         if (n == 0) return 0;
 
-        boolean[] isPrimes = new boolean[n + 1];
+        boolean[] notPrime = new boolean[n + 1];
         int count = 0;
 
         for (int i = 2; i < n; i++) {
-            if (isPrimes[i]) continue;
+            if (notPrime[i]) continue;
 
             count++;
             for (int j = i; j < n; j = j + i) {
-                isPrimes[j] = true;
+                notPrime[j] = true;
             }
         }
         return count;
     }
 
-    //BitSet Solution
+    // BitSet Solution
     public static int countPrimes1(int n) {
         BitSet bs = new BitSet(n);
         bs.set(0);

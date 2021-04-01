@@ -18,10 +18,11 @@ public class SerializeAndDeserializeBFS {
         root.right.left = new TreeNode(1);
 
         SerializeAndDeserializeBFS test = new SerializeAndDeserializeBFS();
-        String str = test.serialize(root);
+        String str = test.serialize(root); System.out.println(str);
         test.deserialize(str);
     }
 
+    // level traversal
     public String serialize(TreeNode root) {
         if (root == null) {return "";}
 
@@ -48,9 +49,6 @@ public class SerializeAndDeserializeBFS {
 
         Queue<TreeNode> queue = new LinkedList<>();
         String[] nodes = serializedTree.split(",");
-
-        System.out.println(Arrays.toString(nodes));
-
         TreeNode root = new TreeNode(Integer.valueOf(nodes[0]));
         queue.add(root);
 

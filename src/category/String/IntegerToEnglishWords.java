@@ -22,6 +22,7 @@ public class IntegerToEnglishWords {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < radix.length; i++) {
             if (num / radix[i] == 0) continue;
+
             sb.append(trans(num / radix[i])).append(THOUSANDS[i]).append(' ');
             num %= radix[i];
         }

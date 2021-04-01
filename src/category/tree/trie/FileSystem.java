@@ -20,7 +20,7 @@ public class FileSystem {
         new TreeMap<String, Node>().values();
     }
 
-    private class Node { // directory and file both are Node
+    private class Node { // directory and file are Node
         private TreeMap<String, Node> children;
         private StringBuilder fileContent;
         private String name; // directory path or file name

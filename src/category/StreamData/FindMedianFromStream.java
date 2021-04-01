@@ -1,6 +1,8 @@
-package category.PriorityQueue.minMaxHeap;
+package category.StreamData;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.PriorityQueue;
+
 /**
  * https://leetcode.com/problems/find-median-from-data-stream/
  *

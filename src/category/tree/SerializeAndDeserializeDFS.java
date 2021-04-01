@@ -18,11 +18,11 @@ public class SerializeAndDeserializeDFS {
         root.right.right = new TreeNode(5);
 
         SerializeAndDeserializeDFS test = new SerializeAndDeserializeDFS();
-        String str = test.serialize(root);
-        System.out.println(Arrays.toString(str.split(",")));
+        String str = test.serialize(root); System.out.println(Arrays.toString(str.split(",")));
         test.deserialize(str);
     }
-    // Encodes a tree to a single string.
+
+    // Encodes a tree to a single string using pre-order traversal
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
         preOrder(sb, root);
@@ -34,7 +34,7 @@ public class SerializeAndDeserializeDFS {
             sb.append("#,");
             return;
         }
-        sb.append(root.val + ",");
+        sb.append(root.val + ","); // node value separated by ","
         preOrder(sb, root.left);
         preOrder(sb, root.right);
     }
@@ -43,7 +43,7 @@ public class SerializeAndDeserializeDFS {
         return buildTree(new LinkedList<>(Arrays.asList(data.split(","))));
     }
 
-    // DFS to deserialize a tree
+    // DFS to deserialize a tree with queue
     private TreeNode buildTree(Queue<String> queue) {
         String val = queue.poll();
         if ("#".equals(val)) return null;

@@ -1,4 +1,4 @@
-package category.BinarySearch.binarySearch;
+package category.Sort;
 
 /**
  * https://leetcode.com/problems/median-of-two-sorted-arrays/
@@ -9,11 +9,11 @@ package category.BinarySearch.binarySearch;
 public class MedianOfTwoSortedArray {
 
     public static void main(String[] args) {
-        MedianOfTwoSortedArray test = new MedianOfTwoSortedArray();
-        System.out.println(test.findMedianSortedArrays(new int[]{1, 2}, new int[]{3,4}));
+        System.out.println(findMedianSortedArrays(new int[]{1, 2}, new int[]{3,4}));
+        System.out.println(findMedianSortedArrays(new int[]{1, 2}, new int[]{3,4,5}));
     }
 
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         // merge two sorted array
         int[] res = new int[nums1.length + nums2.length];
         int i=0, j=0, k=0;

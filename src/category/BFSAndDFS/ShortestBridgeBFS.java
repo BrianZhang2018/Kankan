@@ -1,13 +1,12 @@
 package category.BFSAndDFS;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/shortest-bridge/
- * 
- * Keys: DFS and BFS
- * Solution: DFS flip 1 to 2 for first island, then do minimum step by BFS
+ *
+ * 1. DFS find one island
+ * 2. BFS find the shortest path
  * 
  * Created by brianzhang on 4/14/19.
  */
@@ -17,69 +16,59 @@ public class ShortestBridgeBFS {
         ShortestBridgeBFS test = new ShortestBridgeBFS();
         System.out.println(test.shortestBridge(new int[][]{{0,1,0},{0,0,0},{0,1,1}}));
     }
+
     public int shortestBridge(int[][] A) {
-
-        if(A == null || A.length == 0)
-            return 0;
-
         int m = A.length, n = A[0].length;
-        boolean found1 = false;
-        Queue<int[]> queue = new LinkedList<>();
+        boolean[][] visited = new boolean[m][n];
+        int[][] dirs = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        Queue<int[]> q = new LinkedList<>();
+        boolean found = false;
 
-        //1. DFS: first, Find a connected island
-        //2. add left '1' nodes's coordinate belong to another island into the queue
-        for(int i=0; i<m; i++){
-            for(int j=0; j<n; j++){
-                if(A[i][j] == 1 && !found1){
-                    dfs(A, i, j);
-                    found1 = true;
-                }
-                if(found1 && A[i][j] == 1){
-                    queue.add(new int[]{i, j});
+        // 1. dfs to find an island, mark it in `visited`
+        for (int i = 0; i < m; i++) {
+            if (found) {
+                break;
+            }
+            for (int j = 0; j < n; j++) {
+                if (A[i][j] == 1) {
+                    dfs(A, visited, q, i, j, dirs);
+                    found = true;
+                    break;
                 }
             }
         }
-
-        int[][] dicts = new int[][]{{1,0}, {0,1}, {-1, 0}, {0, -1}} ;
-        int level = 0;
-        //Find shortest path by BFS
-        while(!queue.isEmpty()){
-            int size = queue.size(); //another island's coordinates
-            for(int i=0; i<size; i++){
-                int[] curr = queue.poll();
-                int r = curr[0];
-                int c = curr[1];
-
-                for(int[] dict : dicts){
-                    int nr = r + dict[0];
-                    int nc = c + dict[1];
-
-                    if(nr<0 || nc<0 || nr >= m || nc >= n || A[nr][nc] == 1)
-                        continue;
-
-                    if(A[nr][nc] == 2){
-                        return level;
-                    }else if(A[nr][nc] == 0){
-                        A[nr][nc] = 1;
-                        queue.add(new int[]{nr, nc});
+        // 2. bfs to expand this island
+        int step = 0;
+        while (!q.isEmpty()) {
+            int size = q.size();
+            while (size-- > 0) {
+                int[] cur = q.poll();
+                for (int[] dir : dirs) {
+                    int i = cur[0] + dir[0];
+                    int j = cur[1] + dir[1];
+                    if (i >= 0 && j >= 0 && i < m && j < n && !visited[i][j]) {
+                        if (A[i][j] == 1) {
+                            return step;
+                        }
+                        q.offer(new int[]{i, j});
+                        visited[i][j] = true;
                     }
                 }
             }
-            level++;
+            step++;
         }
+
         return -1;
     }
 
-    public void dfs(int[][] arr, int row, int column){
-        if(row <0 || column <0||row>=arr.length || column>=arr[0].length || arr[row][column] == 0)
+    private void dfs(int[][] A, boolean[][] visited, Queue<int[]> q, int i, int j, int[][] dirs) {
+        if (i < 0 || j < 0 || i >= A.length || j >= A[0].length || visited[i][j] || A[i][j] == 0) {
             return;
-
-        if(arr[row][column] == 1){
-            arr[row][column] = 2;
-            dfs(arr, row +1, column);
-            dfs(arr, row, column+1);
-            dfs(arr, row-1, column);
-            dfs(arr, row, column-1);
+        }
+        visited[i][j] = true;
+        q.offer(new int[]{i, j});
+        for (int[] dir : dirs) {
+            dfs(A, visited, q, i + dir[0], j + dir[1], dirs);
         }
     }
 }

@@ -2,13 +2,18 @@ package category.BFS.shortestPath;
 
 import java.util.*;
 /**
- * https://www.lintcode.com/problem/the-maze/my-submissions
+ * https://www.lintcode.com/problem/the-maze
  *
- * BFS找最短路径, so easy. 参阅：/Users/brianzhang/workspace/WaWahaha/src/DFS vs BFS
+ * BFS找最短路径(其实是steps), so we can skip the visited node at that level as we need know how much steps reach the target
+ * rather than how many path to the target (dfs + braktracking)
+ *
+ * reference：/Users/brianzhang/workspace/WaWahaha/src/DFS vs BFS
  *
  * Created by brianzhang on 4/9/19.
  */
 public class TheMaze {
+
+    public static void main(String[] args) {}
 
     public boolean hasPath(int[][] maze, int[] start, int[] destination) {
         if(maze == null || maze.length == 0 || start == null || start.length == 0 || destination == null || destination.length ==0){
@@ -32,7 +37,7 @@ public class TheMaze {
             for(int[] dict : dicts){
                 int nr = r + dict[0];
                 int nc = c + dict[1];
-                //walk util block by wall (1)
+                // walk util block by wall(1)
                 while(nr<maze.length && nc<maze[0].length && nr>=0 && nc>=0 && maze[nr][nc] == 0){
                     nr += dict[0];
                     nc += dict[1];

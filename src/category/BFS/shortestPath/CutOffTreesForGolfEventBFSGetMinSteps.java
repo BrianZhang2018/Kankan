@@ -3,6 +3,8 @@ package category.BFS.shortestPath;
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/cut-off-trees-for-golf-event/
+ *
  * Solve the problems: Find the shortest path between each binaryTree
  *
  * The worst case time complexity could be O(m^2 * n^2) (m = number of rows, n = number of columns)
@@ -42,7 +44,7 @@ public class CutOffTreesForGolfEventBFSGetMinSteps {
         int totalSteps = 0;
         while (!pq.isEmpty()) {
             int[] tree = pq.poll();
-            int step = getMinSteps(forest, start, tree);
+            int step = getMinSteps(forest, start, tree); // BFS find the shortest path
             if (step == -1) //don't have the path between two trees
                 return -1;
             else
@@ -54,9 +56,7 @@ public class CutOffTreesForGolfEventBFSGetMinSteps {
         return totalSteps;
     }
 
-    /**
-     * Find the shortest path
-     */
+    // Find the shortest path
     public int getMinSteps(List<List<Integer>> forest, int[] start, int[] tree) {
         int m = forest.size();
         int n = forest.get(0).size();
@@ -80,13 +80,11 @@ public class CutOffTreesForGolfEventBFSGetMinSteps {
                 for (int[] d : dicts) {
                     int nr = curr[0] + d[0];
                     int nc = curr[1] + d[1];
-                    //exclusive condition
+
                     if (nr < 0 || nr >= m || nc < 0 || nc >= n || forest.get(nr).get(nc) == 0 || visited[nr][nc]) {
                         continue;
                     }
-                    //mark this element has been visited in current level, don't need visit again.
-                    visited[nr][nc] = true;
-                    //add the element of next level
+                    visited[nr][nc] = true; // mark this element has been visited in current level, don't need visit again.
                     queue.add(new int[]{nr, nc});
                 }
             }

@@ -5,6 +5,8 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/all-paths-from-source-to-target/
  *
+ * Directed acyclic graph (DAG)
+ *
  * Bloomberg, tinder
  * Created by brianzhang on 6/9/20.
  */
@@ -15,7 +17,7 @@ public class AllPathsFromSourceToTarget {
           System.out.println(Arrays.toString(l.toArray()));
     }
 
-    // DFS solution
+    // Solution-1: DFS solution
     List<List<Integer>> res = new ArrayList();
     public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
         List<Integer> path = new ArrayList(Arrays.asList(0));
@@ -39,7 +41,7 @@ public class AllPathsFromSourceToTarget {
         }
     }
 
-    // BFS solution
+    // Solution-2: BFS solution
     public List<List<Integer>> allPathsSourceTargetBFS(int[][] graph) {
         List<List<Integer>> res = new ArrayList<>();
         ArrayDeque<List<Integer>> dq = new ArrayDeque<>();

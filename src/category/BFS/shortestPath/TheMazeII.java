@@ -6,7 +6,9 @@ import java.util.*;
  * https://leetcode.com/articles/the-maze-ii/
  * https://www.lintcode.com/problem/the-maze-ii/
  *
- * find the shortest path to the target
+ * find the shortest path to the target, so we have to traverse all the path from topleft to bottomright,
+ * we can't use the visited here as one cell can be part of different path, we don't want to skip it.
+ * The right way for find all the path is dfs+backtracking as BFS does not do any backtracking.
  *
  * TC: O(m*n*max(m,n))
  * Complete traversal of maze will be done in the worst case. Here, mm and nn refers to the number of rows and columns
@@ -16,7 +18,6 @@ public class TheMazeII {
 
     public int shortestDistance(int[][] maze, int[] start, int[] destination) {
         int m = maze.length, n = maze[0].length;
-
         int[][] dist = new int[m][n]; // memo the distance
 
         for(int[] row : dist){
@@ -25,11 +26,9 @@ public class TheMazeII {
         dist[start[0]][start[1]] = 0;
         LinkedList<int[]> queue = new LinkedList<>();
         queue.add(start);
-
         int[][] dirs = new int[][]{{0,1}, {1,0}, {-1, 0}, {0,-1}};
 
         while(!queue.isEmpty()){
-
             int[] s = queue.poll();
             for(int[] dir : dirs){
                 int nr = s[0] + dir[0];

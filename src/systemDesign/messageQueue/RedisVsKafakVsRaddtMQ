@@ -1,0 +1,10 @@
+https://otonomo.io/redis-kafka-or-rabbitmq-which-microservices-message-broker-to-choose/
+
+Short-lived Messages: Redis
+Redis’s in-memory database is an almost perfect fit for use-cases with short-lived messages where persistence isn’t required. Because it provides extremely fast service and in-memory capabilities, Redis is the perfect candidate for short retention messages where persistence isn’t so important and you can tolerate some loss. With the release of Redis streams in 5.0, it’s also a candidate for one-to-many use cases, which was definitely needed due to limitations and old pub-sub capabilities.
+
+Large Amounts of Data: Kafka
+Kafka is a high throughput distributed queue that’s built for storing a large amount of data for long periods of time. Kafka is ideal for one to many use cases where persistency is required.
+
+Complex Routing: RabbitMQ
+RabbitMQ is an older, yet mature broker with a lot of features and capabilities that support complex routing. It will even support complex routing communication when the required rate is not high (more than a few tens of thousands msg/sec).

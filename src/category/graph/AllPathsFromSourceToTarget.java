@@ -41,6 +41,7 @@ public class AllPathsFromSourceToTarget {
         }
     }
 
+
     // Solution-2: BFS solution
     public List<List<Integer>> allPathsSourceTargetBFS(int[][] graph) {
         List<List<Integer>> res = new ArrayList<>();

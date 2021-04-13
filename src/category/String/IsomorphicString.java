@@ -1,7 +1,6 @@
 package category.String;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by brianzhang on 2/17/20.
@@ -9,7 +8,7 @@ import java.util.Map;
 public class IsomorphicString {
 
     public static void main(String[] args) {
-        isIsomorphic("egg", "add");
+        System.out.println(isIsomorphic("egg", "add"));
     }
 
     public static boolean isIsomorphic(String s, String t) {

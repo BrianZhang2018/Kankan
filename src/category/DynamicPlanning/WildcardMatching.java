@@ -16,7 +16,7 @@ package category.DynamicPlanning;
              dp[i][j] = dp[i-1][j-1];
         }else if (p[j]== '*' ){
              dp[i][j] = dp[i-1][j] || dp[i][j-1];
-        }else{ // case 3: two characters are not equeal
+        }else{ // case 3: two characters are not equal
              dp[i][j] = false;
          }
  *
@@ -26,9 +26,11 @@ package category.DynamicPlanning;
  */
 
 public class WildcardMatching {
-    public boolean isMatch(String s, String p) {
-        if(p == null)
-            return true;
+    public static void main(String[] args) {
+
+    }
+    public static boolean isMatch(String s, String p) {
+        if(p == null) return true;
 
         boolean[][] dp = new boolean[s.length()+1][p.length()+1];
         dp[0][0] = true;
@@ -36,7 +38,7 @@ public class WildcardMatching {
         //initiate the first row
         for(int j=1; j<=p.length(); j++){
             if(p.charAt(j-1) == '*')
-                dp[0][j] = dp[0][j - 1];
+                dp[0][j] = dp[0][j-1];
         }
 
         for(int i=1; i<=s.length(); i++){

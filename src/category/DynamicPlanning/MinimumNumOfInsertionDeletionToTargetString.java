@@ -9,9 +9,7 @@ public class MinimumNumOfInsertionDeletionToTargetString {
 
     public static void main(String[] args)
     {
-        String str1 = new String("heap");
-        String str2 = new String("pea");
-        printMinDelAndInsert(str1, str2);
+        printMinDelAndInsert(new String("heap"), new String("pea"));
     }
 
     static int lcs(String str1, String str2, int m, int n)

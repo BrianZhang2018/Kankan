@@ -8,7 +8,7 @@ import java.util.Stack;
  *
  * Created by brianzhang on 8/30/20.
  */
-public class InOrderIterativeTraversal {
+public class InorderIterativeTraversal {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(6);
         root.left = new TreeNode(4);

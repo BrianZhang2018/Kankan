@@ -14,10 +14,7 @@ import java.util.*;
 public class ReconstructItinerary {
 
     public static void main(String[] args) {
-        List<String> l1 = Arrays.asList("JFK","KUL");
-        List<String> l2 = Arrays.asList("JFK","NRT");
-        List<String> l3 = Arrays.asList("NRT","JFK");
-
+        List<String> l1 = Arrays.asList("JFK","KUL"), l2 = Arrays.asList("JFK","NRT"), l3 = Arrays.asList("NRT","JFK");
         System.out.println(new ReconstructItinerary().findItinerary(Arrays.asList(l1,l2,l3)));
     }
 

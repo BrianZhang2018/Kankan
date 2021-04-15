@@ -33,7 +33,7 @@ public class AllPathsFromSourceToTarget {
         }
 
         for(Integer i: graph[currNode]){
-            if(path.contains(i)) continue;
+            // if(path.contains(i)) continue; // acyclic graph, so no cycle, don't check the duplicated visited node.
 
             path.add(i);
             dfs(graph, i, path, targetNode);

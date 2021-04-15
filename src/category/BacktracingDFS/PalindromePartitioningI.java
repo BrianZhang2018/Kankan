@@ -1,8 +1,6 @@
 package category.BacktracingDFS;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/palindrome-partitioning/
@@ -26,10 +24,11 @@ public class PalindromePartitioningI {
     }
 
     public void dfs(String s, int pos, List<String> temp, List<List<String>> res){
-        if(pos == s.length())
+        if(pos == s.length()) {
             res.add(new ArrayList<>(temp));
+        }
         else{
-            for(int i=pos;i<s.length();i++){
+            for(int i=pos; i<s.length(); i++){
                 if(isPalindrome(s, pos, i)){
                     temp.add(s.substring(pos, i+1));
                     dfs(s,i+1, temp, res);
@@ -40,8 +39,10 @@ public class PalindromePartitioningI {
     }
 
     public boolean isPalindrome(String s, int low, int high){
-        while(low<high)
+        while(low<high){
             if(s.charAt(low++)!=s.charAt(high--)) return false;
+        }
+
         return true;
     }
 }

@@ -26,9 +26,8 @@ public class ShortestBridgeBFS {
 
         // 1. dfs to find an island, mark it in `visited`
         for (int i = 0; i < m; i++) {
-            if (found) {
-                break;
-            }
+            if (found) break;
+
             for (int j = 0; j < n; j++) {
                 if (A[i][j] == 1) {
                     dfs(A, visited, q, i, j, dirs);

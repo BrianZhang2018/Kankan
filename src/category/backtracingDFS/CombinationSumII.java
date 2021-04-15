@@ -1,9 +1,6 @@
 package category.BacktracingDFS;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
+import java.util.*;
 /**
  * https://leetcode.com/problems/combination-sum-ii/
  * Each number in candidates may only be used once in the combination.
@@ -28,18 +25,19 @@ public class CombinationSumII {
 
     // backtracking
     private void dfs(int[] nums, int target, int start, List<Integer> temp, List<List<Integer>> res) {
-        if (target < 0)
-            return;
-        else if (target == 0) {
+        if (target < 0) return;
+
+        if (target == 0) {
             res.add(new ArrayList<>(temp));
-        } else {
-            for (int i = start; i < nums.length; i++) {
-                if(i>start && nums[i] == nums[i-1]) // common way to avoid duplicate combination
-                    continue;
-                temp.add(nums[i]);
-                dfs(nums, target - nums[i], i+1, temp, res);
-                temp.remove(temp.size() - 1);
-            }
+            return;
+        }
+
+        for (int i = start; i < nums.length; i++) {
+            if(i>start && nums[i] == nums[i-1]) // common way to avoid duplicate combination
+                continue;
+            temp.add(nums[i]);
+            dfs(nums, target - nums[i], i+1, temp, res);
+            temp.remove(temp.size() - 1);
         }
     }
 }

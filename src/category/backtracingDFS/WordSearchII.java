@@ -1,7 +1,6 @@
 package category.BacktracingDFS;
 
-import java.util.List;
-import java.util.LinkedList;
+import java.util.*;
 /**
  * https://leetcode.com/problems/word-search-ii/
  *

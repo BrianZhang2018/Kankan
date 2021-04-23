@@ -4,14 +4,14 @@ package category.tree.trie;
  * A trie, also called digital binaryTree, radix binaryTree or prefix binaryTree is a kind of search binaryTree
  * https://leetcode.com/problems/implement-trie-prefix-tree/
  *
- * oracle
+ * Oracle
  * Created by brianzhang on 11/4/18.
  */
 public class TrieImpl {
     public static void main(String args[]) {
         String keys[] = {"the", "a", "there", "answer", "any", "by", "bye", "their"};
         // Construct trie
-        TrieN root = new TrieN();
+        Trie root = new Trie();
         for (int i = 0; i < keys.length; i++) root.insert(keys[i]);
 
         System.out.println(root.search("the"));
@@ -20,25 +20,25 @@ public class TrieImpl {
     }
 }
 
-class TrieN {
+class Trie {
     boolean isEnd;
-    TrieN[] next;
+    Trie[] children;
 
     /** Initialize your data structure here. */
-    public TrieN() {
+    public Trie() {
         isEnd = false;
-        next = new TrieN[26];
+        children = new Trie[26];
     }
 
     /** Inserts a word into the trie. */
     public void insert(String word) {
-        TrieN node = this;
+        Trie node = this;
         char [] c = word.toCharArray();
         for (int i = 0; i < c.length; i++) {
-            if (node.next[c[i] - 'a'] == null) {
-                node.next[c[i] - 'a'] = new TrieN();
+            if (node.children[c[i] - 'a'] == null) {
+                node.children[c[i] - 'a'] = new Trie();
             }
-            node = node.next[c[i] - 'a'];
+            node = node.children[c[i] - 'a'];
         }
         node.isEnd = true;
         return;
@@ -46,13 +46,13 @@ class TrieN {
 
     /** Returns if the word is in the trie. */
     public boolean search(String word) {
-        TrieN a = this;
+        Trie a = this;
         char [] ca = word.toCharArray();
         for (int i = 0; i < ca.length; i++) {
-            if (a.next[ca[i] - 'a'] == null) {
+            if (a.children[ca[i] - 'a'] == null) {
                 return false;
             } else {
-                a = a.next[ca[i] - 'a'];
+                a = a.children[ca[i] - 'a'];
             }
         }
         return a.isEnd;
@@ -60,13 +60,13 @@ class TrieN {
 
     /** Returns if there is any word in the trie that starts with the given prefix. */
     public boolean startsWith(String prefix) {
-        TrieN node = this;
+        Trie node = this;
         char [] c = prefix.toCharArray();
         for (int i = 0; i < c.length; i++) {
-            if (node.next[c[i] - 'a'] == null) {
+            if (node.children[c[i] - 'a'] == null) {
                 return false;
             } else {
-                node = node.next[c[i] - 'a'];
+                node = node.children[c[i] - 'a'];
             }
         }
         return true;

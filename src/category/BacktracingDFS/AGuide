@@ -1,4 +1,13 @@
-backtracking的几大法宝：
+dfs backtracking:
+
+1. firstly, determine the valid directions, e.g. some question can be four directions, some just move right and down (two directions), this question is three directions
+
+2. recursive dfs+backtracking
+
+3. use the visited to avoid the duplicate visit
+
+
+backtracking features：
 
 1. visited[] to record the visited place
 2. memo[] 相当于DP，减少重复计算
@@ -6,3 +15,5 @@ backtracking的几大法宝：
 e.g.  temp.add(nums[i]);
       ...
       temp.remove(temp.size() - 1);
+
+

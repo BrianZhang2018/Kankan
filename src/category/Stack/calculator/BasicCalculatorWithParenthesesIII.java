@@ -31,7 +31,7 @@ public class BasicCalculatorWithParenthesesIII {
                 num = num * 10 + c - '0';
             } else if (c == '(') {
                 int start = i, cnt = 0;
-                // find start and end index of outer parenthesis "(.(...).)"
+                // find end index of rightmost outer parenthesis "(.(...).)"
                 for (; i < m; i++) {
                     if (s.charAt(i) == '(') cnt++;
                     if (s.charAt(i) == ')') cnt--;
@@ -41,7 +41,7 @@ public class BasicCalculatorWithParenthesesIII {
                 num = calculate(s.substring(start + 1, i)); // take the string inside of ( ... )
             }
 
-            // 解题思路：template way to calculate the number before the current sign
+            // 解题思路：the template of calculate the number before the current sign
             if (i == m - 1 || signs.indexOf(c)!=-1) {
                 if (prevSign == '+') {
                     stack.push(num);

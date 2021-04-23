@@ -38,7 +38,7 @@ downward path between root and a leaf.
             inDegree[e[0]]++; // e[1]->e[0], so inDegree[e[0]]++
         }
 
-2. Collect the element which inDegree is "0" which means they don't have precede element, so they are current prerequisite course.
+2. Collect the elements which inDegree is "0" which means element don't have precede element, so they are current prerequisite course.
 
        //find the start node -> inDegree = 0, 没有前驱节点
         for (int i = 0; i < n; ++i)

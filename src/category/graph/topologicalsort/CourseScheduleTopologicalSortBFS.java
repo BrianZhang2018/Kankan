@@ -3,7 +3,7 @@ package category.graph.topologicalsort;
 import java.util.*;
 
 /**
- * Topological Sorting BFS
+ * Topological sort of a directed graph
  * https://en.wikipedia.org/wiki/Topological_sorting#:~:text=In%20computer%20science%2C%20a%20topological,before%20v%20in%20the%20ordering.
  *
  * https://leetcode.com/problems/course-schedule/
@@ -12,6 +12,7 @@ import java.util.*;
  * 2. find cycle - follow up question
  *
  * Time Complexity: O(V+E) 稀疏图->O(V), 稠密图->O(V2), V is vertex, E is edge
+ *
  * Created by brianzhang on 4/18/19.
  */
 public class CourseScheduleTopologicalSortBFS {
@@ -28,7 +29,7 @@ public class CourseScheduleTopologicalSortBFS {
         int[] inDegree = new int[n];    //入度
         List<Integer> preCourses = new ArrayList(); // you can also use a queue here
 
-        for (int i = 0; i < n; ++i) graph[i] = new ArrayList<>();  //initiate the graph
+        for (int i = 0; i < n; ++i) graph[i] = new ArrayList<>();  // initiate the graph
 
         for (int[] e : prerequisites) {
             graph[e[1]].add(e[0]);  // e[1] is the prerequisite course of e[0], 收集所有依赖e[1]作为前驱的课程
@@ -53,15 +54,13 @@ public class CourseScheduleTopologicalSortBFS {
 
 // Course-Schedule-II - print the order of courses
     public static int[] findOrder(int n, int[][] prerequisites) {
-        List<Integer>[] dag = new ArrayList[n];
+        Map<Integer, List<Integer>> graph = new HashMap<>(); // use a map rather than list array
         int[] inDegree = new int[n];
         List<Integer> bfs = new ArrayList<>();
 
-        for (int i = 0; i < n; ++i)
-            dag[i] = new ArrayList<>();
-
         for (int[] e : prerequisites) {
-            dag[e[1]].add(e[0]);
+            graph.putIfAbsent(e[1], new ArrayList<>());
+            graph.get(e[1]).add(e[0]); // e.g. 0 ---> 1
             inDegree[e[0]]++;
         }
         for (int i = 0; i < n; ++i) {
@@ -71,9 +70,12 @@ public class CourseScheduleTopologicalSortBFS {
         }
 
         for (int i = 0; i < bfs.size(); ++i) {
-            for (int j : dag[bfs.get(i)]) {
-                if (--inDegree[j] == 0) {
-                    bfs.add(j);
+            List<Integer> adjacentNodes = graph.get(bfs.get(i));
+            if(adjacentNodes != null) {
+                for (int j : adjacentNodes) {
+                    if (--inDegree[j] == 0) {
+                        bfs.add(j);
+                    }
                 }
             }
         }

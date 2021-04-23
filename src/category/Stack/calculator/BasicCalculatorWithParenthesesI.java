@@ -15,13 +15,12 @@ public class BasicCalculatorWithParenthesesI {
         System.out.println(calculate("2-(5-6)"));
     }
 
-    // iterative
     public static int calculate(String s) {
         if(s == null) return 0;
 
         int result = 0;
         int num = 0;
-        int prevSign = 1; // means '+'
+        int prevSign = 1; // means sign '+'
 
         Stack<Integer> signStack = new Stack<>(); // 解题思路: signStack
         signStack.push(prevSign);

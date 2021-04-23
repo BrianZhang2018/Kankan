@@ -1,7 +1,6 @@
 package category.BacktracingDFS.permutation.one;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Time complexity: O(n!*n)

@@ -3,7 +3,7 @@ package category.Slidingwindow.templateSolution.template2;
 import java.util.*;
 
 /**
- * Leetcode 438. find All Anagrams in a String
+ * https://leetcode.com/problems/find-all-anagrams-in-a-string/
  *
  * clarification: Find the anagram substring of target string
  *
@@ -11,14 +11,14 @@ import java.util.*;
  */
 public class FindAllAnagramsInAString {
     public static void main(String[] args) {
-        System.out.println(findAnagrams("cbaebacd", "abc"));
+        System.out.println(findAnagrams("cbaebacdaaa", "abc"));
     }
 
     public static List<Integer> findAnagrams(String s, String p) {
         List<Integer> list = new ArrayList<>();
         if (s == null || s.length() == 0 || p == null || p.length() == 0) return list;
 
-        //the character frequency of target string
+        // the character frequency of target string
         int[] freq = new int[26];
         for (char c : p.toCharArray()) {
             freq[c-'a']++;
@@ -32,7 +32,7 @@ public class FindAllAnagramsInAString {
             if (freq[rc - 'a'] >= 1) {
                 count--;
             }
-            freq[rc-'a']--;
+            freq[rc - 'a']--;
 
             // when the count is down to 0 which means found the anagram, so add window's left to result
             if (count == 0) list.add(left);
@@ -44,7 +44,7 @@ public class FindAllAnagramsInAString {
                 if (freq[lc - 'a'] >= 0) {  // means character in the target string. if less than 0, like -1, means not in target string, don't need increase count.
                     count++;
                 }
-                //reset left (-1 to 0: if left character not in target), (0 to 1) if left character in the target
+                // reset left (-1 to 0: if left character not in target), (0 to 1) if left character in the target
                 freq[lc - 'a']++;
             }
         }

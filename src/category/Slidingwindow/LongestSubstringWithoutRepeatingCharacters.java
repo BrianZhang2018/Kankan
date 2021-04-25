@@ -6,11 +6,10 @@ import java.util.HashSet;
  */
 public class LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
-        LongestSubstringWithoutRepeatingCharacters test = new LongestSubstringWithoutRepeatingCharacters();
-        System.out.println(test.lengthOfLongestRepeatingSubstring("abcabcbb"));
+        System.out.println(lengthOfLongestRepeatingSubstring("abcabcbb"));
     }
 
-    public int lengthOfLongestRepeatingSubstring(String s) {
+    public static int lengthOfLongestRepeatingSubstring(String s) {
         if(s == null || s.length() == 0) return 0;
 
         int left=0, right=0, maxLen = Integer.MIN_VALUE, n = s.length();

@@ -1,9 +1,6 @@
 package OOD;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 /**
  * https://leetcode.com/articles/design-in-memory-file-system/
@@ -27,6 +24,7 @@ public class FileSystem {
     public FileSystem() {
         root = new Dir();
     }
+
     public List <String> ls(String path) {
         Dir t = root;
         List <String> files = new ArrayList < > ();

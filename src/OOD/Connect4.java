@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * coding1: connect 4那个游戏，实现两个部分. 第一部分是改成只输入列. 第二部分是加一个机器人对战
- * <p>
+ *
  * https://cs.nyu.edu/courses/fall16/CSCI-UA.0101-009/notes/Lecture12.pdf
  * Created by brianzhang on 8/23/20.
  */

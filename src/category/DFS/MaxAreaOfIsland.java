@@ -34,7 +34,7 @@ public class MaxAreaOfIsland {
         if (i >= grid.length || j >= grid[0].length || j < 0 || i < 0 || grid[i][j] == 0)
             return 0;
 
-        grid[i][j] = 0; // flip the number to mark as visited
+        grid[i][j] = 0; // mark as visited by flipping the number
         return 1 + dfs(grid, i + 1, j) + dfs(grid, i, j + 1) + dfs(grid, i - 1, j) + dfs(grid, i, j - 1);
     }
 

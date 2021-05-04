@@ -10,26 +10,27 @@ package category.BinarySearch.binarySearch;
  */
 public class SearchInRotatedSortedArray {
     public static void main(String[] args) {
-        System.out.println(search(new int[]{4, 5, 6, 7, 0, 1, 2}, 7));
+        System.out.println(search(new int[]{4, 5, 6, 7, 8, 9, 0, 1, 2}, 7));
     }
 
     public static int search(int[] nums, int target) {
-        int start = 0, end = nums.length - 1;
+        int left = 0, right = nums.length - 1;
 
-        while(start <= end){
-            int mid = start + (end - start)/2;
+        while(left <= right){
+            int mid = left + (right - left)/2;
             if(nums[mid] == target) return mid;
 
-            if(nums[start] <= nums[mid]) { // 思路：means left part is sorted in rotated array
-                if(target >= nums[start] && target < nums[mid]) // target is in sorted part
-                    end = mid - 1;
+            // find the sub sorted array, then check whether has the target in sorted array.
+            if(nums[left] <= nums[mid]) { // 思路：means left part is sorted in rotated array
+                if(target >= nums[left] && target < nums[mid]) // target is in sorted part
+                    right = mid - 1;
                 else
-                    start = mid + 1;
+                    left = mid + 1;
             }else {  // right part is sorted
-                if(target > nums[mid] && target <= nums[end]) // target is in sorted part
-                    start = mid + 1;
+                if(target > nums[mid] && target <= nums[right]) // target is in sorted part
+                    left = mid + 1;
                 else
-                    end = mid - 1;
+                    right = mid - 1;
             }
         }
 

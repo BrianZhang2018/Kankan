@@ -14,8 +14,7 @@ public class FindKthLargestElementSelectionAlgorithm {
         System.out.println(new FindKthLargestElementSelectionAlgorithm().findKthLargest(new int[]{3,2,1,5,6,4}, 2));
     }
 
-    // Solution-1:
-    // time complexity: N*logK, O(K) memory
+    // Solution-1: time complexity: N*logK, O(K) memory
     public int findKthLargestPriorityQueue(int[] nums, int k) {
         PriorityQueue<Integer> pq = new PriorityQueue();
 

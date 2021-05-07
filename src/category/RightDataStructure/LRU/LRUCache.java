@@ -56,7 +56,7 @@ public class LRUCache<T> {
 
         DllNode node = map.get(key);
         removeNode(node);
-        addToTop(node);  // move to top as just used
+        addToTop(node);  // move to top since it just used
         return (T)node.value;
     }
 

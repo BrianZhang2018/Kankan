@@ -1,10 +1,17 @@
 package category.RightDataStructure.MyhashMap;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * https://leetcode.com/problems/design-hashmap/discuss/225312/hashmaparraylinkedlistcollision
+ *
  * Created by brianzhang on 1/9/21.
  */
 public class MyHashMap {
+
+    public static void main(String[] args) {
+    }
     // single linked list
     class Node {
         final int key;
@@ -42,6 +49,7 @@ public class MyHashMap {
         Node node = array[index];
         while (node != null) {
             if (node.key == key) return node.value;
+
             node = node.next;
         }
         return -1;
@@ -57,7 +65,6 @@ public class MyHashMap {
             }
             node = node.next;
         }
-
     }
 
     private int hash(int key) {

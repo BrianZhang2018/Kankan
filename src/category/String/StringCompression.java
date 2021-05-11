@@ -15,12 +15,12 @@ public class StringCompression {
     // Compress: e.g. aaabb -> a3b2, abb -> ab2
     public static String compress(String s) {
 
-        char[] charArr = s.toCharArray();
         StringBuilder sb = new StringBuilder();
-        int index = 0, count = 0;
-        while (index < charArr.length) {
-            char c = charArr[index];
-            while (index < charArr.length && c == charArr[index]) {
+        char[] ca = s.toCharArray();
+        int index=0, count=0;
+        while (index < ca.length) {
+            char c = ca[index];
+            while (index < ca.length && c == ca[index]) {
                 index++;
                 count++;
             }

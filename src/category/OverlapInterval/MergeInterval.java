@@ -21,19 +21,20 @@ public class MergeInterval {
 
         Collections.sort(intervals, (i1, i2) -> i1.start - i2.start);
 
-        for (int i = 1; i < intervals.size(); i++) {
-
-            if (intervals.get(i - 1).end >= intervals.get(i).start) {  // template step: find overlap and merge
+        for (int i=1; i < intervals.size(); i++) {
+            // template step: find overlap and merge
+            if (intervals.get(i-1).end >= intervals.get(i).start) {
                 intervals.get(i).end = Math.max(intervals.get(i - 1).end, intervals.get(i).end);
                 intervals.get(i).start = intervals.get(i - 1).start;
             } else {
-                res.add(intervals.get(i - 1)); // add to result when non-overlap
+                res.add(intervals.get(i-1)); // add to result when non-overlap
             }
         }
 
-        res.add(intervals.get(intervals.size() - 1));
+        res.add(intervals.get(intervals.size()-1));
         return res;
     }
+
 
     // Solution-2: foreach loop for fun
     public static List<Interval> merge2(List<Interval> intervals) {

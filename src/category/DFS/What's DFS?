@@ -3,4 +3,4 @@ The algorithm starts at the root node (selecting some arbitrary node as the root
 and explores as far as possible along each branch before backtracking.
 
 
-Depth-First search is a specific form of "backtracking". DFS 就是backtracking。
+Depth-First search is a specific form of "backtracking". DFS就是backtracking。

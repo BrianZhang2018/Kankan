@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * 1. Sort by start-time
- * 2. Check overlap: compare the previous minimum end-time with current start-time, and update the minimum end-time when need
+ * 2. Check overlap - compare the previous minimum end-time with current start-time, and update the minimum end-time when need
  * 3. Got all the overlaps
  *
  * https://www.lintcode.com/problem/meeting-rooms-ii

@@ -1,7 +1,6 @@
 package category.String;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.*;
 
 /**
  * Created by brianzhang on 3/11/21.
@@ -9,8 +8,33 @@ import java.util.Deque;
 public class StringDecode {
 
     public static void main(String[] args) {
-        System.out.println(decodeString("a1b2c3")); // abbccc
-        System.out.println(decodeString2("3[a2[bc]]"));
+        System.out.println(helper("a1b2c3")); // abbccc
+        //System.out.println(decodeString2("3[a2[bc]]"));
+    }
+
+    public static String helper(String str) {
+
+        StringBuilder sb = new StringBuilder();
+        int num = 0;
+
+        for(char c : str.toCharArray()){
+            if(Character.isLetter(c)){
+                if(num >=1){
+                    char cc = sb.charAt(sb.length()-1);
+                    while(num-- > 1) sb.append(cc);
+                }
+                sb.append(c);
+            }else{
+                num = num * 10 + c - '0';
+            }
+        }
+
+        if(num > 0){
+            char c = sb.charAt(sb.length()-1);
+            while(num-->1) sb.append(c);
+        }
+
+        return sb.toString();
     }
 
     // Decode: Aa1b2c2x -> Aabbccx
@@ -21,9 +45,8 @@ public class StringDecode {
         for (char ch : str.toCharArray()) {
             if (Character.isLetter(ch)) {
                 if (k >= 1) {
-                    Character c = sb.charAt(sb.length() - 1);
-                    while(k-- >1)           // reset k to `0`. if k=1, won't append the character into string.
-                        sb.append(c);
+                    char c = sb.charAt(sb.length() - 1);
+                    while(k-- >1) sb.append(c);   // will reset k to `0`. if k=1, won't append the character into string.
                 }
                 sb.append(ch);
             } else {
@@ -47,8 +70,9 @@ public class StringDecode {
     }
 
     public static String dfs(Deque<Character> dq){
-        int num = 0;
         StringBuilder sb = new StringBuilder();
+        int num = 0;
+
         while(!dq.isEmpty()){
             char c = dq.poll();
             if(Character.isDigit(c)){

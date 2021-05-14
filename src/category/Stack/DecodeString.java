@@ -17,9 +17,8 @@ public class DecodeString{
     // Solution-1 : DFS
     public String decodeStringDFS(String s) {
         // use a queue to manage the character which will remove the element in recursive
-        Deque<Character> dq = new ArrayDeque<>(); // 全局变量
+        Deque<Character> dq = new ArrayDeque<>();
         for(Character c : s.toCharArray()) dq.add(c);
-
         return dfsHelper(dq);
     }
 

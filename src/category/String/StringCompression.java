@@ -8,7 +8,7 @@ package category.String;
 public class StringCompression {
 
     public static void main(String[] args) {
-        System.out.println(compress("aaabbc")); // a3b2c
+        //System.out.println(compress("aaabbc")); // a3b2c
         // System.out.println(test.compress(new char[]{'a','a','b','b','c','c','c'}));
     }
 

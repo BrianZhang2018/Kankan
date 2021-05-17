@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * https://www.1point3acres.com/bbs/thread-738713-1-1.html
  *
- * dfs + backtracking
+ * dfsHelper + backtracking
  * Created by brianzhang on 4/4/21.
  */
 public class MinimumElevationGain {
@@ -32,7 +32,7 @@ public class MinimumElevationGain {
         return min;
     }
 
-    // dfs + backtracking
+    // dfsHelper + backtracking
     public void dfs(int[][] matrix, int i, int j, int preElevation, int elevationGain, List<String> path) {
         if(matrix[i][j] > preElevation && path.size() != 1) { // path.size()==1 means 初始状态，skip
             elevationGain += matrix[i][j] - preElevation;

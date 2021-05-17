@@ -58,7 +58,7 @@ public class MinimumInsertionStepsToMakeAPalindrome {
         return dp[n1][n2];
     }
 
-    // Solution-3: Top-Down, dfs+ memoization (第一种DP方法用top-down实现, DP两种方法的相互转化实现)
+    // Solution-3: Top-Down, dfsHelper+ memoization (第一种DP方法用top-down实现, DP两种方法的相互转化实现)
     // time complexity: O(N) as the memoization
     public static int minInsertionsDFSTopDown(String s) {
         int sl = s.length();

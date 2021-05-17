@@ -10,19 +10,18 @@ import java.lang.*;
  */
 public class DecodeString{
     public static void main(String[] args){
-        DecodeString test = new DecodeString();
-        System.out.println(test.decodeStringBFS("3[a2[c]]"));
+        System.out.println(decodeStringBFS("3[a2[c]]"));
     }
 
     // Solution-1 : DFS
-    public String decodeStringDFS(String s) {
+    public static String decodeStringDFS(String s) {
         // use a queue to manage the character which will remove the element in recursive
         Deque<Character> dq = new ArrayDeque<>();
         for(Character c : s.toCharArray()) dq.add(c);
         return dfsHelper(dq);
     }
 
-    public String dfsHelper(Deque<Character> dq) {
+    public static String dfsHelper(Deque<Character> dq) {
         StringBuilder sb = new StringBuilder();
         int num = 0;
         while(!dq.isEmpty()){
@@ -46,7 +45,7 @@ public class DecodeString{
     }
 
     // Solution-2: two stacks - BFS
-    public String decodeStringBFS(String s) {
+    public static String decodeStringBFS(String s) {
         Stack<Integer> numStack = new Stack<>();
         Stack<StringBuilder> strStack = new Stack<>();
         StringBuilder sb = new StringBuilder();

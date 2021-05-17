@@ -35,7 +35,7 @@ public class NumberOfProvinces {
         for(int i=0; i<M.length; i++){
             if(visited[i]) continue;
 
-            if(!visited[i]){ // dfs traverse the direct friends of "i" person
+            if(!visited[i]){ // dfsHelper traverse the direct friends of "i" person
                 visited[i] = true;
                 dfs(M, i, visited);
                 cnt++; // always count++ here as himself also is a group even though no other friends
@@ -51,7 +51,7 @@ public class NumberOfProvinces {
 
             if(M[i][j] == 1 && !visited[j]){
                 visited[j] = true;
-                dfs(M, j, visited); //  dfs traverse the direct friends of "j" person which is the indirect friend of "i"
+                dfs(M, j, visited); //  dfsHelper traverse the direct friends of "j" person which is the indirect friend of "i"
             }
         }
     }

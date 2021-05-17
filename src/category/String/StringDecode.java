@@ -8,33 +8,8 @@ import java.util.*;
 public class StringDecode {
 
     public static void main(String[] args) {
-        System.out.println(helper("a1b2c3")); // abbccc
-        //System.out.println(decodeString2("3[a2[bc]]"));
-    }
-
-    public static String helper(String str) {
-
-        StringBuilder sb = new StringBuilder();
-        int num = 0;
-
-        for(char c : str.toCharArray()){
-            if(Character.isLetter(c)){
-                if(num >=1){
-                    char cc = sb.charAt(sb.length()-1);
-                    while(num-- > 1) sb.append(cc);
-                }
-                sb.append(c);
-            }else{
-                num = num * 10 + c - '0';
-            }
-        }
-
-        if(num > 0){
-            char c = sb.charAt(sb.length()-1);
-            while(num-->1) sb.append(c);
-        }
-
-        return sb.toString();
+        System.out.println(decodeString("a1b2c3")); // abbccc
+        System.out.println(decodeString2("2[a2[bc]]")); // abcbcabcbc
     }
 
     // Decode: Aa1b2c2x -> Aabbccx
@@ -66,10 +41,10 @@ public class StringDecode {
     public static String decodeString2(String s) {
         Deque<Character> queue = new ArrayDeque();
         for(char c : s.toCharArray()) queue.add(c);
-        return dfs(queue);
+        return dfsHelper(queue);
     }
 
-    public static String dfs(Deque<Character> dq){
+    public static String dfsHelper(Deque<Character> dq){
         StringBuilder sb = new StringBuilder();
         int num = 0;
 
@@ -78,7 +53,7 @@ public class StringDecode {
             if(Character.isDigit(c)){
                 num = num*10 + c - '0';
             }else if (c == '[') {
-                String sub = dfs(dq);
+                String sub = dfsHelper(dq); // recursive
                 for(int j=0; j<num; j++){
                     sb.append(sub);
                 }

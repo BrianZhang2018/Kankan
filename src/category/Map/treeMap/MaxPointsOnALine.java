@@ -17,7 +17,8 @@ import java.util.*;
  */
 public class MaxPointsOnALine {
 
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+    }
 
     public int maxPoints(int[][] points) {
         int m = points.length;

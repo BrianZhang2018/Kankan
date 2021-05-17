@@ -9,7 +9,7 @@ import java.util.List;
  *
  * Print all paths from top left to bottom right in a matrix with four directions move allowed
  *
- * (find the all the solution in matrix - dfs + backtracking)
+ * (find the all the solution in matrix - dfsHelper + backtracking)
  *
  * Created by brianzhang on 2/17/21.
  */
@@ -24,7 +24,7 @@ public class PrintAllPathFromTopLeftToBottomRight {
     private List<List<Integer>> allPath = new ArrayList<>();
     int[][] directions = new int[][]{{1,0}, {-1,0}, {0,1}, {0,-1}};
 
-    // Solution-1: dfs + backtracking
+    // Solution-1: dfsHelper + backtracking
     public int solution(int[][] matrix) {
         List<Integer> path = new ArrayList<>();
         path.add(matrix[0][0]);

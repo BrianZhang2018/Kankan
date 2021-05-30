@@ -1,15 +1,14 @@
-package category.tree;
+package category.tree.serializeDeserialize;
 
 import category.model.TreeNode;
 import java.util.*;
 /**
  * BFS solution
  *
- * tc: O(N)
- * sc: O(N)
+ * tc: O(N), sc: O(N)
  * Created by brianzhang on 7/21/18.
  */
-public class SerializeAndDeserializeBFS {
+public class BinaryTreeBFS {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(6);
         root.left = new TreeNode(4);
@@ -17,13 +16,17 @@ public class SerializeAndDeserializeBFS {
         root.left.right = new TreeNode(9);
         root.right.left = new TreeNode(1);
 
-        SerializeAndDeserializeBFS test = new SerializeAndDeserializeBFS();
-        String str = test.serialize(root); System.out.println(str);
-        test.deserialize(str);
+        String str = serialize(root);
+        System.out.println(serialize(root));
+        deserialize(str);
+
+        List<Integer> l = new ArrayList<>();
+        Queue<Integer> q = new LinkedList<>(l);
+
     }
 
     // level traversal
-    public String serialize(TreeNode root) {
+    public static String serialize(TreeNode root) {
         if (root == null) {return "";}
 
         StringBuilder sb = new StringBuilder();
@@ -44,7 +47,7 @@ public class SerializeAndDeserializeBFS {
         return sb.toString();
     }
 
-    public TreeNode deserialize(String serializedTree) {
+    public static TreeNode deserialize(String serializedTree) {
         if (serializedTree == null || serializedTree == "") return null;
 
         Queue<TreeNode> queue = new LinkedList<>();

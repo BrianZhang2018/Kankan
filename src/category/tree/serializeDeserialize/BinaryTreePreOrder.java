@@ -1,15 +1,14 @@
-package category.tree;
+package category.tree.serializeDeserialize;
 
 import category.model.TreeNode;
 import java.util.*;
 /**
  * https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
  *
- * tc: O(N)
- * sc: O(N)
+ * tc: O(N), sc: O(N)
  * PreOrder -> serialize
  */
-public class SerializeAndDeserializeDFS {
+public class BinaryTreePreOrder {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
@@ -17,7 +16,7 @@ public class SerializeAndDeserializeDFS {
         root.right.left = new TreeNode(4);
         root.right.right = new TreeNode(5);
 
-        SerializeAndDeserializeDFS test = new SerializeAndDeserializeDFS();
+        BinaryTreePreOrder test = new BinaryTreePreOrder();
         String str = test.serialize(root); System.out.println(Arrays.toString(str.split(",")));
         test.deserialize(str);
     }
@@ -39,11 +38,11 @@ public class SerializeAndDeserializeDFS {
         preOrder(sb, root.right);
     }
 
+    // DFS to deserialize a tree with queue
     public TreeNode deserialize(String data) {
         return buildTree(new LinkedList<>(Arrays.asList(data.split(","))));
     }
 
-    // DFS to deserialize a tree with queue
     private TreeNode buildTree(Queue<String> queue) {
         String val = queue.poll();
         if ("#".equals(val)) return null;

@@ -46,8 +46,7 @@ class SearchAutoCompleteSystem {
         }
     }
 
-    TrieNode root;
-    TrieNode curr;
+    TrieNode root, curr;
     StringBuilder sb;
     public SearchAutoCompleteSystem(String[] sentences, int[] times) {
         root = new TrieNode();

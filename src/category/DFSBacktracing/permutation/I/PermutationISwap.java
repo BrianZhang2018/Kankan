@@ -1,7 +1,6 @@
-package category.DFSBacktracing.permutation.one;
+package category.DFSBacktracing.permutation.I;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://www.youtube.com/watch?v=KBHFyg2AcZ4

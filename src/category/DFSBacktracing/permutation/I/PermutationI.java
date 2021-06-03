@@ -1,15 +1,17 @@
-package category.DFSBacktracing.permutation.one;
+package category.DFSBacktracing.permutation.I;
 
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/permutations/
+ *
  * Time complexity: O(n!*n)
  * Space complexity: O(n!*n)
  *
- * The worst-case time complexity is O(n! * n).
- * For any recursive function, the time complexity is O(branches^depth) * (amount of work at each node, e.g for-loop) in the recursive call tree.
- * However, in this case, we have n*(n-1)*(n*2)*(n-3)*...*1 branches at each level = n!, so the total recursive calls is O(n!)
- * We do n-amount of work in each node of the recursive call tree, the for-loop. So this is a total of O(n) additional work per node.
+ * For any recursive function, the time complexity is O(branches^depth) * (amount of work at each node, e.g. for-loop) in the recursive call tree.
+ * However, in this case, we have n*(n-1)*(n-2)*(n-3)*...*1 branches at the corresponding level, so the total recursive calls is O(n!).
+ * We also do "n-amount" of work in each node of the recursive call tree, the for-loop. So this is a total of O(n) additional work per node.
+ * The time complexity is O(n! * n).
  *
  * https://www.youtube.com/watch?v=KukNnoN-SoY
  * Created by brianzhang on 7/26/18.

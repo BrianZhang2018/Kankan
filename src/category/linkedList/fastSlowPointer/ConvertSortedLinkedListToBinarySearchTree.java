@@ -1,4 +1,4 @@
-package category.linkedList.fastslowpointer;
+package category.linkedList.fastSlowPointer;
 
 import category.model.*;
 

@@ -1,4 +1,6 @@
-package category.linkedList;
+package category.linkedList.fastSlowPointer;
+
+import category.model.ListNode;
 
 /**
  * https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
@@ -9,7 +11,7 @@ public class RemoveDupFromSortedListII {
 
     public ListNode deleteDuplicates(ListNode head) {
         // use two pointers, slow - track the node before the dup nodes, fast - to find the last node of dups
-        ListNode dummy = new ListNode();
+        ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode fast = head, slow =dummy;
 

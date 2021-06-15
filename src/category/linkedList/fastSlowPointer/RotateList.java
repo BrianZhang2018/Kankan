@@ -18,14 +18,13 @@ public class RotateList {
         if(head == null) return head;
 
         ListNode fast =head, slow = head;
-
-        int size = 1;
+        int length = 1;
         while(fast.next != null) {
-            size++;
+            length++;
             fast = fast.next;
         }
 
-        for(int i=size - k%size; i>1; i--){
+        for(int i=length - k%length; i>1; i--){ // i>1, "slow" points to the previous node of shifting subLinkedList
             slow = slow.next;
         }
 
@@ -34,6 +33,5 @@ public class RotateList {
         slow.next = null;
 
         return head;
-
     }
 }

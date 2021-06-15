@@ -3,7 +3,7 @@ package category.linkedList;
 /**
  * https://leetcode.com/problems/reverse-linked-list-ii/
  */
-public class ReverseLinkedListII{
+public class ReverseLinkedListII {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         
         ListNode dummy = new ListNode(0);

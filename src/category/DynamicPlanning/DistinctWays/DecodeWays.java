@@ -12,11 +12,10 @@ package category.DynamicPlanning.DistinctWays;
  */
 public class DecodeWays {
     public static void main(String[] args){
-        DecodeWays test = new DecodeWays();
-        System.out.println(test.numDecodings("102213"));
+        System.out.println(numDecodings("102213"));
     }
 
-    public int numDecodings(String s) {
+    public static int numDecodings(String s) {
         if(s == null || s.length() == 0) {
             return 0;
         }

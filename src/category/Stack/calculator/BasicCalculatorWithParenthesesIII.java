@@ -41,7 +41,7 @@ public class BasicCalculatorWithParenthesesIII {
                 num = calculate(s.substring(start + 1, i)); // take the string inside of ( ... )
             }
 
-            // 解题思路：the template of calculate the number before the current sign
+            // template: calculate the number before the current sign
             if (i == m - 1 || signs.indexOf(c)!=-1) {
                 if (prevSign == '+') {
                     stack.push(num);

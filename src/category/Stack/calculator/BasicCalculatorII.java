@@ -30,7 +30,7 @@ public class BasicCalculatorII {
                 num = num * 10 + s.charAt(i) - '0'; //sum up the multi-digit number e.g. "23" -> 2*10+3
             }
 
-            // Not "else if" here as we need calculate the last number, below is the template way to calculate the number
+            // Not "else if" here as we need calculate the "last number", below is the template way to calculate the number
             if (i == s.length() - 1 || (signs.indexOf(c)!=-1)) { // 解题思路: 当我们遇到一个新的sign时，要把前面的部分计算掉(prevSign + number)
                 if (prevSign == '-') {
                     stack.push(-num);

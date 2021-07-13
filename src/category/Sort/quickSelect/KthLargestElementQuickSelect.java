@@ -1,4 +1,4 @@
-package category.Sort;
+package category.Sort.quickSelect;
 
 /**
  * https://leetcode.com/problems/kth-largest-element-in-an-array/description/

@@ -1,4 +1,4 @@
-package category.Sort;
+package category.Sort.quickSelect;
 
 import java.util.Arrays;
 
@@ -56,7 +56,7 @@ public class KClosestPointsToOriginQuickSelect {
         return pivotIdx;
     }
 
-    // leetcode solution - quick select
+    // another swap way - quick select
     private int partition1(int[][] A, int l, int r) {
         int[] pivot = A[l];
         while (l < r) {

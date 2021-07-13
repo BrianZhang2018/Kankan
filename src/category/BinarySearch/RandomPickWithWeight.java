@@ -4,13 +4,23 @@ import java.util.Random;
 
 /**
  * https://leetcode.com/problems/random-pick-with-weight/discuss/154044/Java-accumulated-freq-sum-and-binary-search
+ * e.g.
+ *   w[] = {2,5,3,4} => wsum[] = {2,7,10,14}
+     then get random val random.nextInt(14)+1, idx is in range [1,14]
+
+     idx in [1,2] return 0
+     idx in [3,7] return 1
+     idx in [8,10] return 2
+     idx in [11,14] return 3
  *
  * Created by brianzhang on 11/3/19.
  */
 public class RandomPickWithWeight {
 
     public static void main(String[] args) {
-        RandomPickWithWeight test = new RandomPickWithWeight(new int[]{2,5,3,4});
+        RandomPickWithWeight test = new RandomPickWithWeight(new int[]{1,3});
+        System.out.println(test.pickIndex());
+        System.out.println(test.pickIndex());
         System.out.println(test.pickIndex());
         System.out.println(test.pickIndex());
     }

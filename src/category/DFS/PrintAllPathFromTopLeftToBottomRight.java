@@ -1,8 +1,6 @@
 package category.DFS;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://www.geeksforgeeks.org/print-all-paths-from-top-left-to-bottom-right-in-a-matrix-with-four-moves-allowed/

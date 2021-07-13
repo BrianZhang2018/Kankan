@@ -1,7 +1,6 @@
 package category.DFS;
 
 import category.model.NestedInteger;
-
 import java.util.List;
 
 /**

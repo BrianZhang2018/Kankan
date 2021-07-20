@@ -18,13 +18,17 @@ import java.util.*;
 public class MaxPointsOnALine {
 
     public static void main(String[] args) {
+        // System.out.println(maxPoints(new int[][]{{1,1},{3,2},{5,3},{4,1},{2,3},{1,4}}));
+        System.out.println(maxPoints(new int[][]{{2,3},{3,3},{5,3}}));
+
+        //System.out.println(gcd(10, 0));
     }
 
-    public int maxPoints(int[][] points) {
+    public static int maxPoints(int[][] points) {
         int m = points.length;
         int res = 0;
 
-        // 解题思路：计算一个点到所有其他点的slope（斜率），相同的slope说明在一条直线上.
+        // 解题思路：计算一个点到所有其他点的slope（斜率)，相同的slope说明在一条直线上.
         for (int i = 0; i < m; i++) {
             int duplicate = 0, currMax = 0;
             Map<String, Integer> map = new HashMap();
@@ -39,7 +43,7 @@ public class MaxPointsOnALine {
                 int gcd = gcd(deltaX, deltaY);
                 String slope = (deltaX / gcd) + ":" + (deltaY / gcd);
                 map.put(slope, map.getOrDefault(slope, 0) + 1); // count 相同斜率的点
-                currMax = Math.max(currMax, map.get(slope)); // 计算当前loop，最多有少点在一条直线上
+                currMax = Math.max(currMax, map.get(slope));
             }
             res = Math.max(res, currMax + duplicate + 1);
         }
@@ -48,7 +52,7 @@ public class MaxPointsOnALine {
     }
 
     // 求最大公约数 (greatest common divisor)
-    private int gcd(int a, int b) {
+    static int gcd(int a, int b) {
         if (b == 0) return a;
         return gcd(b, a%b);
     }

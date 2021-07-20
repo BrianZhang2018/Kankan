@@ -7,7 +7,7 @@ import java.util.*;
  *
  * Print all paths from top left to bottom right in a matrix with four directions move allowed
  *
- * (find the all the solution in matrix - dfsHelper + backtracking)
+ * (find the all the solution in matrix - dfs + backtracking)
  *
  * Created by brianzhang on 2/17/21.
  */
@@ -15,14 +15,14 @@ public class PrintAllPathFromTopLeftToBottomRight {
 
     public static void main(String[] args) {
         PrintAllPathFromTopLeftToBottomRight cp = new PrintAllPathFromTopLeftToBottomRight();
-        System.out.println(cp.solution(new int[][]{{1, 2},{4, 5},{3,6}}));
+        System.out.println(cp.solution(new int[][]{{1, 2},{4, 5},{3, 6}}));
         System.out.println(dpSolution(3, 2));
     }
 
     private List<List<Integer>> allPath = new ArrayList<>();
     int[][] directions = new int[][]{{1,0}, {-1,0}, {0,1}, {0,-1}};
 
-    // Solution-1: dfsHelper + backtracking
+    // Solution-1: dfs + backtracking
     public int solution(int[][] matrix) {
         List<Integer> path = new ArrayList<>();
         path.add(matrix[0][0]);
@@ -52,25 +52,23 @@ public class PrintAllPathFromTopLeftToBottomRight {
         }
     }
 
-
     //Solution-2: DP Solution
-    public static int dpSolution(int m, int n){
+    public static int dpSolution(int m, int n) {
         int[][] dp = new int[m][n];
 
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
-                if(i ==0 || j==0){
+                if(i == 0 || j== 0){
                     dp[i][j] = 1;
                 }else{
                     int tmp =0;
                     if(i+1<m || j+1<n){
                         tmp = (i+1)<m ? dp[i+1][j] : dp[i][j+1];
                     }else if (i+1<m && j+1<n){
-                        tmp =  dp[i+1][j] + dp[i][j+1];
+                        tmp = dp[i+1][j] + dp[i][j+1];
                     }
 
                     dp[i][j] = dp[i-1][j] + dp[i][j-1] + tmp;
-
                 }
             }
         }

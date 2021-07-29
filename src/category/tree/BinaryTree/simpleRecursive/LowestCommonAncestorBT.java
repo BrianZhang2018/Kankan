@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
  *
- * Binary Tree
+ * LCA Binary Tree
  * Created by brianzhang on 5/9/20.
  */
 public class LowestCommonAncestorBT {
@@ -24,7 +24,7 @@ public class LowestCommonAncestorBT {
         System.out.println(lowestCommonAncestorBFS(root, p, q).val);
     }
 
-    // DFS solution
+    // DFS solution -  Once we reach the desired nodes p and q, we can backtrack and find the lowest common ancestor.
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q){
         if(root == null || root.val == p.val || root.val ==q.val) return root;
 
@@ -39,7 +39,6 @@ public class LowestCommonAncestorBT {
     // BFS solution
     public static TreeNode lowestCommonAncestorBFS(TreeNode root, TreeNode p, TreeNode q) {
         Map<TreeNode, TreeNode> parent = new HashMap(); // need override the equals and hasCode method for the Object TreeNode which is a key in map
-
         LinkedList<TreeNode> queue = new LinkedList();
         queue.add(root);
 
@@ -58,7 +57,6 @@ public class LowestCommonAncestorBT {
         }
 
         Set<TreeNode> ancestor = new HashSet();
-
         while(p != null){
             ancestor.add(p);
             p = parent.get(p);
@@ -70,5 +68,4 @@ public class LowestCommonAncestorBT {
 
         return q;
     }
-
 }

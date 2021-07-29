@@ -21,7 +21,7 @@ public class MaxPointsOnALine {
         // System.out.println(maxPoints(new int[][]{{1,1},{3,2},{5,3},{4,1},{2,3},{1,4}}));
         System.out.println(maxPoints(new int[][]{{2,3},{3,3},{5,3}}));
 
-        //System.out.println(gcd(10, 0));
+        System.out.println(gcd(10, 0)); // a divides both 0 and a, so it is a divisor
     }
 
     public static int maxPoints(int[][] points) {

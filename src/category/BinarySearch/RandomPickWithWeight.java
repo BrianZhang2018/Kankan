@@ -4,6 +4,8 @@ import java.util.Random;
 
 /**
  * https://leetcode.com/problems/random-pick-with-weight/discuss/154044/Java-accumulated-freq-sum-and-binary-search
+ *
+ * prefixSum + binarySearch
  * e.g.
  *   w[] = {2,5,3,4} => wsum[] = {2,7,10,14}
      then get random val random.nextInt(14)+1, idx is in range [1,14]

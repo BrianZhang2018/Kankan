@@ -24,8 +24,7 @@ public class LowestCommonAncestorBST {
         } else if (pVal < parentVal && qVal < parentVal) { //both p and q are lesser than parent node
             return lowestCommonAncestor(root.left, p, q);
         } else {
-            // We have found the split point, i.e. the LCA node.
-            return root;
+            return root; // We have found the split point, i.e. the LCA node.
         }
     }
 }

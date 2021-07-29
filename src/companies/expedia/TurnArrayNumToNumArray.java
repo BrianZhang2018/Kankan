@@ -22,7 +22,7 @@ public class TurnArrayNumToNumArray {
             nums[i] = Integer.valueOf(inputs[i]);
         }
 
-        LinkedHashMap<Integer, Integer> hmap = new LinkedHashMap<Integer, Integer>();
+        LinkedHashMap<Integer, Integer> hmap = new LinkedHashMap<>();
         for (int i : nums) {
             hmap.put(i, hmap.getOrDefault(i, 0) + 1);
         }

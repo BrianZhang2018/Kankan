@@ -6,7 +6,7 @@ package category.DynamicPlanning.easyDP;
  * Easy
  * Can be solved using Kadane's algorithm in linear time and without using additional space. The main ideas are:
      - Use the input vector nums to store the candidate subarrays sum (i.e. the greatest contiguous sum so far).
-     - Ignore cumulative negatives, as they don't contribute positively to the sum.
+     - "Ignore cumulative negatives", as they don't contribute positively to the sum.
 
  Example:
  Given nums = [-2, 1, -3, 4].

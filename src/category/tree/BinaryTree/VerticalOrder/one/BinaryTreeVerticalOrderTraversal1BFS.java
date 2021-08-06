@@ -6,14 +6,15 @@ import category.model.TreeNode;
 /**
  * https://www.lintcode.com/problem/binary-tree-vertical-order-traversal/
  *
- * If two nodes are in the same row and column, the order should be from left to right.
- *
  *      0
  *  -1    1
  * -2  0 0 2
+ *
+ * Note: if two nodes are in the same row and column, the order should be from left to right, no sort
+ *
  * https://www.programcreek.com/2014/04/leetcode-binary-tree-vertical-order-traversal-java/
  */
-public class BinaryTreeVerticalOrderTraversal1 {
+public class BinaryTreeVerticalOrderTraversal1BFS {
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(3);
@@ -21,7 +22,7 @@ public class BinaryTreeVerticalOrderTraversal1 {
         root.right = new TreeNode(20);
         root.right.left = new TreeNode(15);
         root.right.right = new TreeNode(7);
-        BinaryTreeVerticalOrderTraversal1 test = new BinaryTreeVerticalOrderTraversal1();
+        BinaryTreeVerticalOrderTraversal1BFS test = new BinaryTreeVerticalOrderTraversal1BFS();
         for(List<Integer> l : test.verticalOrder(root)) System.out.println(Arrays.toString(l.toArray()));
     }
 
@@ -30,32 +31,37 @@ public class BinaryTreeVerticalOrderTraversal1 {
         bfs(root, map);
         return new ArrayList<>(map.values());
     }
-     
+
     private void bfs(TreeNode root, TreeMap<Integer, List<Integer>> map) {
         if (root == null) return;
 
-        LinkedList<TreeNode> q1 = new LinkedList<>();  //queue for binaryTree node
-        LinkedList<Integer> q2 = new LinkedList<>();  //queue for binaryTree node's degree
-        q1.offer(root);
-        q2.offer(0);
-     
-        while (!q1.isEmpty()) {
-            TreeNode node = q1.poll();
-            int level = q2.poll();
+        LinkedList<Node> q = new LinkedList<>();
+        q.offer(new Node(root, 0));
 
-            map.putIfAbsent(level, new ArrayList<>());
-            map.get(level).add(node.val);
-     
+        while (!q.isEmpty()) {
+            Node n = q.poll();
+            TreeNode node = n.node;
+            int verticalOrder = n.verticalOrder;
+
+            map.putIfAbsent(verticalOrder, new ArrayList<>());
+            map.get(verticalOrder).add(node.val);
+
             if (node.left != null) {
-                q1.offer(node.left);
-                q2.offer(level - 1);
+                q.offer(new Node(node.left, verticalOrder - 1)); // vertical order: left minus 1
             }
-     
+
             if (node.right != null) {
-                q1.offer(node.right);
-                q2.offer(level + 1);
+                q.offer(new Node(node.right, verticalOrder+1)); // vertical order: right plus 1
             }
         }
     }
 
+    class Node {
+        TreeNode node;
+        int verticalOrder;
+        public Node(TreeNode n, int order) {
+            this.node= n;
+            this.verticalOrder = order;
+        }
+    }
 }

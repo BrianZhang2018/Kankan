@@ -1,8 +1,6 @@
 package category.DFSBacktracing;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * Subsets: 2^N , since each element could be absent or present.

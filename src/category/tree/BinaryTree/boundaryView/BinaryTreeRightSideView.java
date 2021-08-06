@@ -15,9 +15,6 @@ public class BinaryTreeRightSideView{
         root.right = new TreeNode(30);
         root.left.left = new TreeNode(40);
         root.left.right = new TreeNode(60);
-/*        root.right.right = new TreeNode(-25);
-        root.right.right.left = new TreeNode(3);
-        root.right.right.right = new TreeNode(4);*/
 
         BinaryTreeRightSideView btr = new BinaryTreeRightSideView();
         for(Integer i : btr.rightSideView(root)) System.out.println(i);
@@ -25,38 +22,31 @@ public class BinaryTreeRightSideView{
         for(Integer i : btr.rightSideViewDFS(root)) System.out.println(i);
     }
 
-//solution-1
-    //dfsHelper - recursive
+    //solution-1: dfs
     public List<Integer> rightSideViewDFS(TreeNode root) {
         List<Integer> res = new ArrayList<>();
-        if(root == null)
-            return res;
+        if(root == null) return res;
         
         int level = 0;
         dfs(root, level, res);
         return res;
     }
     
-    
     public void dfs(TreeNode root, int level, List<Integer> res){
         System.out.println("Tree level is: " + level);
         
-        if(root == null)
-            return;
+        if(root == null) return;
         
-        if(res.size() == level)
-            res.add(root.val);
+        if(res.size()==level) res.add(root.val);
         
         //not ++level as it will impact the level value in second dfsHelper
-        dfs(root.right, level + 1, res);
+        dfs(root.right, level + 1, res); // root.right first
         dfs(root.left, level +1 , res);
     }
 
-//solution-2
-    //level order traverse - iterative 
-    public List<Integer> rightSideView(TreeNode root) {
-        if(root == null)
-            return Collections.emptyList();
+    //solution-2: level order traverse - iterative
+    public static List<Integer> rightSideView(TreeNode root) {
+        if(root == null) return Collections.emptyList();
         
         List<Integer> res = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
@@ -69,9 +59,8 @@ public class BinaryTreeRightSideView{
             for(int i=0; i<size; i++){
 
                 TreeNode node = queue.poll();
-                //key point, record the right most node's value
-                if(i == size -1)
-                    res.add(node.val);
+
+                if(i==size -1) res.add(node.val); //key point, record the right most node's value
 
                 if(node.left != null)
                     queue.add(node.left);

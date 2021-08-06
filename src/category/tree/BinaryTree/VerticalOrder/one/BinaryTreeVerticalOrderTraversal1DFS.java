@@ -11,7 +11,7 @@ import companies.amazon.model.TreeNode;
  * binaryTree node's level for level order traverse
  * dfsHelper recursive + customized LevelNode object + List comparator
  */
-public class BinaryTreeVerticalOrderTraversal1Recursive {
+public class BinaryTreeVerticalOrderTraversal1DFS {
 
     public List<List<Integer>> verticalOrder(TreeNode root) {
         TreeMap<Integer, LinkedList<LevelNode>> map = new TreeMap<>();

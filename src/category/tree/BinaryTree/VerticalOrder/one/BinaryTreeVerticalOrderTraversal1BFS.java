@@ -56,6 +56,31 @@ public class BinaryTreeVerticalOrderTraversal1BFS {
         }
     }
 
+
+    public int findSubstringInWraproundString(String p) {
+        char[] chars = p.toCharArray();
+        int n = chars.length;
+
+        int[] map = new int[26];
+        int len = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (i > 0 && ((chars[i - 1] + 1 == chars[i]) || (chars[i - 1] == 'z' && chars[i] == 'a')))
+                len += 1;
+            else
+                len = 1;
+
+            // we are storing the max len of string for each letter and then we will count all these lenghts.
+            map[chars[i] - 'a'] = Math.max(map[chars[i] - 'a'], len);
+        }
+
+
+        int answer = 0;
+        for (int num : map) answer += num;
+
+        return answer;
+    }
+
     class Node {
         TreeNode node;
         int verticalOrder;

@@ -1,9 +1,6 @@
 package category.Sort;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/top-k-frequent-elements
@@ -11,14 +8,13 @@ import java.util.Map;
  *
  * 相似问题: TopKFrequentWords.java - priorityQueue
  *
+ * O(N)
  * Created by brianzhang on 1/6/19.
  */
 public class TopKFrequentElementsBucketSort {
 
     public static void main(String[] args) {
-        for(int i : topKFrequent(new int[]{1,1,2,2,3}, 1)){
-            System.out.println(i);
-        }
+        for(int i : topKFrequent(new int[]{1,1,2,2,3}, 1)) System.out.println(i);
     }
 
     public static List<Integer> topKFrequent(int[] nums, int k) {
@@ -33,17 +29,16 @@ public class TopKFrequentElementsBucketSort {
             if (bucket[entry.getValue()] == null) {
                 bucket[entry.getValue()] = new ArrayList<>();
             }
-            bucket[entry.getValue()].add(entry.getKey());
+            bucket[entry.getValue()].add(entry.getKey()); // key here
         }
 
         List<Integer> result = new ArrayList();
         for (int i = bucket.length - 1; i >= 0 && result.size() < k; i--) {
-
-            if (bucket[i] != null)
+            if (bucket[i] != null) {
                 result.addAll(bucket[i]);
+            }
         }
 
         return result;
-
     }
 }

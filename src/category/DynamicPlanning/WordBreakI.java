@@ -29,7 +29,7 @@ public class WordBreakI {
             for (int j = 0; j <= i; j++) {
                 if (dict.contains(s.substring(j, i + 1)) && (j == 0 || dp[j - 1])) {
                     dp[i] = true;
-                    break;
+                    break; // remove this, also works
                 }
             }
         }
@@ -37,11 +37,9 @@ public class WordBreakI {
     }
 
     static List<String> res = new ArrayList<>();
-
     // DFS (记忆化递归), time complexity: n^2, Top-Down solution
     public static boolean wordBreakDFSMemo(String s, Set<String> dict, Map<String, Boolean> memo) {
-        if (memo.containsKey(s))
-            return memo.get(s);
+        if (memo.containsKey(s)) return memo.get(s);
 
         if (dict.contains(s)) {
             res.add(s);
@@ -67,8 +65,8 @@ public class WordBreakI {
         if (wordDict.contains(s)) return true;
         Queue<Integer> queue = new LinkedList<>();
         queue.offer(0);
-        // use a set to record checked index to avoid repeated work.
-        // This is the key to reduce the running time to O(N^2).
+
+        // use a set to record checked index to avoid repeated work. This is the key to reduce the running time to O(N^2).
         Set<Integer> visited = new HashSet<>();
         visited.add(0);
         while (!queue.isEmpty()) {

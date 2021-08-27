@@ -9,7 +9,7 @@ import category.model.TreeNode;
  */
 public class BinaryTreeUtil {
 
-    //preOrder
+    //preOrderPrint
     public static void preOrderPrintOut(TreeNode root){
         Stack<TreeNode> stack = new Stack<>();
         stack.add(root);

@@ -33,7 +33,6 @@ public class KClosestPointsToOriginQuickSelect {
 
     // my solution for quick select - easily understood
     private int partition(int[][] points, int l, int r) {
-
         int[] pivot = points[r]; // set rightmost as pivot
         int pivotIdx = l;
         for (int i = l; i <= r; i++)
@@ -57,16 +56,16 @@ public class KClosestPointsToOriginQuickSelect {
     }
 
     // another swap way - quick select
-    private int partition1(int[][] A, int l, int r) {
-        int[] pivot = A[l];
-        while (l < r) {
-            while (l < r && compare(A[r], pivot) >= 0) r--;
-            A[l] = A[r];
-            while (l < r && compare(A[l], pivot) <= 0) l++;
-            A[r] = A[l];
+    private int partition1(int[][] num, int lo, int hi) {
+        int[] pivot = num[lo];
+        while (lo < hi) {
+            while (lo < hi && compare(num[hi], pivot) >= 0) hi--;
+            num[lo] = num[hi];
+            while (lo < hi && compare(num[lo], pivot) <= 0) lo++;
+            num[hi] = num[lo];
         }
-        A[l] = pivot;
-        return l;
+        num[lo] = pivot;
+        return lo;
     }
 
     private int compare(int[] p1, int[] p2) {

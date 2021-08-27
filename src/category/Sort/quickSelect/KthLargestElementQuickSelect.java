@@ -32,9 +32,8 @@ public class KthLargestElementQuickSelect {
         while (start <= end) {
             while (start <= end && nums[start] <= nums[pivot]) start++;
             while (start <= end && nums[end] > nums[pivot]) end--;
-            if (start > end)
-                break;
 
+            if (start > end) break;
             swap(nums, start, end);
         }
 

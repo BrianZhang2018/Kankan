@@ -1,15 +1,22 @@
 package category.javabasic;
 
 import java.util.BitSet;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/count-primes/
- * <p>
+ *
  * Created by brianzhang on 11/5/18.
  */
 public class CountPrimeNumber {
     public static void main(String[] args) {
         System.out.println(countPrimes(10));
+        Map<Integer, Integer> map = new HashMap();
+        map.put(2,3);
+        map.put(2,2);
+        System.out.println(map.keySet());
+        System.out.println(map.values());
+        System.out.println(new HashSet<>(map.keySet()));
     }
 
     // Sieve_of_Eratosthenes algorithm

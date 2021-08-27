@@ -1,11 +1,11 @@
-package category.DynamicPlanning.easyDP;
+package category.Array.prefixSum.kadaneAlgorithm;
 
 /**
  * https://leetcode.com/problems/maximum-subarray/
  *
  * Easy
  * Can be solved using Kadane's algorithm in linear time and without using additional space. The main ideas are:
-     - Use the input vector nums to store the candidate subarrays sum (i.e. the greatest contiguous sum so far).
+     - Use the input array to store the candidate subarrays sum (i.e. the greatest contiguous sum so far - prefix Sum).
      - "Ignore cumulative negatives", as they don't contribute positively to the sum.
 
  Example:
@@ -27,6 +27,18 @@ public class MaximumSubArray {
         System.out.println(maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
     }
 
+    // Kadane's algorithm
+    public static int maxSubArray(int[] nums) {
+        int max = nums[0];
+        for(int i=1; i<nums.length; i++){
+            if(nums[i-1] > 0){
+                nums[i] = nums[i-1] + nums[i];
+            }
+            max = Math.max(nums[i], max);
+        }
+        return max;
+    }
+
     // DP
     public static int maxSubArrayDP(int[] nums) {
         int dp = nums[0];
@@ -37,18 +49,6 @@ public class MaximumSubArray {
             max = Math.max(dp, max);
         }
 
-        return max;
-    }
-
-    // Kadane's algorithm
-    public static int maxSubArray(int[] nums) {
-        int max = nums[0];
-        for(int i=1; i<nums.length; i++){
-            if(nums[i-1] > 0){
-                nums[i] = nums[i-1] + nums[i];
-            }
-            max = Math.max(nums[i], max);
-        }
         return max;
     }
 }

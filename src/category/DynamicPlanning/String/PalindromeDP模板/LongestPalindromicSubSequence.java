@@ -5,7 +5,7 @@ package category.DynamicPlanning.String.PalindromeDP模板;
  *
  * Created by brianzhang on 8/12/18.
  */
-public class LongestPalindromeSubSequence {
+public class LongestPalindromicSubSequence {
     public static void main(String[] args) {
         System.out.println(getLongestPalindromeSubseq("cbbd"));
         System.out.println(longestPalindromeSubseq("cbbd"));

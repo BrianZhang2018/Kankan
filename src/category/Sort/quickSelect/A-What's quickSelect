@@ -1,0 +1,6 @@
+QuickSelect solution:
+Discard half in each iteration: n+(n/2)+(n/4)..1, the sum of that series will never reach 2*N.
+https://stackoverflow.com/questions/56940793/quickselect-time-complexity-explained
+
+Time complexity =O(n)
+Worst case: O(n*n): Continuously pick the largest or smallest element on each iteration

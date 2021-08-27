@@ -14,15 +14,9 @@ import java.util.*;
  */
 public class EvaluateReversePolishNotation {
     public static void main(String[] args) {
-/*        System.out.println(evalRPN(new String[] {"2", "1", "+", "3", "*"}));
+        System.out.println(evalRPN(new String[] {"2", "1", "+", "3", "*"}));
         System.out.println(isValidRPN(new String[] {"2", "1", "+", "3", "*"}));
-        System.out.println(isValidRPN(new String[] {"2", "1", "+", "3", "*", "*"}));*/
-
-        TreeMap<Integer, Integer> tm = new TreeMap();
-        tm.put(1,1);
-
-        System.out.println(tm.put(2,2));
-
+        System.out.println(isValidRPN(new String[] {"2", "1", "+", "3", "*", "*"}));
     }
 
     public static int evalRPN(String[] tokens) {
@@ -30,12 +24,11 @@ public class EvaluateReversePolishNotation {
 
         String operators = "+-*/";
         Stack<Integer> stack = new Stack<>();
-
         for(String str : tokens){
             if(operators.contains(str)){
-                int num2 = stack.pop(); // be careful here
-                int num1 = stack.pop();
 
+                int num2 = stack.pop(); // be careful here, first pop is num2
+                int num1 = stack.pop();
                 switch (str) {
                     case "+":
                         stack.push(num1 + num2);
@@ -74,13 +67,13 @@ public class EvaluateReversePolishNotation {
         return count == 1 ? true : false;
     }
 /**
-    expression:     3 4 + 1 * _
+    expression:     3 4 + 1 *
     stack_size:   0 1 2 1 2 1 1 -> success
 
-    expression:     2 3 4 + 1 * _
+    expression:     2 3 4 + 1 *
     stack_size:   0 1 2 3 2 3 2 2 -> failure (not 1 at the end)
 
-    expression:     2 3 + + 1 * _
+    expression:     2 3 + + 1 *
     stack_size:   0 1 2 1 0       -> failure (stack_size <= 0)
  **/
 }

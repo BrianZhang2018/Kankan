@@ -1,4 +1,4 @@
-package category.DFS;
+package category.DFS.search;
 
 import category.model.TreeNode;
 import java.util.Stack;
@@ -8,13 +8,13 @@ import java.util.Stack;
  *
  * Created by brianzhang on 8/30/20.
  */
-public class InorderIterativeTraversal {
+public class InOrderIterativeTraversal {
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(6);
-        root.left = new TreeNode(4);
+        TreeNode root = new TreeNode(4);
+        root.left = new TreeNode(2);
         root.right = new TreeNode(5);
-        root.left.right = new TreeNode(9);
-        root.right.left = new TreeNode(1);
+        root.left.left = new TreeNode(1);
+        root.left.right = new TreeNode(3);
         inOrder(root);
     }
 
@@ -22,14 +22,14 @@ public class InorderIterativeTraversal {
         Stack<TreeNode> stack = new Stack<>();
         TreeNode curr = root;
         while (!stack.isEmpty() || curr != null) {
-            if (curr != null) {
+            while (curr != null) {
                 stack.add(curr);
                 curr = curr.left;
-            } else {
-                curr = stack.pop();
-                System.out.println(curr.val);
-                curr = curr.right;
             }
+
+            curr = stack.pop();
+            System.out.println(curr.val);
+            curr = curr.right;
         }
     }
 }

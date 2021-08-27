@@ -3,12 +3,18 @@ package category.graph;
 import java.util.*;
 
 /**
- * https://leetcode.com/problems/reconstruct-itinerary/
+ * https://leetcode.com/problems/reconstruct-itinerary/solution/
  *
- * In graph theory, an Eulerian trail (or Eulerian path) is a trail in a finite graph that visits every edge exactly once (allowing for revisiting vertices).
- *
- * The point that we got stuck would be the last airport that we visit. And then we follow the visited vertex (airport) backwards, we would obtain the final itinerary.
- *
+ To find the Eulerian path, inspired from the original Hierzolher's algorithm, we simply change one condition of loop, rather than stopping at the starting point,
+ we stop at the vertex where we do not have any unvisited edges.
+
+ To summarize, the main idea to find the Eulerian path consists of two steps:
+
+ Step 1). Starting from any vertex, we keep following the unused edges until we get stuck at certain vertex where we have no more unvisited outgoing edges.
+
+ Step 2). We then backtrack to the nearest neighbor vertex in the current path that has unused edges and we repeat the process until all the edges have been used.
+
+ The first vertex that we got stuck at would be the end point of our Eulerian path. So if we follow all the stuck points backwards, we could reconstruct the Eulerian path at the end.
  * Created by brianzhang on 3/11/21.
  */
 public class ReconstructItinerary {
@@ -16,24 +22,6 @@ public class ReconstructItinerary {
     public static void main(String[] args) {
         List<String> l1 = Arrays.asList("JFK","KUL"), l2 = Arrays.asList("JFK","NRT"), l3 = Arrays.asList("NRT","JFK");
         System.out.println(new ReconstructItinerary().findItinerary(Arrays.asList(l1,l2,l3)));
-
-        LinkedList<Integer> ll = new LinkedList<>();
-        ll.add(6);
-        ll.addFirst(10);
-        System.out.println(ll.poll());
-
-        ArrayDeque<Integer> queue = new ArrayDeque<>();
-        queue.offer(6);
-        queue.offer(10);
-        queue.offerFirst(11);
-        queue.push(100);
-        System.out.println(queue.poll());
-
-    /*    ArrayDeque<Integer> queue1 = new ArrayDeque<>();
-        queue1.push(6);
-        queue1.push(10);
-
-        System.out.println(queue1);*/
     }
 
     Map<String, PriorityQueue<String>> flights;
@@ -51,11 +39,12 @@ public class ReconstructItinerary {
         return path;
     }
 
+    // dfs + backtracking
     public void dfs(String departure) {
         PriorityQueue<String> arrivals = flights.get(departure);
-        while (arrivals != null && !arrivals.isEmpty())
+        while (arrivals != null && !arrivals.isEmpty()){
             dfs(arrivals.poll());
-
+        }
         path.addFirst(departure);
     }
 }

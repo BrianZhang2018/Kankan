@@ -1,4 +1,4 @@
-package category.greedy;
+package category.DynamicPlanning.greedy;
 
 /**
  * https://www.lintcode.com/problem/pour-water/description
@@ -9,8 +9,7 @@ package category.greedy;
  */
 public class PourWater {
 
-    public static void main(String[] args) {
-    }
+    public static void main(String[] args) {}
     /**
      * @param heights: the height of the terrain
      * @param V: the units of water

@@ -35,8 +35,7 @@ public class BinaryTreeMaximumPathSum {
     public int dfs(TreeNode root) {
         if(root == null) return 0;
 
-        // avoid the negative value, it's Kadane algorithm idea
-        int left = Math.max(dfs(root.left), 0);
+        int left = Math.max(dfs(root.left), 0);   // avoid the negative value, it's Kadane algorithm idea
         int right = Math.max(dfs(root.right), 0);
         maxSum = Math.max(maxSum, root.val + left + right);
         

@@ -45,7 +45,7 @@ public class FindKthLargestElementWithShuffle {
             nums[hi] = nums[lo];
         }
 
-        nums[lo] = pivot;
+        nums[lo] = pivot; // put pivot value on new partition (middle) location
         return lo;
     }
 

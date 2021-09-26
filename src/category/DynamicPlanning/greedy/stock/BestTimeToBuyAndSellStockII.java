@@ -1,4 +1,4 @@
-package category.greedy;
+package category.DynamicPlanning.greedy.stock;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/

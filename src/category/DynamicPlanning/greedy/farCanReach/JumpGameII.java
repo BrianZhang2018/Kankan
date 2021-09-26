@@ -1,4 +1,4 @@
-package category.greedy.farCanReach;
+package category.DynamicPlanning.greedy.farCanReach;
 
 /**
  * https://leetcode.com/problems/jump-game-ii/

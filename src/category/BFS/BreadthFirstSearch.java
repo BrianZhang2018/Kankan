@@ -1,9 +1,6 @@
 package category.BFS;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Created by brianzhang on 10/21/18.

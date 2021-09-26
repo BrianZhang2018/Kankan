@@ -1,4 +1,4 @@
-package category.greedy;
+package category.DynamicPlanning.greedy;
 
 /**
  * https://leetcode.com/problems/jump-game/
@@ -9,8 +9,8 @@ public class JumpGameGreedy {
 
     public boolean canJump(int[] nums) {
 
-        if(nums == null || nums.length == 0)
-            return true;
+        if(nums == null || nums.length == 0) return true;
+
         int lastPos = nums.length-1;
         for(int i=nums.length-2; i>=0; i--){
             if(i+nums[i] >= lastPos){

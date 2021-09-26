@@ -63,8 +63,6 @@ public class FindKthLargestElement {
     }
 
     public void swap(int[] nums, int l, int r){
-        int temp = nums[l];
-        nums[l] = nums[r];
-        nums[r] = temp;
+        nums[l] = nums[r] + nums[l] - (nums[r] = nums[l]);
     }
 }

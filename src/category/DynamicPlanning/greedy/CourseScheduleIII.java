@@ -1,4 +1,4 @@
-package category.greedy;
+package category.DynamicPlanning.greedy;
 
 import java.util.*;
 

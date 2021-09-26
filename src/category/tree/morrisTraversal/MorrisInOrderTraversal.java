@@ -4,47 +4,54 @@ import category.model.TreeNode;
 
 /**
  * Morris Traversal ( Using Threaded Tree for Inorder Traversal)
- * O(n) Time | O(1) Space
+ * O(n) Time | O(1) Space --> 牛逼的地方，一般的 inorder traversal 不管是iterative 还是 recursive 都是 O(N) space
  *
  * Definition Threaded Tree
   A binary tree is threaded by making all right child pointers that would normally be null point to the inorder successor of
   the node (if it exists), and all left child pointers that would normally be null point to the inorder predecessor of the node.
  *
+ *
+ * https://www.cnblogs.com/AnnieKim/archive/2013/06/15/morristraversal.html
+ *
  * Created by brianzhang on 9/25/21.
  */
 public class MorrisInOrderTraversal {
-
     public static void main(String[] args) {
         TreeNode root = new TreeNode(4);
         root.left = new TreeNode(2);
         root.right = new TreeNode(7);
         root.left.left = new TreeNode(1);
         root.left.right = new TreeNode(3);
-
-        morrisTraversal(root);
+        morrisInOrderTraversal(root);
     }
 
-    public static void morrisTraversal(TreeNode root){
-        TreeNode temp;
-        while(root!=null){
-            if(root.left!=null){
-                // connect threading for root
-                temp = root.left;
-                while(temp.right!=null && temp.right != root)
-                    temp = temp.right;
-                // the threading already exists
-                if(temp.right!=null){
-                    temp.right = null;
-                    System.out.println(root.val);
-                    root = root.right;
-                }else{
-                    // construct the threading
-                    temp.right = root;
-                    root = root.left;
+    public static void morrisInOrderTraversal(TreeNode root){
+        TreeNode cur = root;
+        while (cur != null) {
+            if (cur.left == null) { //  if the left subtree has been totally traversed, to go "back" to the `predecessor`.
+                System.out.println(cur.val);
+                cur = cur.right;
+            } else {
+                // to find the rightmost node in the left subtree
+                TreeNode prev = cur.left;
+                while (prev.right != null && prev.right != cur) {
+                    prev = prev.right;
                 }
-            }else{
-                System.out.println(root.val);
-                root = root.right;
+
+                if (prev.right == null) {
+                    // construct the threading
+                    prev.right = cur;
+                    cur = cur.left; // continue traverse left subtree
+                } else {
+                    // the threading already exists
+                    /**
+                        1. to break the predecessor relationship previously built
+                        2. to go to `cur.right`, which is another `predecessor`
+                     */
+                    prev.right = null;
+                    System.out.println(cur.val);
+                    cur = cur.right; // left subtree done, let's go right subtree
+                }
             }
         }
     }

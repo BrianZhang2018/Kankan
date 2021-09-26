@@ -1,7 +1,6 @@
 package category.tree.BinaryTree;
 
 import java.util.Stack;
-
 import category.model.TreeNode;
 
 /**
@@ -26,6 +25,14 @@ public class BinaryTreeUtil {
                 stack.add(curr.left);
             }
         }
+    }
+
+    public static void inOrderPrint(TreeNode node) {
+        if(node == null) return;
+
+        inOrderPrint(node.left);
+        System.out.println(node.val);
+        inOrderPrint(node.right);
     }
 
     public static void printDLL(TreeNode node){

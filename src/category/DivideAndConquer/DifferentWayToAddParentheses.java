@@ -1,4 +1,4 @@
-package category.DivideAndConquerRecursive;
+package category.DivideAndConquer;
 
 import java.util.List;
 import java.util.LinkedList;

@@ -12,7 +12,7 @@ public class BestTimeToBuyAndSellStockII {
         System.out.println(test.maxProfit(new int[]{7,1,5,3,6,4}));
     }
 
-    //Greedy algorithm
+    // Greedy algorithm
     public int maxProfit(int[] prices) {
 
         if(prices == null || prices.length == 0)

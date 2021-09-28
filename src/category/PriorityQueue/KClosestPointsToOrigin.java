@@ -1,7 +1,6 @@
 package category.PriorityQueue;
 
-import java.util.Arrays;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/k-closest-points-to-origin/
@@ -17,11 +16,11 @@ public class KClosestPointsToOrigin {
         }
     }
 
-    // PriorityQueue solution
+    // PriorityQueue solution - The advantage of this solution is it can deal with real-time(online) stream data.
     public static int[][] kClosest(int[][] points, int K) {
         if(K == points.length) return points;
 
-        PriorityQueue<int[]> pq = new PriorityQueue<>(K, (a, b) -> (b[0]*b[0] + b[1]*b[1]) - (a[0]*a[0] + a[1]*a[1])); // reverse order
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> (b[0]*b[0] + b[1]*b[1]) - (a[0]*a[0] + a[1]*a[1])); // reverse order
 
         for(int[] point: points) {
             pq.add(point);

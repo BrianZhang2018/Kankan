@@ -1,4 +1,4 @@
-package category.DivideAndConquerRecursive;
+package category.DivideAndConquer;
 
 /**
  * 3 way quick sort partition

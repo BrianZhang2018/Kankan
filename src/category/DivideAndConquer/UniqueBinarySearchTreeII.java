@@ -1,4 +1,4 @@
-package category.DivideAndConquerRecursive;
+package category.DivideAndConquer;
 
 import category.model.TreeNode;
 

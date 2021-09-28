@@ -1,4 +1,4 @@
-package category.suffixArray;
+package category.Array.suffixArray;
 
 /**
  * solution source:

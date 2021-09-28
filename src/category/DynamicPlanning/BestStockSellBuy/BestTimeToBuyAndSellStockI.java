@@ -1,4 +1,4 @@
-package category.DynamicPlanning.BestStockEasyToHard;
+package category.DynamicPlanning.BestStockSellBuy;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/

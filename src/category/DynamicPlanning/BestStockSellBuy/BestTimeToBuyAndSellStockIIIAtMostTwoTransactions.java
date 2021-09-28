@@ -1,4 +1,4 @@
-package category.DynamicPlanning.BestStockEasyToHard;
+package category.DynamicPlanning.BestStockSellBuy;
 
 import java.util.Arrays;
 

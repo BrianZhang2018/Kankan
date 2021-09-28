@@ -1,4 +1,4 @@
-package category.DivideAndConquerRecursive;
+package category.DivideAndConquer;
 
 import java.util.Arrays;
 
@@ -16,8 +16,7 @@ public class MergeSortBottomUp {
     public static void merge(int[] orig, int[] aux, int start, int mid, int end) {
         int i, j, z = start; 
         
-        if(orig[mid] <= orig[mid+1])
-            return; 
+        if(orig[mid] <= orig[mid+1]) return;
 
         for(i=start, j = mid+1; i!=mid+1 || j!=end+1;){
             if(i==mid+1)               

@@ -1,4 +1,4 @@
-package category.DivideAndConquerRecursive;
+package category.DivideAndConquer;
 
 import java.util.Arrays;
 
@@ -30,23 +30,18 @@ public class MergeSort {
         // check if low is smaller then high
         if (low < high) {
             int middle = low + (high - low) / 2;
-            //sorts the left side of the array
-            mergeSortHelper(low, middle);
-            //sorts the right side of the array
-            mergeSortHelper(middle + 1, high);
-            // Now merge both sides
-            merge(low, middle, high);
+            mergeSortHelper(low, middle);  //sorts the left side of the array
+            mergeSortHelper(middle + 1, high);  //sorts the right side of the array
+            merge(low, middle, high);  // Now merge both sides
         }
     }
 
     private void merge(final int low, final int middle, final int high) {
-
         // Copy both parts into the dfsHelper - temp array
         for (int i = low; i <= high; i++) {
             temp[i] = array[i];
         }
-        int i = low;
-        int j = middle + 1;
+        int i = low, j= middle + 1;
         int currIndex = low;
         // Copy the smallest values from either the left or the right side back to the original array
         while (i <= middle && j <= high) {        //difference with quickSort

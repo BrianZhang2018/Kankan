@@ -1,6 +1,7 @@
 package category.tree.BinaryTree.pathSum;
 
 import category.model.TreeNode;
+import javafx.util.Pair;
 
 /**
  * https://leetcode.com/problems/binary-tree-maximum-path-sum/
@@ -19,20 +20,21 @@ public class BinaryTreeMaximumPathSum {
         root.right = new TreeNode(20);
         root.right.left = new TreeNode(15);
         root.right.right = new TreeNode(7);
-
-        System.out.println(new BinaryTreeMaximumPathSum().maxPathSum(root));
+        System.out.println(maxPathSum(root));
+        System.out.println("Max sum path is: " + maxSumPath.toString());
     }
 
-    int maxSum = Integer.MIN_VALUE;
-    public int maxPathSum(TreeNode root) {
+    static int maxSum = Integer.MIN_VALUE;
+    public static int maxPathSum(TreeNode root) {
         if(root == null) return 0;
         
-        dfs(root);
+        //dfs(root);
+        dfsRecordPath(root); // follow-up question
         return maxSum;
     }
 
     // it's actually a post-order traversal
-    public int dfs(TreeNode root) {
+    public static int dfs(TreeNode root) {
         if(root == null) return 0;
 
         int left = Math.max(dfs(root.left), 0);   // avoid the negative value, it's Kadane algorithm idea
@@ -42,5 +44,35 @@ public class BinaryTreeMaximumPathSum {
         return root.val + Math.max(left, right);
     }
 
-    // open-question: get maximum path sum for n-ary tree
+    // follow-up-1: get maximum path sum for n-ary tree
+
+    // follow-up-2: printout path
+    static StringBuilder maxSumPath = new StringBuilder();
+    public static Pair<Integer, StringBuilder> dfsRecordPath(TreeNode root) {
+        if(root == null) return new Pair(0, new StringBuilder());
+
+        Pair<Integer, StringBuilder> left = dfsRecordPath(root.left); // "key" is the cumulative sum, "value" is path track
+        Pair<Integer, StringBuilder> right = dfsRecordPath(root.right);
+
+        int leftVal = Math.max(left.getKey(), 0);
+        int rightVal = Math.max(right.getKey(), 0);
+
+        if(root.val + leftVal + rightVal > maxSum) {
+            maxSum = root.val + leftVal + rightVal;
+            maxSumPath = new StringBuilder();
+            if(leftVal >= 0) {
+                maxSumPath.append(left.getValue());
+            }
+            maxSumPath.append(root.val+",");
+            if(rightVal >= 0) {
+                maxSumPath.append(right.getValue());
+            }
+        }
+
+        return new Pair<>(root.val + Math.max(leftVal, rightVal),
+                leftVal>=rightVal                                 // if "left.getKey()<=0", 意味着这段path就不需要了，剪掉
+                ? new StringBuilder().append(root.val+",").append(left.getKey()<=0 ? "" : left.getValue())
+                : new StringBuilder().append(root.val+",").append(right.getKey()<=0 ? "" : right.getValue()));
+    }
+
 }

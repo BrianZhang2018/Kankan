@@ -15,24 +15,19 @@ public class RecoverBinarySearchTree {
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(3);
-        root.left.right = new TreeNode(2);
-        System.out.println("Before"); BinaryTreeUtil.preOrderPrintOut(root);
-
-        RecoverBinarySearchTree test = new RecoverBinarySearchTree();
-        test.recoverTree(root);
-
-        System.out.println("After");BinaryTreeUtil.preOrderPrintOut(root);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        System.out.println("Before: ");BinaryTreeUtil.inOrderPrint(root);
+        recoverTree(root);
+        System.out.println("After: ");BinaryTreeUtil.inOrderPrint(root);
     }
 
-    TreeNode firstNode, secondNode;
-    // The reason for this initialization is to avoid null pointer exception in the first comparison when prevNode has not been initialized
-    TreeNode prevNode = new TreeNode(Integer.MIN_VALUE);
+    static TreeNode firstNode, secondNode;
+    static TreeNode prevNode;
 
-    public void recoverTree(TreeNode root) {
-
+    public static void recoverTree(TreeNode root) {
         // In order traversal to find the two nodes
-        traverse(root);
+        inorderTraverse(root);
 
         // Swap the values of the two nodes
         int temp = firstNode.val;
@@ -40,25 +35,30 @@ public class RecoverBinarySearchTree {
         secondNode.val = temp;
     }
 
-    private void traverse(TreeNode root) {
+    private static void inorderTraverse(TreeNode node) {
+        if (node == null) return;
 
-        if (root == null) return;
-
-        traverse(root.left);
+        inorderTraverse(node.left);
 
         if(prevNode != null){
-            if (firstNode == null && prevNode.val >= root.val) {
+            if (firstNode == null && prevNode.val >= node.val) {
                 firstNode = prevNode;
             }
-            if (firstNode != null && prevNode.val >= root.val) {
-                secondNode = root;
-                // due to swap value in binary search tree that must be the large value swap to the front, and corresponding small value go to behind.
-                // so line-51, we do firstNode = prevNode, but above line we do "secondNode = root" rather than prevNode as the small value is in the behind which is root.val
+            if (firstNode != null && prevNode.val >= node.val) {
+                // Swap value in binary search tree that must be the large value swap to the front, and corresponding small value go to back.
+                // So, we do "firstNode = prevNode" firstly since prevNode is the swapped large value from back,
+                // for the small value secondNode, we do "secondNode = node" since root is small one
+                secondNode = node;
             }
+
+            // can be simplified to
+         /*   if (prevNode.val >= node.val) {
+                if(firstNode == null) firstNode = prevNode;
+                secondNode = node;
+            }*/
         }
 
-        prevNode = root;
-
-        traverse(root.right);
+        prevNode = node;
+        inorderTraverse(node.right);
     }
 }

@@ -6,6 +6,7 @@ import category.tree.BinaryTree.BinaryTreeUtil;
 /**
  * https://leetcode.com/problems/recover-binary-search-tree
  *
+ * Morris inOrder traversal
  * Refer MorrisInOrderTraversal.java to understand the algorithm
  *
  * Created by brianzhang on 9/26/21.
@@ -23,24 +24,24 @@ public class RecoverBinarySearchTreeO1Space {
 
     public static void recoverTree(TreeNode root) {
         TreeNode prev = null;
-        TreeNode first = null, second = null; // wrong order nodes
+        TreeNode first = null, second = null;
 
         TreeNode curr = root;
         while (curr != null) {
             if (curr.left == null) {
                 if(prev != null && prev.val > curr.val){
-                    if(first==null) first = prev;  // first used to recode the large one, second record small one
+                    if(first==null) first = prev;  // "first" recode the large one, "second" record small one
                     second = curr;
                 }
                 prev = curr;
                 curr = curr.right;
             } else {
                 TreeNode predecessor = curr.left;
-                // predecessor is just used to traverse current subtree, it's not inorder.
-                // "prev" is used to track the inorder sequence. so, line 50 use "prev" compare with "curr" val.
+                // "predecessor" is just used to traverse current subtree
+                // "prev" is used to track the inorder sequence. so, line 54 use "prev" compare with "curr" val
                 while (predecessor.right != curr && predecessor.right != null) {
-                    // tow situation exit this while loop:
-                    // 1. predecessor.right == null means hasn't construct the threading
+                    // tow situation exit while loop:
+                    // 1. predecessor.right == null means hasn't constructed the threading
                     // 2. predecessor.right != curr means threading already exist, then go to line 52
                     predecessor = predecessor.right;
                 }

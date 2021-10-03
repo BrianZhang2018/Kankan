@@ -3,18 +3,18 @@ package category.DivideAndConquer;
 import java.util.*;
 
 /**
- * https://www.lintcode.com/problem/966/description
- *
  * https://www.lintcode.com/problem/966/solution/22651
  *
  * https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/
  *
+ * snowflake phones screening: https://www.1point3acres.com/bbs/thread-788245-1-1.html
+ *
  * Created by brianzhang on 9/26/21.
  */
-public class ClosestPairOfPairs {
+public class ClosestPairOfPoints {
 
     public static void main(String[] args) {
-        System.out.println(new ClosestPairOfPairs().getClosestDistance(
+        System.out.println(new ClosestPairOfPoints().getClosestDistance(
                 new double[]{1.0,2.0,3.0,4.0,5.0}, new double[]{2.0,3.0,1.0,2.0,7.0}));
     }
     /**

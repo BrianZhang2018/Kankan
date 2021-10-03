@@ -1,14 +1,15 @@
 package category.Slidingwindow.templateSolution.template1;
 
 /**
+ * https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/description
+ * Leetcode 340 - Longest Substring with At Most K Distinct Characters
+ *
  * Sliding window solution:
  * 1. two pointer: left, right
  * 2. freq count bucket: new int[]
  * 3. shifting window
  *
- * https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/description
- * Leetcode 340 - Longest Substring with At Most K Distinct Characters
- *
+ * Microsoft
  * Created by brianzhang on 3/3/19.
  */
 
@@ -22,7 +23,7 @@ public class LongestSubstringAtMostKDistinctCharacter {
     public static int solution(String s, int k) {
         int[] freq = new int[128]; // 128, ASCII range
         int left=0, right=0;
-        while(right<s.length()){
+        while(right < s.length()){
             char c = s.charAt(right++);
             freq[c]++;
             if (freq[c] == 1) k--;

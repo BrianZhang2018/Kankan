@@ -3,17 +3,15 @@ package category.Array.slotSeparation;
 /**
  * https://leetcode.com/problems/maximum-product-subarray/
  *
- *
- Slot separation solution:
- First, if there's no zero in the array, then the subarray with maximum product must start with the first element or end with the last element.
- And therefore, the maximum product must be some prefix product or suffix product. So in this solution, we compute the prefix product A and suffix product B,
- and simply return the maximum of A and B.
+     A way to understand the reason why the maximum subarray must be a prefix of suffix of the array:
 
- Why? Here's the proof:
- Say, we have a subarray A[i : j](i != 0, j != n) and the product of elements inside is P. Take P > 0 for example: if A[i] > 0 or A[j] > 0, then obviously, we should extend this subarray to include A[i] or A[j];
- if both A[i] and A[j] are negative, then extending this subarray to include both A[i] and A[j] to get a larger product. Repeating this procedure and eventually we will reach the beginning or the end of A.
- What if there are zeroes in the array? Well, we can split the array into several smaller ones. That's to say, when the prefix product is 0, we start over and compute prefix profuct from the current element instead.
- And this is exactly what A[i] *= (A[i - 1]) or 1 does.
+     suppose there's no 0 in the array:
+
+     if number of negative number is odd, and left most is i and right most is j, then we can only either keep A[:j] or A[i:] to make it max
+     if it's even, then we just multiply all the numbers.
+
+     0 will divide the array to several separated subarrays - Slot separation - e.g. ProductExceptSelf.java
+
  * Created by brianzhang on 6/14/20.
  */
 public class MaximumProductSubArray {
@@ -23,7 +21,6 @@ public class MaximumProductSubArray {
         System.out.println(maxProduct(new int[]{-2,0,-1}));
     }
 
-    // Slot separation solution - similar with ProductExceptSelf.java
     public static int maxProduct(int[] nums) {
         int l = 0, r=0; int max = Integer.MIN_VALUE;
         for(int i=0; i< nums.length; i++){

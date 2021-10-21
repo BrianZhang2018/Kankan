@@ -18,7 +18,7 @@ public class WordBreakI {
         res.forEach(s -> System.out.println(s));
     }
 
-    // DP递推, O(n^2) ("n square" Or "n to the power of 2") - Bottom-Up solution
+    // DP递推, O(n^2) ("n square" Or "n to the power 2") - Bottom-Up solution
     public static boolean wordBreak(String s, Set<String> dict) {
         if (s == null || s.length() == 0) return false;
 

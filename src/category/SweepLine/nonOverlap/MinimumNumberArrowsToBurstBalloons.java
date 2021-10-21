@@ -1,4 +1,4 @@
-package category.OverlapInterval.nonOverlap;
+package category.SweepLine.nonOverlap;
 
 import java.util.Arrays;
 

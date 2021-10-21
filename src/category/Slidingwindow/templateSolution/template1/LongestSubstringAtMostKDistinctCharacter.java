@@ -30,7 +30,7 @@ public class LongestSubstringAtMostKDistinctCharacter {
 
             // shift from left, but the window size won't be changed as we did right++ above, 所以是平行移动, e.g. 2->5 to 3->6
             // the window size will be changed only when found bigger window (重点思路)
-            if (k<0 && --freq[s.charAt(left++)] == 0) {
+            if (k<0 && --freq[s.charAt(left++)] == 0) { // if k>= 0, the latter condition won't be executed so that left won't move, the window size increased
                 k++;
             }
         }

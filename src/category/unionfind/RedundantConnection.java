@@ -29,7 +29,7 @@ public class RedundantConnection {
 
     class UnionFindSet {
         private int[] parents;
-        private int[] ranks;    //weighted: size of parent 1, 2, 3...n
+        private int[] ranks;  // weighted: size of parent 1, 2, 3...n
 
         public UnionFindSet(int n) {
             parents = new int[n + 1];
@@ -44,15 +44,16 @@ public class RedundantConnection {
             int pu = find(u), pv = find(v);
             if (pu == pv) return false;   // find circle as has the same parent root
 
-            //merge the "small" disjoint binaryTree to big one by comparing the size (ranking) to flat the binaryTree
+            // merge the "small" disjoint binaryTree to big one by comparing the size (ranking) to flat the binaryTree
             if (ranks[pv] > ranks[pu]){
-                parents[pu] = pv;   //make "smaller" disjoint binaryTree point to larger one
-                ranks[pu]++;        //weight++
+                parents[pu] = pv;   // make "smaller" disjoint binaryTree point to larger one
+                ranks[pu]++;        // weight++
             }
             else if (ranks[pu] > ranks[pv]){
                 parents[pv] = pu;
                 ranks[pv]++;
-            }else {
+            }
+            else {
                 parents[pv] = pu;
                 ranks[pv] += 1;
             }
@@ -68,18 +69,18 @@ public class RedundantConnection {
             // parents[u] == u, is the root node as the root node pointing to itself
             // (and all the node was initiated as parents[u] = u in the beginning of this function)
             while (parents[u] != u) {
-                parents[u] = parents[parents[u]];  //parent point to the grandfather node which flat the binaryTree
-                u = parents[u];   //assign the value grandfather node to u, then check again whether parents[u] == u in while condition
+                parents[u] = parents[parents[u]];  // parent point to the grandfather node which flat the binaryTree
+                u = parents[u];   // assign the value grandfather node to u, then check again whether parents[u] == u in while condition
             }
             return u;
         }
 
-        // public int find2(int u) {
-        //     if (parents[u] != u) {
-        //         parents[u] = find2(parents[u]);
-        //     }
-        //     return parents[u];
-        // }
+        /* public int find2(int u) {
+             if (parents[u] != u) {
+                 parents[u] = find2(parents[u]);
+             }
+             return parents[u];
+        }*/
     }
 }
 

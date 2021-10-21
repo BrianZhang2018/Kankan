@@ -1,4 +1,4 @@
-package category.OverlapInterval;
+package category.SweepLine.overlapInterval;
 
 import java.util.*;
 

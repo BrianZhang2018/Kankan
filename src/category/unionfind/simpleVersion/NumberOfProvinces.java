@@ -1,4 +1,4 @@
-package category.unionfind.simple;
+package category.unionfind.simpleVersion;
 
 /**
  * https://leetcode.com/problems/number-of-provinces/
@@ -15,10 +15,12 @@ public class NumberOfProvinces {
 
         for (int i = 0; i < m; i++)
             for (int j = i + 1; j < m; j++)
-                if (M[i][j] == 1) unionFind(root, i, j);
+                if (M[i][j] == 1) // only union when the two connected
+                    unionFind(root, i, j);
 
         for (int i = 0; i < m; i++)
             if (i == root[i]) cnt++;
+
         return cnt;
     }
 

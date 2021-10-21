@@ -10,12 +10,10 @@ package category.DFS.IslandProblems;
  */
 public class MakeALargerIsland {
     public static void main(String[] args) {
-        MakeALargerIsland test = new MakeALargerIsland();
-        System.out.println(test.largestIsland(new int[][]{{0,0}, {0,1}}));
+        System.out.println(new MakeALargerIsland().largestIsland(new int[][]{{0,0}, {0,1}}));
     }
 
     public int largestIsland(int[][] grid) {
-
         int m = grid.length;
         int n = grid[0].length;
         int max = -1;

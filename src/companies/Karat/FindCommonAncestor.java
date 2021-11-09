@@ -8,11 +8,13 @@ import java.util.*;
  *
  * Intuition: 建立一个 son -> parent 的adjacent map to solve the issue related with parent (ancestor)
  *
+ * https://gitee.com/aaalucard/carla/blob/master/wayfair_ancestors.go
+ *
  * Created by brianzhang on 12/28/19.
  */
-public class CommonAncestor {
+public class FindCommonAncestor {
     public static void main(String[] args) {
-        int[][] parentChildPairs = new int[][] { { 11, 10 }, { 11, 12 }, { 10, 2 }, { 10, 5 }, { 1, 3 }, { 2, 3 },
+        int[][] parentChildPairs = new int[][] { {11, 10}, { 11, 12 }, { 10, 2 }, { 10, 5 }, { 1, 3 }, { 2, 3 },
                 { 3, 4 }, { 5, 6 }, { 5, 7 }, { 7, 8 } };
         System.out.println(hasCommonAncestor(parentChildPairs, 4, 12));
     }
@@ -28,7 +30,7 @@ public class CommonAncestor {
             graph.put(i[1], set);
         }
 
-        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> parentSetForN1 = new HashSet<>();
         Stack<Integer> stack = new Stack<>();
         stack.add(n1);
 
@@ -37,7 +39,7 @@ public class CommonAncestor {
             if (graph.containsKey(curr)) {
                 for(int i : graph.get(curr)){
                     stack.add(i);
-                    set1.add(i);
+                    parentSetForN1.add(i);
                 }
             }
         }
@@ -47,13 +49,14 @@ public class CommonAncestor {
             Integer curr = stack.pop();
             if (graph.containsKey(curr)) {
                 for(int i : graph.get(curr)){
-                    if (set1.contains(i)) {
+                    if (parentSetForN1.contains(i)) {
                         return true;
                     }
                     stack.add(i);
                 }
             }
         }
+
         return false;
     }
 }

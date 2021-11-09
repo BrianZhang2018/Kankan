@@ -10,8 +10,7 @@ import java.util.*;
 public class MergeInterval {
     public static void main(String[] args) {
         Interval v1 = new Interval(1, 3), v2 = new Interval(2, 6), v3 = new Interval(8, 10);
-        List<Interval> intervals = Arrays.asList(v1, v2, v3);
-        for (Interval i : merge(intervals)) System.out.println(i.start + " - " + i.end);
+        for (Interval i : merge(Arrays.asList(v1, v2, v3))) System.out.println(i.start + " - " + i.end);
     }
 
     // Solution-1: my refactored solution

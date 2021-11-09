@@ -28,14 +28,14 @@ public class EmployeeFreeTime {
         List<Interval> busyIntervals = new ArrayList<>();
 
         for (List<Interval> l : schedule) busyIntervals.addAll(l);
-        // sort by start time - step-1
-        Collections.sort(busyIntervals, (a, b) -> a.start - b.start);
+
+        Collections.sort(busyIntervals, (a, b) -> a.start - b.start);  // sort by start time - step-1
 
         for (int i = 1; i < busyIntervals.size(); i++) {
             Interval prev = busyIntervals.get(i - 1);
             Interval curr = busyIntervals.get(i);
-            // check the overlap - step-2
-            if (prev.end >= curr.start) {
+
+            if (prev.end >= curr.start) {  // check the overlap - step-2
                 curr.end = Math.max(curr.end, prev.end);
                 curr.start = prev.start;
             } else {

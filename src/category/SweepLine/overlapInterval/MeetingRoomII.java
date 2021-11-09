@@ -16,9 +16,10 @@ import java.util.*;
  */
 public class MeetingRoomII {
     public static void main(String[] args) {
-        Interval source = new Interval(1, 10), source1 = new Interval(3, 5);
-        Interval source2 = new Interval(4, 6), source3 = new Interval(7, 9);
+        Interval source = new Interval(1, 10), source1 = new Interval(3, 5),
+                source2 = new Interval(4, 6), source3 = new Interval(7, 9);
         System.out.println(minMeetingRooms(Arrays.asList(source, source1, source2, source3)));
+        System.out.println(minMeetingRooms1(Arrays.asList(source, source1, source2, source3)));
     }
     /**
      * 解题思路:
@@ -27,7 +28,6 @@ public class MeetingRoomII {
      * 然后再将当前会议的结束时间加入到Queue中
      */
     public static int minMeetingRooms(List<Interval> intervals) {
-
         Collections.sort(intervals, (a, b) -> a.start - b.start); // 1. sort by start time
         PriorityQueue<Integer> pq = new PriorityQueue<>(); // 2. store the end time of meeting, keep the minimum end-time on top
 
@@ -40,6 +40,23 @@ public class MeetingRoomII {
         }
 
         return pq.size();
+    }
+
+    // sweep line - treeMap solution
+    public static int minMeetingRooms1(List<Interval> intervals) {
+        if (intervals == null || intervals.size() == 0) return 0;
+
+        TreeMap<Integer, Integer> times = new TreeMap<>();
+        for (Interval i : intervals) {
+            times.put(i.start, times.getOrDefault(i.start, 0) + 1);
+            times.put(i.end, times.getOrDefault(i.end, 0) - 1);
+        }
+        int count = 0, res = 0;
+        for (int c : times.values()) {
+            count += c;
+            res = Math.max(res, count);
+        }
+        return res;
     }
 }
 

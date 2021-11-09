@@ -12,7 +12,9 @@ import java.util.*;
 public class TextJustification {
 
     public static void main(String[] args) {
-        fullJustify(new String[]{"What","must","be","acknowledgment","shall","be"}, 16);
+        for(String s : fullJustify(new String[]{"What","must","be","acknowledgment","shall","be"}, 16)) {
+            System.out.println(s);
+        }
     }
 
     public static List<String> fullJustify(String[] words, int maxWidth) {
@@ -21,40 +23,37 @@ public class TextJustification {
 
         while(index < n){
             int totalChars = words[index].length();
-            int last = index +1; // "last" exclusive from current line
+            int last = index+1; // "last" exclusive from current line
 
             while(last < n){
-                if(totalChars + words[last].length() + 1 > maxWidth){
+                if(totalChars + words[last].length() + 1 <= maxWidth) {
+                    totalChars += words[last++].length() + 1; // "1" means at least one space between two words
+                }else{
                     break;
                 }
-                totalChars+= words[last].length() + 1; // 1 means at least one space between two words
-                last++;
             }
 
-            int gaps = last - index -1; // number of gap in current line
+            int gaps = last-index-1; // number of gaps in current line
             StringBuilder sb = new StringBuilder();
             if(last == n || gaps == 0){ // the last line or the line only have one word
                 for(int i=index; i<last; i++){
                     sb.append(words[i] + ' ');
                 }
-
                 sb.deleteCharAt(sb.length() -1);
+
                 while(sb.length() < maxWidth) sb.append(' ');
 
-            }else{ // middle line
-                int spaces = (maxWidth-totalChars) / gaps; // evenly distributed additional spaces need to be added
-                int rest = (maxWidth-totalChars) % gaps; // mod here, so the value only can be 0 or 1, that means only leftmost gap may have 1 more space.
-
+            }else{ // the middle lines
+                int spaces = (maxWidth-totalChars)/gaps; // evenly distributed spaces need to be added into current gaps
+                int rest = (maxWidth-totalChars)%gaps; // the rest spaces need to be added
                 for(int i=index; i<last-1; i++) {
                     sb.append(words[i]);
                     sb.append(' ');
-
-                    for(int j=0; j<spaces + (i-index<rest? 1 : 0); j++){  // i-index<rest? 1 : 0 used to determine whehter need add one more space there.
+                    for(int j=0; j < spaces + (i-index<rest? 1 : 0); j++){  // i-index<rest? 1 : 0 used to determine whether need add one more space there.
                         sb.append(' ');
                     }
                 }
-
-                sb.append(words[last-1]);
+                sb.append(words[last-1]); // since the middle line must have end word
             }
 
             res.add(sb.toString());

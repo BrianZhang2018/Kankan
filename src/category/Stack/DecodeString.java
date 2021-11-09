@@ -15,7 +15,7 @@ public class DecodeString{
 
     // Solution-1 : DFS
     public static String decodeStringDFS(String s) {
-        // use a queue to manage the character which will remove the element in recursive
+        // use a queue to manage the character which will remove the element from queue during dfs recursive
         Deque<Character> dq = new ArrayDeque<>();
         for(Character c : s.toCharArray()) dq.add(c);
         return dfsHelper(dq);
@@ -35,7 +35,7 @@ public class DecodeString{
                 }
                 num=0;  // don't forget here, e.g. 3[a]2[b], when finish 3[a], we need reset num=0.
             }else if(c == ']'){
-                break;
+                return sb.toString();
             }else{
                 sb.append(c);
             }
@@ -50,16 +50,16 @@ public class DecodeString{
         Stack<StringBuilder> strStack = new Stack<>();
         StringBuilder sb = new StringBuilder();
 
-        int k = 0;
-        for (char ch : s.toCharArray()) {
-            if (Character.isDigit(ch)) {
-                k = k * 10 + ch - '0';  // for the case like "10[bc]"
-            } else if (ch == '[') {
-                numStack.push(k);
+        int num = 0;
+        for (char c : s.toCharArray()) {
+            if (Character.isDigit(c)) {
+                num = num * 10 + c - '0';  // for the case like "10[bc]"
+            } else if (c == '[') {
+                numStack.push(num);
                 strStack.push(sb);
                 sb = new StringBuilder();
-                k = 0;
-            } else if (ch == ']') {
+                num = 0;
+            } else if (c == ']') {
                 StringBuilder prev = strStack.pop();
                 int numOfRepeat = numStack.pop();
                 for (int n = numOfRepeat; n > 0; --n)
@@ -67,7 +67,7 @@ public class DecodeString{
                 
                 sb = prev;
             } else {
-                sb.append(ch);
+                sb.append(c);
             }
         }
         return sb.toString();

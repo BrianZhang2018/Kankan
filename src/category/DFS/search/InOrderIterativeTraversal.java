@@ -20,16 +20,15 @@ public class InOrderIterativeTraversal {
 
     public static void inOrder(TreeNode root) {
         Stack<TreeNode> stack = new Stack<>();
-        TreeNode curr = root;
-        while (!stack.isEmpty() || curr != null) {
-            while (curr != null) {
-                stack.add(curr);
-                curr = curr.left;
+        while (!stack.isEmpty() || root != null) {
+            while (root != null) {
+                stack.add(root);
+                root = root.left;
             }
 
-            curr = stack.pop();
-            System.out.println(curr.val);
-            curr = curr.right;
+            root = stack.pop();
+            System.out.println(root.val);
+            root = root.right;
         }
     }
 }

@@ -30,7 +30,6 @@ public class ValidateBinarySearchTree {
     }
 
     public boolean validateTree(TreeNode root, long lowerLimit, long upperLimit){
-
         if(root == null) return true;
 
         if(root.val <= lowerLimit || root.val >= upperLimit) return false;
@@ -40,37 +39,22 @@ public class ValidateBinarySearchTree {
         return lTree && rTree;
     }
 
-    // Solution-2: BFS, converted from above DFS
-    private Deque<TreeNode> stack = new LinkedList();
-    private Deque<Integer> upperLimits = new LinkedList();
-    private Deque<Integer> lowerLimits = new LinkedList();
-
-    public void update(TreeNode root, Integer low, Integer high) {
-        stack.add(root);
-        lowerLimits.add(low);
-        upperLimits.add(high);
-    }
-
+    // Solution-2: BFS - inOrder traversal
     public boolean isValidBSTBFS(TreeNode root) {
-        Integer low = null, high = null, val;
-        update(root, low, high);
+        Stack<TreeNode> stack = new Stack();
+        Integer prev = null;
 
-        while (!stack.isEmpty()) {
-            root = stack.poll();
-            low = lowerLimits.poll();
-            high = upperLimits.poll();
-
-            if (root == null) continue;
-            val = root.val;
-            if (low != null && val <= low) {
-                return false;
+        while (!stack.isEmpty() || root != null) {
+            while (root != null) {
+                stack.push(root);
+                root = root.left;
             }
-            if (high != null && val >= high) {
-                return false;
-            }
+            root = stack.pop();
 
-            update(root.left, low, val);
-            update(root.right, val, high);
+            if (prev!=null && root.val <= prev) return false;
+
+            prev = root.val;
+            root = root.right;
         }
         return true;
     }

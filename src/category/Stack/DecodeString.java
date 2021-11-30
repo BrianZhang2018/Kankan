@@ -15,25 +15,24 @@ public class DecodeString{
 
     // Solution-1 : DFS
     public static String decodeStringDFS(String s) {
-        // use a queue to manage the character which will remove the element from queue during dfs recursive
-        Deque<Character> dq = new ArrayDeque<>();
+        Deque<Character> dq = new ArrayDeque<>(); // use a queue to manage the character which will be removed after visited
         for(Character c : s.toCharArray()) dq.add(c);
         return dfsHelper(dq);
     }
 
     public static String dfsHelper(Deque<Character> dq) {
         StringBuilder sb = new StringBuilder();
-        int num = 0;
+        int repeat = 0;
         while(!dq.isEmpty()){
             char c = dq.poll();
             if(Character.isDigit(c)){
-                num = num*10 + c - '0';
+                repeat = repeat*10 + c - '0';
             }else if(c == '['){
                 String sub = dfsHelper(dq);
-                for(int j = num; j>0; j--){
+                for(int j = repeat; j>0; j--){
                     sb.append(sub);
                 }
-                num=0;  // don't forget here, e.g. 3[a]2[b], when finish 3[a], we need reset num=0.
+                repeat=0;  // don't forget here, reset repeat to 0.
             }else if(c == ']'){
                 return sb.toString();
             }else{

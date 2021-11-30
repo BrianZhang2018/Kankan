@@ -1,8 +1,8 @@
-package category.unionfind;
+package category.unionfind.detectCycle.unDirectedGraph;
 
 /**
  * Union find + weight + flat binaryTree (Weighted union find and path compression)
- * Union find is used to determine the cycle when add a new edge
+ * Union find is used to determine the cycle in a "undirected" graph
  *
  * Kruskal’s Algorithm is also leveraged this algorithm
  * https://algorithms.tutorialhorizon.com/kruskals-algorithm-minimum-spanning-tree-mst-complete-java-implementation/
@@ -42,6 +42,7 @@ public class RedundantConnection {
 
         public boolean Union(int u, int v) {
             int pu = find(u), pv = find(v);
+
             if (pu == pv) return false;   // find circle as has the same parent root
 
             // merge the "small" disjoint binaryTree to big one by comparing the size (ranking) to flat the binaryTree

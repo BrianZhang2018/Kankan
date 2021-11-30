@@ -11,11 +11,7 @@ import java.util.*;
  */
 public class FindAllAnagramsInAString {
     public static void main(String[] args) {
-       // System.out.println(findAnagrams("cbaebacdaaa", "abc"));
-
-        String test = "  Bob    Loves  Alice   ";
-        String[] t = test.split(" ");
-        System.out.println(test.trim());
+       System.out.println(findAnagrams("cbaebacdaaa", "abc"));
     }
 
     public static List<Integer> findAnagrams(String s, String p) {

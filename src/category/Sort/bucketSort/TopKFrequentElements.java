@@ -1,4 +1,4 @@
-package category.Sort;
+package category.Sort.bucketSort;
 
 import java.util.*;
 
@@ -11,7 +11,7 @@ import java.util.*;
  * O(N)
  * Created by brianzhang on 1/6/19.
  */
-public class TopKFrequentElementsBucketSort {
+public class TopKFrequentElements {
 
     public static void main(String[] args) {
         for(int i : topKFrequent(new int[]{1,1,2,2,3}, 1)) System.out.println(i);

@@ -15,6 +15,8 @@ public class FlattenBinaryTreeToLinkedList {
         root.left.left = new TreeNode(3);
         root.left.right = new TreeNode(4);
         flatten(root);
+
+        System.out.println("a".compareTo("c"));
     }
 
     /**

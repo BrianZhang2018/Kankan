@@ -1,9 +1,8 @@
-package category.DynamicPlanning.greedy;
+package category.DynamicPlanning.Knapsack背包问题;
 
 import java.util.*;
 
 /**
- * https://leetcode.com/problems/maximum-profit-in-job-scheduling/
  * https://leetcode.com/problems/maximum-profit-in-job-scheduling/discuss/409009/JavaC%2B%2BPython-DP-Solution
  * Explanation
      Sort the jobs by endTime.
@@ -40,16 +39,13 @@ public class MaximumProfitInJobScheduling {
     public static int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
         int length = startTime.length;
         int[][] jobs = new int[length][3];
-
         for(int i=0; i<length; i++) {
-            jobs[i] = new int[] { startTime[i], endTime[i], profit[i]};
+            jobs[i] = new int[] {startTime[i], endTime[i], profit[i]};
         }
 
         Arrays.sort(jobs, (a, b) -> a[1] - b[1]);
-
         TreeMap<Integer, Integer> dp = new TreeMap();
         dp.put(0,0);
-
         for(int[] i : jobs) {
             int curr = dp.floorEntry(i[0]).getValue() + i[2];
             if(curr > dp.lastEntry().getValue()) {

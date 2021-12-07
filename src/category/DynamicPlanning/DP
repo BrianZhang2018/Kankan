@@ -1,6 +1,3 @@
-- DP is used to get the number of the solution
-- Backtracking can list all the solution
-
 1. DP Ways:
     a) Top-Down approach: Recursion + Memoization. 记忆化递归
     b) Bottom-Up approach: Iterative + Tabulation, which can avoid the recursion. 递推
@@ -65,3 +62,7 @@ top-down: directly try to solve the problem, and store the value in the memo, an
 
 6.降维
 如果二维的结果只依赖前一个二维结果，we can reduce it to one dimension.
+
+7.
+- DP is used to get the number of the solution
+- Backtracking can list all the solution

@@ -27,7 +27,9 @@ public class CombinationSum {
 
     //recursive dfsHelper with backtracking
     private void dfs(int[] nums, int start,int target, List<Integer> temp, List<List<Integer>> res) {
-        if (target < 0) return;
+        if (target < 0) {
+            return;
+        }
         else if (target == 0) {
             res.add(new ArrayList<>(temp));
         } else {

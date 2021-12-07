@@ -21,8 +21,7 @@ public class EditDistanceMemo {
     }
 
     private static int helper(String word1, String word2, int m, int n, int[][] memo) {
-        if(m == 0) return n;
-        if(n == 0) return m;
+        if(m == 0 || n == 0) return m == 0? m : n;
 
         if(memo[m - 1][n - 1] != 0) {
             return memo[m - 1][n - 1];

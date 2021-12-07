@@ -4,9 +4,7 @@ import java.util.*;
 
 /**
  * https://leetcode.com/problems/3sum/
- *
  * Similar to Permutation II
- *
  * Created by brianzhang on 5/3/20.
  */
 public class ThreeSum {

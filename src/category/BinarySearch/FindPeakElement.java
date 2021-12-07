@@ -1,5 +1,7 @@
 package category.BinarySearch;
 
+import java.util.TreeMap;
+
 /**
  * Created by brianzhang on 3/14/19.
  */
@@ -11,14 +13,12 @@ public class FindPeakElement {
     }
 
     public int findPeakElement(int[] nums) {
-        if(nums == null || nums.length == 0)
-            return 0;
+        if(nums == null || nums.length == 0) return 0;
 
         return binarySearch(0, nums.length-1, nums);
     }
 
     public int binarySearch(int start, int end, int[] nums){
-
         if(start == end){
             return start;
         }else if(start + 1 == end){

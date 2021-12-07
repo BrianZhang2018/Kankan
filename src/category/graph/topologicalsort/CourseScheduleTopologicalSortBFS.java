@@ -16,7 +16,7 @@ import java.util.*;
  *
  * Created by brianzhang on 4/18/19.
  */
-public class CourseScheduleIAndIIBFS {
+public class CourseScheduleTopologicalSortBFS {
     public static void main(String[] args) {
         System.out.println(canFinish(4, new int[][]{{1, 0}, {3, 1}, {2, 0}, {1, 2}, {3, 2}}));
         System.out.println("Order is: " + Arrays.toString(findOrder(4, new int[][]{{1, 0}, {3, 1}, {2, 0}, {1, 2}, {3, 2}})));

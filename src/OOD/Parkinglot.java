@@ -142,7 +142,7 @@ class Level {
 
 }
 
-public class ParkingLot {
+class ParkingLot {
     Level[] levels;
     int num_Levels;
 

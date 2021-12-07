@@ -63,17 +63,14 @@ public class CoinChange {
         Integer[] boxedArr = IntStream.of(coins).boxed().toArray(Integer[]::new);
         Arrays.sort(boxedArr, Collections.reverseOrder());
         dfsHelper(boxedArr, 0, amount, 0);
-
         return res == Integer.MAX_VALUE ? -1 : res;
     }
 
     public static void dfsHelper(Integer[] coins, int start, int amount, int count) {
-
         if (amount == 0) {
             res=Integer.min(res, count);
             return;
         }
-
         if (start == coins.length) return;
 
         int coin = coins[start];

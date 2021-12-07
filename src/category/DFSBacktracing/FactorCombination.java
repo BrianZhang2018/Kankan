@@ -23,7 +23,6 @@ public class FactorCombination {
     }
 
     private List<List<Integer>> dfs(int n, int start, List<Integer> temp, List<List<Integer>> res){
-
         if(n == 1){
             if(temp.size() > 1){
                 res.add(new ArrayList<>(temp));

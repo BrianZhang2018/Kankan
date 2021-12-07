@@ -5,7 +5,6 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/maximum-profit-in-job-scheduling/
  * https://leetcode.com/problems/maximum-profit-in-job-scheduling/discuss/409009/JavaC%2B%2BPython-DP-Solution
- *
  * Explanation
      Sort the jobs by endTime.
 

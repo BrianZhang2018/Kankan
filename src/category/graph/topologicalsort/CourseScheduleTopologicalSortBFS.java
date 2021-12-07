@@ -8,14 +8,15 @@ import java.util.*;
  *
  * https://leetcode.com/problems/course-schedule/
  * https://leetcode.com/problems/course-schedule-ii/
+ *
  * 1. find order - courseI, II
- * 2. find cycle - follow up question
+ * 2. find cycle - follow-up question
  *
  * Time Complexity: O(V+E) 稀疏图->O(V), 稠密图->O(V2), V is vertex, E is edge
  *
  * Created by brianzhang on 4/18/19.
  */
-public class CourseScheduleTopologicalSortBFS {
+public class CourseScheduleIAndIIBFS {
     public static void main(String[] args) {
         System.out.println(canFinish(4, new int[][]{{1, 0}, {3, 1}, {2, 0}, {1, 2}, {3, 2}}));
         System.out.println("Order is: " + Arrays.toString(findOrder(4, new int[][]{{1, 0}, {3, 1}, {2, 0}, {1, 2}, {3, 2}})));
@@ -37,8 +38,7 @@ public class CourseScheduleTopologicalSortBFS {
         }
         // find the start node -> inDegree = 0, 意味着它是起点
         for (int i = 0; i < n; ++i)
-            if (inDegree[i] == 0)
-                preCourses.add(i); //把入度为零的vertex放入前导课list
+            if (inDegree[i] == 0) preCourses.add(i); //把入度为零的vertex放入前导课list
 
         int index = 0;
         while (index < preCourses.size()) {

@@ -4,7 +4,6 @@ import java.util.*;
 
 /**
  * https://leetcode.jp/problemdetail.php?id=254
- *
  * https://www.lintcode.com/problem/factor-combinations/description
  *
  * Created by brianzhang on 3/6/19.
@@ -13,7 +12,7 @@ public class FactorCombination {
 
     public static void main(String[] args) {
         FactorCombination fc = new FactorCombination();
-        for(List<Integer> l :  fc.getFactors(8)){
+        for(List<Integer> l :  fc.getFactors(12)){
             System.out.println(l.toString());
         }
     }

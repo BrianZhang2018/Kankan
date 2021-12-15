@@ -1,4 +1,4 @@
-package category.linkedList;
+package category.Map;
 
 import java.util.*;
 
@@ -15,19 +15,15 @@ public class ShortestWordDistanceII {
     }
 
     Map<String, List<Integer>> map = new HashMap();
-
     public ShortestWordDistanceII(String[] wordsDict) {
-        int i=0;
-        for(String str : wordsDict) {
-            map.putIfAbsent(str, new ArrayList());
-            map.get(str).add(i++);
+        for(int i=0; i<wordsDict.length; i++) {
+            map.putIfAbsent(wordsDict[i], new ArrayList());
+            map.get(wordsDict[i]).add(i);
         }
-
         System.out.println(map);
     }
 
     public int shortest(String word1, String word2) {
-
         List<Integer> l1 = map.get(word1);
         List<Integer> l2 = map.get(word2);
 
@@ -36,7 +32,6 @@ public class ShortestWordDistanceII {
         while(i<l1.size() && j<l2.size()) {
             int m = l1.get(i), n = l2.get(j);
             min = Math.min(min, Math.abs(m-n));
-
             if(m < n){
                 i++;
             }else{

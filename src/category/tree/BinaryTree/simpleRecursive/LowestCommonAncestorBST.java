@@ -15,11 +15,9 @@ public class LowestCommonAncestorBST {
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 
-        int pVal = p.val;
-        int qVal = q.val;
-        int parentVal = root.val;
+        int pVal = p.val, qVal = q.val, parentVal = root.val;
 
-        if (pVal > parentVal && qVal > parentVal) {// both p and q are greater than parent node
+        if (pVal > parentVal && qVal > parentVal) { // both p and q are greater than parent node
             return lowestCommonAncestor(root.right, p, q);
         } else if (pVal < parentVal && qVal < parentVal) { //both p and q are lesser than parent node
             return lowestCommonAncestor(root.left, p, q);

@@ -4,20 +4,19 @@ import java.util.*;
 
 /**
  * https://leetcode.com/problems/design-in-memory-file-system/
+ * CoinBase
  * Trie
  * Created by brianzhang on 1/28/21.
  */
-public class FileSystem {
+public class DesignInMemoryFileSystem {
 
     public static void main(String[] args) {
-        FileSystem fs = new FileSystem();
+        DesignInMemoryFileSystem fs = new DesignInMemoryFileSystem();
         System.out.println(fs.ls("/"));
         fs.mkdir("/a/b/c");
         fs.addContentToFile("/a/b/c/d", "hello");
         System.out.println(fs.ls("/"));
         System.out.println(fs.readContentFromFile("/a/b/c/d"));
-
-        new TreeMap<String, Node>().values();
     }
 
     private class Node { // directory and file are Node
@@ -54,14 +53,13 @@ public class FileSystem {
             }else{
                 list.addAll(children.keySet());
             }
-
             return list;
         }
     }
 
     private Node root;
 
-    public FileSystem() {
+    public DesignInMemoryFileSystem() {
         root = new Node("");
     }
 
@@ -86,7 +84,7 @@ public class FileSystem {
 
         Node cur = root;
         for(String p : paths){
-            if(p.length() == 0) continue;
+            if(p.equals("")) continue;
 
             cur.children.putIfAbsent(p, new Node(p));
             cur = cur.children.get(p);

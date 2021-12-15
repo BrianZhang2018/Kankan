@@ -35,16 +35,14 @@ public class KnightDialer {
     public int helper(int n, int num, int[][] memo, int[][] graph){
         if(n == 0) return 1;
 
-        if(memo[n][num] != 0){
-            return memo[n][num];
-        }
+        if(memo[n][num] != 0) return memo[n][num];
 
-        int cnt=0;
+        int cnt=0; // Memo要点1: used to update cnt
         for(int next : graph[num]){
-            cnt = (cnt + helper(n-1, next, memo, graph)) % mod;
+            cnt = (cnt + helper(n-1, next, memo, graph)) % mod; // update cnt
         }
 
-        memo[n][num] = cnt;
+        memo[n][num] = cnt; // Memo要点2: memo recorded
         return cnt;
     }
 }

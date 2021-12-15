@@ -29,7 +29,7 @@ public class PermutationII {
         } else {
             for (int i = 0; i < nums.length; i++) {
                 if (used[i]) continue;
-                if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) //makes sure when duplicates are selected, the order is ascending.
+                if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) // makes sure when duplicates are selected, the order is ascending.
                     continue;
 
                 used[i] = true;

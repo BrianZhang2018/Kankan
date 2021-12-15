@@ -9,16 +9,12 @@ public class TrieImplByHashMap {
 
     private TrieNode root;
 
-    /**
-     * Initialize your data structure here.
-     */
+    // Initialize your data structure here.
     public TrieImplByHashMap() {
         root = new TrieNode();
     }
 
-    /**
-     * Inserts a word into the trie.
-     */
+   // Inserts a word into the trie.
     public void insert(String word) {
         if (word == null)
             return;
@@ -37,12 +33,9 @@ public class TrieImplByHashMap {
         curr.isLastWord = true;
     }
 
-    /**
-     * Returns if the word is in the trie.
-     */
+    // Returns if the word is in the trie.
     public boolean search(String word) {
-        if (word == null)
-            return false;
+        if (word == null) return false;
 
         TrieNode curr = root;
         for (int i = 0; i < word.length(); i++) {
@@ -56,9 +49,7 @@ public class TrieImplByHashMap {
         return curr.isLastWord;
     }
 
-    /**
-     * Returns if there is any word in the trie that starts with the given prefix.
-     */
+    // Returns if there is any word in the trie that starts with the given prefix.
     public boolean startsWith(String prefix) {
         if (prefix == null)
             return false;

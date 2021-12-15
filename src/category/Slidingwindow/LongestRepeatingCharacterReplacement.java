@@ -7,7 +7,6 @@ public class LongestRepeatingCharacterReplacement{
     }
 
     public static int characterReplacement(String s, int k) {
-        
         if(s == null || s.length() == 0){
             return 0;
         }

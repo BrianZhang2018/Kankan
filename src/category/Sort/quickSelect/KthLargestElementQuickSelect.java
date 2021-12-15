@@ -4,6 +4,8 @@ package category.Sort.quickSelect;
  * https://leetcode.com/problems/kth-largest-element-in-an-array/description/
  *
  * Quick select algorithm
+ * Time complexity: O(N) in the average case, O(N^2) in the worst case.
+ * Worst case: Worst case occurs when we pick the largest/smallest element as pivot.
  */
 public class KthLargestElementQuickSelect {
     public static void main(String[] args) {
@@ -26,7 +28,6 @@ public class KthLargestElementQuickSelect {
         return nums[start];
     }
 
-    // O(n)
     private int partition(int[] nums, int start, int end) {
         int pivot = start;
         while (start <= end) {
@@ -41,7 +42,7 @@ public class KthLargestElementQuickSelect {
         return end;
     }
 
-    //
+    // another way for partition
     private int partition1(int[] nums, int lo, int hi) {
         int pivot = nums[hi];
         int left = lo;

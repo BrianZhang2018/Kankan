@@ -1,0 +1,3 @@
+有中间结果的可以用memo, e.g. find path
+
+不能用的, e.g. faction combination which don't calculate the 中间结果

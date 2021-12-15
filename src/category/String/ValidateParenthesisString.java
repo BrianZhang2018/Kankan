@@ -13,8 +13,7 @@ public class ValidateParenthesisString {
     }
 
     public boolean checkValidString(String s) {
-        if (s == null)
-            return true;
+        if (s == null) return true;
 
         Stack<Integer> left = new Stack<>();
         Stack<Integer> star = new Stack<>();

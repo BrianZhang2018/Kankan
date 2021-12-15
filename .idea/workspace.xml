@@ -10,26 +10,59 @@
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/apple/my2021/FindOverlapTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/CanPlaceFlowers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/FactorCombination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/FindLeavesOfBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/FindLeavesOfBinaryTree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/IsNumeric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/RetainBestCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/maximumSubArray/MaximumProductSubarray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/maximumSubArray/MaximumSubArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/nestedListWeightSum/NestedListWeightSumI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/nestedListWeightSum/NestedListWeightSumII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/shortestWordDistance/ShortestWordDistanceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/shortestWordDistance/ShortestWordDistanceII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/shortestWordDistance/ShortestWordDistanceIII.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/roblox/FindAllPeakElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/roblox/TopGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/AFoundation/learning/coinChangeSeries/BruteForceExplain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/memo/when to use Memo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/AStartProblem/GetMaximumPathSum - Variant problem-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/AStartProblem/GetTotalNumberOfRoutes-BruteForce-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/AStartProblem/GetTotalNumberOfRoutes-WithMemo-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/AStartProblem/link" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/myDianMian/MaximumCalories.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/myDianMian/MaximumCalories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/problems/ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/problems/ValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/highF/ShortWordDistanceI243.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/highF/ShortWordDistanceI243.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/highF/ShortestWordDistanceII244.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/highF/ShortestWordDistanceII244.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/BinaryTreeUpsideDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/BinaryTreeUpsideDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/ValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/FindBinaryLeaves366.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/FindBinaryLeaves366.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/FindLeavesOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/FindLeavesOfBinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/microsoft/ms2021/hiringEvent/CourseSchedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/microsoft/ms2021/hiringEvent/LFU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/microsoft/ms2021/hiringEvent/LowestCommonAncestor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/CourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/CourseSchedule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OOD/Parkinglot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOD/Parkinglot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/AFoundation/learning/coinChangeSeries/CoinChangeSeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/AFoundation/learning/coinChangeSeries/CoinChangeSeries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/slotSeparation/MaximumProductSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/slotSeparation/MaximumProductSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BFS/NestedListWeightSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/NestedListWeightSumII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFS/NestedListWeightSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFS/NestedListWeightSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/CombinationSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/FactorCombination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/FactorCombination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/binarytree/PathSumIIIBruteForce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/binarytree/PathSumIIIBruteForce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/ThreeSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/DFSMemo/EditDistanceMemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/DFSMemo/EditDistanceMemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/DP" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/DP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/MaximumProfitInJobScheduling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/MaximumProfitInJobScheduling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/coinChange/CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/coinChange/CoinChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/graph/topologicalsort/CourseScheduleTopologicalSortBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/topologicalsort/CourseScheduleTopologicalSortBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/memo/KnightDialer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/memo/KnightDialer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/PermutationII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/PermutationII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Map/LFUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Map/LFUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/design/ValidSuduko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/design/ValidSuduko.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Slidingwindow/LongestRepeatingCharacterReplacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/LongestRepeatingCharacterReplacement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Sort/quickSelect/KthLargestElementQuickSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Sort/quickSelect/KthLargestElementQuickSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/String/ValidateParenthesisString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/String/ValidateParenthesisString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/linkedList/ShortestWordDistanceII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Map/ShortestWordDistanceII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/simpleRecursive/LowestCommonAncestorBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/BinaryTree/simpleRecursive/LowestCommonAncestorBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/trie/DesignInMemoryFileSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/TrieImplByHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/trie/TrieImplByHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/companies/amazon/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/companies/amazon/LRUCache.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -162,6 +195,13 @@
       <dir>$PROJECT_DIR$/src/systemDesign</dir>
     </dirStrings>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="false" />
+    <option name="myAllFileTypesSelected" value="true" />
+    <option name="mySelectedFileTypes">
+      <set />
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../InterviewPrep" />
   </component>
@@ -177,6 +217,9 @@
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/liberica-1.8.0_312/src.zip!/java/util/Objects.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -255,6 +298,13 @@
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="false" />
+    <option name="myAllFileTypesSelected" value="true" />
+    <option name="mySelectedFileTypes">
+      <set />
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1280" />
@@ -1334,6 +1384,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 2.7.10 (/usr/bin/python)" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -1344,25 +1397,32 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.walmartlab.codechallenge.ticketservice" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="category.PriorityQueue.overlapInterval" />
-      <recent name="companies.RallyHealthy" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$USER_HOME$/workspace/InterviewPrep/src/linkedin" />
       <recent name="$PROJECT_DIR$/src/category/DataStructure" />
       <recent name="$PROJECT_DIR$/src/systemDesign" />
       <recent name="$USER_HOME$/workspace/InterviewPrep/src/discovery" />
       <recent name="$PROJECT_DIR$/src/category/OoneProblems" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021" />
+      <recent name="$PROJECT_DIR$/src/category/DynamicPlanning/AStartProblem" />
+      <recent name="$PROJECT_DIR$/src/category/AFoundation/learning/coinChangeSeries" />
+      <recent name="$USER_HOME$/workspace/InterviewPrep/src/doordash/my2021" />
+      <recent name="$PROJECT_DIR$/src/category/SweepLine/overlapInterval" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="category.PriorityQueue.overlapInterval" />
+      <recent name="companies.RallyHealthy" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.walmartlab.codechallenge.ticketservice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="category.unionfind.detectCycle.DirectedGraph" />
@@ -1371,15 +1431,8 @@
       <recent name="category.Array.prefixSum" />
       <recent name="category.linkedList.fastslowpointer" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$USER_HOME$/workspace/InterviewPrep/src/doordash/my2021" />
-      <recent name="$PROJECT_DIR$/src/category/SweepLine/overlapInterval" />
-      <recent name="$PROJECT_DIR$/src/category/tree/morrisTraversal" />
-      <recent name="$PROJECT_DIR$/src/category/DynamicPlanning/greedy/stock" />
-      <recent name="$USER_HOME$/workspace/InterviewPrep/src/linkedin/phoneScreening/ps2021" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.CourseScheduleTopologicalSortDFS">
+  <component name="RunManager" selected="Application.ShortestWordDistanceIII">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1499,24 +1552,10 @@
       <option name="trusted" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <method />
-    </configuration>
     <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
       <module name="" />
       <working_directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="" />
-      <working_directory value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <kind value="DIRECTORY" />
       <method />
     </configuration>
     <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
@@ -1559,13 +1598,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="CoinChangeSeries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.AFoundation.learning.coinChangeSeries.CoinChangeSeries" />
+    <configuration name="DesignInMemoryFileSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.tree.trie.DesignInMemoryFileSystem" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.AFoundation.learning.coinChangeSeries.*" />
+          <option name="PATTERN" value="category.tree.trie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1573,41 +1612,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseScheduleTopologicalSortDFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.graph.topologicalsort.CourseScheduleTopologicalSortDFS" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.graph.topologicalsort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FactorCombination" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.DFSBacktracing.FactorCombination" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.DFSBacktracing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindAllPeakElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="roblox.FindAllPeakElement" />
+    <configuration name="FindBinaryLeaves366" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedin.vo.FindBinaryLeaves366" />
       <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="roblox.*" />
+          <option name="PATTERN" value="linkedin.vo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1615,13 +1626,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PermutationI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.DFSBacktracing.permutation.I.PermutationI" />
+    <configuration name="IsNumeric" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedin.phoneScreening.ps2021.IsNumeric" />
+      <module name="InterviewPrep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedin.phoneScreening.ps2021.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortestWordDistanceIII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedin.phoneScreening.ps2021.shortestWordDistance.ShortestWordDistanceIII" />
+      <module name="InterviewPrep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedin.phoneScreening.ps2021.shortestWordDistance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordSearchII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.tree.trie.WordSearchII" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.DFSBacktracing.permutation.I.*" />
+          <option name="PATTERN" value="category.tree.trie.DesignInMemoryFileSystem" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1658,6 +1697,18 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -1825,19 +1876,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.PermutationI" />
-      <item itemvalue="Application.FactorCombination" />
-      <item itemvalue="Application.CoinChangeSeries" />
-      <item itemvalue="Application.FindAllPeakElement" />
-      <item itemvalue="Application.CourseScheduleTopologicalSortDFS" />
+      <item itemvalue="Application.IsNumeric" />
+      <item itemvalue="Application.WordSearchII" />
+      <item itemvalue="Application.DesignInMemoryFileSystem" />
+      <item itemvalue="Application.FindBinaryLeaves366" />
+      <item itemvalue="Application.ShortestWordDistanceIII" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CourseScheduleTopologicalSortDFS" />
-        <item itemvalue="Application.FindAllPeakElement" />
-        <item itemvalue="Application.CoinChangeSeries" />
-        <item itemvalue="Application.FactorCombination" />
-        <item itemvalue="Application.PermutationI" />
+        <item itemvalue="Application.ShortestWordDistanceIII" />
+        <item itemvalue="Application.IsNumeric" />
+        <item itemvalue="Application.FindBinaryLeaves366" />
+        <item itemvalue="Application.DesignInMemoryFileSystem" />
+        <item itemvalue="Application.WordSearchII" />
       </list>
     </recent_temporary>
   </component>
@@ -2023,7 +2074,8 @@
       <workItem from="1636405267173" duration="40251000" />
       <workItem from="1637634814616" duration="27670000" />
       <workItem from="1638572245534" duration="13765000" />
-      <workItem from="1638719715083" duration="27037000" />
+      <workItem from="1638719715083" duration="51136000" />
+      <workItem from="1639086093247" duration="59237000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2419,11 +2471,6 @@
           <option name="timeStamp" value="1039" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/BinaryTree/simpleRecursive/LowestCommonAncestorBT.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="1044" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/workspace/InterviewPrep/src/salesforce/HighestElementConcatenator.java</url>
           <line>33</line>
           <option name="timeStamp" value="1063" />
@@ -2452,6 +2499,16 @@
           <url>file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/phoneScreening/ps2021/ValidParentheses.java</url>
           <line>18</line>
           <option name="timeStamp" value="1089" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/category/RightDataStructure/design/ValidSuduko.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/ValidParentheses.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1114" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

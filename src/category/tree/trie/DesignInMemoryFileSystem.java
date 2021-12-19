@@ -1,16 +1,19 @@
 package category.tree.trie;
 
+import java.io.FileNotFoundException;
 import java.util.*;
 
 /**
  * https://leetcode.com/problems/design-in-memory-file-system/
  * CoinBase
  * Trie
+ *
+ * 改了dir找不到throw exception, file 找不到throw exception, replace the 內容 問要怎麼scale 如果沒有database
  * Created by brianzhang on 1/28/21.
  */
 public class DesignInMemoryFileSystem {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws DirOrFileNotFound {
         DesignInMemoryFileSystem fs = new DesignInMemoryFileSystem();
         System.out.println(fs.ls("/"));
         fs.mkdir("/a/b/c");
@@ -63,20 +66,32 @@ public class DesignInMemoryFileSystem {
         root = new Node("");
     }
 
-    public List<String> ls(String path) {
-        return findNode(path).getList();
+    public List<String> ls(String path) throws DirOrFileNotFound {
+        Node target = findNode(path);
+        if(target == null) {
+            throw new DirOrFileNotFound("Path Not Found");
+        }
+        return target.getList();
     }
 
     public void mkdir(String path) {
         findNode(path);
     }
 
-    public void addContentToFile(String filePath, String content) {
-        findNode(filePath).addContent(content);
+    public void addContentToFile(String filePath, String content) throws DirOrFileNotFound {
+        Node target = findNode(filePath);
+        if(target == null) {
+            throw new DirOrFileNotFound("Path Not Found");
+        }
+        target.addContent(content);
     }
 
-    public String readContentFromFile(String filePath) {
-        return findNode(filePath).getContent();
+    public String readContentFromFile(String filePath) throws DirOrFileNotFound{
+        Node target = findNode(filePath);
+        if(target == null) {
+            throw new DirOrFileNotFound("Path Not Found");
+        }
+        return target.getContent();
     }
 
     private Node findNode(String path) { // find path and file
@@ -93,5 +108,11 @@ public class DesignInMemoryFileSystem {
         }
 
         return cur;
+    }
+}
+
+class DirOrFileNotFound extends Exception {
+    public DirOrFileNotFound(String errorMsg) {
+        super(errorMsg);
     }
 }

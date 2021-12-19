@@ -10,43 +10,45 @@ package category.tree.trie;
 public class TrieImpl {
     public static void main(String args[]) {
         String keys[] = {"the", "a", "there", "answer", "any", "by", "bye", "their"};
+        TNode root = new TNode();
         // Construct trie
-        Trie root = new Trie();
-        for (int i = 0; i < keys.length; i++) root.insert(keys[i]);
-
+        for (int i = 0; i < keys.length; i++) {
+            root.insert(keys[i]);
+        }
         System.out.println(root.search("the"));
         System.out.println(root.search("these"));
         System.out.println(root.startsWith("th"));
     }
 }
 
-class Trie {
+class TNode {
+    TNode[] children;
     boolean isEnd;
-    Trie[] children;
+    String word;
 
-    /** Initialize your data structure here. */
-    public Trie() {
+    public TNode() {
         isEnd = false;
-        children = new Trie[26];
+        children = new TNode[26];
     }
 
     /** Inserts a word into the trie. */
     public void insert(String word) {
-        Trie node = this;
-        char [] c = word.toCharArray();
-        for (int i = 0; i < c.length; i++) {
-            if (node.children[c[i] - 'a'] == null) {
-                node.children[c[i] - 'a'] = new Trie();
+        TNode node = this;
+        char[] cs = word.toCharArray();
+        for (char c : cs) {
+            if (node.children[c - 'a'] == null) {
+                node.children[c - 'a'] = new TNode();
             }
-            node = node.children[c[i] - 'a'];
+            node = node.children[c - 'a'];
         }
         node.isEnd = true;
+        node.word = word;
         return;
     }
 
     /** Returns if the word is in the trie. */
     public boolean search(String word) {
-        Trie a = this;
+        TNode a = this;
         char [] ca = word.toCharArray();
         for (int i = 0; i < ca.length; i++) {
             if (a.children[ca[i] - 'a'] == null) {
@@ -60,7 +62,7 @@ class Trie {
 
     /** Returns if there is any word in the trie that starts with the given prefix. */
     public boolean startsWith(String prefix) {
-        Trie node = this;
+        TNode node = this;
         char [] c = prefix.toCharArray();
         for (int i = 0; i < c.length; i++) {
             if (node.children[c[i] - 'a'] == null) {

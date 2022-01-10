@@ -43,7 +43,6 @@ public class ValidateBinarySearchTree {
     public boolean isValidBSTBFS(TreeNode root) {
         Stack<TreeNode> stack = new Stack();
         Integer prev = null;
-
         while (!stack.isEmpty() || root != null) {
             while (root != null) {
                 stack.push(root);

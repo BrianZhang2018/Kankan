@@ -1,13 +1,11 @@
-Domino effect:
-
+Flaw-Domino effect:
 Cache server do not split the circle evenly.
 Domino effect may appear when cache server dies, so all of its load is transferred to next server.
 the transfer may overload the next server, and then server wound fail, causing a chain reaction of failures.
 
-
 how do we placed the severs on circle?
 Some server may reside close to each other and some may be far apart. this cause unevenly distributed the cache server.
 
-
 Solution:
-Add each server on circle multiple times to achieve the evenly distributed.
+Virtual nodes: apply the different hash function for each server to get different hash key,
+then each server will be virtually (logically) placed in multiple location base on the hash key in circle so that to achieve the evenly distributed.

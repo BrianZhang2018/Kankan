@@ -1,11 +1,16 @@
 package category.BFS;
 
+import java.util.HashSet;
+
 /**
  * https://leetcode.com/problems/game-of-life/
  *
  * Created by brianzhang on 7/6/21.
  */
 public class GameOfLife {
+
+    public static void main(String[] args) {
+    }
 
     public void gameOfLife(int[][] board) {
 

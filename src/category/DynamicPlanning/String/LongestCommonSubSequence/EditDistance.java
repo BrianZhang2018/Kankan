@@ -14,9 +14,7 @@ public class EditDistance {
     }
 
     public static int minDistance(String word1, String word2) {
-        int m = word1.length();
-        int n = word2.length();
-
+        int m = word1.length(), n = word2.length();
         int[][] dp = new int[m+1][n+1];
 
         // base case: f(0, k) = f(k, 0) = k

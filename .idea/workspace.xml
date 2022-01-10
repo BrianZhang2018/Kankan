@@ -9,12 +9,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/myPhonescreening/y2022/AddTwoSumLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/myPhonescreening/y2022/OptimizedSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/coinbase/BuySellBooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/coinbase/DesignInMemoryFileSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2021/vo/SystemDesign" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/rippling/FindSumOfNotAdjacentNodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/upstart/注意事项" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/Bloomberg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/foundation/learning/TreeMap red-black tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/fileUploadService/usage" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/googledoc/High-Level Design.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/googledoc/Link" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/googledoc/Operational Transformation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/recommendation/link" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/recommendation/netflix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/recommendation/recommendation system.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/StringCompressAndDecode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/StringCompressAndDecode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/TrieImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/qualtrics/Trie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BFS/GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/GameOfLife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestCommonSubSequence/EditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestCommonSubSequence/EditDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Map/GroupAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Map/GroupAnagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Map/treeMap/TimeBasedKeyValueStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Map/treeMap/TimeBasedKeyValueStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Sort/MedianOfTwoSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Sort/MedianOfTwoSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Sort/bucketSort/FreqStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Sort/bucketSort/FreqStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/DecodeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/DecodeString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/StreamData/FindMedianFromStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/StreamData/FindMedianFromStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/linkedList/AddTwoNumbersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/linkedList/AddTwoNumbersII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTree/BinarySearchTree/lowerUpperLimit/ValidateBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTree/BinarySearchTree/lowerUpperLimit/ValidateBinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/tree/trie/DesignInMemoryFileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/trie/DesignInMemoryFileSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/TrieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/trie/TrieImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/TrieImplByHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/trie/TrieImplByHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/distributedCache/ConsistentHashingFlaw" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/distributedCache/ConsistentHashingFlaw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/timeComplexity/java collection complexity.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/timeComplexity/java collections time complexity.png" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -71,9 +100,6 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="WaWahaha" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -155,7 +181,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../InterviewPrep" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -1333,6 +1359,7 @@
     <property name="FullScreen" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/brianzhang/vscode/NewWordld-copy/Kankan/src/category/DynamicPlanning/MiniMaximumPathReachATarget/coinChange/CoinChange.java" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -1343,31 +1370,31 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_directory_selection" value="$USER_HOME$/workspace/InterviewPrep/src/高频" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterviewPrep/src/coinbase" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../InterviewPrep/src/coinbase" />
       <recent name="$USER_HOME$/workspace/InterviewPrep/src/linkedin" />
       <recent name="$PROJECT_DIR$/src/category/DataStructure" />
       <recent name="$PROJECT_DIR$/src/systemDesign" />
       <recent name="$USER_HOME$/workspace/InterviewPrep/src/discovery" />
-      <recent name="$PROJECT_DIR$/src/category/OoneProblems" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/systemDesign/recommendation" />
+      <recent name="$PROJECT_DIR$/src/systemDesign/googledoc" />
       <recent name="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021" />
       <recent name="$PROJECT_DIR$/src/category/DynamicPlanning/AStartProblem" />
       <recent name="$PROJECT_DIR$/src/category/AFoundation/learning/coinChangeSeries" />
-      <recent name="$USER_HOME$/workspace/InterviewPrep/src/doordash/my2021" />
-      <recent name="$PROJECT_DIR$/src/category/SweepLine/overlapInterval" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="category.PriorityQueue.overlapInterval" />
@@ -1384,7 +1411,7 @@
       <recent name="category.linkedList.fastslowpointer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TrieImplByHashMap">
+  <component name="RunManager" selected="Application.FindSumOfNotAdjacentNodes">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1550,27 +1577,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="DesignInMemoryFileSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.tree.trie.DesignInMemoryFileSystem" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.tree.trie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IsNumeric" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedin.phoneScreening.ps2021.IsNumeric" />
+    <configuration name="AddTwoSumLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bloomberg.myPhonescreening.y2022.AddTwoSumLinkedList" />
       <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="linkedin.phoneScreening.ps2021.*" />
+          <option name="PATTERN" value="bloomberg.myPhonescreening.y2022.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1578,13 +1591,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShortestWordDistanceIII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedin.phoneScreening.ps2021.shortestWordDistance.ShortestWordDistanceIII" />
+    <configuration name="Bloomberg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.Bloomberg" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindSumOfNotAdjacentNodes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rippling.FindSumOfNotAdjacentNodes" />
       <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="linkedin.phoneScreening.ps2021.shortestWordDistance.*" />
+          <option name="PATTERN" value="rippling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1592,13 +1619,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrieImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.tree.trie.TrieImpl" />
+    <configuration name="FreqStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.Sort.bucketSort.FreqStack" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.tree.trie.*" />
+          <option name="PATTERN" value="category.Sort.bucketSort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1606,13 +1633,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrieImplByHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.tree.trie.TrieImplByHashMap" />
-      <module name="KillLeetCode" />
+    <configuration name="OptimizedSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bloomberg.myPhonescreening.y2022.OptimizedSolution" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.tree.trie.*" />
+          <option name="PATTERN" value="bloomberg.myPhonescreening.y2022.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1828,19 +1855,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.IsNumeric" />
-      <item itemvalue="Application.DesignInMemoryFileSystem" />
-      <item itemvalue="Application.ShortestWordDistanceIII" />
-      <item itemvalue="Application.TrieImpl" />
-      <item itemvalue="Application.TrieImplByHashMap" />
+      <item itemvalue="Application.FreqStack" />
+      <item itemvalue="Application.Bloomberg" />
+      <item itemvalue="Application.AddTwoSumLinkedList" />
+      <item itemvalue="Application.OptimizedSolution" />
+      <item itemvalue="Application.FindSumOfNotAdjacentNodes" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TrieImplByHashMap" />
-        <item itemvalue="Application.TrieImpl" />
-        <item itemvalue="Application.DesignInMemoryFileSystem" />
-        <item itemvalue="Application.ShortestWordDistanceIII" />
-        <item itemvalue="Application.IsNumeric" />
+        <item itemvalue="Application.FindSumOfNotAdjacentNodes" />
+        <item itemvalue="Application.OptimizedSolution" />
+        <item itemvalue="Application.AddTwoSumLinkedList" />
+        <item itemvalue="Application.Bloomberg" />
+        <item itemvalue="Application.FreqStack" />
       </list>
     </recent_temporary>
   </component>
@@ -2027,7 +2054,9 @@
       <workItem from="1637634814616" duration="27670000" />
       <workItem from="1638572245534" duration="13765000" />
       <workItem from="1638719715083" duration="51136000" />
-      <workItem from="1639086093247" duration="71708000" />
+      <workItem from="1639086093247" duration="90363000" />
+      <workItem from="1640363801315" duration="23481000" />
+      <workItem from="1640798868093" duration="23891000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2461,6 +2490,16 @@
           <url>file://$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/ValidParentheses.java</url>
           <line>21</line>
           <option name="timeStamp" value="1114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/StringCompressAndDecode.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/category/Sort/bucketSort/FreqStack.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1123" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

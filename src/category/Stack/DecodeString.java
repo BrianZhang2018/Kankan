@@ -10,6 +10,7 @@ import java.lang.*;
  */
 public class DecodeString{
     public static void main(String[] args){
+        System.out.println(decodeStringDFS("3[a]2[bc]"));
         System.out.println(decodeStringBFS("3[a2[c]]"));
     }
 

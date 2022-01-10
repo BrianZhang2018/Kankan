@@ -17,7 +17,6 @@ public class TimeBasedKeyValueStore {
     }
     Map<String, TreeMap<Integer, String>> map;
 
-    /** Initialize your data structure here. */
     public TimeBasedKeyValueStore() {
         map = new HashMap();
     }
@@ -26,15 +25,12 @@ public class TimeBasedKeyValueStore {
         if(!map.containsKey(key)){
             map.put(key, new TreeMap());
         }
-
         map.get(key).put(timestamp, value);
     }
 
     public String get(String key, int timestamp) {
         if(!map.containsKey(key)) return "";
-
-        TreeMap<Integer, String> tm = map.get(key);
-        Integer t = tm.floorKey(timestamp);
-        return t != null ? tm.get(t) : "";
+        Map.Entry<Integer, String> entry = map.get(key).floorEntry(timestamp);
+        return entry != null ? entry.getValue() : "";
     }
 }

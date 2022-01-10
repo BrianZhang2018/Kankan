@@ -1,18 +1,17 @@
 package category.tree.trie;
 
-import java.io.FileNotFoundException;
 import java.util.*;
 
 /**
  * https://leetcode.com/problems/design-in-memory-file-system/
- * CoinBase
- * Trie
  *
- * 改了dir找不到throw exception, file 找不到throw exception, replace the 內容 問要怎麼scale 如果沒有database
+ * Time complexity: O(m): m is the length of input path string,
+ * explanation: if the length of the path string is m, then the max levels of hierarchies (intermediate directories) it can contain is at most m/2,
+ * where each directory is a single character. Thus, the levels we must enter is n = m/2 = O(m).
+ *
  * Created by brianzhang on 1/28/21.
  */
 public class DesignInMemoryFileSystem {
-
     public static void main(String[] args) throws DirOrFileNotFound {
         DesignInMemoryFileSystem fs = new DesignInMemoryFileSystem();
         System.out.println(fs.ls("/"));
@@ -22,12 +21,12 @@ public class DesignInMemoryFileSystem {
         System.out.println(fs.readContentFromFile("/a/b/c/d"));
     }
 
-    private class Node { // directory and file are Node
-        private TreeMap<String, Node> children;
+    class TNode { // Tri Node, both directory and file are Node
+        private TreeMap<String, TNode> children;
         private StringBuilder fileContent;
         private String name; // directory path or file name
 
-        public Node(String name) {
+        public TNode(String name) {
             children = new TreeMap<>();
             fileContent = new StringBuilder();
             this.name = name;
@@ -60,14 +59,14 @@ public class DesignInMemoryFileSystem {
         }
     }
 
-    private Node root;
+    private TNode root;
 
     public DesignInMemoryFileSystem() {
-        root = new Node("");
+        root = new TNode("");
     }
 
     public List<String> ls(String path) throws DirOrFileNotFound {
-        Node target = findNode(path);
+        TNode target = findNode(path);
         if(target == null) {
             throw new DirOrFileNotFound("Path Not Found");
         }
@@ -79,29 +78,24 @@ public class DesignInMemoryFileSystem {
     }
 
     public void addContentToFile(String filePath, String content) throws DirOrFileNotFound {
-        Node target = findNode(filePath);
-        if(target == null) {
-            throw new DirOrFileNotFound("Path Not Found");
-        }
+        TNode target = findNode(filePath);
+        if(target == null) throw new DirOrFileNotFound("Path Not Found");
         target.addContent(content);
     }
 
     public String readContentFromFile(String filePath) throws DirOrFileNotFound{
-        Node target = findNode(filePath);
-        if(target == null) {
-            throw new DirOrFileNotFound("Path Not Found");
-        }
+        TNode target = findNode(filePath);
+        if(target == null)  throw new DirOrFileNotFound("Path Not Found");
+
         return target.getContent();
     }
 
-    private Node findNode(String path) { // find path and file
+    private TNode findNode(String path) { // find path and file
         String[] paths = path.split("/");
-
-        Node cur = root;
+        TNode cur = root;
         for(String p : paths){
-            if(p.equals("")) continue;
-
-            cur.children.putIfAbsent(p, new Node(p));
+            if(p.equals("")) continue; // skip the first "" in paths
+            cur.children.putIfAbsent(p, new TNode(p));
             cur = cur.children.get(p);
 
             if(cur.isFile()) break; // if it's file, we stop as it's end of this path, we can't go further.

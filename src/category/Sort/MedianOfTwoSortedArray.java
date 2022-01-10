@@ -34,7 +34,8 @@ public class MedianOfTwoSortedArray {
                 k++;i++;
             }
         }
-        else if(j < nums2.length) {
+
+        if(j < nums2.length) {
             while(j < nums2.length) {
                 res[k] = nums2[j];
                 k++;j++;
@@ -44,9 +45,7 @@ public class MedianOfTwoSortedArray {
         // get median from merged array
         int n = res.length;
         int mid = n/2;
-        if(n % 2 == 0)
-            return (res[mid]+res[mid-1])/2.0;
-        else
-            return res[mid];
+        if(n % 2 == 0) return (res[mid]+res[mid-1])/2.0;
+        else return res[mid];
     }
 }

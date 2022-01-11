@@ -1,9 +1,0 @@
-Partitioning is more a generic term for dividing data across tables or databases. 
-e.g. Dynamodb - partition key, e.g. emailId
-
-Sharding is one specific type of partitioning, namely "horizontal partitioning", on multiple servers.
-If one of servers is down, we didn't lose all the data.
-
-
-Choosing the Right DynamoDB Partition Key
-https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/

@@ -9,80 +9,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/category/Array/SpiralMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/database/when to use wide column db.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/videoUploadRelated/youtube/CHAPTER14- DESIGN YOUTUBE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/rippling/MaximumAverageSubTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/pdfcoffee.com_system-design-interview-an-insiders-guidepdf-pdf-free.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/myPhonescreening/y2022/AddTwoSumLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/myPhonescreening/y2022/AddTwoSumLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/myPhonescreening/y2022/OptimizedSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/myPhonescreening/y2022/OptimizedSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/myDianMian/Screen Shot 2021-11-30 at 1.55.58 PM.png" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/myDianMian/screenshot-question.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/rippling/FindSumOfNotAdjacentNodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/rippling/FindSumOfNotAdjacentNodes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/DB/dataStoreType-DBType.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/DB/sharding vs partition" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/theater/technologies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/theater/theaterBookingSeat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/DB/Cassandra/Screen Shot 2020-11-15 at 2.50.38 PM.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/database/Cassandra/Screen Shot 2020-11-15 at 2.50.38 PM.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/DB/NoSQL/Considerations for SQL VS NoSQL.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/database/noSQLvsSQL/Considerations for SQL VS NoSQL.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/DB/NoSQL/NoSql VS Sql when to use" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/database/noSQLvsSQL/NoSql VS Sql when to use" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/DB/dataStoreType-DBType.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/database/dataStoreType-DBType.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/DB/sharding vs partition" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/database/sharding vs partition" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/cache/memcache/Invalidate cache data after DB update.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/cache/memcache/Invalidate cache data after DB update.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/cache/memcache/Limit requests by sliding window.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/cache/memcache/Limit requests by sliding window.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/components/loadBalancer/LoadBalancerAndReverseProxy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/loadBalancer/LoadBalancerAndReverseProxy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/components/loadBalancer/why (DNS)Route53 need connect to ALB.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/loadBalancer/why (DNS)Route53 need connect to ALB.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/distributedCache/Architecture Summary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/distributedCache/Architecture Summary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/distributedCache/Consisten hashing.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/distributedCache/Consisten hashing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/distributedCache/ConsistentHashingFlaw" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/distributedCache/ConsistentHashingFlaw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/distributedCache/How to maintain a list of cache servers.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/distributedCache/How to maintain a list of cache servers.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/distributedCache/Replica Mechanism" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/distributedCache/Replica Mechanism" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/documentSearch/inverted index.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/documentSearch/inverted index.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/documentSearch/mechanism" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/documentSearch/mechanism" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/dropbox/solution-1" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/dropbox/solution-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/fileUploadService/architecture.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/videoUploadRelated/fileUploadService/architecture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/fileUploadService/explanation" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/videoUploadRelated/fileUploadService/explanation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/fileUploadService/usage" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/videoUploadRelated/fileUploadService/usage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/googleCalendar/Dynamodb ttl S3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/googleCalendar/Dynamodb ttl S3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/googleCalendar/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/googleCalendar/link" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/googledoc/High-Level Design.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/googledoc/High-Level Design.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/googledoc/Link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/googledoc/Link" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/googledoc/Operational Transformation.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/googledoc/Operational Transformation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Architecture-summary-step-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Architecture-summary-step-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Data retrieval-step-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Data retrieval-step-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/MapReduceJob.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/MapReduceJob.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/heavyHitterSteamingTopK/topK" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/topK" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/idempotency/idempotency strategy" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/idempotency/idempotency strategy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/keyValueStore/Architecture-Memtable-SST-Write.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/keyValueStore/Architecture-Memtable-SST-Write.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/keyValueStore/Data replication-VirtualNodes.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/keyValueStore/Data replication-VirtualNodes.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/keyValueStore/Key Hashing.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/keyValueStore/Key Hashing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/keyValueStore/KeyValueStore Mechanism" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/keyValueStore/KeyValueStore Mechanism" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/keyValueStore/Skip List.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/keyValueStore/Skip List.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/messageQueue/RedisVsKafakVsRaddtMQ" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/messageQueue/RedisVsKafakVsRaddtMQ" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/messageQueue/explanation" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/messageQueue/explanation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/messagingSystem/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/messagingSystem/link" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/messagingSystem/msg system design.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/messagingSystem/msg system design.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/notificationService/Architecture-HighLevelDesign.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Architecture-HighLevelDesign.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/notificationService/Architecture-detailed summary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Architecture-detailed summary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/notificationService/Cluster control strategy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Cluster control strategy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/notificationService/Sender.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Sender.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/notificationService/Temporay storage solutions.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Temporay storage solutions.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/notificationService/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/link" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/rateLimiter/Architecture Summary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/rateLimiter/Architecture Summary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/rateLimiter/Message broadcasting.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/rateLimiter/Message broadcasting.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/rateLimiter/bucket token algorigthm.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/rateLimiter/bucket token algorigthm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/recommendation/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/recommendation/link" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/recommendation/netflix.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/recommendation/netflix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/recommendation/recommendation system.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/recommendation/recommendation system.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/restfulService/Call External service - Handle the lifecycle of request" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/restfulService/Call External service - Handle the lifecycle of request" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/restfulService/How to maintain the state between services" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/restfulService/How to maintain the state between services" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/restfulService/REST explanation" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/restfulService/REST explanation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/techTalk/instagram/Invaliate memcache.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/instagram/Invaliate memcache.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/techTalk/instagram/Memcache Lease.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/instagram/Memcache Lease.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/techTalk/instagram/optimal solutions" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/instagram/optimal solutions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/theater/technologies" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/theater/technologies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/theater/theaterBookingSeat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/theater/theaterBookingSeat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/tinyUrl/Architecture-summary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/tinyUrl/Architecture-summary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/twitter/Twitter-design" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/twitter/Twitter-design" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/twitter/Twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/twitter/Twitter.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/twitter/twitter db schema.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/twitter/twitter db schema.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/two-phase-commit/two-phase-commit" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/two-phase-commit/two-phase-commit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/BinaryTreeLeafMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/MaximumPathSumBetweenAsteriskNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/BinaryTreeMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/BinaryTreeMaximumPathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/DiameterOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/DiameterOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/googleCalendar/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/googleCalendar/link" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Architecture-summary-step-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Architecture-summary-step-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Data retrieval-step-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Data retrieval-step-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/MapReduceJob.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/MapReduceJob.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/topK" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/topK" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/tinyUrl/Architecture-summary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/others/tinyUrl/Architecture-summary.png" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -220,7 +167,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../InterviewPrep" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -1409,7 +1356,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_directory_selection" value="$USER_HOME$/workspace/InterviewPrep/src/高频" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterviewPrep/src/coinbase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/systemDesign" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1419,10 +1366,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/systemDesign" />
       <recent name="$PROJECT_DIR$/../InterviewPrep/src/coinbase" />
       <recent name="$USER_HOME$/workspace/InterviewPrep/src/linkedin" />
       <recent name="$PROJECT_DIR$/src/category/DataStructure" />
-      <recent name="$PROJECT_DIR$/src/systemDesign" />
       <recent name="$USER_HOME$/workspace/InterviewPrep/src/discovery" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -1450,7 +1397,7 @@
       <recent name="category.linkedList.fastslowpointer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SpiralMatrix">
+  <component name="RunManager" selected="Application.MaximumPathSumBetweenAsteriskNode">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1616,27 +1563,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="AddTwoSumLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bloomberg.myPhonescreening.y2022.AddTwoSumLinkedList" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bloomberg.myPhonescreening.y2022.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Bloomberg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Bloomberg" />
+    <configuration name="BinaryTreeMaximumPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.tree.BinaryTree.pathSum.BinaryTreeMaximumPathSum" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.*" />
+          <option name="PATTERN" value="category.tree.BinaryTree.pathSum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1658,13 +1591,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OptimizedSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bloomberg.myPhonescreening.y2022.OptimizedSolution" />
+    <configuration name="MaximumPathSum2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="doordash.my2021.MaximumPathSum.MaximumPathSum2" />
       <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bloomberg.myPhonescreening.y2022.*" />
+          <option name="PATTERN" value="doordash.my2021.MaximumPathSum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaximumPathSumBetweenAsteriskNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.tree.BinaryTree.pathSum.MaximumPathSumBetweenAsteriskNode" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.tree.BinaryTree.pathSum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1894,19 +1841,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Bloomberg" />
-      <item itemvalue="Application.AddTwoSumLinkedList" />
-      <item itemvalue="Application.OptimizedSolution" />
       <item itemvalue="Application.FindSumOfNotAdjacentNodes" />
       <item itemvalue="Application.SpiralMatrix" />
+      <item itemvalue="Application.BinaryTreeMaximumPathSum" />
+      <item itemvalue="Application.MaximumPathSumBetweenAsteriskNode" />
+      <item itemvalue="Application.MaximumPathSum2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaximumPathSumBetweenAsteriskNode" />
+        <item itemvalue="Application.MaximumPathSum2" />
+        <item itemvalue="Application.BinaryTreeMaximumPathSum" />
         <item itemvalue="Application.SpiralMatrix" />
         <item itemvalue="Application.FindSumOfNotAdjacentNodes" />
-        <item itemvalue="Application.OptimizedSolution" />
-        <item itemvalue="Application.AddTwoSumLinkedList" />
-        <item itemvalue="Application.Bloomberg" />
       </list>
     </recent_temporary>
   </component>
@@ -2095,7 +2042,7 @@
       <workItem from="1638719715083" duration="51136000" />
       <workItem from="1639086093247" duration="90363000" />
       <workItem from="1640363801315" duration="23481000" />
-      <workItem from="1640798868093" duration="33476000" />
+      <workItem from="1640798868093" duration="43163000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>

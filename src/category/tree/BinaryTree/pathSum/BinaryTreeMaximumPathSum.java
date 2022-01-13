@@ -5,7 +5,6 @@ import javafx.util.Pair;
 
 /**
  * https://leetcode.com/problems/binary-tree-maximum-path-sum/
- * 
  * https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39875/Elegant-Java-solution
  * 
  * you can imagine the dfsHelper() function goes from the bottom of the binaryTree to the top, it's in "post-order" manner.
@@ -22,12 +21,14 @@ public class BinaryTreeMaximumPathSum {
         root.right.right = new TreeNode(7);
         System.out.println(maxPathSum(root));
         System.out.println("Max sum path is: " + maxSumPath.toString());
+
+        long x = 3;
+        System.out.println(3.0/2);
     }
 
     static int maxSum = Integer.MIN_VALUE;
     public static int maxPathSum(TreeNode root) {
         if(root == null) return 0;
-        
         //dfs(root);
         dfsRecordPath(root); // follow-up question
         return maxSum;
@@ -36,11 +37,9 @@ public class BinaryTreeMaximumPathSum {
     // it's actually a post-order traversal
     public static int dfs(TreeNode root) {
         if(root == null) return 0;
-
         int left = Math.max(dfs(root.left), 0);   // avoid the negative value, it's Kadane algorithm idea
         int right = Math.max(dfs(root.right), 0);
         maxSum = Math.max(maxSum, root.val + left + right);
-        
         return root.val + Math.max(left, right);
     }
 
@@ -69,10 +68,10 @@ public class BinaryTreeMaximumPathSum {
             }
         }
 
-        return new Pair<>(root.val + Math.max(leftVal, rightVal),
-                leftVal>=rightVal                                 // if "left.getKey()<=0", 意味着这段path就不需要了，剪掉
-                ? new StringBuilder().append(root.val+",").append(left.getKey()<=0 ? "" : left.getValue())
-                : new StringBuilder().append(root.val+",").append(right.getKey()<=0 ? "" : right.getValue()));
+        return new Pair<>(root.val+Math.max(leftVal, rightVal),
+                // if "left.getKey()<=0", 意味着这段path就不需要了，剪掉
+                leftVal>=rightVal ? new StringBuilder().append(root.val+",").append(left.getKey()<=0 ? "" : left.getValue())
+                                : new StringBuilder().append(root.val+",").append(right.getKey()<=0 ? "" : right.getValue()));
     }
 
 }

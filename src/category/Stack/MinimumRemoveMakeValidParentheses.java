@@ -5,6 +5,7 @@ import java.util.Stack;
 /**
  * https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
  *
+ * https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
  * Created by brianzhang on 7/5/20.
  */
 public class MinimumRemoveMakeValidParentheses {
@@ -15,7 +16,6 @@ public class MinimumRemoveMakeValidParentheses {
 
     public static String minRemoveToMakeValid(String s) {
         StringBuilder sb = new StringBuilder(s);
-
         Stack<Integer> stack = new Stack<>(); // track the parentheses
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {

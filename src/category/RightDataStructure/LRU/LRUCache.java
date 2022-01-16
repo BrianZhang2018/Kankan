@@ -7,11 +7,10 @@ import java.util.*;
  *
  * LRU (Least recently used)
  * Solution: HashMap + Doubly LinkedList = Java LinkedHashMap
- * doubly linkedList: create a DllNode which will be used to generated a doubly linkedList
  *
  * https://medium.com/@krishankantsinghal/my-first-blog-on-medium-583159139237
  *
- * In HashMap, will hold the "key" and "address (node)" in Doubly LinkedList. And Doubly LinkedList will hold the "values" of keys.
+ * In HashMap, will hold the "key" and "address (node)" in Doubly LinkedList, and Doubly LinkedList will hold the "values" of keys.
  *
  * As We need to keep track of recently used entries. We will "remove element from bottom" and "add element on the top of LinkedList" and
  * whenever any entry is accessed again, it will be moved to the top. So, recently used entries will be on Top and Least used will be on Bottom.
@@ -19,16 +18,13 @@ import java.util.*;
 public class LRUCache<T> {
     public static void main(String[] args) {
         LRUCache<Integer> cache = new LRUCache<>(2); // capacity is 2
-        cache.put(1, 1);
-        cache.put(2, 2);
-        cache.put(2, 2);
+        System.out.println(cache.get(2));
+        cache.put(2, 6);
         System.out.println(cache.get(1));       // returns 1
-        cache.put(3, 3);    // evicts key 2
-        System.out.println(cache.get(2));       // returns null (not found)
-        cache.put(4, 4);    // evicts key 1
+        cache.put(1, 5);    // evicts key 2
+        cache.put(1, 2);    // evicts key 1
         System.out.println(cache.get(1));       // returns null (not found)
-        cache.get(3);       // returns 3
-        cache.get(4);       // returns 4
+        System.out.println(cache.get(2));
     }
 
     static class DllNode<T> { // double linkedList node
@@ -43,7 +39,8 @@ public class LRUCache<T> {
 
     private int cacheSize;
     private Map<T, DllNode> map = Collections.synchronizedMap(new HashMap()); // with sync enhanced
-    private DllNode<Integer> head = new DllNode(0, 0), tail = new DllNode(0, 0);
+    private DllNode<Integer> head = new DllNode(0, 0);
+    private DllNode<Integer> tail = new DllNode(0, 0);
 
     public LRUCache(int capacity) {
         this.cacheSize = capacity;
@@ -62,7 +59,7 @@ public class LRUCache<T> {
 
     public void put(T key, T value) {
         if (map.containsKey(key))
-            removeNode(map.get(key)); // remove existing node in LinkedList
+            removeNode(map.get(key)); // remove existing node from doubly linkedList
 
         if (map.size() == cacheSize)
             removeNode(tail.prev);

@@ -9,27 +9,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/rippling/MaximumAverageSubTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/pdfcoffee.com_system-design-interview-an-insiders-guidepdf-pdf-free.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/myPhonescreening/y2022/AddTwoSumLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/myPhonescreening/y2022/AddTwoSumLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/myPhonescreening/y2022/OptimizedSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/myPhonescreening/y2022/OptimizedSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/myDianMian/Screen Shot 2021-11-30 at 1.55.58 PM.png" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/myDianMian/screenshot-question.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/rippling/FindSumOfNotAdjacentNodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/rippling/FindSumOfNotAdjacentNodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/apple/onsite2022/FindNthMissingNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/BinarySearch/Binary_Search 特点" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/KeyPoints" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/Lambda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/bigDataArchitecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog/kafkaSourcing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog/link" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog/pipelineArchitecture.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/BinaryTreeLeafMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/MaximumPathSumBetweenAsteriskNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/BinaryTreeMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/BinaryTreeMaximumPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/DiameterOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/DiameterOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/googleCalendar/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/googleCalendar/link" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Architecture-summary-step-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Architecture-summary-step-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Data retrieval-step-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Data retrieval-step-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/MapReduceJob.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/MapReduceJob.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/heavyHitterSteamingTopK/topK" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/topK" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/tinyUrl/Architecture-summary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/others/tinyUrl/Architecture-summary.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/AStandardBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/AStandardBinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/MinimumRemoveMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/MinimumRemoveMakeValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreeBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreeBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreePreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreePreOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/NaryPreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/NaryPreOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Architecture-summary-step-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Architecture-summary-step-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Data retrieval-step-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Data retrieval-step-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/MapReduceJob.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/MapReduceJob.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/topK" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/topK" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -167,7 +167,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../InterviewPrep" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -1356,7 +1356,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_directory_selection" value="$USER_HOME$/workspace/InterviewPrep/src/高频" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/systemDesign" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1366,21 +1366,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog" />
+      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture" />
+      <recent name="$PROJECT_DIR$/src/category/BinarySearch" />
       <recent name="$PROJECT_DIR$/src/systemDesign" />
       <recent name="$PROJECT_DIR$/../InterviewPrep/src/coinbase" />
-      <recent name="$USER_HOME$/workspace/InterviewPrep/src/linkedin" />
-      <recent name="$PROJECT_DIR$/src/category/DataStructure" />
-      <recent name="$USER_HOME$/workspace/InterviewPrep/src/discovery" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/monitorSystem/datadog" />
+      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK" />
+      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/monitorSystem" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/storageCases/testing/dropbox" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/newsFeed/twitter" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/videoUpload/youtube" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/videosUpload/fileUploadService" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/technologies/restfulService" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="category.PriorityQueue.overlapInterval" />
@@ -1397,7 +1397,7 @@
       <recent name="category.linkedList.fastslowpointer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaximumPathSumBetweenAsteriskNode">
+  <component name="RunManager" selected="Application.AStandardBinarySearch">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1563,13 +1563,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="BinaryTreeMaximumPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.tree.BinaryTree.pathSum.BinaryTreeMaximumPathSum" />
+    <configuration name="AStandardBinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.BinarySearch.AStandardBinarySearch" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.tree.BinaryTree.pathSum.*" />
+          <option name="PATTERN" value="category.BinarySearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1577,13 +1577,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindSumOfNotAdjacentNodes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rippling.FindSumOfNotAdjacentNodes" />
-      <module name="InterviewPrep" />
+    <configuration name="BinaryTreePreOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.tree.serializeDeserialize.BinaryTreePreOrder" />
+      <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rippling.*" />
+          <option name="PATTERN" value="category.tree.serializeDeserialize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.RightDataStructure.LRU.LRUCache" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.RightDataStructure.LRU.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1612,20 +1626,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="category.tree.BinaryTree.pathSum.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpiralMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Array.SpiralMatrix" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1841,19 +1841,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.FindSumOfNotAdjacentNodes" />
-      <item itemvalue="Application.SpiralMatrix" />
-      <item itemvalue="Application.BinaryTreeMaximumPathSum" />
       <item itemvalue="Application.MaximumPathSumBetweenAsteriskNode" />
       <item itemvalue="Application.MaximumPathSum2" />
+      <item itemvalue="Application.LRUCache" />
+      <item itemvalue="Application.BinaryTreePreOrder" />
+      <item itemvalue="Application.AStandardBinarySearch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AStandardBinarySearch" />
+        <item itemvalue="Application.BinaryTreePreOrder" />
+        <item itemvalue="Application.LRUCache" />
         <item itemvalue="Application.MaximumPathSumBetweenAsteriskNode" />
         <item itemvalue="Application.MaximumPathSum2" />
-        <item itemvalue="Application.BinaryTreeMaximumPathSum" />
-        <item itemvalue="Application.SpiralMatrix" />
-        <item itemvalue="Application.FindSumOfNotAdjacentNodes" />
       </list>
     </recent_temporary>
   </component>
@@ -2042,7 +2042,7 @@
       <workItem from="1638719715083" duration="51136000" />
       <workItem from="1639086093247" duration="90363000" />
       <workItem from="1640363801315" duration="23481000" />
-      <workItem from="1640798868093" duration="43163000" />
+      <workItem from="1640798868093" duration="66754000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2388,11 +2388,6 @@
           <option name="timeStamp" value="960" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/BinarySearch/AStandardBinarySearch.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="968" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/workspace/InterviewPrep/src/linkedin/phoneScreening/SemaphoreExample.java</url>
           <line>57</line>
           <option name="timeStamp" value="969" />
@@ -2486,6 +2481,11 @@
           <url>file://$PROJECT_DIR$/src/category/Sort/bucketSort/FreqStack.java</url>
           <line>23</line>
           <option name="timeStamp" value="1123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreePreOrder.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="1124" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

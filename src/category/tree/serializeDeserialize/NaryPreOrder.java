@@ -4,13 +4,13 @@ import java.util.*;
 
 /**
  * https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/
- *
+ * PreOrder + Queue
  * Idea: preorder recursive traversal; add number of children after root val, in order to know when to terminate.
  * Example: The example in description is serialized as: "1,3,3,2,5,0,6,0,2,0,4,0"
+ *
  * Created by brianzhang on 5/23/21.
  */
 public class NaryPreOrder {
-
     // Encodes a tree to a single string.
     public String serialize(Node root) {
         List<String> list=new LinkedList<>();
@@ -24,14 +24,13 @@ public class NaryPreOrder {
         list.add(String.valueOf(root.val));
         list.add(String.valueOf(root.children.size()));
         for(Node child : root.children){
-            serializeHelper(child,list);
+            serializeHelper(child, list);
         }
     }
 
     // Decodes your encoded data to tree.
     public Node deserialize(String data) {
         if(data.isEmpty()) return null;
-
         String[] ss=data.split(",");
         Queue<String> q=new LinkedList<>(Arrays.asList(ss));
         return deserializeHelper(q);
@@ -52,13 +51,10 @@ public class NaryPreOrder {
 class Node {
     public int val;
     public List<Node> children;
-
     public Node() {}
-
     public Node(int _val) {
         val = _val;
     }
-
     public Node(int _val, List<Node> _children) {
         val = _val;
         children = _children;

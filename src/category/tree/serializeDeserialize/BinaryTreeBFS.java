@@ -4,7 +4,6 @@ import category.model.TreeNode;
 import java.util.*;
 /**
  * BFS solution
- *
  * tc: O(N), sc: O(N)
  * Created by brianzhang on 7/21/18.
  */
@@ -15,24 +14,17 @@ public class BinaryTreeBFS {
         root.right = new TreeNode(5);
         root.left.right = new TreeNode(9);
         root.right.left = new TreeNode(1);
-
         String str = serialize(root);
         System.out.println(serialize(root));
         deserialize(str);
-
-        List<Integer> l = new ArrayList<>();
-        Queue<Integer> q = new LinkedList<>(l);
-
     }
 
     // level traversal
     public static String serialize(TreeNode root) {
         if (root == null) {return "";}
-
         StringBuilder sb = new StringBuilder();
         LinkedList<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-
         while (!queue.isEmpty()) {
             TreeNode curr = queue.poll();
             if (curr != null) {
@@ -54,7 +46,6 @@ public class BinaryTreeBFS {
         String[] nodes = serializedTree.split(",");
         TreeNode root = new TreeNode(Integer.valueOf(nodes[0]));
         queue.add(root);
-
         for (int i = 1; i < nodes.length; i++) {
             TreeNode parent = queue.poll();
             if (!nodes[i].equals("#")) {

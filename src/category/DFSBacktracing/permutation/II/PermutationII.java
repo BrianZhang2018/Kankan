@@ -15,14 +15,12 @@ public class PermutationII {
             System.out.println(Arrays.toString(l.toArray()));
         }
     }
-
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(nums);
         backTracking(nums, new ArrayList<>(), res, new boolean[nums.length]);
         return res;
     }
-
     public void backTracking(int nums[], List<Integer> temp, List<List<Integer>> res, boolean[] used) {
         if (nums.length == temp.size()) {
             res.add(new ArrayList<>(temp)); //deep copy

@@ -23,24 +23,23 @@ public class DecodeString{
 
     public static String dfsHelper(Deque<Character> dq) {
         StringBuilder sb = new StringBuilder();
-        int repeat = 0;
+        int num = 0; // repeat times
         while(!dq.isEmpty()){
             char c = dq.poll();
             if(Character.isDigit(c)){
-                repeat = repeat*10 + c - '0';
+                num = num*10 + c - '0';
             }else if(c == '['){
                 String sub = dfsHelper(dq);
-                for(int j = repeat; j>0; j--){
+                for(int j = num; j>0; j--){
                     sb.append(sub);
                 }
-                repeat=0;  // don't forget here, reset repeat to 0.
+                num=0;  // don't forget here, reset repeat to 0.
             }else if(c == ']'){
                 return sb.toString();
             }else{
                 sb.append(c);
             }
         }
-
         return sb.toString();
     }
 
@@ -49,7 +48,6 @@ public class DecodeString{
         Stack<Integer> numStack = new Stack<>();
         Stack<StringBuilder> strStack = new Stack<>();
         StringBuilder sb = new StringBuilder();
-
         int num = 0;
         for (char c : s.toCharArray()) {
             if (Character.isDigit(c)) {
@@ -62,9 +60,9 @@ public class DecodeString{
             } else if (c == ']') {
                 StringBuilder prev = strStack.pop();
                 int numOfRepeat = numStack.pop();
-                for (int n = numOfRepeat; n > 0; --n)
+                for (int n = numOfRepeat; n > 0; --n){
                     prev.append(sb);
-                
+                }
                 sb = prev;
             } else {
                 sb.append(c);

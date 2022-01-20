@@ -20,13 +20,11 @@ public class PermutationI {
     public static void main(String[] args) {
         System.out.println(permute(new int[]{1, 2, 3}));
     }
-
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         backtrack(list, new ArrayList<>(), nums, new boolean[nums.length]);
         return list;
     }
-
     private static void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums, boolean[] used) {
         if (tempList.size() == nums.length) {
             list.add(new ArrayList<>(tempList));

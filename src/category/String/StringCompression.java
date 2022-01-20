@@ -16,16 +16,13 @@ public class StringCompression {
     public static int compress(char[] chars) {
         int n = chars.length;
         int left= 0, right = 0;
-
         while(right<n) {
             int count = 0;
             char curr = chars[right];
-
             while(right < n && curr == chars[right]){
                 count++;
                 right++; // careful: do "++" here rather than inside of while condition
             }
-
             chars[left++] = curr;
             if(count > 1){
                 char[] counts = String.valueOf(count).toCharArray();
@@ -33,7 +30,6 @@ public class StringCompression {
                     chars[left++] = c;
             }
         }
-
         return left;
     }
 

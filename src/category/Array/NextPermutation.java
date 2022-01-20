@@ -9,9 +9,7 @@ package category.Array;
  * Created by brianzhang on 2/23/20.
  */
 public class NextPermutation {
-
     public static void main(String[] args) {
-
         NextPermutation test = new NextPermutation();
         test.nextPermutation(new int[]{1,2,3});
     }

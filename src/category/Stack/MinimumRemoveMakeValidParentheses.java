@@ -9,7 +9,6 @@ import java.util.Stack;
  * Created by brianzhang on 7/5/20.
  */
 public class MinimumRemoveMakeValidParentheses {
-
     public static void main(String[] args) {
         System.out.println(minRemoveToMakeValid("a)b(c)d"));
     }

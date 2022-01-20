@@ -4,7 +4,6 @@ import java.util.*;
 
 // https://leetcode.com/problems/spiral-matrix/
 public class SpiralMatrix {
-
     public static void main(String[] args) {
         int[][] matrix = new int[][]{{1,2,3},{4,5,6},{7,8,9}};
         System.out.println(Arrays.toString(spiralOrder(matrix).toArray()));
@@ -13,11 +12,9 @@ public class SpiralMatrix {
     public static List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> result = new ArrayList<Integer>();
         if(matrix == null || matrix.length == 0) return result;
-
         int startRow = 0, endRow = matrix.length-1;
         int startCol = 0, endCol = matrix[0].length - 1;
         int dir = 0;
-
         while(startRow <= endRow && startCol <= endCol) {
             switch(dir) {
                 case 0: //RIGHT
@@ -43,8 +40,6 @@ public class SpiralMatrix {
             }
             dir = (dir+1)%4;
         }
-
         return result;
     }
-
 }

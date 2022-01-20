@@ -10,26 +10,28 @@
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/apple/onsite2022/FindNthMissingNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/BinarySearch/Binary_Search 特点" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/KeyPoints" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/Lambda.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/bigDataArchitecture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog/kafkaSourcing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog/link" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog/pipelineArchitecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/GroupAnagram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/SpiralMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/TimeBasedKeyValueStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/compass/onsite/StringCompressAndDecode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/StringCompressAndDecode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2021/LatestOnboardingShuttleTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/dianmian/LatestOnboardingShuttleTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2021/TicketGifts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/TicketGifts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2021/vo/SystemDesign" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/SystemDesign" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/discovery/MinimumRemoveMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/discovery/MinimumRemoveMakeValidParentheses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/AStandardBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/AStandardBinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/NextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/NextPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/SpiralMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/SpiralMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/slotSeparation/ProductExceptSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/slotSeparation/ProductExceptSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/tricky/ProjectExceptSelfSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/tricky/ProjectExceptSelfSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/PermutationII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/PermutationII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/DecodeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/DecodeString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/Stack/MinimumRemoveMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/MinimumRemoveMakeValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreeBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreeBFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreePreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreePreOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/NaryPreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/NaryPreOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Architecture-summary-step-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Architecture-summary-step-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Data retrieval-step-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Data retrieval-step-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/MapReduceJob.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/MapReduceJob.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK/topK" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/topK" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/String/StringCompression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/String/StringCompression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Architecture-HighLevelDesign.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Notification-Architecture-HighLevelDesign.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Architecture-detailed summary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Notification-Architecture-detailed summary.png" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -1376,11 +1378,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/monitorSystem/datadog" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/monitorSystem" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/storageCases/testing/dropbox" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/newsFeed/twitter" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="category.PriorityQueue.overlapInterval" />
@@ -1390,14 +1392,14 @@
       <recent name="com.walmartlab.codechallenge.ticketservice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="compass.y2022.onsite" />
       <recent name="category.unionfind.detectCycle.DirectedGraph" />
       <recent name="category.SweepLine" />
       <recent name="category.DynamicPlanning.TrappingRainWaterSimilarProblems" />
       <recent name="category.Array.prefixSum" />
-      <recent name="category.linkedList.fastslowpointer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AStandardBinarySearch">
+  <component name="RunManager" selected="Application.BasicCalculatorII">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1577,6 +1579,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BasicCalculatorII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.Stack.calculator.BasicCalculatorII" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.Stack.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BinaryTreePreOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="category.tree.serializeDeserialize.BinaryTreePreOrder" />
       <module name="KillLeetCode" />
@@ -1605,27 +1621,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumPathSum2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="doordash.my2021.MaximumPathSum.MaximumPathSum2" />
+    <configuration name="StringCompressAndDecode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="compass.y2022.onsite.StringCompressAndDecode" />
       <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="doordash.my2021.MaximumPathSum.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaximumPathSumBetweenAsteriskNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.tree.BinaryTree.pathSum.MaximumPathSumBetweenAsteriskNode" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.tree.BinaryTree.pathSum.*" />
+          <option name="PATTERN" value="compass.y2022.onsite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1841,19 +1843,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.MaximumPathSumBetweenAsteriskNode" />
-      <item itemvalue="Application.MaximumPathSum2" />
       <item itemvalue="Application.LRUCache" />
       <item itemvalue="Application.BinaryTreePreOrder" />
       <item itemvalue="Application.AStandardBinarySearch" />
+      <item itemvalue="Application.StringCompressAndDecode" />
+      <item itemvalue="Application.BasicCalculatorII" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BasicCalculatorII" />
+        <item itemvalue="Application.StringCompressAndDecode" />
         <item itemvalue="Application.AStandardBinarySearch" />
         <item itemvalue="Application.BinaryTreePreOrder" />
         <item itemvalue="Application.LRUCache" />
-        <item itemvalue="Application.MaximumPathSumBetweenAsteriskNode" />
-        <item itemvalue="Application.MaximumPathSum2" />
       </list>
     </recent_temporary>
   </component>
@@ -2042,7 +2044,8 @@
       <workItem from="1638719715083" duration="51136000" />
       <workItem from="1639086093247" duration="90363000" />
       <workItem from="1640363801315" duration="23481000" />
-      <workItem from="1640798868093" duration="66754000" />
+      <workItem from="1640798868093" duration="77707000" />
+      <workItem from="1642601170570" duration="8741000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2276,16 +2279,6 @@
           <url>file://$PROJECT_DIR$/src/category/javabasic/PassByValue.java</url>
           <line>24</line>
           <option name="timeStamp" value="262" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/Array/tricky/ProjectExceptSelfSolution.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="263" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/Array/tricky/ProjectExceptSelfSolution.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="264" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/companies/amazon/FlyToSameHeightDianMian.java</url>

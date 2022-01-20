@@ -4,12 +4,8 @@ package category.Array.tricky;
  * Created by brianzhang on 2/14/19.
  */
 public class ProjectExceptSelfSolution {
-
     public static void main(String[] args) {
-
-       for(int n : productExceptSelf(new int[]{1, 2, 3, 4})){
-           System.out.println(n);
-       }
+       for(int n : productExceptSelf(new int[]{1, 2, 3, 4}))  System.out.println(n);
     }
 
     public static int[] productExceptSelf(int[] nums) {

@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=XeT8xybx1nM
+
+the foreign key will add the lock automatically when you insert, delete ... which will cause threads blocking issue
+
+cascade delete will delete all the FK related from other tables which cause the data un-control situation, so never select cascade delete option in db

@@ -13,25 +13,44 @@
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/GroupAnagram.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/SpiralMatrix.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/TimeBasedKeyValueStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/FindKPairsWithSmallestSums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/my2022VO/CountNumberOfPossibleTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/my2022VO/freq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/tableau/GetLargestNumberBySwapAdjacentDigit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/tableau/MergeKSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/tableau/NumberOfIsland.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/PriorityQueue/similar/FindKPairsWithSmallestSums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/PriorityQueue/similar/MergeKSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/bloomFilter/Redis-缓存穿透-应用" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/bloomFilter/应用场景.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/dontUseFK/Link" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/onlineGame/Chess/chess-DB-Schema.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/onlineGame/p2p/game-matching-process.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/onlineGame/p2p/high-lelve design.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/compass/onsite/StringCompressAndDecode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/StringCompressAndDecode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2021/LatestOnboardingShuttleTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/dianmian/LatestOnboardingShuttleTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2021/TicketGifts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/TicketGifts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2021/vo/SystemDesign" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/SystemDesign" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2021/vo/SystemDesign" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite/SystemDesignAndCoding-preparation" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/discovery/MinimumRemoveMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/discovery/MinimumRemoveMakeValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/ClosestBinarySearchTreeValueII272.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/ClosestBinarySearchTreeValueII272.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/DLLOone/AllOoneDataStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/DLLOone/AllOoneDataStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/DLLOone/MaxStackLinkedListTreeMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/DLLOone/MaxStackLinkedListTreeMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/FindLeavesOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/FindLeavesOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/MaxPointsOnALine149.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/MaxPointsOnALine149.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/myVO/WordLadderWithPreCalculatedNeighborsGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/myVO/WordLadderWithPreCalculatedNeighborsGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/recent/LongestSubstringAtMostTwoDistinctCharacters159.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/LongestSubstringAtMostTwoDistinctCharacters159.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/recent/MaxStack716.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/DLLOone/MaxStackTwoStackSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/NextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/NextPermutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/SpiralMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/SpiralMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/slotSeparation/ProductExceptSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/slotSeparation/ProductExceptSelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/tricky/ProjectExceptSelfSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/tricky/ProjectExceptSelfSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/PermutationII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/PermutationII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Stack/DecodeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/DecodeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Stack/MinimumRemoveMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/MinimumRemoveMakeValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/String/StringCompression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/String/StringCompression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Architecture-HighLevelDesign.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Notification-Architecture-HighLevelDesign.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Architecture-detailed summary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Notification-Architecture-detailed summary.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/TinyURL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/prefixSum/SubArraySumPrefixSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/prefixSum/SubArraySumPrefixSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Bloomberg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Map/treeMap/MaxPointsOnALine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Map/treeMap/MaxPointsOnALine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/template2/MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/template2/MinimumWindowSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/companies/bloomberg/CountNumberOfPossibleTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/companies/bloomberg/CountNumberOfPossibleTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/TinyURL.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/others/tinyUrl/TinyURL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Data retrieval-step-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Data-retrieval-step-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/others/tinyUrl/Architecture-summary.png" beforeDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -169,7 +188,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../InterviewPrep" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -1358,7 +1377,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_directory_selection" value="$USER_HOME$/workspace/InterviewPrep/src/高频" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterviewPrep/src/tableau" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1368,21 +1387,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../InterviewPrep/src/tableau" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture" />
       <recent name="$PROJECT_DIR$/src/category/BinarySearch" />
       <recent name="$PROJECT_DIR$/src/systemDesign" />
-      <recent name="$PROJECT_DIR$/../InterviewPrep/src/coinbase" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/systemDesign/technologies/bloomFilter" />
+      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/others/tinyUrl" />
+      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/onlineGame/Chess" />
+      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/onlineGame/Chess/p2p" />
       <recent name="$PROJECT_DIR$/../InterviewPrep/src/compass/y2022/onsite" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/monitorSystem/datadog" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/heavyHitterSteamingTopK" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/monitorSystem" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/storageCases/testing/dropbox" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="category.PriorityQueue.overlapInterval" />
@@ -1392,14 +1411,14 @@
       <recent name="com.walmartlab.codechallenge.ticketservice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="category.PriorityQueue" />
+      <recent name="linkedin.vo.myVO.my2022" />
       <recent name="compass.y2022.onsite" />
       <recent name="category.unionfind.detectCycle.DirectedGraph" />
       <recent name="category.SweepLine" />
-      <recent name="category.DynamicPlanning.TrappingRainWaterSimilarProblems" />
-      <recent name="category.Array.prefixSum" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BasicCalculatorII">
+  <component name="RunManager" selected="Application.AllOoneDataStructure">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1565,69 +1584,69 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="AStandardBinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.BinarySearch.AStandardBinarySearch" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.BinarySearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BasicCalculatorII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Stack.calculator.BasicCalculatorII" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.Stack.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinaryTreePreOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.tree.serializeDeserialize.BinaryTreePreOrder" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.tree.serializeDeserialize.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.RightDataStructure.LRU.LRUCache" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.RightDataStructure.LRU.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringCompressAndDecode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="compass.y2022.onsite.StringCompressAndDecode" />
+    <configuration name="AllOoneDataStructure" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedin.vo.DLLOone.AllOoneDataStructure" />
       <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="compass.y2022.onsite.*" />
+          <option name="PATTERN" value="linkedin.vo.DLLOone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindKPairsWithSmallestSums" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedin.vo.FindKPairsWithSmallestSums" />
+      <module name="InterviewPrep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedin.vo.DLLOone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindLeavesOfBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedin.vo.FindLeavesOfBinaryTree" />
+      <module name="InterviewPrep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedin.vo.DLLOone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxPointsOnALine149" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedin.vo.MaxPointsOnALine149" />
+      <module name="InterviewPrep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedin.vo.DLLOone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinimumWindowSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.Slidingwindow.templateSolution.template2.MinimumWindowSubstring" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.Slidingwindow.templateSolution.template2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1843,19 +1862,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.LRUCache" />
-      <item itemvalue="Application.BinaryTreePreOrder" />
-      <item itemvalue="Application.AStandardBinarySearch" />
-      <item itemvalue="Application.StringCompressAndDecode" />
-      <item itemvalue="Application.BasicCalculatorII" />
+      <item itemvalue="Application.FindLeavesOfBinaryTree" />
+      <item itemvalue="Application.MinimumWindowSubstring" />
+      <item itemvalue="Application.MaxPointsOnALine149" />
+      <item itemvalue="Application.FindKPairsWithSmallestSums" />
+      <item itemvalue="Application.AllOoneDataStructure" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BasicCalculatorII" />
-        <item itemvalue="Application.StringCompressAndDecode" />
-        <item itemvalue="Application.AStandardBinarySearch" />
-        <item itemvalue="Application.BinaryTreePreOrder" />
-        <item itemvalue="Application.LRUCache" />
+        <item itemvalue="Application.AllOoneDataStructure" />
+        <item itemvalue="Application.FindKPairsWithSmallestSums" />
+        <item itemvalue="Application.MaxPointsOnALine149" />
+        <item itemvalue="Application.MinimumWindowSubstring" />
+        <item itemvalue="Application.FindLeavesOfBinaryTree" />
       </list>
     </recent_temporary>
   </component>
@@ -2045,7 +2064,7 @@
       <workItem from="1639086093247" duration="90363000" />
       <workItem from="1640363801315" duration="23481000" />
       <workItem from="1640798868093" duration="77707000" />
-      <workItem from="1642601170570" duration="8741000" />
+      <workItem from="1642601170570" duration="67988000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2479,6 +2498,36 @@
           <url>file://$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreePreOrder.java</url>
           <line>43</line>
           <option name="timeStamp" value="1124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/template2/MinimumWindowSubstring.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="1126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/FindKPairsWithSmallestSums.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/DLLOone/AllOoneDataStructure.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="1128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/DLLOone/AllOoneDataStructure.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/DLLOone/AllOoneDataStructure.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/DLLOone/AllOoneDataStructure.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1133" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

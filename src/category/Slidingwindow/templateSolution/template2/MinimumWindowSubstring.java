@@ -18,31 +18,28 @@ public class MinimumWindowSubstring {
         System.out.println(minWindow("DAOBECEBANC", "ABC"));
     }
 
-    public static String minWindow(String s, String t) {
-        int[] freq = new int[128]; //bucket array to record the frequency of character
-        for (char c : t.toCharArray()) {
-            freq[c]++;
-        }
+    public static String minWindow(String s, String target) {
+        int[] freq = new int[128]; // bucket array to record the frequency of character
+        for (char c : target.toCharArray()) freq[c]++;
 
-        int counter = t.length(), left = 0, right = 0, minStart = -1, minLen = Integer.MAX_VALUE;
+        int counter = target.length(), left = 0, right = 0, minStart = -1, minLen = Integer.MAX_VALUE;
         while (right < s.length()) {
-            char rc = s.charAt(right);
+            char rc = s.charAt(right++);
             if (freq[rc] > 0) {
                 counter--;
             }
             freq[rc]--;
-            right++;
             
-            //slide minLen by recover the counter(++) and move the start(++)
+            // slide minLen by recover the counter(++) and move the start(++)
             while (counter == 0) {
                 if (right - left < minLen) {
                     minLen = right - left;
                     minStart = left;
                 }
                 // Sliding: increase left to find the character in "ABC",
-                // if we find one of target character (freq[lc] == 0), then increase the counter as the pointer is left++.
+                // if we find one of target character (freq[lc] == 0), then increase (recover) the counter
                 char lc = s.charAt(left++);
-                if (freq[lc] == 0) {
+                if (freq[lc] == 0) { // Note, not while here
                     counter++;
                 }
                 freq[lc]++;

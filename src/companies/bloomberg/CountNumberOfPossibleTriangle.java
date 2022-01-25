@@ -11,7 +11,6 @@ import java.util.Arrays;
  * Created by brianzhang on 6/3/20.
  */
 public class CountNumberOfPossibleTriangle {
-
     public static void main(String[] args) {
         int arr[] = { 10, 21, 22, 100, 101, 200, 300 };
         int size = arr.length;
@@ -22,9 +21,7 @@ public class CountNumberOfPossibleTriangle {
 
     //Brute force
     static int findNumberOfTriangles(int arr[], int n){
-
         int count = 0;
-
         for(int i=0; i<n; i++){
             for(int j=i+1; j<n; j++){
                 for(int k=j+1; k<n; k++){
@@ -33,19 +30,15 @@ public class CountNumberOfPossibleTriangle {
                 }
             }
         }
-
         return count;
     }
 
     // Two pointer
     static int findNumberOfTrianglesTwoPointer(int arr[], int n){
-
         Arrays.sort(arr);
         int count = 0;
-
         for(int i=n-1; i>=1; i--){
             int l=0, r = i-1;
-
             while(l<r){
                 if(arr[l] + arr[r] > arr[i]){
                     count += r-l;
@@ -55,8 +48,6 @@ public class CountNumberOfPossibleTriangle {
                 }
             }
         }
-
         return count;
     }
-
 }

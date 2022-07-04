@@ -10,19 +10,18 @@ import java.util.*;
  *
  * Created by brianzhang on 5/23/21.
  */
-public class NaryPreOrder {
+public class SerializeDeserializeNaryPreOrder {
     // Encodes a tree to a single string.
     public String serialize(Node root) {
         List<String> list=new LinkedList<>();
-        serializeHelper(root,list);
+        serializeHelper(root, list);
         return String.join(",",list);
     }
 
     private void serializeHelper(Node root, List<String> list){
         if(root==null) return;
-
-        list.add(String.valueOf(root.val));
-        list.add(String.valueOf(root.children.size()));
+        list.add(String.valueOf(root.val)); // value
+        list.add(String.valueOf(root.children.size())); // the num of children
         for(Node child : root.children){
             serializeHelper(child, list);
         }
@@ -41,7 +40,7 @@ public class NaryPreOrder {
         root.val = Integer.parseInt(q.poll());
         int size = Integer.parseInt(q.poll());
         root.children = new ArrayList<>(size);
-        for(int i=0;i<size;i++){
+        for(int i=0; i<size; i++){
             root.children.add(deserializeHelper(q));
         }
         return root;
@@ -52,11 +51,4 @@ class Node {
     public int val;
     public List<Node> children;
     public Node() {}
-    public Node(int _val) {
-        val = _val;
-    }
-    public Node(int _val, List<Node> _children) {
-        val = _val;
-        children = _children;
-    }
-};
+}

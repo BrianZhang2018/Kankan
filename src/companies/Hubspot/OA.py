@@ -3,6 +3,8 @@ from collections import defaultdict
 
 import requests
 
+#https://www.1point3acres.com/bbs/thread-822006-1-1.html
+
 date_format = "%Y-%m-%d"
 get_url = "https://candidate.hubteam.com/candidateTest/v3/problem/dataset?userKey=a78c3bcff3b87d327e481683553a"
 post_url = "https://candidate.hubteam.com/candidateTest/v3/problem/result?userKey=a78c3bcff3b87d327e481683553a"

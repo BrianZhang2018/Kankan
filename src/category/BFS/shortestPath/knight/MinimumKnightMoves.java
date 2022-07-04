@@ -10,7 +10,6 @@ import java.util.*;
  * Created by brianzhang on 1/20/21.
  */
 public class MinimumKnightMoves {
-
     public static void main(String[] args) {
         System.out.println(minKnightMoves(5,5));
         System.out.println(minKnightMoves(1,1));

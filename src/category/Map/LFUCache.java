@@ -5,13 +5,11 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/lfu-cache
  * https://www.cnblogs.com/weiyinfu/p/8822876.html
- *
- *
  * LinkedHashMap
  *
  * Created by brianzhang on 6/16/20.
  */
-class LFUCache { // leash frequently used
+class LFUCache { // least frequently used - evict the least used element
     public static void main(String[] args) {
         LFUCache cache = new LFUCache(2);
         String[] op = {"put", "put", "get", "put", "get", "get", "put", "get", "get", "get"};

@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 /**
  * https://leetcode.com/problems/k-closest-points-to-origin
- *
  * Quick Select base on Quick sort
  *
  * Created by brianzhang on 5/27/20.

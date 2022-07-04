@@ -1,4 +1,4 @@
-package category.unionfind.detectCycle.DirectedGraph;
+package category.unionfind.detectCycle.DirectedGraphByDFS;
 
 import java.util.*;
 

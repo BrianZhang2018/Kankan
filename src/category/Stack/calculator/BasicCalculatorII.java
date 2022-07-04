@@ -11,8 +11,9 @@ import java.util.Stack;
  */
 public class BasicCalculatorII {
     public static void main(String[] args) {
-        System.out.println(calculate(" 3/2 "));
-        System.out.println(calculate("1 + 3 * 2 "));
+       // System.out.println(calculate("3-2*2"));
+        System.out.println(calculate1(" 3/2 "));
+       // System.out.println(calculate("1 + 3 * 2 "));
     }
 
     public static int calculate(String s) {
@@ -45,6 +46,42 @@ public class BasicCalculatorII {
 
         int res = 0;
         for (int i : stack) res += i;
+        return res;
+    }
+
+    public static int calculate1(String s) {
+        Stack<Integer> stack = new Stack();
+        String signs = "+-*/";
+        char prev = '+';
+        int num = 0;
+        char[] cs = s.toCharArray();
+
+        int res = 0;
+
+        for(int i=0; i<cs.length; i++) {
+            if(Character.isDigit(cs[i])) {
+                num += num *10 + cs[i] - '0';
+            }
+
+            if(i == cs.length-1 || signs.indexOf(cs[i]) != -1) {
+                if(prev == '+') {
+                    stack.push(num);
+                }else if(prev == '-') {
+                    stack.push(-num);
+                }else if (prev == '*') {
+                    stack.push(stack.pop() * num);
+                }else if(prev == '/') {
+                    stack.push(stack.pop() / num);
+                }
+                prev = cs[i];
+                num = 0;
+            }
+        }
+
+        for(int i : stack) {
+            res +=i;
+        }
+
         return res;
     }
 }

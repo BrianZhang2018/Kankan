@@ -6,10 +6,13 @@ package category.DynamicPlanning.MiniMaximumPathReachATarget;
  * Created by brianzhang on 11/25/18.
  */
 public class MinimumPathSum {
+    public static void main(String[] args) {
+        int[][] input = new int[][]{{1,3,1},{1,5,1},{4,2,1}};
+        System.out.println(minPathSum(input));
+    }
 
-    public int minPathSum(int[][] grid) {
-        if (grid == null)
-            return 0;
+    public static int minPathSum(int[][] grid) {
+        if (grid == null) return 0;
         int m = grid.length;
         int n = grid[0].length;
 
@@ -18,6 +21,7 @@ public class MinimumPathSum {
                 if (i == 0 && j == 0) {
                     continue;
                 }
+
                 if (i == 0) {
                     grid[i][j] = grid[i][j - 1] + grid[i][j];
                 } else if (j == 0) {

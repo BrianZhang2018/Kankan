@@ -10,18 +10,16 @@ import java.util.*;
  */
 public class WordBreakI {
     public static void main(String[] args) {
-        //solution-1
-       // System.out.println(wordBreak("leetco", new HashSet<>(Arrays.asList("leet", "co"))));
+        // System.out.println(wordBreak("leetco", new HashSet<>(Arrays.asList("leet", "co"))));
 
-        //solution-2
         System.out.println(wordBreakDFSMemo("catsandog", new HashSet<>(Arrays.asList("cats","dog","sand","and","cat")), new HashMap<>()));
         res.forEach(s -> System.out.println(s));
     }
 
+    // Solution-1
     // DP递推, O(n^2) ("n square" Or "n to the power 2") - Bottom-Up solution
     public static boolean wordBreak(String s, Set<String> dict) {
         if (s == null || s.length() == 0) return false;
-
         int n = s.length();
         boolean[] dp = new boolean[n]; // dp[i] represents whether s[0...i] can be formed by dict
 
@@ -36,6 +34,7 @@ public class WordBreakI {
         return dp[n - 1];
     }
 
+    // Solution-2
     static List<String> res = new ArrayList<>();
     // DFS (记忆化递归), time complexity: n^2, Top-Down solution
     public static boolean wordBreakDFSMemo(String s, Set<String> dict, Map<String, Boolean> memo) {
@@ -59,7 +58,7 @@ public class WordBreakI {
         memo.put(s, false);
         return false;
     }
-
+    // Solution-3
     // BFS, https://leetcode.com/problems/word-break/discuss/43797/A-solution-using-BFS
     public static boolean wordBreakBFSMemo(String s, Set<String> wordDict) {
         if (wordDict.contains(s)) return true;
@@ -81,5 +80,31 @@ public class WordBreakI {
             }
         }
         return false;
+    }
+
+    // best performance solution from leetcode
+    class Solution
+    {
+        // DFS
+        public boolean wordBreak(String s, List<String> wordDict)
+        {
+            boolean[] visited = new boolean[s.length() + 1];
+            return dfs(s, 0, wordDict, visited);
+        }
+        private boolean dfs(String s, int start, List<String> wordDict, boolean[] visited)
+        {
+            for (String word : wordDict)
+            {
+                int nextStart = start + word.length();
+                if (nextStart > s.length() || visited[nextStart]) continue;
+
+                if (s.indexOf(word, start) == start)
+                {
+                    if (nextStart == s.length() || dfs(s, nextStart, wordDict, visited)) return true;
+                    visited[nextStart] = true;
+                }
+            }
+            return false;
+        }
     }
 }

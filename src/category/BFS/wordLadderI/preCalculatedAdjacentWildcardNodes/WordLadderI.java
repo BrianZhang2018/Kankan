@@ -8,7 +8,7 @@ import java.util.*;
  * Problem: BFS traverse undirected and unweighted graph
  *
  * We will essentially be working with an undirected and unweighted graph with words as nodes and edges between words which differ by just one letter.
- * The problem boils down to finding the shortest path from a start node to a destination node, if there exists one. Hence it can be solved using Breadth First Search approach.
+ * The problem boils down to finding the shortest path from a start node to a destination node, if there exists one. Hence, it can be solved using Breadth First Search approach.
  *
  * Time Complexity: O(N*L), where L is the length of each word and N is the total number of words in the input word list.
  * check the detailed analysis from below code for time complexity
@@ -16,7 +16,6 @@ import java.util.*;
  * Updated by brianzhang on 01/28/21
  */
 public class WordLadderI {
-
     public static void main(String[] args) {
         WordLadderI test = new WordLadderI();
         System.out.println(test.ladderLength("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
@@ -39,7 +38,6 @@ public class WordLadderI {
         // Queue for BFS
         Queue<String> queue = new LinkedList<>();
         queue.add(beginWord);
-
         // visited to make sure we don't repeat processing same word
         HashSet<String> visited = new HashSet<>();
         visited.add(beginWord);

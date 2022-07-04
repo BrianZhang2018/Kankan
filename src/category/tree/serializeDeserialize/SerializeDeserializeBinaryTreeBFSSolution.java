@@ -7,7 +7,7 @@ import java.util.*;
  * tc: O(N), sc: O(N)
  * Created by brianzhang on 7/21/18.
  */
-public class BinaryTreeBFS {
+public class SerializeDeserializeBinaryTreeBFSSolution {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(6);
         root.left = new TreeNode(4);

@@ -1,8 +1,8 @@
-package category.unionfind.detectCycle.unDirectedGraph;
+package category.unionfind.detectCycle.unDirectedGraphByUF;
 
 /**
- * Union find + weight + flat binaryTree (Weighted union find and path compression)
- * Union find is used to determine the cycle in a "undirected" graph
+ * Union find + weight + Path-Compression->flat binaryTree
+ * Union find is used to determine the cycle in an "undirected" graph
  *
  * Kruskal’s Algorithm is also leveraged this algorithm
  * https://algorithms.tutorialhorizon.com/kruskals-algorithm-minimum-spanning-tree-mst-complete-java-implementation/
@@ -21,9 +21,11 @@ public class RedundantConnection {
 
     public int[] findRedundantConnection(int[][] edges) {
         UnionFindSet s = new UnionFindSet(edges.length);
-        for (int[] edge : edges)
-            if (!s.Union(edge[0], edge[1])) return edge;
-
+        for (int[] edge : edges) {
+            if (!s.union(edge[0], edge[1])) {
+                return edge;
+            }
+        }
         return null;
     }
 
@@ -40,17 +42,17 @@ public class RedundantConnection {
             }
         }
 
-        public boolean Union(int u, int v) {
+        public boolean union(int u, int v) {
             int pu = find(u), pv = find(v);
 
             if (pu == pv) return false;   // find circle as has the same parent root
 
             // merge the "small" disjoint binaryTree to big one by comparing the size (ranking) to flat the binaryTree
-            if (ranks[pv] > ranks[pu]){
+            if (ranks[pu] < ranks[pv]){
                 parents[pu] = pv;   // make "smaller" disjoint binaryTree point to larger one
                 ranks[pu]++;        // weight++
             }
-            else if (ranks[pu] > ranks[pv]){
+            else if (ranks[pv] < ranks[pu]){
                 parents[pv] = pu;
                 ranks[pv]++;
             }
@@ -66,14 +68,14 @@ public class RedundantConnection {
          * 1. find the root node of disjoint set
          * 2. path compression to flat the binaryTree
          */
-        public int find(int u) {
-            // parents[u] == u, is the root node as the root node pointing to itself
-            // (and all the node was initiated as parents[u] = u in the beginning of this function)
-            while (parents[u] != u) {
-                parents[u] = parents[parents[u]];  // parent point to the grandfather node which flat the binaryTree
-                u = parents[u];   // assign the value grandfather node to u, then check again whether parents[u] == u in while condition
+        public int find(int vertex) {
+            // parents[vertex] == vertex means vertex is the root node as the root node pointing to itself
+            // (and all the node was initiated as parents[vertex] = vertex in the beginning of this function)
+            while (parents[vertex] != vertex) {
+                parents[vertex] = parents[parents[vertex]];  // (Path-compression) parent point to the grandfather node which help to flat the tree, thus find operation could take ALMOST in O(1)
+                vertex = parents[vertex];   // assign the value grandfather node to vertex, then check again whether parents[vertex] == vertex in while condition
             }
-            return u;
+            return vertex;
         }
 
         /* public int find2(int u) {

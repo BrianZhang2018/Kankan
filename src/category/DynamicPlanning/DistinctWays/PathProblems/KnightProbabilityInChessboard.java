@@ -13,7 +13,6 @@ package category.DynamicPlanning.DistinctWays.PathProblems;
 public class KnightProbabilityInChessboard {
 
     public double knightProbability(int N, int K, int r, int c) {
-
         int[][] dires  = new int[][]{{2,1},{-2,1},{2,-1},{-2,-1},{1,2},{1,-2},{-1,2},{-1,-2}};
         double[][] prev = new double[N][N];
         prev[r][c] = 1;
@@ -31,7 +30,6 @@ public class KnightProbabilityInChessboard {
                     }
                 }
             }
-
             prev = curr;
         }
 

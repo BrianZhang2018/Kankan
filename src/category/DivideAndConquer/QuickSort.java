@@ -14,7 +14,6 @@ public class QuickSort {
 
     public static void quickSort(int[] arr, int low, int high) {
         if (arr == null || arr.length == 0) return;
-
         if (low >= high) return;
 
         // pick the pivot
@@ -27,11 +26,9 @@ public class QuickSort {
             while (arr[i] < pivot) {
                 i++;
             }
-
             while (arr[j] > pivot) {
                 j--;
             }
-
             if (i <= j) {
                 int temp = arr[i];
                 arr[i] = arr[j];
@@ -55,31 +52,23 @@ public class QuickSort {
     }
 
 // Lomuto partition scheme
-    static void quickSort1(int []arr, int low,
-                          int high)
-    {
-        if (low < high)
-        {
+    static void quickSort1(int []arr, int low, int high) {
+        if (low < high) {
             int pi = partition(arr, low, high);
             quickSort1(arr, low, pi - 1);
             quickSort1(arr, pi + 1, high);
         }
     }
 
-    static int partition(int []arr, int low,
-                         int high)
-    {
+    static int partition(int []arr, int low, int high) {
         int pivot = arr[high];
-
         // Index of smaller element
         int i = (low - 1);
 
-        for (int j = low; j <= high- 1; j++)
-        {
+        for (int j = low; j <= high- 1; j++) {
             // If current element is smaller
             // than or equal to pivot
-            if (arr[j] <= pivot)
-            {
+            if (arr[j] <= pivot) {
                 i++; // increment index of
                 // smaller element
                 Swap(arr, i, j);
@@ -89,20 +78,12 @@ public class QuickSort {
         return (i + 1);
     }
 
-    static void Swap(int[] array,
-                     int position1,
-                     int position2)
-    {
-        // Swaps elements in an array
-
+    static void Swap(int[] array, int position1, int position2) {
         // Copy the first position's element
         int temp = array[position1];
-
         // Assign to the second element
         array[position1] = array[position2];
-
         // Assign to the first element
         array[position2] = temp;
     }
-
 }

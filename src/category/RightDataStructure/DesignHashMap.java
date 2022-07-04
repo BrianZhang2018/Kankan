@@ -3,12 +3,18 @@ package category.RightDataStructure;
 /**
  * https://leetcode.com/problems/design-hashmap/discuss/152746/Java-Solution
  *
- * Apple phone screen interview
+ * Some of the questions which can be asked to the interviewer before implementing the solution
  *
+     * For simplicity, are the keys integers only?
+     * For collision resolution, can we use chaining?
+     * Do we have to worry about load factors?
+     * Can we assume inputs are valid or do we have to validate them?
+     * Can we assume this fits memory?
+ *
+ * Apple phone screen interview
  * Created by brianzhang on 11/3/19.
  */
 public class DesignHashMap<T> {
-
     public static void main(String[] args) {
         DesignHashMap test = new DesignHashMap();
         test.put(1, 1);
@@ -27,19 +33,15 @@ public class DesignHashMap<T> {
         }
     }
 
-    final ListNode[] nodes = new ListNode[10000];
+    final ListNode[] nodes = new ListNode[10001];
 
     public void put(T key, T value) {
         int index = hashcode(key);
-        if (nodes[index] == null) {
-            nodes[index] = new ListNode(-1, -1); // dummy head node
+        ListNode prev = findNode(index, key);
+        if (prev.next == null){ // empty bucket in array
+            prev.next = new ListNode(key, value); // dummy headNode(-1,-1) -> New Node
         }
-
-        ListNode prev = locatePrevNodeOfTarget(nodes[index], key);
-        if (prev.next == null){
-            prev.next = new ListNode(key, value);
-        }
-        else{ // means the the same key node already existing, so just need override the node value
+        else{ // means the same key node already existing, so just need override the node value
             prev.next.val = value;
         }
     }
@@ -48,7 +50,7 @@ public class DesignHashMap<T> {
         int index = hashcode(key);
         if (nodes[index] == null) return null;
 
-        ListNode node = locatePrevNodeOfTarget(nodes[index], key);
+        ListNode node = findNode(index, key);
         return node.next == null ? null : (T)node.next.val;
     }
 
@@ -56,7 +58,7 @@ public class DesignHashMap<T> {
         int index = hashcode(key);
         if (nodes[index] == null) return null;
 
-        ListNode prev = locatePrevNodeOfTarget(nodes[index], key);
+        ListNode prev = findNode(index, key);
         if (prev.next == null) return null;
 
         T removed = (T)prev.next.val;
@@ -65,16 +67,14 @@ public class DesignHashMap<T> {
         return removed;
     }
 
-    /**
-     * @param head, the head of single linkedList
-     * @param key, the key of node of target
-     * @return the previous node of the key node, otherwise will return the tail node
-     */
-    private ListNode locatePrevNodeOfTarget(ListNode head, T key) {
-        ListNode curr = head, prev = null;
-        while (curr != null && curr.key != key) {
-            prev = curr;
-            curr = curr.next;
+    // return previous node of target
+    private ListNode findNode(int index, T key) {
+        if(nodes[index] == null)
+            return nodes[index] = new ListNode(-1, -1); // create a dummy head node and return if bucket is empty
+
+        ListNode prev = nodes[index];
+        while (prev != null && prev.next.key != key) {
+            prev = prev.next;
         }
         return prev;
     }

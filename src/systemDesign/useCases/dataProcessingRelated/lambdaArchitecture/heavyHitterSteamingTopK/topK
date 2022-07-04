@@ -35,3 +35,4 @@ https://soulmachine.gitbooks.io/system-design/content/cn/bigdata/heavy-hitters.h
 
 空间复杂度O(dm)。m是二维数组的列数，d是二维数组的行数，堆需要O(k)的空间，不过k通常很小，堆的空间可以忽略不计
 时间复杂度O(nlogk)。每次来一个新元素，需要在二维数组里查找一下，需要O(1)的时间；然后要在堆里查找一下，O(logk)的时间，有可能需要调堆，又需要O(logk)的时间，总的时间复杂度是O(nlogk)。
+

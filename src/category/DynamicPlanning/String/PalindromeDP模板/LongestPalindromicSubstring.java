@@ -8,13 +8,11 @@ package category.DynamicPlanning.String.PalindromeDP模板;
 public class LongestPalindromicSubstring {
 
     public static void main(String[] args) {
-        System.out.println(longestPalindrome("cbbd"));
+        System.out.println(longestPalindrome("cabad"));
     }
 
     public static String longestPalindrome(String s) {
-
-        if(s == null || s.length() == 0)
-            return "";
+        if(s == null || s.length() == 0) return "";
 
         int n = s.length();
         String res = null;

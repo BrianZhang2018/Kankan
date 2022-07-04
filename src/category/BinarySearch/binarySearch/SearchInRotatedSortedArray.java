@@ -19,15 +19,14 @@ public class SearchInRotatedSortedArray {
         while(left <= right){
             int mid = left + (right-left)/2;
             if(nums[mid] == target) return mid;
-
-            //思路：find the sub sorted array, then check whether has the target in sorted array.
+            // 思路：find the sub sorted array, then check whether it has the target in sorted array.
             if(nums[left] <= nums[mid]) { // means left part is sorted in rotated array
-                if(target >= nums[left] && target < nums[mid]) // target is in sorted part
+                if(nums[left] <= target && target < nums[mid]) // target is in sorted part
                     right = mid - 1;
                 else
                     left = mid + 1;
             }else {  // right part is sorted
-                if(target > nums[mid] && target <= nums[right]) // target is in sorted part
+                if(nums[mid] < target && target <= nums[right]) // target is in sorted part
                     left = mid + 1;
                 else
                     right = mid - 1;

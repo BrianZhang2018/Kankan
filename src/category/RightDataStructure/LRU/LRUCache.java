@@ -39,11 +39,12 @@ public class LRUCache<T> {
 
     private int cacheSize;
     private Map<T, DllNode> map = Collections.synchronizedMap(new HashMap()); // with sync enhanced
-    private DllNode<Integer> head = new DllNode(0, 0);
-    private DllNode<Integer> tail = new DllNode(0, 0);
+    private DllNode<Integer> head, tail;
 
     public LRUCache(int capacity) {
         this.cacheSize = capacity;
+        head = new DllNode(0, 0);
+        tail = new DllNode(0, 0);
         head.next = tail;
         tail.prev = head;
     }

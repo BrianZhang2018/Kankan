@@ -1,12 +1,14 @@
 package category.Array.slotSeparation;
 
+import java.util.HashMap;
+
 /**
  * https://leetcode.com/problems/maximum-product-subarray/
  *
      A way to understand the reason why the maximum subarray must be a prefix of suffix of the array:
      suppose there's no 0 in the array:
-     if number of negative number is odd, and left most is i and right most is j, then we can only either keep A[:j] or A[i:] to make it max
-     if it's even, then we just multiply all the numbers.
+     if number of negative number in array is odd, and left most is i and right most is j, then we can only either keep A[:j] or A[i:] to make it max
+     if number of negative number in array is even, then we just multiply all the numbers.
      0 will divide the array to several separated subarrays - Slot separation - e.g. ProductExceptSelf.java
 
  * Created by brianzhang on 6/14/20.

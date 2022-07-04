@@ -18,7 +18,7 @@ public class LongestPalindromicSubSequence {
         int sl = s.length();
         int[][] dp = new int[sl][sl];
 
-        for(int i=0; i<sl; i++){
+        for(int i=0; i<sl; i++) { // base case
             dp[i][i] =1;
         }
         // 要点：模板方法对于这类 palindrome 问题，e.g. MinimumInsertionStepsToMakeAPalindrome.java

@@ -9,50 +9,93 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/SerializeDeserializeBinarySearchTreePreOrderSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/unionfind/Path-Compression to flat tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/companies/Hubspot/input.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/in5mins10mins1hour/link" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/FindMinimumInRotatedSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/RecoverBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/RecoverBinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/unionfind/disjoint set.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/slotSeparation/MaximumProductSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/slotSeparation/MaximumProductSubArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/shortestPath/knight/MinimumKnightMoves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/shortestPath/knight/MinimumKnightMoves.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/wordLadderI/preCalculatedAdjacentWildcardNodes/WordLadderI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/wordLadderI/preCalculatedAdjacentWildcardNodes/WordLadderI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/AStandardBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/AStandardBinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/binarySearch/SearchInRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/binarySearch/SearchInRotatedSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/CombinationSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/CombinationSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/CombinationSumII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/memo/KnightDialer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/DFSMemo/KnightDialer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DivideAndConquer/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DivideAndConquer/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/DistinctWays/PathProblems/KnightProbabilityInChessboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/DistinctWays/PathProblems/KnightProbabilityInChessboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/LongestPalindromicSubStringDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/MinimumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/MinimumPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/LongestPalindromicSubSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/LongestPalindromicSubSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/LongestPalindromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/LongestPalindromicSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Map/LFUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Map/LFUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/PriorityQueue/KClosestPointsToOrigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/PriorityQueue/KClosestPointsToOrigin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/DesignHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/DesignHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Sort/InsertInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Sort/InsertInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Sort/MedianOfTwoSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Sort/MedianOfTwoSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Sort/quickSelect/KClosestPointsToOriginQuickSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Sort/quickSelect/KClosestPointsToOriginQuickSelect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/String/LongestPalindromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/String/LongestPalindromicSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/MergeInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/MergeInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/graph/topologicalsort/AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/topologicalsort/AlienDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/linkedList/intersection/IntersectionOfTwoLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/linkedList/intersection/IntersectionOfTwoLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreeBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/SerializeDeserializeBinaryTreeBFSSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/BinaryTreePreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/SerializeDeserializeBinaryTreePreOrderSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/NaryPreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/SerializeDeserializeNaryPreOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/AStandardBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/template/StandardBinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/BinarySearchTree/CountSmallerNumbersAfterSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/BinarySearchTree/CountSmallerNumbersAfterSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/BinaryTreeRecursiveTemplate/FlipEquivalentBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/BinaryTreeRecursiveTemplate/FlipEquivalentBinaryTrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/BinaryTreeRecursiveTemplate/OneRoot-template.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/BinaryTreeRecursiveTemplate/OneRoot-template.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/BinaryTreeRecursiveTemplate/RecursiveWaySolveTreeProblem.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/BinaryTreeRecursiveTemplate/RecursiveWaySolveTreeProblem.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/BinaryTreeRecursiveTemplate/TwoRoots-template.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/BinaryTreeRecursiveTemplate/TwoRoots-template.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/BinaryTreeToDoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/BinaryTreeToDoubleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/BinaryTreeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/BinaryTreeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/Binary_Search 特点" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/Binary_Search 特点" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ClosestBinarySearchTreeValueII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ClosestBinarySearchTreeValueII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTree/AGuide" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTree/AGuide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTree/BinarySearchTree/lowerUpperLimit/AGuide" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTree/BinarySearchTree/lowerUpperLimit/AGuide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTree/BinarySearchTree/lowerUpperLimit/ConstructBinarySearchTreeByPreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTree/BinarySearchTree/lowerUpperLimit/ConstructBinarySearchTreeByPreOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTree/BinarySearchTree/lowerUpperLimit/ValidateBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTree/BinarySearchTree/lowerUpperLimit/ValidateBinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTree/BinarySearchTree/lowerUpperLimit/validBSTLowerUpperLimit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTree/BinarySearchTree/lowerUpperLimit/validBSTLowerUpperLimit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTree/ConstructBinaryTreeFromPostorderAndInorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTree/ConstructBinaryTreeFromPostorderAndInorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTree/ConstructBinaryTreeFromPreorderAndInorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTree/ConstructBinaryTreeFromPreorderAndInorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTree/constructBTInorderPostorder.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTree/constructBTInorderPostorder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTree/constructBTpreOrderInOrder.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTree/constructBTpreOrderInOrder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/ConstructBinaryTreeFromString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTreeFromString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/CountSmallerNumberOnRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/CountSmallerNumberOnRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/DeleteNodesAndReturnForest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/DeleteNodesAndReturnForest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/FindMinimumInRotatedSortedArrayII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/FindMinimumInRotatedSortedArrayII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/FirstBadVersionIterative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/FirstBadVersionIterative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/FlipBinaryTreeFromOneLeafNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/FlipBinaryTreeFromOneLeafNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/InOrderSuccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/InOrderSuccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/LevelOrderTraverseII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/LevelOrderTraverseII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/MaximumWidthBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/MaximumWidthBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/RangePickWithWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/RangePickWithWeight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/RecoverBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/RecoverBinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/RightSideView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/RightSideView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/VerticalOrder/one/BinaryTreeVerticalOrderTraversal1BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/one/BinaryTreeVerticalOrderTraversal1BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/VerticalOrder/one/BinaryTreeVerticalOrderTraversal1DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/one/BinaryTreeVerticalOrderTraversal1DFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/VerticalOrder/one/If multiple nodes are in the same row and column, the order should be from left to right." beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/one/If multiple nodes are in the same row and column, the order should be from left to right." afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/VerticalOrder/two/BinaryTreeVerticalOrderTraversal2BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/two/BinaryTreeVerticalOrderTraversal2BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/VerticalOrder/two/BinaryTreeVerticalOrderTraversal2DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/two/BinaryTreeVerticalOrderTraversal2DFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/VerticalOrder/two/if multiple nodes in the same row and same column. Sort these nodes by their values." beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/two/if multiple nodes in the same row and same column. Sort these nodes by their values." afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/a-pre-in-post-order-traversal" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/a-pre-in-post-order-traversal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/boundaryView/BinaryTreeRightSideView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/BinaryTreeRightSideView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/boundaryView/BoundaryOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/BoundaryOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/boundaryView/PopulatingNextRightPointerInEachNodeI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/PopulatingNextRightPointerInEachNodeI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/boundaryView/PopulatingNextRightPointerInEachNodeII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/PopulatingNextRightPointerInEachNodeII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/boundaryView/dummyNode" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/dummyNode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/boundaryView/levelOrdertraverse and dfs recursive" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/levelOrdertraverse and dfs recursive" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/convertToLinkedList/ConvertBinarySearchTreeToSortedDoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/convertToLinkedList/ConvertBinarySearchTreeToSortedDoublyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/convertToLinkedList/FlattenBinaryTreeToLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/convertToLinkedList/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/inoutdegree/VerifyPreOrderSerializationOfABinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/inoutdegree/VerifyPreOrderSerializationOfABinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/BinaryTreeMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/pathSum/BinaryTreeMaximumPathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/DiameterOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/pathSum/DiameterOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/pathSum/MaximumPathSumBetweenAsteriskNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/pathSum/MaximumPathSumBetweenAsteriskNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/simpleRecursive/LowestCommonAncestorBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/simpleRecursive/LowestCommonAncestorBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/BinaryTree/simpleRecursive/LowestCommonAncestorBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/simpleRecursive/LowestCommonAncestorBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/CountUniValSubtrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/CountUniValSubtrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/InsertANodeIntoBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/InsertANodeIntoBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/RemoveNthNodeFromEndOfList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/RemoveNthNodeFromEndOfList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/TrimBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/TrimBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/Viterbi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/Viterbi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/depth/problems" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/depth/problems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/level vs degree problems" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/level vs degree problems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/minimumSpanningTree/MinimumCostConnectAllCities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/minimumSpanningTree/MinimumCostConnectAllCities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/morrisTraversal/MorrisInOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/morrisTraversal/MorrisInOrderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/morrisTraversal/MorrisInorderTraversal-diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/morrisTraversal/MorrisInorderTraversal-diagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/morrisTraversal/RecoverBinarySearchTreeO1Space.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/morrisTraversal/RecoverBinarySearchTreeO1Space.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/nary/NaryPreorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/nary/NaryPreorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/SerializeDeserializeBinarySearchTreePreOrderSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeBinarySearchTreePreOrderSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/SerializeDeserializeBinaryTreeBFSSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeBinaryTreeBFSSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/SerializeDeserializeBinaryTreePreOrderSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeBinaryTreePreOrderSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/serializeDeserialize/SerializeDeserializeNaryPreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeNaryPreOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/AddSearchWordDataStructureDesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/AddSearchWordDataStructureDesign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/ConcatenatedWordTrieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/ConcatenatedWordTrieImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/DesignInMemoryFileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/DesignInMemoryFileSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/LongestWordTrieDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/LongestWordTrieDFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/LongestWordTrieDFS1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/LongestWordTrieDFS1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/MapSumPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/MapSumPairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/PalindromePairsTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/PalindromePairsTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/PrefixTreeTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/PrefixTreeTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/SearchAutoCompleteSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/SearchAutoCompleteSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/TrieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/TrieImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/TrieImplByHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/TrieImplByHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/TrieTree.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/TrieTree.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/WordSearchII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/WordSearchII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/tree/trie/WordSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/trie/WordSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/unionfind/IdeaOfUionFind" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/unionfind/IdeaOfUionFind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/unionfind/NumberOfIslandsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/unionfind/NumberOfIslandsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/unionfind/detectCycle/DirectedGraph/DetectCycleInDirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/unionfind/detectCycle/DirectedGraphByDFS/DetectCycleInDirectedGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/unionfind/detectCycle/unDirectedGraph/RedundantConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/unionfind/detectCycle/unDirectedGraphByUF/RedundantConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/unionfind/disjoint set.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/unionfind/disjoint-set data merge.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/Hubspot/OA.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/companies/Hubspot/OA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/technologies/database/Cassandra/Screen Shot 2020-11-15 at 2.50.38 PM.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/database/Cassandra/Cassandra .png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/topK" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/topK" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/unionfind/detectCycle/DirectedGraphByDFS/DetectCycleInDirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/unionfind/detectCycle/DirectedGraphByDFS/DetectCycleInDirectedGraph.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -1421,7 +1464,7 @@
       <recent name="linkedin.vo.dataStructure" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NumberOfIslandsII">
+  <component name="RunManager" selected="Application.FindMinimumInRotatedSortedArray">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1587,20 +1630,6 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="AStandardBinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.BinarySearch.AStandardBinarySearch" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.BinarySearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AlienDictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="category.graph.topologicalsort.AlienDictionary" />
       <module name="KillLeetCode" />
@@ -1608,20 +1637,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="category.graph.topologicalsort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BasicCalculatorII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Stack.calculator.BasicCalculatorII" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.Stack.calculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1643,6 +1658,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FindMinimumInRotatedSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.BinarySearch.rotatedArray.FindMinimumInRotatedSortedArray" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.BinarySearch.rotatedArray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NumberOfIslandsII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="category.unionfind.NumberOfIslandsII" />
       <module name="KillLeetCode" />
@@ -1650,6 +1679,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="category.unionfind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StandardBinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.BinarySearch.template.StandardBinarySearch" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.BinarySearch.template.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1865,19 +1908,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.BasicCalculatorII" />
       <item itemvalue="Application.AStandardBinarySearch" />
       <item itemvalue="Application.AlienDictionary" />
       <item itemvalue="Application.DetectCycleInDirectedGraph" />
       <item itemvalue="Application.NumberOfIslandsII" />
+      <item itemvalue="Application.FindMinimumInRotatedSortedArray" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NumberOfIslandsII" />
-        <item itemvalue="Application.DetectCycleInDirectedGraph" />
-        <item itemvalue="Application.AlienDictionary" />
+        <item itemvalue="Application.FindMinimumInRotatedSortedArray" />
         <item itemvalue="Application.AStandardBinarySearch" />
-        <item itemvalue="Application.BasicCalculatorII" />
+        <item itemvalue="Application.DetectCycleInDirectedGraph" />
+        <item itemvalue="Application.NumberOfIslandsII" />
+        <item itemvalue="Application.AlienDictionary" />
       </list>
     </recent_temporary>
   </component>
@@ -2089,6 +2132,10 @@
       <workItem from="1655951791333" duration="2635000" />
       <workItem from="1656285606825" duration="1055000" />
       <workItem from="1656944593895" duration="10573000" />
+      <workItem from="1656955343482" duration="837000" />
+      <workItem from="1657157372132" duration="833000" />
+      <workItem from="1657469533759" duration="4506000" />
+      <workItem from="1658070124469" duration="4360000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2274,22 +2321,22 @@
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/trie/LinkedList/LongestWordTrieDFS.java</url>
+          <url>file://$PROJECT_DIR$/src/category/Tree/trie/LinkedList/LongestWordTrieDFS.java</url>
           <line>13</line>
           <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/trie/LinkedList/Viterbi.java</url>
+          <url>file://$PROJECT_DIR$/src/category/Tree/trie/LinkedList/Viterbi.java</url>
           <line>81</line>
           <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/trie/LinkedList/Viterbi.java</url>
+          <url>file://$PROJECT_DIR$/src/category/Tree/trie/LinkedList/Viterbi.java</url>
           <line>68</line>
           <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/trie/LinkedList/Viterbi.java</url>
+          <url>file://$PROJECT_DIR$/src/category/Tree/trie/LinkedList/Viterbi.java</url>
           <line>66</line>
           <option name="timeStamp" value="162" />
         </line-breakpoint>
@@ -2309,7 +2356,7 @@
           <option name="timeStamp" value="172" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/trie/LinkedList/InsertAnodeINtoBST.java</url>
+          <url>file://$PROJECT_DIR$/src/category/Tree/trie/LinkedList/InsertAnodeINtoBST.java</url>
           <line>29</line>
           <option name="timeStamp" value="206" />
         </line-breakpoint>
@@ -2334,7 +2381,7 @@
           <option name="timeStamp" value="294" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/BinaryTree/RangePickWithWeight.java</url>
+          <url>file://$PROJECT_DIR$/src/category/Tree/BinaryTree/RangePickWithWeight.java</url>
           <line>29</line>
           <option name="timeStamp" value="295" />
         </line-breakpoint>
@@ -2364,7 +2411,7 @@
           <option name="timeStamp" value="376" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/BinaryTree/RecoverBinarySearchTree.java</url>
+          <url>file://$PROJECT_DIR$/src/category/Tree/BinaryTree/RecoverBinarySearchTree.java</url>
           <line>21</line>
           <option name="timeStamp" value="584" />
         </line-breakpoint>
@@ -2444,7 +2491,7 @@
           <option name="timeStamp" value="1006" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/trie/PalindromePairsTrie.java</url>
+          <url>file://$PROJECT_DIR$/src/category/Tree/trie/PalindromePairsTrie.java</url>
           <line>62</line>
           <option name="timeStamp" value="1020" />
         </line-breakpoint>
@@ -2454,12 +2501,12 @@
           <option name="timeStamp" value="1023" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/BinaryTree/FlipBinaryTreeFromOneLeafNode.java</url>
+          <url>file://$PROJECT_DIR$/src/category/Tree/BinaryTree/FlipBinaryTreeFromOneLeafNode.java</url>
           <line>47</line>
           <option name="timeStamp" value="1037" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/BinaryTree/FlipBinaryTreeFromOneLeafNode.java</url>
+          <url>file://$PROJECT_DIR$/src/category/Tree/BinaryTree/FlipBinaryTreeFromOneLeafNode.java</url>
           <line>41</line>
           <option name="timeStamp" value="1038" />
         </line-breakpoint>
@@ -2519,7 +2566,7 @@
           <option name="timeStamp" value="1123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/tree/serializeDeserialize/SerializeDeserializeBinaryTreePreOrderSolution.java</url>
+          <url>file://$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeBinaryTreePreOrderSolution.java</url>
           <line>43</line>
           <option name="timeStamp" value="1124" />
         </line-breakpoint>

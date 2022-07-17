@@ -7,6 +7,12 @@ import java.util.*;
  */
 public class DetectCycleInDirectedGraph {
     public static void main(String[] args) {
+
+        String abc = "abd";
+        char[] arr =abc.toCharArray();
+        System.out.println(Arrays.toString(arr));
+        System.out.println(String.valueOf(arr));
+
         System.out.println(new DetectCycleInDirectedGraph().checkCycle(new String[][]{{"a", "b"},{"b", "c"}, {"c", "b"}}));
     }
 

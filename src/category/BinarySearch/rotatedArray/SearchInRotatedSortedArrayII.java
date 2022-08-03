@@ -1,8 +1,8 @@
-package category.BinarySearch.binarySearch;
+package category.BinarySearch.rotatedArray;
 
 /**
  * https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
- * This is a follow up problem to Search in Rotated Sorted Array, where nums may contain duplicates.
+ * Follow-up problem of "Search in Rotated Sorted Array", where nums may contain duplicates.
  *
  * Created by brianzhang on 5/10/20.
  */

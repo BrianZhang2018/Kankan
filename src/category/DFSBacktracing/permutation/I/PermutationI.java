@@ -30,8 +30,9 @@ public class PermutationI {
             list.add(new ArrayList<>(tempList));
         } else {
             for (int i = 0; i < nums.length; i++) {
-                if(used[i]) continue;
-
+                if(used[i]) {
+                    continue;
+                }
                 tempList.add(nums[i]);
                 used[i] = true;
                 backtrack(list, tempList, nums, used);      System.out.println("remove before: " + tempList);

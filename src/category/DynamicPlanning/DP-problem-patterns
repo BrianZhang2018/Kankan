@@ -1,12 +1,12 @@
 https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
 
-DP Problem Patterns:
+Patterns:
 
-Minimum (Maximum) Path to Reach a Target
-Distinct Ways
-Merging Intervals
-DP on Strings
-Decision Making
+    Minimum (Maximum) Path to Reach a Target
+    Distinct Ways
+    Merging Intervals
+    DP on Strings
+    Decision Making
 
 Minimum (Maximum) Path to Reach a Target
 Generate problem statement for this pattern

@@ -1,10 +1,14 @@
 package category.BinarySearch.rotatedArray;
 
+/**
+ * If array contains dup number
+ * nice analysis: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solution/
+ */
 class FindMinimumInRotatedSortedArrayII {
     public static void main(String[] args) {
-
+        System.out.println(findMin(new int[] {2,2,2,0,1}));
     }
-    public int findMin(int[] nums) {
+    public static int findMin(int[] nums) {
         if(nums.length ==1) return nums[0];
     
         int left = 0, right = nums.length - 1;
@@ -14,7 +18,7 @@ class FindMinimumInRotatedSortedArrayII {
                 right--;
                 continue;
             }
-            if(nums[mid] >= nums[right]){
+            if(nums[mid] > nums[right]){
                 left = mid +1;
             }else {
                 right = mid;

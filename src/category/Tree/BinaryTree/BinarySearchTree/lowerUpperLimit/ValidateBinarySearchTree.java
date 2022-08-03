@@ -1,4 +1,4 @@
-package category.Tree.BinaryTree.ConstructBinaryTree.BinarySearchTree.lowerUpperLimit;
+package category.Tree.BinaryTree.BinarySearchTree.lowerUpperLimit;
 
 import companies.amazon.model.TreeNode;
 import java.util.*;

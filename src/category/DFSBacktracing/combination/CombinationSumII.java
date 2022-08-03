@@ -1,4 +1,4 @@
-package category.DFSBacktracing;
+package category.DFSBacktracing.combination;
 
 import java.util.*;
 /**

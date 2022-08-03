@@ -4,14 +4,12 @@ import java.util.*;
 
 /**
  * https://leetcode.com/problems/shortest-bridge/
- *
+ * two steps:
  * 1. DFS find one island
  * 2. BFS find the shortest path
- * 
  * Created by brianzhang on 4/14/19.
  */
 public class ShortestBridgeBFS {
-
     public static void main(String[] args) {
         ShortestBridgeBFS test = new ShortestBridgeBFS();
         System.out.println(test.shortestBridge(new int[][]{{0,1,0},{0,0,0},{0,1,1}}));
@@ -56,7 +54,6 @@ public class ShortestBridgeBFS {
             }
             step++;
         }
-
         return -1;
     }
 

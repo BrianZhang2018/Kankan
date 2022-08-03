@@ -4,45 +4,41 @@ import java.util.*;
 
 /**
  * https://www.lintcode.com/problem/number-of-distinct-islands/
- *
  * Bloomberg
- *
  * Time complexity: O(rows * cols), Space complexity: O(rows * cols)
  * Created by brianzhang on 5/9/20.
  */
 public class NumberOfDistinctIsland {
+    public static void main(String[] args) {
+        System.out.println(numDistinctIslands(new int[][]{{1, 1, 0, 0, 0}, {1, 1, 0, 0, 0}, {0, 0, 0, 1, 1}, {0, 0, 0, 1, 1}}));
+    }
 
-    public int numDistinctIslands(int[][] grid) {
+    public static int numDistinctIslands(int[][] grid) {
         Set<String> res = new HashSet();
-
-        for(int i=0; i<grid.length; i++) {
-            for(int j=0; j<grid[0].length; j++) {
-                if(grid[i][j] == 1) {
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 1) {
                     StringBuilder sb = new StringBuilder();
                     dfs(grid, i, j, 's', sb);
-                    // System.out.println(sb.toString());
+                    System.out.println(sb.toString());
                     res.add(sb.toString());
                 }
             }
         }
-
         return res.size();
     }
 
-    public void dfs(int[][] grid, int i, int j, char c, StringBuilder sb) {
-        if(i <0 || i>=grid.length || j<0 || j>=grid[0].length || grid[i][j] == 0) {
+    public static void dfs(int[][] grid, int i, int j, char c, StringBuilder sb) {
+        if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == 0) {
             return;
         }
         grid[i][j] = 0;
         sb.append(c);
-
         // track dfs 的轨迹，从而达到知道小岛的形状
-        dfs(grid, i-1, j, 'l', sb);
-        dfs(grid, i, j+1, 'u', sb);
-        dfs(grid, i+1, j, 'r', sb);
-        dfs(grid, i, j-1, 'd', sb);
-
+        dfs(grid, i - 1, j, 'l', sb);
+        dfs(grid, i, j + 1, 'u', sb);
+        dfs(grid, i + 1, j, 'r', sb);
+        dfs(grid, i, j - 1, 'd', sb);
         sb.append('b');
     }
-
 }

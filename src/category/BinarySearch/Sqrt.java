@@ -1,4 +1,4 @@
-package category.BinarySearch.binarySearch;
+package category.BinarySearch;
 
 /**
  * https://leetcode.com/problems/sqrtx/

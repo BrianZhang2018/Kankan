@@ -1,4 +1,4 @@
-package category.DFSBacktracing;
+package category.DFSBacktracing.combination;
 
 import java.util.*;
 /**
@@ -36,8 +36,7 @@ public class CombinationSum {
     private void dfs(int[] nums, int start, int target, List<Integer> temp, List<List<Integer>> res) {
         if (target < 0) {
             return;
-        }
-        else if (target == 0) {
+        } else if (target == 0) {
             res.add(new ArrayList<>(temp));
         } else {
             for (int i = start; i < nums.length; i++) {

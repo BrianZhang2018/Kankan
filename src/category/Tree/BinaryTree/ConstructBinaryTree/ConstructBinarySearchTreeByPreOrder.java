@@ -1,4 +1,4 @@
-package category.Tree.BinaryTree.ConstructBinaryTree.BinarySearchTree.lowerUpperLimit;
+package category.Tree.BinaryTree.ConstructBinaryTree;
 
 import category.model.TreeNode;
 

@@ -34,13 +34,13 @@ public class StandardBinarySearch {
         return left;
     }
 
-    // Another common binary search use case
-    // Sometime you will see below kind of binary search, don't confused, it's a variety of above standard binary search.
-    // the reason is the mid-value need to be considered, e.g. 153. Find Minimum in Rotated Sorted Array
+    // Another common binary search use case in "Rotated" sorted-array
+    // Sometime you will see below kind of binary search, don't confused
+    // the reason of "right = mid" is the mid-value need to be considered, e.g. 153. Find Minimum in Rotated Sorted Array
     public static int findMin(int[] nums) {
         int left = 0, right = nums.length-1;
         while(left < right) { // the reason here is not "left <=right" as the "left" and "right" will eventually be equal at the end of binary search,
-                            // so it will cause the infinite while here since we don't have an exit check here like standard one which is to find a target and able to exit.
+                            // so it will cause the infinite while here since we don't have an exit check here like standard one which is to find a target and there has a target exist, so able to exit.
             int mid = left + (right - left) / 2;
             if(nums[mid] > nums[right]) {
                 left = mid+1;

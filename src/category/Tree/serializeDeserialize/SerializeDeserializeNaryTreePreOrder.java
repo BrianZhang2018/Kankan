@@ -10,7 +10,7 @@ import java.util.*;
  *
  * Created by brianzhang on 5/23/21.
  */
-public class SerializeDeserializeNaryPreOrder {
+public class SerializeDeserializeNaryTreePreOrder {
     // Encodes a tree to a single string.
     public String serialize(Node root) {
         List<String> list=new LinkedList<>();

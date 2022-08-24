@@ -1,4 +1,4 @@
-package category.Tree.trie;
+package category.Tree.triePrefixTree;
 
 /**
  * https://leetcode.com/problems/map-sum-pairs/

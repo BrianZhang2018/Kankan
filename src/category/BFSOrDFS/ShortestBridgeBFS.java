@@ -21,7 +21,6 @@ public class ShortestBridgeBFS {
         int[][] dirs = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
         Queue<int[]> q = new LinkedList<>();
         boolean found = false;
-
         // 1. dfsHelper to find an island, mark it in `visited`
         for (int i = 0; i < m; i++) {
             if (found) break;

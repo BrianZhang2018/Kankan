@@ -1,4 +1,4 @@
-package category.Tree.trie;
+package category.Tree.triePrefixTree;
 
 /**
  * A trie, also called digital binaryTree, radix binaryTree or prefix binaryTree is a kind of search binaryTree

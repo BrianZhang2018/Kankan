@@ -1,4 +1,4 @@
-package category.Tree.trie;
+package category.Tree.triePrefixTree;
 
 import java.util.*;
 
@@ -6,7 +6,7 @@ import java.util.*;
  * https://leetcode.com/problems/design-in-memory-file-system/
  *
  * Time complexity: O(m): m is the length of input path string,
- * explanation: if the length of the path string is m, then the max levels of hierarchies (intermediate directories) it can contain is at most m/2,
+ * Explanation: if the length of the path string is m, then the max levels of hierarchies (intermediate directories) it can contain is at most m/2,
  * where each directory is a single character. Thus, the levels we must enter is n = m/2 = O(m).
  *
  * Created by brianzhang on 1/28/21.
@@ -15,6 +15,7 @@ public class DesignInMemoryFileSystem {
     public static void main(String[] args) throws DirOrFileNotFound {
         DesignInMemoryFileSystem fs = new DesignInMemoryFileSystem();
         System.out.println(fs.ls("/"));
+
         fs.mkdir("/a/b/c");
         fs.addContentToFile("/a/b/c/d", "hello");
         System.out.println(fs.ls("/"));

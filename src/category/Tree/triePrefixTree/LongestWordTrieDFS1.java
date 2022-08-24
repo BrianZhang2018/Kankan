@@ -1,16 +1,18 @@
-package category.Tree.trie;
+package category.Tree.triePrefixTree;
+
+import java.util.HashMap;
 
 /**
- * https://leetcode.com/problems/longest-word-in-dictionary/
- * 
- * Created by brianzhang on 11/5/18.
+ * Created by brianzhang on 11/4/18.
  */
-public class LongestWordTrieDFS {
+public class LongestWordTrieDFS1 {
     public static void main(String[] args) {
         String[] input = {"a", "banana", "app", "appl", "ap", "apply", "apple"};
-        LongestWordTrieDFS longestWord = new LongestWordTrieDFS();
-        System.out.println(longestWord.longestWord(input));
+        LongestWordTrieDFS1 longestWordTrieDFS1 = new LongestWordTrieDFS1();
+        System.out.println(longestWordTrieDFS1.longestWord(input));
     }
+
+    HashMap<String, String> res = new HashMap<>();
 
     public String longestWord(String[] words) {
 
@@ -20,21 +22,27 @@ public class LongestWordTrieDFS {
         for (String str : words) {
             root.insert(str);
         }
-        return dfs(root);
+
+        res.put("longest", "");
+        dfs(root, "");
+        return res.get("longest");
     }
 
-    public String dfs(TrieNode root) {
+    //simple dfsHelper that don't need return in exit if condition
+    public void dfs(TrieNode node, String longest) {
 
-        String res = root.word;
-        for (TrieNode child : root.children) {
-            if (child != null && child.word.length() != 0) {
-                String curr = dfs(child);
-                if (curr.length() > res.length() || (curr.length() == res.length() && curr.compareTo(res) < 0)) {
-                    res = curr;
-                }
+        if (node.isLastWord) {
+            String curr = node.word;
+            if (curr.length() > longest.length() || (curr.length() == longest.length() && curr.compareTo(longest) < 0)) {
+                longest = curr;
+                res.put("longest", longest);
             }
         }
-        return res;
+        for (TrieNode child : node.children) {
+            if (child != null && child.word.length() != 0) {
+                dfs(child, longest);
+            }
+        }
     }
 
     class TrieNode {
@@ -44,6 +52,7 @@ public class LongestWordTrieDFS {
 
         public void insert(String str) {
             TrieNode currNode = this;
+
             for (int level = 0; level < str.length(); level++) {
                 int index = str.charAt(level) - 'a';
                 if (currNode.children[index] == null) {
@@ -56,3 +65,5 @@ public class LongestWordTrieDFS {
         }
     }
 }
+
+

@@ -8,14 +8,14 @@ import java.util.*;
  * tc: O(N), sc: O(N)
  * PreOrder + Queue
  */
-public class SerializeDeserializeBinaryTreePreOrderSolution {
+public class SerializeDeserializeBTreePreOrderSolution {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(2);
         root.left = new TreeNode(1);
         root.right = new TreeNode(3);
 /*        root.right.left = new TreeNode(4);
         root.right.right = new TreeNode(5);*/
-        SerializeDeserializeBinaryTreePreOrderSolution test = new SerializeDeserializeBinaryTreePreOrderSolution();
+        SerializeDeserializeBTreePreOrderSolution test = new SerializeDeserializeBTreePreOrderSolution();
         String str = test.serialize(root); System.out.println(Arrays.toString(str.split(",")));
         test.deserialize(str);
     }

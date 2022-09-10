@@ -1,0 +1,12 @@
+https://ably.com/blog/websockets-vs-long-polling
+
+websockets   vs    long polling      vs     SSE
+TCP                  Http                   http
+duplex            client poll server    server push to client
+real-time           high latency
+
+6500 connections
+per server due to
+the port limitation
+
+

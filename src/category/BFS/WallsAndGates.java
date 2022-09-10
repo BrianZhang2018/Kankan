@@ -1,8 +1,6 @@
 package category.BFS;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * https://www.lintcode.com/problem/walls-and-gates/
@@ -23,11 +21,10 @@ public class WallsAndGates {
 
     // BFS Solution
     public void wallsAndGatesBFS(int[][] rooms) {
-        // write your code here
-        int m = rooms.length;
-        int n = rooms[0].length;
+        int m = rooms.length, n = rooms[0].length;
         Queue<int[]> queue = new LinkedList<>();
 
+        // opposite way: gate to empty room
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
                 if(rooms[i][j] == 0) {
@@ -36,15 +33,15 @@ public class WallsAndGates {
             }
         }
 
-        int[][] dirs = new int[][]{{1,0}, {-1, 0}, {0,1}, {0, -1}};
-        while(!queue.isEmpty()){
-            int[] pos = queue.poll();
-            int distance = rooms[pos[0]][pos[1]];
-            for(int[] dir : dirs){
-                int nx = pos[0] + dir[0];
-                int ny = pos[1] + dir[1];
-                if(nx<m && nx>=0 && ny<n && ny>=0 && rooms[nx][ny] != -1){
-                    if(rooms[nx][ny] == Integer.MAX_VALUE){
+        int[][] dirs = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        while (!queue.isEmpty()) {
+            int[] p = queue.poll();
+            int distance = rooms[p[0]][p[1]];
+            for (int[] dir : dirs) {
+                int nx = p[0] + dir[0];
+                int ny = p[1] + dir[1];
+                if (nx < m && nx >= 0 && ny < n && ny >= 0 && rooms[nx][ny] != -1) { // careful nx, ny ">=" 0
+                    if (rooms[nx][ny] == Integer.MAX_VALUE) {
                         rooms[nx][ny] = distance + 1;
                         queue.add(new int[]{nx, ny});
                     }
@@ -67,7 +64,6 @@ public class WallsAndGates {
         if(i<0 || i>=rooms.length || j<0 || j>=rooms[0].length || rooms[i][j] < distance){
             return;
         }
-
         rooms[i][j] = distance;
         dfs(i, j+1, distance + 1, rooms);
         dfs(i, j-1, distance + 1, rooms);

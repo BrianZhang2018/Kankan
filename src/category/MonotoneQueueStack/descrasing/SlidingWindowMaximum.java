@@ -1,42 +1,40 @@
 package category.MonotoneQueueStack.descrasing;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Deque;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/sliding-window-maximum/
- *
  * Created by brianzhang on 4/11/20.
  */
 public class SlidingWindowMaximum {
-
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(maxSlidingWindowMonotonicQueue(new int[]{1,3,-1,-3,5,3,6,7},3)));
+        System.out.println(Arrays.toString(maxSlidingWindow(new int[]{1,3,-1,-3,5,3,6,7},3)));
     }
 
-    public static int[] maxSlidingWindowMonotonicQueue(int[] arr, int x) {
-        Deque<Integer> indexDeque = new ArrayDeque<>();
-        int[] res = new int[arr.length - x + 1];
-        for(int i = 0; i < arr.length; i++) {
-            // remove the first element from queue as it's already out of the window
-            if(!indexDeque.isEmpty() && indexDeque.peekFirst() == i-x) {
-                indexDeque.pollFirst();
-            }
+    // Monotonic Queue
+    public static int[] maxSlidingWindow(int[] arr, int k) {
+        int[] res = new int[arr.length - k + 1];
 
-            while(!indexDeque.isEmpty() && arr[i] > arr[indexDeque.peekLast()]) {
+        Deque<Integer> indexDeque = new ArrayDeque<>(); // store index
+        for (int i = 0; i < arr.length; i++) {
+            // remove the first element from queue as it's already out of the window
+            if (!indexDeque.isEmpty() && indexDeque.peek() == i - k) {
+                indexDeque.poll();
+            }
+            // remove smaller numbers in k range as they are useless
+            while (!indexDeque.isEmpty() && arr[i] > arr[indexDeque.peekLast()]) {
                 indexDeque.pollLast();
             }
-            indexDeque.offerLast(i);
-            if(i >= x-1) {
-                res[i-x+1] = arr[indexDeque.peekFirst()];
+            indexDeque.offer(i);
+            if (i >= k - 1) {
+                res[i - k + 1] = arr[indexDeque.peekFirst()];
             }
         }
         return res;
     }
 
     // DP: similar with TrippedWater
-    public static int[] maxSlidingWindow(int[] nums, int k) {
+    public static int[] maxSlidingWindow1(int[] nums, int k) {
         int n = nums.length;
         if (n * k == 0) return new int[0];
         if (k == 1) return nums;

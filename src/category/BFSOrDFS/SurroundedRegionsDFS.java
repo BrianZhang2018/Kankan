@@ -1,4 +1,4 @@
-package category.BFSAndDFS;
+package category.BFSOrDFS;
 
 /**
  * Solved this by myself referring the NumsOfIsland question

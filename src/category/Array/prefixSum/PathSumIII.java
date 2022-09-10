@@ -39,9 +39,7 @@ public class PathSumIII {
         int numPathToCurr = prefixSumMap.getOrDefault(currSum - target, 0);
 
         prefixSumMap.put(currSum, prefixSumMap.getOrDefault(currSum, 0) + 1);
-
         int res = numPathToCurr + backtrack(node.left, prefixSumMap, currSum, target) + backtrack(node.right, prefixSumMap, currSum, target);
-
         prefixSumMap.put(currSum, prefixSumMap.get(currSum) - 1);
 
         return res;

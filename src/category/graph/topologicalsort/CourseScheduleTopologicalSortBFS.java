@@ -30,7 +30,8 @@ public class CourseScheduleTopologicalSortBFS {
         int[] inDegree = new int[n];    //入度
         List<Integer> preCourses = new ArrayList(); // you can also use a queue here
 
-        for (int i = 0; i < n; ++i) graph[i] = new ArrayList<>();  // initiate the graph
+        for (int i = 0; i < n; ++i)
+            graph[i] = new ArrayList<>();  // initiate the graph
 
         for (int[] e : prerequisites) {
             graph[e[1]].add(e[0]);  // e[1] is the prerequisite course of e[0], 收集所有依赖e[1]作为前驱的课程
@@ -93,7 +94,6 @@ public class CourseScheduleTopologicalSortBFS {
     public static List<Integer> findCycle(int n, int[][] preRequisites) {
         List<Integer>[] adjacent = new ArrayList[n];
         int[] degree = new int[n];
-
         for (int i = 0; i < n; ++i)
             adjacent[i] = new ArrayList<>();
 
@@ -102,27 +102,25 @@ public class CourseScheduleTopologicalSortBFS {
             degree[e[0]]++;
         }
 
-        int start = 0;
-        while (start < n) {  // start from each point to find the cycle
+        for (int i = 0; i < n; i++) {  // check each node to find the cycle
             int[] temp = degree;
-            Queue<Integer> bfs=new LinkedList();
-            List<Integer> res=new ArrayList();
-            bfs.add(start);
-            res.add(start);
+            Queue<Integer> queue = new LinkedList();
+            List<Integer> track = new ArrayList();
+            queue.add(i);
+            track.add(i);
 
-            while (!bfs.isEmpty()) {
-                List<Integer> adjacentList = adjacent[bfs.poll()];
-                for (int i : adjacentList) {
-                    if (i == start) {   // detected cycle since traversed back to the start point
-                        return res;
+            while (!queue.isEmpty()) {
+                List<Integer> adjacentList = adjacent[queue.poll()];
+                for (int j : adjacentList) {
+                    if (j == i) {   // detected cycle since traversed back to the start point
+                        return track;
                     }
-                    if (--temp[i] == 0) {
-                        bfs.add(i);
-                        res.add(i);
+                    if (--temp[j] == 0) {
+                        queue.add(j);
+                        track.add(j);
                     }
                 }
             }
-            start++;
         }
 
         return new ArrayList<>();

@@ -11,7 +11,6 @@ import java.util.*;
 public class WordBreakI {
     public static void main(String[] args) {
         // System.out.println(wordBreak("leetco", new HashSet<>(Arrays.asList("leet", "co"))));
-
         System.out.println(wordBreakDFSMemo("catsandog", new HashSet<>(Arrays.asList("cats","dog","sand","and","cat")), new HashMap<>()));
         res.forEach(s -> System.out.println(s));
     }

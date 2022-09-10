@@ -1,4 +1,4 @@
-package category.BFS.SearchIn2DMatrix;
+package category.BFS.searchIn2DMatrix;
 /**
  * https://leetcode.com/problems/search-a-2d-matrix-ii/
  * 

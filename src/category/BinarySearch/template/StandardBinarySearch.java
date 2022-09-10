@@ -21,11 +21,13 @@ public class StandardBinarySearch {
             if (arr[mid] == target) {
                 return mid;
             }
-
             if (target > arr[mid]) {
                 left = mid + 1;
             } else {
                 right = mid - 1;
+                // equally if "left < right" above, then "right = mid".
+                // one thing should be noticed, the "left == right" in the end for left<right,
+                // but "left > right" by the end for left<=right
             }
 
             System.out.println("left: " + left);
@@ -34,18 +36,18 @@ public class StandardBinarySearch {
         return left;
     }
 
-    // Another common binary search use case in "Rotated" sorted-array
-    // Sometime you will see below kind of binary search, don't confused
-    // the reason of "right = mid" is the mid-value need to be considered, e.g. 153. Find Minimum in Rotated Sorted Array
+    // variation problem: mid need be included, 153. Find Minimum in Rotated Sorted Array
+    // reason of "right = mid" is the mid-value need to be considered
     public static int findMin(int[] nums) {
         int left = 0, right = nums.length-1;
-        while(left < right) { // the reason here is not "left <=right" as the "left" and "right" will eventually be equal at the end of binary search,
-                            // so it will cause the infinite while here since we don't have an exit check here like standard one which is to find a target and there has a target exist, so able to exit.
+        // the reason here is not "left <=right" as the "left" and "right" will eventually be equal at the end of binary search,
+        // so it will cause the infinite while here since we don't have an exit check here like standard one which is to find a target and there has a target exist, so able to exit.
+        while(left < right) {
             int mid = left + (right - left) / 2;
             if(nums[mid] > nums[right]) {
                 left = mid+1;
             }else{
-                right = mid; //
+                right = mid;
             }
         }
 

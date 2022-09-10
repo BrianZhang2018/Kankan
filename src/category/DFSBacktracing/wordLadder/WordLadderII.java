@@ -10,8 +10,8 @@ import java.util.*;
  */
 public class WordLadderII {
     public static void main(String[] args) {
-        WordLadderII wordLadder2 = new WordLadderII();
-        System.out.println(wordLadder2.findLadders("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
+        System.out.println(new WordLadderII().findLadders("hit", "cog",
+                new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
     }
 
     // record all node's neighbor nodes, then use dfsHelper to figure out the path

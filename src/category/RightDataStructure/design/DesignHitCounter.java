@@ -1,9 +1,15 @@
 package category.RightDataStructure.design;
 
 /**
- * https://leetcode.jp/problemdetail.php?id=362
- *
+ * https://leetcode.com/problems/design-hit-counter/discuss/83483/Super-easy-design-O(1)-hit()-O(s)-getHits()-no-fancy-data-structure-is-needed!
  * https://www.geeksforgeeks.org/design-a-hit-counter/
+ *
+ * Record "Past" 5 mins
+ *
+ * basic ideal is using buckets. 1 bucket for every second because we only need to keep the recent hits info for 300 seconds.
+ * hit[] array is wrapped around by mod operation. Each hit bucket is associated with times[] bucket which record current time.
+ * If it is not current time, it means it is 300s or 600s... ago and need to reset to 1.
+ *
  * Created by brianzhang on 5/22/20.
  */
 public class DesignHitCounter {

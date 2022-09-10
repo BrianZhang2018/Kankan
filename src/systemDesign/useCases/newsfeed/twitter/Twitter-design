@@ -1,0 +1,19 @@
+https://www.hiredintech.com/classrooms/system-design/lesson/72
+
+real interview questions: https://www.1point3acres.com/bbs/thread-925281-1-1.html
+
+Design Twitter。要求设计以下use case（REST API + data model）：
+Sign up
+Make tweets
+Follow
+News Feed
+
+面试官对于service-oriented architecture不是很在意。对于数据库的选择（SQL or NoSQL），数据schema和index的建立非常在意。重点在于news feed，要能说出pull和push两种方法的tradeoff。
+Followup:
+News feed如何实现pagination？
+随着user, requests, data size的增大，系统如何scale？
+Celebrity问题。不同的celebrity的data pattern差很多，是否使用不同的message queue进行fanout？
+如何处理惊群现象 Thundering Herd?
+如何判断并限制恶意用户（如1分钟内发超过100条tweet）？
+如何屏蔽tweet中的敏感词？
+如何设计hashtag？

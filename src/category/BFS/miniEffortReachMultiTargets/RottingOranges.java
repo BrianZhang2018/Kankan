@@ -1,4 +1,4 @@
-package category.BFS;
+package category.BFS.miniEffortReachMultiTargets;
 
 import java.util.*;
 
@@ -41,7 +41,7 @@ public class RottingOranges {
                     }
                 }
             }
-            mins++;
+            mins++; // careful
         }
 
         return countFresh == 0 ? mins : -1;

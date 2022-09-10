@@ -1,4 +1,0 @@
-almost all the prefix-sum solution will do:
-
-Map<Integer, Integer> prefixSumMap = new HashMap<>();
-prefixSumMap.put(0, 1);  // prefix-sum to index mapping

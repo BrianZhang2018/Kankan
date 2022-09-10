@@ -1,0 +1,21 @@
+https://dev.to/vishnuchilamakuru/4-ways-to-update-your-cache-jmg
+
+https://bluzelle.com/blog/things-you-should-know-about-database-caching
+
+Refresh Ahead:
+DB -> Cache, e.g. oracle coherent https://docs.oracle.com/cd/E15357_01/coh.360/e15723/cache_rtwtwbra.htm#COHDG5177
+Microservice -> Cache, e.g. cache-refresh-ahead-spring-boot-starter
+
+Cache Aside:
+Cache-aside is also referred to as lazy loading. Only requested data is cached,
+which avoids filling up the cache with data that isn't requested.
+
+Data can become stale if it is updated in the database.
+This issue is mitigated by setting a time-to-live (TTL) which forces an update of the cache entry, or by using write-through.
+
+Read Through:
+Unlike cache aside, the cache sits in between the application and the database.
+The application only request data from the cache. If a ‘cache miss’ occurs, the cache is responsible to retrieve data from the database, update itself and return data to the application.
+
+Client don't interact with DB which take care by the cache provider like redis, but cache-aside need do db update itself.
+

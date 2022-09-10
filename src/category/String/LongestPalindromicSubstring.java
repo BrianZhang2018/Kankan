@@ -26,7 +26,7 @@ public class LongestPalindromicSubstring {
     public void count(String s, int left, int right) {
         while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
             if (maxStr.length() <= right-left){
-                maxStr = s.substring(left, right + 1);
+                maxStr = s.substring(left, right + 1); // if we only record the left, right pointer for max here, it will save the operation on substring (o(n)) function
             }
             left--;
             right++;

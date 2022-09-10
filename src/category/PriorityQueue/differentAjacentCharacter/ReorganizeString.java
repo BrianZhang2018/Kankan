@@ -3,55 +3,45 @@ package category.PriorityQueue.differentAjacentCharacter;
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/reorganize-string/
+ * CountMap + PQ(MaxHead) + Queue
+ *
+ * this question is the simple variation of RearrangeStringKDistanceApart
+ * which you can translate the problem to the "same" letters are at least distance "2" from each other.
+ *
  * Created by brianzhang on 2/1/21.
  */
 public class ReorganizeString {
-
     public static void main(String[] args) {
         System.out.println(reorganizeString("aaabcd"));
-
-
-        Map<Character, Integer> count = new HashMap<>();
-
-        for (char c : "aaabcd".toCharArray()) {
-            count.put(c, count.getOrDefault(c, 0) + 1);
-        }
-
-        PriorityQueue<Character> maxHeap = new PriorityQueue<>((a, b) -> count.get(b) - count.get(a));
-        maxHeap.addAll(count.keySet());
-
     }
 
     public static String reorganizeString(String S) {
-        Map<Character, Integer> count = new HashMap<>();
-
+        Map<Character, Integer> countMap = new HashMap<>();
         for (char c : S.toCharArray()) {
-            count.put(c, count.getOrDefault(c, 0) + 1);
+            countMap.put(c, countMap.getOrDefault(c, 0) + 1);
         }
-
-        PriorityQueue<Character> maxHeap = new PriorityQueue<>((a, b) -> count.get(b) - count.get(a));
-        maxHeap.addAll(count.keySet());
+        PriorityQueue<Character> maxHeap = new PriorityQueue<>((a, b) -> countMap.get(b) - countMap.get(a));
+        maxHeap.addAll(countMap.keySet());
 
         Queue<Character> wait = new LinkedList<>();
-        int k = 2;
         StringBuilder sb = new StringBuilder();
+        while (!maxHeap.isEmpty()) {
+            char c = maxHeap.poll();
+            sb.append(c);
+            countMap.put(c, countMap.get(c) - 1);
+            wait.add(c);
 
-        while(!maxHeap.isEmpty()) {
-            char current = maxHeap.poll();
-            sb.append(current);
-            count.put(current, count.get(current) - 1);
-            wait.add(current);
-
-            if (wait.size() < k) {
+            if (wait.size() < 2) { // "2" since 2 different adjacent characters
                 continue;
             }
 
             char front = wait.poll();
-            if (count.get(front) > 0) {
+            if (countMap.get(front) > 0) {
                 maxHeap.offer(front);
             }
         }
 
-        return sb.length() == S.length() ? sb.toString() :"";
+        return sb.length() == S.length() ? sb.toString() : "";
     }
 }

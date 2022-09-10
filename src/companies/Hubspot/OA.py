@@ -38,7 +38,7 @@ def handler(post_url, get_url):
                 most_attendee_date = max(consecutive_dates_partners, key=lambda k:len(consecutive_dates_partners[k]))
                 number_of_attendee = len(consecutive_dates_partners[most_attendee_date])
                 # In case of multiple dates with the same number of partners, pick the earlier date.
-                all_dates = [k for k in consecutive_dates_partners.keys() if len(consecutive_dates_partners[k])==number_of_attendee]
+                all_dates = [k for k in consecutive_dates_partners.keys() if len(consecutive_dates_partners[k]) == number_of_attendee]
                 earlier_date = min(all_dates)
 
                 res["countries"].append({

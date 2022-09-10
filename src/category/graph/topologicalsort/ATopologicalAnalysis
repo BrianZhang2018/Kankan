@@ -28,7 +28,7 @@ downward path between root and a leaf.
 
 套路: (code example from TopologicalSortBFS.java)
 
-1. Construct the graph (map), and inDegree array
+Step-1. Construct the graph (map), and inDegree array
        //initiate the graph
         for (int i = 0; i < n; ++i)
             graph[i] = new ArrayList<>();
@@ -38,15 +38,14 @@ downward path between root and a leaf.
             inDegree[e[0]]++; // e[1]->e[0], so inDegree[e[0]]++
         }
 
-2. Collect the elements which inDegree is "0" which means element don't have precede element, so they are current prerequisite course.
+Step-2. Collect the elements which inDegree is "0" which means element don't have precede element, so they are current prerequisite course.
 
        //find the start node -> inDegree = 0, 没有前驱节点
         for (int i = 0; i < n; ++i)
             if (inDegree[i] == 0)
                 bfs.add(i); //把入度为零的vertex放入list, 看做remove the vertex which "inDegree=0" and add into the list,
 
-
-3. Get the adjacent elements and reduce the inDegree
+Step-3. Get the adjacent elements and reduce the inDegree
 
         for (int i = 0; i < bfs.size(); ++i){// then, "--inDegree" the precede vertex (prerequisite course) has done, and recursive the same logic
             for (int j : graph[bfs.get(i)]){

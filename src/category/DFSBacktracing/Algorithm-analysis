@@ -27,7 +27,6 @@ Important Note:
 1. remove (size-1)th character, e.g. SubsetsII.java
 2. recover the array which has been manipulated, like remove element from array, in the previous recursion, e.g. ZumaGame.java
 
-
 Subsets is a classic backtrack questions, refer the Subsets.java
 =======================================
 

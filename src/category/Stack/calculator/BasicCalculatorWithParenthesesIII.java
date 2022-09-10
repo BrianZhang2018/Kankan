@@ -13,11 +13,9 @@ import java.util.*;
 public class BasicCalculatorWithParenthesesIII {
     public static void main(String[] args) {
         System.out.println(calculate("6-(1+(4/2))"));
-        System.out.println(calculate1("6-(1+4/2+5)"));
-
-        Set<Integer> set = new HashSet<>();
-        set.add(1);
-        System.out.println(set.contains(1));
+        System.out.println(calculate1("6-(1+(4/2))"));
+        System.out.println(calculate("(5*(4-(3*2)))"));
+        System.out.println(calculate1("(5*(4-(3*2)))")); // calculate1 has problem with this case
     }
 
     // template solution

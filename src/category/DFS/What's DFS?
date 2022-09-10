@@ -1,6 +1,8 @@
+Depth First Search (DFS)
+We adopt the depth as the priority, so that one would start from a root and reach all the way down to certain leaf,
+and then back to root to reach another branch.
+The DFS strategy can further be distinguished as "preorder", "inorder", and "postorder" depending on the relative order among the root node, left node and right node.
+
 Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures.
 The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph)
 and explores as far as possible along each branch before backtracking.
-
-
-Depth-First search is a specific form of "backtracking". DFS就是backtracking。

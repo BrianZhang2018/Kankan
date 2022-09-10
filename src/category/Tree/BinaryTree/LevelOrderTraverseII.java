@@ -8,8 +8,6 @@ import java.util.*;
  * Created by brianzhang on 4/25/21.
  */
 public class LevelOrderTraverseII {
-    public static void main(String[] args) {}
-
     // DFS
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         LinkedList<List<Integer>> res = new LinkedList<>();
@@ -22,11 +20,10 @@ public class LevelOrderTraverseII {
         if(node == null) return;
 
         if(res.size() <= level){
-            res.addFirst(new ArrayList<>()); // 重点
+            res.addFirst(new ArrayList<>()); // catch
         }
 
         res.get(res.size() - level -1).add(node.val);
-
         level(node.left, level + 1, res);
         level(node.right, level + 1, res);
     }

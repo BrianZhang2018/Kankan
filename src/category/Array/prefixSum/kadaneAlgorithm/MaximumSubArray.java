@@ -6,7 +6,7 @@ package category.Array.prefixSum.kadaneAlgorithm;
  * Easy
  * Can be solved using Kadane's algorithm in linear time and without using additional space. The main ideas are:
      - Use the input array to store the candidate subarrays sum (i.e. the greatest contiguous sum so far - prefix Sum).
-     - "Ignore cumulative negatives", as they don't contribute positively to the sum.
+     -[Catch] "Ignore cumulative negatives", as they don't contribute "positively" to the sum.
 
  Example:
  Given nums = [-2, 1, -3, 4].
@@ -32,9 +32,23 @@ public class MaximumSubArray {
         int max = nums[0]; // nums used as a prefix sum
         for(int i=1; i<nums.length; i++){
             if(nums[i-1] > 0){
-                nums[i] = nums[i-1] + nums[i];
+                nums[i] += nums[i-1];
             }
             max = Math.max(nums[i], max);
+        }
+        return max;
+    }
+
+    // another prefixSum way
+    public static int maxSubArray1(int[] nums) {
+        int max = Integer.MIN_VALUE;
+        int prefixSum = 0;
+        for (int num : nums) {
+            prefixSum += num;
+            max = Math.max(prefixSum, max);
+            if (prefixSum < 0) {
+                prefixSum = 0;
+            }
         }
         return max;
     }

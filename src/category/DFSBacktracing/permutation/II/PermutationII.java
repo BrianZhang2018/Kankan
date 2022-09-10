@@ -25,19 +25,21 @@ public class PermutationII {
         if (nums.length == temp.size()) {
             res.add(new ArrayList<>(temp)); //deep copy
         } else {
-            for (int i = 0; i < nums.length; i++) {
-                if (used[i]) continue;
-                if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) // makes sure when duplicates are selected, the order is ascending.
+            for (int index = 0; index < nums.length; index++) {
+                if (used[index]) continue;
+                // makes sure when duplicates are selected, the order is ascending
+                if (index > 0 && nums[index] == nums[index - 1] && !used[index - 1])
                     continue;
 
-                used[i] = true;
-                temp.add(nums[i]);
+                used[index] = true;
+                temp.add(nums[index]);
                 backTracking(nums, temp, res, used);
-                used[i] = false;
+                used[index] = false;
                 temp.remove(temp.size() - 1);
             }
         }
     }
+
     // The problem for Permutation II is that different orders of duplicates should only be considered as one permutation.
     // In other words, you should make sure that when these duplicates are selected, there has to be one fixed order.
     // if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1])

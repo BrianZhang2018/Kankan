@@ -25,14 +25,13 @@ public class MergeInterval {
                 intervals.get(i).end = Math.max(intervals.get(i - 1).end, intervals.get(i).end);
                 intervals.get(i).start = intervals.get(i - 1).start;
             } else {
-                res.add(intervals.get(i-1)); // add to result when non-overlap
+                res.add(intervals.get(i-1)); // add to result when no overlap
             }
         }
 
         res.add(intervals.get(intervals.size()-1));
         return res;
     }
-
 
     // Solution-2: foreach loop for fun
     public static List<Interval> merge2(List<Interval> intervals) {

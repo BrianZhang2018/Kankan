@@ -1,4 +1,4 @@
-package category.BFSAndDFS;
+package category.BFSOrDFS;
 
 import java.util.LinkedList;
 import java.util.Queue;

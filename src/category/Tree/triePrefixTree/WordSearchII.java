@@ -8,7 +8,6 @@ import java.util.*;
  * 2. backtracking find the word
  */
 public class WordSearchII {
-
     public static void main(String[] args) {
         WordSearchII ws = new WordSearchII();
         char[][] board = {{'o','a','a','n'},
@@ -19,25 +18,27 @@ public class WordSearchII {
     }
 
     public List<String> dfs(char[][] board, String[] words) {
-        List<String> ans = new LinkedList<>();
+        List<String> res = new LinkedList<>();
         TrieNode root = new TrieNode();
         // build trie tree
         for (String word: words) buildTrie(word, root);
         
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
-                dfs(board, root, i, j, ans);
+                dfs(board, root, i, j, res);
             }
         }
-        return ans;
+        return res;
     }
     // DFS backtracking, 1. got the character from board 2. search the character in the trie tree
     private void dfs(char[][] board, TrieNode root, int i, int j, List<String> res) {
-        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] == '*') return;
+        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] == '*')
+            return;
         
         char ch = board[i][j];
         int index = ch - 'a';
-        if (root.children[index] == null) return;
+        if (root.children[index] == null)
+            return;
         
         root = root.children[index];
         if (root.word != null) {

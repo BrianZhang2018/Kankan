@@ -13,11 +13,10 @@ package OOD;
  * Created by brianzhang on 8/18/20.
  */
 public class MineSweeper {
-
+    // 8 adjacent directions
     int[][] dict = new int[][]{{1, 0}, {-1, 0}, {-1, -1}, {0, 1}, {0, -1}, {1, 1}, {-1, 1}, {1, -1}};
-
+    // dfs
     public char[][] updateBoard(char[][] board, int[] click) {
-
         int r = click[0], c = click[1];
         int m = board.length, n = board[0].length;
         if (board[r][c] == 'M') {
@@ -26,9 +25,9 @@ public class MineSweeper {
         }
         int num = 0;
         for (int[] d : dict) {
-            int newRow = d[0] + r;
-            int newCol = d[1] + c;
-            if (newRow >= 0 && newRow < m && newCol >= 0 && newCol < n && board[newRow][newCol] == 'M')
+            int nr = d[0] + r;
+            int nc = d[1] + c;
+            if (nr >= 0 && nr < m && nc >= 0 && nc < n && board[nr][nc] == 'M')
                 num++;
         }
 
@@ -38,12 +37,14 @@ public class MineSweeper {
         }
 
         if (num == 0) board[r][c] = 'B';
+
         for (int[] d : dict) {
-            int newRow = d[0] + r;
-            int newCol = d[1] + c;
-            if (newRow >= 0 && newRow < m && newCol >= 0 && newCol < n && board[newRow][newCol] == 'E')
-                updateBoard(board, new int[]{newRow, newCol});
+            int nr = d[0] + r;
+            int nc = d[1] + c;
+            if (nr >= 0 && nr < m && nc >= 0 && nc < n && board[nr][nc] == 'E')
+                updateBoard(board, new int[]{nr, nc});
         }
+
         return board;
     }
 }

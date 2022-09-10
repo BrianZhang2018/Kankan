@@ -1,0 +1,25 @@
+Trie data structure comparison:
+
+map:
+     class TNode {
+        HashMap<Character, TNode> children = new HashMap();
+        char val;
+        String word;
+        public TNode(char c) {
+            this.val = c;
+        }
+    }
+
+array:
+    array impl use the index represent char val, like bucket sort
+
+    private class TrieNode {
+        String word;
+        TrieNode[] children = new TrieNode[26];
+    }
+
+    e.g.
+    int index = ch - 'a';
+    if (root.children[index] == null) {
+        root.children[index] = new TrieNode();
+    }

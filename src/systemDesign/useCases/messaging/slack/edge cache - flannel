@@ -1,0 +1,39 @@
+https://slack.engineering/flannel-an-application-level-edge-cache-to-make-slack-scale/
+
+The key is for the client to "load minimal data" upfront, and only load channel and user data as needed to bootstrap when user login.
+As long as the experience is seamless from the user’s point of view, we are free to apply resource-saving tactics
+like lazy loading and just-in-time loading to the architecture of the application.
+
+Now, when a user wants to connect to Slack, the following happens:
+
+1. The Slack client connects to Flannel.
+2. Behind the scenes, Flannel gathers the full client startup data. It also opens up a WebSocket connection to Slack servers in the main AWS region to stay current by consuming real-time events.
+3. Flannel returns a slimmed down version of this startup data to the client, allowing it to bootstrap itself.
+4. The Slack client is ready to use.
+
+Immediately after connection, the client still only has "bare bones data" on the state of its constituent channels,
+so when the user takes advantage of find-as-you-type autocomplete, the client "sends requests to Flannel" and renders the results.
+
+You can test this out right now in your Slack window: If you open the Quick Switcher (cmd+k on Mac, ctrl+k on Windows),
+your client has little to no knowledge of the state or details of your team. However, as soon as you start typing, within moments,
+the autocomplete query will have been filled and the dropdown menu should then populate with suggestions.
+A similar cascade of events happen when you start typing a username in the message bar.
+
+--We use "consistent hashing" to choose which Flannel host a user connects to in order to maintain team affinity:
+Users on the same team who are from the same networking region are directed to the same Flannel instance to achieve optimal cache efficiency.
+When new or recently disconnected users connect, they are served directly from the Flannel cache,
+which reduces impact of reconnect storms to the Slack backend servers.
+
+--Event fanout process:
+client -> when a message broadcast in a channel -> flannel -> websocket -> Message server -> recognize multiple recipients
+ -> send a copy to corresponding flannel server -> fanout the message to connected user
+
+--we are moving clients to a pub/sub model -> reduce the computational load on both client and server side
+clients can subscribe to the series of events that are relevant in the current view, and change subscriptions when users switch to another view.
+Today, clients listen to all events happening on a team, including messages in all channels you are in, user profile updates, user presence changes, etc. This not necessary.
+
+e.g. we’ve already moved user presence updates to the pub/sub model, got greate result
+
+
+
+

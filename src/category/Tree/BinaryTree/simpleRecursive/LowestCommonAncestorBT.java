@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
  *
- * LCA Binary Tree
+ * input are all unique value
  * Created by brianzhang on 5/9/20.
  */
 public class LowestCommonAncestorBT {
@@ -30,7 +30,6 @@ public class LowestCommonAncestorBT {
 
         TreeNode left = lowestCommonAncestor(root.left, p, q);
         TreeNode right = lowestCommonAncestor(root.right, p, q);
-
         if(left != null && right != null) return root;
 
         return left != null ? left : right;
@@ -44,12 +43,10 @@ public class LowestCommonAncestorBT {
 
         while(!queue.isEmpty() && (!parentMap.containsKey(p) || !parentMap.containsKey(q))){
             TreeNode node = queue.pop();
-
             if(node.left != null){
                 parentMap.put(node.left, node);
                 queue.add(node.left);
             }
-
             if(node.right != null){
                 parentMap.put(node.right, node);
                 queue.add(node.right);

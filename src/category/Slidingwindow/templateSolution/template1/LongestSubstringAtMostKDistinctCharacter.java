@@ -1,8 +1,10 @@
 package category.Slidingwindow.templateSolution.template1;
 
+import java.util.*;
+
 /**
  * https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/description
- * Leetcode 340 - Longest Substring with At Most K Distinct Characters
+ * Leetcode 340 - longest Substring with At Most K Distinct Characters
  *
  * Sliding window solution:
  * 1. two pointer: left, right

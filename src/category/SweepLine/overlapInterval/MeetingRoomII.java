@@ -33,11 +33,11 @@ public class MeetingRoomII {
      */
     public static int minMeetingRooms(List<Interval> intervals) {
         Collections.sort(intervals, (a, b) -> a.start - b.start); // 1. sort by start time
-        PriorityQueue<Integer> pq = new PriorityQueue<>(); // 2. store the end time of meeting, keep the minimum end-time on top
+        PriorityQueue<Integer> pq = new PriorityQueue<>(); // 2. store the "end-time" of meeting, so minimum end-time on top
 
         for(Interval i : intervals){
             // if the end time of previous meeting earlier than the start time of current meeting means no conflict
-            if(!pq.isEmpty() && pq.peek() <= i.start){ // here is different with car-pooling (while loop) as we need get the total number of rooms, so we only remove the time interval which can share same room with other intervals
+            if(!pq.isEmpty() && pq.peek() <= i.start){ // here is different with car-pooling (while loop) as we need get the total number of rooms, so we only remove the meeting which can share same room with meetings
                 pq.poll();
             }
             pq.add(i.end);

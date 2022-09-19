@@ -3,7 +3,7 @@ package category.unionfind.simpleVersion;
 /**
  * https://leetcode.com/problems/friend-circles/
  *
- * Simplified UnionFind solution
+ * Simplified UnionFind solution without ranking
  *
  * Created by brianzhang on 11/2/20
  */
@@ -21,8 +21,8 @@ public class FriendCircleSimpleUnionFind {
 
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
-                if(M[i][j] == 1) { // only unite the two if they are connected
-                    unionFind(root, i, j);
+                if(M[i][j] == 1) {  // only unite the two if they are connected
+                    union(root, i, j);
                 }
             }
         }
@@ -34,7 +34,7 @@ public class FriendCircleSimpleUnionFind {
     }
 
     // if the two connected, we unite the two under same root
-    public static void unionFind(int[] root, int i, int j){
+    public static void union(int[] root, int i, int j){
         while(root[i] != i) i = root[i];  // find "i" root (can be improved with flat binaryTree)
         while(root[j] != j) j = root[j];  // find v2's root
 

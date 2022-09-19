@@ -15,7 +15,7 @@ public class WordBreakI {
         res.forEach(s -> System.out.println(s));
     }
 
-    // Solution-1
+// Solution-1
     // DP递推, O(n^2) ("n square" Or "n to the power 2") - Bottom-Up solution
     public static boolean wordBreak(String s, Set<String> dict) {
         if (s == null || s.length() == 0) return false;
@@ -33,7 +33,7 @@ public class WordBreakI {
         return dp[n - 1];
     }
 
-    // Solution-2
+// Solution-2
     static List<String> res = new ArrayList<>();
     // DFS (记忆化递归), time complexity: n^2, Top-Down solution
     public static boolean wordBreakDFSMemo(String s, Set<String> dict, Map<String, Boolean> memo) {
@@ -57,7 +57,8 @@ public class WordBreakI {
         memo.put(s, false);
         return false;
     }
-    // Solution-3
+
+// Solution-3
     // BFS, https://leetcode.com/problems/word-break/discuss/43797/A-solution-using-BFS
     public static boolean wordBreakBFSMemo(String s, Set<String> wordDict) {
         if (wordDict.contains(s)) return true;

@@ -9,7 +9,6 @@ import java.util.*;
  * Created by brianzhang on 3/6/19.
  */
 public class FactorCombination {
-
     public static void main(String[] args) {
         FactorCombination fc = new FactorCombination();
         for(List<Integer> l :  fc.getFactors(12)){

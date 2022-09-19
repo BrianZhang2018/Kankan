@@ -7,11 +7,10 @@ package category.Slidingwindow;
  */
 public class LongestSubstringWithAtLeastKRepeatingCharacters {
     public static void main(String[] args) {
-        LongestSubstringWithAtLeastKRepeatingCharacters test = new LongestSubstringWithAtLeastKRepeatingCharacters();
-        System.out.println(test.longestSubstring("ababbc", 2));
+        System.out.println(longestSubstring("ababbc", 2));
     }
 
-    public int longestSubstring(String s, int k) {
+    public static int longestSubstring(String s, int k) {
         int ls= 0;
 
         //brute force to loop all the situation, 
@@ -32,7 +31,7 @@ public class LongestSubstringWithAtLeastKRepeatingCharacters {
         return ls;
     }
 
-    public int longestKUniqueRepeatingCharacter(String s, int k, int cNum){
+    public static int longestKUniqueRepeatingCharacter(String s, int k, int cNum){
         int low = 0, high = 0;
         int[] repeatNum = new int[26];
         int uniqueCNum = 0, uniqueKNum = 0;

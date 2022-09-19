@@ -20,7 +20,7 @@ public class CarPolling {
 
     public static boolean carPooling(int[][] trips, int capacity) {
         Arrays.sort(trips, (a, b) -> a[1] - b[1]); // sort by start-time
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[2] - b[2]); // store the end-time, and keep the minimum end-time on top
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[2] - b[2]); // compare the endTime, so keep the minimum end-time on top
 
         for (int[] trip : trips) {
             while (!pq.isEmpty() && pq.peek()[2] <= trip[1]) {

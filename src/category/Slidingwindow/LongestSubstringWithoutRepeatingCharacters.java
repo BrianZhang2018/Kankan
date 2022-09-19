@@ -1,29 +1,27 @@
 package category.Slidingwindow;
 
-import java.util.HashSet;
+import java.util.*;
+
 /**
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
  */
 public class LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
-        System.out.println(lengthOfLongestRepeatingSubstring("abcabcbb"));
+        System.out.println(lengthOfLongestSubstring("abcabcbb"));
     }
 
-    public static int lengthOfLongestRepeatingSubstring(String s) {
-        if(s == null || s.length() == 0) return 0;
-
-        int left=0, right=0, maxLen = Integer.MIN_VALUE, n = s.length();
-        HashSet<Character> counter = new HashSet<>();
-
-        while(right<n){
-            if(!counter.contains(s.charAt(right))){
-                counter.add(s.charAt(right++));
-                maxLen=Math.max(maxLen, right-left);
-            }else{
-                counter.remove(s.charAt(left++));
+    public static int lengthOfLongestSubstring(String s) {
+        Set<Character> set = new HashSet();
+        int left = 0, right = 0, max = 0;
+        while (right < s.length()) {
+            if (set.add(s.charAt(right))) {
+                max = Math.max(max, right - left + 1);
+                right++;
+            } else {
+                set.remove(s.charAt(left++)); // shift left
             }
         }
-        
-        return maxLen;
+
+        return max;
     }
 }

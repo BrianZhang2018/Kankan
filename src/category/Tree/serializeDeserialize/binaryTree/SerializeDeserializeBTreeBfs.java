@@ -1,4 +1,4 @@
-package category.Tree.serializeDeserialize.bt;
+package category.Tree.serializeDeserialize.binaryTree;
 
 import category.model.TreeNode;
 import java.util.*;

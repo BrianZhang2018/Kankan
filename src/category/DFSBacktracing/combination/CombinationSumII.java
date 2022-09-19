@@ -11,7 +11,6 @@ import java.util.*;
  * Created by brianzhang on 3/17/19.
  */
 public class CombinationSumII {
-
     public static void main(String[] args) {
         System.out.println(new CombinationSumII().combinationSum(new int[]{10,1,2,7,6,1,5}, 8));
     }
@@ -26,12 +25,10 @@ public class CombinationSumII {
     // backtracking
     private void dfs(int[] nums, int target, int start, List<Integer> temp, List<List<Integer>> res) {
         if (target < 0) return;
-
         if (target == 0) {
             res.add(new ArrayList<>(temp));
             return;
         }
-
         for (int i = start; i < nums.length; i++) {
             if(i>start && nums[i] == nums[i-1]) continue; // usual way to avoid duplicate combination
 

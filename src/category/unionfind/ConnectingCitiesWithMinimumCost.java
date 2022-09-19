@@ -7,5 +7,5 @@ package category.unionfind;
  * Amazon
  * Created by brianzhang on 6/4/20.
  */
-public class ConnectingCitiesWithMinmumCost {
+public class ConnectingCitiesWithMinimumCost {
 }

@@ -10,7 +10,6 @@ package category.DynamicPlanning.String.LongestCommonSubSequence;
  * Created by brianzhang on 1/5/20.
  */
 public class MinimumInsertionStepsToMakeAPalindrome {
-
     public static void main(String[] args) {
         String s = "leetcode";
         System.out.println(minInsertions(s));
@@ -20,15 +19,15 @@ public class MinimumInsertionStepsToMakeAPalindrome {
 
     // Solution-1: DP Bottom-up, 递推
     public static int minInsertions(String s) {
-
         if(s == null || s.length() <=1) return 0;
 
         int n = s.length();
         int[][] dp = new int[n][n];
-
-        for(int l=2; l<=n; l++){ // 要点: 第一层for loop是子问题的规模or长度 (LongestPalindromicSubSequence.java 同样)
+        for(int l = 2; l <= n; l++){ // 要点: 第一层for loop是子问题的规模or长度 (LongestPalindromicSubSequence.java 同样)
             for(int i=0, j=l-1; j<n; i++, j++){
-                dp[i][j] = s.charAt(i) == s.charAt(j) ? dp[i+1][j-1] : Math.min(dp[i+1][j], dp[i][j-1]) + 1;
+                // if Ci == Cj, no need insert, so take the prev value, if not equal, insert new letter
+                dp[i][j] = s.charAt(i) == s.charAt(j) ? dp[i + 1][j - 1] :
+                        Math.min(dp[i + 1][j], dp[i][j - 1]) + 1;
             }
         }
 

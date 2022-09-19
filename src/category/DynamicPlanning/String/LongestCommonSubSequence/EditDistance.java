@@ -8,7 +8,6 @@ package category.DynamicPlanning.String.LongestCommonSubSequence;
  * Created by brianzhang on 11/3/19.
  */
 public class EditDistance {
-
     public static void main(String[] args) {
         System.out.println(minDistance("horse", "ros"));
     }
@@ -16,7 +15,6 @@ public class EditDistance {
     public static int minDistance(String word1, String word2) {
         int m = word1.length(), n = word2.length();
         int[][] dp = new int[m+1][n+1];
-
         // base case: f(0, k) = f(k, 0) = k
         for(int i=1; i<=word1.length(); i++){ // row
             dp[i][0] = i;

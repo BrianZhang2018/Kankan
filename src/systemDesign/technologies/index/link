@@ -1,1 +1,8 @@
 https://www.dbta.com/Columns/DBA-Corner/Top-10-Steps-to-Building-Useful-Database-Indexes-100498.aspx
+
+
+How Database B-Tree Indexing Works:
+When indexing is used first, the database searches a given key in correspondence to B-tree and gets the index in O(log(n)) (binary-search) time.
+Then, it performs another search in B+tree by using the already found index in O(log(n)) time and gets the record.
+
+https://dzone.com/articles/database-btree-indexing-in-sqlite#:~:text=When%20indexing%20is%20used%20first,is%20stored%20inside%20the%20Pages.

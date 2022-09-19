@@ -1,0 +1,5 @@
+https://www.scaler.com/topics/data-structures/space-complexity-in-data-structure/
+
+Space Complexity = Auxiliary Space + Space used for input values
+
+Auxiliary space is nothing but the space required by an algorithm/problem during the execution of that algorithm/problem

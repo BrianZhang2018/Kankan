@@ -1,0 +1,8 @@
+consumer group:
+    consumer-1 with one thread (default), -> partition-1
+    consumer-2 with two threads -> partition-2
+
+    add new consumer-3, will cause rebalance
+
+data lag: latest offset > committed offset
+            (producer)      (consumer)

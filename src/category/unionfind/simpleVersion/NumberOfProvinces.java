@@ -7,7 +7,7 @@ package category.unionfind.simpleVersion;
  */
 public class NumberOfProvinces {
 
-    // Solution-1: Union-Find
+// Solution-1: Union-Find
     public int findCircleNum(int[][] M) {
         int m = M.length, cnt = 0;
         int[] root = new int[m];
@@ -16,7 +16,7 @@ public class NumberOfProvinces {
         for (int i = 0; i < m; i++)
             for (int j = i + 1; j < m; j++)
                 if (M[i][j] == 1) // only union when the two connected
-                    unionFind(root, i, j);
+                    union(root, i, j);
 
         for (int i = 0; i < m; i++)
             if (i == root[i]) cnt++;
@@ -24,13 +24,14 @@ public class NumberOfProvinces {
         return cnt;
     }
 
-    void unionFind (int[] root, int v1, int v2) {
+    void union(int[] root, int v1, int v2) {
         while (root[v1] != v1) v1 = root[v1]; // find v1's root
         while (root[v2] != v2) v2 = root[v2]; // find v2's root
+
         if (root[v1] != root[v2]) root[v2] = v1; // unite the 2 subtrees
     }
 
-    // Solution-2: DFS
+// Solution-2: DFS
     public int findCircleNumDFS(int[][] M) {
         boolean[] visited = new boolean[M.length];
         int cnt = 0;

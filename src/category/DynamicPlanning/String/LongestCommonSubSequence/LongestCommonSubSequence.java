@@ -11,7 +11,6 @@ package category.DynamicPlanning.String.LongestCommonSubSequence;
  *         2. MinimumNum Of Insertion/Deletion To Target String - MinimumNumOfInsertionDeletionToTargetString.java
  */
 public class LongestCommonSubSequence {
-
     public static void main(String[] args) {
         System.out.println(longestCommonSubSequence("bacde", "tace"));
         System.out.println(longestCommonSubsequenceDFS("bacde", "tace"));
@@ -19,8 +18,7 @@ public class LongestCommonSubSequence {
 
     // Solution-1
     public static int longestCommonSubSequence(String text1, String text2) {
-        int m = text1.length();
-        int n = text2.length();
+        int m = text1.length(), n = text2.length();
         int[][] dp = new int[m+1][n+1];
         
         for(int i=1; i<=m; i++){ // text1
@@ -50,26 +48,22 @@ public class LongestCommonSubSequence {
         if(text1.charAt(i) == text2.charAt(j)){
             res = backtrack(text1, text2, i+1, j+1, memo) + 1;
         }else{
-            res = Math.max( backtrack(text1, text2, i, j+1, memo), backtrack(text1, text2, i+1, j, memo));
+            res = Math.max(backtrack(text1, text2, i, j+1, memo), backtrack(text1, text2, i+1, j, memo));
         }
 
         memo[i][j] = res;
-
         return res;
     }
 
     // Solution-3: One Dimension
     public int solution(String text1, String text2) {
-        int m = text1.length();
-        int n = text2.length();
-
+        int m = text1.length(), n = text2.length();
         int[] dp = new int[n + 1]; //one dimension rolling array
 
         for (int i = 1; i <= m; i++) {
             int prev = 0;
             for (int j = 1; j <= n; j++) {
                 int temp = dp[j];
-
                 if (text1.charAt(i - 1) == text2.charAt(j - 1)) {
                     dp[j] = prev + 1;
                 } else {

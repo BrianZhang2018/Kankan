@@ -24,7 +24,6 @@ public class WordBreakII {
         WordBreakII wordBreakII = new WordBreakII();
         List<String> dicts = new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"));
         wordBreakII.wordBreak("catsanddog", dicts).forEach(s -> System.out.println(s));
-        System.out.println("str".substring(3));
     }
 
     public List<String> wordBreak(String s, List<String> wordDict) {
@@ -36,7 +35,6 @@ public class WordBreakII {
         if (memo.containsKey(s)) return memo.get(s);
 
         List<String> subWords = new ArrayList<>();
-
         for (String word : wordDict) {
             if (s.startsWith(word)) {
                 String next = s.substring(word.length());

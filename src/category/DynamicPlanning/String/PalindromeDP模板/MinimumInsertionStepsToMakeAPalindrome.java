@@ -10,7 +10,6 @@ package category.DynamicPlanning.String.PalindromeDP模板;
  * Created by brianzhang on 1/5/20.
  */
 public class MinimumInsertionStepsToMakeAPalindrome {
-
     public static void main(String[] args) {
         String s = "leetcode";
         System.out.println(minInsertions(s));
@@ -19,15 +18,14 @@ public class MinimumInsertionStepsToMakeAPalindrome {
 
     // Solution-1: DP Bottom-up, 递推
     public static int minInsertions(String s) {
-
         if(s == null || s.length() <=1) return 0;
 
         int n = s.length();
         int[][] dp = new int[n][n];
-
-        for(int l=2; l<=n; l++){ // 要点: 第一层for loop是子问题的规模or长度 (LongestPalindromeSubSequence.java 同样)
-            for(int i=0, j=l-1; j<n; i++, j++){
-                dp[i][j] = s.charAt(i) == s.charAt(j) ? dp[i+1][j-1] : Math.min(dp[i+1][j], dp[i][j-1]) + 1;
+        for (int wz = 2; wz <= n; wz++){ // 要点: 第一层for loop是子问题的规模 or 长度 (LongestPalindromeSubSequence.java 同样)
+            for (int l = 0, r = wz - 1; r < n; l++, r++) {
+                dp[l][r] = s.charAt(l) == s.charAt(r) ? dp[l + 1][r - 1] :
+                        Math.min(dp[l + 1][r], dp[l][r - 1]) + 1;
             }
         }
 
@@ -44,7 +42,6 @@ public class MinimumInsertionStepsToMakeAPalindrome {
     public static int longestCommonSubSequence(char[] arr1, char[] arr2) {
         int n1 = arr1.length, n2 = arr2.length;
         int[][] dp = new int[n1 + 1][n2 + 1];
-
         for (int i = 1; i <= n1; i++) {
             for (int j = 1; j <= n2; j++) {
                 if (arr1[i - 1] == arr2[j - 1]) {

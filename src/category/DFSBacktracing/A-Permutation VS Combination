@@ -1,13 +1,13 @@
 Below "Unique combination problem" has similar approach:
-
     Permutation II
     ThreeSum
     Subset II
 
 Difference:
-ThreeSum and SubSetII is "i=start" in the nest "for" loop, but Permutation is "i=0".
+Combination, "i=start" in the nest "for" loop since it need skip the used number
+Permutation is "i=0", since output are different order of combination
 
-Same part: how to skip the duplicate result
+Same: how to skip the duplicate result
    -Permutation II, ThreeSum:
 
             for (int i = 0; i < nums.length; i++) {
@@ -21,7 +21,7 @@ Same part: how to skip the duplicate result
    "Subsets" and "Combination" don't need consider the "sequence" of the numbers, so don't need the "!used[i-1]" part
 
             for (int i = start; i < nums.length; i++) {
-   i>start      if(i>start && nums[i] == nums[i-1]) //avoid duplicate combination
+   i>start      if(i>start && nums[i] == nums[i-1]) // avoid duplicate combination
                     continue;
              ...
 

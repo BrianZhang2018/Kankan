@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
  * 看图, https://zxi.mytechroad.com/blog/dynamic-programming/leetcode-322-coin-change/
  *
  * DP explanation:
- * Def: dp[i][j]-min coins to make up j amount using first i types (denominations) of coins.
+ * Def: dp[i][j]-> min coins to make up j amount using first i types (denominations) of coins.
  * Transition: dp[i][j] = min(dp[i][j], dp[i][j - coin_i] + 1)
  *
  * Knowledge：1. DP with 降维
@@ -26,7 +26,6 @@ public class CoinChange {
     }
     /**
      * Solution-1: DP
-     *
      * 降维: dp[i][j] which only rely on dp[i] and dp[i-1], so 可以降维成一维数组
      * dp[p] (p is the amount): the least coins to make "p" amount
      */
@@ -47,6 +46,14 @@ public class CoinChange {
                 }
             }
         }
+// alternative loop way
+/*        for(int i=1; i<=amount; i++) {
+            for(int coin : coins) {
+                if(i-coin<0) continue;
+                dp[i] = Math.min(dp[i], dp[i-coin] + 1);
+            }
+        }*/
+
         return dp[amount] == Integer.MAX_VALUE ? -1 : dp[amount];
     }
 
@@ -56,7 +63,6 @@ public class CoinChange {
      * 然后，在比较小的面值，跟最大面值需要的硬币数目比较, 多的都去掉（剪枝）
      */
     static int res = Integer.MAX_VALUE;
-
     public static int coinChangeDFS(int[] coins, int amount) {
         if (coins == null || coins.length == 0 || amount < 0) return -1;
 

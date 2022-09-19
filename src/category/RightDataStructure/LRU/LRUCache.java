@@ -76,12 +76,16 @@ public class LRUCache<T> {
 
     public void addToTop(DllNode node) {
         synchronized (map){ map.put((T)node.key, node);}
-
         DllNode headNext = head.next;
         head.next = node;
         node.prev = head;
         node.next = headNext;
         headNext.prev = node;
+
+/*        head.next.prev = node;
+        node.prev = head;
+        node.next = head.next;
+        head.next = node;*/
     }
 }
 

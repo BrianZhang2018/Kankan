@@ -8,25 +8,21 @@ package category.DynamicPlanning.MiniMaximumPathReachATarget;
  */
 public class MinimumCostForTickets {
 
-    public int mincostTickets(int[] days, int[] costs) {
-        if (days == null || costs == null)
-            return 0;
+    public int mincCostTickets(int[] days, int[] costs) {
+        if (days == null || costs == null) return 0;
 
         boolean[] isDays = new boolean[366];
         int[] minCost = new int[366];
         minCost[0] = 0;
-
         for (int day : days) {
             isDays[day] = true;
         }
 
         for (int i = 1; i <= 365; i++) {
-
             if (!isDays[i]) {
                 minCost[i] = minCost[i - 1];
                 continue;
             }
-
             int min;
             min = minCost[i - 1] + costs[0];
             min = Math.min(min, minCost[Math.max(0, i - 7)] + costs[1]); // Math.max(0, i-7) 0 is the default value if the (i-7) <0.

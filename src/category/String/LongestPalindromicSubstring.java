@@ -9,9 +9,7 @@ package category.String;
  */
 public class LongestPalindromicSubstring {
     public static void main(String[] args) {
-        LongestPalindromicSubstring test = new LongestPalindromicSubstring();
-        System.out.println(test.longestPalindrome("babad"));
-        System.out.println("".length());
+        System.out.println(new LongestPalindromicSubstring().longestPalindrome("babad"));
     }
 
     String maxStr = "";
@@ -26,7 +24,7 @@ public class LongestPalindromicSubstring {
     public void count(String s, int left, int right) {
         while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
             if (maxStr.length() <= right-left){
-                maxStr = s.substring(left, right + 1); // if we only record the left, right pointer for max here, it will save the operation on substring (o(n)) function
+                maxStr = s.substring(left, right + 1); // we can record the left, right pointer here, it will save the operation on substring (o(n)) function
             }
             left--;
             right++;

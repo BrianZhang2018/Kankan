@@ -9,166 +9,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/Hubspot.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/coding" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/codingOnsite/CanFormPalindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/codingOnsite/MergeTwoSortedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/codingOnsite/Ngram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/codingOnsite/SortedArrayKthElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/weather widget.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/salesforce/MaxValueK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/oa2022/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/turo/Dianmian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Array/prefixSum/idea/套路" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/DFS/DifferentWaysTOAddParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/tree/PathSumII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/PriorityQueue/MergeKSortedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Sort/frequency/SortArrayByIncreasingFrequency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/basicImpl/array vs map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/basicImpl/适用问题" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/ImportantResource/googledrive-my-sd-digrams" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/ImportantResource/最全blog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/cache/memcache/database/links" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/index/link" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/lock/dynamodb-lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/lock/pessimistic vs optimistic locking" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/uniqueId" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/calendar/Calendar DB schema.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/calendar/db schema 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/messaging/generalExample/db schema.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/messaging/generalExample/link" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/messaging/generalExample/systemDesign.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/messaging/http-long-polling.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/messaging/slack/edge cache - flannel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/messaging/slack/link" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/messaging/slack/new-architecture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/messaging/websockets vs long polling vs sse" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/messaging/websockets.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/video/youtube/watch-video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/weatherWidget/hubspot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/oracle/phoneScreening/MergeKSortedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/BasicCalculatorWithParenthesesI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/BasicCalculatorWithParenthesesI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/salesforce/HighestElementConcatenator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/salesforce/HighestElementConcatenator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/tinder/LetterCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/tinder/LetterCombinationsOfAPhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/attentive/TicTacToe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/attentive/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/oa2022/ReferenceCellSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/workday/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/LetterCombinationsOfAPhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/PalindromePartitioningII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTreeFromLevelOrderArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/complexity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/javabasic/InterestingCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/unionfind/detectCycle/unDirectedGraphByUnionFind/RedundantConnectionSimplifiedVersion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/复习套路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/经典题" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/eventDrivenArchitecture/kafka" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/codingOnsite/SortedArrayKthElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/codingOnsite/SortedArrayKthElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/LowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/LowestCommonAncestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/BasicCalculatorWithParenthesesI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/postmate/ClassConstructMethodName.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/postmate/ClassConstructMethodName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KillLeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KillLeetCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/graph/topologicalsort/ATopologicalAnalysis" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KillLeetCode/category/graph/topologicalsort/ATopologicalAnalysis" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/tree/trie/TrieTree.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/Saga distributed message.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/Top K problem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/TypeAhead-analysis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/Vertical&amp;Horizontal Scaling.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OOD/MineSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOD/MineSweeper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Play/Test1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/prefixSum/PathSumIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/prefixSum/PathSumIII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/prefixSum/kadaneAlgorithm/MaximumSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/prefixSum/kadaneAlgorithm/MaximumSubArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/prefixSum/subarray-prefixsum-solution.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/prefixSum/idea/subarray-prefixsum-solution.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/prefixSum/套路" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/WallsAndGates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/WallsAndGates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/miniEffortReachMultiTargets/RottingOranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/miniEffortReachMultiTargets/RottingOranges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/miniEffortReachMultiTargets/ShortestDistanceFromAllBuildings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/miniEffortReachMultiTargets/ShortestDistanceFromAllBuildings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/miniEffortReachMultiTargets/template" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/miniEffortReachMultiTargets/template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/searchIn2DMatrix/SearchA2DMatrixII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/searchIn2DMatrix/SearchA2DMatrixII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFSOrDFS/FloodFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFSOrDFS/FloodFill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFSOrDFS/ShortestBridgeBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFSOrDFS/ShortestBridgeBFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFSOrDFS/SurroundedRegionsBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFSOrDFS/SurroundedRegionsBFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFSOrDFS/SurroundedRegionsDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFSOrDFS/SurroundedRegionsDFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/KokoEatingBananas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/KokoEatingBananas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/template/StandardBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/template/StandardBinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFS/What's DFS?" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFS/What's DFS?" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/Algorithm-analysis" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/Algorithm-analysis" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/LetterCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/LetterCombinationsOfAPhoneNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/PathSumII.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/subset/Subsets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/SubsetsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/subset/SubsetsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/WordSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/WordSearchII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/basicImpl/array/WordSearchII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/binarytree/PathSumIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/tree/PathSumIII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/binarytree/PathSumIIIBruteForce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/tree/PathSumIIIBruteForce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/binarytree/PrintPathFromRootToTargetNodeBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/tree/PrintPathFromRootToTargetNodeBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/PermutationII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/PermutationII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/ThreeSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/wordLadder/WordLadderII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/wordLadder/WordLadderII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/wordLadder/WordLadderII1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/wordLadder/WordLadderIIBfs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DivideAndConquer/GenerateParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/GenerateParenthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BFS/wordLadderI/preCalculatedAdjacentWildcardNodes/WordLadderI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/wordLadderI/preCalculatedAdjacentWildcardNodes/WordLadderI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/A-Permutation VS Combination" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/A-Permutation VS Combination" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/FactorCombination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/FactorCombination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/LetterCombinationsOfAPhoneNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/CombinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/CombinationSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/CombinationSumII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationIBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationIBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/subset/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/subset/Subsets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/subset/SubsetsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/subset/SubsetsII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/CoinChangeII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/CoinChangeII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/MinimumCostForTickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/MinimumCostForTickets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/PalindromePartitioningII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/TriangleMiniPath/FromBottomToTop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/TriangleMiniPath/FromBottomToTop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/TriangleMiniPath/TriangleMinimumPathDivideAndConquer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/TriangleMiniPath/TriangleMinimumPathDivideAndConquer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/coinChange/CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/coinChange/CoinChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/coinChange/CoinChangePrintOutCombination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/MiniMaximumPathReachATarget/coinChange/CoinChangePrintOutCombination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestArithmeticSubSequenceOfGivenDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestArithmeticSubSequenceOfGivenDifference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestCommonSubSequence/EditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestCommonSubSequence/EditDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestCommonSubSequence/LongestCommonSubSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestCommonSubSequence/LongestCommonSubSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestCommonSubSequence/LongestCommonSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestCommonSubSequence/LongestCommonSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestCommonSubSequence/MinimumInsertionStepsToMakeAPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestCommonSubSequence/MinimumInsertionStepsToMakeAPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestIncreasingSubSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/LongestIncreasingSubSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/LongestPalindromeSubsequence DP analysis.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/Longest Palindrome Subsequence DP analysis.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/LongestPalindromicSubSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/LongestPalindromicSubSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/LongestPalindromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/LongestPalindromicSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/MinimumInsertionStepsToMakeAPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/String/PalindromeDP模板/MinimumInsertionStepsToMakeAPalindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/SlidingWindowMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/SlidingWindowMaximum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/PriorityQueue/differentAjacentCharacter/RearrangeStringKDistanceApart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/PriorityQueue/differentAjacentCharacter/RearrangeStringKDistanceApart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/PriorityQueue/differentAjacentCharacter/ReorganizeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/PriorityQueue/differentAjacentCharacter/ReorganizeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/design/DesignHitCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/design/DesignHitCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Sort/MedianOfTwoSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Sort/MedianOfTwoSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorWithParenthesesIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorWithParenthesesIII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/PriorityQueue/TopKFrequentWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/PriorityQueue/TopKFrequentWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Slidingwindow/LongestRepeatingCharacterReplacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/LongestRepeatingCharacterReplacement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Slidingwindow/LongestSubstringWithAtLeastKRepeatingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/LongestSubstringWithAtLeastKRepeatingCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Slidingwindow/LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Slidingwindow/MinimumSizeSubArraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/MinimumSizeSubArraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/template1/LongestSubstringAtMostKDistinctCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/template1/LongestSubstringAtMostKDistinctCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/template1/MaxConsecutiveOnesIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/template1/MaxConsecutiveOnesIII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/AGuide" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/AGuide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorAllOpsNoParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorWithParenthesesI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorParenthesesPlusDivide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorWithParenthesesIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorParenthesesAllOps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/String/LongestPalindromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/String/LongestPalindromicSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/nonOverlap/NonOverlapInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/nonOverlap/NonOverlapInterval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/CarPolling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/CarPolling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/MeetingRoomII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/MeetingRoomII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/MergeInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/MergeInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/Binary_Search 特点" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ClosestBinarySearchTreeValueII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ClosestBinarySearchTreeValueII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTreeFromString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTreeFromStringWithParenthesis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/LevelOrderTraverseII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/LevelOrderTraverseII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/simpleRecursive/LowestCommonAncestorBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/simpleRecursive/LowestCommonAncestorBST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/simpleRecursive/LowestCommonAncestorBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/simpleRecursive/LowestCommonAncestorBT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeBSTreePreOrderSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeBSTreePreorderDfs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeBTreeBfsSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/bt/SerializeDeserializeBTreeBfs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeBTreePreOrderSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/bt/SerializeDeserializeBTreePreorderDfs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeNaryTreePreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeNaryTreePreorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/TrieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/basicImpl/array/TrieImplByArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/TrieImplByHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/basicImpl/map/TrieImplByHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/TrieTree.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/basicImpl/TrieTree.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/WordSearchII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/WordSearchII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/graph/topologicalsort/ATopologicalAnalysis" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/topologicalsort/ATopologicalAnalysis" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/graph/topologicalsort/CourseScheduleTopologicalSortBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/topologicalsort/CourseScheduleTopologicalSortBFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/linkedList/MergeTwoSortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/linkedList/MergeTwoSortedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/model/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/model/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/twoPointer/IsValidPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/twoPointer/IsValidPalindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/twoPointer/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/twoPointer/ThreeSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/Hubspot/OA.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/companies/Hubspot/OA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/A-MyInterviewExperience" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/MyInterviewExperience" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/GeneralDesignTips" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/Saga distributed message.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/Saga distributed message.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/Top K problem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/TypeAhead-analysis.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/TypeAhead-analysis.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/Vertical&amp;Horizontal Scaling.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/Vertical&amp;Horizontal Scaling.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/pdfcoffee.com_system-design-interview-an-insiders-guidepdf-pdf-free.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/system-design-interview-alex-xu.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/KeyPoints" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/KeyPoints" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/Lambda.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/Lambda.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/bigDataArchitecture.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/bigDataArchitecture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Architecture-summary-step-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/Architecture-summary-step-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Data-retrieval-step-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/Data-retrieval-step-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/MapReduceJob.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/MapReduceJob.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/in5mins10mins1hour/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/in5mins10mins1hour/link" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/heavyHitterSteamingTopK/topK" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/topK" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog/kafkaSourcing.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/monitorSystem/datadog/kafkaSourcing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/monitorSystem/datadog/link" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessingRelated/lambdaArchitecture/monitorSystem/datadog/pipelineArchitecture.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/monitorSystem/datadog/pipelineArchitecture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/instagram/Invaliate memcache.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsfeed/instagram/Invaliate memcache.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/instagram/Memcache Lease.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsfeed/instagram/Memcache Lease.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/instagram/optimal solutions" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsfeed/instagram/optimal solutions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/messagingSystem/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/messaging/whatsapp/link" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/messagingSystem/msg system design.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/messaging/whatsapp/msg system design.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/twitter/Twitter-design" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsfeed/twitter/Twitter-design" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/twitter/Twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsfeed/twitter/Twitter.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/newsFeedRelated/twitter/twitter db schema.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/newsfeed/twitter/twitter db schema.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Cluster control strategy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notifications/notificationService/Cluster control strategy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Notification-Architecture-HighLevelDesign.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notifications/notificationService/Notification-Architecture-HighLevelDesign.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Notification-Architecture-detailed summary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notifications/notificationService/Notification-Architecture-detailed summary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Sender.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notifications/notificationService/Sender.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/Temporay storage solutions.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notifications/notificationService/Temporay storage solutions.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/notificationService/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notifications/notificationService/link" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/recommendation/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notifications/recommendation/link" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/recommendation/netflix.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notifications/recommendation/netflix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/notificationRelated/recommendation/recommendation system.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/notifications/recommendation/recommendation system.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/dropbox/solution-1" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storage/dropbox/solution-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/keyValueStore/Architecture-Memtable-SST-Write.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storage/keyValueStore/Architecture-Memtable-SST-Write.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/keyValueStore/Data replication-VirtualNodes.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storage/keyValueStore/Data replication-VirtualNodes.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/keyValueStore/Key Hashing.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storage/keyValueStore/Key Hashing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/keyValueStore/KeyValueStore Mechanism" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storage/keyValueStore/KeyValueStore Mechanism" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/storageRelated/keyValueStore/Skip List.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/storage/keyValueStore/Skip List.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/videoUploadRelated/fileUploadService/architecture.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/video/fileUploadService/architecture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/videoUploadRelated/fileUploadService/explanation" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/video/fileUploadService/explanation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/videoUploadRelated/fileUploadService/usage" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/video/fileUploadService/usage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/videoUploadRelated/youtube/CHAPTER14- DESIGN YOUTUBE.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/video/youtube/uplod-video.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/系统设计优化基本思路.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/优化的基本思路.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/SerializeDeserializeBSTreePreorderDfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/binarySearchTree/SerializeDeserializeBSTreePreorderDfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/bt/SerializeDeserializeBTreeBfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/binaryTree/SerializeDeserializeBTreeBfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/bt/SerializeDeserializeBTreePreorderDfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/binaryTree/SerializeDeserializeBTreePreorderDfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/unionfind/ConnectingCitiesWithMinmumCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/unionfind/ConnectingCitiesWithMinimumCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/unionfind/detectCycle/DirectedGraphByDFS/DetectCycleInDirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/unionfind/detectCycle/DirectedGraphByDFS/DetectCycleInDirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/unionfind/detectCycle/unDirectedGraphByUF/RedundantConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/unionfind/detectCycle/unDirectedGraphByUnionFind/RedundantConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/unionfind/simpleVersion/FriendCircleSimpleUnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/unionfind/simpleVersion/FriendCircleSimpleUnionFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/unionfind/simpleVersion/NumberOfProvinces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/unionfind/simpleVersion/NumberOfProvinces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/specificeProblems/palindrome/PalindromicSubStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificeProblems/palindrome/PalindromicSubstrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/technologies/index/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/index/link" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/jobSchedule/link" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/jobSchedule/link" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -384,9 +302,9 @@
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
+    <option name="otherServicesEnabled" value="false" />
+    <option name="typeCheckingEnabled" value="false" />
     <service-enabled>false</service-enabled>
-    <exe-path />
-    <annotation-enable>false</annotation-enable>
     <other-services-enabled>false</other-services-enabled>
   </component>
   <component name="JsGulpfileManager">
@@ -1496,21 +1414,21 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../InterviewPrep/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/systemDesign/useCases/messaging/chat/slack" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterviewPrep/src/attentive" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../InterviewPrep/src/attentive" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/messaging/chat/slack" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/videoUploadRelated/myinterview" />
       <recent name="$PROJECT_DIR$/../InterviewPrep/src/hubspot" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/messaging" />
-      <recent name="$PROJECT_DIR$/src/category/DynamicPlanning/jiuzhang" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -1537,7 +1455,7 @@
       <recent name="linkedin.vo.my2022VO.dataStructure" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CanFormPalindrome">
+  <component name="RunManager" selected="Application.LongestPalindromicSubSequence">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1703,69 +1621,69 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="CanFormPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hubspot.codingOnsite.CanFormPalindrome" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hubspot.codingOnsite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Dianmian" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="turo.Dianmian" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="turo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="square.oa2022.Game" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="square.oa2022.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ngram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hubspot.codingOnsite.Ngram" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hubspot.codingOnsite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreeSum (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.DFSBacktracing.permutation.II.ThreeSum" />
+    <configuration name="LongestPalindromicSubSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.DynamicPlanning.String.PalindromeDP模板.LongestPalindromicSubSequence" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.DFSBacktracing.permutation.II.*" />
+          <option name="PATTERN" value="category.DynamicPlanning.String.PalindromeDP模板.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LongestPalindromicSubstring (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.DynamicPlanning.String.PalindromeDP模板.LongestPalindromicSubstring" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.DynamicPlanning.String.PalindromeDP模板.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LongestPalindromicSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.String.LongestPalindromicSubstring" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinimumInsertionStepsToMakeAPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.DynamicPlanning.String.LongestCommonSubSequence.MinimumInsertionStepsToMakeAPalindrome" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.DynamicPlanning.String.LongestCommonSubSequence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="attentive.TicTacToe" />
+      <module name="InterviewPrep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="attentive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1981,19 +1899,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ThreeSum (1)" />
-      <item itemvalue="Application.Dianmian" />
-      <item itemvalue="Application.Game" />
-      <item itemvalue="Application.Ngram" />
-      <item itemvalue="Application.CanFormPalindrome" />
+      <item itemvalue="Application.TicTacToe" />
+      <item itemvalue="Application.LongestPalindromicSubstring" />
+      <item itemvalue="Application.LongestPalindromicSubSequence" />
+      <item itemvalue="Application.LongestPalindromicSubstring (1)" />
+      <item itemvalue="Application.MinimumInsertionStepsToMakeAPalindrome" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CanFormPalindrome" />
-        <item itemvalue="Application.Ngram" />
-        <item itemvalue="Application.Game" />
-        <item itemvalue="Application.Dianmian" />
-        <item itemvalue="Application.ThreeSum (1)" />
+        <item itemvalue="Application.LongestPalindromicSubSequence" />
+        <item itemvalue="Application.MinimumInsertionStepsToMakeAPalindrome" />
+        <item itemvalue="Application.LongestPalindromicSubstring (1)" />
+        <item itemvalue="Application.LongestPalindromicSubstring" />
+        <item itemvalue="Application.TicTacToe" />
       </list>
     </recent_temporary>
   </component>
@@ -2222,7 +2140,9 @@
       <workItem from="1661905381772" duration="31000" />
       <workItem from="1661905438912" duration="45747000" />
       <workItem from="1662137555583" duration="75294000" />
-      <workItem from="1662738645586" duration="7776000" />
+      <workItem from="1662738645586" duration="71493000" />
+      <workItem from="1663255922159" duration="5199000" />
+      <workItem from="1663269772060" duration="50954000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2668,26 +2588,6 @@
           <option name="timeStamp" value="1152" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="1153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="1154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="1155" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorII.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="1156" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/category/Tree/triePrefixTree/basicImpl/array/TrieImplByArray.java</url>
           <line>48</line>
           <option name="timeStamp" value="1160" />
@@ -2709,8 +2609,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../InterviewPrep/src/hubspot/codingOnsite/SortedArrayKthElement.java</url>
-          <line>26</line>
+          <line>32</line>
           <option name="timeStamp" value="1177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/category/Tree/serializeDeserialize/binaryTree/SerializeDeserializeBTreePreorderDfs.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="1188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTreeFromStringWithParenthesis.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/category/Tree/BinaryTree/ConstructBinaryTreeFromStringWithParenthesis.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1191" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

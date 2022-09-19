@@ -1,10 +1,10 @@
 题的递进：
 
-BasicCalculatorII -> BasicCalculatorWithParenthesesI -> BasicCalculatorWithParenthesesIII
+BasicCalculatorAllOpsNoParentheses -> BasicCalculatorParenthesesPlusDivide -> BasicCalculatorParenthesesAllOps
 
 解题思路：
 
-BasicCalculatorII and BasicCalculatorWithParenthesesIII 一个套路，可以看成模板
+template:
 
 1. prevSign - track previous sign
 2. tmpNumber -  the number between the sign

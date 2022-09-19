@@ -9,7 +9,6 @@ import java.util.*;
  *   dp[i]: 4  3  2  1
  */
 public class LongestArithmeticSubSequenceOfGivenDifference {
-
     public static void main(String[] args){
         System.out.println(longestSubSequence(new int[]{1,5,7,8,5,3,4,2,1}, -2));
         //System.out.println(longestSubSequence(new int[]{1,2,3,4}, 1));

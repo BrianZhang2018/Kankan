@@ -18,11 +18,9 @@ public class LevelOrderTraverseII {
 
     public void level(TreeNode node, int level, LinkedList<List<Integer>> res){
         if(node == null) return;
-
         if(res.size() <= level){
             res.addFirst(new ArrayList<>()); // catch
         }
-
         res.get(res.size() - level -1).add(node.val);
         level(node.left, level + 1, res);
         level(node.right, level + 1, res);

@@ -25,10 +25,10 @@ public class TriangleMinimumPathDivideAndConquer {
             return 0;
 
         //dp - memorization
-        if (memo[x][y] != 0)
-            return memo[x][y];
+        if (memo[x][y] != 0) return memo[x][y];
 
-        memo[x][y] = Math.min(divideConquer(x + 1, y), divideConquer(x + 1, y + 1)) + triangle.get(x).get(y);
+        memo[x][y] = Math.min(divideConquer(x + 1, y),
+                    divideConquer(x + 1, y + 1)) + triangle.get(x).get(y);
 
         return memo[x][y];
     }

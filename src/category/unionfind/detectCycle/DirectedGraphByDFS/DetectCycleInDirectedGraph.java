@@ -7,29 +7,22 @@ import java.util.*;
  */
 public class DetectCycleInDirectedGraph {
     public static void main(String[] args) {
-
-        String abc = "abd";
-        char[] arr =abc.toCharArray();
-        System.out.println(Arrays.toString(arr));
-        System.out.println(String.valueOf(arr));
-
-        System.out.println(new DetectCycleInDirectedGraph().checkCycle(new String[][]{{"a", "b"},{"b", "c"}, {"c", "b"}}));
+        System.out.println(new DetectCycleInDirectedGraph()
+                .checkCycle(new String[][]{{"a", "b"}, {"b", "c"}, {"c", "b"}}));
     }
 
     boolean result = false;
-
     public boolean checkCycle(String[][] nodeDeps) {
         Map<String, List<String>> graph = new HashMap<>();
-
         for (String[] node : nodeDeps) {
             graph.putIfAbsent(node[0], new ArrayList<>());
             graph.get(node[0]).add(node[1]);
         }
 
-        Set<String> visited = new HashSet<String>();
+        Set<String> visited = new HashSet<>();
         String[] nodes = {"a", "b", "c"};
         for (int i = 0; i < nodes.length; i++){
-            Set<String> path = new HashSet<String>();
+            Set<String> path = new HashSet<>();
             dfs(nodes[i], graph, path, visited);
         }
         return result;

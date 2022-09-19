@@ -24,7 +24,6 @@ public class ClosestBinarySearchTreeValueII {
 
         TreeNode curr = root;
         while(!stack.isEmpty() || curr != null){
-
             if(curr != null){
                 stack.push(curr);
                 curr = curr.left;

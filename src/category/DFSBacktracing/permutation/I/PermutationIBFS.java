@@ -18,17 +18,15 @@ public class PermutationIBFS {
         if(nums == null || nums.length == 0) return res;
 
         Queue<List<Integer>> queue = new ArrayDeque();
-        for(int i : nums){
-            queue.add(Arrays.asList(i));
-        }
+        for(int i : nums) queue.add(Arrays.asList(i));
 
-        while(!queue.isEmpty()){ // tc: n!
+        while(!queue.isEmpty()){    // tc: n!
             List<Integer> next = queue.poll();
             if(next.size() == nums.length) {
                 res.add(next);
                 continue;
             }
-            for(int i : nums){ // tc: n
+            for(int i : nums){  // tc: n
                 if(next.contains(i)) continue;
 
                 List<Integer> tmp = new ArrayList(next);

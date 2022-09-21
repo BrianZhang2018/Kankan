@@ -1,4 +1,4 @@
-package category.RightDataStructure.insertDeleteGetRandomO1;
+package category.ImplDataStructure.insertDeleteGetRandomO1;
 
 import java.util.*;
 

@@ -12,7 +12,6 @@ Accuracy:
 We have observed that the Count-min sketch is a good choice in a situation where we have to process a large data set with
 low memory consumption. We also saw that the more accurate result we want the number of hash functions(rows/width) has to be increased.
 
-
 =============================================================
 https://soulmachine.gitbooks.io/system-design/content/cn/bigdata/heavy-hitters.html
 

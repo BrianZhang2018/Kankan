@@ -21,34 +21,57 @@ import java.util.*;
  */
 public class WordBreakII {
     public static void main(String[] args) {
-        WordBreakII wordBreakII = new WordBreakII();
         List<String> dicts = new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"));
-        wordBreakII.wordBreak("catsanddog", dicts).forEach(s -> System.out.println(s));
+        new WordBreakII().wordBreak("catsanddog", dicts).forEach(System.out::println);
     }
 
     public List<String> wordBreak(String s, List<String> wordDict) {
-        return dfs(s, wordDict, new HashMap<>());
+        List<String> res = new ArrayList<>();
+        dfs(s, wordDict, res, 0, new StringBuilder());
+        return res;
+    }
+    // classical backtracking
+    public static void dfs(String s, List<String> wordDict, List<String> res,
+                           int start, StringBuilder sb) {
+        if (start == s.length()) {
+            res.add(sb.toString());
+            return;
+        }
+        for (int i = start; i < s.length(); i++) {
+            String next = s.substring(start, i + 1); // catch: substring from start
+            if (wordDict.contains(next)) {
+                String origin = sb.toString();
+                if (origin.length() == 0) sb.append(next);
+                else sb.append(" " + next);
+                dfs(s, wordDict, res, i + 1, sb);
+                if (origin.length() == 0)
+                    sb.delete(sb.length() - next.length(), sb.length());
+                else sb.delete(sb.length() - next.length() - 1, sb.length());
+            }
+        }
     }
 
-    // backtracking
-    List<String> dfs(String s, List<String> wordDict, HashMap<String, List<String>> memo) {
+    // solution-2
+    List<String> dfs1(String s, List<String> wordDict, HashMap<String, List<String>> memo) {
         if (memo.containsKey(s)) return memo.get(s);
 
         List<String> subWords = new ArrayList<>();
         for (String word : wordDict) {
             if (s.startsWith(word)) {
                 String next = s.substring(word.length());
-                if(next.equals("")) // reach the end
+                if (next.equals("")) { // reach the end
                     subWords.add(word);
-                else{
-                    List<String> sublist = dfs(s.substring(word.length()), wordDict, memo);
-                    for (String sub : sublist) subWords.add(word + " " + sub);
+                } else {
+                    List<String> sublist = dfs1(s.substring(word.length()), wordDict, memo);
+                    for (String sub : sublist) {
+                        subWords.add(word + " " + sub);
+                    }
                 }
             }
         }
 
-        memo.put(s, subWords);
         System.out.println(s + " : " + Arrays.toString(subWords.toArray()));
+        memo.put(s, subWords);
         return subWords;
     }
 }

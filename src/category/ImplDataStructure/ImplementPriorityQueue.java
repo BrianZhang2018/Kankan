@@ -1,4 +1,4 @@
-package category.RightDataStructure;
+package category.ImplDataStructure;
 
 /**
  * https://www.geeksforgeeks.org/priority-queue-using-linked-list/

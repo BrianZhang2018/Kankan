@@ -1,4 +1,4 @@
-package category.RightDataStructure;
+package category.ImplDataStructure;
 
 import java.util.Arrays;
 

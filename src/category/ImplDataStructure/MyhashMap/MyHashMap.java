@@ -1,7 +1,4 @@
-package category.RightDataStructure.MyhashMap;
-
-import java.util.HashMap;
-import java.util.Map;
+package category.ImplDataStructure.MyhashMap;
 
 /**
  * https://leetcode.com/problems/design-hashmap/discuss/225312/hashmaparraylinkedlistcollision

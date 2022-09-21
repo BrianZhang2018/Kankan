@@ -1,4 +1,4 @@
-package category.RightDataStructure.design;
+package category.ImplDataStructure.design;
 
 /**
  * https://yeqiuquan.blogspot.com/2017/04/348-design-tic-tac-toe.html

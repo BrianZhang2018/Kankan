@@ -1,4 +1,4 @@
-package category.RightDataStructure;
+package category.ImplDataStructure;
 
 /**
  * https://leetcode.com/problems/design-linked-list/solution/

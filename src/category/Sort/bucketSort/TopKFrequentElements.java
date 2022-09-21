@@ -12,7 +12,6 @@ import java.util.*;
  * Created by brianzhang on 1/6/19.
  */
 public class TopKFrequentElements {
-
     public static void main(String[] args) {
         for(int i : topKFrequent(new int[]{1,1,2,2,3}, 1)) System.out.println(i);
     }

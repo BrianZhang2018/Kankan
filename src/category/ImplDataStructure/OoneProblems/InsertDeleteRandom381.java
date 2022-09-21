@@ -1,4 +1,4 @@
-package category.RightDataStructure.OoneProblems;
+package category.ImplDataStructure.OoneProblems;
 
 import java.util.*;
 /**

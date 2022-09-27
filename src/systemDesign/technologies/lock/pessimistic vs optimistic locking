@@ -1,1 +1,13 @@
 https://vladmihalcea.com/optimistic-vs-pessimistic-locking/
+
+Pessimistic Locking:
+Because both Alice and Bob hold the read (shared) lock on the account record with the identifier value of 1,
+neither of them can change it until one releases the read lock they acquired.
+This is because a write operation requires a write (exclusive) lock acquisition,
+and read (shared) locks prevent write (exclusive) locks.
+
+Optimistic Locking:
+Optimistic Locking allows a conflict to occur, but it needs to detect it at write time.
+
+The version column is going to be incremented every time an UPDATE or DELETE statement is executed w
+hile also being used for matching the expected row snapshot in the WHERE clause.

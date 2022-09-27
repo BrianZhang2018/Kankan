@@ -1,6 +1,7 @@
-package category.DynamicPlanning;
+package category.DFSBacktracing;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * https://leetcode.com/problems/word-break-ii/
@@ -21,38 +22,21 @@ import java.util.*;
  */
 public class WordBreakII {
     public static void main(String[] args) {
-        List<String> dicts = new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"));
-        new WordBreakII().wordBreak("catsanddog", dicts).forEach(System.out::println);
+        wordBreak("catsanddog", new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog")))
+                .forEach(System.out::println);
+        wordBreak("goalspecial",  new ArrayList<>(Arrays.asList("go","goal","goals","special")))
+                .forEach(System.out::println);
     }
 
-    public List<String> wordBreak(String s, List<String> wordDict) {
-        List<String> res = new ArrayList<>();
-        dfs(s, wordDict, res, 0, new StringBuilder());
-        return res;
-    }
-    // classical backtracking
-    public static void dfs(String s, List<String> wordDict, List<String> res,
-                           int start, StringBuilder sb) {
-        if (start == s.length()) {
-            res.add(sb.toString());
-            return;
-        }
-        for (int i = start; i < s.length(); i++) {
-            String next = s.substring(start, i + 1); // catch: substring from start
-            if (wordDict.contains(next)) {
-                String origin = sb.toString();
-                if (origin.length() == 0) sb.append(next);
-                else sb.append(" " + next);
-                dfs(s, wordDict, res, i + 1, sb);
-                if (origin.length() == 0)
-                    sb.delete(sb.length() - next.length(), sb.length());
-                else sb.delete(sb.length() - next.length() - 1, sb.length());
-            }
-        }
+    public static List<String> wordBreak(String s, List<String> wordDict) {
+        List<List<String>> res = new ArrayList<>();
+   /*     dfs(s, wordDict, res, 0, new ArrayList<>());
+        return res.stream().map(list -> String.join(" ", list)).collect(Collectors.toList());*/
+        return dfs(s, wordDict, new HashMap<>());
     }
 
-    // solution-2
-    List<String> dfs1(String s, List<String> wordDict, HashMap<String, List<String>> memo) {
+    // solution-2, classical backtracking + memo
+    static List<String> dfs(String s, List<String> wordDict, HashMap<String, List<String>> memo) {
         if (memo.containsKey(s)) return memo.get(s);
 
         List<String> subWords = new ArrayList<>();
@@ -62,7 +46,7 @@ public class WordBreakII {
                 if (next.equals("")) { // reach the end
                     subWords.add(word);
                 } else {
-                    List<String> sublist = dfs1(s.substring(word.length()), wordDict, memo);
+                    List<String> sublist = dfs(s.substring(word.length()), wordDict, memo);
                     for (String sub : sublist) {
                         subWords.add(word + " " + sub);
                     }
@@ -73,5 +57,24 @@ public class WordBreakII {
         System.out.println(s + " : " + Arrays.toString(subWords.toArray()));
         memo.put(s, subWords);
         return subWords;
+    }
+
+    // Simplified backtracking
+    // this solution can't use Memo since it pass original string in the recursive loop
+    // which will set the original string as false in memo. But, Memo should be only used to store the "substring" status.
+    public static void dfs1(String s, List<String> wordDict, List<List<String>> res,
+                           int start, List<String> track) {
+        if (start == s.length()) {
+            res.add(new ArrayList<>(track));
+            return;
+        }
+        for (int i = start; i < s.length(); i++) {
+            String next = s.substring(start, i + 1); // start, i + 1
+            if (wordDict.contains(next)) {
+                track.add(next);
+                dfs1(s, wordDict, res, i + 1, track);
+                track.remove(track.size()-1);
+            }
+        }
     }
 }

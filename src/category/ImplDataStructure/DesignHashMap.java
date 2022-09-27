@@ -2,7 +2,6 @@ package category.ImplDataStructure;
 
 /**
  * https://leetcode.com/problems/design-hashmap/discuss/152746/Java-Solution
- *
  * Some of the questions which can be asked to the interviewer before implementing the solution
      * For simplicity, are the keys integers only? --> (important)
      * For collision resolution, can we use chaining?
@@ -11,6 +10,7 @@ package category.ImplDataStructure;
      * Can we assume this fits memory?
  *
  * Array + SingleLinkedList (dummy node -> node1 -> node2 -> null)
+ * return previous node in search to facilitate ops, like delete, put ...
  *
  * Apple, includedHealth screen interview
  * Created by brianzhang on 11/3/19.
@@ -69,13 +69,14 @@ public class DesignHashMap<T> {
         return removed;
     }
 
-    // 1. return "previous" node of target if node exists
-    // 2. return the tail node if target doesn't exist
-    // 3. return the dummy head node
+    // 1. return the dummy head node if bucket is empty
+    // 2. return "previous" node of target if node exists - (catch)
+    // 3. return the tail node if target doesn't exist
     private ListNode findNode(int index, T key) {
         if (nodes[index] == null) {
             // if bucket is empty, create a dummy head node
-            return nodes[index] = new ListNode(-1, -1);
+            nodes[index] = new ListNode(-1, -1);
+            return nodes[index];
         }
         ListNode prev = nodes[index];
         while (prev.next != null && !prev.next.key.equals(key)) {

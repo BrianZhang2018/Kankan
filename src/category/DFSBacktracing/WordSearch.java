@@ -5,7 +5,7 @@ package category.DFSBacktracing;
  * DFS here, don't use BFS will have the visited state issue
  *
  * TC: O(M*N*4^L) - M*N is the size of the board, L is the length of the word (因为每一个character都可以走4个方向在matrix里, so 4^L)
- * SC: O(L), L is the length of the word to be matched.
+ * SC: O(L), L is the length of the word to be matched
  *
  * The main consumption of the memory lies in the recursion call of the backtracking function.
  * The maximum length of the call stack would be the length of the word. Therefore, the space complexity of the algorithm is O(L).

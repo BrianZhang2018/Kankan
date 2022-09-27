@@ -1,3 +1,9 @@
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ConditionalUpdate
 
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBMapper.OptimisticLocking.html
+Optimistic locking with version number:
+With optimistic locking, each item has an attribute that acts as a version number.
+
+Conditional Write:
+Conditional writes are helpful in cases where multiple users attempt to modify the same item.
+Conditional writes can be idempotent if the conditional check is on the same attribute that is being updated.

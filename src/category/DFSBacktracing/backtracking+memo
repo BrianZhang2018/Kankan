@@ -1,0 +1,26 @@
+Memo is used to store the sub-status, like substring status.
+
+1. pass the substring in the backtracking recursive loop, not the original whole string
+e.g. WordBreakI.java dfs solution, check the "memo.put(s.substring(start), false);"
+    public static boolean wordBreakDFSMemo1(String s, int start, Set<String> dict,
+                                            Map<String, Boolean> memo) {
+        if(start == s.length()) return true;
+        if (memo.containsKey(s)) return memo.get(s);
+
+        if (dict.contains(s)) {
+            memo.put(s, true);
+            return true;
+        }
+        for (int i = start; i < s.length(); i++) {
+            String str = s.substring(start, i + 1);
+            if (dict.contains(str) && wordBreakDFSMemo1(s, i + 1, dict, memo)) {
+                memo.put(s, true);
+                return true;
+            }
+        }
+
+        memo.put(s.substring(start), false); // memorize the substring status, not original string
+        return false;
+    }
+
+WordBreakII.java dfs solution

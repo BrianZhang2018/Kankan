@@ -11,13 +11,15 @@
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/attentive/TicTacToe.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/attentive/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/crowdStrike/ImplementQueue.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/DecodeMorseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/game/GameSinglePlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/game/GetAllPath.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/oa2022/ReferenceCellSum.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/workday/note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/Decrease requests (msgs) in streaming process.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/howToAggregateAndFlushData/Count-min sketch for frequency count of single item.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/howToAggregateAndFlushData/topKIn5Mins10Mins1hour" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/lambda vs kappa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/backtracking+memo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/wordBreakI/dp/WordBreakIDP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/discovery/WordBreakII.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/codingOnsite/SortedArrayKthElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/codingOnsite/SortedArrayKthElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/LowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/LowestCommonAncestor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/my2022VO/WordBreakI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/my2022VO/WordBreakI.java" afterDir="false" />
@@ -26,39 +28,20 @@
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/BasicCalculatorWithParenthesesI.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/postmate/ClassConstructMethodName.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/postmate/ClassConstructMethodName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/my2021/ValidSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2021/ValidSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/oa2022/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/AGuide" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/AGuide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/DesignHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/DesignHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/ImplementADoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/ImplementADoubleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/ImplementAList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/ImplementAList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/ImplementASingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/ImplementASingleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/ImplementPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/ImplementPriorityQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRULinkedHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRULinkedHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/LRU/LRUSDKSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUSDKSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/MyhashMap/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/MyhashMap/MyHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/MyhashMap/doc" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/MyhashMap/doc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/MyhashMap/hashmap-diagram.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/MyhashMap/hashmap-diagram.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/OoneProblems/DLL/AllOoneDataStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/OoneProblems/DLL/AllOoneDataStructure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/OoneProblems/DLL/MaxStackLinkedListTreeMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/OoneProblems/DLL/MaxStackLinkedListTreeMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/OoneProblems/InsertDeleteGetRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/OoneProblems/InsertDeleteGetRandom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/OoneProblems/InsertDeleteRandom381.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/OoneProblems/InsertDeleteRandom381.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/SnakeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/SnakeGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/design/DesignHitCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/design/DesignHitCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/design/DesignTicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/design/DesignTicTacToe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/design/ValidSuduko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/design/ValidSuduko.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/insertDeleteGetRandomO1/InsertDeleteGetRandom380.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/insertDeleteGetRandomO1/InsertDeleteGetRandom380.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/RightDataStructure/insertDeleteGetRandomO1/InsertDeleteGetRandom381.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/insertDeleteGetRandomO1/InsertDeleteGetRandom381.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Sort/bucketSort/TopKFrequentElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Sort/bucketSort/TopKFrequentElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/Architecture-summary-step-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/1-TopK-Architecture-summary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/Data-retrieval-step-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/3-Data-retrieval-step.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/Fast-path flow-step-2-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/2-1-Fast-path-flow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/MapReduceJob.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/2-3-MapReduceJob.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/Slow-path-long-period-aggregation-2-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/2-2-Slow-path-long-period-aggregation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/in5mins10mins1hour/link" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/topK" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/howToAggregateAndFlushData/distribued cache + (count-min sketch + heap)" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFS/IslandProblems/origin/NumberOfIsland.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFS/IslandProblems/origin/NumberOfIsland.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/WordSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/CombinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/subset/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/subset/Subsets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/wordBreakI/dfs/WordBreakIDFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/WordBreakII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/WordBreakII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/DesignHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/DesignHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/graph/topologicalsort/AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/topologicalsort/AlienDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/technologies/lock/dynamodb-lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/lock/dynamodb-lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/technologies/lock/pessimistic vs optimistic locking" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/lock/pessimistic vs optimistic locking" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -1386,7 +1369,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../InterviewPrep/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/game" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1396,11 +1379,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/game" />
+      <recent name="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/in5mins10mins1hour" />
-      <recent name="$PROJECT_DIR$/../InterviewPrep/src/attentive" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/messaging/chat/slack" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -1420,14 +1403,14 @@
       <recent name="com.walmartlab.codechallenge.ticketservice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="category.DynamicPlanning.wordBreak.dp.dfs" />
+      <recent name="category.DynamicPlanning.wordBreak.dp" />
+      <recent name="category.DFSBacktracing" />
       <recent name="hubspot.codingOnsite" />
       <recent name="category.Tree.triePrefixTree.raw" />
-      <recent name="linkedin.vo.my2022VO" />
-      <recent name="category.tree.serializeDeserialize" />
-      <recent name="linkedin.vo.my2022VO.dataStructure" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DesignHashMap">
+  <component name="RunManager" selected="Application.GetAllPath">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1593,8 +1576,22 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="DecodeMorseCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="square.my2022onsite.DecodeMorseCode" />
+    <configuration name="CipherAndDecipher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="square.onsite.CipherAndDecipher" />
+      <module name="InterviewPrep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="square.onsite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Game (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="square.my2022onsite.Game" />
       <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -1607,13 +1604,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DesignHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.ImplDataStructure.DesignHashMap" />
-      <module name="KillLeetCode" />
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="square.my2022onsite.game.Game" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.ImplDataStructure.*" />
+          <option name="PATTERN" value="square.my2022onsite.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1621,13 +1618,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestPalindromicSubSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.DynamicPlanning.String.PalindromeDP模板.LongestPalindromicSubSequence" />
-      <module name="KillLeetCode" />
+    <configuration name="GameSinglePlayer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="square.my2022onsite.game.GameSinglePlayer" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.DynamicPlanning.String.PalindromeDP模板.*" />
+          <option name="PATTERN" value="square.my2022onsite.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1635,27 +1632,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidSuduko" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.ImplDataStructure.design.ValidSuduko" />
-      <module name="KillLeetCode" />
+    <configuration name="GetAllPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="square.my2022onsite.game.GetAllPath" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.ImplDataStructure.design.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordBreakII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.DynamicPlanning.WordBreakII" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.DynamicPlanning.*" />
+          <option name="PATTERN" value="square.my2022onsite.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1871,19 +1854,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.LongestPalindromicSubSequence" />
-      <item itemvalue="Application.ValidSuduko" />
-      <item itemvalue="Application.WordBreakII" />
-      <item itemvalue="Application.DecodeMorseCode" />
-      <item itemvalue="Application.DesignHashMap" />
+      <item itemvalue="Application.CipherAndDecipher" />
+      <item itemvalue="Application.Game" />
+      <item itemvalue="Application.Game (1)" />
+      <item itemvalue="Application.GameSinglePlayer" />
+      <item itemvalue="Application.GetAllPath" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DesignHashMap" />
-        <item itemvalue="Application.WordBreakII" />
-        <item itemvalue="Application.DecodeMorseCode" />
-        <item itemvalue="Application.ValidSuduko" />
-        <item itemvalue="Application.LongestPalindromicSubSequence" />
+        <item itemvalue="Application.GetAllPath" />
+        <item itemvalue="Application.GameSinglePlayer" />
+        <item itemvalue="Application.Game" />
+        <item itemvalue="Application.Game (1)" />
+        <item itemvalue="Application.CipherAndDecipher" />
       </list>
     </recent_temporary>
   </component>
@@ -2114,7 +2097,9 @@
       <workItem from="1662137555583" duration="75294000" />
       <workItem from="1662738645586" duration="71493000" />
       <workItem from="1663255922159" duration="5199000" />
-      <workItem from="1663269772060" duration="87811000" />
+      <workItem from="1663269772060" duration="94650000" />
+      <workItem from="1663963461971" duration="22714000" />
+      <workItem from="1664215844178" duration="12273000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2255,6 +2240,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -2600,14 +2596,14 @@
           <option name="timeStamp" value="1191" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/DecodeMorseCode.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="1198" />
+          <url>file://$PROJECT_DIR$/src/category/ImplDataStructure/DesignHashMap.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1205" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/DecodeMorseCode.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="1199" />
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/my2022VO/WordBreakI.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="1210" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

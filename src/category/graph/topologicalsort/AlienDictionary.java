@@ -3,6 +3,8 @@ package category.graph.topologicalsort;
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/alien-dictionary/
+ *
  * https://www.youtube.com/watch?v=RIrTuf4DfPE
  * https://happygirlzt.com/code/269.html
  * https://zhuhan0.blogspot.com/2017/06/leetcode-269-alien-dictionary.html
@@ -12,7 +14,6 @@ import java.util.*;
  * Created by brianzhang on 3/29/20.
  */
 public class AlienDictionary {
-
     public static void main(String[] args) {
         AlienDictionary ad = new AlienDictionary();
         System.out.println(ad.alienOrder(new String[]{"wrt","wrf","eee","err","rftt"}));
@@ -27,7 +28,6 @@ public class AlienDictionary {
         return orderedStr.length() == graph.size() ? orderedStr : ""; // not equal mean it's Acyclic graph, (存在环, 那就是无序了)
         // graph.size() = count of all unique Characters, or you can consider it as all vertexes in a graph
     }
-
     // template method
     private void buildGraph(String[] words, Map<Character, Set<Character>> graph, int[] inDegree) {
         // initiate all the vertex in your graph
@@ -36,13 +36,11 @@ public class AlienDictionary {
                 graph.put(c, new HashSet<>());
             }
         }
-
         // build graph and inDegree count
         for (int i = 1; i < words.length; i++) {
             String first = words[i-1];
             String second = words[i];
             int len = Math.min(first.length(), second.length());
-
             for (int j = 0; j < len; j++) {
                 char out = first.charAt(j);
                 char in = second.charAt(j);
@@ -69,7 +67,6 @@ public class AlienDictionary {
                 queue.offer(c);
             }
         }
-
         StringBuilder sb = new StringBuilder();
         while (!queue.isEmpty()) {
             char c = queue.poll();

@@ -41,7 +41,7 @@ public class PermutationI {
         if (tempList.size() == nums.length) {
             list.add(new ArrayList<>(tempList));
         } else {
-            for (int i = 0; i < nums.length; i++) {
+            for (int i = 0; i < nums.length; i++) { // i start with 0
                 if(tempList.contains(nums[i])) continue;
 
                 tempList.add(nums[i]);

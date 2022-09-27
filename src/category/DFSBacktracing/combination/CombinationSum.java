@@ -39,7 +39,7 @@ public class CombinationSum {
         } else if (target == 0) {
             res.add(new ArrayList<>(temp));
         } else {
-            for (int i = start; i < nums.length; i++) { // permutation, i=0
+            for (int i = start; i < nums.length; i++) { // but, permutation i=0
                 temp.add(nums[i]);
                 dfs(nums, i,target - nums[i], temp, res); // not "i + 1" here since can reuse same element
                 temp.remove(temp.size() - 1);

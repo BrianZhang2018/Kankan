@@ -8,7 +8,7 @@ import java.util.*;
  * time complexity: 2^n, https://leetcode.com/problems/word-break/discuss/169383/solved-The-Time-Complexity-of-The-Brute-Force-Method-Should-Be-O(2n)-and-Prove-It-Below
  * Created by brianzhang on 1/9/19.
  */
-public class WordBreakIDFS {
+public class WordBreakOneDFS {
     public static void main(String[] args) {
         System.out.println(wordBreakDFS("goalspecial",  new HashSet<>(Arrays.asList("go","goal","goals","special"))));
         res.forEach(s -> System.out.println(s));

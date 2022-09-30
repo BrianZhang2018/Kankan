@@ -1,4 +1,4 @@
-package category.DFSBacktracing.combination.subset;
+package category.DFSBacktracing.combinationAndPermutation.combination;
 
 import java.util.ArrayList;
 import java.util.Arrays;

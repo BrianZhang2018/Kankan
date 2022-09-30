@@ -8,7 +8,7 @@ import java.util.*;
  * time complexity: n^2
  * Created by brianzhang on 1/9/19.
  */
-public class WordBreakIDP {
+public class WordBreakOneDP {
     public static void main(String[] args) {
         System.out.println(wordBreak("leetco", new HashSet<>(Arrays.asList("leet", "co"))));
     }

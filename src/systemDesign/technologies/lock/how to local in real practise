@@ -1,0 +1,38 @@
+Row lock:
+1. use "select" statement to get the shared lock for specific row, e.g select .. from .. for share/update
+2. do the update
+3. release the lock after transaction commit
+
+e.g.
+process A: BEGIN;
+process A: SELECT * FROM room WHERE id = 1 FOR SHARE; // row-lock
+process B: INSERT INTO reservation (room_id, guest_id) VALUES (1, 2);
+-- process B blocks and must wait for process A to finish
+process A: INSERT INTO reservation (room_id, guest_id) VALUES (1, 1);
+process A: COMMIT; // release the lock
+-- process B now unblocks, but won't be able to book the same room since that room already booked
+    Use Optimistic lock strategy - check the room status before booking to avoid duplicate booking
+    1. check the room status
+    2. if it's reserved, won't insert new booking
+
+=====================================================================================================
+Table lock for insert
+
+lock two tables in mysql:
+lock tables poll read, User read;
+...
+unlock tables;
+
+=====================================================================================================
+hotel booking problem:
+https://app.diagrams.net/#G1mrbEwY03AfC_Nloh_KYh9Oxzrb54xgra
+
+
+how to handle two people book the same room at the same time:
+solution-1, pessimistic lock:
+Row-lock, select for update, only one release the lock, the other one can book
+
+solution-2, optimistic lock:
+only lock the table when write, and check the status to see whether can write
+比如说你一秒前返回这个房间是available的，那么你可以假设他是available的进行处理，只有在最后需要commit那一步才
+真正锁住table，update状态。如果这一步发现已经被其他用户抢先订了，就返回一个error message说没有房间了

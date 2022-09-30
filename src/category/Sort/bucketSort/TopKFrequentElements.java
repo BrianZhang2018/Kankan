@@ -19,18 +19,15 @@ public class TopKFrequentElements {
     public static List<Integer> topKFrequent(int[] nums, int k) {
         List<Integer>[] bucket = new List[nums.length + 1];
         Map<Integer, Integer> counter = new HashMap();
-
         for (int n : nums) {
             counter.put(n, counter.getOrDefault(n, 0) + 1);
         }
-
         for (Map.Entry<Integer, Integer> entry : counter.entrySet()) {
             if (bucket[entry.getValue()] == null) {
                 bucket[entry.getValue()] = new ArrayList<>();
             }
             bucket[entry.getValue()].add(entry.getKey()); // key here
         }
-
         List<Integer> result = new ArrayList();
         for (int i = bucket.length - 1; i >= 0 && result.size() < k; i--) {
             if (bucket[i] != null) {

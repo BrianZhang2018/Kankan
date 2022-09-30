@@ -11,7 +11,6 @@ import java.util.*;
  * Created by brianzhang on 6/9/20.
  */
 public class AllPathsFromSourceToTarget {
-
     public static void main(String[] args) {
       for(List<Integer> l : new AllPathsFromSourceToTarget().allPathsSourceTarget(new int[][]{{1,2},{3},{3},{}}))
           System.out.println(Arrays.toString(l.toArray()));
@@ -33,14 +32,12 @@ public class AllPathsFromSourceToTarget {
         }
 
         for(Integer i: graph[currNode]){
-            // if(path.contains(i)) continue; // acyclic graph, so no cycle, don't check the duplicated visited node.
-
+            // if(path.contains(i)) continue; // acyclic graph, so no cycle, don't check the duplicated visited node
             path.add(i);
             dfs(graph, i, path, targetNode);
             path.remove(path.size() -1);
         }
     }
-
 
     // Solution-2: BFS solution
     public List<List<Integer>> allPathsSourceTargetBFS(int[][] graph) {
@@ -67,5 +64,4 @@ public class AllPathsFromSourceToTarget {
 
         return res;
     }
-
 }

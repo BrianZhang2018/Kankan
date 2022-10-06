@@ -14,7 +14,6 @@ import java.util.*;
  * Created by brianzhang on 10/7/18.
  */
 public class CheapestFlightWithinKStops {
-
     public static void main(String[] args) {
         int[][] flights = new int[][]{{0, 1, 10},
                                       {0, 2, 50},
@@ -26,16 +25,13 @@ public class CheapestFlightWithinKStops {
         // build graph
         Map<Integer, Map<Integer, Integer>> adjacent = new HashMap();
         for (int[] f : flights) {
-            if (!adjacent.containsKey(f[0])) {
-                adjacent.put(f[0], new HashMap<>());
-            }
+            adjacent.putIfAbsent(f[0], new HashMap<>());
             adjacent.get(f[0]).put(f[1], f[2]);
         }
 
         // BFS + minHeap
         Queue<int[]> queue = new PriorityQueue<>((a, b) -> a[0]- b[0]);
         queue.add(new int[]{0, src, k + 1});
-
         while (!queue.isEmpty()) {
             int[] node = queue.poll();
             int cost = node[0];

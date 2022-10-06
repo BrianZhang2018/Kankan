@@ -59,6 +59,7 @@ public class AlienDictionary {
             }
         }
     }
+
     // template method: bfs
     private String topologicalBFSSort(Map<Character, Set<Character>> graph, int[] inDegree) {
         Queue<Character> queue = new LinkedList<>();

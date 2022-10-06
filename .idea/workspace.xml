@@ -9,57 +9,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/attentive/TicTacToe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/attentive/note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/crowdStrike/BalanceBracket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/crowdStrike/BestTimeBuyOneSellAnyStocks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/crowdStrike/ImplementQueueSingleLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/crowdStrike/PairTwoAndPrintOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/DecodeMorseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/GetAllPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/game/GameSinglePlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/onsite/PairPpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/oa2022/ReferenceCellSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/workday/note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/permutation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/vs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/lock/how to local in real practise" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/useCases/hotelbooking/design diagram" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/MergeInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/MergeInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/discovery/WordBreakII.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/codingOnsite/SortedArrayKthElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/hubspot/codingOnsite/SortedArrayKthElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/LowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/LowestCommonAncestor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/my2022VO/WordBreakI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/my2022VO/WordBreakI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/my2022VO/dataStructure/singleLinkedList/DesignHashMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/my2022VO/dataStructure/singleLinkedList/DesignHashMapWithGenericType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/BasicCalculatorWithParenthesesI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/postmate/ClassConstructMethodName.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/postmate/ClassConstructMethodName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/my2021/ValidSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2021/ValidSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/oa2022/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/onsite/hotelBooking" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/onsite/hotelBooking" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/BinarySearch/SearchA2DMatrixI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/BinarySearch/template/FindLeftRightMostPositionOfElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DFS/FlattenNestedListIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/Monotonic Increasing stack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/BuildingsWithOceanView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/TrappingRainWaterMonotonicStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/trappingRainWater-algo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/Tree/searchIn2DMatrix/SearchA2DMatrixII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/Tree/searchIn2DMatrix/matrixToBST.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/apple/FlattenNestedListIterator341.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/crowdStrike/BalanceBracket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/crowdStrike/BalanceBracket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/onsite/TopologicalSortDependentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/onsite/TopologicalSortDependentTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/onsite/PairPpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/onsite/PairPpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/CombinationSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/LetterCombinationsOfAPhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/LetterCombinationsOfAPhoneNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/subset/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/Subsets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combination/subset/SubsetsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/SubsetsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/permutation/I/PermutationI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationI.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/permutation/I/PermutationI.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationIBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/permutation/I/PermutationIBFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/I/PermutationISwap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/permutation/I/PermutationISwap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/Permutaion II explanation" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/permutation/II/Permutaion II explanation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/PermutationII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/permutation/II/PermutationII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/permutation/II/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/permutation/II/ThreeSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockSellBuy/BestTimeBuySellStockWithTransactionFee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockSellBuy/BestTimeBuySellStockWithTransactionFee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockSellBuy/BestTimeToBuyAndSellStockI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockSellBuy/BestTimeToBuyAndSellStockI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/greedy/stock/BestTimeToBuyAndSellStockII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/greedy/stock/BestTimeToBuyAndSellStockII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/wordBreakI/dfs/WordBreakIDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/wordBreakI/dfs/WordBreakOneDFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/wordBreakI/dp/WordBreakIDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/wordBreakI/dp/WordBreakOneDP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/PriorityQueue/TopKFrequentWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/PriorityQueue/TopKFrequentWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Sort/bucketSort/TopKFrequentElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Sort/bucketSort/TopKFrequentElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/MergeInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/MergeInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/graph/AllPathsFromSourceToTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/AllPathsFromSourceToTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/BFS/SearchIn2DMatrix/solution" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/NextGreaterElementII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BFS/searchIn2DMatrix/SearchA2DMatrixII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BFS/searchIn2DMatrix/solution" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/FindFirstAndLastPositionOfElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/FindFirstAndLastPositionOfElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/RandomPickWithWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/RandomPickWithWeight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/Sqrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/Sqrt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/FindMinimumInRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/FindMinimumInRotatedSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/FindMinimumInRotatedSortedArrayII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/FindMinimumInRotatedSortedArrayII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/template/StandardBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/template/StandardBinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockSellBuy/BestTimeToBuyAndSellStockIIIAtMostTwoTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockSellBuy/BestTimeToBuyAndSellStockIIIAtMostTwoTransactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWaterDP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/analysis/Analysis" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/analysis/Analysis" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/ShortestUnsortedContinuousSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/ShortestUnsortedContinuousSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/TrappingRainWater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/stack/NextGreaterElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/stack/NextGreaterElementII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/increasing/LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/increasing/LargestRectangleInHistogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/String/IntegerToEnglishWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/String/IntegerToEnglishWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/EmployeeFreeTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/EmployeeFreeTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/AGuide" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/AGuide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/CheapestFlightWithinKStops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/CheapestFlightWithinKStops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/NetworkDelayTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/NetworkDelayTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/PathWithMaximumProbability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/PathWithMaximumProbability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/graph/topologicalsort/AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/topologicalsort/AlienDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/经典题" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/经典题" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/technologies/cache/forDatabase/links" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/cache/forDatabase/links" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/technologies/two-phase-commit/two-phase-commit" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/two-phase-commit/two-phase-commit" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -1387,7 +1380,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../InterviewPrep/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/game" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1397,21 +1390,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing" />
       <recent name="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/game" />
       <recent name="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/in5mins10mins1hour" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/category/BFS/searchIn2DMatrix" />
+      <recent name="$PROJECT_DIR$/src/category/MonotoneQueueStack" />
       <recent name="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/howToAggregateData/countMinSketch" />
       <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK/countMinSketch" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/useCases/dataProcessing/lambdaArchitecture/heavyHitterSteamingTopK" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/technologies/lock" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="category.PriorityQueue.overlapInterval" />
@@ -1428,7 +1421,7 @@
       <recent name="category.Tree.triePrefixTree.raw" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PairTwoAndPrintOut">
+  <component name="RunManager" selected="Application.NextGreaterElementII">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1594,69 +1587,69 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="BalanceBracket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="crowdStrike.BalanceBracket" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="crowdStrike.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BestTimeBuyOneSellAnyStocks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="crowdStrike.BestTimeBuyOneSellAnyStocks" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="crowdStrike.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ImplementQueueSingleLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="crowdStrike.ImplementQueueSingleLinkedList" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="crowdStrike.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PairTwoAndPrintOut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="crowdStrike.PairTwoAndPrintOut" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="crowdStrike.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TopKFrequentElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Sort.bucketSort.TopKFrequentElements" />
+    <configuration name="CheapestFlightWithinKStops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.graph.Dijkstra.CheapestFlightWithinKStops" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.Sort.bucketSort.*" />
+          <option name="PATTERN" value="category.graph.Dijkstra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CombinationSumII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.DFSBacktracing.combinationAndPermutation.combination.CombinationSumII" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.DFSBacktracing.combinationAndPermutation.combination.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NetworkDelayTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.graph.Dijkstra.NetworkDelayTime" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.graph.Dijkstra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NextGreaterElementII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.MonotoneQueueStack.descrasing.NextGreaterElementII" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.MonotoneQueueStack.descrasing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortestUnsortedContinuousSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.MonotoneQueueStack.descrasing.ShortestUnsortedContinuousSubArray" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.MonotoneQueueStack.descrasing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1872,19 +1865,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ImplementQueueSingleLinkedList" />
-      <item itemvalue="Application.BalanceBracket" />
-      <item itemvalue="Application.BestTimeBuyOneSellAnyStocks" />
-      <item itemvalue="Application.TopKFrequentElements" />
-      <item itemvalue="Application.PairTwoAndPrintOut" />
+      <item itemvalue="Application.CombinationSumII" />
+      <item itemvalue="Application.CheapestFlightWithinKStops" />
+      <item itemvalue="Application.NetworkDelayTime" />
+      <item itemvalue="Application.ShortestUnsortedContinuousSubArray" />
+      <item itemvalue="Application.NextGreaterElementII" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PairTwoAndPrintOut" />
-        <item itemvalue="Application.TopKFrequentElements" />
-        <item itemvalue="Application.BestTimeBuyOneSellAnyStocks" />
-        <item itemvalue="Application.BalanceBracket" />
-        <item itemvalue="Application.ImplementQueueSingleLinkedList" />
+        <item itemvalue="Application.NextGreaterElementII" />
+        <item itemvalue="Application.ShortestUnsortedContinuousSubArray" />
+        <item itemvalue="Application.NetworkDelayTime" />
+        <item itemvalue="Application.CheapestFlightWithinKStops" />
+        <item itemvalue="Application.CombinationSumII" />
       </list>
     </recent_temporary>
   </component>
@@ -2118,7 +2111,8 @@
       <workItem from="1663269772060" duration="94650000" />
       <workItem from="1663963461971" duration="22714000" />
       <workItem from="1664215844178" duration="22707000" />
-      <workItem from="1664387731572" duration="20783000" />
+      <workItem from="1664387731572" duration="58983000" />
+      <workItem from="1664980003311" duration="17683000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2450,16 +2444,6 @@
           <option name="timeStamp" value="851" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/String/IntegerToEnglishWords.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="949" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/String/IntegerToEnglishWords.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="950" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/workspace/InterviewPrep/src/square/onsite/TrainSchedule.java</url>
           <line>113</line>
           <option name="timeStamp" value="960" />
@@ -2623,6 +2607,26 @@
           <url>file://$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/my2022VO/WordBreakI.java</url>
           <line>59</line>
           <option name="timeStamp" value="1210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/onsite/PairPpl.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="1217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/onsite/PairPpl.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/category/BinarySearch/template/StandardBinarySearch.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="1220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/category/String/IntegerToEnglishWords.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1222" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

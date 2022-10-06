@@ -9,13 +9,12 @@ import java.util.Arrays;
  * Can be solved with Monotone stack solution.
  * https://www.cnblogs.com/grandyang/p/4402392.html
  */
-public class TrappingRainWater {
+public class TrappingRainWaterDP {
     public static void main(String[] args) {
-        TrappingRainWater test = new TrappingRainWater();
-        System.out.println(test.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
+        System.out.println(trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
     }
 
-    public int trap(int[] height) {
+    public static int trap(int[] height) {
         if (height == null || height.length == 0) return 0;
 
         int[] maxLeft = new int[height.length];

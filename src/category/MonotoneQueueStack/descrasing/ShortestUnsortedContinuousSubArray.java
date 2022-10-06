@@ -8,7 +8,6 @@ import java.util.Stack;
  * Created by brianzhang on 4/12/20.
  */
 public class ShortestUnsortedContinuousSubArray {
-
     public static void main(String[] args) {
         System.out.println(findUnsortedSubArray(new int[]{2, 6, 4, 8, 10, 9, 15}));
     }

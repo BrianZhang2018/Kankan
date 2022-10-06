@@ -15,7 +15,8 @@ This issue is mitigated by setting a time-to-live (TTL) which forces an update o
 
 Read Through:
 Unlike cache aside, the cache sits in between the application and the database.
-The application only request data from the cache. If a ‘cache miss’ occurs, the cache is responsible to retrieve data from the database, update itself and return data to the application.
-
+The application only request data from the cache. If a ‘cache miss’ occurs, the cache is responsible to retrieve data from the database,
+update itself and return data to the application.
 Client don't interact with DB which take care by the cache provider like redis, but cache-aside need do db update itself.
 
+Write Through:

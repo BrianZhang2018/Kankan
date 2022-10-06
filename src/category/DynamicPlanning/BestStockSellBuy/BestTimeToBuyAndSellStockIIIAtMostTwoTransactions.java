@@ -23,11 +23,10 @@ public class BestTimeToBuyAndSellStockIIIAtMostTwoTransactions {
     }
 
     public static int maxProfit(int[] prices) {
-        if (prices == null || prices.length == 0)
-            return 0;
+        if (prices == null || prices.length == 0)  return 0;
+
         int n = prices.length;
         int profit = 0;
-
         // scan from left - got the max profit for first transaction
         // left[i] keeps the max profit from 0 -> n-1
         int[] left = new int[n];

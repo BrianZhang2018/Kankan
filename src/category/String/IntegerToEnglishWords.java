@@ -6,25 +6,28 @@ package category.String;
  * Created by brianzhang on 6/1/20.
  */
 public class IntegerToEnglishWords {
-
     public static void main(String[] args) {
         IntegerToEnglishWords test = new IntegerToEnglishWords();
-        System.out.println(test.numberToWords(123456));
+        System.out.println(test.numberToWords(1000000));
     }
 
-    final String[] LESS_THAN_20 = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
-    final String[] TENS = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
-    final String[] THOUSANDS = {"Billion", "Million", "Thousand", ""};
-    final int[] radix = {1000000000, 1000000, 1000, 1}; // 重点
+    final String[] LESS_THAN_20 = {"", "One", "Two", "Three", "Four", "Five", "Six",
+            "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen"
+            , "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+    final String[] TENS = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty",
+            "Seventy", "Eighty", "Ninety"};
+    final String[] THOUSANDS = {"", "Thousand", "Million", "Billion"};
 
     public String numberToWords(int num) {
         if (num == 0) return "Zero";
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < radix.length; i++) {
-            if (num / radix[i] == 0) continue; // until find right radix
-
-            sb.append(trans(num / radix[i])).append(THOUSANDS[i]).append(' ');
-            num %= radix[i];
+        int i=0; // index of THOUSANDS unit
+        // calculate from right to left, e.g. 123,456 - translate the 456, then 123
+        while (num > 0) {
+            if (num % 1000 != 0)
+                sb.insert(0, trans(num % 1000) +THOUSANDS[i] + " ");
+            num /= 1000;
+            i++;
         }
         return sb.toString().trim();
     }

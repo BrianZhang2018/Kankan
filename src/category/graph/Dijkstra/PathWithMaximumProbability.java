@@ -9,15 +9,12 @@ import java.util.*;
  * Created by brianzhang on 4/14/21.
  */
 public class PathWithMaximumProbability {
-
     public static void main(String[] args) {
         System.out.println(maxProbability(3, new int[][]{{0,1},{1,2},{0,2}}, new double[]{0.5,0.5,0.2}, 0, 2));
     }
 
     public static double maxProbability(int n, int[][] edges, double[] succProb, int start, int end) {
-
         Map<Integer, List<Pair<Integer, Double>>> graph = new HashMap();
-
         for(int i=0; i<edges.length; i++){
             graph.putIfAbsent(edges[i][0], new ArrayList());
             graph.get(edges[i][0]).add(new Pair(edges[i][1], succProb[i]));
@@ -28,7 +25,6 @@ public class PathWithMaximumProbability {
         PriorityQueue<double[]> q = new PriorityQueue<>((a, b) -> Double.compare(b[1], a[1]));
         q.add(new double[]{start, 1.0});
         Set<Integer> visited = new HashSet();
-
         while(!q.isEmpty()){
             int size = q.size();
             while(size-- >0){

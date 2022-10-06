@@ -6,7 +6,6 @@ package category.BinarySearch;
  * Created by brianzhang on 11/8/20.
  */
 public class Sqrt {
-
     public static void main(String[] args) {
         System.out.println(mySqrt(8));
     }

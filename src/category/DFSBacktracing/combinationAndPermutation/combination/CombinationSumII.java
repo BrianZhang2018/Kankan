@@ -30,7 +30,7 @@ public class CombinationSumII {
             return;
         }
         for (int i = start; i < nums.length; i++) {
-            if(i>start && nums[i] == nums[i-1]) continue; // usual way to avoid duplicate combination
+            if (i > start && nums[i] == nums[i - 1]) continue; // avoid duplicate combination
 
             temp.add(nums[i]);
             dfs(nums, target - nums[i], i+1, temp, res);

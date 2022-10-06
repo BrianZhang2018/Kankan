@@ -15,14 +15,13 @@ public class LargestRectangleInHistogram {
 
     // Pruning to find peak. Simplest solution for this problem
     public static int largestRectangleArea4(int[] heights) {
+        if(heights == null || heights.length == 0) return 0;
+
         int n = heights.length;
-        if (n == 0) return 0;
         int res = 0;
-        
         for (int i = 0; i < n; i++) {
-            //find the peak position
-            if (i + 1 < n  && heights[i] <= heights[i + 1])
-                continue;
+            // find the peak position
+            if (i + 1 < n  && heights[i] <= heights[i + 1]) continue;
 
             int minVal = heights[i];
 
@@ -36,33 +35,30 @@ public class LargestRectangleInHistogram {
         return res;
     }
 
-    //Monotone stack solution, maintain an increasing stack
+    // Monotone stack solution, maintain an increasing stack
     public static int largestRectangleArea(int[] heights) {
-        if(heights == null || heights.length == 0)
-        return 0;
+        if(heights == null || heights.length == 0) return 0;
     
         Stack<Integer> s = new Stack<>();
         int len = heights.length;
         int maxArea = 0;
-        
-        for(int i=0; i<=len; i++){
-            //add "0" height to the end of array so that the last histogram bar can be included into calculation
+        for (int i = 0; i <= len; i++) {
+            // add "0" height to the end of array so that the last histogram bar can be included into calculation
             int h = (i == len ? 0 : heights[i]);
-            
             // (height < the peek value in stack) is the trigger to calculate the area
             while(!s.isEmpty() && h < heights[s.peek()]){
                 int currHeight = heights[s.pop()];
                 int prevIndex = s.isEmpty() ? -1 : s.peek();
-                maxArea = Math.max(maxArea, currHeight * (i - prevIndex - 1)); //i - prevIndex -1 = width of histogram
+                maxArea = Math.max(maxArea, currHeight * (i - prevIndex - 1)); // i - prevIndex -1 = width of histogram
             }
-            //store the index rather than the value into the stack - (monotone stack feature, but not always)
+            // store the index rather than the value into the stack - (monotone stack feature, but not always)
             s.push(i);
         }
         
         return maxArea;
      }
 
-    //my modified version
+    //  my modified version
     public int largestRectangleArea11(int[] heights) {
         if(heights == null || heights.length == 0)
             return 0;
@@ -92,7 +88,7 @@ public class LargestRectangleInHistogram {
         return maxArea;
     }
 
-    //DP solution which is the same with TrappingRainWater question
+    // DP solution which is the same with TrappingRainWater question
     public int largestRectangleArea3(int[] heights) {
         if (heights == null || heights.length == 0) {
             return 0;

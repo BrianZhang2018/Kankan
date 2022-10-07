@@ -9,50 +9,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/category/BinarySearch/SearchA2DMatrixI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/BinarySearch/template/FindLeftRightMostPositionOfElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/DFS/FlattenNestedListIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/Monotonic Increasing stack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/BuildingsWithOceanView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/TrappingRainWaterMonotonicStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/trappingRainWater-algo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Tree/searchIn2DMatrix/SearchA2DMatrixII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Tree/searchIn2DMatrix/matrixToBST.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/zillow/ConvertBracket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/Sort/bucketSort/FindFirstNonRepeatCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/String/NextGreaterElementIII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/String/RomanToInteger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/apple/FlattenNestedListIterator341.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/crowdStrike/BalanceBracket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/crowdStrike/BalanceBracket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/onsite/TopologicalSortDependentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/onsite/TopologicalSortDependentTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/onsite/PairPpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/onsite/PairPpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/BFS/SearchIn2DMatrix/solution" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/NextGreaterElementII.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/searchIn2DMatrix/SearchA2DMatrixII.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/searchIn2DMatrix/solution" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/FindFirstAndLastPositionOfElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/FindFirstAndLastPositionOfElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/RandomPickWithWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/RandomPickWithWeight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/Sqrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/Sqrt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/FindMinimumInRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/FindMinimumInRotatedSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/FindMinimumInRotatedSortedArrayII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/FindMinimumInRotatedSortedArrayII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/template/StandardBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/template/StandardBinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockSellBuy/BestTimeToBuyAndSellStockIIIAtMostTwoTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/BestStockSellBuy/BestTimeToBuyAndSellStockIIIAtMostTwoTransactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/TrappingRainWaterSimilarProblems/TrappingRainWaterDP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/analysis/Analysis" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/analysis/Analysis" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/ShortestUnsortedContinuousSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/ShortestUnsortedContinuousSubArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/TrappingRainWater.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/stack/NextGreaterElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/stack/NextGreaterElementII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/increasing/LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/increasing/LargestRectangleInHistogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/String/IntegerToEnglishWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/String/IntegerToEnglishWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/EmployeeFreeTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/EmployeeFreeTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/AGuide" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/AGuide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/CheapestFlightWithinKStops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/CheapestFlightWithinKStops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/NetworkDelayTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/NetworkDelayTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/PathWithMaximumProbability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/PathWithMaximumProbability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/graph/topologicalsort/AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/topologicalsort/AlienDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/经典题" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/经典题" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/technologies/cache/forDatabase/links" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/cache/forDatabase/links" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systemDesign/technologies/two-phase-commit/two-phase-commit" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/two-phase-commit/two-phase-commit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/searchIn2DMatrix/SearchA2DMatrixII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/searchIn2DMatrix/SearchA2DMatrixII.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -1421,7 +1387,7 @@
       <recent name="category.Tree.triePrefixTree.raw" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NextGreaterElementII">
+  <component name="RunManager" selected="Application.SearchA2DMatrixII">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1587,41 +1553,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="CheapestFlightWithinKStops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.graph.Dijkstra.CheapestFlightWithinKStops" />
-      <module name="KillLeetCode" />
+    <configuration name="ConvertBracket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zillow.ConvertBracket" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.graph.Dijkstra.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CombinationSumII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.DFSBacktracing.combinationAndPermutation.combination.CombinationSumII" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.DFSBacktracing.combinationAndPermutation.combination.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NetworkDelayTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.graph.Dijkstra.NetworkDelayTime" />
-      <module name="KillLeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.graph.Dijkstra.*" />
+          <option name="PATTERN" value="zillow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1643,13 +1581,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShortestUnsortedContinuousSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.MonotoneQueueStack.descrasing.ShortestUnsortedContinuousSubArray" />
+    <configuration name="NextGreaterElementIII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.String.NextGreaterElementIII" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.MonotoneQueueStack.descrasing.*" />
+          <option name="PATTERN" value="category.String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomanToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.String.RomanToInteger" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchA2DMatrixII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.Tree.searchIn2DMatrix.SearchA2DMatrixII" />
+      <module name="KillLeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.Tree.searchIn2DMatrix.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1865,19 +1831,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.CombinationSumII" />
-      <item itemvalue="Application.CheapestFlightWithinKStops" />
-      <item itemvalue="Application.NetworkDelayTime" />
-      <item itemvalue="Application.ShortestUnsortedContinuousSubArray" />
       <item itemvalue="Application.NextGreaterElementII" />
+      <item itemvalue="Application.NextGreaterElementIII" />
+      <item itemvalue="Application.ConvertBracket" />
+      <item itemvalue="Application.RomanToInteger" />
+      <item itemvalue="Application.SearchA2DMatrixII" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SearchA2DMatrixII" />
+        <item itemvalue="Application.RomanToInteger" />
+        <item itemvalue="Application.ConvertBracket" />
+        <item itemvalue="Application.NextGreaterElementIII" />
         <item itemvalue="Application.NextGreaterElementII" />
-        <item itemvalue="Application.ShortestUnsortedContinuousSubArray" />
-        <item itemvalue="Application.NetworkDelayTime" />
-        <item itemvalue="Application.CheapestFlightWithinKStops" />
-        <item itemvalue="Application.CombinationSumII" />
       </list>
     </recent_temporary>
   </component>
@@ -2112,7 +2078,7 @@
       <workItem from="1663963461971" duration="22714000" />
       <workItem from="1664215844178" duration="22707000" />
       <workItem from="1664387731572" duration="58983000" />
-      <workItem from="1664980003311" duration="17683000" />
+      <workItem from="1664980003311" duration="27019000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2627,6 +2593,11 @@
           <url>file://$PROJECT_DIR$/src/category/String/IntegerToEnglishWords.java</url>
           <line>25</line>
           <option name="timeStamp" value="1222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/zillow/ConvertBracket.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1224" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

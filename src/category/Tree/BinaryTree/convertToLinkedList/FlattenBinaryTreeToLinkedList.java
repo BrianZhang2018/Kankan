@@ -1,6 +1,7 @@
 package category.Tree.BinaryTree.convertToLinkedList;
 
-import companies.amazon.model.TreeNode;
+import category.model.TreeNode;
+
 import java.util.Stack;
 
 /**

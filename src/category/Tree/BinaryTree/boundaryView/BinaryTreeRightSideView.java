@@ -1,9 +1,8 @@
 package category.Tree.BinaryTree.boundaryView;
 
+import category.model.TreeNode;
+
 import java.util.*;
-import java.util.Queue;
-import java.util.ArrayList;
-import companies.amazon.model.TreeNode;
 
 /**
  * https://leetcode.com/problems/binary-tree-right-side-view/

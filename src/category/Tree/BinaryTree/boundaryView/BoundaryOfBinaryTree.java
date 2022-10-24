@@ -1,7 +1,8 @@
 package category.Tree.BinaryTree.boundaryView;
 
+import category.model.TreeNode;
+
 import java.util.*;
-import companies.amazon.model.TreeNode;
 
 /**
  * https://www.lintcode.com/problem/boundary-of-binary-tree/description

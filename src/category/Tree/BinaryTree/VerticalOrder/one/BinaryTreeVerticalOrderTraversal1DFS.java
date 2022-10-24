@@ -1,7 +1,8 @@
 package category.Tree.BinaryTree.VerticalOrder.one;
 
+import category.model.TreeNode;
+
 import java.util.*;
-import companies.amazon.model.TreeNode;
 
 /**
  * https://www.lintcode.com/problem/binary-tree-vertical-order-traversal/

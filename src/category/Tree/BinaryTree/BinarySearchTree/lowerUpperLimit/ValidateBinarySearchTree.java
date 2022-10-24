@@ -1,7 +1,8 @@
 package category.Tree.BinaryTree.BinarySearchTree.lowerUpperLimit;
 
-import companies.amazon.model.TreeNode;
-import java.util.*;
+import category.model.TreeNode;
+
+import java.util.Stack;
 
 /**
  * https://leetcode.com/problems/validate-binary-search-tree/

@@ -35,7 +35,6 @@ public class CoinChange {
         int[] dp = new int[amount + 1];
         Arrays.fill(dp, Integer.MAX_VALUE);
         dp[0] = 0;
-
         // loop for the min coins for amount 'i', finally got the dp[amount].
         for (int coin : coins) {
             for (int i = coin; i <= amount; i++) {

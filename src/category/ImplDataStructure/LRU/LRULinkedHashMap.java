@@ -14,7 +14,6 @@ public class LRULinkedHashMap {
         lhm.put(2, 1.0);
         lhm.put(3, 1.0);
         lhm.put(4, 1.0);
-
         System.out.println(lhm.size());
     }
 

@@ -9,7 +9,6 @@ package category.DynamicPlanning.TrappingRainWaterSimilarProblems;
  * Similar question: https://leetcode.com/problems/trapping-rain-water/
  */
 public class ProductOfArrayExceptSelf{
-
     public static void main(String[] args){
        productExceptSelf(new int[]{1,2,3,4});
     }

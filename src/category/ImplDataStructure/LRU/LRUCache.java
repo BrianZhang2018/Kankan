@@ -11,35 +11,36 @@ import java.util.*;
  * https://medium.com/@krishankantsinghal/my-first-blog-on-medium-583159139237
  *
  * In HashMap, will hold the "key" and "address (node)" in Doubly LinkedList, and Doubly LinkedList will hold the "values" of keys.
- *
- * As We need to keep track of recently used entries. We will "remove element from bottom" and "add element on the top of LinkedList" and
+ * As We need to keep track of recently used entries. We will "remove element from tail" and "add element on the top of LinkedList" and
  * whenever any entry is accessed again, it will be moved to the top. So, recently used entries will be on Top and Least used will be on Bottom.
  */
-public class LRUCache<T> {
+public class LRUCache{
     public static void main(String[] args) {
-        LRUCache<Integer> cache = new LRUCache<>(2); // capacity is 2
-        System.out.println(cache.get(2));
-        cache.put(2, 6);
-        System.out.println(cache.get(1));       // returns 1
-        cache.put(1, 5);    // evicts key 2
-        cache.put(1, 2);    // evicts key 1
-        System.out.println(cache.get(1));       // returns null (not found)
-        System.out.println(cache.get(2));
+        LRUCache lRUCache = new LRUCache(2);
+        lRUCache.put(1, 1);                     // cache is {1=1}
+        lRUCache.put(2, 2);                     // cache is {2=2,1=1}
+        System.out.println(lRUCache.get(1));    // return 1, update LRU to {1=1, 2=2} since we just get key 1
+        lRUCache.put(3, 3);                     // LRU (tail)key was 2, evicts key 2, cache is {1=1, 3=3}
+        System.out.println(lRUCache.get(2));    // returns -1 (not found)
+        lRUCache.put(4, 4);                     // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
+        System.out.println(lRUCache.get(1));    // return -1 (not found)
+        System.out.println(lRUCache.get(3));    // return 3
+        System.out.println(lRUCache.get(4));    // return 4
     }
 
-    static class DllNode<T> { // double linkedList node
-        private T key, value;
+    class DllNode { // double linkedList node
+        private int key, value;
         private DllNode prev, next;
 
-        public DllNode(T key, T value) {
+        public DllNode(int key, int value) {
             this.value = value;
             this.key = key;
         }
     }
 
     private int cacheSize;
-    private Map<T, DllNode> map = Collections.synchronizedMap(new HashMap()); // with sync enhanced
-    private DllNode<Integer> head, tail;
+    private Map<Integer, DllNode> map = Collections.synchronizedMap(new HashMap()); // with sync enhanced
+    private DllNode head, tail;
 
     public LRUCache(int capacity) {
         this.cacheSize = capacity;
@@ -49,16 +50,20 @@ public class LRUCache<T> {
         tail.prev = head;
     }
 
-    public T get(T key) {
-        if (!map.containsKey(key)) return null;
+    // Returns the value of the key if found, otherwise returns -1.
+    // Marks item as most recently used.
+    public int get(int key) {
+        if (!map.containsKey(key)) return -1;
 
         DllNode node = map.get(key);
         removeNode(node);
         addToTop(node);  // move to top since it just used
-        return (T)node.value;
+        return node.value;
     }
 
-    public void put(T key, T value) {
+    // "Update" the value of the key if the "key exists" or adds the key-value pair
+    // to the cache. If the number of keys "exceeds the capacity", evict the least recently used key.
+    public void put(int key, int value) {
         if (map.containsKey(key))
             removeNode(map.get(key)); // remove existing node from doubly linkedList
 
@@ -71,11 +76,13 @@ public class LRUCache<T> {
     public void removeNode(DllNode node) {
         node.prev.next = node.next;
         node.next.prev = node.prev;
-        synchronized (map){ map.remove(node.key);}
+        //synchronized (map){ map.remove(node.key);}
+        map.remove(node.key);
     }
 
     public void addToTop(DllNode node) {
-        synchronized (map){ map.put((T)node.key, node);}
+        //synchronized (map){ map.put(node.key, node);}
+        map.put(node.key, node);
         DllNode headNext = head.next;
         head.next = node;
         node.prev = head;

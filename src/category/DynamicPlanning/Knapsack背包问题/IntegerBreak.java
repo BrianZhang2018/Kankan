@@ -8,7 +8,6 @@ import java.util.Arrays;
  * This is a typical knapsack problem. We can assume that the volume of the knapsack is n.
  */
 public class IntegerBreak{
-
     public static void main(String[] args) {
         IntegerBreak ib = new IntegerBreak();
         System.out.println(ib.integerBreak1(5));
@@ -28,7 +27,6 @@ public class IntegerBreak{
         }
         return dp[n];
     }
-
 
     // 我推导的方法，但是不怎么好理解
     public int integerBreak(int n) {

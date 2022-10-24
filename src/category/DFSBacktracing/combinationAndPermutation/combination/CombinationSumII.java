@@ -7,7 +7,7 @@ import java.util.*;
  *
  * Time Complexity is O(2^n), which is the number of combinations.
  * e.g. [1, 2],  [3,4], the time complexity is 2*2 = 4
- *
+ * Space Complexity: O(N)
  * Created by brianzhang on 3/17/19.
  */
 public class CombinationSumII {
@@ -17,21 +17,21 @@ public class CombinationSumII {
 
     public List<List<Integer>> combinationSum(int[] nums, int target) {
         List<List<Integer>> res = new ArrayList();
-        Arrays.sort(nums);
+        Arrays.sort(nums); // 剪枝
         dfs(nums, target, 0, new ArrayList(), res);
         return res;
     }
 
     // backtracking
     private void dfs(int[] nums, int target, int start, List<Integer> temp, List<List<Integer>> res) {
-        if (target < 0) return;
         if (target == 0) {
             res.add(new ArrayList<>(temp));
             return;
         }
         for (int i = start; i < nums.length; i++) {
-            if (i > start && nums[i] == nums[i - 1]) continue; // avoid duplicate combination
-
+            if(nums[i] > target) break; // optimization (剪枝), that's why we sort the number in the beginning
+            // avoid duplicate combination, skip duplicate "nums[i]" in current loop since duplicate nums[i-1] already used
+            if (i > start && nums[i] == nums[i - 1]) continue;
             temp.add(nums[i]);
             dfs(nums, target - nums[i], i+1, temp, res);
             temp.remove(temp.size() - 1);

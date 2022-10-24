@@ -5,8 +5,9 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/network-delay-time/
  *
- * Dijkstra's algorithm (or Dijkstra's Shortest Path First algorithm, SPF algorithm) is an algorithm for finding the shortest paths between nodes in a graph,
- * which may represent, for example, road networks.
+ * Dijkstra's algorithm (or Dijkstra's Shortest Path First algorithm, SPF algorithm)
+ * is an algorithm for finding the shortest paths between nodes in a graph, which may represent,
+ * for example, road networks.
  *
  * Graph problem: single source all destinations shortest paths, the "longest" shortest path is the least time to access all nodes
  *

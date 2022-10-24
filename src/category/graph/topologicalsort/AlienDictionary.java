@@ -13,17 +13,16 @@ import java.util.*;
  *
  * Created by brianzhang on 3/29/20.
  */
+
 public class AlienDictionary {
     public static void main(String[] args) {
         AlienDictionary ad = new AlienDictionary();
         System.out.println(ad.alienOrder(new String[]{"wrt","wrf","eee","err","rftt"}));
     }
-
     public String alienOrder(String[] words) {
         Map<Character, Set<Character>> graph = new HashMap<>();
         int[] inDegree = new int[26];
         buildGraph(words, graph, inDegree);
-
         String orderedStr = topologicalBFSSort(graph, inDegree);
         return orderedStr.length() == graph.size() ? orderedStr : ""; // not equal mean it's Acyclic graph, (存在环, 那就是无序了)
         // graph.size() = count of all unique Characters, or you can consider it as all vertexes in a graph
@@ -59,7 +58,6 @@ public class AlienDictionary {
             }
         }
     }
-
     // template method: bfs
     private String topologicalBFSSort(Map<Character, Set<Character>> graph, int[] inDegree) {
         Queue<Character> queue = new LinkedList<>();

@@ -10,7 +10,6 @@ import java.util.*;
  * Created by brianzhang on 11/20/20.
  */
 public class TextJustification {
-
     public static void main(String[] args) {
         for(String s : fullJustify(new String[]{"What","must","be","acknowledgment","shall","be"}, 16)) {
             System.out.println(s);

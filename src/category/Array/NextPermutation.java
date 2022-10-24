@@ -1,5 +1,7 @@
 package category.Array;
 
+import java.util.Arrays;
+
 /**
  * https://leetcode.com/problems/next-permutation/discuss/13872/Easiest-JAVA-Solution
  * https://www.youtube.com/watch?v=quAS1iydq7U
@@ -11,7 +13,10 @@ package category.Array;
 public class NextPermutation {
     public static void main(String[] args) {
         NextPermutation test = new NextPermutation();
-        test.nextPermutation(new int[]{1,2,3});
+        int[] input = new int[]{1,2,3};
+        test.nextPermutation(input);
+       // System.out.println(Arrays.toString(input));
+        System.out.println(test.nextNegative("-45325"));
     }
 
     public void nextPermutation(int[] A) {
@@ -35,4 +40,27 @@ public class NextPermutation {
     public void reverse(int[] A, int i, int j) {
         while(i < j) swap(A, i++, j--);
     }
+
+    private String nextNegative(String n) {
+        char[] nums = n.toCharArray();
+        int i = nums.length - 2;
+        while (i >= 0 && nums[i] <= nums[i + 1]) i--; // Find 1st id i that breaks ascending order
+        if (i < 0) return n;
+
+        int j = nums.length-1;
+        while (j > 0 && nums[j] >= nums[i]) j--; // // Find rightmost first smaller id j
+
+        swap1(nums, i, j);
+       // System.out.println(nums);
+        StringBuilder sb = new StringBuilder(new String(Arrays.copyOfRange(nums, i+1, nums.length))).reverse();
+        sb.insert(0, new String(Arrays.copyOfRange(nums, 0, i+1)));
+        return sb.toString();
+    }
+
+    public void swap1(char[] A, int i, int j) {
+        char tmp = A[i];
+        A[i] = A[j];
+        A[j] = tmp;
+    }
+
 }

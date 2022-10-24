@@ -14,13 +14,15 @@ public class FindLeftRightMostPositionOfElement {
         int left = 0, right = arr.length;
         while (left < right) {
             int mid = left + (right - left) / 2;
-            if (target > arr[mid]) {
+            if (arr[mid] < target) {
                 left = mid + 1;
-            } else { // when equal do "right = mid" so that move left to find the leftmost
+            } else {
+                // implicity means when "equal", we move left to find the leftmost
+                // and has to be right=mid rather than right=mid-1 since mid can also be the target, but may not the leftmost one
                 right = mid;
             }
         }
-        return left;
+        return left; // left equals right
     }
 
     // find "rightmost" target
@@ -28,10 +30,11 @@ public class FindLeftRightMostPositionOfElement {
         int left = 0, right = arr.length;
         while (left < right) {
             int mid = left + (right - left) / 2;
-            if (target < arr[mid]) {
+            if (arr[mid] > target) {
                 right = mid;
-            } else { // when equal do "left = mid+1" so that move right to find the rightmost
-                left = mid + 1;
+            } else {
+                // implicity means when "equal", we move right to find the rightmost
+                left = mid+1;
             }
         }
         return right - 1; // or left - 1

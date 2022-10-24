@@ -2,8 +2,7 @@ package category.DFS;
 
 /**
  * https://leetcode.com/problems/max-area-of-island/
- *
- * Time Complexity: O(R*C), where RR is the number of rows in the given grid, and CC is the number of columns. We visit every square once.
+ * Time Complexity: O(R*C), where R is the number of rows in the given grid, and C is the number of columns. We visit every square once.
  *
  * Created by brianzhang on 2/10/19.
  */

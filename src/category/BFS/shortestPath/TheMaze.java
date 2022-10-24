@@ -5,7 +5,12 @@ import java.util.*;
  * https://www.lintcode.com/problem/the-maze
  *
  * BFS找最短路径(其实是steps), so we can skip the visited node at that level as we need know how much steps reach the target
- * rather than how many path to the target (dfs + braktracking)
+ * rather than how many path to the target (dfs + backtracking)
+ *
+ * Time complexity : O(mn). Complete traversal of maze will be done in the worst
+ * case. Here, mm and nn refers to the number of rows and columns of the maze.
+ *
+ * Space complexity : O(mn). visited array of size m*n is used and queue size can grow upto m*n in worst case.
  *
  * reference：/Users/brianzhang/workspace/WaWahaha/src/DFS vs BFS
  *
@@ -30,7 +35,6 @@ public class TheMaze {
             int[] curr = queue.poll();
             int r = curr[0];
             int c = curr[1];
-
             if(r == destination[0] && c == destination[1])
                 return true;
 
@@ -42,11 +46,9 @@ public class TheMaze {
                     nr += dict[0];
                     nc += dict[1];
                 }
-
                 // back to the position before hit the wall
                 nr-=dict[0];
                 nc-=dict[1];
-
                 if(!visited[nr][nc]){
                     queue.add(new int[]{nr, nc});
                     visited[nr][nc] = true;

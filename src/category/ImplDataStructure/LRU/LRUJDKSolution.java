@@ -8,7 +8,7 @@ import java.util.*;
  * 这个就是简单的single val list的LRU
  * Created by brianzhang on 6/14/20.
  */
-public class LRUSDKSolution {
+public class LRUJDKSolution {
     public static void main(String[] args) {
         Deque<Integer> test = new ArrayDeque<>();
         test.push(1);
@@ -20,7 +20,7 @@ public class LRUSDKSolution {
     private HashSet<Integer> hashSet;
     private final int CACHE_SIZE;
 
-    LRUSDKSolution(int capacity) {
+    LRUJDKSolution(int capacity) {
         doublyQueue = new LinkedList<>();
         hashSet = new HashSet<>();
         CACHE_SIZE = capacity;

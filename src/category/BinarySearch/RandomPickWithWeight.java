@@ -38,13 +38,13 @@ public class RandomPickWithWeight {
 
     // time complexity: logN
     public int pickIndex() {
-        int idx = random.nextInt(prefixSum[prefixSum.length-1]) + 1;
+        int weight = random.nextInt(prefixSum[prefixSum.length-1]) + 1;
         int left = 0, right = prefixSum.length - 1;
         while(left < right){
             int mid = left + (right - left)/2;
-            if(prefixSum[mid] == idx) return mid;
+            if(prefixSum[mid] == weight) return mid;
 
-            if(idx < prefixSum[mid]){
+            if(weight < prefixSum[mid]){
                 right = mid;
             }else{
                 left = mid +1;

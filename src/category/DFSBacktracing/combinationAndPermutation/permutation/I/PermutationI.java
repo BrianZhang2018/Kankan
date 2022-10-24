@@ -5,24 +5,19 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/permutations/
  *
- * Time complexity: O(n!*n)
- * For any recursive function, the time complexity is O(branches^depth) * (amount of work at each node, e.g. for-loop) in the recursive call tree.
- * However, in this case, we have n*(n-1)*(n-2)*(n-3)*...*1 branches at the corresponding level, so the total recursive calls is O(n!).
- * We do n-amount of work in each node of the recursive call tree, (a) the for-loop and (b) at each leaf when we add n elements to an ArrayList.
- * So this is a total of O(n) additional work per node.
+ * Time complexity: O(N*N!), N is the number of elements in input
+ * We have n! permutation. And, for each permutation, you run exact n recursive call to reach it.
+ * (note: time complexity for "recursive" function is O(nodes^depth+1) * (amount of work at each node, e.g. copy) in the recursive call tree)
  *
- * Space complexity: O(N), where N is the length of input.
+ * Space complexity: O(N), store the value during the recursive call. where N is the length of input.
  *
  * Not counting space used for the output, the extra space (memory) we use relative to input size
  * is the space occupied by the recursion call stack. It will only go as deep as
  * the number of digits in the input since whenever we reach that depth, we backtrack.
- * (Auxiliary Space Complexity ^^)
- *  +
- * input space complexity is O(n), and won't be changed
- * =
- * O(2n), or simplified to O(n)
  *
- * output space complexity required: O(n!*n) :  N! subarrays that have a length of N.
+ * (Auxiliary Space Complexity ^^) + input space complexity is O(n), and won't be changed = O(2n), or simplified to O(n)
+ *
+ * output space complexity required: O(n!*n) :  N! subArrays that have a length of N.
  * since Space Complexity = Auxiliary Space + Space used for input values, so output space complexity is not one for performance evaluation
  *
  * https://www.youtube.com/watch?v=KukNnoN-SoY

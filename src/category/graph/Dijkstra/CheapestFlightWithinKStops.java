@@ -6,8 +6,8 @@ import java.util.*;
  * https://leetcode.com/problems/cheapest-flights-within-k-stops/
  * There are n cities connected by m flights. Each flight starts from city u and arrives at v with a price w.
  *
- * PreRequisites 对于这种问题:
- * 1. all nodes connected （否则如果当前node不能reach dest node，就不得不往回飞，在飞去dest node，这样就和题目的目的相悖了）
+ * PreRequisites对于这种问题:
+ * 1. all nodes connected（否则如果当前node不能reach dest node，就不得不往回飞，在飞去dest node，这样就和题目的目的相悖了）
  *
  * 解法：BFS (get shortest path) + MinHeap (get least cost)
  *

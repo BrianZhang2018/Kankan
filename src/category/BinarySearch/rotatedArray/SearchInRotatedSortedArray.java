@@ -4,7 +4,10 @@ package category.BinarySearch.rotatedArray;
  * https://leetcode.com/problems/search-in-rotated-sorted-array/
  * Binary Search for Rotated array
  *
- * The idea is: if it's a rotating the array, there must be one half of the array which is in sorted order
+ * if it's a rotating the array, there must be one half of the array which is in sorted order
+ * 因为binary search只能用在sorted array 所以：
+ * 1. 确定sorted sub array 2. 用binary search去找target in sorted sub array
+ *
  * Created by brianzhang on 2/27/19.
  */
 public class SearchInRotatedSortedArray {

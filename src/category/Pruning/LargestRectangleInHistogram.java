@@ -1,8 +1,7 @@
 package category.Pruning;
 
 import java.math.BigInteger;
-import java.util.Arrays;
-import java.util.Stack;
+import java.util.*;
 /**
  * https://leetcode.com/problems/largest-rectangle-in-histogram/
  *
@@ -20,7 +19,7 @@ public class LargestRectangleInHistogram{
         System.out.println(bi.multiply(new BigInteger("11")));
     }
 
-     // Pruning - best solution for this problem
+     // Pruning - timeout now
      // Find each peak bar, and then reversely walk to get the largest rectangle
     public static int largestRectangleAreaPruning(int[] heights) {
         int n = heights.length;
@@ -79,7 +78,7 @@ public class LargestRectangleInHistogram{
         return max;
     }
 
-    //Monotone stack solution, create a increase stack
+    // Monotone stack solution, create an increase stack
     public static int largestRectangleAreaMonotone(int[] heights) {
         if(heights == null || heights.length == 0)
         return 0;

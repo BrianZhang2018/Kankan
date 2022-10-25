@@ -1,0 +1,2 @@
+ It returns a key-value mapping associated with the "greatest key less than or equal" to the given key,
+ or null if there is no such key.

@@ -3,13 +3,14 @@ package category.DFSBacktracing.combinationAndPermutation.combination;
 import java.util.*;
 /**
  * https://leetcode.com/problems/combination-sum/
- * 首先clarify的问题和interviewer,下面都是clarify的点, 对于解题很重要
+ * (zillow) 首先clarify的问题和interviewer,下面都是clarify的点, 对于解题很重要
  * Assumptions: 1. The same number can be used "unlimited times"
  *              2. unique combination
  *              3. no duplicate number
  *
- * (refer the screenshot: CombinationSumITimeComplexity.png)
- * Time complexity: loosely speaking is O(T/M * N^(T/M)), N: the number of candidates, T: target value, M: minimal value among the candidates
+ * Refer the screenshot: CombinationSumITimeComplexity.png
+ *
+ * Time complexity: loosely speaking is O(T/M * N^(T/M)), N: the number of candidates, T: target value, M: minimal value among the candidates.
  * N^(T/M) is total nodes (combinations), for each node (combination) which take T/M times combine to reach.
  * Same tc idea for permutation
  *
@@ -34,7 +35,7 @@ public class CombinationSumI {
             return;
         }
         for (int i = start; i < nums.length; i++) { // but, permutation i=0
-            if(nums[i] > target) break; // why we need "Sort the Number", so we can skip the greater number here on I right side.
+            if(nums[i] > target) break; // optimization (剪枝), that's why we sort the number in the beginning to avoid calculate the impossible larger candidates
 
             temp.add(nums[i]);
             dfs(nums, i,target - nums[i], temp, res); // not "i + 1" here since can reuse same element

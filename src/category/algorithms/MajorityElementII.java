@@ -1,7 +1,6 @@
 package category.algorithms;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/majority-element-ii/
@@ -23,7 +22,6 @@ public class MajorityElementII {
 
         int count1=0, count2=0;
         int m1=0, m2=0;
-
         // no parallel if here, all is if ... else if ...
         for(int n : nums){
             if(m1 == n){

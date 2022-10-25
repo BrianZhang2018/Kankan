@@ -1,0 +1,7 @@
+Yhy O(2^N) for II, but O(N^(T/M)+1) for I?
+
+The reason is simple. In combination sum, in each recursive call, the candidate space can be the same.
+Say for example target = 6 and candidates = [1,2,3] then one possibility is 1+1+1+1+1+1.
+We can see that we can "reuse" the same candidate all the way to the final depth of the recursive tree.
+However in this problem, each candidate only has 2 choices - to get included , or not to. If we include it,
+we cannot consider it in the subsequent calls. So the answer becomes 1+2+3.

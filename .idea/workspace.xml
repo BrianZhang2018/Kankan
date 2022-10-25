@@ -9,172 +9,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/airbnb/FormatOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/Hubspot/OA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/Hubspot/input.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/Hubspot/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/Karat/FindCommonAncestor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/Karat/FindNoParentAndOneParentNodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/Nordstrom/FindOriginalIndexBeforeRotated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/Nordstrom/ReverseNestedString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/RallyHealthy/FlightReservationFor4MembersFamily.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/RallyHealthy/GetLongestSleepTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/RallyHealthy/PawnsGaming.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/RallyHealthy/PrintPathFromRootToTargetNodeBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/RallyHealthy/Reserve-Seat-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/RallyHealthy/Reserve-seat-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/RallyHealthy/Screen Shot 2019-09-30 at 10.10.16 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/RallyHealthy/Screen Shot 2019-09-30 at 10.10.30 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/Anagram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/BehaviourQuestions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/FindMaximumPathToBezos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/FindMostFrequentWord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/FlyToSameHeightDianMian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/MergeKSortedList/PriorityQueueSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/OA/AssembleParts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/OA/RemoveObstacle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/OA/ShezhaoAmazonOA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/OA1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/OOD/LinuxFindCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/Palindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/PartitionLabels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/TowSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/TwoNodeSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/desgin/GivenALogFile_FindAllTheUsers_LoggedInLast2Days" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/model/DLinkedListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/amazon/model/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/bloomberg/CountNumberOfPossibleTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/braze/InitialPublicOffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/braze/Screen Shot 2019-10-03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/cruise/VampireNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/expedia/OnlineAsessment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/expedia/TurnArrayNumToNumArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/google/DiagonalTraverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/google/FindKthMissingNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/google/code questions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/grubhub/FindLargestSubtreeSumInATree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/grubhub/SumEachDigitInANumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/grubhub/interview learn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/microsoft/BinarySearchZigZag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/microsoft/FindIndexOfRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/microsoft/FindValidateIPAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/microsoft/MutiplyTwoNumberFromLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/microsoft/题库" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/oracle/BestTimeToBuyAndSellStockII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/oracle/PrintUniqueArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/stash/FindMeanAndMedianOfScores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/stash/MeanAndMedianScore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/teradata/ServerScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/wayfair/FindNoParentAndOneParentNodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/wayfair/LongestConsecutiveSubList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/wayfair/wf oa/wf1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/wayfair/wf oa/wf2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/wayfair/wf oa/wf3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/lacework/BoldWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/zillow/ConvertBracket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a面试高频类型/classical/problems" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a面试高频类型/recursive/problems" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/frequency/PermutationString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/apple/FlattenNestedListIterator341.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/crowdStrike/BalanceBracket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/crowdStrike/BalanceBracket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/datadog/myPhoneScreening/InterpolateMissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/datadog/myPhoneScreening/InterpolateMissingNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSumBetweenTwoAsteriskLeafNodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSumBetweenTwoAsteriskNodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSum3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSumPrintOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/onsite/TopologicalSortDependentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/onsite/TopologicalSortDependentTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/onsite/PairPpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/onsite/PairPpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/oa2022/ReferenceCellSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/oa2022/ReferenceCellSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSum I vs II TimeComplexity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/TreeMapFloorEntry/MaximumProfitInJobScheduling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/TreeMapFloorEntry/MostProfitAssigningWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/TreeMapFloorEntry/treeMap.floorEntry" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/RallyHealthy/PawnsGaming.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/RallyHealthy/Screen Shot 2019-09-30 at 10.10.16 PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/RallyHealthy/Screen Shot 2019-09-30 at 10.10.30 PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/amazon/BehaviourQuestions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/amazon/desgin/GivenALogFile_FindAllTheUsers_LoggedInLast2Days" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/braze/Screen Shot 2019-10-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/google/code questions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/grubhub/interview learn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/stash/MeanAndMedianScore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/wayfair/wf oa/wf1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/wayfair/wf oa/wf2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/companies/wayfair/wf oa/wf3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AmazingAlgorithm/DP-explanation" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AmazingAlgorithm/MaximalSquare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm4th/BreadthFirstPaths.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/template2/FindAllAnagramsInAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Slidingwindow/templateSolution/template2/FindAllAnagramsInAStringSlidingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/BinarySearchTree/lowerUpperLimit/ValidateBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/BinarySearchTree/lowerUpperLimit/ValidateBinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/one/BinaryTreeVerticalOrderTraversal1DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/one/BinaryTreeVerticalOrderTraversal1DFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/BinaryTreeRightSideView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/BinaryTreeRightSideView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/BoundaryOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/BoundaryOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/convertToLinkedList/FlattenBinaryTreeToLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/convertToLinkedList/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/Hubspot/OA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/Hubspot/input.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/Hubspot/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/Karat/FindCommonAncestor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/Karat/FindNoParentAndOneParentNodes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/Nordstrom/FindOriginalIndexBeforeRotated.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/Nordstrom/ReverseNestedString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/RallyHealthy/FlightReservationFor4MembersFamily.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/RallyHealthy/GetLongestSleepTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/RallyHealthy/PawnsGaming.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/RallyHealthy/PrintPathFromRootToTargetNodeBinaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/RallyHealthy/Reserve-Seat-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/RallyHealthy/Reserve-seat-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/RallyHealthy/Screen Shot 2019-09-30 at 10.10.16 PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/RallyHealthy/Screen Shot 2019-09-30 at 10.10.30 PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/Anagram.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/BehaviourQuestions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/FindMaximumPathToBezos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/FindMostFrequentWord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/FlyToSameHeightDianMian.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/MergeKSortedList/PriorityQueueSolution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/OA/AssembleParts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/OA/RemoveObstacle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/OA/ShezhaoAmazonOA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/OA1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/OOD/LinuxFindCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/Palindrome.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/PartitionLabels.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/TowSum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/TwoNodeSum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/desgin/GivenALogFile_FindAllTheUsers_LoggedInLast2Days" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/model/DLinkedListNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/amazon/model/TreeNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/bloomberg/CountNumberOfPossibleTriangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/braze/InitialPublicOffer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/braze/Screen Shot 2019-10-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/cruise/VampireNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/expedia/OnlineAsessment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/expedia/TurnArrayNumToNumArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/google/DiagonalTraverse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/google/FindKthMissingNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/google/code questions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/grubhub/FindLargestSubtreeSumInATree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/grubhub/SumEachDigitInANumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/grubhub/interview learn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/microsoft/BinarySearchZigZag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/microsoft/FindIndexOfRange.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/microsoft/FindValidateIPAddress.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/microsoft/MutiplyTwoNumberFromLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/microsoft/题库" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/oracle/BestTimeToBuyAndSellStockII.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/oracle/PrintUniqueArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/stash/FindMeanAndMedianOfScores.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/stash/MeanAndMedianScore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/teradata/ServerScheduler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/wayfair/FindNoParentAndOneParentNodes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/wayfair/LongestConsecutiveSubList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/wayfair/wf oa/wf1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/wayfair/wf oa/wf2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/companies/wayfair/wf oa/wf3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/popularInterviewProblems/minCostShortestPath/bfs/ShortestPathFromAToBState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/popularInterviewProblems/minCostShortestPath/bfs/ShortestPathFromAToBState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificeProblems/palindrome/PalindromicSubstrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificeProblems/palindrome/PalindromicSubstrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/高频题/TwoMatrixBoard/ProblemsList" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/高频题/highFrequent/MaxAreaOfIsland.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/高频题/highFrequent/常考基础算法" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/高频题/peak-valley-problems" beforeDir="false" afterPath="$PROJECT_DIR$/src/a面试高频类型/peak-valley-problems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/a面试高频类型/classical/problems" beforeDir="false" afterPath="$PROJECT_DIR$/src/a面试高频类型/classical/problems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/AFoundation/learning/coinChangeSeries/CoinChangeSeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/AFoundation/learning/coinChangeSeries/CoinChangeSeries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/NextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/NextPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/template/FindLeftRightMostPositionOfElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/template/FindLeftRightMostPositionOfElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/SubsetsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/SubsetsII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Pruning/LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Pruning/LargestRectangleInHistogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/algorithms/MajorityElementII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/algorithms/MajorityElementII.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -1502,7 +1350,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../InterviewPrep/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/面试高频类型/highFrequent/recursive" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2022" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1512,11 +1360,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2022" />
+      <recent name="$PROJECT_DIR$/src/category/String" />
       <recent name="$PROJECT_DIR$/src/面试高频类型/highFrequent/recursive" />
       <recent name="$PROJECT_DIR$/../InterviewPrep" />
       <recent name="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing" />
-      <recent name="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/game" />
-      <recent name="$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -1536,14 +1384,14 @@
       <recent name="com.walmartlab.codechallenge.ticketservice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="doordash.my2022" />
+      <recent name="category.greatestValue.floorEntry" />
       <recent name="category.frequency" />
       <recent name="category.DynamicPlanning.wordBreak.dp.dfs" />
       <recent name="category.DynamicPlanning.wordBreak.dp" />
-      <recent name="category.DFSBacktracing" />
-      <recent name="hubspot.codingOnsite" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FindConsecutiveSubstringWithLessThanTwoConsecutiveCharacters">
+  <component name="RunManager" selected="Application.MaximumProfitLimitedStartEndTime">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1709,13 +1557,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="FindConsecutiveSubstringWithLessThanTwoConsecutiveCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="specificeProblems.string.FindConsecutiveSubstringWithLessThanTwoConsecutiveCharacters" />
-      <module name="KillLeetCode" />
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coinbase.A" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="specificeProblems.string.*" />
+          <option name="PATTERN" value="coinbase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1723,13 +1571,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PalindromicSubstrings (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.String.PalindromicSubstrings" />
+    <configuration name="MaximumProfitInJobScheduling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.greatestValue.floorEntry.MaximumProfitInJobScheduling" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.String.*" />
+          <option name="PATTERN" value="category.greatestValue.floorEntry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1737,13 +1585,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PalindromicSubstringsPrintOut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.String.PalindromicSubstringsPrintOut" />
-      <module name="KillLeetCode" />
+    <configuration name="MaximumProfitLimitedStartEndTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="doordash.my2022.MaximumProfitLimitedStartEndTime" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.String.*" />
+          <option name="PATTERN" value="doordash.my2022.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1751,13 +1599,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PermutationString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.frequency.PermutationString" />
-      <module name="KillLeetCode" />
+    <configuration name="MinimumStepsMakeTwoStringAnagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="doordash.my2022.MinimumStepsMakeTwoStringAnagram" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.frequency.*" />
+          <option name="PATTERN" value="doordash.my2022.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1765,13 +1613,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WildcardMatching" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.DynamicPlanning.WildcardMatching" />
-      <module name="KillLeetCode" />
+    <configuration name="NextPermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="doordash.my2022.NextPermutation" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.DynamicPlanning.*" />
+          <option name="PATTERN" value="doordash.my2022.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1987,19 +1835,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.WildcardMatching" />
-      <item itemvalue="Application.PermutationString" />
-      <item itemvalue="Application.PalindromicSubstrings (1)" />
-      <item itemvalue="Application.PalindromicSubstringsPrintOut" />
-      <item itemvalue="Application.FindConsecutiveSubstringWithLessThanTwoConsecutiveCharacters" />
+      <item itemvalue="Application.MaximumProfitInJobScheduling" />
+      <item itemvalue="Application.MinimumStepsMakeTwoStringAnagram" />
+      <item itemvalue="Application.NextPermutation" />
+      <item itemvalue="Application.A" />
+      <item itemvalue="Application.MaximumProfitLimitedStartEndTime" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FindConsecutiveSubstringWithLessThanTwoConsecutiveCharacters" />
-        <item itemvalue="Application.PalindromicSubstrings (1)" />
-        <item itemvalue="Application.PalindromicSubstringsPrintOut" />
-        <item itemvalue="Application.PermutationString" />
-        <item itemvalue="Application.WildcardMatching" />
+        <item itemvalue="Application.MaximumProfitLimitedStartEndTime" />
+        <item itemvalue="Application.A" />
+        <item itemvalue="Application.NextPermutation" />
+        <item itemvalue="Application.MinimumStepsMakeTwoStringAnagram" />
+        <item itemvalue="Application.MaximumProfitInJobScheduling" />
       </list>
     </recent_temporary>
   </component>
@@ -2238,7 +2086,7 @@
       <workItem from="1665192469570" duration="8011000" />
       <workItem from="1665416380260" duration="20370000" />
       <workItem from="1665585422933" duration="28075000" />
-      <workItem from="1665949831493" duration="55890000" />
+      <workItem from="1665949831493" duration="83058000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2730,16 +2578,6 @@
           <option name="timeStamp" value="1210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/onsite/PairPpl.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="1217" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../InterviewPrep/src/square/my2022onsite/onsite/PairPpl.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="1218" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/category/String/IntegerToEnglishWords.java</url>
           <line>25</line>
           <option name="timeStamp" value="1222" />
@@ -2760,19 +2598,9 @@
           <option name="timeStamp" value="1239" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/Array/NextPermutation.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="1246" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/Array/NextPermutation.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="1247" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/Array/NextPermutation.java</url>
+          <url>file://$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/TreeMapFloorEntry/MaximumProfitInJobScheduling.java</url>
           <line>44</line>
-          <option name="timeStamp" value="1248" />
+          <option name="timeStamp" value="1249" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -3,7 +3,6 @@ package category.AFoundation.learning.coinChangeSeries;
 import java.util.Arrays;
 
 public class CoinChangeSeries {
-
     enum TransactionType {
         BALANCE_INQUIRY, DEPOSIT_CASH, DEPOSIT_CHECK, WITHDRAW, TRANSFER
     }
@@ -12,7 +11,6 @@ public class CoinChangeSeries {
      /*   System.out.println(new CoinChangeSeries().solutionBF(new int[]{357,239,73,52}, 9832));
         System.out.println(new CoinChangeSeries().solutionBFMemo(new int[]{357,239,73,52}, 9832));*/
         System.out.println(new CoinChangeSeries().solutionDPBottomUp1(new int[]{357,239,73,52}, 9832));
-
         System.out.println(TransactionType.BALANCE_INQUIRY.ordinal());
     }
 

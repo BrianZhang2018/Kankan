@@ -3,7 +3,8 @@ package category.DFSBacktracing.combinationAndPermutation.combination;
 import java.util.*;
 /**
  * https://leetcode.com/problems/combination-sum-ii/
- * Each number in candidates may "only be used once" in the combination.
+ * 1. contain duplicate number
+ * 2. each number in candidates may "only be used once" in the combination.
  *
  * Time Complexity is O(2^n), which is the number of combinations.
  * e.g. [1, 2],  [3,4], the time complexity is 2*2 = 4
@@ -30,10 +31,12 @@ public class CombinationSumII {
         }
         for (int i = start; i < nums.length; i++) {
             if(nums[i] > target) break; // optimization (剪枝), that's why we sort the number in the beginning
+
             // avoid duplicate combination, skip duplicate "nums[i]" in current loop since duplicate nums[i-1] already used
             if (i > start && nums[i] == nums[i - 1]) continue;
+
             temp.add(nums[i]);
-            dfs(nums, target - nums[i], i+1, temp, res);
+            dfs(nums, target - nums[i], i+1, temp, res); // i+1, each number since only can be used once
             temp.remove(temp.size() - 1);
         }
     }

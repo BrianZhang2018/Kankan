@@ -5,8 +5,8 @@ package category.BinarySearch.template;
  */
 public class FindLeftRightMostPositionOfElement {
     public static void main(String[] args) {
-        System.out.println(FindLeftMostPositionOfElement(new int[]{1, 4, 7, 8, 9, 9, 23, 54}, 9));
-        System.out.println(FindRightMostPositionOfElement(new int[]{1, 4, 7, 8, 9, 9, 23, 54}, 9));
+        System.out.println(FindLeftMostPositionOfElement(new int[]{1, 4, 7, 8, 9, 9, 23, 54}, 6));
+        System.out.println(FindRightMostPositionOfElement(new int[]{1, 4, 7, 8, 9, 9, 23, 54}, 6));
     }
 
     // omit (arr[mid] == target) check in while, find "leftmost" target

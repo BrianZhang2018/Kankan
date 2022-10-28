@@ -80,21 +80,22 @@ public class TrieImplByHashMap {
     public List<String> getAllWordsStartsWith(String prefix) {
         if (prefix == null) return null;
 
-        TNode curr = root;
+        TNode node = root;
         for (int i = 0; i < prefix.length(); i++) {
-            if (curr.children.get(prefix.charAt(i)) != null)
-                curr = curr.children.get(prefix.charAt(i));
+            if (node.children.get(prefix.charAt(i)) != null)
+                node = node.children.get(prefix.charAt(i));
             else {
                 return null;
             }
         }
 
         List<String> res = new ArrayList();
-        dfs(curr, res);
+        dfs(node, res);
         return res;
     }
 
     public void dfs(TNode node, List<String> res) {
+        if(node == null) return;
         for(Map.Entry<Character, TNode> entry : node.children.entrySet()) {
             TNode curr = entry.getValue();
             if(curr.word != null) {

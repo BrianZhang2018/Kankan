@@ -27,12 +27,13 @@ package category.DynamicPlanning;
  */
 public class WildcardMatching {
     public static void main(String[] args) {
-        System.out.println(isMatch("acdcb", "a*c?b"));
+      //  System.out.println(isMatch("acdcb", "a*c?b"));
+        System.out.println(isMatch("abcde", "*?*?*?*?"));
     }
 
-    // greedy +  backtracking
+    // greedy: two pointer + backtracking, preferred by confluent
     static boolean isMatch(String str, String pattern) {
-        int s = 0, p = 0, lastStarMatchIdx = 0, lastStarIdx = -1;
+        int s = 0, p = 0, lastStrMatchIdx = 0, lastStarIdx = -1;
         while (s < str.length()){
             // advancing both pointers
             if (p < pattern.length() && (pattern.charAt(p) == '?' || str.charAt(s) == pattern.charAt(p))){
@@ -42,14 +43,14 @@ public class WildcardMatching {
             // * found, only advancing pattern pointer
             else if (p < pattern.length() && pattern.charAt(p) == '*'){
                 lastStarIdx = p;
-                lastStarMatchIdx = s;
+                lastStrMatchIdx = s;
                 p++;
             }
             // last pattern pointer was *, advancing string pointer
             else if (lastStarIdx != -1){
                 p = lastStarIdx + 1;
-                lastStarMatchIdx++;
-                s = lastStarMatchIdx;
+                lastStrMatchIdx++;
+                s = lastStrMatchIdx;
             }
             //current pattern pointer is not star, last patter pointer was not *
             //characters do not match

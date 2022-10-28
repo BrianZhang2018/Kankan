@@ -1,7 +1,6 @@
 package category.ImplDataStructure.LRU;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * LinkedHashMap from java SDK

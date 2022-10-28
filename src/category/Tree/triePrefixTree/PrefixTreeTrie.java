@@ -3,10 +3,11 @@ package category.Tree.triePrefixTree;
 import java.util.HashMap;
 
 /**
+ * https://leetcode.com/discuss/interview-question/1878821/confluent-onsite-search-phrase-in-document
+ *
  * Created by brianzhang on 11/11/18.
  */
 public class PrefixTreeTrie {
-
     public static void main(String[] args) {
         PrefixTreeTrie trie = new PrefixTreeTrie();
         trie.insert("app");trie.insert("apple");trie.insert("beer");
@@ -17,16 +18,12 @@ public class PrefixTreeTrie {
 
     private TrieNode root;
 
-    /**
-     * Initialize your data structure here.
-     */
+    // Initialize your data structure here
     public PrefixTreeTrie() {
         root = new TrieNode();
     }
 
-    /**
-     * Inserts a word into the trie.
-     */
+    // Inserts a word into the trie
     public void insert(String word) {
         if (word == null)
             return;
@@ -45,11 +42,8 @@ public class PrefixTreeTrie {
         curr.isLastWord = true;
     }
 
-    /**
-     * Returns if the word is in the trie.
-     */
+    // Returns if the word is in the trie
     public boolean search(String word) {
-
         String res = dfs(root, word);
         if (res.equals(word))
             return true;
@@ -58,9 +52,7 @@ public class PrefixTreeTrie {
     }
 
     public String dfs(TrieNode node, String word) {
-
         String value = node.word;
-
         for (TrieNode child : node.children.values()) {
             String res = dfs(child, word);
             if (res.equals(word)) {
@@ -72,9 +64,7 @@ public class PrefixTreeTrie {
 
     private boolean result = false;
 
-    /**
-     * Returns if there is any word in the trie that starts with the given prefix.
-     */
+    // Returns if there is any word in the trie that starts with the given prefix.
     public boolean startsWith(String prefix) {
         result = false;
         dfsPrefix(root, prefix, new StringBuilder(""));
@@ -86,16 +76,13 @@ public class PrefixTreeTrie {
      * debug it, you will see how the backtracking works
      */
     public synchronized void dfsPrefix(TrieNode node, String word, StringBuilder str) {
-
         if (node.nodeVal != 0) {
             str.append(node.nodeVal);
         }
-
         if (str.length() == word.length() && str.toString().equals(word)) {
             result = true;
             //return;
         }
-
         for (TrieNode node1 : node.children.values()) {
             dfsPrefix(node1, word, str);
             str.deleteCharAt(str.length() - 1);

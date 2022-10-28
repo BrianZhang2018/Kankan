@@ -9,20 +9,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSum I vs II TimeComplexity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/TreeMapFloorEntry/MaximumProfitInJobScheduling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/TreeMapFloorEntry/MostProfitAssigningWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/TreeMapFloorEntry/treeMap.floorEntry" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/confluent/IsVariadic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/confluent/SearchWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/confluent/WindowedAverage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/confluent/mianjing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/airbnb/FormatOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/airbnb/FormatOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/confluent/WildCardMatchingVariation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/confluent/WildCardMatchingVariation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a面试高频类型/classical/problems" beforeDir="false" afterPath="$PROJECT_DIR$/src/a面试高频类型/classical/problems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/AFoundation/learning/coinChangeSeries/CoinChangeSeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/AFoundation/learning/coinChangeSeries/CoinChangeSeries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/NextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/NextPermutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/template/FindLeftRightMostPositionOfElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/template/FindLeftRightMostPositionOfElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/SubsetsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/SubsetsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Pruning/LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Pruning/LargestRectangleInHistogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/algorithms/MajorityElementII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/algorithms/MajorityElementII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/WildcardMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/WildcardMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUJDKSolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRULinkedHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRULinkedHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/PrefixTreeTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/PrefixTreeTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/basicImpl/map/TrieImplByHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/triePrefixTree/basicImpl/map/TrieImplByHashMap.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -160,7 +159,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../InterviewPrep" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -1391,7 +1390,7 @@
       <recent name="category.DynamicPlanning.wordBreak.dp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaximumProfitLimitedStartEndTime">
+  <component name="RunManager" selected="Application.SearchWord">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1557,13 +1556,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coinbase.A" />
+    <configuration name="FormatOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="airbnb.FormatOutput" />
       <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="coinbase.*" />
+          <option name="PATTERN" value="airbnb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1571,55 +1570,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumProfitInJobScheduling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.greatestValue.floorEntry.MaximumProfitInJobScheduling" />
+    <configuration name="IsVariadic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="confluent.IsVariadic" />
+      <module name="InterviewPrep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="confluent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="confluent.SearchWord" />
+      <module name="InterviewPrep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="confluent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WildCardMatchingVariation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="confluent.WildCardMatchingVariation" />
+      <module name="InterviewPrep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="confluent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WildcardMatching" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.DynamicPlanning.WildcardMatching" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.greatestValue.floorEntry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaximumProfitLimitedStartEndTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="doordash.my2022.MaximumProfitLimitedStartEndTime" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="doordash.my2022.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MinimumStepsMakeTwoStringAnagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="doordash.my2022.MinimumStepsMakeTwoStringAnagram" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="doordash.my2022.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NextPermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="doordash.my2022.NextPermutation" />
-      <module name="InterviewPrep" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="doordash.my2022.*" />
+          <option name="PATTERN" value="category.DynamicPlanning.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1835,19 +1834,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.MaximumProfitInJobScheduling" />
-      <item itemvalue="Application.MinimumStepsMakeTwoStringAnagram" />
-      <item itemvalue="Application.NextPermutation" />
-      <item itemvalue="Application.A" />
-      <item itemvalue="Application.MaximumProfitLimitedStartEndTime" />
+      <item itemvalue="Application.WildCardMatchingVariation" />
+      <item itemvalue="Application.SearchWord" />
+      <item itemvalue="Application.FormatOutput" />
+      <item itemvalue="Application.IsVariadic" />
+      <item itemvalue="Application.WildcardMatching" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MaximumProfitLimitedStartEndTime" />
-        <item itemvalue="Application.A" />
-        <item itemvalue="Application.NextPermutation" />
-        <item itemvalue="Application.MinimumStepsMakeTwoStringAnagram" />
-        <item itemvalue="Application.MaximumProfitInJobScheduling" />
+        <item itemvalue="Application.SearchWord" />
+        <item itemvalue="Application.WildcardMatching" />
+        <item itemvalue="Application.WildCardMatchingVariation" />
+        <item itemvalue="Application.IsVariadic" />
+        <item itemvalue="Application.FormatOutput" />
       </list>
     </recent_temporary>
   </component>
@@ -2086,7 +2085,7 @@
       <workItem from="1665192469570" duration="8011000" />
       <workItem from="1665416380260" duration="20370000" />
       <workItem from="1665585422933" duration="28075000" />
-      <workItem from="1665949831493" duration="83058000" />
+      <workItem from="1665949831493" duration="114189000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2601,6 +2600,21 @@
           <url>file://$PROJECT_DIR$/src/category/DynamicPlanning/Knapsack背包问题/TreeMapFloorEntry/MaximumProfitInJobScheduling.java</url>
           <line>44</line>
           <option name="timeStamp" value="1249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/confluent/IsVariadic.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="1269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../InterviewPrep/src/confluent/IsVariadic.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="1270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/category/DynamicPlanning/WildcardMatching.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="1274" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

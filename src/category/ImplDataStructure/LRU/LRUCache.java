@@ -31,7 +31,6 @@ public class LRUCache{
     class DllNode { // double linkedList node
         private int key, value;
         private DllNode prev, next;
-
         public DllNode(int key, int value) {
             this.value = value;
             this.key = key;
@@ -41,7 +40,6 @@ public class LRUCache{
     private int cacheSize;
     private Map<Integer, DllNode> map = Collections.synchronizedMap(new HashMap()); // with sync enhanced
     private DllNode head, tail;
-
     public LRUCache(int capacity) {
         this.cacheSize = capacity;
         head = new DllNode(0, 0);
@@ -49,7 +47,6 @@ public class LRUCache{
         head.next = tail;
         tail.prev = head;
     }
-
     // Returns the value of the key if found, otherwise returns -1.
     // Marks item as most recently used.
     public int get(int key) {
@@ -60,7 +57,6 @@ public class LRUCache{
         addToTop(node);  // move to top since it just used
         return node.value;
     }
-
     // "Update" the value of the key if the "key exists" or adds the key-value pair
     // to the cache. If the number of keys "exceeds the capacity", evict the least recently used key.
     public void put(int key, int value) {

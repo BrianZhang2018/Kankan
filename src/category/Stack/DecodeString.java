@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/decode-string/
  *
- * Cruise, Apple OA
+ * Cruise, Apple OA, bloomberg
  */
 public class DecodeString{
     public static void main(String[] args){
@@ -38,7 +38,7 @@ public class DecodeString{
     }
 
     // dfs-solution-2: queue to manage the character that pop out the visited character
-    public static String decodeStringDFS1(String s) {
+/*    public static String decodeStringDFS1(String s) {
         Deque<Character> dq = new ArrayDeque<>();
         for(Character c : s.toCharArray()) dq.add(c);
         return dfsHelper(dq);
@@ -62,7 +62,7 @@ public class DecodeString{
             }
         }
         return sb.toString();
-    }
+    }*/
 
     // BFS Solution: two stacks - BFS
     public static String decodeStringBFS(String s) {

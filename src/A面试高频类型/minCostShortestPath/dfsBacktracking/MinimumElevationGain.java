@@ -1,4 +1,4 @@
-package a面试高频类型.minCostShortestPath.dfsBacktracking;
+package A面试高频类型.minCostShortestPath.dfsBacktracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;

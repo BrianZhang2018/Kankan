@@ -1,4 +1,4 @@
-package a面试高频类型.minCostShortestPath.bfs;
+package A面试高频类型.minCostShortestPath.bfs;
 
 import java.util.*;
 

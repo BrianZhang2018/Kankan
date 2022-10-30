@@ -1,7 +1,6 @@
 package category.Stack;
 
 import java.util.*;
-import java.lang.*;
 
 /**
  * https://leetcode.com/problems/decode-string/
@@ -10,40 +9,62 @@ import java.lang.*;
  */
 public class DecodeString{
     public static void main(String[] args){
-        System.out.println(decodeStringDFS("3[a]2[bc]"));
-        System.out.println(decodeStringBFS("3[a2[c]]"));
+        System.out.println(decodeStringDFS("3[a]2[bc]")); // aaabcbc
+        System.out.println(decodeStringBFS("3[a2[c]]")); // accaccacc
     }
-
     // Solution-1 : DFS
+    // how to track the progress: 1.global index; 2.queue, popout the visited character
+    static int index; // global index
     public static String decodeStringDFS(String s) {
-        Deque<Character> dq = new ArrayDeque<>(); // use a queue to manage the character which will be removed after visited
-        for(Character c : s.toCharArray()) dq.add(c);
-        return dfsHelper(dq);
-    }
-
-    public static String dfsHelper(Deque<Character> dq) {
         StringBuilder sb = new StringBuilder();
-        int num = 0; // repeat times
-        while(!dq.isEmpty()){
-            char c = dq.poll();
-            if(Character.isDigit(c)){
-                num = num*10 + c - '0';
-            }else if(c == '['){
-                String sub = dfsHelper(dq);
-                for(int j = num; j>0; j--){
+        int num = 0; // repeat time
+        while (index < s.length()) {
+            char c = s.charAt(index++);
+            if (Character.isDigit(c)) {
+                num = num * 10 + c - '0';
+            } else if (c == '[') {
+                String sub = decodeStringDFS(s); // pass the original string
+                while(num-- >0){
                     sb.append(sub);
                 }
-                num=0;  // don't forget here, reset repeat to 0.
-            }else if(c == ']'){
-                return sb.toString();
-            }else{
+                num = 0;
+            } else if (c == ']') {
+                break;
+            } else {
                 sb.append(c);
             }
         }
         return sb.toString();
     }
 
-    // Solution-2: two stacks - BFS
+    // dfs-solution-2: queue to manage the character that pop out the visited character
+    public static String decodeStringDFS1(String s) {
+        Deque<Character> dq = new ArrayDeque<>();
+        for(Character c : s.toCharArray()) dq.add(c);
+        return dfsHelper(dq);
+    }
+    public static String dfsHelper(Deque<Character> dq) {
+        StringBuilder sb = new StringBuilder();
+        int num = 0; // repeat time
+        while (!dq.isEmpty()) {
+            char c = dq.poll();
+            if (Character.isDigit(c)) {
+                num = num * 10 + c - '0';
+            } else if (c == '[') {
+                String sub = dfsHelper(dq);
+                while(num-- > 0) { // num got reset to 0
+                    sb.append(sub);
+                }
+            } else if (c == ']') {
+                return sb.toString();
+            } else {
+                sb.append(c);
+            }
+        }
+        return sb.toString();
+    }
+
+    // BFS Solution: two stacks - BFS
     public static String decodeStringBFS(String s) {
         Stack<Integer> numStack = new Stack<>();
         Stack<StringBuilder> strStack = new Stack<>();

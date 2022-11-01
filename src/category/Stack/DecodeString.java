@@ -1,10 +1,8 @@
 package category.Stack;
 
 import java.util.*;
-
 /**
  * https://leetcode.com/problems/decode-string/
- *
  * Cruise, Apple OA, bloomberg
  */
 public class DecodeString{
@@ -64,7 +62,7 @@ public class DecodeString{
         return sb.toString();
     }*/
 
-    // BFS Solution: two stacks - BFS
+// BFS Solution: two stacks - BFS
     public static String decodeStringBFS(String s) {
         Stack<Integer> numStack = new Stack<>();
         Stack<StringBuilder> strStack = new Stack<>();

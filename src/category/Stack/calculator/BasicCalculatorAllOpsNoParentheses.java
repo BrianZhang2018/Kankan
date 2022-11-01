@@ -1,12 +1,11 @@
 package category.Stack.calculator;
 
 import java.util.Stack;
-
 /**
  * https://leetcode.com/problems/basic-calculator-ii/
  *
- * Operations includes: +, -, *, / and ' ', but "No Parentheses"
- * prevSign + Stack
+ * Operation includes: +, -, *, /, but "No Parentheses". Can have empty ' '.
+ * solution: prevSign + Stack
  *
  * Created by brianzhang on 11/16/19.
  */

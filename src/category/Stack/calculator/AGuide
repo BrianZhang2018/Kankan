@@ -1,13 +1,13 @@
 题的递进：
 
-BasicCalculatorAllOpsNoParentheses -> BasicCalculatorParenthesesPlusDivide -> BasicCalculatorParenthesesAllOps
+BasicCalculatorAllOpsNoParentheses -> BasicCalculatorPlusDivideParentheses -> BasicCalculatorAllOpsParentheses
 
 解题思路：
 
 template:
 
 1. prevSign - track previous sign
-2. tmpNumber -  the number between the sign
+2. tmpNumber - the number between the sign
 3. common way calculate the number
      if (i == s.length() - 1 || (signs.indexOf(c)!=-1)) { // calculate the number before current sign = prevSign * tmpNum
                     if (prevSign == '-') {

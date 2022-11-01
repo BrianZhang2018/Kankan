@@ -4,12 +4,11 @@ import java.util.Stack;
 
 /**
  * https://leetcode.com/problems/basic-calculator/
- *
- * Operations includes: (), '+', '-' and ' '
+ * Operation includes: (), '+', '-' and ' '
  *
  * Created by brianzhang on 11/17/19.
  */
-public class BasicCalculatorParenthesesPlusDivide {
+public class BasicCalculatorPlusDivideWithParentheses {
     public static void main(String[] args) {
         System.out.println(calculate("2-(5-6)"));
     }

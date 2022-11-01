@@ -1,25 +1,23 @@
 package category.Stack.calculator;
 
-import java.util.*;
+import java.util.Stack;
 
 /**
- * https://www.lintcode.com/problem/basic-calculator-iii
+ * https://leetcode.com/problems/basic-calculator-iii/
  *
- * Operations include: (), +, -, *, / and ' '
+ * Operations include: (), +, -, *, /, and ' '
  * 这个和BasicCalculatorII的 code structure很像，可以抽取为模板算法，
  *
  * Created by brianzhang on 2/23/20.
  */
-public class BasicCalculatorParenthesesAllOps {
+public class BasicCalculatorAllOpsWithParentheses {
     public static void main(String[] args) {
-        System.out.println(calculate("(4/2)+1"));
-        System.out.println(calculate("6-(1+(4/2))"));
-        System.out.println(calculate1("6-(1+(4/2))"));
+/*        System.out.println(calculate("6-(1+(4/2))"));
+        System.out.println(calculate1("6-(1+(4/2))"));*/
         System.out.println(calculate("(5*(4-(3*2)))"));
         System.out.println(calculate1("(5*(4-(3*2)))"));
     }
-
-    // template solution
+// Template solution
     public static int calculate(String s) {
         if (s == null || s.length() == 0) return 0;
 
@@ -59,37 +57,34 @@ public class BasicCalculatorParenthesesAllOps {
             }
         }
 
-        return stack.stream().reduce(0, Integer::sum);
-       // return stack.stream().reduce(Integer::sum).get();
+        return stack.stream().reduce(0, Integer::sum); // return stack.stream().reduce(Integer::sum).get();
     }
 
-// Solution without stack
+// Better Solution - without stack: 1. index 2. queue. Same approach in decodeString problem
+// e.g. 2 + 3 * 4 (+)
+//        + [sum + prev = 0, prev = 2]
+//            * [ (2+) sum prev number, then prevNum = currentNum = 3]
+//                 + [(3*4) do the calculation, then prevNum = 12]
+    static int index = 0;
     public static int calculate1(String s) {
-        Queue<Character> tokens = new ArrayDeque<>();
-        for (char c : s.toCharArray()) {
-            if (c != ' ') tokens.offer(c);
-        }
-        tokens.offer('+');
-        return calculate1(tokens);
-    }
+        char prevOps = '+';
+        int num = 0, sum = 0, prevNum = 0;
+        while (index <= s.length()) {
+            char c = ' ';
+            if(index == s.length()) {
+                c = '+';
+                index++;
+            }
+            else c = s.charAt(index++);
 
-    // e.g. 2 + 3 * 4 (+)
-    //        ^ (sum + prev = 0, prev = 2)
-    //            ^ ( (2+) sum prev number, then prevNum = currentNum = 3)
-    //                 ^ ((3*4) do the calculation, then prevNum = 12)
-    private static int calculate1(Queue<Character> tokens) {
-        char preOps = '+';
-        int num = 0, sum = 0, prevNum = 0; // additional prevNum required here compared with above solution
-        while (!tokens.isEmpty()) {
-            char c = tokens.poll();
             if ('0' <= c && c <= '9') {
                 num = num * 10 + c - '0';
             } else if (c == '(') {
-                num = calculate1(tokens); // recursive
-            } else {
-                switch (preOps) {
+                num = calculate1(s);
+            } else { // ops or ')' trigger the calculation
+                switch (prevOps) {
                     case '+':
-                        sum += prevNum; // both "+" and "-" cases are to accumulate the value, both "+" prev
+                        sum += prevNum; // both "+" and "-" cases are to accumulate the value, so both "+" prev
                         prevNum = num;
                         break;
                     case '-':
@@ -97,7 +92,7 @@ public class BasicCalculatorParenthesesAllOps {
                         prevNum = -num;
                         break;
                     case '*':
-                        prevNum *= num; // since "*" and "/" ops are need to be calculated, then accumulate. so no sum here, but accumulated in above "+" and "-" case
+                        prevNum *= num; // since "*" and "/" ops need to be calculated, then accumulate. so no "sum" here, but accumulated in above "+" and "-" case
                         break;
                     case '/':
                         prevNum /= num;
@@ -106,7 +101,7 @@ public class BasicCalculatorParenthesesAllOps {
                 if (c == ')') {
                     break;
                 }
-                preOps = c;
+                prevOps = c;
                 num = 0;
             }
         }

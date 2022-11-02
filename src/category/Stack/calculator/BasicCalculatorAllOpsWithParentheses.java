@@ -14,10 +14,57 @@ public class BasicCalculatorAllOpsWithParentheses {
     public static void main(String[] args) {
 /*        System.out.println(calculate("6-(1+(4/2))"));
         System.out.println(calculate1("6-(1+(4/2))"));*/
-        System.out.println(calculate("(5*(4-(3*2)))"));
-        System.out.println(calculate1("(5*(4-(3*2)))"));
+     /*   System.out.println(calculate("(5*(4-(3*2)))"));
+        System.out.println(calculate1("(5*(4-(3*2)))"));*/
+        System.out.println(calculate1("2+5-6+1"));
     }
-// Template solution
+// Better Solution - without stack, how to track the progress: 1. global index 2. queue. Same approach in "decodeString" problem
+// e.g. 2 + 3 - 4 (+)
+//        + [sum += prevNum(0), then prevNum = 2, prevOps= '+']
+//            - [ sum += prevNum(2), then prevNum = +3, prevOps= '-']
+//                 + [sum += prevNum(3), then prevNum = -4]
+    static int index = 0;
+    public static int calculate1(String s) {
+        char prevOps = '+';
+        int num = 0, sum = 0, prevNum = 0;
+        String ops = "+-/*";
+        while (index < s.length()) {
+            char c = s.charAt(index++);
+            if ('0' <= c && c <= '9') {
+                num = num * 10 + c - '0';
+            } else if (c == '(') {
+                num = calculate1(s); // recursive
+            }
+            // the below section is mainly for calculating the new prevNum, the secondary is to sum the old prevNum
+            if(ops.indexOf(c) != -1 || c == ')' || index == s.length()) { // index == s.length() for calculate the last number
+                switch (prevOps) { // prevOps is used to get the new prevNum
+                    case '+':
+                        sum += prevNum; // do the calculation
+                        prevNum = num; // prevNum base on: 1. prevOps 2. num
+                        break;
+                    case '-':
+                        sum += prevNum;
+                        prevNum = -num; // note: -num
+                        break;
+                    case '*':
+                        prevNum *= num; // "*" and "/" ops is calculated firstly, then sum.
+                        break;
+                    case '/':
+                        prevNum /= num;
+                        break;
+                }
+                if (c == ')') {
+                    break;
+                }
+                prevOps = c;
+                num = 0;
+            }
+        }
+
+        return sum + prevNum;
+    }
+
+// Template solution with stack
     public static int calculate(String s) {
         if (s == null || s.length() == 0) return 0;
 
@@ -60,52 +107,4 @@ public class BasicCalculatorAllOpsWithParentheses {
         return stack.stream().reduce(0, Integer::sum); // return stack.stream().reduce(Integer::sum).get();
     }
 
-// Better Solution - without stack: 1. index 2. queue. Same approach in decodeString problem
-// e.g. 2 + 3 * 4 (+)
-//        + [sum + prev = 0, prev = 2]
-//            * [ (2+) sum prev number, then prevNum = currentNum = 3]
-//                 + [(3*4) do the calculation, then prevNum = 12]
-    static int index = 0;
-    public static int calculate1(String s) {
-        char prevOps = '+';
-        int num = 0, sum = 0, prevNum = 0;
-        while (index <= s.length()) {
-            char c = ' ';
-            if(index == s.length()) {
-                c = '+';
-                index++;
-            }
-            else c = s.charAt(index++);
-
-            if ('0' <= c && c <= '9') {
-                num = num * 10 + c - '0';
-            } else if (c == '(') {
-                num = calculate1(s);
-            } else { // ops or ')' trigger the calculation
-                switch (prevOps) {
-                    case '+':
-                        sum += prevNum; // both "+" and "-" cases are to accumulate the value, so both "+" prev
-                        prevNum = num;
-                        break;
-                    case '-':
-                        sum += prevNum; // ^^
-                        prevNum = -num;
-                        break;
-                    case '*':
-                        prevNum *= num; // since "*" and "/" ops need to be calculated, then accumulate. so no "sum" here, but accumulated in above "+" and "-" case
-                        break;
-                    case '/':
-                        prevNum /= num;
-                        break;
-                }
-                if (c == ')') {
-                    break;
-                }
-                prevOps = c;
-                num = 0;
-            }
-        }
-
-        return sum + prevNum;
-    }
 }

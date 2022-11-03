@@ -1,4 +1,4 @@
-package category.twoPointer.FastSlowPointers;
+package category.TwoPointer.FastSlowPointers;
 
 import category.model.ListNode;
 

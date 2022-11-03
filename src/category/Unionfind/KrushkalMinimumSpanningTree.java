@@ -1,4 +1,4 @@
-package category.unionfind;
+package category.Unionfind;
 
 import java.util.ArrayList;
 import java.util.List;

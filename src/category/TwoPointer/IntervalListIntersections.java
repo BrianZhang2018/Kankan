@@ -1,4 +1,4 @@
-package category.twoPointer;
+package category.TwoPointer;
 
 import java.util.*;
 

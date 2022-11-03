@@ -15,9 +15,12 @@
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/myonsite/Calculator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/myonsite/TrappingWater.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/AGuide" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/AGuide" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorAllOpsNoParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorAllOpsNoParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorAllOpsWithParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorAllOpsWithParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorPlusDivideWithParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorPlusMinusWithParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorPlusMinusWithParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorPlusMinusWithParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/String/NextGreaterElementIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/String/NextGreaterElementIII.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -1386,7 +1389,7 @@
       <recent name="category.DynamicPlanning.wordBreak.dp.dfs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BasicCalculatorAllOpsWithParentheses">
+  <component name="RunManager" selected="Application.BasicCalculatorPlusMinusWithParentheses">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1594,13 +1597,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DecodeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Stack.DecodeString" />
+    <configuration name="BasicCalculatorPlusMinusWithParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.Stack.calculator.BasicCalculatorPlusMinusWithParentheses" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.Stack.*" />
+          <option name="PATTERN" value="category.Stack.calculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1608,13 +1611,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DelayQueueExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="confluent.DelayQueueExample" />
-      <module name="InterviewPrep" />
+    <configuration name="DecodeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.Stack.DecodeString" />
+      <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="confluent.*" />
+          <option name="PATTERN" value="category.Stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1844,19 +1847,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.DelayQueueExample" />
       <item itemvalue="Application.DelayedSchedulerSelfDev" />
       <item itemvalue="Application.DecodeString" />
       <item itemvalue="Application.BasicCalculatorAllOpsWithParentheses" />
       <item itemvalue="Application.BasicCalculatorAllOpsWithParentheses11" />
+      <item itemvalue="Application.BasicCalculatorPlusMinusWithParentheses" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BasicCalculatorPlusMinusWithParentheses" />
         <item itemvalue="Application.BasicCalculatorAllOpsWithParentheses" />
         <item itemvalue="Application.BasicCalculatorAllOpsWithParentheses11" />
         <item itemvalue="Application.BasicCalculatorAllOpsWithParentheses" />
         <item itemvalue="Application.DecodeString" />
-        <item itemvalue="Application.DelayedSchedulerSelfDev" />
       </list>
     </recent_temporary>
   </component>
@@ -2096,7 +2099,7 @@
       <workItem from="1665416380260" duration="20370000" />
       <workItem from="1665585422933" duration="28075000" />
       <workItem from="1665949831493" duration="138395000" />
-      <workItem from="1667338499923" duration="16982000" />
+      <workItem from="1667338499923" duration="21650000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>

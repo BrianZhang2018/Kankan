@@ -1,4 +1,4 @@
-package category.unionfind.simpleVersion;
+package category.Unionfind.simpleVersion;
 
 /**
  * https://leetcode.com/problems/number-of-provinces/

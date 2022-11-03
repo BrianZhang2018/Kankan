@@ -20,7 +20,7 @@ public class BasicCalculatorAllOpsNoParentheses {
         if (s == null || s.length() == 0) return 0;
         Stack<Integer> stack = new Stack<>();
         String signs = "+-*/";
-        char prevOps = '+';
+        char ops = '+';
         int num = 0;
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
@@ -29,16 +29,16 @@ public class BasicCalculatorAllOpsNoParentheses {
             }
             // Catch: not "else if" here as we need compute the "last number", below is the template way to calculate the number with ops
             if (i == s.length() - 1 || (signs.indexOf(c) != -1)) { // 解题思路: 当我们遇到一个Ops时，要把前面的部分计算掉(prevOps "+-*/" number)
-                if (prevOps == '-') {
+                if (ops == '-') {
                     stack.push(-num);
-                } else if (prevOps == '+') {
+                } else if (ops == '+') {
                     stack.push(num);
-                } else if (prevOps == '*') {
+                } else if (ops == '*') {
                     stack.push(stack.pop() * num);
-                } else if (prevOps == '/') {
+                } else if (ops == '/') {
                     stack.push(stack.pop() / num);
                 }
-                prevOps = c;
+                ops = c;
                 num = 0;
             }
         }
@@ -51,7 +51,7 @@ public class BasicCalculatorAllOpsNoParentheses {
         int prevNum = 0, num = 0, sum = 0;
         int index = 0;
         char prevOps = '+';
-        String ops = "+-*/";
+        String opsSign = "+-*/";
         s = s.trim();
         while (index < s.length()) {
             char c = s.charAt(index++);
@@ -60,7 +60,7 @@ public class BasicCalculatorAllOpsNoParentheses {
                 num = num * 10 + c - '0';
             }
 
-            if (ops.indexOf(c) != -1 || index == s.length()) {
+            if (opsSign.indexOf(c) != -1 || index == s.length()) {
                 switch (prevOps) {
                     case '+':
                         sum += prevNum;
@@ -85,6 +85,7 @@ public class BasicCalculatorAllOpsNoParentheses {
         return sum + prevNum;
     }
 
+    // for reference: use array to mimic stack
     public int calculate2(String s) {
         if (s.length() >= 209079) return 199;
 

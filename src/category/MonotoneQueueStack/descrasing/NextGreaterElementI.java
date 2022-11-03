@@ -22,7 +22,7 @@ public class NextGreaterElementI {
         //System.out.println(Arrays.toString(nextGreaterElement2(new int[]{4, 1, 2}, new int[]{1,3,4,2})));
     }
 
-    // in-sequence traversal (start from the left of array)
+// in-sequence traversal (start from the left of array)
     public static int[] nextGreaterElement1(int[] nums1, int[] nums2) {
         Stack<Integer> stack = new Stack<>();
         Map<Integer, Integer> map = new HashMap<>();
@@ -43,7 +43,7 @@ public class NextGreaterElementI {
         return res;
     }
 
-     // reverse-sequence traversal (start from the end of array)
+// reverse-sequence traversal (start from the end of array)
     public static int[] nextGreaterElement2(int[] nums1, int[] nums2) {
         Stack<Integer> stack = new Stack<>();
         Map<Integer, Integer> map = new HashMap<>();

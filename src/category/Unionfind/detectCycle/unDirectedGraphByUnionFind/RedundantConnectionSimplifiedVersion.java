@@ -1,4 +1,4 @@
-package category.unionfind.detectCycle.unDirectedGraphByUnionFind;
+package category.Unionfind.detectCycle.unDirectedGraphByUnionFind;
 
 /**
  * https://leetcode.com/problems/redundant-connection/discuss/107984/10-line-Java-solution-Union-Find.

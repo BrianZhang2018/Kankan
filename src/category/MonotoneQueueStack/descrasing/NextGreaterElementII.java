@@ -34,6 +34,7 @@ public class NextGreaterElementII {
         return next;
     }
 
+    // array solution
     public static int[] nextGreaterElementsArraySolution(int[] nums) {
         if(nums == null || nums.length ==0) return nums;
 

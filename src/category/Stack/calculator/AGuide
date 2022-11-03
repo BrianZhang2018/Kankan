@@ -3,9 +3,50 @@
 BasicCalculatorAllOpsNoParentheses -> BasicCalculatorPlusDivideParentheses -> BasicCalculatorAllOpsParentheses
 
 解题思路：
+Common approach for all the calculator or decodeString problem:
 
-template:
+BasicCalculatorAllOpsWithParentheses.java
 
+    static int index = 0;
+    public static int calculate1(String s) {
+        char prevOps = '+';
+        int num = 0, sum = 0, prevNum = 0;
+        String ops = "+-/*";
+        while (index < s.length()) {
+            char c = s.charAt(index++);
+            if ('0' <= c && c <= '9') {
+                num = num * 10 + c - '0';
+            } else if (c == '(') {
+                num = calculate1(s); // recursive
+            }
+            // the below section is mainly for calculating the new prevNum, the secondary is to sum the old prevNum
+            if(ops.indexOf(c) != -1 || c == ')' || index == s.length()) { // index == s.length() for calculate the last number
+                switch (prevOps) { // prevOps is used to get the new prevNum
+                    case '+':
+                        sum += prevNum; // do the calculation
+                        prevNum = num; // prevNum base on: 1. prevOps 2. num
+                        break;
+                    case '-':
+                        sum += prevNum;
+                        prevNum = -num; // note: -num
+                        break;
+                    case '*':
+                        prevNum *= num; // "*" and "/" ops is calculated firstly, then sum.
+                        break;
+                    case '/':
+                        prevNum /= num;
+                        break;
+                }
+                if (c == ')') {
+                    break;
+                }
+                prevOps = c;
+                num = 0;
+            }
+        }
+
+
+Stack template solution:
 1. prevSign - track previous sign
 2. tmpNumber - the number between the sign
 3. common way calculate the number

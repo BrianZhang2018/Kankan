@@ -1,4 +1,4 @@
-package category.twoPointer;
+package category.TwoPointer;
 /**
  * https://leetcode.com/problems/sort-colors/
  *

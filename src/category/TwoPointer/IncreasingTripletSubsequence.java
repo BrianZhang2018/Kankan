@@ -1,4 +1,4 @@
-package category.twoPointer;
+package category.TwoPointer;
 
 /**
  * Created by brianzhang on 9/4/18.

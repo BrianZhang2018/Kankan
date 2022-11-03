@@ -4,9 +4,9 @@ package category.frequency;
  * this question is the same with https://leetcode.com/problems/find-all-anagrams-in-a-string/
  *
  * idea: one string will be a permutation of another string only if both of them
- *       contain the same characters with the "same frequency".
+ * contain the same characters with the "same frequency".
  */
-public class PermutationString {
+public class PermutationInString {
     public static void main(String[] args) {
         System.out.println(checkInclusion("ab", "eidbaooo"));
     }

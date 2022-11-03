@@ -1,4 +1,4 @@
-package category.unionfind;
+package category.Unionfind;
 
 /**
  * https://www.cnblogs.com/Dylan-Java-NYC/p/11280623.html

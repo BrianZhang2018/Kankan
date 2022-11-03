@@ -11,12 +11,13 @@
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/confluent/DelayQueueExample.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/confluent/DelayedSchedulerSelfDev.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorAllOpsWithParentheses.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/confluent/WindowedAverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/confluent/WindowedAverage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/myonsite/Calculator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/myonsite/TrappingWater.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorAllOpsNoParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorAllOpsNoParentheses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorAllOpsWithParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorAllOpsWithParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorPlusDivideWithParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorPlusMinusWithParentheses.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -2095,7 +2096,7 @@
       <workItem from="1665416380260" duration="20370000" />
       <workItem from="1665585422933" duration="28075000" />
       <workItem from="1665949831493" duration="138395000" />
-      <workItem from="1667338499923" duration="11510000" />
+      <workItem from="1667338499923" duration="16982000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2620,11 +2621,6 @@
           <url>file://$PROJECT_DIR$/src/category/Stack/DecodeString.java</url>
           <line>19</line>
           <option name="timeStamp" value="1278" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/Stack/calculator/BasicCalculatorAllOpsWithParentheses.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="1284" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

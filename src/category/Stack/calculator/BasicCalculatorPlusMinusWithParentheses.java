@@ -4,11 +4,11 @@ import java.util.Stack;
 
 /**
  * https://leetcode.com/problems/basic-calculator/
- * Operation includes: (), '+', '-' and ' '
+ * Operation includes: (), '+', '-', allow empty ' '
  *
  * Created by brianzhang on 11/17/19.
  */
-public class BasicCalculatorPlusDivideWithParentheses {
+public class BasicCalculatorPlusMinusWithParentheses {
     public static void main(String[] args) {
         System.out.println(calculate("2-(5-6)"));
     }
@@ -31,9 +31,9 @@ public class BasicCalculatorPlusDivideWithParentheses {
                 // e.g. "2-(5-6)" will be converted to "2-5+6" as opsStack.peek store the ops before the parentheses
                 prevOps = opsStack.peek() * (c == '+' ? 1: -1);
                 num = 0; // reset num
-            } else if(c == '(') {   // store the ops before current "(....)"
+            } else if(c == '(') { // store the ops before current "(....)"
                 opsStack.push(prevOps);
-            } else if(c == ')') {   // remove the ops before current "(....)"
+            } else if(c == ')') { // remove the ops before current "(....)"
                 opsStack.pop();
             }
         }

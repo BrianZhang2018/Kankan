@@ -18,7 +18,9 @@ public class BasicCalculatorAllOpsWithParentheses {
         System.out.println(calculate1("(5*(4-(3*2)))"));*/
         System.out.println(calculate1("2+5-6+1"));
     }
+
 // Better Solution - without stack, how to track the progress: 1. global index 2. queue. Same approach in "decodeString" problem
+// Can be used for all the calculator problems.
 // e.g. 2 + 3 - 4 (+)
 //        + [sum += prevNum(0), then prevNum = 2, prevOps= '+']
 //            - [ sum += prevNum(2), then prevNum = +3, prevOps= '-']
@@ -76,7 +78,7 @@ public class BasicCalculatorAllOpsWithParentheses {
         for (int i = 0; i < m; i++) {
             char c = s.charAt(i);
             if (Character.isDigit(c)) {
-                num = num * 10 + c - '0'; //
+                num = num * 10 + c - '0';
             } else if (c == '(') {
                 int start = i, cnt = 0;
                 // find end index of rightmost outer parenthesis "(.(...).)"
@@ -106,5 +108,4 @@ public class BasicCalculatorAllOpsWithParentheses {
 
         return stack.stream().reduce(0, Integer::sum); // return stack.stream().reduce(Integer::sum).get();
     }
-
 }

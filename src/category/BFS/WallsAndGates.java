@@ -7,9 +7,7 @@ import java.util.*;
  *
  * Created by brianzhang on 4/26/20.
  */
-
 public class WallsAndGates {
-
     public static void main(String[] args) {
         WallsAndGates wa = new WallsAndGates();
         int[][] rooms = new int[][]{{2147483647,-1,0,2147483647},{2147483647,2147483647,2147483647,-1},{2147483647,-1,2147483647,-1},{0,-1,2147483647,2147483647}};
@@ -19,11 +17,10 @@ public class WallsAndGates {
         }
     }
 
-    // BFS Solution
+// 1. BFS Solution
     public void wallsAndGatesBFS(int[][] rooms) {
         int m = rooms.length, n = rooms[0].length;
         Queue<int[]> queue = new LinkedList<>();
-
         // opposite way: gate to empty room
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
@@ -40,9 +37,9 @@ public class WallsAndGates {
             for (int[] dir : dirs) {
                 int nx = p[0] + dir[0];
                 int ny = p[1] + dir[1];
-                if (nx < m && nx >= 0 && ny < n && ny >= 0 && rooms[nx][ny] != -1) { // careful nx, ny ">=" 0
+                if (nx < m && nx >= 0 && ny < n && ny >= 0 && rooms[nx][ny] != -1) { // careful, nx, ny ">=" 0
                     if (rooms[nx][ny] == Integer.MAX_VALUE) {
-                        rooms[nx][ny] = distance + 1;
+                        rooms[nx][ny] = distance + 1; // key: memo the distance
                         queue.add(new int[]{nx, ny});
                     }
                 }
@@ -50,7 +47,7 @@ public class WallsAndGates {
         }
     }
 
-    // DFS Solution
+// 2. DFS Solution
     public void wallsAndGatesDFS(int[][] rooms) {
         for (int i = 0; i < rooms.length; ++i) {
             for (int j = 0; j < rooms[0].length; ++j) {

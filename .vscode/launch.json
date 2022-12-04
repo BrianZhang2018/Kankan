@@ -1,172 +1,179 @@
 {
-    "configurations": [
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - WordSearch",
-            "request": "launch",
-            "mainClass": "category.BacktracingDFS.WordSearch"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - PermutationBruteForce",
-            "request": "launch",
-            "mainClass": "category.BacktracingDFS.PermutationBruteForce"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - ShortestCommonSupersequence",
-            "request": "launch",
-            "mainClass": "category.DynamicPlanning.LCS.ShortestCommonSupersequence"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - ValidateParenthesisString",
-            "request": "launch",
-            "mainClass": "category.string.ValidateParenthesisString"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - DeckOfCards",
-            "request": "launch",
-            "mainClass": "OOD.DeckOfCards.DeckOfCards"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - SumEachDigitInANumber",
-            "request": "launch",
-            "mainClass": "companies.grubhub.SumEachDigitInANumber"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - FindMeanAndMedianOfScores",
-            "request": "launch",
-            "mainClass": "companies.stash.FindMeanAndMedianOfScores"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MaxAreaOfIsland",
-            "request": "launch",
-            "mainClass": "category.DFS.MaxAreaOfIsland"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LongestPalindromeSubseq",
-            "request": "launch",
-            "mainClass": "category.DynamicPlanning.LongestPalindromeSubseq"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LongestConsecutiveSullist",
-            "request": "launch",
-            "mainClass": "companies.wayfair.LongestConsecutiveSullist"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MinimumHeightTrees",
-            "request": "launch",
-            "mainClass": "category.graph.topologicalsort.MinimumHeightTrees"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - FindNoParentAndOneParentNodes",
-            "request": "launch",
-            "mainClass": "companies.wayfair.FindNoParentAndOneParentNodes"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - IsGraphBipartite",
-            "request": "launch",
-            "mainClass": "category.graph.ColorSolution.IsGraphBipartite"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - TopologicalSortBFS",
-            "request": "launch",
-            "mainClass": "category.graph.topologicalsort.TopologicalSortBFS"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - DecodeString",
-            "request": "launch",
-            "mainClass": "category.javabasic.stack.DecodeString"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - FindMissingPositive",
-            "request": "launch",
-            "mainClass": "category.array.BitSet.FindMissingPositive"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - WordBreakII",
-            "request": "launch",
-            "mainClass": "category.DynamicPlanning.WordBreakII"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - WordBreakDP",
-            "request": "launch",
-            "mainClass": "category.DynamicPlanning.WordBreakDP"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LongestCommonSubstring",
-            "request": "launch",
-            "mainClass": "category.DynamicPlanning.LongestCommonSubstring"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LongestCommonPrefix",
-            "request": "launch",
-            "mainClass": "category.string.LongestCommonPrefix"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LongestConsecutiveSubList",
-            "request": "launch",
-            "mainClass": "companies.wayfair.LongestConsecutiveSubList"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - InitialPublicOffer",
-            "request": "launch",
-            "mainClass": "companies.braze.InitialPublicOffer"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LongestArithmeticSubsequenceOfGivenDifference",
-            "request": "launch",
-            "mainClass": "category.DynamicPlanning.LongestArithmeticSubsequenceOfGivenDifference"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Test",
-            "request": "launch",
-            "mainClass": "Test"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LongestSubstringWithAtLeastKRepeatingCharacters",
-            "request": "launch",
-            "mainClass": "category.slidingwindow.RepeatingCharacter.LongestSubstringWithAtLeastKRepeatingCharacters"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Play",
-            "request": "launch",
-            "mainClass": "Play"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - CombinationSum",
-            "request": "launch",
-            "mainClass": "category.BacktracingDFS.CombinationSum"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Test1",
-            "request": "launch",
-            "mainClass": "Play.Test1"
-        }
-    ]
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch SpiralMatrix",
+      "request": "launch",
+      "mainClass": "category.Array.SpiralMatrix",
+      "projectName": "Kankan_afffa60b"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - WordSearch",
+      "request": "launch",
+      "mainClass": "category.BacktracingDFS.WordSearch"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - PermutationBruteForce",
+      "request": "launch",
+      "mainClass": "category.BacktracingDFS.PermutationBruteForce"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - ShortestCommonSupersequence",
+      "request": "launch",
+      "mainClass": "category.DynamicPlanning.LCS.ShortestCommonSupersequence"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - ValidateParenthesisString",
+      "request": "launch",
+      "mainClass": "category.string.ValidateParenthesisString"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DeckOfCards",
+      "request": "launch",
+      "mainClass": "OOD.DeckOfCards.DeckOfCards"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SumEachDigitInANumber",
+      "request": "launch",
+      "mainClass": "companies.grubhub.SumEachDigitInANumber"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - FindMeanAndMedianOfScores",
+      "request": "launch",
+      "mainClass": "companies.stash.FindMeanAndMedianOfScores"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MaxAreaOfIsland",
+      "request": "launch",
+      "mainClass": "category.DFS.MaxAreaOfIsland"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LongestPalindromeSubseq",
+      "request": "launch",
+      "mainClass": "category.DynamicPlanning.LongestPalindromeSubseq"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LongestConsecutiveSullist",
+      "request": "launch",
+      "mainClass": "companies.wayfair.LongestConsecutiveSullist"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MinimumHeightTrees",
+      "request": "launch",
+      "mainClass": "category.graph.topologicalsort.MinimumHeightTrees"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - FindNoParentAndOneParentNodes",
+      "request": "launch",
+      "mainClass": "companies.wayfair.FindNoParentAndOneParentNodes"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - IsGraphBipartite",
+      "request": "launch",
+      "mainClass": "category.graph.ColorSolution.IsGraphBipartite"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - TopologicalSortBFS",
+      "request": "launch",
+      "mainClass": "category.graph.topologicalsort.TopologicalSortBFS"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DecodeString",
+      "request": "launch",
+      "mainClass": "category.javabasic.stack.DecodeString"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - FindMissingPositive",
+      "request": "launch",
+      "mainClass": "category.array.BitSet.FindMissingPositive"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - WordBreakII",
+      "request": "launch",
+      "mainClass": "category.DynamicPlanning.WordBreakII"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - WordBreakDP",
+      "request": "launch",
+      "mainClass": "category.DynamicPlanning.WordBreakDP"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LongestCommonSubstring",
+      "request": "launch",
+      "mainClass": "category.DynamicPlanning.LongestCommonSubstring"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LongestCommonPrefix",
+      "request": "launch",
+      "mainClass": "category.string.LongestCommonPrefix"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LongestConsecutiveSubList",
+      "request": "launch",
+      "mainClass": "companies.wayfair.LongestConsecutiveSubList"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - InitialPublicOffer",
+      "request": "launch",
+      "mainClass": "companies.braze.InitialPublicOffer"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LongestArithmeticSubsequenceOfGivenDifference",
+      "request": "launch",
+      "mainClass": "category.DynamicPlanning.LongestArithmeticSubsequenceOfGivenDifference"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test",
+      "request": "launch",
+      "mainClass": "Test"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LongestSubstringWithAtLeastKRepeatingCharacters",
+      "request": "launch",
+      "mainClass": "category.slidingwindow.RepeatingCharacter.LongestSubstringWithAtLeastKRepeatingCharacters"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Play",
+      "request": "launch",
+      "mainClass": "Play"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - CombinationSum",
+      "request": "launch",
+      "mainClass": "category.BacktracingDFS.CombinationSum"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test1",
+      "request": "launch",
+      "mainClass": "Play.Test1"
+    }
+  ]
 }

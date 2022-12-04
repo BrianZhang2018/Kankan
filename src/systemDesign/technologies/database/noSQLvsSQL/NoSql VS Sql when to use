@@ -4,11 +4,10 @@
 SQL is for ACID
 - if db is stable, less iteration (就是schema change not frequent)
 
-NoSQL is for unstructured data and esay to scale horizontally
+NoSQL is for unstructured data and easy to scale horizontally
 - Imagine you're tasked with managing large amounts of unstructured data, such as text from emails and customer surveys, data collected by a network of mobile apps, or random social media information. The information is unorganized.
 
 - rapid development, frequent iteration, need change db schema frequently
-
 
 #### how to choose Nosql vs SQL
 

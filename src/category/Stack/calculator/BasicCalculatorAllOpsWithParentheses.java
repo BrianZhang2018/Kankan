@@ -16,7 +16,7 @@ public class BasicCalculatorAllOpsWithParentheses {
         System.out.println(calculate1("6-(1+(4/2))"));*/
      /*   System.out.println(calculate("(5*(4-(3*2)))"));
         System.out.println(calculate1("(5*(4-(3*2)))"));*/
-        System.out.println(calculate1("2+5-6+1"));
+        System.out.println(calculate("2+5-6+1"));
     }
 
 // Better Solution - without stack, how to track the progress: 1. global index 2. queue. Same approach in "decodeString" problem
@@ -26,7 +26,7 @@ public class BasicCalculatorAllOpsWithParentheses {
 //            - [ sum += prevNum(2), then prevNum = +3, prevOps= '-']
 //                 + [sum += prevNum(3), then prevNum = -4]
     static int index = 0;
-    public static int calculate1(String s) {
+    public static int calculate(String s) {
         char prevOps = '+';
         int num = 0, sum = 0, prevNum = 0;
         String ops = "+-/*";
@@ -35,7 +35,7 @@ public class BasicCalculatorAllOpsWithParentheses {
             if ('0' <= c && c <= '9') {
                 num = num * 10 + c - '0';
             } else if (c == '(') {
-                num = calculate1(s); // recursive
+                num = calculate(s); // recursive
             }
             // the below section is mainly for calculating the new prevNum, the secondary is to sum the old prevNum
             if(ops.indexOf(c) != -1 || c == ')' || index == s.length()) { // index == s.length() for calculate the last number
@@ -67,7 +67,7 @@ public class BasicCalculatorAllOpsWithParentheses {
     }
 
 // Template solution with stack
-    public static int calculate(String s) {
+    public static int calculate1(String s) {
         if (s == null || s.length() == 0) return 0;
 
         char prevOps = '+';
@@ -88,7 +88,7 @@ public class BasicCalculatorAllOpsWithParentheses {
                     if (cnt == 0) break;
                     i++;
                 }
-                num = calculate(s.substring(start + 1, i)); // take the sub string inside of parenthesis ( ... )
+                num = calculate1(s.substring(start + 1, i)); // take the sub string inside of parenthesis ( ... )
             }
 
             if (ops.indexOf(c) != -1 || i == m - 1) {  // template: calculate the number before the current sign

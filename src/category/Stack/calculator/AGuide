@@ -1,9 +1,10 @@
 题的递进：
-
-BasicCalculatorAllOpsNoParentheses -> BasicCalculatorPlusDivideParentheses -> BasicCalculatorAllOpsParentheses
+BasicCalculatorAllOpsNoParentheses -> BasicCalculatorPlusMinusParentheses -> BasicCalculatorAllOpsParentheses
 
 解题思路：
-Common approach for all the calculator or decodeString problem:
+Key: when reach the Ops (+-*/), 1. do the calculation (sum the prevNum) 2. decide the value for curr num base on prevOps
+
+1. Common approach for all the calculator or decodeString problem:
 
 BasicCalculatorAllOpsWithParentheses.java
 

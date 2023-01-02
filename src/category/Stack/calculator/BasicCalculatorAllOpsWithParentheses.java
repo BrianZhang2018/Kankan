@@ -1,7 +1,6 @@
 package category.Stack.calculator;
 
 import java.util.Stack;
-
 /**
  * https://leetcode.com/problems/basic-calculator-iii/
  *
@@ -38,8 +37,8 @@ public class BasicCalculatorAllOpsWithParentheses {
                 num = calculate(s); // recursive
             }
             // the below section is mainly for calculating the new prevNum, the secondary is to sum the old prevNum
-            if(ops.indexOf(c) != -1 || c == ')' || index == s.length()) { // index == s.length() for calculate the last number
-                switch (prevOps) { // prevOps is used to get the new prevNum
+            if(ops.indexOf(c) != -1 || c == ')' || index == s.length()) { // index == s.length(): faciliates to computer the last number
+                switch (prevOps) { // prevOps is used to determine the new prevNum
                     case '+':
                         sum += prevNum; // do the calculation
                         prevNum = num; // prevNum base on: 1. prevOps 2. num

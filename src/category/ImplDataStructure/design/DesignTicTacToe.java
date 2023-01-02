@@ -1,6 +1,7 @@
 package category.ImplDataStructure.design;
 
 /**
+ * https://leetcode.com/problems/design-tic-tac-toe/description/
  * https://yeqiuquan.blogspot.com/2017/04/348-design-tic-tac-toe.html
  *
  * 这种方法的思路是，如果玩家1在第一行某一列放了一个子，那么rows[0]自增1，如果玩家2在第一行某一列放了一个子，则rows[0]自减1，
@@ -9,27 +10,19 @@ package category.ImplDataStructure.design;
  * Created by brianzhang on 7/8/20.
  */
 public class DesignTicTacToe {
-
     private int[] rows;
     private int[] cols;
     private int diagonal;
     private int antiDiagonal;
     private int size;
-
-    /**
-     * Initialize your data structure here.
-     */
     public DesignTicTacToe(int n) {
         rows = new int[n];
         cols = new int[n];
         diagonal = 0;
         antiDiagonal = 0;
-        size = n;
     }
-
     /**
      * Player {player} makes a move at ({row}, {col}).
-     *
      * @param row    The row of the board.
      * @param col    The column of the board.
      * @param player The player, can be either 1 or 2.
@@ -39,18 +32,18 @@ public class DesignTicTacToe {
      * 2: Player 2 wins.
      */
     public int move(int row, int col, int player) {
-        int v = player == 1 ? 1 : -1;
-        rows[row] += v;
-        cols[col] += v;
+        int currPlayer = player == 1 ? 1 : -1;
+        rows[row] += currPlayer;
+        cols[col] += currPlayer;
 
-        if (row == col) {
-            diagonal += v;
-        }
-        if (row == size - col - 1) {
-            antiDiagonal += v;
-        }
-        if (Math.abs(rows[row]) == size || Math.abs(cols[col]) == size
-                || Math.abs(diagonal) == size || Math.abs(antiDiagonal) == size) {
+        if (row == col) diagonal += currPlayer;
+        if (row == cols.length - col - 1)  antiDiagonal += currPlayer;
+
+        int n = cols.length;
+        if (Math.abs(rows[row]) == n ||
+                Math.abs(cols[col]) == n ||
+                Math.abs(diagonal) == n ||
+                Math.abs(antiDiagonal) == n) {
             return player;
         }
         return 0;

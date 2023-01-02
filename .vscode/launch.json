@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch NextGreaterElementI",
+      "request": "launch",
+      "mainClass": "category.MonotoneQueueStack.descrasing.NextGreaterElementI",
+      "projectName": "Kankan_afffa60b"
+    },
+    {
+      "type": "java",
       "name": "Launch SpiralMatrix",
       "request": "launch",
       "mainClass": "category.Array.SpiralMatrix",

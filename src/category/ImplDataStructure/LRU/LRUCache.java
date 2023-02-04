@@ -6,7 +6,11 @@ import java.util.*;
  * https://leetcode.com/problems/lru-cache/
  *
  * LRU (Least recently used)
- * Solution: HashMap + Doubly LinkedList = Java LinkedHashMap
+ * Solution: HashMap + Doubly LinkedList (self-defined)
+ *
+ *                      Map<key, Node>
+ *                              /
+ * doubly linkedList:    |  | node | ... |
  *
  * https://medium.com/@krishankantsinghal/my-first-blog-on-medium-583159139237
  *

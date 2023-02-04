@@ -66,3 +66,7 @@ top-down: directly try to solve the problem, and store the value in the memo, an
 7.
 - DP is used to get the number of the solution
 - Backtracking can list all the solution
+
+
+Some good leetcode example:
+https://leetcode.com/problems/min-cost-climbing-stairs/solutions/476388/4-ways-step-by-step-from-recursion-top-down-dp-bottom-up-dp-fine-tuning/?orderBy=most_votes

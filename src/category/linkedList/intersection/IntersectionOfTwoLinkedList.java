@@ -2,7 +2,6 @@ package category.linkedList.intersection;
 
 import category.linkedList.ListNode;
 import java.util.*;
-
 /**
  * https://leetcode.com/problems/intersection-of-two-linked-lists/
  *

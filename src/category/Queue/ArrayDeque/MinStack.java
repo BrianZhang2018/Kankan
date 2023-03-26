@@ -1,9 +1,7 @@
 package category.Queue.ArrayDeque;
 
-import javafx.util.Pair;
-
+import category.model.Pair;
 import java.util.*;
-
 /**
  * https://leetcode.com/problems/min-stack
  *

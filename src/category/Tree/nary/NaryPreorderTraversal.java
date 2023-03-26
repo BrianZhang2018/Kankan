@@ -8,25 +8,39 @@ import java.util.*;
  * Created by brianzhang on 6/8/20.
  */
 public class NaryPreorderTraversal {
-
-    public static void main(String[] args) {
-        Queue<Integer> queue = new LinkedList<>();
-        System.out.println(queue.isEmpty());
-    }
-
+    public static void main(String[] args) {}
+    // dfs solution
     List<Integer> list = new ArrayList<>();
     public List<Integer> preOrder(Node root) {
         helper(root);
         return list;
     }
-
     public void helper(Node node){
         if(node == null) return;
         list.add(node.val);
-
         for(Node sub : node.children){
             helper(sub);
         }
+    }
+
+    // bfs solution
+    public List<Integer> preorderBFS(Node root) {
+        List<Integer> res = new ArrayList();
+        Stack<Node> stack = new Stack();
+        if(root == null) return res;
+        stack.push(root);
+
+        while(!stack.isEmpty()) {
+            Node n = stack.pop();
+            res.add(n.val);
+
+            if(n.children == null) continue;
+            for(int i=n.children.size()-1; i>=0; i--) {
+                stack.push(n.children.get(i));
+            }
+        }
+
+        return res;
     }
 }
 

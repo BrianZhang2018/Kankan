@@ -9,14 +9,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/advance/distributedLock/a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/advance/paper/Chubby-paxos.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/systemDesign/delayedScheduler/example/TaskScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/systemDesign/delayedScheduler/example/TaskScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/model/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/IntersectionOfTwoArraysII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/IntersectionOfTwoArraysII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/DP" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/DP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/linkedList/intersection/IntersectionOfTwoLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/linkedList/intersection/IntersectionOfTwoLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KillLeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KillLeetCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Queue/ArrayDeque/MinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Queue/ArrayDeque/MinStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Stack/pair/CandyCrushString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/pair/CandyCrushString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/pathSum/BinaryTreeMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/pathSum/BinaryTreeMaximumPathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/nary/NaryPreorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/nary/NaryPreorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/binaryTree/SerializeDeserializeBTreePreorderDfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/serializeDeserialize/binaryTree/SerializeDeserializeBTreePreorderDfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/PathWithMaximumProbability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/PathWithMaximumProbability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/javabasic/ListComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/javabasic/ListComparator.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -174,9 +181,6 @@
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/liberica-1.8.0_312/src.zip!/java/util/Objects.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1348,7 +1352,10 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.269275&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -1385,7 +1392,7 @@
       <recent name="category.frequency" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TaskScheduler">
+  <component name="RunManager" selected="Application.CombinationSumI">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1561,13 +1568,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="DashMart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="doordash.my2022.onsite.DashMart" />
-      <module name="InterviewPrep" />
+    <configuration name="BinaryTreeMaximumPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.Tree.BinaryTree.pathSum.BinaryTreeMaximumPathSum" />
+      <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="doordash.my2022.onsite.*" />
+          <option name="PATTERN" value="category.Tree.BinaryTree.pathSum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1575,13 +1582,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExecutorExample1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="multiThreading.ExecutorExample1" />
+    <configuration name="CombinationSumI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.DFSBacktracing.combinationAndPermutation.combination.CombinationSumI" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="multiThreading.*" />
+          <option name="PATTERN" value="category.DFSBacktracing.combinationAndPermutation.combination.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1589,13 +1596,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExecutorExample1 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="multiThreading.ExecutorExample1" />
+    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.ImplDataStructure.LRU.LRUCache" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="multiThreading.*" />
+          <option name="PATTERN" value="category.ImplDataStructure.LRU.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1603,13 +1610,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExecutorExample1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="multiThreading.ExecutorExample1" />
+    <configuration name="ListComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.javabasic.ListComparator" />
       <module name="KillLeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="multiThreading.*" />
+          <option name="PATTERN" value="category.javabasic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1829,19 +1836,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.CombinationSumI" />
+      <item itemvalue="Application.ListComparator" />
+      <item itemvalue="Application.BinaryTreeMaximumPathSum" />
+      <item itemvalue="Application.LRUCache" />
       <item itemvalue="Application.TaskScheduler" />
-      <item itemvalue="Application.ExecutorExample1 (1)" />
-      <item itemvalue="Application.ExecutorExample1 (2)" />
-      <item itemvalue="Application.ExecutorExample1" />
-      <item itemvalue="Application.DashMart" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CombinationSumI" />
+        <item itemvalue="Application.ListComparator" />
+        <item itemvalue="Application.BinaryTreeMaximumPathSum" />
+        <item itemvalue="Application.LRUCache" />
         <item itemvalue="Application.TaskScheduler" />
-        <item itemvalue="Application.ExecutorExample1 (1)" />
-        <item itemvalue="Application.ExecutorExample1 (2)" />
-        <item itemvalue="Application.ExecutorExample1" />
-        <item itemvalue="Application.DashMart" />
       </list>
     </recent_temporary>
   </component>
@@ -2096,6 +2103,10 @@
       <workItem from="1674226198757" duration="846000" />
       <workItem from="1674588923161" duration="665000" />
       <workItem from="1674745161724" duration="276000" />
+      <workItem from="1675533892857" duration="402000" />
+      <workItem from="1675534318910" duration="4311000" />
+      <workItem from="1679621010919" duration="2088000" />
+      <workItem from="1679799819650" duration="1484000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2562,7 +2573,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/category/Tree/serializeDeserialize/binaryTree/SerializeDeserializeBTreePreorderDfs.java</url>
-          <line>50</line>
+          <line>49</line>
           <option name="timeStamp" value="1188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

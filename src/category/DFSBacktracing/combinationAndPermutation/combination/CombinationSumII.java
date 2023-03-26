@@ -15,14 +15,12 @@ public class CombinationSumII {
     public static void main(String[] args) {
         System.out.println(new CombinationSumII().combinationSum(new int[]{10,1,2,7,6,1,5}, 8));
     }
-
     public List<List<Integer>> combinationSum(int[] nums, int target) {
         List<List<Integer>> res = new ArrayList();
         Arrays.sort(nums); // 剪枝
         dfs(nums, target, 0, new ArrayList(), res);
         return res;
     }
-
     // backtracking
     private void dfs(int[] nums, int target, int start, List<Integer> temp, List<List<Integer>> res) {
         if (target == 0) {

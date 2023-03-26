@@ -1,7 +1,6 @@
 package category.Tree.serializeDeserialize.binaryTree;
 
 import category.model.TreeNode;
-import sun.awt.image.ImageWatched;
 
 import java.util.*;
 

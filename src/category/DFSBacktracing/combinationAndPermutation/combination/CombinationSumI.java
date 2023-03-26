@@ -18,27 +18,26 @@ import java.util.*;
  */
 public class CombinationSumI {
     public static void main(String[] args) {
-        System.out.println(new CombinationSumI().combinationSum(new int[]{1,2,5}, 5));
+        System.out.println(new CombinationSumI().combinationSum(new int[]{2,3,6,7}, 7));
         // System.out.println(new CombinationSum().change(target, arr));
     }
-
     public List<List<Integer>> combinationSum(int[] nums, int target) {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(nums);
         dfs(nums,0, target, new ArrayList<>(), res);
         return res;
     }
-
     private void dfs(int[] nums, int start, int target, List<Integer> temp, List<List<Integer>> res) {
          if (target == 0) {
             res.add(new ArrayList<>(temp));
             return;
         }
-        for (int i = start; i < nums.length; i++) { // but, permutation i=0
-            if(nums[i] > target) break; // optimization (剪枝), that's why we sort the number in the beginning to avoid calculate the impossible larger candidates
+        for (int index = start; index < nums.length; index++) { // but, permutation i=0
+            if(nums[index] > target)
+                break; // optimization (剪枝), that's why we sort the number in the beginning to avoid calculate the impossible larger candidates
 
-            temp.add(nums[i]);
-            dfs(nums, i,target - nums[i], temp, res); // not "i + 1" here since can reuse same element
+            temp.add(nums[index]);
+            dfs(nums, index,target - nums[index], temp, res); // not "i + 1" here since can reuse same element
             temp.remove(temp.size() - 1);
         }
     }

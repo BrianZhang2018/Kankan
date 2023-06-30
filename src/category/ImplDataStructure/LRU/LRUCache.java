@@ -7,7 +7,6 @@ import java.util.*;
  *
  * LRU (Least recently used)
  * Solution: HashMap + Doubly LinkedList (self-defined)
- *
  *                      Map<key, Node>
  *                              /
  * doubly linkedList:    |  | node | ... |
@@ -31,7 +30,6 @@ public class LRUCache{
         System.out.println(lRUCache.get(3));    // return 3
         System.out.println(lRUCache.get(4));    // return 4
     }
-
     class DllNode { // double linkedList node
         private int key, value;
         private DllNode prev, next;
@@ -40,10 +38,9 @@ public class LRUCache{
             this.key = key;
         }
     }
-
     private int cacheSize;
     // sync is object level lock, bad performance. ConcurrentHashMap instead, segment/bucket locking, default 16 threads to write at the same time
-    private Map<Integer, DllNode> map = Collections.synchronizedMap(new HashMap());
+    private Map<Integer, DllNode> cache = new HashMap();
     private DllNode head, tail;
     public LRUCache(int capacity) {
         this.cacheSize = capacity;
@@ -52,38 +49,35 @@ public class LRUCache{
         head.next = tail;
         tail.prev = head;
     }
-    // Returns the value of the key if found, otherwise returns -1.
-    // Marks item as most recently used.
+    // Returns the value of the key if found, otherwise returns -1 and Marks item as most recently used.
     public int get(int key) {
-        if (!map.containsKey(key)) return -1;
+        if (!cache.containsKey(key)) return -1;
 
-        DllNode node = map.get(key);
+        DllNode node = cache.get(key);
         removeNode(node);
         addToTop(node);  // move to top since it just used
         return node.value;
     }
-    // "Update" the value of the key if the "key exists" or adds the key-value pair
-    // to the cache. If the number of keys "exceeds the capacity", evict the least recently used key.
+    // "Update" the value of the key if the "key exists" or adds the key-value pair to the cache.
+    // If the number of keys "exceeds the capacity", evict the least recently used key.
     public void put(int key, int value) {
-        if (map.containsKey(key))
-            removeNode(map.get(key)); // remove existing node from doubly linkedList
+        if (cache.containsKey(key))
+            removeNode(cache.get(key)); // remove existing node from doubly linkedList
 
-        if (map.size() == cacheSize)
+        if (cache.size() == cacheSize)
             removeNode(tail.prev);
 
         addToTop(new DllNode(key, value));
     }
 
     public void removeNode(DllNode node) {
+        cache.remove(node.key);
         node.prev.next = node.next;
         node.next.prev = node.prev;
-        //synchronized (map){ map.remove(node.key);}
-        map.remove(node.key);
     }
 
     public void addToTop(DllNode node) {
-        //synchronized (map){ map.put(node.key, node);}
-        map.put(node.key, node);
+        cache.put(node.key, node);
         DllNode headNext = head.next;
         head.next = node;
         node.prev = head;

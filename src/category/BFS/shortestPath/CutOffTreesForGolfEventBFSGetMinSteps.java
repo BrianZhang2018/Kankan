@@ -6,12 +6,11 @@ import java.util.*;
  * https://leetcode.com/problems/cut-off-trees-for-golf-event/
  *
  * Solve the problems: Find the shortest path between each binaryTree
- *
+
  * The worst case time complexity could be O(m^2 * n^2) (m = number of rows, n = number of columns)
  * since there are m * n trees and for each BFS worst case time complexity is O(m * n) too.
  *
  * https://www.youtube.com/watch?v=OFkLC30OxXM
- *
  * Created by brianzhang on 2/18/19.
  */
 public class CutOffTreesForGolfEventBFSGetMinSteps {
@@ -25,8 +24,7 @@ public class CutOffTreesForGolfEventBFSGetMinSteps {
     }
 
     public int cutOffTree(List<List<Integer>> forest) {
-        if (forest == null || forest.size() == 0)
-            return 0;
+        if (forest == null || forest.size() == 0) return 0;
 
         int m = forest.size();
         int n = forest.get(0).size();

@@ -1,7 +1,6 @@
 package category.Tree.nary;
 
 import java.util.*;
-
 /**
  * https://leetcode.com/problems/n-ary-tree-preorder-traversal/
  *
@@ -57,4 +56,4 @@ class Node {
         this.val = val;
         this.children = children;
     }
-};
+}

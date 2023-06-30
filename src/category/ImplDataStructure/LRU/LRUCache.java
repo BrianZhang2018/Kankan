@@ -55,7 +55,7 @@ public class LRUCache{
 
         DllNode node = cache.get(key);
         removeNode(node);
-        addToTop(node);  // move to top since it just used
+        addToHead(node);  // move to top since it just used
         return node.value;
     }
     // "Update" the value of the key if the "key exists" or adds the key-value pair to the cache.
@@ -67,7 +67,7 @@ public class LRUCache{
         if (cache.size() == cacheSize)
             removeNode(tail.prev);
 
-        addToTop(new DllNode(key, value));
+        addToHead(new DllNode(key, value));
     }
 
     public void removeNode(DllNode node) {
@@ -76,7 +76,7 @@ public class LRUCache{
         node.next.prev = node.prev;
     }
 
-    public void addToTop(DllNode node) {
+    public void addToHead(DllNode node) {
         cache.put(node.key, node);
         DllNode headNext = head.next;
         head.next = node;

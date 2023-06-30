@@ -4,7 +4,6 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.*;
-
 class LRUCacheThreadSafe {
     public static void main(String[] args) {
         LRUCacheThreadSafe lRUCache = new LRUCacheThreadSafe(2);

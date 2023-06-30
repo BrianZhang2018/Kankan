@@ -9,17 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCacheThreadSafe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/thread-safe-explanation" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/linkedList/JosephusProblem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/companies/google/DiagonalTraverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/google/DiagonalTraverse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KillLeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfidenceLeetCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/shortestPath/CutOffTreesForGolfEventBFSGetMinSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/shortestPath/CutOffTreesForGolfEventBFSGetMinSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/nary/NaryPreorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/nary/NaryPreorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCacheThreadSafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCacheThreadSafe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/thread-safe-explanation" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/thread-safe-explanation" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -2106,7 +2100,7 @@
       <workItem from="1679799819650" duration="5430000" />
       <workItem from="1686341063275" duration="5186000" />
       <workItem from="1686841362370" duration="2497000" />
-      <workItem from="1688144218061" duration="4679000" />
+      <workItem from="1688144218061" duration="5316000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2635,16 +2629,6 @@
           <url>file://$PROJECT_DIR$/src/multiThreading/ExecutorExample1.java</url>
           <line>51</line>
           <option name="timeStamp" value="1279" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCacheThreadSafe.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="1281" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCacheThreadSafe.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="1282" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -13,4 +13,4 @@ It is crucial to ensure proper synchronization mechanisms are in place to mainta
 
 
 Q: when two threads are simultaneously moveToHead
-data inconsistencies
+it won't has issue since it always on the head node, but

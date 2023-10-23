@@ -9,7 +9,7 @@ import category.model.TreeNode;
  * Created by brianzhang on 4/8/20.
  */
 
-public class LowestCommonAncestorBST {
+public class LowestCommonAncestorBinarySearchTree {
     public static void main(String[] args) {}
 
     // dfs

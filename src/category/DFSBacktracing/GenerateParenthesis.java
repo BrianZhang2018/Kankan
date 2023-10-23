@@ -18,33 +18,56 @@ public class GenerateParenthesis {
         return list;
     }
 
-    public static void backtrack(List<String> list, String str, int left, int right, int n) {
-        if (right == n) {
+    // solution-1: 与solution-2的区别就是str  + "(", 解决了remove character的问题，sb.deleteCharAt(sb.length()-1);
+    public static void backtrack(List<String> list, String str, int leftCount, int rightCount, int n) {
+        if (rightCount == n) {
             list.add(str);
             return;
         }
 
-        // str + ")" is alternative way of "sb.append(x); backtrack(...); sb.deleteCharAt(sb.size()-1)"
-        if (left < n) backtrack(list, str + "(", left + 1, right, n);
+        if (leftCount < n) backtrack(list, str + "(", leftCount + 1, rightCount, n);
 
-        if (right < left) backtrack(list, str + ")", left, right + 1, n);
+        if (rightCount < leftCount) backtrack(list, str + ")", leftCount, rightCount + 1, n);
+    }
+
+    // solution-2:
+    public static void backtrack(List<String> list, StringBuilder sb, int leftCount, int rightCount, int n) {
+        if (rightCount == n) {
+            list.add(sb.toString());
+            return;
+        }
+
+        if (leftCount < n) {
+            sb.append("(");
+            backtrack(list, sb, leftCount+1, rightCount, n);
+            sb.deleteCharAt(sb.length()-1);
+        }
+
+        if (rightCount < leftCount) {
+            sb.append(")");
+            backtrack(list, sb, leftCount, rightCount+1, n);
+            sb.deleteCharAt(sb.length()-1);
+        }
     }
 }
 
-// After line 6 which is "((()))", it will start returning to its caller function.
-// So it will be "((())" --> "((()" --> "(((" in 2nd if block where we add/remove close bracket.
-// Then it will return to 1st if block where we add open bracket as we came here from 1st if block.
-// So here it will transition from "(((" --> "((" and then it will go to 2nd if block as its present next in line of execution.
-// Now as number of close brackets are less than open bracket, it will add one close bracket and continue further with execution.
+/***
+After "((()))", it will start returning to its caller function.
+So it will be "((())" --> "((()" --> "(((" in 2nd if block where we add/remove close bracket.
+Then it will return to 1st if block where we add open bracket as we came here from 1st if block.
+So here it will transition from "(((" --> "((" and then it will go to 2nd if block as its present next in line of execution.
+Now as number of close brackets are less than open bracket, it will add one close bracket and continue further with execution.
+ */
 
-/*
-time complexity:
+/***
+Time complexity:
 
 I think it should be O(2^(2n)). Space is O(n). We need n pairs which means we need n left parenthesis and n right parenthesis, making it total 2n.
 Then we need to decide will we include left or right? Think about the subset problem. We need to answer it 2^(2n) times.
 Some people may argue it O(2^n), I would say the power 2 here is very significant and should not be ignored.
 */
-/*
+
+/***
     (
     ((
     (((
@@ -66,4 +89,4 @@ Some people may argue it O(2^n), I would say the power 2 here is very significan
     ()()
     ()()(
     ()()()
-*/
+***/

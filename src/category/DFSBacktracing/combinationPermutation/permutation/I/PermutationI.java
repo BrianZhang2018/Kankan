@@ -1,4 +1,4 @@
-package category.DFSBacktracing.combinationAndPermutation.permutation.I;
+package category.DFSBacktracing.combinationPermutation.permutation.I;
 
 import java.util.*;
 
@@ -35,14 +35,15 @@ public class PermutationI {
     private static void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums) {
         if (tempList.size() == nums.length) {
             list.add(new ArrayList<>(tempList));
-        } else {
-            for (int i = 0; i < nums.length; i++) { // i start with 0
-                if(tempList.contains(nums[i])) continue;
+            return;
+        }
 
-                tempList.add(nums[i]);
-                backtrack(list, tempList, nums);      System.out.println("remove before: " + tempList);
-                tempList.remove(tempList.size() - 1);
-            }
+        for (int i = 0; i < nums.length; i++) { // i start with 0
+            if(tempList.contains(nums[i])) continue;
+
+            tempList.add(nums[i]);
+            backtrack(list, tempList, nums);      System.out.println("remove before: " + tempList);
+            tempList.remove(tempList.size() - 1);
         }
     }
 }

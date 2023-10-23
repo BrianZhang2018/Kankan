@@ -1,4 +1,4 @@
-package category.DFSBacktracing.combinationAndPermutation.permutation.I;
+package category.DFSBacktracing.combinationPermutation.permutation.I;
 
 import java.util.*;
 

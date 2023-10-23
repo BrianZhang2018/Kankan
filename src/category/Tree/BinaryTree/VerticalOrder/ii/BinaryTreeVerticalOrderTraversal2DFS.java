@@ -1,4 +1,4 @@
-package category.Tree.BinaryTree.VerticalOrder.two;
+package category.Tree.BinaryTree.VerticalOrder.ii;
 
 import category.model.TreeNode;
 

@@ -9,7 +9,7 @@ import java.util.*;
  * input are all unique value
  * Created by brianzhang on 5/9/20.
  */
-public class LowestCommonAncestorBT {
+public class LowestCommonAncestorBinaryTree {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(3);
         root.left = new TreeNode(5);
@@ -26,7 +26,8 @@ public class LowestCommonAncestorBT {
 
     // DFS solution - Once we reach the desired nodes p and q, we can backtrack and find the lowest common ancestor.
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q){
-        if(root == null || root.val == p.val || root.val == q.val) return root;
+        if(root == null || root.val == p.val || root.val == q.val)
+            return root;
 
         TreeNode left = lowestCommonAncestor(root.left, p, q);
         TreeNode right = lowestCommonAncestor(root.right, p, q);

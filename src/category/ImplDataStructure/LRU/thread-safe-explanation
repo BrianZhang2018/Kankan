@@ -1,3 +1,5 @@
+LRU is a shared collection which can be accessed by different threads
+
 Q: for a shared collection, like LRU, when multiple threads access the get method, each thread will create their own method in their thread, right?
 
 Yes, when multiple threads access the `get()` method of a shared collection like the LRU cache, each thread will have its own copy of local variables and method execution context.
@@ -12,5 +14,5 @@ However, it's important to note that while the local variables are thread-local,
 It is crucial to ensure proper synchronization mechanisms are in place to maintain the integrity and consistency of the shared state when dealing with multi-threaded access.
 
 
-Q: when two threads are simultaneously moveToHead
-it won't has issue since it always on the head node, but
+Q: when two threads are simultaneously access the get() method
+it won't have issue since it always on the head node, so will return the correct value

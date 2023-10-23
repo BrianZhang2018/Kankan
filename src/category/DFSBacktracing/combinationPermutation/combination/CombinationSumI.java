@@ -1,9 +1,9 @@
-package category.DFSBacktracing.combinationAndPermutation.combination;
+package category.DFSBacktracing.combinationPermutation.combination;
 
 import java.util.*;
 /**
  * https://leetcode.com/problems/combination-sum/
- * (zillow) 首先clarify的问题和interviewer,下面都是clarify的点, 对于解题很重要
+ * (zillow) 首先clarify the assumptions with interviewer,下面都是clarify的点, 对于解题很重要
  * Assumptions: 1. The same number can be used "unlimited times"
  *              2. unique combination
  *              3. no duplicate number

@@ -4,18 +4,18 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.*;
-class LRUCacheThreadSafe {
+class LRUCacheThreadSafeImpl {
     public static void main(String[] args) {
-        LRUCacheThreadSafe lRUCache = new LRUCacheThreadSafe(2);
-        lRUCache.put(1, 1);            // cache is {1=1}
-        lRUCache.put(2, 2);            // cache is {2=2,1=1}
-        System.out.println(lRUCache.get(1));    // return 1, update LRU to {1=1, 2=2} since we just get key 1
-        lRUCache.put(3, 3);            // LRU (tail)key was 2, evicts key 2, cache is {1=1, 3=3}
-        System.out.println(lRUCache.get(2));    // returns -1 (not found)
-        lRUCache.put(4, 4);            // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
-        System.out.println(lRUCache.get(1));    // return -1 (not found)
-        System.out.println(lRUCache.get(3));    // return 3
-        System.out.println(lRUCache.get(4));    // return 4
+        LRUCacheThreadSafeImpl cache = new LRUCacheThreadSafeImpl(2);
+        cache.put(1, 1);            // cache is {1=1}
+        cache.put(2, 2);            // cache is {2=2,1=1}
+        System.out.println(cache.get(1));    // return 1, update LRU to {1=1, 2=2} since we just get key 1
+        cache.put(3, 3);            // LRU (tail)key was 2, evicts key 2, cache is {1=1, 3=3}
+        System.out.println(cache.get(2));    // returns -1 (not found)
+        cache.put(4, 4);            // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
+        System.out.println(cache.get(1));    // return -1 (not found)
+        System.out.println(cache.get(3));    // return 3
+        System.out.println(cache.get(4));    // return 4
     }
     class DllNode {
         int key, value;
@@ -30,10 +30,10 @@ class LRUCacheThreadSafe {
     private final Map<Integer, DllNode> cache;
     private final DllNode head, tail; // Head and Tail of the DLL
     private final ReadWriteLock lock = new ReentrantReadWriteLock();
-    public LRUCacheThreadSafe(int capacity) {
+    public LRUCacheThreadSafeImpl(int capacity) {
         this.capacity = capacity;
         this.size = new AtomicInteger();
-        this.cache = new ConcurrentHashMap<>();
+        this.cache = new ConcurrentHashMap<>(); // ConcurrentHashMap, segment/bucket locking, default 16 threads to write at the same time, better performance compare with sync map
         this.head = new DllNode(0, 0);
         this.tail = new DllNode(0, 0);
         this.head.next = tail;

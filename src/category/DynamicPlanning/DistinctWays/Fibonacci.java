@@ -7,8 +7,20 @@ import java.math.BigInteger;
  */
 public class Fibonacci {
     public static void main(String args[]) {
-        System.out.println(fibonacci(5));
-        getFibonacci(5);
+        System.out.println(fibonacci(45));
+       /* System.out.println(fibonacci(5));
+        getFibonacci(5);*/
+        System.out.println(fib(45));
+    }
+
+    static int fib(int n)
+    {
+        // Base Case
+        if (n <= 1)
+            return n;
+
+        // Recursive call
+        return fib(n - 1) + fib(n - 2);
     }
 
     // DP solution

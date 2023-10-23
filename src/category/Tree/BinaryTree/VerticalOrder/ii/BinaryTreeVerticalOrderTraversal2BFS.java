@@ -1,4 +1,4 @@
-package category.Tree.BinaryTree.VerticalOrder.two;
+package category.Tree.BinaryTree.VerticalOrder.ii;
 
 import category.model.TreeNode;
 import java.util.*;
@@ -13,7 +13,6 @@ import java.util.*;
  * Created by brianzhang on 7/28/21.
  */
 public class BinaryTreeVerticalOrderTraversal2BFS {
-
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
@@ -70,12 +69,10 @@ public class BinaryTreeVerticalOrderTraversal2BFS {
                 return n1.node.val - n2.node.val;
         }
     }*/
-
     class Node {
         private TreeNode node;
         private int col; // Vertical Level (left decreasing, right increasing)
         private int row; // Horizontal distance from root (top to bottom increasing)
-
         public Node(TreeNode node, int vLevel, int depth){
             this.node = node;
             this.col = vLevel;

@@ -12,18 +12,19 @@ public class MinimumRemoveMakeValidParentheses {
     public static void main(String[] args) {
         System.out.println(minRemoveToMakeValid("a)b(c)d"));
     }
-
-    public static String minRemoveToMakeValid(String s) {
-        StringBuilder sb = new StringBuilder(s);
+    public static String minRemoveToMakeValid(String str) {
+        StringBuilder sb = new StringBuilder(str);
         Stack<Integer> stack = new Stack<>(); // track the parentheses
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '(') {
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == '(') {
                 stack.add(i);
-            } else if (s.charAt(i) == ')') {
-                if (stack.isEmpty())
+            } else if (str.charAt(i) == ')') {
+                if (stack.isEmpty()){
                     sb.setCharAt(i, '*');
-                else
+                }
+                else {
                     stack.pop();
+                }
             }
         }
 

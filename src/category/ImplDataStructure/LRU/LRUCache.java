@@ -39,7 +39,6 @@ public class LRUCache{
         }
     }
     private int cacheSize;
-    // sync is object level lock, bad performance. ConcurrentHashMap instead, segment/bucket locking, default 16 threads to write at the same time
     private Map<Integer, DllNode> cache = new HashMap();
     private DllNode head, tail;
     public LRUCache(int capacity) {

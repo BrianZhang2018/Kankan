@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * LinkedHashMap from java SDK
- * Created by brianzhang on 7/14/18.
+ * Created by brianzhang on 7/14/18
  */
 public class LRULinkedHashMap {
     public static void main(String[] args) {

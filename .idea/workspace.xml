@@ -9,37 +9,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/category/BFSOrDFS/RangeSumOfBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Greedy/TaskScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/i/idea.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/MergeInterval.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/companies/google/DiagonalTraverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/google/DiagonalTraverse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/discovery/MinimumRemoveMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/discovery/MinimumRemoveMakeValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/problems/TopKFrequentElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/problems/TopKFrequentElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/systemDesign/delayedScheduler/example/TaskScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/systemDesign/delayedScheduler/example/DelayedTaskScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/onsite/hotelBooking" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/onsite/hotelBooking" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfidenceLeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Array/ThreeSumClosest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/ThreeSumClosest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/GenerateParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/GenerateParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/combination/CombinationSumI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/permutation/I/PermutationI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationAndPermutation/permutation/I/PermutationI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/DistinctWays/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/DistinctWays/Fibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCacheThreadSafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCacheThreadSafeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRULinkedHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRULinkedHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/thread-safe-explanation" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/thread-safe-explanation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/PriorityQueue/KClosestPointsToOrigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/PriorityQueue/KClosestPointsToOrigin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Queue/ArrayDeque/MinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Queue/ArrayDeque/MinStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Stack/MinimumRemoveMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Stack/MinimumRemoveMakeValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/one/BinaryTreeVerticalOrderTraversal1BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/i/BinaryTreeVerticalOrderTraversalBFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/one/BinaryTreeVerticalOrderTraversal1DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/i/BinaryTreeVerticalOrderTraversalDFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/one/If multiple nodes are in the same row and column, the order should be from left to right." beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/two/BinaryTreeVerticalOrderTraversal2BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/ii/BinaryTreeVerticalOrderTraversal2BFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/two/BinaryTreeVerticalOrderTraversal2DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/ii/BinaryTreeVerticalOrderTraversal2DFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/two/if multiple nodes in the same row and same column. Sort these nodes by their values." beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/ii/if multiple nodes in the same row and same column. Sort these nodes by their values." afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/simpleRecursive/LowestCommonAncestorBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/simpleRecursive/LowestCommonAncestorBinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/simpleRecursive/LowestCommonAncestorBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/simpleRecursive/LowestCommonAncestorBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/analysis/Analysis" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/algorithemExplain/讲解" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/analysis/LargestRecHistExample.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/algorithemExplain/LargestRecHistExample.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/analysis/trappingRainWater.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/algorithemExplain/trappingRainWater.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Sort/bucketSort/TopKFrequentElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Sort/bucketSort/TopKFrequentElements.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -1409,7 +1392,7 @@
       <recent name="category.greatestValue.floorEntry" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DelayedTaskScheduler">
+  <component name="RunManager" selected="Application.NextGreaterElementII">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1599,13 +1582,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumRemoveMakeValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Stack.MinimumRemoveMakeValidParentheses" />
+    <configuration name="NextGreaterElementI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.MonotoneQueueStack.descrasing.NextGreaterElementI" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.Stack.*" />
+          <option name="PATTERN" value="category.MonotoneQueueStack.descrasing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1613,13 +1596,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RangeSumOfBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.BFSOrDFS.RangeSumOfBST" />
+    <configuration name="NextGreaterElementII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.MonotoneQueueStack.descrasing.NextGreaterElementII" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.BFSOrDFS.*" />
+          <option name="PATTERN" value="category.MonotoneQueueStack.descrasing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1627,13 +1610,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskScheduler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Greedy.TaskScheduler" />
-      <module name="LeetCode" />
+    <configuration name="TopKFrequentElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="grubhub.problems.TopKFrequentElement" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.Greedy.*" />
+          <option name="PATTERN" value="grubhub.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1641,13 +1624,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreeSumClosest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Array.ThreeSumClosest" />
+    <configuration name="TopKFrequentWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.PriorityQueue.TopKFrequentWords" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.Array.*" />
+          <option name="PATTERN" value="category.PriorityQueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1853,19 +1836,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.NextGreaterElementI" />
+      <item itemvalue="Application.NextGreaterElementII" />
+      <item itemvalue="Application.TopKFrequentElement" />
+      <item itemvalue="Application.TopKFrequentWords" />
       <item itemvalue="Application.DelayedTaskScheduler" />
-      <item itemvalue="Application.TaskScheduler" />
-      <item itemvalue="Application.RangeSumOfBST" />
-      <item itemvalue="Application.ThreeSumClosest" />
-      <item itemvalue="Application.MinimumRemoveMakeValidParentheses" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NextGreaterElementII" />
+        <item itemvalue="Application.NextGreaterElementI" />
+        <item itemvalue="Application.TopKFrequentElement" />
+        <item itemvalue="Application.TopKFrequentWords" />
         <item itemvalue="Application.DelayedTaskScheduler" />
-        <item itemvalue="Application.TaskScheduler" />
-        <item itemvalue="Application.RangeSumOfBST" />
-        <item itemvalue="Application.ThreeSumClosest" />
-        <item itemvalue="Application.MinimumRemoveMakeValidParentheses" />
       </list>
     </recent_temporary>
   </component>
@@ -2135,7 +2118,9 @@
       <workItem from="1697121867919" duration="3098000" />
       <workItem from="1697135447930" duration="986000" />
       <workItem from="1697578604581" duration="2527000" />
-      <workItem from="1697755766262" duration="7075000" />
+      <workItem from="1697755766262" duration="8468000" />
+      <workItem from="1698102901650" duration="4438000" />
+      <workItem from="1698246134345" duration="5964000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>

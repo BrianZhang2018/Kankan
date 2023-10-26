@@ -6,6 +6,7 @@ import java.util.*;
  * https://leetcode.com/problems/next-greater-element-ii/discuss/98273/Java-10-lines-and-C%2B%2B-12-lines-linear-time-complexity-O(n)-with-explanation
  * Given a circular integer array nums
  *
+ * 思路：
  * It's very smart to use 2*n and i%n to deal with the rotational array
  *
  * Created by brianzhang on 5/12/20.
@@ -18,19 +19,18 @@ public class NextGreaterElementII {
 
     // monotone stack solution
     public static int[] nextGreaterElements(int[] nums) {
-        int n = nums.length, next[] = new int[n];
+        int n = nums.length;
+        int[] next = new int[n];
         Arrays.fill(next, -1);
-
-        Stack<Integer> descStack = new Stack<>(); // keep the indexes of the decreasing subsequence
+        Stack<Integer> des = new Stack<>(); // store the index of element in array
         for (int i = 0; i < n * 2; i++) {  // circular array, so valid index range will be 0-5
-            int num = nums[i % n];
-            while (!descStack.isEmpty() && nums[descStack.peek()] < num){
-                next[descStack.pop()] = num;
+            while (!des.isEmpty() && nums[i % n] > nums[des.peek()]){
+                next[des.pop()] = nums[i % n];
             }
-
-            // no more pushes, only pops in the second loop
-            if (i < n) descStack.push(i);
+            // don't push in the second scan since the decrease stack already finished by first loop
+            if (i < n) des.push(i);
         }
+
         return next;
     }
 

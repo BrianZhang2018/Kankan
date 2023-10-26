@@ -5,9 +5,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/top-k-frequent-elements
  * Bucket Sort
- *
  * 相似问题: TopKFrequentWords.java - priorityQueue
- *
  * O(N)
  * Created by brianzhang on 1/6/19.
  */

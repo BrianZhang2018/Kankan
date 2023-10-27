@@ -41,7 +41,6 @@ public class BoundaryOfBinaryTree{
         if(root == null) return;
         if(isLeaf(root)){
             res.add(root.val);
-            return;
         }else{
              collectLeaves(root.left, res);
              collectLeaves(root.right, res);

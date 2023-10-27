@@ -1,0 +1,8 @@
+O(E) + O(V)
+
+O(E) = the number of edges, but it will be O(2E) for undirected graph since it will access adjacency nodes both previous and next node, but for directed graph will just next node
+O(V) = the number of vertex, access every vertex once do the visited[v] check, it will take O(v)
+
+https://www.youtube.com/watch?v=s-CYnVz-uh4&t=2915s
+
+https://www.youtube.com/watch?v=bP3MWJHeohc

@@ -18,21 +18,12 @@ public class BreadthFirstSearch {
         root.right.left.right = new Node(18);*/
 
         //bfs(root);
-       // widthOfBinaryTree(root);
-
-        List<Integer> list = new ArrayList<>();
-        list.add(0);
-        list.set(0,1);
-
-        for(Integer i : list){
-            System.out.println(i);
-        }
+        // widthOfBinaryTree(root);
     }
 
     public static void bfs(Node root) {
         Queue<Node> queue = new LinkedList();
         queue.add(root);
-
         while (!queue.isEmpty()) {
             Node node = queue.poll();
             System.out.println(node.data);
@@ -43,49 +34,47 @@ public class BreadthFirstSearch {
         }
     }
 
-    public int dfs(Node root, int level, int order, List<Integer> start, List<Integer> end){
-        if(root == null)return 0;
-        if(start.size() == level){
-            start.add(order); end.add(order);
+    public int dfs(Node root, int level, int order, List<Integer> start,
+                   List<Integer> end) {
+        if (root == null) return 0;
+        if (start.size() == level) {
+            start.add(order);
+            end.add(order);
         } else end.set(level, order);
 
         int cur = end.get(level) - start.get(level) + 1;
-        int left = dfs(root.left, level + 1, 2*order, start, end);
-        int right = dfs(root.right, level + 1, 2*order + 1, start, end);
+        int left = dfs(root.left, level + 1, 2 * order, start, end);
+        int right = dfs(root.right, level + 1, 2 * order + 1, start, end);
         return Math.max(cur, Math.max(left, right));
     }
 
     public static int widthOfBinaryTree(Node root) {
-
         LinkedList<Node> q = new LinkedList<>();
         q.add(root);
         int mw = 0;
         int level = 1;
-
-        while(!q.isEmpty()){
-
+        while (!q.isEmpty()) {
             int size = q.size();
             int leftmost = 0, rightmost = 0;
-
-            for(int i=0; i<size; i++){
+            for (int i = 0; i < size; i++) {
                 Node node = q.pop();
-                if(node.left != null && leftmost == 0){
+                if (node.left != null && leftmost == 0) {
                     leftmost = level * 2 + i;
                     q.offer(node);
-                }else if(node.left != null){
+                } else if (node.left != null) {
                     q.offer(node);
                 }
 
-                if(node.right != null){
+                if (node.right != null) {
                     rightmost = level * 2 + 1 + i;
                     q.offer(node);
                 }
             }
 
-            if(rightmost != 0 && leftmost != 0){
-                mw = leftmost -rightmost +1;
-            }else if(rightmost != 0 || leftmost !=0){
-                mw= Math.max(1, mw);
+            if (rightmost != 0 && leftmost != 0) {
+                mw = leftmost - rightmost + 1;
+            } else if (rightmost != 0 || leftmost != 0) {
+                mw = Math.max(1, mw);
             }
             level++;
             System.out.println(q.size());
@@ -98,6 +87,7 @@ class Node {
     int data;
     Node left;
     Node right;
+
     public Node(int value) {
         data = value;
         left = right = null;

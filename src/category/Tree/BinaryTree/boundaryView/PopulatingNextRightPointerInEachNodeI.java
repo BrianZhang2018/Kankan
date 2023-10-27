@@ -7,12 +7,10 @@ package category.Tree.BinaryTree.boundaryView;
 public class PopulatingNextRightPointerInEachNodeI { 
     
     public Node connect(Node root) {
-        if(root == null)
-            return root;
+        if(root == null) return root;
         
         Node leftMost = root;
-        
-        //level order traverse
+        // level order traverse
         while(leftMost != null){
             Node curr = leftMost;
             while(curr != null){
@@ -23,7 +21,7 @@ public class PopulatingNextRightPointerInEachNodeI {
                 
                 curr = curr.next; // go the next node of in this level
             }
-            //start from left most
+            // start from left most
             leftMost = leftMost.left;
         }
         return root;

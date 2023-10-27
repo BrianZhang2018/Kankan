@@ -1,7 +1,5 @@
 package category.BFS;
 
-import java.util.HashSet;
-
 /**
  * https://leetcode.com/problems/game-of-life/
  *
@@ -13,9 +11,7 @@ public class GameOfLife {
     }
 
     public void gameOfLife(int[][] board) {
-
         int m= board.length, n=board[0].length;
-
         int [][] res = new int[m][];
         for(int i = 0; i < m; i++)
             res[i] = board[i].clone(); // deep clone
@@ -29,9 +25,7 @@ public class GameOfLife {
 
     public int bfs(int[][] board, int i, int j){
         int[][] dirs = new int[][]{{1,0}, {-1,0}, {0,1}, {0, -1}, {1,1},{1,-1}, {-1,-1},{-1,1}};
-
         int people = 0;
-
         for(int[] dir : dirs){
             int nx = dir[0] + i;
             int ny = dir[1] + j;

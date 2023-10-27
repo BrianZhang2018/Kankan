@@ -19,7 +19,6 @@ public class TheMazeII {
     public int shortestDistance(int[][] maze, int[] start, int[] destination) {
         int m = maze.length, n = maze[0].length;
         int[][] dist = new int[m][n]; // memo the distance
-
         for(int[] row : dist){
             Arrays.fill(row, Integer.MAX_VALUE);
         }
@@ -27,7 +26,6 @@ public class TheMazeII {
         LinkedList<int[]> queue = new LinkedList<>();
         queue.add(start);
         int[][] dirs = new int[][]{{0,1}, {1,0}, {-1, 0}, {0,-1}};
-
         while(!queue.isEmpty()){
             int[] s = queue.poll();
             for(int[] dir : dirs){
@@ -39,7 +37,6 @@ public class TheMazeII {
                     nc += dir[1];
                     steps++;
                 }
-
                 // back to position before hit the wall
                 nr-=dir[0];
                 nc-=dir[1];

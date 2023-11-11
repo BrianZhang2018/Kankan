@@ -4,9 +4,9 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.*;
-class LRUCacheThreadSafeImpl {
+class LRUCacheThreadSafeVersion {
     public static void main(String[] args) {
-        LRUCacheThreadSafeImpl cache = new LRUCacheThreadSafeImpl(2);
+        LRUCacheThreadSafeVersion cache = new LRUCacheThreadSafeVersion(2);
         cache.put(1, 1);            // cache is {1=1}
         cache.put(2, 2);            // cache is {2=2,1=1}
         System.out.println(cache.get(1));    // return 1, update LRU to {1=1, 2=2} since we just get key 1
@@ -29,8 +29,8 @@ class LRUCacheThreadSafeImpl {
     private final int capacity;
     private final Map<Integer, DllNode> cache;
     private final DllNode head, tail; // Head and Tail of the DLL
-    private final ReadWriteLock lock = new ReentrantReadWriteLock();
-    public LRUCacheThreadSafeImpl(int capacity) {
+    private final ReentrantLock lock; // ReentrantLock is mutually exclusive lock
+    public LRUCacheThreadSafeVersion(int capacity) {
         this.capacity = capacity;
         this.size = new AtomicInteger();
         this.cache = new ConcurrentHashMap<>(); // ConcurrentHashMap, segment/bucket locking, default 16 threads to write at the same time, better performance compare with sync map
@@ -38,46 +38,47 @@ class LRUCacheThreadSafeImpl {
         this.tail = new DllNode(0, 0);
         this.head.next = tail;
         this.tail.prev = head;
+        this.lock = new ReentrantLock();
     }
     public int get(int key) {
-        this.lock.readLock().lock();
-        DllNode node = cache.getOrDefault(key, null);
-        this.lock.readLock().unlock();
-        if (node != null) {
-            // moving the key to the front of the DLL
-            removeNode(node);
-            addToHead(node);
-            return node.value;
+        this.lock.lock();
+        // the try-finally block ensures that write lock is always released, regardless of any exceptions that may occur.
+        try {
+            DllNode node = cache.getOrDefault(key, null);
+            if (node != null) {
+                // moving the key to the front of the DLL
+                removeNode(node);
+                addToHead(node);
+                return node.value;
+            }
+            return -1;
+        } finally {
+            this.lock.unlock();
         }
-        return -1;
     }
     public void put(int key, int val) {
-        this.lock.readLock().lock();
-        DllNode node = cache.get(key);
-        this.lock.readLock().unlock();
-        if (node != null) {
-            removeNode(node);
+        this.lock.lock();
+        try {
+            DllNode node = cache.get(key);
+            if (node != null) {
+                removeNode(node);
+            }
+            if (size.get() == capacity) {
+                removeNode(tail.prev); // remove tail.prev node
+            }
+            addToHead(new DllNode(key, val));
+        } finally {
+            this.lock.unlock();
         }
-        if (size.get() == capacity) {
-            removeNode(tail.prev); // remove tail.prev node
-        }
-        addToHead(new DllNode(key, val));
     }
     private void removeNode(final DllNode node) {
-        this.lock.writeLock().lock();
-        try { // the try-finally block ensures that the write lock is always released, regardless of any exceptions that may occur.
             cache.remove(node.key);
             size.decrementAndGet();
 
             node.prev.next = node.next;
             node.next.prev = node.prev;
-        } finally {
-            this.lock.writeLock().unlock();
-        }
     }
     private void addToHead(final DllNode node) {
-        this.lock.writeLock().lock();
-        try {
             cache.put(node.key, node);
             size.incrementAndGet();
 
@@ -85,10 +86,6 @@ class LRUCacheThreadSafeImpl {
             node.next = this.head.next;
             this.head.next.prev = node;
             this.head.next = node;
-        } finally {
-            this.lock.writeLock().unlock();
-        }
     }
-
 }
 

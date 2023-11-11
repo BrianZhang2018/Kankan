@@ -40,7 +40,6 @@ public class TheMazeII {
                 // back to position before hit the wall
                 nr-=dir[0];
                 nc-=dir[1];
-
                 if(dist[s[0]][s[1]] + steps < dist[nr][nc]){
                     dist[nr][nc] = dist[s[0]][s[1]] + steps;
                     if(nr != destination[0] || nc != destination[1]){ // 如果滚到target cell，就不需要再滚了

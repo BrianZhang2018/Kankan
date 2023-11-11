@@ -29,7 +29,6 @@ public class CutOffTreesForGolfEventBFSGetMinSteps {
         int m = forest.size();
         int n = forest.get(0).size();
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[2] - b[2]);
-
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (forest.get(i).get(j) > 1) {
@@ -37,7 +36,6 @@ public class CutOffTreesForGolfEventBFSGetMinSteps {
                 }
             }
         }
-
         int[] start = new int[2];
         int totalSteps = 0;
         while (!pq.isEmpty()) {

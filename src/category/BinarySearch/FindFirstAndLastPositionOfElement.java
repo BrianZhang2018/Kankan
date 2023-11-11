@@ -11,6 +11,8 @@ public class FindFirstAndLastPositionOfElement {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(searchRange(new int[]{5,7,7,8,8,10}, 8)));
         // System.out.println(Arrays.toString(searchRange1(new int[]{5,7,7,8,8,10}, 8)));
+
+        System.out.println(Math.sqrt(5));
     }
 
     // Solution-1

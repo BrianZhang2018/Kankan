@@ -9,12 +9,13 @@ import java.util.*;
  */
 public class GenerateParenthesis {
     public static void main(String[] args) {
-        generateParenthesis(3);
+        System.out.println(generateParenthesis(3));
     }
 
     public static List<String> generateParenthesis(int n) {
         List<String> list = new ArrayList<>();
-        backtrack(list, "", 0, 0, n);
+        // backtrack(list, "", 0, 0, n);
+        backtrack(list, new StringBuilder(), 0, 0, n);
         return list;
     }
 
@@ -25,12 +26,13 @@ public class GenerateParenthesis {
             return;
         }
 
-        if (leftCount < n) backtrack(list, str + "(", leftCount + 1, rightCount, n);
-
-        if (rightCount < leftCount) backtrack(list, str + ")", leftCount, rightCount + 1, n);
+        if (leftCount < n)
+            backtrack(list, str + "(", leftCount + 1, rightCount, n);
+        if (rightCount < leftCount)
+            backtrack(list, str + ")", leftCount, rightCount + 1, n);
     }
 
-    // solution-2:
+    // solution-2: 笨笨写法
     public static void backtrack(List<String> list, StringBuilder sb, int leftCount, int rightCount, int n) {
         if (rightCount == n) {
             list.add(sb.toString());
@@ -39,14 +41,16 @@ public class GenerateParenthesis {
 
         if (leftCount < n) {
             sb.append("(");
-            backtrack(list, sb, leftCount+1, rightCount, n);
-            sb.deleteCharAt(sb.length()-1);
+            backtrack(list, sb, leftCount++, rightCount, n);
+            sb.deleteCharAt(sb.length() - 1);
+            leftCount--;
         }
 
         if (rightCount < leftCount) {
             sb.append(")");
-            backtrack(list, sb, leftCount, rightCount+1, n);
-            sb.deleteCharAt(sb.length()-1);
+            backtrack(list, sb, leftCount, rightCount++, n);
+            sb.deleteCharAt(sb.length() - 1);
+            rightCount--;
         }
     }
 }

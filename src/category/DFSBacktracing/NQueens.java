@@ -31,11 +31,9 @@ public class NQueens {
         if(n ==0){
             return res;
         }
-
         this.cols = new boolean[n];
         this.dign1 = new boolean[2*n-1];
         this.dign2 = new boolean[2*n-1];
-
         nQueen(0, n);
         return res;
     }

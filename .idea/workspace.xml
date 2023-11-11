@@ -10,29 +10,31 @@
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/meta/BinaryTreeLeftBottomToTopRightTopToBottom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/BFS/TimeComplexity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/BinaryTreeLeftSideView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/tree-traversal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/meta/ValidWordAbbreviation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/Map/GroupShirtString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/linkedList/CopyALinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/MergeInterval.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/companies/google/DiagonalTraverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/google/DiagonalTraverse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/discovery/MinimumRemoveMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/discovery/MinimumRemoveMakeValidParentheses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/problems/TopKFrequentElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/problems/TopKFrequentElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/systemDesign/delayedScheduler/example/TaskScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/systemDesign/delayedScheduler/example/DelayedTaskScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/remitly/GroupAnagram.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/onsite/hotelBooking" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/onsite/hotelBooking" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/BreadthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/BreadthFirstSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/GameOfLife.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/miniEffortReachMultiTargets/template" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/miniEffortReachMultiTargets/template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BFS/shortestPath/A-Summary" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/shortestPath/A-Summary" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/BFS/shortestPath/CutOffTreesForGolfEventBFSGetMinSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/shortestPath/CutOffTreesForGolfEventBFSGetMinSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFS/TargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFS/TargetSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFS/What-IS-DFS-AND-Time-Complexity" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFS/What-IS-DFS-AND-Time-Complexity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/Monotonic Increasing stack.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/Monotone-decreasing stack.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/BuildingsWithOceanView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/BuildingsWithOceanView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/BinaryTreeRightSideView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/BinaryTreeRightSideView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/BoundaryOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/BoundaryOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/PopulatingNextRightPointerInEachNodeI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView/PopulatingNextRightPointerInEachNodeI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BFS/shortestPath/TheMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/shortestPath/TheMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BFS/shortestPath/TheMazeII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/shortestPath/TheMazeII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/Binary_Search 特点" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/Binary_Search 特点" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/FindFirstAndLastPositionOfElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/FindFirstAndLastPositionOfElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/GenerateParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/GenerateParenthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/DistinctWays/PathProblems/UniquePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/DistinctWays/PathProblems/UniquePaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCacheThreadSafeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCacheThreadSafeVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/thread-safe-explanation" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRU-thread-safe-questions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Map/GroupAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Map/GroupAnagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing/NextGreaterElementI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/TwoPointer/IsValidPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/TwoPointer/IsValidPalindrome.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -1402,7 +1404,7 @@
       <recent name="category.greatestValue.floorEntry" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShortestPathGetAllKeys">
+  <component name="RunManager" selected="Application.GenerateParenthesis">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1578,13 +1580,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="BinaryTreeLeftSideView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Tree.BinaryTree.boundaryView.BinaryTreeLeftSideView" />
+    <configuration name="CopyALinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.linkedList.CopyALinkedList" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.Tree.BinaryTree.boundaryView.*" />
+          <option name="PATTERN" value="category.linkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1592,13 +1594,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryTreeRightSideView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Tree.BinaryTree.boundaryView.BinaryTreeRightSideView" />
+    <configuration name="FindFirstAndLastPositionOfElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.BinarySearch.FindFirstAndLastPositionOfElement" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.Tree.BinaryTree.boundaryView.*" />
+          <option name="PATTERN" value="category.BinarySearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1606,13 +1608,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BreadthFirstSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.BFS.BreadthFirstSearch" />
+    <configuration name="GenerateParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.DFSBacktracing.GenerateParenthesis" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.BFS.*" />
+          <option name="PATTERN" value="category.DFSBacktracing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1620,13 +1622,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BuildingsWithOceanView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.MonotoneQueueStack.descrasing.BuildingsWithOceanView" />
+    <configuration name="GroupShirtString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.Map.GroupShirtString" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.MonotoneQueueStack.descrasing.*" />
+          <option name="PATTERN" value="category.Map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1634,13 +1636,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShortestPathGetAllKeys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.BFS.shortestPath.recordPath.ShortestPathGetAllKeys" />
+    <configuration name="LRUCacheThreadSafeVersion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.ImplDataStructure.LRU.LRUCacheThreadSafeVersion" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.BFS.shortestPath.recordPath.*" />
+          <option name="PATTERN" value="category.ImplDataStructure.LRU.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1846,19 +1848,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ShortestPathGetAllKeys" />
-      <item itemvalue="Application.BreadthFirstSearch" />
-      <item itemvalue="Application.BuildingsWithOceanView" />
-      <item itemvalue="Application.BinaryTreeLeftSideView" />
-      <item itemvalue="Application.BinaryTreeRightSideView" />
+      <item itemvalue="Application.GenerateParenthesis" />
+      <item itemvalue="Application.CopyALinkedList" />
+      <item itemvalue="Application.FindFirstAndLastPositionOfElement" />
+      <item itemvalue="Application.GroupShirtString" />
+      <item itemvalue="Application.LRUCacheThreadSafeVersion" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ShortestPathGetAllKeys" />
-        <item itemvalue="Application.BuildingsWithOceanView" />
-        <item itemvalue="Application.BreadthFirstSearch" />
-        <item itemvalue="Application.BinaryTreeRightSideView" />
-        <item itemvalue="Application.BinaryTreeLeftSideView" />
+        <item itemvalue="Application.GenerateParenthesis" />
+        <item itemvalue="Application.CopyALinkedList" />
+        <item itemvalue="Application.FindFirstAndLastPositionOfElement" />
+        <item itemvalue="Application.LRUCacheThreadSafeVersion" />
+        <item itemvalue="Application.GroupShirtString" />
       </list>
     </recent_temporary>
   </component>
@@ -2132,7 +2134,11 @@
       <workItem from="1698102901650" duration="4438000" />
       <workItem from="1698246134345" duration="12767000" />
       <workItem from="1698360852820" duration="7627000" />
-      <workItem from="1698439438281" duration="304000" />
+      <workItem from="1698439438281" duration="3333000" />
+      <workItem from="1698510980991" duration="2091000" />
+      <workItem from="1698542766069" duration="14017000" />
+      <workItem from="1699551094652" duration="4401000" />
+      <workItem from="1699656606797" duration="1697000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2419,7 +2425,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/category/BFS/shortestPath/CutOffTreesForGolfEventBFSGetMinSteps.java</url>
-          <line>59</line>
+          <line>57</line>
           <option name="timeStamp" value="376" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

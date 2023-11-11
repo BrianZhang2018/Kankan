@@ -1,16 +1,18 @@
 LRU is a shared collection which can be accessed by different threads
 
 Q: for a shared collection, like LRU, when multiple threads access the get method, each thread will create their own method in their thread, right?
-
-Yes, when multiple threads access the `get()` method of a shared collection like the LRU cache, each thread will have its own copy of local variables and method execution context.
+Yes, when multiple threads access the `get()` method of a shared collection like the LRU cache,
+each thread will have its own copy of local variables and method execution context.
 
 In Java, each thread maintains its own stack frame, which includes local variables and method parameters. When a thread executes a method, it creates a separate copy of the local variables within its own stack frame.
 This means that each thread accessing the `get()` method will have its own independent copy of local variables such as the `node` variable in the given code.
 
 The thread-local nature of local variables ensures that each thread operates on its own data and does not interfere with the data of other threads.
-Therefore, concurrent invocations of the `get()` method by multiple threads will have separate copies of the local variables and method context, allowing them to work independently without directly affecting each other's data.
+Therefore, concurrent invocations of the `get()` method by multiple threads will have separate copies of the local variables and method context,
+allowing them to work independently without directly affecting each other's data.
 
-However, it's important to note that while the local variables are thread-local, the shared state of the LRU cache, such as the cache map and the DLL structure, can still be accessed and modified concurrently by multiple threads.
+However, it's important to note that while the local variables are thread-local, the shared state of the LRU cache, such as the cache map and the DLL structure,
+can still be accessed and modified concurrently by multiple threads.
 It is crucial to ensure proper synchronization mechanisms are in place to maintain the integrity and consistency of the shared state when dealing with multi-threaded access.
 
 

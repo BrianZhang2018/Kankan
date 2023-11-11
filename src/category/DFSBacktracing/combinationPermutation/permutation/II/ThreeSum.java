@@ -9,7 +9,6 @@ import java.util.*;
  * Created by brianzhang on 5/3/20.
  */
 public class ThreeSum {
-
     public static void main(String[] args) {
         ThreeSum ts = new ThreeSum();
         List<List<Integer>> res = ts.threeSum(new int[]{-1, 0, 1, 2, -1, -4});
@@ -20,7 +19,6 @@ public class ThreeSum {
 
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
-
         Arrays.sort(nums);  // sort array
         dfs(nums, new ArrayList<>(), 0, 0, new boolean[nums.length], res);
         return res;
@@ -31,7 +29,6 @@ public class ThreeSum {
             res.add(new ArrayList(temp));
             return;
         }
-
         for(int i=start; i<nums.length; i++){
             if(used[i]) continue;
             // makes sure when duplicates are selected, we only use the ascending (used[i-1] = true) order

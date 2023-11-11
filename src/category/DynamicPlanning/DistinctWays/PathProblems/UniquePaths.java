@@ -13,7 +13,6 @@ public class UniquePaths {
 
     public static int uniquePaths(int m, int n) {
         int[][] grid = new int[n][m];
-
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (i == 0 || j == 0) {
@@ -29,7 +28,6 @@ public class UniquePaths {
     // 一维滚动数组
     public static int uniquePathsOneDimension(int m, int n) {
         int[] dp = new int[n];
-
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
                 if (r == 0 || c == 0) {

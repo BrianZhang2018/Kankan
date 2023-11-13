@@ -14,8 +14,7 @@ public class GenerateParenthesis {
 
     public static List<String> generateParenthesis(int n) {
         List<String> list = new ArrayList<>();
-        // backtrack(list, "", 0, 0, n);
-        backtrack(list, new StringBuilder(), 0, 0, n);
+        backtrack(list, "", 0, 0, n);
         return list;
     }
 
@@ -26,32 +25,13 @@ public class GenerateParenthesis {
             return;
         }
 
+        // 两点要注意:
+        // 1. str + "(", rather than sb.append("(")
+        // 2. leftCount + 1, not leftCount++
         if (leftCount < n)
             backtrack(list, str + "(", leftCount + 1, rightCount, n);
         if (rightCount < leftCount)
             backtrack(list, str + ")", leftCount, rightCount + 1, n);
-    }
-
-    // solution-2: 笨笨写法
-    public static void backtrack(List<String> list, StringBuilder sb, int leftCount, int rightCount, int n) {
-        if (rightCount == n) {
-            list.add(sb.toString());
-            return;
-        }
-
-        if (leftCount < n) {
-            sb.append("(");
-            backtrack(list, sb, leftCount++, rightCount, n);
-            sb.deleteCharAt(sb.length() - 1);
-            leftCount--;
-        }
-
-        if (rightCount < leftCount) {
-            sb.append(")");
-            backtrack(list, sb, leftCount, rightCount++, n);
-            sb.deleteCharAt(sb.length() - 1);
-            rightCount--;
-        }
     }
 }
 

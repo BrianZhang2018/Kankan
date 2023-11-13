@@ -16,7 +16,7 @@ public class FindPeakElement {
         System.out.println(test.findPeakElement(new int[]{1,2,3,1}));
     }
 
-    // O(logN)
+    // solution-1: O(logN)
     public int findPeakElement(int[] nums) {
         int l=0, r = nums.length-1;
         while(l<r) {
@@ -30,7 +30,7 @@ public class FindPeakElement {
         return l; // or return r;
     }
 
-    // O(n)
+    // solution-2: O(n)
     public int findPeakElement1(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {
             if (nums[i] > nums[i + 1]) { // this implicitly said the nums[i-1] < nums[i], otherwise won't reach here.

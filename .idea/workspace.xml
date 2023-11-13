@@ -19,9 +19,7 @@
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/systemDesign/delayedScheduler/example/TaskScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/systemDesign/delayedScheduler/example/DelayedTaskScheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/remitly/GroupAnagram.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/onsite/hotelBooking" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/onsite/hotelBooking" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/GenerateParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/GenerateParenthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/linkedList/CopyALinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/linkedList/CopyALinkedList.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -1391,7 +1389,7 @@
       <recent name="category.greatestValue.floorEntry" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GenerateParenthesis">
+  <component name="RunManager" selected="Application.CopyALinkedList">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1843,8 +1841,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GenerateParenthesis" />
         <item itemvalue="Application.CopyALinkedList" />
+        <item itemvalue="Application.GenerateParenthesis" />
         <item itemvalue="Application.FindFirstAndLastPositionOfElement" />
         <item itemvalue="Application.LRUCacheThreadSafeVersion" />
         <item itemvalue="Application.GroupShirtString" />
@@ -2125,7 +2123,7 @@
       <workItem from="1698510980991" duration="2091000" />
       <workItem from="1698542766069" duration="14017000" />
       <workItem from="1699551094652" duration="4401000" />
-      <workItem from="1699656606797" duration="3875000" />
+      <workItem from="1699656606797" duration="4180000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>

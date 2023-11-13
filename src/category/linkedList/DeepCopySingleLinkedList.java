@@ -1,6 +1,6 @@
 package category.linkedList;
 
-public class CopyALinkedList {
+public class DeepCopySingleLinkedList {
     public static void main(String[] args) {
         Node node1 = new  Node(1);
         Node node2 = new  Node(2);
@@ -9,16 +9,14 @@ public class CopyALinkedList {
         node1.next = node2;
         node2.next = node3;
         node3.next = node4;
-
-        CopyALinkedList s = new CopyALinkedList();
-        Node to = s.deepCopyRecursive(node1);
+        Node to = deepCopyRecursive(node1);
         while(to != null) {
             System.out.println(to.val);
             to = to.next;
         }
     }
 
-    // public Node deepCopy(Node from) {
+    // public Node deepCopyIterative(Node from) {
     //     Node to = new Node(from.val);
     //     Node dummyNode = to;
     //     from = from.next;
@@ -32,12 +30,11 @@ public class CopyALinkedList {
     //     return to;
     // }
 
-    public Node deepCopyRecursive(Node curr) {
-        if(curr == null) {
-            return curr;
-        }
-        Node n = new Node(curr.val);
-        n.next = deepCopyRecursive(curr.next);
+    static Node deepCopyRecursive(Node from) {
+        if(from == null) return null;
+
+        Node n = new Node(from.val);
+        n.next = deepCopyRecursive(from.next);
         return n;
     }
 
@@ -48,6 +45,5 @@ public class CopyALinkedList {
             this.val = val;
         }
     }
-
 }
 

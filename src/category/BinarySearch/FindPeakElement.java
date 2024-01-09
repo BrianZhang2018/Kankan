@@ -12,12 +12,11 @@ package category.BinarySearch;
  */
 public class FindPeakElement {
     public static void main(String[] args) {
-        FindPeakElement test = new FindPeakElement();
-        System.out.println(test.findPeakElement(new int[]{1,2,3,1}));
+        System.out.println(findPeakElement(new int[]{1,2,3,1}));
     }
 
     // solution-1: O(logN)
-    public int findPeakElement(int[] nums) {
+    public static int findPeakElement(int[] nums) {
         int l=0, r = nums.length-1;
         while(l<r) {
             int mid = l + (r - l) /2;
@@ -31,7 +30,7 @@ public class FindPeakElement {
     }
 
     // solution-2: O(n)
-    public int findPeakElement1(int[] nums) {
+    public static int findPeakElement1(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {
             if (nums[i] > nums[i + 1]) { // this implicitly said the nums[i-1] < nums[i], otherwise won't reach here.
                 return i;
@@ -39,5 +38,4 @@ public class FindPeakElement {
         }
         return nums.length - 1;
     }
-
 }

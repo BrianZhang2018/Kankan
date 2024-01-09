@@ -1,7 +1,6 @@
 package category.DFSBacktracing;
 
 import java.util.*;
-
 /**
  * https://leetcode.com/problems/generate-parentheses/
  *
@@ -17,7 +16,6 @@ public class GenerateParenthesis {
         backtrack(list, "", 0, 0, n);
         return list;
     }
-
     // solution-1: 与solution-2的区别就是str  + "(", 解决了remove character的问题，sb.deleteCharAt(sb.length()-1);
     public static void backtrack(List<String> list, String str, int leftCount, int rightCount, int n) {
         if (rightCount == n) {
@@ -33,6 +31,27 @@ public class GenerateParenthesis {
         if (rightCount < leftCount)
             backtrack(list, str + ")", leftCount, rightCount + 1, n);
     }
+
+    // for reference
+    // str + ")" is alternative way of "sb.append(x); backtrack(...); sb.deleteCharAt(sb.size()-1)" in below function
+/*    public static void backtrack(List<String> list, StringBuilder sb, int left, int right, int n) {
+        if (right == n) {
+            list.add(sb.toString());
+            return;
+        }
+
+        if (left < n) {
+            sb.append("(");
+            backtrack(list, sb, left+1, right, n);
+            sb.deleteCharAt(sb.length()-1);
+        }
+
+        if (right < left) {
+            sb.append(")");
+            backtrack(list, sb, left, right+1, n);
+            sb.deleteCharAt(sb.length()-1);
+        }
+    }*/
 }
 
 /***

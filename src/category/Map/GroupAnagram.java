@@ -12,6 +12,12 @@ public class GroupAnagram {
     public static void main(String[] args) {
         groupAnagramsUniqueHash(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"})
                 .forEach(a -> System.out.println(Arrays.toString(a.toArray())));
+
+        char[] cs = new char[22];
+        System.out.println(cs[0]++);
+        System.out.println(cs[0]++);
+        System.out.println(cs[0]);
+        System.out.println(cs);
     }
 
     public static List<List<String>> groupAnagramsUniqueHash(String[] strs) {
@@ -23,9 +29,8 @@ public class GroupAnagram {
                 ca[c - 'a']++;
             }
             String keyStr = String.valueOf(ca);
-            if (!map.containsKey(keyStr)) {
-                map.put(keyStr, new ArrayList<>());
-            }
+            System.out.println(keyStr);
+            map.putIfAbsent(keyStr, new ArrayList<>());
             map.get(keyStr).add(str);
         }
         return new ArrayList<>(map.values());

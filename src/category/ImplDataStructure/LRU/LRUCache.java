@@ -9,7 +9,7 @@ import java.util.*;
  * Solution: HashMap + Doubly LinkedList (self-defined)
  *                      Map<key, Node>
  *                              /
- * doubly linkedList:    |  | node | ... |
+ * doubly linkedList:  |  | node | ... |
  *
  * https://medium.com/@krishankantsinghal/my-first-blog-on-medium-583159139237
  *
@@ -83,7 +83,7 @@ public class LRUCache{
         node.next = headNext;
         headNext.prev = node;
 
-/*        head.next.prev = node;
+/*      head.next.prev = node;
         node.prev = head;
         node.next = head.next;
         head.next = node;*/

@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "WordLadderI",
+      "request": "launch",
+      "mainClass": "category.BFS.wordLadderI.preCalculatedAdjacentWildcardNodes.WordLadderI",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "SortMatrixDiagonally",
+      "request": "launch",
+      "mainClass": "category.Array.SortMatrixDiagonally",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
       "name": "EmployeeFreeTime",
       "request": "launch",
       "mainClass": "EmployeeFreeTime",

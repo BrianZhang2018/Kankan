@@ -9,22 +9,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/category/model/NestedInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/category/model/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/category/tree/BinaryTreeUtil.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/meta/BinaryTreeLeftBottomToTopRightTopToBottom.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterviewPrep/src/meta/ValidWordAbbreviation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/SumRootToLeafNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/ZigZagLevelOrderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/graph/BoardAndPinsRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/graph/BusRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/dataConsistency/Saga/Saga compensation transactions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemDesign/technologies/dataConsistency/twoPhaseCommit/a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/amazon/onsite/AllNodesDistanceKInBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/amazon/onsite/AllNodesDistanceKInBinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/MergeInterval.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/ValidateBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/bloomberg/ValidateBinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/companies/google/DiagonalTraverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/companies/google/DiagonalTraverse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/discovery/MinimumRemoveMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/discovery/MinimumRemoveMakeValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/discovery/ReverseInKGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/discovery/ReverseInKGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSumBetweenTwoAsteriskLeafNodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSumBetweenTwoAsteriskLeafNodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSumBetweenTwoAsteriskNodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSumBetweenTwoAsteriskNodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSumPrintOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2021/MaximumPathSum/MaximumPathSumPrintOut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/problems/TopKFrequentElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/grubhub/problems/TopKFrequentElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/LowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/LowestCommonAncestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/highF/TournamentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/highF/TournamentTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/FindLeavesOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/FindLeavesOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/maximumSubArray/MaximumSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/phoneScreening/ps2021/maximumSubArray/MaximumSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/others/ClosestBinarySearchTreeValueII272.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/others/ClosestBinarySearchTreeValueII272.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/others/FindBinaryLeaves366.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/others/FindBinaryLeaves366.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/systemDesign/delayedScheduler/example/TaskScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/linkedin/vo/systemDesign/delayedScheduler/example/DelayedTaskScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/model/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/category/model/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/model/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/category/model/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/oracle/phoneScreening/BinarySearchTreeDeleteNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/oracle/phoneScreening/BinarySearchTreeDeleteNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/oracle/phoneScreening/ClosestBinarySearchTreeValueII.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/oracle/phoneScreening/ClosestBinarySearchTreeValueII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/RecoverBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/oracle/vo/RecoverBinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/qualtrics/BinaryTreeZigzagLevelOrderTraversal103.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/qualtrics/BinaryTreeZigzagLevelOrderTraversal103.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/remitly/GroupAnagram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/rippling/MaximumAverageSubTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/rippling/MaximumAverageSubTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterviewPrep/src/square/onsite/hotelBooking" beforeDir="false" afterPath="$PROJECT_DIR$/../InterviewPrep/src/square/onsite/hotelBooking" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/GenerateParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/GenerateParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/ImplDataStructure/LRU/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/Map/GroupAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Map/GroupAnagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get-pip.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InterviewPath/com/2019/Groupon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InterviewPath/com/YP/failedLine.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InterviewPath/com/YP/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InterviewPath/com/designpattern/Adapter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InterviewPath/com/designpattern/Strategy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InterviewPath/com/leecode/interview/xxx.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InterviewPath/com/systemdesign/ATM/ATM - Class Model.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InterviewPath/com/systemdesign/ATM/ATM-Class Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InterviewPath/com/systemdesign/Payroll/Employee.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/Backtracking-dfs vs Simple dfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/DFS vs BFS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/DP vs Divide&amp;Conquer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/OOD/DeckOfCards/reference" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/OOD/SOLID principles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/Tree-dfs-traverse" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/Tree-undirected-graph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/AnalysisDiagrams/N-Queen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/AnalysisDiagrams/RegularExpression.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/AnalysisDiagrams/Subsets.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/AnalysisDiagrams/ValidateBinarySearchTree.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/AnalysisDiagrams/ValidateBinarySearchTree1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/AnalysisDiagrams/topologicalSort.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/DynamicPlanning/Decodenumber-sh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/DynamicPlanning/easyDP/DP explanation" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/DynamicPlanning/easyDP/HouseRobberII.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/graph/Asolution/套路" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/graph/topologicalsort/ATopologicalAnalysis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/linkedList/ReverseLinkedListIIJPG.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/category/tree/depth/problems" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/data-structure-time-complexity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/javabasic/javapassbyvalue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/DesignLearning" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KillLeetCode/systemdesign/SNAKE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BFS/BreadthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/BreadthFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BFS/wordLadderI/preCalculatedAdjacentWildcardNodes/WordLadderI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BFS/wordLadderI/preCalculatedAdjacentWildcardNodes/WordLadderI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFS/IslandProblems/origin/NumberOfIsland.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFS/IslandProblems/origin/NumberOfIsland.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFS/IslandProblems/origin/NumberOfIslandFlipNumberSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFS/IslandProblems/origin/NumberOfIslandFlipNumberSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/TheSkyline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/TheSkyline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/CarPolling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/CarPolling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/EmployeeFreeTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/EmployeeFreeTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/IntervalSchedueling" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/MergeInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/SweepLine/overlapInterval/MergeInterval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/LevelOrderTraverseII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/LevelOrderTraverseII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/BinaryTree/RightSideView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/BinaryTree/RightSideView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/CheapestFlightWithinKStops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/CheapestFlightWithinKStops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/graph/Dijkstra/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/graph/Dijkstra/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/systemDesign/technologies/Saga distributed message.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/systemDesign/technologies/dataConsistency/Saga/Saga sequence transacions.png" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -166,6 +244,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -271,6 +350,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1280" />
     <option name="height" value="800" />
@@ -1342,42 +1424,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.269275&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AttractionRoute.executor": "Run",
+    "Application.BusRoute.executor": "Run",
+    "Application.RecoverBinarySearchTree.executor": "Run",
+    "Application.RemoveAdjacentString.executor": "Run",
+    "Application.WordLadderI.executor": "Run",
+    "Maven.kankan [compile].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "jdk.selected.JAVA_MODULE": "11",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/brianzhang/IdeaProjects/InterviewPrep/src/category/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.269275",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../InterviewPrep/src/category/model" />
+      <recent name="$PROJECT_DIR$/../InterviewPrep/src" />
       <recent name="$PROJECT_DIR$/../InterviewPrep/src/doordash/my2022" />
       <recent name="$PROJECT_DIR$/src/category/String" />
       <recent name="$PROJECT_DIR$/src/面试高频类型/highFrequent/recursive" />
-      <recent name="$PROJECT_DIR$/../InterviewPrep" />
-      <recent name="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/systemDesign/technologies/dataConsistency/Saga" />
+      <recent name="$PROJECT_DIR$/src/systemDesign/technologies/dataConsistency" />
       <recent name="$PROJECT_DIR$/src/category/MonotoneQueueStack/descrasing" />
       <recent name="$PROJECT_DIR$/src/category/Tree/BinaryTree/boundaryView" />
       <recent name="$PROJECT_DIR$/src/category/Tree/BinaryTree/VerticalOrder/one" />
-      <recent name="$PROJECT_DIR$/src/systemDesign/technologies/advance/paper" />
-      <recent name="$PROJECT_DIR$/src/category/Stack/calculator" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="category.PriorityQueue.overlapInterval" />
@@ -1394,7 +1490,7 @@
       <recent name="doordash.my2022" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LRUCache">
+  <component name="RunManager" selected="Application.RecoverBinarySearchTree">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1544,6 +1640,15 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
       <method />
     </configuration>
@@ -1570,13 +1675,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="DeepCopySingleLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.linkedList.DeepCopySingleLinkedList" />
+    <configuration name="AttractionRoute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.graph.AttractionRoute" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.linkedList.*" />
+          <option name="PATTERN" value="category.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1584,13 +1689,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindFirstAndLastPositionOfElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.BinarySearch.FindFirstAndLastPositionOfElement" />
+    <configuration name="BusRoute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.graph.BusRoute" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.BinarySearch.*" />
+          <option name="PATTERN" value="category.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1598,13 +1703,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenerateParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.DFSBacktracing.GenerateParenthesis" />
-      <module name="LeetCode" />
+    <configuration name="RecoverBinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oracle.vo.RecoverBinarySearchTree" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.DFSBacktracing.*" />
+          <option name="PATTERN" value="oracle.vo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1612,13 +1717,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupAnagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.Map.GroupAnagram" />
-      <module name="LeetCode" />
+    <configuration name="RemoveAdjacentString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bloomberg.RemoveAdjacentString" />
+      <module name="InterviewPrep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.Map.*" />
+          <option name="PATTERN" value="bloomberg.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1626,13 +1731,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.ImplDataStructure.LRU.LRUCache" />
+    <configuration name="WordLadderI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.BFS.wordLadderI.preCalculatedAdjacentWildcardNodes.WordLadderI" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.ImplDataStructure.LRU.*" />
+          <option name="PATTERN" value="category.BFS.wordLadderI.preCalculatedAdjacentWildcardNodes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1653,6 +1758,7 @@
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="InterviewPath" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -1698,6 +1804,7 @@
     </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <module name="InterviewPath" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -1711,6 +1818,7 @@
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="InterviewPath" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -1742,6 +1850,7 @@
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
       <module name="InterviewPath" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -1751,15 +1860,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <method v="2" />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
@@ -1772,6 +1872,7 @@
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <module name="InterviewPath" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -1791,6 +1892,7 @@
     </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <module name="InterviewPath" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -1807,6 +1909,7 @@
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="InterviewPath" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -1822,6 +1925,7 @@
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
       <module name="InterviewPath" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -1838,21 +1942,28 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.LRUCache" />
-      <item itemvalue="Application.DeepCopySingleLinkedList" />
-      <item itemvalue="Application.GenerateParenthesis" />
-      <item itemvalue="Application.FindFirstAndLastPositionOfElement" />
-      <item itemvalue="Application.GroupAnagram" />
+      <item itemvalue="Application.RecoverBinarySearchTree" />
+      <item itemvalue="Application.RemoveAdjacentString" />
+      <item itemvalue="Application.AttractionRoute" />
+      <item itemvalue="Application.BusRoute" />
+      <item itemvalue="Application.WordLadderI" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LRUCache" />
-        <item itemvalue="Application.GroupAnagram" />
-        <item itemvalue="Application.DeepCopySingleLinkedList" />
-        <item itemvalue="Application.GenerateParenthesis" />
-        <item itemvalue="Application.FindFirstAndLastPositionOfElement" />
+        <item itemvalue="Application.RecoverBinarySearchTree" />
+        <item itemvalue="Application.RemoveAdjacentString" />
+        <item itemvalue="Application.BusRoute" />
+        <item itemvalue="Application.AttractionRoute" />
+        <item itemvalue="Application.WordLadderI" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-396cc1b2" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -2132,6 +2243,32 @@
       <workItem from="1704414504528" duration="68000" />
       <workItem from="1704414661298" duration="2105000" />
       <workItem from="1704647985643" duration="4303000" />
+      <workItem from="1704812164531" duration="4046000" />
+      <workItem from="1706728137898" duration="1468000" />
+      <workItem from="1708824070280" duration="231000" />
+      <workItem from="1708824436228" duration="780000" />
+      <workItem from="1708826263572" duration="225000" />
+      <workItem from="1708826496989" duration="91000" />
+      <workItem from="1708968165549" duration="278000" />
+      <workItem from="1719768362122" duration="632000" />
+      <workItem from="1719769009926" duration="3208000" />
+      <workItem from="1721493606368" duration="26000" />
+      <workItem from="1721493638976" duration="3952000" />
+      <workItem from="1725296532246" duration="39000" />
+      <workItem from="1725725507584" duration="2663000" />
+      <workItem from="1729308713135" duration="78000" />
+      <workItem from="1729308800504" duration="1372000" />
+      <workItem from="1739727890178" duration="24000" />
+      <workItem from="1739727921240" duration="58000" />
+      <workItem from="1739728810421" duration="549000" />
+      <workItem from="1745192895270" duration="109000" />
+      <workItem from="1745193011591" duration="121000" />
+      <workItem from="1751307026605" duration="77000" />
+      <workItem from="1751307114406" duration="40000" />
+      <workItem from="1751307164581" duration="3455000" />
+      <workItem from="1751401226992" duration="2160000" />
+      <workItem from="1751461954752" duration="862000" />
+      <workItem from="1751474666989" duration="1687000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>
@@ -2296,6 +2433,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>

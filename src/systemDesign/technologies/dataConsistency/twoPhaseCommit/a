@@ -1,0 +1,14 @@
+https://martinfowler.com/articles/patterns-of-distributed-systems/two-phase-commit.html
+
+Two-Phase Commit
+Update resources on multiple nodes in one atomic operation
+
+Problem
+When data needs to be atomically stored on multiple cluster nodes, nodes cannot make the data accessible to clients until the decision of other cluster nodes is known. Each node needs to know if other nodes successfully stored the data or if they failed.
+
+Solution
+The essence of two-phase commit, unsurprisingly, is that it carries out an update in two phases:
+
+The prepare phase asks each node if it can promise to carry out the update.
+The commit phase actually carries it out.
+As part of the prepare phase, each node participating in the transaction acquires whatever it needs to assure that it will be able to do the commit in the second phase—for example, any locks that are required. Once each node is able to ensure it can commit in the second phase, it lets the coordinator know, promising the coordinator that it can and will commit in the second phase. If any node is unable to make that promise, then the coordinator tells all nodes to roll back, releasing any locks they have, and the transaction is aborted. Only if all the participants agree to go ahead does the second phase commence—at which point it's expected they will all successfully update. It is crucial for each participant to ensure the durability of their decisions using pattern like Write-Ahead Log. This means that even if a node crashes and subsequently restarts, it should be capable of completing the protocol without any issues.

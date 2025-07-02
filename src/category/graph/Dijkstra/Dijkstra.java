@@ -6,10 +6,14 @@ import java.util.*;
  * Find the shortest path from Node A to Z
  * Dijkstra is greedy algorithm - easy understand
  *
- * Time complexity: O(ElogV), where V is number of vertices and E is number of edges,
- * Our inner loop statements occur O(V + E) times, where V is number of vertices and E is number of edges,
- * with the decrease key operation taking O(logV) meaning the total time complexity for our implementation
- * is O((V + E)*logV) as E -> V this simplifies to O(ElogV). Where we have the largest number of decrease key operations (which take logV)
+ * Time complexity: O(ElogV), where V is number of vertices and E is number of
+ * edges,
+ * Our inner loop statements occur O(V + E) times, where V is number of vertices
+ * and E is number of edges,
+ * with the decrease key operation taking O(logV) meaning the total time
+ * complexity for our implementation
+ * is O((V + E)*logV) as E -> V this simplifies to O(ElogV). Where we have the
+ * largest number of decrease key operations (which take logV)
  * https://iq.opengenus.org/time-and-space-complexity-of-dijkstra-algorithm/
  *
  * https://www.youtube.com/watch?v=GazC3A4OQTE
@@ -26,14 +30,14 @@ public class Dijkstra {
         Vertex Z = new Vertex("Z");
 
         // set the edges and weight
-        A.adjacencies = new Edge[]{new Edge(M, 8), new Edge(B, 2)};
-        B.adjacencies = new Edge[]{new Edge(D, 11), new Edge(M, 1)};
-        D.adjacencies = new Edge[]{new Edge(B, 11)};
-        //D.adjacencies = new Edge[] { new Edge(Z, 2) };
-        M.adjacencies = new Edge[]{new Edge(R, 8)};
-        P.adjacencies = new Edge[]{new Edge(Z, 18)};
-        R.adjacencies = new Edge[]{new Edge(P, 15)};
-        Z.adjacencies = new Edge[]{new Edge(P, 18)};
+        A.adjacencies = new Edge[] { new Edge(M, 8), new Edge(B, 2) };
+        B.adjacencies = new Edge[] { new Edge(D, 11), new Edge(M, 1) };
+        D.adjacencies = new Edge[] { new Edge(B, 11) };
+        // D.adjacencies = new Edge[] { new Edge(Z, 2) };
+        M.adjacencies = new Edge[] { new Edge(R, 8) };
+        P.adjacencies = new Edge[] { new Edge(Z, 18) };
+        R.adjacencies = new Edge[] { new Edge(P, 15) };
+        Z.adjacencies = new Edge[] { new Edge(P, 18) };
 
         computePaths(A); // start from A
         System.out.println("Distance to " + Z + ": " + Z.minDistance);
@@ -80,9 +84,11 @@ class Vertex implements Comparable<Vertex> {
     public Vertex(String argName) {
         name = argName;
     }
+
     public int compareTo(Vertex other) {
         return Double.compare(minDistance, other.minDistance);
     }
+
     public String toString() {
         return name;
     }
@@ -91,6 +97,7 @@ class Vertex implements Comparable<Vertex> {
 class Edge {
     public final Vertex target;
     public final double weight;
+
     public Edge(Vertex edgeEndVertex, double edgeWeight) {
         target = edgeEndVertex;
         weight = edgeWeight;

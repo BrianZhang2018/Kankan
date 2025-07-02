@@ -8,11 +8,9 @@ e.g. MeetingRoomII
         Interval source1 = new Interval(3, 4);
         Interval source = new Interval(1, 6);
         Interval source2 = new Interval(5, 7);
-
     1. Sort by start-time: (1, 6), (3, 4), (5, 7)
 
-    2. Overlap: (1, 6), (3, 4) -> must have separate room, but (3, 4), (5, 7) no overlap that they can use same room.
-
-       If don't sort: 例如: (3, 4), (1, 6), (5, 7)，你就需要 3 个rooms了
+    2. Overlap: (1, 6), (3, 4) -> must have separate room. But, (3, 4), (5, 7) no overlap, so they can use the same room.
+       If don't sort, e.g. (3, 4), (1, 6), (5, 7)，你就需要 3 个rooms了
 
     3. Queue里最后剩下overlap的interval

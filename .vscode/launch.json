@@ -2,6 +2,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "EmployeeFreeTime",
+      "request": "launch",
+      "mainClass": "EmployeeFreeTime",
+      "projectName": "Kankan"
+    },
+    {
+      "type": "java",
+      "name": "BoardAndPinsRoute",
+      "request": "launch",
+      "mainClass": "BoardAndPinsRoute",
+      "projectName": "Kankan"
+    },
+    {
+      "type": "java",
+      "name": "WordLadderI",
+      "request": "launch",
+      "mainClass": "WordLadderI",
+      "projectName": "Kankan"
+    },
+    {
+      "type": "java",
+      "name": "WordLadderI",
+      "request": "launch",
+      "mainClass": "category.BFS.wordLadderI.preCalculatedAdjacentWildcardNodes.WordLadderI",
+      "projectName": "Kankan_afffa60b"
+    },
+    {
+      "type": "java",
+      "name": "EmployeeFreeTime",
+      "request": "launch",
+      "mainClass": "category.SweepLine.overlapInterval.EmployeeFreeTime",
+      "projectName": "Kankan_afffa60b"
+    },
+    {
+      "type": "java",
+      "name": "BusRoute",
+      "request": "launch",
+      "mainClass": "category.graph.BusRoute",
+      "projectName": "Kankan_afffa60b"
+    },
+    {
+      "type": "java",
+      "name": "RangeSumOfBST",
+      "request": "launch",
+      "mainClass": "category.BFSOrDFS.RangeSumOfBST",
+      "projectName": "Kankan_afffa60b"
+    },
+    {
+      "type": "java",
       "name": "Launch ListComparator",
       "request": "launch",
       "mainClass": "category.javabasic.ListComparator",

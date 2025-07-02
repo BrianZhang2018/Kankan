@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" filepath="$PROJECT_DIR$/../InterviewPrep/InterviewPrep.iml" />
       <module fileurl="file://$USER_HOME$/workspace/InterviewPrep/InterviewTest.iml" filepath="$USER_HOME$/workspace/InterviewPrep/InterviewTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode.iml" />
     </modules>
   </component>
 </project>

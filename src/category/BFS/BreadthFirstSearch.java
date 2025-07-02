@@ -10,7 +10,7 @@ public class BreadthFirstSearch {
         Node root = new Node(10);
         root.left = new Node(6);
         root.right = new Node(21);
-/*        root.left.left = new Node(1);
+/*      root.left.left = new Node(1);
         root.left.right = new Node(8);
         root.right.left = new Node(13);
         root.right.right = new Node(25);
@@ -34,8 +34,7 @@ public class BreadthFirstSearch {
         }
     }
 
-    public int dfs(Node root, int level, int order, List<Integer> start,
-                   List<Integer> end) {
+    public int dfs(Node root, int level, int order, List<Integer> start, List<Integer> end) {
         if (root == null) return 0;
         if (start.size() == level) {
             start.add(order);

@@ -11,7 +11,7 @@ import java.util.*;
  *
  * Created by brian Zhang on 8/21/18.
  */
-public class WordLadderIBiDirectionalBFS {
+public class WordLadderIBidirectionalBFS {
     public static void main(String[] args) {
         System.out.println(ladderLength("hit", "cog", new ArrayList<>(Arrays.asList("hot", "hat", "dot", "dog", "lot", "log", "cog"))));
         System.out.println(ladderLengthRecursive("hit", "log", new ArrayList<>(Arrays.asList("hot", "hat", "dot", "dog", "lot", "log", "cog"))));

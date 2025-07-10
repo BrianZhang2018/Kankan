@@ -43,7 +43,7 @@ class TNode {
 
     /** Returns if the word is in the trie. */
     public boolean search(String word) {
-        TNode node = this; // "this" represent root
+        TNode node = this;  // "this" represent root
         char[] ca = word.toCharArray();
         for (int i = 0; i < ca.length; i++) {
             if (node.children[ca[i] - 'a'] == null) {
@@ -55,7 +55,7 @@ class TNode {
         return node.word != null;
     }
 
-    /** Returns if there is any word in the trie that starts with the given prefix. */
+    // Returns if there is any word in the trie that starts with the given prefix
     public boolean startsWith(String prefix) {
         TNode node = this;
         char [] c = prefix.toCharArray();

@@ -15,33 +15,31 @@ import java.util.*;
  */
 public class CheapestFlightWithinKStops {
     public static void main(String[] args) {
+        // [from, to, price]
         int[][] flights = new int[][] { { 0, 1, 10 }, { 0, 2, 50 }, { 1, 2, 10 } };
         System.out.println(findCheapestPrice(3, flights, 0, 2, 1));
     }
 
     public static int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
-        // build graph
+        // build flight graph - from -> [[to, price], ...]  
         Map<Integer, Map<Integer, Integer>> adjacent = new HashMap();
         for (int[] f : flights) {
-            adjacent.putIfAbsent(f[0], new HashMap<>());
-            adjacent.get(f[0]).put(f[1], f[2]);
+            adjacent.computeIfAbsent(f[0], key -> new HashMap()).put(f[1], f[2]);
         }
 
-        // minHeap
+        // minHeap - always poll the cheapest flight
         Queue<int[]> queue = new PriorityQueue<>((a, b) -> a[0] - b[0]);
-        queue.add(new int[] { 0, src, k + 1 }); // 0 is the cost, src is the start node, k+1 is the max stops
+        queue.add(new int[] { 0, src, k + 1 }); // initially, [cost,  start node, max stops]
         while (!queue.isEmpty()) {
             int[] node = queue.poll();
-            int cost = node[0];
-            int city = node[1];
-            int stops = node[2];
+            int costSum = node[0], fromeCity = node[1], remainingStops = node[2];
 
-            if (city == dst) return cost;
+            if (fromeCity == dst) return costSum;
 
-            if (stops > 0) {
-                Map<Integer, Integer> adjacentFlights = adjacent.getOrDefault(city, new HashMap());
+            if (remainingStops > 0) {
+                Map<Integer, Integer> adjacentFlights = adjacent.getOrDefault(fromeCity, new HashMap());
                 for (int next : adjacentFlights.keySet()) {
-                    queue.add(new int[] { cost + adjacentFlights.get(next), next, stops - 1 });
+                    queue.add(new int[]{costSum + adjacentFlights.get(next), next, remainingStops - 1});
                 }
             }
         }

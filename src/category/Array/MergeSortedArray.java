@@ -3,14 +3,11 @@ package category.Array;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/merge-sorted-array/
- *
- * Start "in-place" insert from the "end" of array
- *
- * Created by brianzhang on 6/2/20.
+ * Merges two sorted arrays nums1 and nums2 into nums1 in-place, 
+ * The algorithm merges from the end of the arrays to avoid overwriting elements in nums1, always placing the largest remaining value at the current last position.
+ * 
  */
 public class MergeSortedArray {
-
     public static void main(String[] args) {
         int[] nums1 = new int[]{1,2,3,0,0,0};
         merge(nums1, 3, new int[]{2,5,6}, 3);

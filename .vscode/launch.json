@@ -2,6 +2,69 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MergeSortedArray",
+      "request": "launch",
+      "mainClass": "category.Array.MergeSortedArray",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "MergeKSortedList",
+      "request": "launch",
+      "mainClass": "category.PriorityQueue.MergeKSortedList",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "SimplifyPath",
+      "request": "launch",
+      "mainClass": "category.Stack.SimplifyPath",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "RemoveNthNodeFromEndOfList",
+      "request": "launch",
+      "mainClass": "category.Tree.RemoveNthNodeFromEndOfList",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "WordLadderIBidirectionalBFS",
+      "request": "launch",
+      "mainClass": "category.BFS.wordLadderI.bidirectionalBFS.WordLadderIBidirectionalBFS",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "WordLadderIBiBFSAndPreProcessing",
+      "request": "launch",
+      "mainClass": "category.BFS.wordLadderI.WordLadderIBiBFSAndPreProcessing",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "CheapestFlightWithinKStops",
+      "request": "launch",
+      "mainClass": "category.graph.Dijkstra.CheapestFlightWithinKStops",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "TrieImplByHashMap",
+      "request": "launch",
+      "mainClass": "category.Tree.triePrefixTree.basicImpl.map.TrieImplByHashMap",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "WordSearchII",
+      "request": "launch",
+      "mainClass": "category.Tree.triePrefixTree.basicImpl.array.WordSearchII",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
       "name": "WordLadderI",
       "request": "launch",
       "mainClass": "category.BFS.wordLadderI.preCalculatedAdjacentWildcardNodes.WordLadderI",

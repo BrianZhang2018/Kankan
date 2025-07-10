@@ -10,6 +10,14 @@ map:
         }
     }
 
+(root)
+  |
+  'a'
+   |
+  / \
+'t' 's'
+"at" "as"
+
 array:
     array impl use the index represent char val, like bucket sort
 
@@ -23,3 +31,13 @@ array:
     if (root.children[index] == null) {
         root.children[index] = new TrieNode();
     }
+
+root
+  |
+  |--[0]--> (a)
+  |           |
+  |           |--[19]--> (t)  [word: "at"]
+  |
+  |--[1]--> (b)
+              |
+              |--[4]--> (e)  [word: "be"]

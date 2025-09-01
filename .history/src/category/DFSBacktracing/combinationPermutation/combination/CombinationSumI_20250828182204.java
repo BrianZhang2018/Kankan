@@ -32,7 +32,7 @@ public class CombinationSumI {
             res.add(new ArrayList<>(temp));
             return;
         }
-        for (int index = start; index < nums.length; index++) {
+        for (int index = start; index < nums.length; index++) { // but, permutation i=0
             if(nums[index] > target)
                 break; // optimization (剪枝), that's why we sort the number in the beginning to avoid calculate the impossible larger candidates
 

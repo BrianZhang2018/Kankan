@@ -26,7 +26,7 @@ public class Subsets {
         list.add(new ArrayList<>(tempList));
         for (int i = start; i < nums.length; i++) {
             tempList.add(nums[i]);
-            backtrack(list, tempList, nums, i + 1); // the 'i+1' is used to go next number
+            backtrack(list, tempList, nums, i + 1);
             tempList.remove(tempList.size() - 1);
         }
     }

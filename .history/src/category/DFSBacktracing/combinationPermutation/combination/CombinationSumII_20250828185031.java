@@ -30,7 +30,7 @@ public class CombinationSumII {
         for (int i = start; i < nums.length; i++) {
             if(nums[i] > target) break; // optimization (剪枝), that's why we sort the number in the beginning
 
-            // avoid duplicate combination, skip duplicate "nums[i]" in current loop since duplicate nums[i-1] already used, refer bleow example
+            // avoid duplicate combination, skip later duplicate "nums[i]" in current loop since  nums[i-1] already used, refer bleow example
             if (i > start && nums[i] == nums[i - 1]) continue;
 
             temp.add(nums[i]);

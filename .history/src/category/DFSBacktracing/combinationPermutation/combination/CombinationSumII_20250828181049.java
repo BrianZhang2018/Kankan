@@ -13,11 +13,11 @@ import java.util.*;
  */
 public class CombinationSumII {
     public static void main(String[] args) {
-        System.out.println(new CombinationSumII().combinationSum(new int[]{1,1,2}, 3));
+        System.out.println(new CombinationSumII().combinationSum(new int[]{10,1,2,7,6,1,5}, 8));
     }
     public List<List<Integer>> combinationSum(int[] nums, int target) {
         List<List<Integer>> res = new ArrayList();
-        Arrays.sort(nums);
+        Arrays.sort(nums); // 剪枝
         dfs(nums, target, 0, new ArrayList(), res);
         return res;
     }
@@ -30,29 +30,12 @@ public class CombinationSumII {
         for (int i = start; i < nums.length; i++) {
             if(nums[i] > target) break; // optimization (剪枝), that's why we sort the number in the beginning
 
-            // avoid duplicate combination, skip duplicate "nums[i]" in current loop since duplicate nums[i-1] already used, refer bleow example
+            // avoid duplicate combination, skip duplicate "nums[i]" in current loop since duplicate nums[i-1] already used
             if (i > start && nums[i] == nums[i - 1]) continue;
 
             temp.add(nums[i]);
-            dfs(nums, target - nums[i], i+1, temp, res); // i+1, since each number can only be used once
+            dfs(nums, target - nums[i], i+1, temp, res); // i+1, each number can be used once
             temp.remove(temp.size() - 1);
         }
     }
 }
-
-
-
-/*
-Visual Example
-Without the line (generates duplicates):
-
-[1₁, 1₂, 2] target=3
-├── Use 1₁: [1₁, 2] ✓
-└── Use 1₂: [1₂, 2] ✗ (same as above)
-
-With the line (no duplicates):
-
-[1₁, 1₂, 2] target=3
-├── Use 1₁: [1₁, 2] ✓
-└── Skip 1₂ (duplicate in same level)
-*/

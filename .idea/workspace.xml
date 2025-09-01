@@ -9,7 +9,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSum I vs II TimeComplexity_20250702160950" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSum I vs II TimeComplexity_20250828182323" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250702160950.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828181049.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828181053.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828181057.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828182356.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828182644.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828182656.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828183935.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828183950.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828184006.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828184007.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828184010.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828184013.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828184032.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828184046.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828184904.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828184914.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828184916.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828184951.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828185005.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828185009.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828185018.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828185031.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII_20250828185034.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumI_20250702160950.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumI_20250828182156.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumI_20250828182157.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumI_20250828182204.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumI_20250828182214.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/SubsetsII_20250702160950.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/SubsetsII_20250901124040.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/Subsets_20250702160950.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/Subsets_20250828190529.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/Subsets_20250828190531.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/category/DFSBacktracing/combinationPermutation/combination/Subsets_20250828190533.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.qoder/rules/leetcodeexpert.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSum I vs II TimeComplexity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationPermutation/combination/CombinationSumII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationPermutation/combination/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationPermutation/combination/Subsets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationPermutation/combination/SubsetsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationPermutation/combination/SubsetsII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Tree/RemoveNthNodeFromEndOfList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Tree/RemoveNthNodeFromEndOfList.java" afterDir="false" />
     </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
@@ -2180,6 +2225,8 @@
       <workItem from="1751487220790" duration="13000" />
       <workItem from="1751487330802" duration="179000" />
       <workItem from="1751487526595" duration="11000" />
+      <workItem from="1756758118566" duration="57000" />
+      <workItem from="1756758184466" duration="790000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>

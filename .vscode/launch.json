@@ -2,6 +2,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Subsets",
+      "request": "launch",
+      "mainClass": "category.DFSBacktracing.combinationPermutation.combination.Subsets",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "CombinationSumII",
+      "request": "launch",
+      "mainClass": "category.DFSBacktracing.combinationPermutation.combination.CombinationSumII",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "FindFirstAndLastPositionOfElement",
+      "request": "launch",
+      "mainClass": "category.BinarySearch.FindFirstAndLastPositionOfElement",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "PassByValueDemo",
+      "request": "launch",
+      "mainClass": "category.BinarySearch.PassByValueDemo",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "PassReferenceAsValue",
+      "request": "launch",
+      "mainClass": "javabasic.PassReferenceAsValue",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "Test",
+      "request": "launch",
+      "mainClass": "category.BinarySearch.Test",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
       "name": "MergeSortedArray",
       "request": "launch",
       "mainClass": "category.Array.MergeSortedArray",

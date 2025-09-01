@@ -2,12 +2,11 @@ package category.Tree;
 
 import category.model.ListNode;
 
-
 /**
- * two pointers solution: 
- * 1. advance first pointer
- * 2. the gap between first and second should be n nodes apart
- * 
+ * two pointers 快慢指针 solution: 
+ * 1. advance fast pointer
+ * 2. the gap between fast and slow should be n nodes apart
+ *
  * Created by brianzhang on 9/16/18.
  */
 public class RemoveNthNodeFromEndOfList {
@@ -22,21 +21,15 @@ public class RemoveNthNodeFromEndOfList {
     }
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode dummy = new ListNode(Integer.MIN_VALUE);
-        dummy.next = head;
-        ListNode first = dummy, second = dummy;
-        // advance first pointer: the gap between first and second should be n nodes apart
-        for (int i = 1; i <= n + 1; i++) {
-            first = first.next;
+        ListNode fast = head;
+        ListNode slow = head;
+        for(int i = 0; i < n; i++)  fast = fast.next;
+        if(fast == null) return head.next;
+        while(fast.next != null){
+            fast = fast.next;
+            slow = slow.next;
         }
-        // move first to the end, maintaining the gap
-        while (first != null) {
-            first = first.next;
-            second = second.next;
-        }
-        // remove the nth node from the end
-        second.next = second.next.next;
+        slow.next = slow.next.next;
         return head;
     }
-   
 }

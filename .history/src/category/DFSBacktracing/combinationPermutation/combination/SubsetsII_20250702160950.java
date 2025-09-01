@@ -19,7 +19,7 @@ public class SubsetsII {
 
     public List<List<Integer>> subsetsWithoutDup(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
-        // sort the nums so that the nums[i] == nums[i - 1] can be used to check the duplicate number
+        //sort the nums so that the nums[i] == nums[i - 1] can be used to check the duplicate number
         Arrays.sort(nums);
         backTrack(nums, 0, res, new ArrayList<>());
         return res;

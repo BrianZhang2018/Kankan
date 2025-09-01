@@ -4,3 +4,4 @@
 */workspace.xml
 out/product*
 target/
+.history/

@@ -8,7 +8,27 @@
     <bookmark url="file://$PROJECT_DIR$/src/category/unionfind/simpleVersion/FriendCircleSimpleUnionFind.java" line="7" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update" />
+    <list default="true" id="74ab668e-4e4b-4360-9b1f-b1c79e5e03e4" name="Default" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/prefixSum/SubArraySumPrefixSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/prefixSum/SubArraySumPrefixSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/prefixSum/idea/subarray-prefixsum-solution.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/prefixSum/idea/套路" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/prefixSum/kadaneAlgorithm/MaximumSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/prefixSum/kadaneAlgorithm/MaximumSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/slotSeparation/MaximumProductSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/slotSeparation/MaximumProductSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/Array/slotSeparation/ProductExceptSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/Array/slotSeparation/ProductExceptSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/Binary_Search 特点" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/Binary_Search 特点" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/FindPeakElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/SearchInRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/BinarySearch/rotatedArray/SearchInRotatedSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationPermutation/permutation/II/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DFSBacktracing/combinationPermutation/permutation/II/ThreeSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/DP" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/DP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/JumpGameBottomUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/JumpGameBottomUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/JumpGameTopDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/JumpGameTopDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/easyDP/HouseRobber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/easyDP/HouseRobber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/easyDP/HouseRobberII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/easyDP/HouseRobberII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/DynamicPlanning/easyDP/MaximumSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/DynamicPlanning/easyDP/MaximumSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/TwoPointer/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/TwoPointer/ThreeSum.java" afterDir="false" />
+    </list>
     <list id="848ace74-45f7-4a7e-8454-a49ed62d643e" name="Failed commit: Default" comment="update" />
     <list id="07ec0ff8-96f0-48cb-925c-664fbb49583a" name="Rejected commit: Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -585,7 +605,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -1329,39 +1349,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.AttractionRoute.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BusRoute.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RecoverBinarySearchTree.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RemoveAdjacentString.executor&quot;: &quot;Run&quot;,
-    &quot;Application.WordLadderI.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.kankan [compile].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/brianzhang/vscodeWs/Kankan&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.269275&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AttractionRoute.executor": "Run",
+    "Application.BusRoute.executor": "Run",
+    "Application.RecoverBinarySearchTree.executor": "Run",
+    "Application.RemoveAdjacentString.executor": "Run",
+    "Application.WordLadderI.executor": "Run",
+    "Maven.kankan [compile].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "jdk.selected.JAVA_MODULE": "11",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/brianzhang/vscodeWs/Kankan",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.269275",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../InterviewPrep/src/category/model" />
@@ -1466,6 +1487,32 @@
     <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
       <method />
     </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="InterviewPath" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
       <option name="BCName" value="" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -1529,6 +1576,20 @@
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="InterviewPath" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
@@ -1656,32 +1717,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="InterviewPath" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
@@ -1706,20 +1741,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="InterviewPath" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="InterviewPath" />
@@ -1866,7 +1887,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-396cc1b2" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
       </set>
     </attachedChunks>
   </component>
@@ -2181,6 +2202,7 @@
       <workItem from="1756758118566" duration="57000" />
       <workItem from="1756758184466" duration="790000" />
       <workItem from="1756762183883" duration="7000" />
+      <workItem from="1759177656437" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1542073245377</created>

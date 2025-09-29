@@ -31,8 +31,7 @@ public class ThreeSum {
         }
         for(int i=start; i<nums.length; i++){
             if(used[i]) continue;
-            // makes sure when duplicates are selected, we only use the ascending (used[i-1] = true) order
-            // so that duplicate number only use once
+            // makes sure when duplicates are selected, we only use the ascending (used[i-1] = true) order so that duplicate number only use once
             if ((i > 0 && nums[i] == nums[i-1]) && !used[i-1]) continue;
 
             target += nums[i];

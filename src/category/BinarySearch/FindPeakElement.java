@@ -14,7 +14,6 @@ public class FindPeakElement {
     public static void main(String[] args) {
         System.out.println(findPeakElement(new int[]{1,2,3,1}));
     }
-
     // solution-1: O(logN)
     public static int findPeakElement(int[] nums) {
         int l=0, r = nums.length-1;
@@ -28,7 +27,6 @@ public class FindPeakElement {
         }
         return l; // or return r;
     }
-
     // solution-2: O(n)
     public static int findPeakElement1(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {

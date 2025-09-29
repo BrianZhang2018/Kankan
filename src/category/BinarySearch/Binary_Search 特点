@@ -1,4 +1,4 @@
-1.Binary Search have to use in an “ordered" array or "rotated ordered array".
+1.Binary Search only use in an “ordered" array or "rotated ordered array".
 
 2.FirstBadVersionIterative - binary search condition explanation
     while (start <= end) { ...  这种可能有越界问题

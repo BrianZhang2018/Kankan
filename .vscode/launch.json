@@ -2,6 +2,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "JumpGameTopDown",
+      "request": "launch",
+      "mainClass": "category.DynamicPlanning.JumpGameTopDown",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "ThreeSum",
+      "request": "launch",
+      "mainClass": "category.TwoPointer.ThreeSum",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "MaximumProductSubArray",
+      "request": "launch",
+      "mainClass": "category.Array.slotSeparation.MaximumProductSubArray",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "MaximumSubArray",
+      "request": "launch",
+      "mainClass": "category.DynamicPlanning.easyDP.MaximumSubArray",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "SubArraySumPrefixSum",
+      "request": "launch",
+      "mainClass": "category.Array.prefixSum.SubArraySumPrefixSum",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
       "name": "Subsets",
       "request": "launch",
       "mainClass": "category.DFSBacktracing.combinationPermutation.combination.Subsets",

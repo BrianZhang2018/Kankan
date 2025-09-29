@@ -14,27 +14,32 @@ import java.util.Arrays;
  * Created by brianzhang on 4/5/19.
  */
 public class JumpGameBottomUp {
-
     public static void main(String[] args) {
-        JumpGameBottomUp test = new JumpGameBottomUp();
-        System.out.println(test.canJump(new int[]{2, 4, 2, 1, 0, 2, 0}));
+        System.out.println(new JumpGameBottomUp().canJump1(new int[]{2, 4, 2, 1, 0, 2, 0}));
     }
-    Index[] memo;
 
-    public boolean canJump(int[] nums) {
-        memo = new Index[nums.length];
-        Arrays.fill(memo, Index.UNKNOWN);
-        memo[nums.length-1] = Index.GOOD;
-
-        for(int i=nums.length-2; i>=0; i--){
-            int furthestJump = Math.min(i+nums[i], nums.length-1);
-            for(int j=i+1; j<=furthestJump; j++){
-                if(memo[j] == Index.GOOD){
-                    memo[i] = Index.GOOD;
-                    break;
-                }
+    public boolean canJump1(int[] nums) {
+        boolean[] dp = new boolean[nums.length];
+        dp[0] = true;
+        
+        for(int i=1; i< nums.length; i++){
+            for(int j = i-1; j>=0; j--){
+                if(dp[j] && nums[j] >= (i-j)) // see below explanation
+                    dp[i] = true;
             }
         }
-        return memo[0] == Index.GOOD ? true : false;
+        
+        return dp[nums.length-1];
     }
+
+    /**
+     * Explanation of nums[j] >= (i-j):
+     * This condition is checking whether we can jump from position j to position i.
+     *
+     * Breaking it down:
+     * nums[j] = The maximum number of steps we can jump from position j
+     * (i-j) = The distance from position j to position i
+     * nums[j] >= (i-j) = Can we jump from j to i?
+     */
+
 }

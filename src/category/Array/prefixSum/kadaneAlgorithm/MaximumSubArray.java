@@ -22,7 +22,6 @@ package category.Array.prefixSum.kadaneAlgorithm;
  * Created by brianzhang on 6/17/20.
  */
 public class MaximumSubArray {
-
     public static void main(String[] args) {
         System.out.println(maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
     }
@@ -38,7 +37,6 @@ public class MaximumSubArray {
         }
         return max;
     }
-
     // another prefixSum way
     public static int maxSubArray1(int[] nums) {
         int max = Integer.MIN_VALUE;
@@ -52,7 +50,6 @@ public class MaximumSubArray {
         }
         return max;
     }
-
     // DP
     public static int maxSubArrayDP(int[] nums) {
         int dp = nums[0];

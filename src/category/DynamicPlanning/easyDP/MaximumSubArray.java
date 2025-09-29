@@ -5,7 +5,7 @@ package category.DynamicPlanning.easyDP;
  *
  * Easy
  * Can be solved using Kadane's algorithm in linear time and without using additional space. The main ideas are:
-     - Use the input vector nums to store the candidate subarrays sum (i.e. the greatest contiguous sum so far).
+     - Use the input array to store the candidate subarrays sum (i.e. the greatest contiguous sum so far).
      - "Ignore cumulative negatives", as they don't contribute positively to the sum.
 
  Example:
@@ -22,32 +22,29 @@ package category.DynamicPlanning.easyDP;
  * Created by brianzhang on 6/17/20.
  */
 public class MaximumSubArray {
-
     public static void main(String[] args) {
         System.out.println(maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
+        System.out.println("Testing [-1, -2]: " + maxSubArray(new int[]{-1, -2}));
+        System.out.println("Testing [-2, -1]: " + maxSubArray(new int[]{-2, -1}));
     }
-
-    // DP
-    public static int maxSubArrayDP(int[] nums) {
-        int dp = nums[0];
-        int max = nums[0];
-
-        for(int i=1; i<nums.length; i++){
-            dp = Math.max(dp + nums[i], nums[i]);
-            max = Math.max(dp, max);
-        }
-
-        return max;
-    }
-
     // Kadane's algorithm
     public static int maxSubArray(int[] nums) {
         int max = nums[0];
         for(int i=1; i<nums.length; i++){
             if(nums[i-1] > 0){
-                nums[i] = nums[i-1] + nums[i];
+                nums[i] += nums[i-1];
             }
             max = Math.max(nums[i], max);
+        }
+        return max;
+    }
+    // DP
+    public static int maxSubArrayDP(int[] nums) {
+        int dp = nums[0];
+        int max = nums[0];
+        for(int i=1; i<nums.length; i++){
+            dp = Math.max(dp + nums[i], nums[i]);
+            max = Math.max(dp, max);
         }
         return max;
     }

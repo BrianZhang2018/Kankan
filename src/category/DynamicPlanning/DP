@@ -1,6 +1,6 @@
 1. DP Ways:
-    a) Top-Down approach: Recursion + Memoization. 记忆化递归
-    b) Bottom-Up approach: Iterative + Tabulation, which can avoid the recursion. 递推
+    a) Top-Down approach: Recursion + Memoization. start from target state, and resursively asking the easist version of the problem
+    b) Bottom-Up approach: Iterative + Tabulation start from the base case to build up your desired state up.
        (https://www.geeksforgeeks.org/tabulation-vs-memoization/)
 
     1) Recursion (e.g. dfs, Divide & Conquer) + Memoization - top-down (自顶向下), O(n*n)= 1 + 2 + 3 + 4+......n

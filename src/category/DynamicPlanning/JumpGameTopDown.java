@@ -1,7 +1,5 @@
 package category.DynamicPlanning;
 
-import java.util.Arrays;
-
 /**
  * https://leetcode.com/articles/jump-game/
  *
@@ -9,39 +7,68 @@ import java.util.Arrays;
  */
 public class JumpGameTopDown {
     public static void main(String[] args) {
+        int[] testArray = {2, 4, 2, 1, 0, 2, 0};
         JumpGameTopDown jumpGame = new JumpGameTopDown();
-        jumpGame.canJump(new int[]{2, 4, 2, 1, 0, 2, 0});
+        System.out.println("Can jump (bottom-up style): " + jumpGame.canJump(testArray));
+        System.out.println("Can jump (simple DP): " + jumpGame.canJumpSimple(testArray));
     }
 
-    Index[] memo;
+    // Simplified top-down approach that directly mirrors the bottom-up logic
+    Boolean[] memo;
     public boolean canJump(int[] nums) {
-        if(nums == null || nums.length ==0) return true;
-
-        memo = new Index[nums.length];
-        Arrays.fill(memo, Index.UNKNOWN);
-        memo[nums.length-1] = Index.GOOD;
-        return helper(0, nums);
+        memo = new Boolean[nums.length];
+        return canReachEnd(nums, nums.length - 1);
     }
-
-    public boolean helper(int position, int[] nums){
-        // memorization help to record the result from previous loop to save overlap calculation
-        // just like this question, it will help you skip some loop which already run before.
-        if(memo[position] != Index.UNKNOWN){
-            return memo[position] == Index.GOOD ? true : false;
+    
+    // This approach asks: "Can we reach the 'target' position from the start?"
+    private boolean canReachEnd(int[] nums, int target) {
+        // Base case: we're at the start position
+        if (target == 0) {
+            return true;
         }
-
-        int furthestJump=Math.min(position + nums[position], nums.length-1);
-        for(int nextStep=position+1; nextStep<=furthestJump; nextStep++){
-            if(helper(nextStep, nums)){
-                memo[nextStep] = Index.GOOD;
-                return true;
+        
+        // Memoization check
+        if (memo[target] != null) {
+            return memo[target];
+        }
+        
+        // Check all previous positions to see if any can reach this target
+        // This directly mirrors the bottom-up logic: dp[i] = true if there exists j where dp[j] && nums[j] >= (i-j)
+        for (int j = target - 1; j >= 0; j--) {
+            // Can we reach position j AND jump from j to target?
+            if (canReachEnd(nums, j) && nums[j] >= (target - j)) {
+                return memo[target] = true;
             }
         }
-        memo[position] = Index.BAD;
-        return false;
+        
+        return memo[target] = false;
     }
-}
-
-enum Index{
-    GOOD, BAD, UNKNOWN;
+    
+    // Simple top-down DP approach
+    Boolean[] memoSimple;
+    public boolean canJumpSimple(int[] nums) {
+        memoSimple = new Boolean[nums.length];
+        return canReach(nums, 0);
+    }
+    
+    private boolean canReach(int[] nums, int position) {
+        // Base case: if we've reached or passed the last index
+        if (position >= nums.length - 1) {
+            return true;
+        }
+        
+        // Memoization check
+        if (memoSimple[position] != null) {
+            return memoSimple[position];
+        }
+        
+        // Try all possible jumps from current position
+        for (int i = 1; i <= nums[position]; i++) {
+            if (canReach(nums, position + i)) {
+                return memoSimple[position] = true;
+            }
+        }
+        
+        return memoSimple[position] = false;
+    }
 }

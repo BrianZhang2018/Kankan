@@ -13,18 +13,17 @@ public class ValidateParenthesisString {
     }
 
     public boolean checkValidString(String s) {
-        if (s == null) return true;
+        if (s == null)
+            return true;
 
-        Stack<Integer> left = new Stack<>();
-        Stack<Integer> star = new Stack<>();
-
+        Stack<Integer> left = new Stack<>(), star = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c == '(') {
                 left.push(i);
             } else if (c == '*') {
                 star.push(i);
-            } else {
+            } else if (c == ')') {
                 if (left.isEmpty() && star.isEmpty())
                     return false;
 

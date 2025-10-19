@@ -4,9 +4,8 @@ import java.util.HashSet;
 
 /**
  * https://leetcode.com/problems/happy-number/
- * <p>
- * The key logic here for this problem is: if the same sum appear twice, which means it's not a happy number.
- * <p>
+ * The key logic here for this problem is: if the same sum appear twice, which
+ * means it's not a happy number.
  * Created by brianzhang on 4/5/20.
  */
 public class HappyNumber {
@@ -22,7 +21,7 @@ public class HappyNumber {
     }
 
     boolean isHappy(int n) {
-        int slow =n, fast = n;
+        int slow = n, fast = n;
         do {
             slow = digitSquareSum(slow);
             fast = digitSquareSum(fast);
@@ -34,7 +33,7 @@ public class HappyNumber {
             return false;
     }
 
-    //solution-2:
+    // solution-2:
     public boolean isHappy1(int n) {
         if (n == 0)
             return false;

@@ -2,6 +2,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LongestPalindromicSubstring",
+      "request": "launch",
+      "mainClass": "category.String.LongestPalindromicSubstring",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "IsValidPalindrome",
+      "request": "launch",
+      "mainClass": "category.TwoPointer.IsValidPalindrome",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "MizimizeCost",
+      "request": "launch",
+      "mainClass": "company.MizimizeCost",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "ValidAnagram",
+      "request": "launch",
+      "mainClass": "category.Map.ValidAnagram",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "ValidParentheses",
+      "request": "launch",
+      "mainClass": "category.String.ValidParentheses",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "FindUniqueAnagramFromWrods",
+      "request": "launch",
+      "mainClass": "category.Map.FindUniqueAnagramFromWrods",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "GroupAnagram",
+      "request": "launch",
+      "mainClass": "category.Map.GroupAnagram",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
       "name": "JumpGameTopDown",
       "request": "launch",
       "mainClass": "category.DynamicPlanning.JumpGameTopDown",

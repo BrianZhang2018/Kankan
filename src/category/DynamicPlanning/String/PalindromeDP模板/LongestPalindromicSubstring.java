@@ -11,13 +11,15 @@ public class LongestPalindromicSubstring {
     }
 
     public static String longestPalindrome(String s) {
-        if(s == null || s.length() == 0) return "";
+        if (s == null || s.length() == 0)
+            return "";
 
         int n = s.length();
         String res = null;
         boolean[][] dp = new boolean[n][n];
-        // bottom-up, tabulation | 模板方法对于这类 palindrome 问题，e.g. MinimumInsertionStepsToMakeAPalindrome.java, PalindromePartitioningII
-        for (int ws = 1; ws <= n; ws++) {  // ws: windowSize, 问题规模. (wz=1, but subsequence is =2)
+        // bottom-up, tabulation | 模板方法对于这类 palindrome 问题，e.g.
+        // MinimumInsertionStepsToMakeAPalindrome.java, PalindromePartitioningII
+        for (int ws = 1; ws <= n; ws++) { // ws: windowSize, 问题规模. (wz=1, but subsequence is =2)
             for (int l = 0, r = ws - 1; r < n; l++, r++) {
                 dp[l][r] = s.charAt(l) == s.charAt(r) && (r - l < 3 || dp[l + 1][r - 1]);
                 // r-l < 3 for cases like a, aa, aba which are palindrome.
@@ -33,8 +35,8 @@ public class LongestPalindromicSubstring {
 
     // simplified DP - my solution
     public String longestPalindrome1(String s) {
-        if (s.length() < 2) return s;
-
+        if (s.length() < 2)
+            return s;
         int n = s.length();
         boolean[][] dp = new boolean[n][n];
         String res = "";
@@ -46,8 +48,6 @@ public class LongestPalindromicSubstring {
                 }
             }
         }
-
         return res;
     }
-
 }

@@ -14,7 +14,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
         System.out.println(lengthOfLongestSubstring("abcabcbb"));
     }
-
+    // solution 1
     public static int lengthOfLongestSubstring(String s) {
         Set<Character> set = new HashSet<>();
         int left = 0, right = 0, max = 0;
@@ -26,10 +26,9 @@ public class LongestSubstringWithoutRepeatingCharacters {
                 set.remove(s.charAt(left++)); // shift left towards right until no duplicate
             }
         }
-
         return max;
     }
-
+    // solution 2
     public int lengthOfLongestSubstring1(String s) {
         if (s == null)
             return 0;

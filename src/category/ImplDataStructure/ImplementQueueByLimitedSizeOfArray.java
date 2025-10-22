@@ -19,16 +19,19 @@ public class ImplementQueueByLimitedSizeOfArray {
     }
 
     ListNode head, tail;
+
     public ImplementQueueByLimitedSizeOfArray() {
         head = new ListNode();
         tail = head;
     }
+
     public boolean offer(int val) {
         tail = tail.add(val);
         return true;
     }
+
     public int poll() {
-        if(head.isEmpty() && head != tail) {
+        if (head.isEmpty() && head != tail) {
             head = head.next;
         }
         return head.removeFirst();
@@ -40,7 +43,9 @@ class ListNode {
     int[] array = new int[MAX];
     int currSize;
     ListNode next;
-    public ListNode(){}
+
+    public ListNode() {
+    }
 
     public ListNode add(int val) {
         if (currSize == MAX) {
@@ -53,15 +58,18 @@ class ListNode {
     }
 
     public int removeFirst() {
-        if(isEmpty()) return -1;
+        if (isEmpty())
+            return -1;
 
         int val = this.array[0];
         currSize--;
-        for(int i=1; i<=currSize; i++)
-            array[i-1] = array[i];
+        for (int i = 1; i <= currSize; i++)
+            array[i - 1] = array[i];
         return val;
     }
 
-    public boolean isEmpty() {return currSize == 0;}
+    public boolean isEmpty() {
+        return currSize == 0;
+    }
 
 }

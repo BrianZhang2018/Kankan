@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PriorityQueuePlay",
+      "request": "launch",
+      "mainClass": "category.javabasic.PriorityQueuePlay",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
+      "name": "BestTimeToBuyAndSellStockI",
+      "request": "launch",
+      "mainClass": "category.DynamicPlanning.BestStockSellBuy.BestTimeToBuyAndSellStockI",
+      "projectName": "Kankan_9343d0f6"
+    },
+    {
+      "type": "java",
       "name": "LongestPalindromicSubstring",
       "request": "launch",
       "mainClass": "category.String.LongestPalindromicSubstring",

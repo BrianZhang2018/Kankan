@@ -11,13 +11,13 @@ public class BestTimeToBuyAndSellStockI {
 
     // Greedy solution
     public static int maxProfit(int prices[]) {
-        int minPrice = Integer.MAX_VALUE;
+        int minPrice = prices[0];
         int maxProfit = 0;
         for (int i = 0; i < prices.length; i++) {
-            if (prices[i] < minPrice)
+            if (prices[i] > minPrice)
+                maxProfit = Math.max(maxProfit, prices[i] - minPrice);
+            else
                 minPrice = prices[i];
-            else if (prices[i] - minPrice > maxProfit)
-                maxProfit = prices[i] - minPrice;
         }
         return maxProfit;
     }

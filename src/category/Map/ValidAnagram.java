@@ -14,12 +14,10 @@ public class ValidAnagram {
         for (char c : s.toCharArray()) {
             bucket[c]++;
         }
-
         for (char c : t.toCharArray()) {
             if (--bucket[c] < 0)
                 return false;
         }
-
         return true;
     }
 }

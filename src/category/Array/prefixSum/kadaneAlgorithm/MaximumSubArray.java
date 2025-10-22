@@ -32,7 +32,6 @@ public class MaximumSubArray {
     public static void main(String[] args) {
         System.out.println(maxSubArray(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 }));
     }
-
     // Kadane's algorithm
     public static int maxSubArray(int[] nums) {
         int max = nums[0]; // nums used as a prefix sum
@@ -44,7 +43,6 @@ public class MaximumSubArray {
         }
         return max;
     }
-
     // prefixSum way
     public static int maxSubArray1(int[] nums) {
         int max = Integer.MIN_VALUE;
@@ -58,17 +56,14 @@ public class MaximumSubArray {
         }
         return max;
     }
-
     // DP
     public static int maxSubArrayDP(int[] nums) {
         int dp = nums[0];
         int max = nums[0];
-
         for (int i = 1; i < nums.length; i++) {
             dp = Math.max(dp + nums[i], nums[i]);
             max = Math.max(dp, max);
         }
-
         return max;
     }
 }
